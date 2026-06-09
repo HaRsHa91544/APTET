@@ -1,0 +1,1097 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APTET Quiz – Prasad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ─── TOKENS ─────────────────────────────────── */
+        :root {
+            --page-bg: #f7f4ef;
+            --white: #ffffff;
+            --teal: #0d7377;
+            --coral: #f05a28;
+            --amber: #f5a623;
+            --green-ok: #16a34a;
+            --red-err: #dc2626;
+            --ink: #1a1a1a;
+            --ink-mid: #4b5563;
+            --ink-light: #9ca3af;
+            --border: #e5e0d8;
+            --radius-sm: 10px;
+            --radius-md: 16px;
+            --radius-lg: 22px;
+            --bottom-bar-h: 0px;
+            /* updated by JS when bar appears */
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--page-bg);
+            font-family: 'Inter', sans-serif;
+            color: var(--ink);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 16px 0;
+        }
+
+        /* dot-grid texture */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: radial-gradient(circle, #ccc6ba 1px, transparent 1px);
+            background-size: 28px 28px;
+            opacity: 0.28;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ─── HEADER ─────────────────────────────────── */
+        header {
+            width: 100%;
+            max-width: 700px;
+            margin-top: 36px;
+            position: relative;
+            z-index: 1;
+            padding-bottom: 20px;
+            border-bottom: 1.5px solid var(--border);
+            animation: fadeUp .5s ease both;
+        }
+
+        .header-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .greeting {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(1.6rem, 5vw, 2.2rem);
+            font-weight: 400;
+            line-height: 1.1;
+            color: var(--ink);
+        }
+
+        .greeting em {
+            font-style: normal;
+            background: linear-gradient(100deg, var(--teal), var(--coral));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .exam-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: 100px;
+            padding: 7px 16px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--ink-mid);
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .exam-pill .dot {
+            width: 8px;
+            height: 8px;
+            background: var(--coral);
+            border-radius: 50%;
+            animation: blink 1.6s ease infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .3
+            }
+        }
+
+        .exam-pill strong {
+            color: var(--teal);
+        }
+
+        /* Telugu motivational line */
+        .telugu-motivation {
+            font-size: 0.88rem;
+            font-weight: 500;
+            color: var(--ink-mid);
+            line-height: 1.5;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            flex-wrap: wrap;
+        }
+
+        .telugu-motivation .goal-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: linear-gradient(100deg, #ecfdf5, #fff7ed);
+            border: 1.5px solid #a7f3d0;
+            border-radius: 100px;
+            padding: 3px 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--teal);
+            white-space: nowrap;
+        }
+
+        /* ─── MAIN ───────────────────────────────────── */
+        main {
+            width: 100%;
+            max-width: 700px;
+            margin-top: 24px;
+            position: relative;
+            z-index: 1;
+            padding-bottom: 120px;
+            /* breathing room above sticky bar */
+        }
+
+        /* ─── QUIZ TOP BAR ───────────────────────────── */
+        .quiz-topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+            gap: 10px;
+        }
+
+        .q-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--ink-light);
+        }
+
+        .live-stats {
+            display: flex;
+            gap: 8px;
+        }
+
+        .stat-chip {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: 100px;
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--ink-mid);
+        }
+
+        .stat-chip.wrong-chip {
+            border-color: #fecaca;
+            background: #fff5f5;
+            color: #991b1b;
+        }
+
+        .stat-chip.score-chip {
+            border-color: #bbf7d0;
+            background: #f0fdf4;
+            color: #166534;
+        }
+
+        /* ─── PROGRESS ───────────────────────────────── */
+        .progress-track {
+            background: var(--border);
+            border-radius: 100px;
+            height: 5px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--teal), var(--coral));
+            border-radius: 100px;
+            transition: width .55s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        /* ─── TIMER — circular ring ──────────────────── */
+        .timer-ring-wrap {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 16px;
+        }
+
+        .timer-ring {
+            position: relative;
+            width: 62px;
+            height: 62px;
+            flex-shrink: 0;
+        }
+
+        .timer-ring svg {
+            transform: rotate(-90deg);
+            display: block;
+        }
+
+        .timer-ring .tr-bg {
+            fill: none;
+            stroke: var(--border);
+            stroke-width: 5;
+        }
+
+        .timer-ring .tr-arc {
+            fill: none;
+            stroke-width: 5;
+            stroke-linecap: round;
+            stroke: var(--teal);
+            /* circumference of r=26: 2π×26 ≈ 163.4 */
+            stroke-dasharray: 163.4;
+            stroke-dashoffset: 0;
+            transition: stroke-dashoffset 1s linear, stroke .4s ease;
+        }
+
+        .timer-ring .tr-arc.urgent {
+            stroke: var(--red-err);
+        }
+
+        .timer-center {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+
+        .timer-secs {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.2rem;
+            line-height: 1;
+            color: var(--ink);
+            transition: color .3s;
+        }
+
+        .timer-secs.urgent {
+            color: var(--red-err);
+        }
+
+        /* pulse when urgent */
+        @keyframes timerPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.08);
+            }
+        }
+
+        .timer-ring.urgent-ring {
+            animation: timerPulse .7s ease infinite;
+        }
+
+        /* ─── QUESTION CARD ──────────────────────────── */
+        .q-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 26px 26px 24px 34px;
+            margin-bottom: 14px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+            animation: fadeUp .35s ease both;
+        }
+
+        .q-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            background: linear-gradient(180deg, var(--teal), var(--coral));
+            border-radius: 4px 0 0 4px;
+        }
+
+        .q-card h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(1rem, 3vw, 1.22rem);
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--ink);
+        }
+
+        /* ─── OPTIONS ────────────────────────────────── */
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .opt {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            color: var(--ink);
+            text-align: left;
+            font-family: 'Inter', sans-serif;
+            transition: border-color .15s, background .15s, transform .15s;
+        }
+
+        .opt:focus-visible {
+            outline: 2px solid var(--teal);
+            outline-offset: 2px;
+        }
+
+        .opt-key {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1.5px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--ink-light);
+            flex-shrink: 0;
+            background: var(--page-bg);
+            transition: background .15s, border-color .15s, color .15s;
+        }
+
+        .opt:not(:disabled):hover {
+            border-color: var(--teal);
+            background: #f0fafb;
+            transform: translateX(3px);
+        }
+
+        .opt:not(:disabled):hover .opt-key {
+            background: var(--teal);
+            border-color: var(--teal);
+            color: var(--white);
+        }
+
+        .opt.correct {
+            border-color: var(--green-ok);
+            background: #f0fdf4;
+        }
+
+        .opt.correct .opt-key {
+            background: var(--green-ok);
+            border-color: var(--green-ok);
+            color: var(--white);
+        }
+
+        .opt.wrong {
+            border-color: var(--red-err);
+            background: #fff5f5;
+        }
+
+        .opt.wrong .opt-key {
+            background: var(--red-err);
+            border-color: var(--red-err);
+            color: var(--white);
+        }
+
+        .opt:disabled {
+            cursor: not-allowed;
+        }
+
+        /* ─── STICKY BOTTOM BAR ──────────────────────── */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            /* hidden by default — slides up when shown */
+            transform: translateY(100%);
+            transition: transform .38s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        .bottom-bar.visible {
+            transform: translateY(0);
+        }
+
+        .bottom-bar-inner {
+            width: 100%;
+            max-width: 700px;
+            padding: 14px 16px 20px;
+            background: rgba(247, 244, 239, 0.96);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-top: 1.5px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Explanation inside bar */
+        .exp-box {
+            background: #fffbeb;
+            border: 1.5px solid #fde68a;
+            border-radius: var(--radius-md);
+            padding: 12px 16px;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            color: #78350f;
+        }
+
+        .exp-head {
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #92400e;
+            margin-bottom: 5px;
+        }
+
+        /* Next button */
+        .next-btn {
+            width: 100%;
+            padding: 14px 20px;
+            background: linear-gradient(100deg, var(--teal) 0%, var(--coral) 100%);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-md);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity .15s, transform .15s;
+            box-shadow: 0 3px 14px rgba(13, 115, 119, 0.25);
+        }
+
+        .next-btn:hover {
+            opacity: .88;
+            transform: translateY(-1px);
+        }
+
+        .next-btn:active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* ─── RESULT SCREEN ──────────────────────────── */
+        #result-screen {
+            display: none;
+            animation: fadeUp .5s ease both;
+            padding-bottom: 40px;
+        }
+
+        .result-card {
+            background: var(--white);
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 40px 32px 32px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .result-icon {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            animation: popIn .5s cubic-bezier(.17, .67, .35, 1.5) both;
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        .result-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 6px;
+        }
+
+        .result-sub {
+            font-size: 0.88rem;
+            color: var(--ink-light);
+            margin-bottom: 32px;
+        }
+
+        /* donut */
+        .donut-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+
+        .donut {
+            position: relative;
+            width: 130px;
+            height: 130px;
+        }
+
+        .donut svg {
+            transform: rotate(-90deg);
+            display: block;
+        }
+
+        .donut .d-bg {
+            fill: none;
+            stroke: var(--border);
+            stroke-width: 9;
+        }
+
+        .donut .d-arc {
+            fill: none;
+            stroke-width: 9;
+            stroke-linecap: round;
+            stroke: url(#donutGrad);
+            transition: stroke-dashoffset 1.1s cubic-bezier(.4, 0, .2, 1);
+        }
+
+        .donut-inner {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donut-pct {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem;
+            line-height: 1;
+            color: var(--ink);
+        }
+
+        .donut-lbl {
+            font-size: 0.68rem;
+            font-weight: 600;
+            color: var(--ink-light);
+            margin-top: 3px;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 28px;
+        }
+
+        .s-box {
+            border: 1.5px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 14px 8px;
+            background: var(--page-bg);
+        }
+
+        .s-val {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.8rem;
+            line-height: 1;
+        }
+
+        .s-lbl {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--ink-light);
+            margin-top: 4px;
+        }
+
+        .s-box.ok .s-val {
+            color: var(--green-ok);
+        }
+
+        .s-box.err .s-val {
+            color: var(--red-err);
+        }
+
+        .retry-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(100deg, var(--teal), var(--coral));
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-md);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity .15s, transform .15s;
+            box-shadow: 0 3px 14px rgba(13, 115, 119, 0.25);
+        }
+
+        .retry-btn:hover {
+            opacity: .88;
+            transform: translateY(-1px);
+        }
+
+        /* ─── FOOTER ─────────────────────────────────── */
+        footer {
+            position: relative;
+            z-index: 1;
+            margin-top: 40px;
+            margin-bottom: 28px;
+            font-size: 0.78rem;
+            color: var(--ink-light);
+            text-align: center;
+        }
+
+        footer strong {
+            color: var(--coral);
+        }
+
+        /* ─── CONFETTI ───────────────────────────────── */
+        .cf {
+            position: fixed;
+            width: 7px;
+            height: 13px;
+            border-radius: 2px;
+            top: -20px;
+            pointer-events: none;
+            z-index: 9999;
+            animation: cfFall linear forwards;
+        }
+
+        @keyframes cfFall {
+            to {
+                transform: translateY(110vh) rotate(600deg);
+                opacity: 0;
+            }
+        }
+
+        /* ─── UTIL ───────────────────────────────────── */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-top">
+            <h1 class="greeting">Hello, <em>Prasad!</em></h1>
+            <div class="exam-pill">
+                <span class="dot"></span>
+                <span><strong id="days-left">–</strong> days to APTET</span>
+            </div>
+        </div>
+        <p class="telugu-motivation">
+            <span class="goal-badge">🎯 120+ మార్కులు</span>
+            మీరు కష్టపడుతున్నారు విజయం మీదే, Prasad గారూ! 💪
+        </p>
+    </header>
+
+    <main>
+
+        <!-- ── QUIZ SCREEN ── -->
+        <div id="quiz-screen">
+            <div class="quiz-topbar">
+                <div class="q-label" id="q-label">Question 1 of 10</div>
+                <div class="live-stats">
+                    <div class="stat-chip score-chip" id="score-chip">✅ 0</div>
+                    <div class="stat-chip wrong-chip" id="wrong-chip">❌ 0</div>
+                </div>
+            </div>
+
+            <div class="progress-track">
+                <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+            </div>
+
+            <!-- Circular timer -->
+            <div class="timer-ring-wrap">
+                <div class="timer-ring" id="timer-ring">
+                    <svg viewBox="0 0 62 62" width="62" height="62">
+                        <circle class="tr-bg" cx="31" cy="31" r="26" />
+                        <circle class="tr-arc" id="tr-arc" cx="31" cy="31" r="26" />
+                    </svg>
+                    <div class="timer-center">
+                        <span class="timer-secs" id="timer-secs">60</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="q-card">
+                <h2 id="q-text">Loading…</h2>
+            </div>
+
+            <div class="options-list" id="options-list"></div>
+        </div>
+
+        <!-- ── RESULT SCREEN ── -->
+        <div id="result-screen">
+            <div class="result-card">
+                <div class="result-icon" id="res-icon">🎉</div>
+                <div class="result-title" id="res-title">Well Done!</div>
+                <div class="result-sub" id="res-sub">Here's your score</div>
+                <div class="donut-wrap">
+                    <div class="donut">
+                        <svg viewBox="0 0 120 120" width="130" height="130">
+                            <defs>
+                                <linearGradient id="donutGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#0d7377" />
+                                    <stop offset="100%" stop-color="#f05a28" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="d-bg" cx="60" cy="60" r="50" />
+                            <circle class="d-arc" id="d-arc" cx="60" cy="60" r="50" stroke-dasharray="314"
+                                stroke-dashoffset="314" />
+                        </svg>
+                        <div class="donut-inner">
+                            <div class="donut-pct" id="d-pct">0%</div>
+                            <div class="donut-lbl">Score</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-row">
+                    <div class="s-box ok">
+                        <div class="s-val" id="s-correct">0</div>
+                        <div class="s-lbl">Correct</div>
+                    </div>
+                    <div class="s-box err">
+                        <div class="s-val" id="s-wrong">0</div>
+                        <div class="s-lbl">Wrong</div>
+                    </div>
+                </div>
+                <button class="retry-btn" onclick="startQuiz()">Try Again</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>Built with ❤️ by your <strong>Son!</strong></footer>
+
+    <!-- STICKY BOTTOM BAR (explanation + next btn) -->
+    <div class="bottom-bar" id="bottom-bar">
+        <div class="bottom-bar-inner">
+            <div class="exp-box">
+                <div class="exp-head">💡 Explanation</div>
+                <div id="exp-text"></div>
+            </div>
+            <button class="next-btn" id="next-btn" onclick="nextQ()">Next Question →</button>
+        </div>
+    </div>
+
+    <script>
+        /* ══════════════════════════════════════════════════
+           ✏️  QUIZ DATA — Replace this array each time
+           Structure:
+           [
+             {
+               question: "...",
+               options: ["A","B","C","D"],
+               correct: 0,        ← 0-based index
+               explanation: "..."
+             }
+           ]
+        ══════════════════════════════════════════════════ */
+        const QUESTIONS = [
+            {
+                question: "According to Piaget, which stage involves the development of object permanence?",
+                options: ["Pre-operational", "Sensorimotor", "Concrete operational", "Formal operational"],
+                correct: 1,
+                explanation: "During the Sensorimotor stage (birth–2 years), infants develop object permanence — understanding that objects exist even when out of sight. This is a key cognitive milestone in Piaget's theory of cognitive development."
+            },
+            {
+                question: "Vygotsky's Zone of Proximal Development (ZPD) refers to:",
+                options: [
+                    "Skills a child can perform independently",
+                    "The gap between actual and potential development with guidance",
+                    "Maximum IQ a child can reach",
+                    "Physical growth rate during adolescence"
+                ],
+                correct: 1,
+                explanation: "ZPD is the distance between what a child can achieve alone and what they can achieve with skilled guidance. Vygotsky emphasized that learning occurs within this zone through social interaction and scaffolding."
+            },
+            {
+                question: "Howard Gardner's theory of Multiple Intelligences includes how many core intelligences?",
+                options: ["5", "7", "8", "10"],
+                correct: 2,
+                explanation: "Gardner proposed 8 core intelligences: linguistic, logical-mathematical, spatial, musical, bodily-kinesthetic, interpersonal, intrapersonal, and naturalist. This theory challenges the traditional single-IQ view of intelligence."
+            },
+            {
+                question: "Which reinforcement schedule produces the highest and most consistent rate of response?",
+                options: ["Fixed Ratio", "Variable Ratio", "Fixed Interval", "Variable Interval"],
+                correct: 1,
+                explanation: "Variable Ratio schedules (e.g., slot machines) produce the highest and most consistent response rates because rewards are unpredictable. The learner keeps responding, not knowing when the next reward will come."
+            },
+            {
+                question: "In Bloom's Taxonomy (revised), which is the highest level of cognitive skill?",
+                options: ["Application", "Analysis", "Evaluation", "Creating"],
+                correct: 3,
+                explanation: "In the revised Bloom's Taxonomy, 'Creating' is the highest level — it involves generating new ideas, products, or ways of viewing things. It goes beyond evaluation to produce original, meaningful work."
+            },
+            {
+                question: "What is the HCF of 36 and 48?",
+                options: ["6", "12", "18", "24"],
+                correct: 1,
+                explanation: "HCF of 36 and 48: prime factorization gives 36 = 2²×3², 48 = 2⁴×3. Common factors: 2²×3 = 12. HCF is 12."
+            },
+            {
+                question: "Which layer of the atmosphere contains the ozone layer?",
+                options: ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+                correct: 1,
+                explanation: "The ozone layer lies in the stratosphere, about 15–35 km above Earth. It absorbs harmful UV-B and UV-C radiation, protecting all living organisms from radiation damage."
+            },
+            {
+                question: "Which literary device is used in 'The classroom was a zoo'?",
+                options: ["Simile", "Metaphor", "Hyperbole", "Alliteration"],
+                correct: 1,
+                explanation: "A metaphor directly equates two unlike things without 'like' or 'as.' Here the classroom is called a zoo, implying chaos. Similes need comparative words; metaphors make direct assertions."
+            },
+            {
+                question: "The Chipko Movement was related to conservation of:",
+                options: ["Water", "Soil", "Forest", "Wildlife"],
+                correct: 2,
+                explanation: "The Chipko Movement (1973, Uttarakhand) saw villagers hug trees to prevent commercial logging. Led largely by women, it became a landmark in India's environmental and grassroots social movements."
+            },
+            {
+                question: "If 15% of a number is 90, what is the number?",
+                options: ["500", "600", "450", "750"],
+                correct: 1,
+                explanation: "Let the number be x. (15/100) × x = 90 → x = 90 × 100 ÷ 15 = 600."
+            }
+        ];
+
+        /* ─── CONSTANTS ──────────────────────────────── */
+        const EXAM_DATE = new Date('2026-08-05T00:00:00');
+        const SECS_PER_Q = 60;
+        const CIRCUMFERENCE = 2 * Math.PI * 26; // ≈ 163.4
+
+        /* ─── STATE ──────────────────────────────────── */
+        let qIdx = 0;
+        let score = 0;
+        let wrongCount = 0;
+        let answered = false;
+        let timerInt = null;
+        let timeLeft = SECS_PER_Q;
+
+        /* ─── Countdown ──────────────────────────────── */
+        (function () {
+            const diff = Math.ceil((EXAM_DATE - new Date()) / 86400000);
+            document.getElementById('days-left').textContent = diff > 0 ? diff : 0;
+        })();
+
+        /* ─── Start / Restart ────────────────────────── */
+        function startQuiz() {
+            qIdx = 0; score = 0; wrongCount = 0; answered = false;
+            hideBottomBar();
+            document.getElementById('result-screen').style.display = 'none';
+            document.getElementById('quiz-screen').style.display = 'block';
+            loadQ();
+        }
+
+        /* ─── Load question ──────────────────────────── */
+        function loadQ() {
+            const q = QUESTIONS[qIdx];
+            const total = QUESTIONS.length;
+            answered = false;
+
+            hideBottomBar();
+
+            document.getElementById('q-label').textContent = `Question ${qIdx + 1} of ${total}`;
+            document.getElementById('progress-fill').style.width = `${(qIdx / total) * 100}%`;
+            updateStats();
+
+            document.getElementById('q-text').textContent = q.question;
+
+            const list = document.getElementById('options-list');
+            const keys = ['A', 'B', 'C', 'D'];
+            list.innerHTML = '';
+            q.options.forEach((opt, i) => {
+                const btn = document.createElement('button');
+                btn.className = 'opt';
+                btn.innerHTML = `<span class="opt-key">${keys[i]}</span><span>${opt}</span>`;
+                btn.onclick = () => pick(i);
+                list.appendChild(btn);
+            });
+
+            startTimer();
+        }
+
+        /* ─── Timer ──────────────────────────────────── */
+        function startTimer() {
+            clearInterval(timerInt);
+            timeLeft = SECS_PER_Q;
+            refreshTimerUI();
+            timerInt = setInterval(() => {
+                timeLeft--;
+                refreshTimerUI();
+                if (timeLeft <= 0) { clearInterval(timerInt); if (!answered) timeUp(); }
+            }, 1000);
+        }
+
+        function refreshTimerUI() {
+            const arc = document.getElementById('tr-arc');
+            const secsEl = document.getElementById('timer-secs');
+            const ring = document.getElementById('timer-ring');
+
+            // shrink the arc as time drains
+            const pct = timeLeft / SECS_PER_Q;
+            const offset = CIRCUMFERENCE * (1 - pct);
+            arc.style.strokeDashoffset = offset;
+
+            secsEl.textContent = timeLeft;
+
+            const urgent = timeLeft <= 15;
+            arc.classList.toggle('urgent', urgent);
+            secsEl.classList.toggle('urgent', urgent);
+            ring.classList.toggle('urgent-ring', urgent);
+        }
+
+        function timeUp() {
+            answered = true;
+            wrongCount++;
+            reveal(QUESTIONS[qIdx].correct, -1);
+        }
+
+        /* ─── Pick ───────────────────────────────────── */
+        function pick(idx) {
+            if (answered) return;
+            clearInterval(timerInt);
+            answered = true;
+            const correct = (idx === QUESTIONS[qIdx].correct);
+            if (correct) score++;
+            else wrongCount++;
+            reveal(QUESTIONS[qIdx].correct, idx);
+        }
+
+        function reveal(correctIdx, chosenIdx) {
+            document.querySelectorAll('.opt').forEach((btn, i) => {
+                btn.disabled = true;
+                if (i === correctIdx) btn.classList.add('correct');
+                else if (i === chosenIdx) btn.classList.add('wrong');
+            });
+            updateStats();
+            showBottomBar(QUESTIONS[qIdx].explanation);
+        }
+
+        function updateStats() {
+            document.getElementById('score-chip').textContent = `✅ ${score}`;
+            document.getElementById('wrong-chip').textContent = `❌ ${wrongCount}`;
+        }
+
+        /* ─── Bottom bar ─────────────────────────────── */
+        function showBottomBar(explanation) {
+            document.getElementById('exp-text').textContent = explanation;
+            const isLast = (qIdx + 1 >= QUESTIONS.length);
+            document.getElementById('next-btn').textContent = isLast ? 'See Results →' : 'Next Question →';
+            document.getElementById('bottom-bar').classList.add('visible');
+        }
+
+        function hideBottomBar() {
+            document.getElementById('bottom-bar').classList.remove('visible');
+        }
+
+        /* ─── Next ───────────────────────────────────── */
+        function nextQ() {
+            qIdx++;
+            if (qIdx >= QUESTIONS.length) showResult();
+            else loadQ();
+        }
+
+        /* ─── Result ─────────────────────────────────── */
+        function showResult() {
+            clearInterval(timerInt);
+            hideBottomBar();
+            document.getElementById('quiz-screen').style.display = 'none';
+            document.getElementById('result-screen').style.display = 'block';
+
+            const total = QUESTIONS.length;
+            const pct = Math.round((score / total) * 100);
+
+            let icon = '😐', title = 'Keep going, Prasad!';
+            if (pct === 100) { icon = '🏆'; title = 'Perfect Score!'; }
+            else if (pct >= 80) { icon = '🎉'; title = 'Excellent!'; }
+            else if (pct >= 60) { icon = '👍'; title = 'Good Job!'; }
+            else if (pct >= 40) { icon = '💪'; title = 'You can do it!'; }
+
+            document.getElementById('res-icon').textContent = icon;
+            document.getElementById('res-title').textContent = title;
+            document.getElementById('res-sub').textContent = `${score} out of ${total} correct`;
+            document.getElementById('s-correct').textContent = score;
+            document.getElementById('s-wrong').textContent = wrongCount;
+            document.getElementById('d-pct').textContent = pct + '%';
+
+            setTimeout(() => {
+                document.getElementById('d-arc').style.strokeDashoffset = 314 - (pct / 100) * 314;
+            }, 80);
+
+            if (pct >= 80) confetti();
+        }
+
+        /* ─── Confetti ───────────────────────────────── */
+        function confetti() {
+            const colors = ['#0d7377', '#f05a28', '#f5a623', '#16a34a', '#dc2626', '#0ea5e9'];
+            for (let i = 0; i < 70; i++) {
+                setTimeout(() => {
+                    const el = document.createElement('div');
+                    el.className = 'cf';
+                    el.style.cssText = `left:${Math.random() * 100}vw;
+        background:${colors[i % colors.length]};
+        animation-duration:${1.4 + Math.random() * 1.8}s;
+        animation-delay:${Math.random() * 0.4}s;
+        transform:rotate(${Math.random() * 360}deg);`;
+                    document.body.appendChild(el);
+                    el.addEventListener('animationend', () => el.remove());
+                }, i * 28);
+            }
+        }
+
+        /* ─── Boot ───────────────────────────────────── */
+        startQuiz();
+    </script>
+</body>
+
+</html>
