@@ -728,7 +728,7 @@
             </div>
         </div>
         <p class="telugu-motivation">
-            <span class="goal-badge">🎯 120+ Marks</span>
+            <span class="goal-badge">🎯 Goal: 120+ Marks</span>
             మీరు కష్టపడుతున్నారు విజయం మీదే, Prasad గారూ! 💪
         </p>
     </header>
@@ -836,71 +836,557 @@
              }
            ]
         ══════════════════════════════════════════════════ */
+
         const QUESTIONS = [
             {
-                question: "According to Piaget, which stage involves the development of object permanence?",
-                options: ["Pre-operational", "Sensorimotor", "Concrete operational", "Formal operational"],
-                correct: 1,
-                explanation: "During the Sensorimotor stage (birth–2 years), infants develop object permanence — understanding that objects exist even when out of sight. This is a key cognitive milestone in Piaget's theory of cognitive development."
-            },
-            {
-                question: "Vygotsky's Zone of Proximal Development (ZPD) refers to:",
+                question: "వృద్ధి (Growth) కి సంబంధించి సరైన వాక్యం ఏది?",
                 options: [
-                    "Skills a child can perform independently",
-                    "The gap between actual and potential development with guidance",
-                    "Maximum IQ a child can reach",
-                    "Physical growth rate during adolescence"
+                    "ఇది గుణాత్మక మార్పును సూచిస్తుంది",
+                    "ఇది పరిమాణాత్మక మార్పును సూచిస్తుంది",
+                    "ఇది కేవలం సామాజిక మార్పును సూచిస్తుంది",
+                    "ఇది కేవలం మానసిక మార్పును సూచిస్తుంది"
                 ],
                 correct: 1,
-                explanation: "ZPD is the distance between what a child can achieve alone and what they can achieve with skilled guidance. Vygotsky emphasized that learning occurs within this zone through social interaction and scaffolding."
+                explanation: "వృద్ధి అనేది పరిమాణాత్మక మార్పులను సూచిస్తుంది. ఉదాహరణకు ఎత్తు, బరువు, శరీర పరిమాణం పెరగడం. ఇది అభివృద్ధిలో ఒక భాగం మాత్రమే."
             },
             {
-                question: "Howard Gardner's theory of Multiple Intelligences includes how many core intelligences?",
-                options: ["5", "7", "8", "10"],
+                question: "అభివృద్ధి (Development) యొక్క ముఖ్య లక్షణం",
+                options: [
+                    "శరీర బరువు పెరగడం",
+                    "ఎత్తు పెరగడం",
+                    "సమగ్ర మార్పు",
+                    "వయస్సు పెరగడం"
+                ],
                 correct: 2,
-                explanation: "Gardner proposed 8 core intelligences: linguistic, logical-mathematical, spatial, musical, bodily-kinesthetic, interpersonal, intrapersonal, and naturalist. This theory challenges the traditional single-IQ view of intelligence."
+                explanation: "అభివృద్ధి అనేది శారీరక, మానసిక, సామాజిక, భావోద్వేగ రంగాలలో జరిగే సమగ్ర మార్పుల ప్రక్రియ. ఇది కేవలం పరిమాణాత్మక మార్పులకు మాత్రమే పరిమితం కాదు."
             },
             {
-                question: "Which reinforcement schedule produces the highest and most consistent rate of response?",
-                options: ["Fixed Ratio", "Variable Ratio", "Fixed Interval", "Variable Interval"],
+                question: "ఇద్దరు విద్యార్థులు ఒకే తరగతిలో చదువుతున్నప్పటికీ వారి నేర్చుకునే వేగం భిన్నంగా ఉండటాన్ని ఏమంటారు?",
+                options: [
+                    "పరిపక్వత",
+                    "వ్యక్తిగత భేదాలు",
+                    "ప్రేరణ",
+                    "వారసత్వం"
+                ],
                 correct: 1,
-                explanation: "Variable Ratio schedules (e.g., slot machines) produce the highest and most consistent response rates because rewards are unpredictable. The learner keeps responding, not knowing when the next reward will come."
+                explanation: "ప్రతి వ్యక్తి సామర్థ్యాలు, అభిరుచులు, నేర్చుకునే వేగం, ఆసక్తులు వేర్వేరుగా ఉండడాన్ని వ్యక్తిగత భేదాలు అంటారు."
             },
             {
-                question: "In Bloom's Taxonomy (revised), which is the highest level of cognitive skill?",
-                options: ["Application", "Analysis", "Evaluation", "Creating"],
+                question: "వ్యక్తిగత భేదాలకు ప్రధాన కారణం",
+                options: [
+                    "వారసత్వం మరియు పర్యావరణం",
+                    "వయస్సు మాత్రమే",
+                    "పాఠ్యపుస్తకాలు",
+                    "ఉపాధ్యాయుడు మాత్రమే"
+                ],
+                correct: 0,
+                explanation: "వ్యక్తిగత భేదాలు ప్రధానంగా వారసత్వం మరియు పర్యావరణం పరస్పర ప్రభావం వల్ల ఏర్పడతాయి."
+            },
+            {
+                question: "అభ్యసన ప్రక్రియలో ప్రేరణ (Motivation) యొక్క ప్రధాన పాత్ర",
+                options: [
+                    "పరీక్షలు నిర్వహించడం",
+                    "నేర్చుకోవాలనే ఆసక్తి కలిగించడం",
+                    "మార్కులు కేటాయించడం",
+                    "హాజరు నమోదు చేయడం"
+                ],
+                correct: 1,
+                explanation: "ప్రేరణ విద్యార్థిలో నేర్చుకోవాలనే ఆసక్తి, ఉత్సాహం మరియు లక్ష్యసాధనకు దోహదపడుతుంది."
+            },
+            {
+                question: "\"Learning is a relatively permanent change in behaviour\" ఈ నిర్వచనం నేర్చుకోవడం యొక్క ఏ లక్షణాన్ని సూచిస్తుంది?",
+                options: [
+                    "తాత్కాలిక మార్పు",
+                    "శాశ్వత మార్పు",
+                    "జన్యుపరమైన మార్పు",
+                    "శారీరక మార్పు"
+                ],
+                correct: 1,
+                explanation: "అభ్యసనం అనేది అనుభవం ద్వారా ప్రవర్తనలో వచ్చే సాపేక్షంగా శాశ్వతమైన మార్పు అని విద్యా మనోవిజ్ఞాన శాస్త్రవేత్తలు పేర్కొన్నారు."
+            },
+            {
+                question: "కింది వాటిలో అభ్యసనానికి ఉదాహరణ ఏది?",
+                options: [
+                    "ఎత్తు పెరగడం",
+                    "దంతాలు రావడం",
+                    "సైకిల్ తొక్కడం నేర్చుకోవడం",
+                    "వయస్సు పెరగడం"
+                ],
+                correct: 2,
+                explanation: "సైకిల్ తొక్కడం అనేది అనుభవం మరియు సాధన ద్వారా నేర్చుకునే నైపుణ్యం. మిగిలినవి వృద్ధి లేదా పరిపక్వతకు చెందినవి."
+            },
+            {
+                question: "వ్యక్తిగత భేదాలను గుర్తించి బోధన చేయడం వల్ల",
+                options: [
+                    "క్రమశిక్షణ తగ్గుతుంది",
+                    "అభ్యసనం మెరుగుపడుతుంది",
+                    "సమయం వృథా అవుతుంది",
+                    "పరీక్షలు తగ్గుతాయి"
+                ],
+                correct: 1,
+                explanation: "విద్యార్థుల వ్యక్తిగత అవసరాలను గుర్తించి బోధిస్తే వారి అభ్యసన ఫలితాలు మెరుగుపడతాయి."
+            },
+            {
+                question: "కింది వారిలో మానవ అభివృద్ధిని దశలుగా వివరించిన మనోవిజ్ఞాని",
+                options: [
+                    "పియాజే",
+                    "థార్న్‌డైక్",
+                    "గిల్ఫోర్డ్",
+                    "టర్మన్"
+                ],
+                correct: 0,
+                explanation: "పియాజే జ్ఞానాభివృద్ధిని నాలుగు దశలుగా వివరించాడు. ఇది APTETలో తరచుగా అడిగే అంశం."
+            },
+            {
+                question: "అభ్యసనంలో అనుభవం ద్వారా ప్రవర్తనలో మార్పు కలగడాన్ని",
+                options: [
+                    "వృద్ధి",
+                    "పరిపక్వత",
+                    "అభ్యసనం",
+                    "వారసత్వం"
+                ],
+                correct: 2,
+                explanation: "అనుభవం మరియు సాధన ఫలితంగా ప్రవర్తనలో మార్పు కలగడాన్ని అభ్యసనం (Learning) అంటారు."
+            },
+            {
+                question: "విద్యార్థుల మధ్య వ్యక్తిగత భేదాలు ఉండటానికి కారణం కానిది",
+                options: [
+                    "వారసత్వం",
+                    "పర్యావరణం",
+                    "అనుభవాలు",
+                    "ఒకే పాఠ్యపుస్తకం"
+                ],
                 correct: 3,
-                explanation: "In the revised Bloom's Taxonomy, 'Creating' is the highest level — it involves generating new ideas, products, or ways of viewing things. It goes beyond evaluation to produce original, meaningful work."
+                explanation: "వారసత్వం, పర్యావరణం, అనుభవాలు వ్యక్తిగత భేదాలకు కారణాలు. ఒకే పాఠ్యపుస్తకం ఉపయోగించడం వ్యక్తిగత భేదాలకు కారణం కాదు."
             },
             {
-                question: "What is the HCF of 36 and 48?",
-                options: ["6", "12", "18", "24"],
+                question: "వృద్ధి మరియు అభివృద్ధి మధ్య సరైన సంబంధం",
+                options: [
+                    "రెండూ ఒకటే",
+                    "వృద్ధి అభివృద్ధిలో భాగం",
+                    "అభివృద్ధి వృద్ధిలో భాగం",
+                    "రెండూ సంబంధం లేనివి"
+                ],
                 correct: 1,
-                explanation: "HCF of 36 and 48: prime factorization gives 36 = 2²×3², 48 = 2⁴×3. Common factors: 2²×3 = 12. HCF is 12."
+                explanation: "వృద్ధి ప్రధానంగా పరిమాణాత్మక మార్పు కాగా, అభివృద్ధి సమగ్ర మార్పు. అందువల్ల వృద్ధి అభివృద్ధిలో ఒక భాగం."
             },
             {
-                question: "Which layer of the atmosphere contains the ozone layer?",
-                options: ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+                question: "తరగతిలో విద్యార్థుల వైవిధ్యాన్ని గుర్తించి బోధించే ఉపాధ్యాయుడు",
+                options: [
+                    "సమగ్ర బోధనను అనుసరిస్తాడు",
+                    "కఠిన శిక్షను అనుసరిస్తాడు",
+                    "పరీక్షలపై దృష్టి పెడతాడు",
+                    "హాజరుపై మాత్రమే దృష్టి పెడతాడు"
+                ],
+                correct: 0,
+                explanation: "విద్యార్థుల వైవిధ్యాన్ని గుర్తించి వారి అవసరాలకు అనుగుణంగా బోధించడం సమగ్ర బోధన (Inclusive Teaching) లక్షణం."
+            },
+            {
+                question: "అభ్యసన ప్రక్రియలో 'ప్రయత్నం మరియు పొరపాటు' సిద్ధాంతాన్ని ప్రతిపాదించినవారు",
+                options: [
+                    "స్కిన్నర్",
+                    "థార్న్‌డైక్",
+                    "పియాజే",
+                    "కోహ్ల్‌బర్గ్"
+                ],
                 correct: 1,
-                explanation: "The ozone layer lies in the stratosphere, about 15–35 km above Earth. It absorbs harmful UV-B and UV-C radiation, protecting all living organisms from radiation damage."
+                explanation: "Trial and Error Theory ను ఎడ్వర్డ్ థార్న్‌డైక్ ప్రతిపాదించాడు. APTETలో ఇది తరచుగా అడిగే ప్రశ్న."
             },
             {
-                question: "Which literary device is used in 'The classroom was a zoo'?",
-                options: ["Simile", "Metaphor", "Hyperbole", "Alliteration"],
+                question: "కింది వాటిలో అభివృద్ధి లక్షణం కానిది",
+                options: [
+                    "నిరంతర ప్రక్రియ",
+                    "క్రమబద్ధమైనది",
+                    "జీవితాంతం కొనసాగుతుంది",
+                    "అకస్మాత్తుగా పూర్తవుతుంది"
+                ],
+                correct: 3,
+                explanation: "అభివృద్ధి నిరంతర, క్రమబద్ధమైన ప్రక్రియ. ఇది ఒక్కసారిగా పూర్తయ్యేది కాదు."
+            },
+            {
+                question: "ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD) ప్రధానంగా ప్రభావితం చేసే రంగాలు",
+                options: [
+                    "సామాజిక పరస్పర చర్య మరియు సంభాషణ",
+                    "ఎత్తు మరియు బరువు",
+                    "చూపు మరియు వినికిడి",
+                    "రక్తప్రసరణ"
+                ],
+                correct: 0,
+                explanation: "ASD ప్రధానంగా సామాజిక పరస్పర చర్యలు, కమ్యూనికేషన్ మరియు ప్రవర్తనను ప్రభావితం చేస్తుంది."
+            },
+            {
+                question: "ఆటిజం గల పిల్లలలో తరచుగా కనిపించే లక్షణం",
+                options: [
+                    "ఎకోలాలియా",
+                    "బ్రెయిల్ వినియోగం",
+                    "హైపర్‌టెన్షన్",
+                    "మయోపియా"
+                ],
+                correct: 0,
+                explanation: "ఎకోలాలియా అనగా ఇతరులు చెప్పిన మాటలను మళ్లీ మళ్లీ పలకడం. ఇది ASDలో సాధారణ లక్షణం."
+            },
+            {
+                question: "ఇతరులు చెప్పిన మాటలను మళ్లీ మళ్లీ పలకడాన్ని",
+                options: [
+                    "డిస్లెక్సియా",
+                    "ఎకోలాలియా",
+                    "అఫాసియా",
+                    "డైసార్థ్రియా"
+                ],
                 correct: 1,
-                explanation: "A metaphor directly equates two unlike things without 'like' or 'as.' Here the classroom is called a zoo, implying chaos. Similes need comparative words; metaphors make direct assertions."
+                explanation: "ఎకోలాలియా అనేది ASD పిల్లలలో కనిపించే ముఖ్య లక్షణం. వారు వినిపించిన మాటలను పునరావృతం చేస్తారు."
             },
             {
-                question: "The Chipko Movement was related to conservation of:",
-                options: ["Water", "Soil", "Forest", "Wildlife"],
+                question: "ఆటిజం సాధారణంగా గుర్తించబడే వయస్సు",
+                options: [
+                    "బాల్య దశలో",
+                    "యుక్తవయస్సులో",
+                    "వృద్ధాప్యంలో",
+                    "వివాహానంతరం"
+                ],
+                correct: 0,
+                explanation: "ఆటిజం లక్షణాలు సాధారణంగా చిన్ననాటి బాల్య దశలోనే గుర్తించబడతాయి."
+            },
+            {
+                question: "కింది వాటిలో ఆటిజం లక్షణం కాదు",
+                options: [
+                    "పునరావృత ప్రవర్తనలు",
+                    "సామాజిక పరస్పర చర్యలో ఇబ్బందులు",
+                    "సంభాషణలో ఇబ్బందులు",
+                    "దృష్టి లోపం వల్ల అంధత్వం"
+                ],
+                correct: 3,
+                explanation: "అంధత్వం ఆటిజం లక్షణం కాదు. మిగిలిన మూడు ASD యొక్క ప్రధాన లక్షణాలు."
+            },
+            {
+                question: "ASD లో 'స్పెక్ట్రమ్' అనే పదం సూచించేది",
+                options: [
+                    "ఒకే రకమైన తీవ్రత",
+                    "లక్షణాల వైవిధ్యం",
+                    "వినికిడి లోపం",
+                    "మేధో లోపం మాత్రమే"
+                ],
+                correct: 1,
+                explanation: "స్పెక్ట్రమ్ అనే పదం ఆటిజంలో లక్షణాలు మరియు తీవ్రత వ్యక్తులవారీగా మారుతాయని సూచిస్తుంది."
+            },
+            {
+                question: "ఆటిజం గల విద్యార్థికి ఉపాధ్యాయుడు అనుసరించవలసిన ఉత్తమ పద్ధతి",
+                options: [
+                    "స్పష్టమైన దినచర్య",
+                    "తరచూ మార్పులు",
+                    "శిక్ష",
+                    "నిర్లక్ష్యం"
+                ],
+                correct: 0,
+                explanation: "ASD గల విద్యార్థులు స్థిరమైన దినచర్య మరియు ముందస్తు అంచనాలు ఉన్నప్పుడు మెరుగ్గా నేర్చుకుంటారు."
+            },
+            {
+                question: "కింది వాటిలో ఆటిజం రుగ్మత కాదు",
+                options: [
+                    "Asperger Syndrome",
+                    "Childhood Autism",
+                    "Rett Syndrome",
+                    "Cataract"
+                ],
+                correct: 3,
+                explanation: "Cataract అనేది కంటి సమస్య. మిగిలినవి ఆటిజం స్పెక్ట్రమ్‌తో సంబంధం ఉన్న రుగ్మతలు."
+            },
+            {
+                question: "ఆటిజం గుర్తింపులో ముఖ్యంగా పరిశీలించేది",
+                options: [
+                    "సామాజిక ప్రవర్తన",
+                    "రక్తపోటు",
+                    "ఎత్తు",
+                    "బరువు"
+                ],
+                correct: 0,
+                explanation: "ASD గుర్తింపులో సామాజిక పరస్పర చర్యలు, కమ్యూనికేషన్ మరియు ప్రవర్తన ముఖ్యంగా పరిశీలించబడతాయి."
+            },
+            {
+                question: "ఆటిజం ఉన్న పిల్లవాడు కంటి కలయికను (Eye Contact) నివారించడం",
+                options: [
+                    "సాధారణ లక్షణం",
+                    "శారీరక వైకల్యం",
+                    "దృష్టి లోపం",
+                    "వినికిడి లోపం"
+                ],
+                correct: 0,
+                explanation: "Eye Contact నివారించడం ASDలో తరచుగా కనిపించే సామాజిక కమ్యూనికేషన్ లక్షణం."
+            },
+            {
+                question: "కింది వాటిలో ఆటిజానికి సంబంధించినది",
+                options: [
+                    "సామాజిక సంభాషణలో లోపం",
+                    "ఎముకల బలహీనత",
+                    "గుండె వ్యాధి",
+                    "మధుమేహం"
+                ],
+                correct: 0,
+                explanation: "సామాజిక సంభాషణలో లోపం ASD యొక్క ప్రధాన నిర్ధారణ ప్రమాణాలలో ఒకటి."
+            },
+            {
+                question: "ASD గుర్తింపులో ఉపయోగించే ముఖ్య వనరు",
+                options: [
+                    "ప్రవర్తనా పరిశీలన",
+                    "రక్త పరీక్ష",
+                    "ఎక్స్‌రే",
+                    "ECG"
+                ],
+                correct: 0,
+                explanation: "ఆటిజం నిర్ధారణలో ప్రవర్తనా పరిశీలన మరియు అభివృద్ధి చరిత్ర ముఖ్యమైనవి."
+            },
+            {
+                question: "ఆటిజం ఉన్న పిల్లలలో తరచుగా కనిపించే ప్రవర్తన",
+                options: [
+                    "ఒకే చర్యను పునరావృతం చేయడం",
+                    "అధిక వినికిడి శక్తి",
+                    "అధిక ఎత్తు",
+                    "అధిక బరువు"
+                ],
+                correct: 0,
+                explanation: "Repetitive Behaviours లేదా పునరావృత చర్యలు ASD యొక్క ముఖ్య లక్షణాలలో ఒకటి."
+            },
+            {
+                question: "ASD కు సరైన విస్తరణ",
+                options: [
+                    "Autism Spectrum Disorder",
+                    "Auditory Speech Disorder",
+                    "Autism Speech Delay",
+                    "Auditory Spectrum Delay"
+                ],
+                correct: 0,
+                explanation: "ASD అంటే Autism Spectrum Disorder. ఇది APTETలో తరచుగా అడిగే ప్రత్యక్ష ప్రశ్న."
+            },
+            {
+                question: "ఆటిజం ఉన్న పిల్లల బోధనలో అత్యంత ముఖ్యమైనది",
+                options: [
+                    "వ్యక్తిగత అవసరాల ఆధారిత బోధన",
+                    "ఒకే విధమైన బోధన",
+                    "శిక్ష",
+                    "పరీక్షలు మాత్రమే"
+                ],
+                correct: 0,
+                explanation: "ASD పిల్లల అవసరాలు భిన్నంగా ఉంటాయి. అందువల్ల Individualized Instruction అత్యంత ప్రభావవంతమైనది."
+            },
+            {
+                question: "He is _____ honest man.",
+                options: [
+                    "a",
+                    "an",
+                    "the",
+                    "no article"
+                ],
+                correct: 1,
+                explanation: "‘Honest’ పదం vowel sound (/ɒ/) తో ప్రారంభమవుతుంది. కాబట్టి 'an honest man' సరైన రూపం."
+            },
+            {
+                question: "The sun rises in _____ east.",
+                options: [
+                    "a",
+                    "an",
+                    "the",
+                    "no article"
+                ],
                 correct: 2,
-                explanation: "The Chipko Movement (1973, Uttarakhand) saw villagers hug trees to prevent commercial logging. Led largely by women, it became a landmark in India's environmental and grassroots social movements."
+                explanation: "దిక్కుల (east, west, north, south) ముందు సాధారణంగా 'the' article ఉపయోగిస్తారు."
             },
             {
-                question: "If 15% of a number is 90, what is the number?",
-                options: ["500", "600", "450", "750"],
+                question: "Identify the noun.",
+                options: [
+                    "Quickly",
+                    "Honest",
+                    "Teacher",
+                    "Write"
+                ],
+                correct: 2,
+                explanation: "Teacher అనేది వ్యక్తిని సూచించే Noun. మిగిలినవి Adverb, Adjective, Verb."
+            },
+            {
+                question: "Identify the adjective.",
+                options: [
+                    "Beautiful",
+                    "Beauty",
+                    "Beautify",
+                    "Beautifully"
+                ],
+                correct: 0,
+                explanation: "Beautiful అనేది Adjective. ఇది Noun ను వివరిస్తుంది."
+            },
+            {
+                question: "Each of the boys _____ present.",
+                options: [
+                    "are",
+                    "were",
+                    "is",
+                    "have"
+                ],
+                correct: 2,
+                explanation: "Each ఒక Singular Subject. కాబట్టి Singular Verb 'is' ఉపయోగించాలి."
+            },
+            {
+                question: "Neither Ram nor his friends _____ coming.",
+                options: [
+                    "is",
+                    "are",
+                    "was",
+                    "has"
+                ],
                 correct: 1,
-                explanation: "Let the number be x. (15/100) × x = 90 → x = 90 × 100 ÷ 15 = 600."
+                explanation: "Neither...nor నిర్మాణంలో దగ్గరలో ఉన్న Subject ('friends') plural కాబట్టి Verb 'are' వస్తుంది."
+            },
+            {
+                question: "Identify the pronoun.",
+                options: [
+                    "They",
+                    "Tall",
+                    "Run",
+                    "Slowly"
+                ],
+                correct: 0,
+                explanation: "They అనేది Pronoun. ఇది Noun స్థానంలో ఉపయోగించబడుతుంది."
+            },
+            {
+                question: "She bought _____ umbrella yesterday.",
+                options: [
+                    "a",
+                    "the",
+                    "an",
+                    "no article"
+                ],
+                correct: 2,
+                explanation: "Umbrella vowel sound తో ప్రారంభమవుతుంది. కాబట్టి 'an umbrella' సరైనది."
+            },
+            {
+                question: "Identify the verb.",
+                options: [
+                    "Happiness",
+                    "Quickly",
+                    "Sing",
+                    "Bright"
+                ],
+                correct: 2,
+                explanation: "Sing అనేది Verb. ఇది ఒక చర్యను సూచిస్తుంది."
+            },
+            {
+                question: "One of the students _____ absent.",
+                options: [
+                    "are",
+                    "were",
+                    "is",
+                    "have"
+                ],
+                correct: 2,
+                explanation: "'One' అనేది Singular Subject. కాబట్టి Singular Verb 'is' ఉపయోగించాలి."
+            },
+            {
+                question: "విద్యా సాంకేతికత (Educational Technology) యొక్క ప్రధాన లక్ష్యం",
+                options: [
+                    "బోధన-అభ్యసనాన్ని మెరుగుపరచడం",
+                    "పరీక్షలు పెంచడం",
+                    "శిక్షలు విధించడం",
+                    "హాజరు పెంచడం"
+                ],
+                correct: 0,
+                explanation: "విద్యా సాంకేతికత యొక్క ప్రధాన ఉద్దేశ్యం బోధన-అభ్యసన ప్రక్రియను ప్రభావవంతంగా, సులభంగా మరియు ఫలవంతంగా మార్చడం."
+            },
+            {
+                question: "విద్యా సాంకేతికతలో కింది వాటిలో ఒకటి",
+                options: [
+                    "మల్టీమీడియా",
+                    "వ్యవసాయం",
+                    "వైద్యం",
+                    "రవాణా"
+                ],
+                correct: 0,
+                explanation: "మల్టీమీడియా విద్యా సాంకేతికతలో ముఖ్యమైన సాధనం. ఇది దృశ్య, శ్రవణ అంశాలను కలిపి అభ్యసనాన్ని మెరుగుపరుస్తుంది."
+            },
+            {
+                question: "విద్యా సాంకేతికత యొక్క ముఖ్య లక్షణం",
+                options: [
+                    "లక్ష్యోద్దేశ్య బోధన",
+                    "యాదృచ్ఛిక బోధన",
+                    "శిక్షా విధానం",
+                    "పరీక్షా విధానం"
+                ],
+                correct: 0,
+                explanation: "Educational Technology లక్ష్యాలను దృష్టిలో ఉంచుకొని శాస్త్రీయంగా బోధన నిర్వహించడాన్ని ప్రోత్సహిస్తుంది."
+            },
+            {
+                question: "Communication ప్రక్రియలో సందేశాన్ని పంపేవారిని",
+                options: [
+                    "Receiver",
+                    "Sender",
+                    "Channel",
+                    "Feedback"
+                ],
+                correct: 1,
+                explanation: "Communication Process లో సందేశాన్ని రూపొందించి పంపే వ్యక్తిని Sender అంటారు."
+            },
+            {
+                question: "Communication లో Feedback యొక్క పని",
+                options: [
+                    "సందేశం పంపడం",
+                    "స్పందన తెలియజేయడం",
+                    "శబ్దం కలిగించడం",
+                    "నిల్వ చేయడం"
+                ],
+                correct: 1,
+                explanation: "Receiver నుండి Sender కు తిరిగి వచ్చే స్పందనను Feedback అంటారు. ఇది కమ్యూనికేషన్ విజయవంతమైందో లేదో తెలియజేస్తుంది."
+            },
+            {
+                question: "విద్యా సాంకేతికత యొక్క ఒక ప్రయోజనం",
+                options: [
+                    "వ్యక్తిగత అభ్యసనానికి అవకాశం",
+                    "అభ్యసనాన్ని కష్టతరం చేయడం",
+                    "ఆసక్తి తగ్గించడం",
+                    "సమయ నష్టం"
+                ],
+                correct: 0,
+                explanation: "Educational Technology Individualized Learning కు అవకాశం కల్పిస్తుంది. ప్రతి విద్యార్థి తన వేగానికి అనుగుణంగా నేర్చుకోవచ్చు."
+            },
+            {
+                question: "కింది వాటిలో దృశ్య బోధన సాధనం",
+                options: [
+                    "రేడియో",
+                    "చార్ట్",
+                    "ఆడియో రికార్డర్",
+                    "మైక్రోఫోన్"
+                ],
+                correct: 1,
+                explanation: "చార్ట్ ఒక Visual Aid. రేడియో మరియు ఆడియో రికార్డర్ Aural Aids కు ఉదాహరణలు."
+            },
+            {
+                question: "బోధనను ప్రభావవంతం చేయడానికి ఉపయోగించే సాంకేతిక పద్ధతులను",
+                options: [
+                    "విద్యా సాంకేతికత",
+                    "పరిపాలన",
+                    "ఆర్థిక శాస్త్రం",
+                    "గణాంక శాస్త్రం"
+                ],
+                correct: 0,
+                explanation: "బోధన-అభ్యసన ప్రక్రియను మెరుగుపరచేందుకు ఉపయోగించే శాస్త్రీయ పద్ధతులను Educational Technology అంటారు."
+            },
+            {
+                question: "Communication కు అడ్డంకిగా పరిగణించబడేది",
+                options: [
+                    "Noise",
+                    "Feedback",
+                    "Message",
+                    "Receiver"
+                ],
+                correct: 0,
+                explanation: "Communication Process లో సందేశం సరిగ్గా చేరకుండా చేసే ఏదైనా అంశాన్ని Noise అంటారు."
+            },
+            {
+                question: "విద్యా సాంకేతికతలో ఉపాధ్యాయుని పాత్ర",
+                options: [
+                    "అభ్యసన సౌకర్యకర్త",
+                    "పరిశీలకుడు మాత్రమే",
+                    "నియంత్రణాధికారి",
+                    "పరీక్షకుడు మాత్రమే"
+                ],
+                correct: 0,
+                explanation: "ఆధునిక విద్యా సాంకేతికతలో ఉపాధ్యాయుడు జ్ఞానాన్ని చెప్పేవాడిగా కాకుండా అభ్యసనానికి సౌకర్యం కల్పించే Facilitator గా వ్యవహరిస్తాడు."
             }
         ];
 
