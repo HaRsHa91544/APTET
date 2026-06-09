@@ -22,9 +22,9 @@
             --ink-mid: #4b5563;
             --ink-light: #9ca3af;
             --border: #e5e0d8;
-            --radius-sm: 10px;
-            --radius-md: 16px;
-            --radius-lg: 22px;
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
             --bottom-bar-h: 0px;
             /* updated by JS when bar appears */
         }
@@ -39,6 +39,8 @@
 
         html {
             scroll-behavior: smooth;
+            scrollbar-width: thin;
+            scrollbar-color: var(--coral) var(--border);
         }
 
         body {
@@ -144,7 +146,7 @@
         /* Telugu motivational line */
         .telugu-motivation {
             font-size: 0.88rem;
-            font-weight: 500;
+            font-weight: 800;
             color: var(--ink-mid);
             line-height: 1.5;
             display: flex;
@@ -162,7 +164,7 @@
             border-radius: 100px;
             padding: 3px 12px;
             font-size: 0.8rem;
-            font-weight: 700;
+            font-weight: 800;
             color: var(--teal);
             white-space: nowrap;
         }
@@ -174,8 +176,8 @@
             margin-top: 24px;
             position: relative;
             z-index: 1;
-            padding-bottom: 120px;
-            /* breathing room above sticky bar */
+            padding-bottom: calc(var(--bottom-bar-h) + 16px);
+            transition: padding-bottom .38s cubic-bezier(.4, 0, .2, 1);
         }
 
         /* ─── QUIZ TOP BAR ───────────────────────────── */
@@ -244,7 +246,7 @@
         /* ─── TIMER — circular ring ──────────────────── */
         .timer-ring-wrap {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             margin-bottom: 16px;
         }
 
@@ -503,11 +505,9 @@
 
         .next-btn:hover {
             opacity: .88;
-            transform: translateY(-1px);
         }
 
         .next-btn:active {
-            transform: translateY(0);
             opacity: 1;
         }
 
@@ -673,7 +673,7 @@
             z-index: 1;
             margin-top: 40px;
             margin-bottom: 28px;
-            font-size: 0.78rem;
+            font-size: 0.9rem;
             color: var(--ink-light);
             text-align: center;
         }
@@ -728,7 +728,7 @@
             </div>
         </div>
         <p class="telugu-motivation">
-            <span class="goal-badge">🎯 120+ మార్కులు</span>
+            <span class="goal-badge">🎯 120+ Marks</span>
             మీరు కష్టపడుతున్నారు విజయం మీదే, Prasad గారూ! 💪
         </p>
     </header>
@@ -1024,14 +1024,22 @@
 
         /* ─── Bottom bar ─────────────────────────────── */
         function showBottomBar(explanation) {
+            const bar = document.getElementById('bottom-bar');
             document.getElementById('exp-text').textContent = explanation;
             const isLast = (qIdx + 1 >= QUESTIONS.length);
             document.getElementById('next-btn').textContent = isLast ? 'See Results →' : 'Next Question →';
-            document.getElementById('bottom-bar').classList.add('visible');
+
+            bar.classList.add('visible');
+
+            // Set height variable so padding-bottom on <main> updates
+            // Use offsetHeight of the bar (which contains the inner content)
+            const height = Number(bar.offsetHeight) - 80;
+            document.documentElement.style.setProperty('--bottom-bar-h', height + 'px');
         }
 
         function hideBottomBar() {
             document.getElementById('bottom-bar').classList.remove('visible');
+            document.documentElement.style.setProperty('--bottom-bar-h', '0px');
         }
 
         /* ─── Next ───────────────────────────────────── */
