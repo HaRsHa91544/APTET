@@ -169,6 +169,43 @@
             white-space: nowrap;
         }
 
+        /* Subjects Strip */
+        .subjects-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .subject-tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--teal);
+            background: #e6f6f7;
+            border: 1px solid #b2e1e3;
+            padding: 4px 10px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all .2s ease;
+        }
+
+        .subject-tag:hover {
+            transform: translateY(-2px);
+            background: var(--teal);
+            color: var(--white);
+            box-shadow: 0 4px 12px rgba(13, 115, 119, 0.15);
+        }
+
+        .subject-tag::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background: var(--coral);
+            border-radius: 50%;
+        }
+
         /* ─── MAIN ───────────────────────────────────── */
         main {
             width: 100%;
@@ -731,6 +768,7 @@
             <span class="goal-badge">🎯 Goal: 120+ Marks</span>
             మీరు కష్టపడుతున్నారు విజయం మీదే, Prasad గారూ! 💪
         </p>
+        <div class="subjects-strip" id="subjects-strip"></div>
     </header>
 
     <main>
@@ -1390,6 +1428,13 @@
             }
         ];
 
+        const SUBJECTS = [
+            "Child Development",
+            "Autism",
+            "English",
+            "ICT"
+        ];
+
         /* ─── CONSTANTS ──────────────────────────────── */
         const EXAM_DATE = new Date('2026-08-05T00:00:00');
         const SECS_PER_Q = 60;
@@ -1584,6 +1629,14 @@
         }
 
         /* ─── Boot ───────────────────────────────────── */
+        function renderSubjects() {
+            const container = document.getElementById('subjects-strip');
+            if (container) {
+                container.innerHTML = SUBJECTS.map(s => `<span class="subject-tag">${s}</span>`).join('');
+            }
+        }
+
+        renderSubjects();
         startQuiz();
     </script>
 </body>
