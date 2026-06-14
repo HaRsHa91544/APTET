@@ -384,6 +384,26 @@ main {
     color: var(--ink);
 }
 
+/* ─── LOCK NOTICE ────────────────────────────── */
+.lock-notice {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--amber);
+    margin: 0 auto 12px;
+    background: #fff9eb;
+    padding: 6px 16px;
+    border-radius: 100px;
+    border: 1px solid #fef3c7;
+    display: block;
+    width: fit-content;
+    animation: fadeUp .3s ease both;
+}
+
+#lock-timer {
+    color: var(--coral);
+}
+
 /* ─── OPTIONS ────────────────────────────────── */
 .options-list {
     display: flex;
@@ -464,6 +484,11 @@ main {
 
 .opt:disabled {
     cursor: not-allowed;
+}
+
+.opt:disabled:not(.correct):not(.wrong) {
+    opacity: 0.75;
+    background: #f9f9f9;
 }
 
 /* ─── STICKY BOTTOM BAR ──────────────────────── */

@@ -64,6 +64,12 @@ function loadQ() {
 
     document.getElementById('q-text').textContent = q.question;
 
+    const lockNotice = document.getElementById('lock-notice');
+    if (lockNotice) {
+        lockNotice.style.display = 'block';
+        document.getElementById('lock-timer').textContent = '15';
+    }
+
     const list = document.getElementById('options-list');
     const keys = ['A', 'B', 'C', 'D'];
     list.innerHTML = '';
@@ -72,6 +78,7 @@ function loadQ() {
         btn.className = 'opt';
         btn.innerHTML = `<span class="opt-key">${keys[i]}</span><span>${opt}</span>`;
         btn.onclick = () => pick(i);
+        btn.disabled = true; // Initially disabled to force reading
         list.appendChild(btn);
     });
 
@@ -101,6 +108,25 @@ function refreshTimerUI() {
     arc.style.strokeDashoffset = offset;
 
     secsEl.textContent = timeLeft;
+
+    // Handle options locking logic
+    const lockNotice = document.getElementById('lock-notice');
+    const waitTime = timeLeft - 45; // 60 - 45 = 15
+
+    if (waitTime > 0 && !answered) {
+        if (lockNotice) {
+            lockNotice.style.display = 'block';
+            document.getElementById('lock-timer').textContent = waitTime;
+        }
+    } else {
+        if (lockNotice) lockNotice.style.display = 'none';
+        // Enable options
+        if (!answered) {
+            document.querySelectorAll('.opt').forEach(btn => {
+                if (btn.disabled) btn.disabled = false;
+            });
+        }
+    }
 
     const urgent = timeLeft <= 15;
     arc.classList.toggle('urgent', urgent);
