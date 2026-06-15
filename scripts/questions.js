@@ -1,3 +1,10 @@
+const SUBJECTS = [
+    "Intellectual Disability",
+    "Child Development",
+    "English",
+    "Telugu",
+];
+
 const QUESTIONS = [
     {
         question: "Mild Intellectual Disability గల వ్యక్తుల IQ పరిధి ఏది?",

@@ -12,16 +12,6 @@
    ]
 ══════════════════════════════════════════════════ */
 
-const SUBJECTS = [
-    "Child Development",
-    "ICT",
-    "English",
-    "Telugu",
-    "Autism",
-    "Hearing Impairment",
-    "Learning Disability"
-];
-
 /* ─── CONSTANTS ──────────────────────────────── */
 const EXAM_DATE = new Date('2026-08-05T00:00:00');
 const SECS_PER_Q = 60;
