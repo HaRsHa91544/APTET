@@ -1,559 +1,309 @@
 const SUBJECTS = [
-    "Intellectual Disability",
-    "ICT",
+    "Visual Impairment",
+    "Child Development",
     "English",
     "Telugu",
 ];
 
 const QUESTIONS = [
     {
-        question: "మేధో వైకల్యం (Intellectual Disability) యొక్క ముఖ్య లక్షణం ఏది?",
-        options: [
-            "కేవలం భాషా లోపం",
-            "అనుకూల ప్రవర్తనలో పరిమితులు మరియు తక్కువ మేధస్సు",
-            "కేవలం శారీరక లోపం",
-            "దృష్టి లోపం"
-        ],
+        question: "దృష్టి స్పష్టతను కొలవడానికి ఉపయోగించే పరికరం ఏది?",
+        options: ["Braille Slate", "Snellen Chart", "JAWS", "Abacus"],
         correct: 1,
-        explanation: "మేధో వైకల్యం అనేది తక్కువ మేధో సామర్థ్యంతో పాటు దైనందిన జీవితంలో అవసరమైన అనుకూల ప్రవర్తనా నైపుణ్యాలలో గణనీయమైన పరిమితులు కలిగి ఉండే స్థితి."
+        explanation: "Snellen Chart దృష్టి స్పష్టత (Visual Acuity) ను కొలవడానికి ఉపయోగించే ప్రామాణిక పరికరం. కంటి చూపు ఎంత స్పష్టంగా ఉందో దీనివల్ల అంచనా వేయబడుతుంది."
     },
     {
-        question: "క్రింది వాటిలో IEP యొక్క ప్రధాన భాగం ఏది?",
-        options: [
-            "సూచిక",
-            "ముందుమాట",
-            "లక్ష్యాలు",
-            "గ్రంథసూచి"
-        ],
-        correct: 2,
-        explanation: "IEPలో విద్యార్థి సాధించాల్సిన కొలవదగిన స్వల్పకాలిక మరియు దీర్ఘకాలిక లక్ష్యాలు అత్యంత ముఖ్యమైన భాగంగా పరిగణించబడతాయి."
-    },
-    {
-        question: "50–70 IQ పరిధి సాధారణంగా ఏ వర్గానికి చెందుతుంది?",
-        options: [
-            "తీవ్రమైన మేధో వైకల్యం",
-            "మధ్యస్థ మేధో వైకల్యం",
-            "స్వల్ప మేధో వైకల్యం",
-            "అత్యంత తీవ్రమైన మేధో వైకల్యం"
-        ],
-        correct: 2,
-        explanation: "APTET మరియు ప్రత్యేక విద్యలో సాధారణంగా IQ 50 నుండి 70 మధ్య ఉంటే దానిని స్వల్ప మేధో వైకల్యం (Mild Intellectual Disability)గా వర్గీకరిస్తారు."
-    },
-    {
-        question: "IEP తయారీలో అత్యంత ప్రాధాన్యత ఇవ్వాల్సింది",
-        options: [
-            "పాఠ్యపుస్తకం",
-            "విద్యార్థి వ్యక్తిగత అవసరాలు",
-            "పాఠశాల నియమాలు",
-            "తల్లిదండ్రుల వృత్తి"
-        ],
+        question: "6/60 కంటే తక్కువ దృష్టి స్పష్టత కలిగిన వ్యక్తిని సాధారణంగా ఏమని పరిగణిస్తారు?",
+        options: ["Low Vision", "Blindness", "Deaf Blind", "Multiple Disability"],
         correct: 1,
-        explanation: "IEP విద్యార్థి యొక్క బలాలు, బలహీనతలు, అవసరాలు మరియు ప్రస్తుత పనితీరు ఆధారంగా రూపొందించబడాలి."
+        explanation: "6/60 కంటే తక్కువ దృష్టి స్పష్టత ఉన్న వ్యక్తిని సాధారణంగా Blindness వర్గంలో పరిగణిస్తారు. ఇది తీవ్రమైన దృష్టి లోపాన్ని సూచించే ప్రమాణం."
     },
     {
-        question: "మేధో వైకల్యం గల విద్యార్థులకు బోధనలో అత్యంత సముచితమైన పద్ధతి",
-        options: [
-            "ఉపన్యాస పద్ధతి",
-            "అమూర్త భావనలు",
-            "మూర్తం నుండి అమూర్తానికి",
-            "స్వయంఅధ్యయనం"
-        ],
+        question: "Braille లిపిని అభివృద్ధి చేసిన వ్యక్తి ఎవరు?",
+        options: ["Helen Keller", "Samuel Gridley Howe", "Louis Braille", "Thomas Edison"],
         correct: 2,
-        explanation: "మేధో వైకల్యం గల విద్యార్థులు ప్రత్యక్ష అనుభవాల ద్వారా బాగా నేర్చుకుంటారు. అందువల్ల మూర్త భావనల నుండి అమూర్త భావనలకు బోధించడం సమర్థవంతం."
+        explanation: "Louis Braille దృష్టి లోపం ఉన్నవారి కోసం Braille లిపిని రూపొందించారు. ఈ లిపి స్పర్శ ఆధారంగా చదవడానికి మరియు వ్రాయడానికి ఉపయోగపడుతుంది."
     },
     {
-        question: "“సమాజంలో స్వతంత్రంగా జీవించడానికి అవసరమైన మేధస్సు లేకపోవడం” అని మేధో వైకల్యాన్ని నిర్వచించినవారు",
-        options: [
-            "Benda",
-            "Piaget",
-            "Kohlberg",
-            "Skinner"
-        ],
+        question: "JAWS ప్రధానంగా ఉపయోగించేది",
+        options: ["Hearing Impairment", "Visual Impairment", "Autism", "Intellectual Disability"],
+        correct: 1,
+        explanation: "JAWS అనేది Visual Impairment ఉన్న వ్యక్తుల కోసం రూపొందించిన స్క్రీన్ రీడర్. ఇది కంప్యూటర్‌లోని సమాచారాన్ని శబ్ద రూపంలో వినిపిస్తుంది."
+    },
+    {
+        question: "JAWS అనేది",
+        options: ["Hearing Aid Software", "Screen Reader Software", "Speech Therapy Tool", "Magnification Device"],
+        correct: 1,
+        explanation: "JAWS ఒక Screen Reader Software. ఇది కంప్యూటర్ స్క్రీన్‌లో కనిపించే సమాచారాన్ని మాటల రూపంలో వినిపించి దృష్టి లోపం ఉన్నవారికి సహాయం చేస్తుంది."
+    },
+    {
+        question: "Snellen Chart లో సాధారణ దృష్టి స్పష్టత",
+        options: ["6/6", "6/18", "6/60", "3/60"],
         correct: 0,
-        explanation: "సమాజంలో స్వతంత్ర జీవనానికి తగిన మేధో సామర్థ్యం లేకపోవడాన్ని Benda మేధో వైకల్యంగా నిర్వచించారు. ఇది గత APTET ప్రశ్నల్లో కూడా కనిపించింది."
+        explanation: "6/6 అనేది సాధారణ దృష్టి స్పష్టతకు ప్రామాణిక కొలత. వ్యక్తి 6 మీటర్ల దూరంలో సాధారణ వ్యక్తి చూసే అక్షరాలను స్పష్టంగా చూడగలడు."
     },
     {
-        question: "IEP సాధారణంగా ఎవరి సహకారంతో రూపొందించబడుతుంది?",
-        options: [
-            "ప్రత్యేక ఉపాధ్యాయుడు మాత్రమే",
-            "ప్రధానోపాధ్యాయుడు మాత్రమే",
-            "బహుళశాఖ బృందం",
-            "సహవిద్యార్థులు"
-        ],
+        question: "Braille లిపి ప్రధానంగా ఏ ఇంద్రియాన్ని ఆధారంగా చేసుకొని చదవబడుతుంది?",
+        options: ["వినికిడి", "చూపు", "స్పర్శ", "వాసన"],
         correct: 2,
-        explanation: "IEP రూపకల్పనలో ప్రత్యేక ఉపాధ్యాయుడు, సాధారణ ఉపాధ్యాయుడు, తల్లిదండ్రులు, నిపుణులు మరియు అవసరమైతే విద్యార్థి కూడా భాగస్వాములు అవుతారు."
+        explanation: "Braille లిపిని వేళ్లతో స్పర్శించి చదువుతారు. అందువల్ల ఇది స్పర్శ ఇంద్రియంపై ఆధారపడిన చదవు విధానం."
     },
     {
-        question: "Curriculum Adaptation యొక్క ప్రధాన ఉద్దేశ్యం",
-        options: [
-            "పరీక్షలు రద్దు చేయడం",
-            "అందరికీ ఒకే పాఠ్యాంశం",
-            "విద్యార్థి అవసరాలకు అనుగుణంగా మార్పులు",
-            "తరగతి పరిమాణం తగ్గించడం"
-        ],
-        correct: 2,
-        explanation: "Curriculum Adaptation ద్వారా విద్యార్థి సామర్థ్యాలు మరియు అవసరాలకు అనుగుణంగా బోధనా ప్రక్రియలో మార్పులు చేస్తారు."
-    },
-    {
-        question: "క్రింది వాటిలో Accommodation ఉదాహరణ ఏది?",
-        options: [
-            "ప్రశ్నల సంఖ్య తగ్గించడం",
-            "అదనపు సమయం ఇవ్వడం",
-            "సిలబస్ తొలగించడం",
-            "గ్రేడ్ మార్చడం"
-        ],
-        correct: 1,
-        explanation: "Accommodationలో విద్యార్థి నేర్చుకునే లక్ష్యాలను మార్చకుండా బోధన లేదా మూల్యాంకనంలో సౌకర్యాలు కల్పిస్తారు. అదనపు సమయం అందులో ఒకటి."
-    },
-    {
-        question: "Modification కు ఉదాహరణ",
-        options: [
-            "పెద్ద అక్షరాలు",
-            "రీడర్ సహాయం",
-            "పాఠ్యాంశ లక్ష్యాలలో మార్పు",
-            "అదనపు సమయం"
-        ],
-        correct: 2,
-        explanation: "Modificationలో విద్యార్థి సామర్థ్యానికి అనుగుణంగా పాఠ్యాంశ లక్ష్యాలు లేదా నేర్చుకోవాల్సిన అంశాలను మార్చడం జరుగుతుంది."
-    },
-    {
-        question: "మేధో వైకల్యం గల విద్యార్థుల మూల్యాంకనంలో ముఖ్యంగా పరిశీలించేది",
-        options: [
-            "కేవలం IQ",
-            "అనుకూల ప్రవర్తన",
-            "ఎత్తు",
-            "బరువు"
-        ],
-        correct: 1,
-        explanation: "ప్రస్తుతం మేధో వైకల్య నిర్ధారణలో IQతో పాటు అనుకూల ప్రవర్తనా నైపుణ్యాల మూల్యాంకనానికి కూడా సమాన ప్రాధాన్యత ఇస్తారు."
-    },
-    {
-        question: "Task Analysis అంటే",
-        options: [
-            "పనిని చిన్న దశలుగా విభజించడం",
-            "పరీక్ష నిర్వహణ",
-            "శిక్ష విధానం",
-            "గ్రేడింగ్"
-        ],
+        question: "క్రింది వాటిలో దృష్టి లోపం ఉన్న విద్యార్థులకు సహాయక సాంకేతికత ఏది?",
+        options: ["Braille Display", "Hearing Aid", "Cochlear Implant", "FM System"],
         correct: 0,
-        explanation: "సంక్లిష్టమైన పనిని చిన్నచిన్న దశలుగా విభజించి క్రమపద్ధతిలో బోధించడాన్ని Task Analysis అంటారు."
+        explanation: "Braille Display కంప్యూటర్ సమాచారాన్ని Braille రూపంలో చూపిస్తుంది. ఇది దృష్టి లోపం ఉన్న విద్యార్థులకు ఉపయోగపడే సహాయక సాంకేతికత."
     },
     {
-        question: "Chaining బోధనా పద్ధతి ఎక్కువగా ఉపయోగించేది",
-        options: [
-            "జీవన నైపుణ్యాల బోధనలో",
-            "కవిత్వ బోధనలో",
-            "వ్యాకరణంలో",
-            "చిత్రలేఖనంలో"
-        ],
+        question: "JAWS యొక్క విస్తరించిన రూపం",
+        options: ["Job Access With Speech", "Joint Access With Sound", "Job Assistance With Screen", "Joint Audio Work System"],
         correct: 0,
-        explanation: "చేతులు కడుక్కోవడం, దంతాలు తోముకోవడం వంటి జీవన నైపుణ్యాలను దశలవారీగా బోధించడానికి Chaining పద్ధతి ఉపయోగిస్తారు."
+        explanation: "JAWS యొక్క పూర్తి రూపం Job Access With Speech. ఇది స్క్రీన్‌లోని సమాచారాన్ని శబ్ద రూపంలో వినిపించే ప్రముఖ స్క్రీన్ రీడర్."
     },
     {
-        question: "క్రింది వాటిలో Reinforcement ఉదాహరణ",
-        options: [
-            "శిక్ష",
-            "ప్రశంస",
-            "నిర్లక్ష్యం",
-            "హెచ్చరిక"
-        ],
+        question: "Blindness ప్రమాణాల్లో తరచుగా ఉపయోగించే కొలత",
+        options: ["IQ", "Visual Acuity", "Motivation Score", "Achievement Score"],
         correct: 1,
-        explanation: "విద్యార్థి సరైన ప్రవర్తనను పునరావృతం చేయడానికి ప్రశంస, బహుమతి వంటి ప్రోత్సాహకాలను Reinforcement అంటారు."
+        explanation: "Blindness ను నిర్ధారించడంలో Visual Acuity ప్రధాన ప్రమాణం. వ్యక్తి చూపు స్థాయిని కొలిచి దృష్టి లోప తీవ్రతను నిర్ణయిస్తారు."
     },
     {
-        question: "Functional Curriculum ప్రధానంగా దృష్టి సారించేది",
-        options: [
-            "పోటీ పరీక్షలు",
-            "జీవిత నైపుణ్యాలు",
-            "సాహిత్యం",
-            "పరిశోధన"
-        ],
+        question: "Braille Cell లో మొత్తం చుక్కల సంఖ్య",
+        options: ["4", "5", "6", "8"],
+        correct: 2,
+        explanation: "ఒక Braille Cell లో 6 చుక్కలు ఉంటాయి. వీటి వివిధ కలయికల ద్వారా అక్షరాలు, సంఖ్యలు మరియు చిహ్నాలు సూచించబడతాయి."
+    },
+    {
+        question: "దృష్టి లోపం ఉన్న విద్యార్థికి కంప్యూటర్‌లో పాఠ్యాన్ని వినిపించే సాఫ్ట్‌వేర్",
+        options: ["Excel", "Moodle", "JAWS", "Canva"],
+        correct: 2,
+        explanation: "JAWS సాఫ్ట్‌వేర్ కంప్యూటర్ స్క్రీన్‌పై ఉన్న పాఠ్యాన్ని శబ్దంగా చదివి వినిపిస్తుంది. ఇది దృష్టి లోపం ఉన్న విద్యార్థులకు ఎంతో ఉపయోగకరం."
+    },
+    {
+        question: "Snellen Chart పరీక్ష ప్రధానంగా ఏదిని గుర్తిస్తుంది?",
+        options: ["Hearing Loss", "Visual Acuity", "IQ Level", "Speech Disorder"],
         correct: 1,
-        explanation: "Functional Curriculum విద్యార్థి స్వతంత్ర జీవనానికి అవసరమైన వ్యక్తిగత, సామాజిక మరియు వృత్తి నైపుణ్యాల అభివృద్ధిపై దృష్టి పెడుతుంది."
+        explanation: "Snellen Chart ద్వారా వ్యక్తి Visual Acuity లేదా దృష్టి స్పష్టతను కొలుస్తారు. కంటి చూపు స్థాయిని అంచనా వేయడానికి ఇది ఉపయోగపడుతుంది."
     },
     {
-        question: "IEP సమీక్ష సాధారణంగా",
-        options: [
-            "ఒకసారి మాత్రమే",
-            "అవసరానుసారం కాలానుగుణంగా",
-            "10 సంవత్సరాలకు ఒకసారి",
-            "ఎప్పుడూ కాదు"
-        ],
+        question: "క్రింది వాటిలో Low Vision కు సంబంధించినది",
+        options: ["పూర్తిగా చూపులేకపోవడం", "కొంత ఉపయోగకరమైన చూపు ఉండడం", "వినికిడి లోపం", "బుద్ధిమాంద్యం"],
         correct: 1,
-        explanation: "IEP స్థిరమైన పత్రం కాదు. విద్యార్థి పురోగతి, అవసరాలు మరియు సాధనలను బట్టి క్రమం తప్పకుండా సమీక్షించి సవరించాలి."
+        explanation: "Low Vision అంటే పూర్తిగా చూపు కోల్పోకపోయినా సాధారణ చూపు కంటే తక్కువగా ఉండడం. కొంత ఉపయోగకరమైన చూపు మాత్రం మిగిలి ఉంటుంది."
     },
     {
-        question: "Least Restrictive Environment (LRE) భావన సంబంధించింది",
-        options: [
-            "ప్రత్యేక పాఠశాల",
-            "సమగ్ర విద్య",
-            "వృత్తి విద్య",
-            "హోమ్ స్కూలింగ్"
-        ],
+        question: "Braille పుస్తకాలు ప్రధానంగా ఏ విద్యార్థులకు ఉపయోగపడతాయి?",
+        options: ["ASD", "LD", "VI", "HI"],
+        correct: 2,
+        explanation: "Braille పుస్తకాలు ప్రధానంగా Visual Impairment (VI) ఉన్న విద్యార్థుల కోసం రూపొందించబడతాయి. ఇవి స్పర్శ ద్వారా చదవడానికి సహాయపడతాయి."
+    },
+    {
+        question: "Screen Reader ఉపయోగించే విద్యార్థి ఎక్కువగా ఏ వర్గానికి చెందినవాడు?",
+        options: ["HI", "VI", "ID", "LD"],
         correct: 1,
-        explanation: "LRE ప్రకారం విద్యార్థిని సాధ్యమైనంత వరకు సాధారణ తరగతి గదిలో తగిన సహాయాలతో బోధించాలి. ఇది సమగ్ర విద్య యొక్క ముఖ్య సూత్రం."
+        explanation: "Screen Reader సాఫ్ట్‌వేర్ స్క్రీన్‌లోని సమాచారాన్ని శబ్ద రూపంలో చదివి వినిపిస్తుంది. ఇది ప్రధానంగా Visual Impairment (VI) ఉన్న విద్యార్థులకు ఉపయోగపడుతుంది."
     },
     {
-        question: "క్రింది వాటిలో Teaching Strategy కాదు",
-        options: [
-            "Prompting",
-            "Modeling",
-            "Shaping",
-            "Audiogram"
-        ],
+        question: "Blindness నిర్వచనంలో తరచుగా పేర్కొనే దృష్టి స్పష్టత",
+        options: ["3/60 లేదా తక్కువ", "6/6", "6/9", "6/12"],
+        correct: 0,
+        explanation: "3/60 లేదా అంతకంటే తక్కువ దృష్టి స్పష్టత తీవ్రమైన దృష్టి లోపాన్ని సూచిస్తుంది. అందువల్ల Blindness నిర్వచనంలో ఈ ప్రమాణాన్ని తరచుగా ఉపయోగిస్తారు."
+    },
+    {
+        question: "Braille ను చదివే సమయంలో ఉపయోగించే వేళ్లు",
+        options: ["బొటనవేలు", "చూపుడు వేళ్లు", "చిటికెన వేళ్లు", "మధ్యవేలు"],
+        correct: 1,
+        explanation: "Braille చదివేటప్పుడు ఎక్కువగా చూపుడు వేళ్లను ఉపయోగిస్తారు. ఇవి స్పర్శను సులభంగా గుర్తించగల సామర్థ్యం కలిగి ఉంటాయి."
+    },
+    {
+        question: "దృష్టి లోపం ఉన్న విద్యార్థులకు కంప్యూటర్ వినియోగంలో అత్యంత ఉపయుక్తమైనది",
+        options: ["Screen Reader", "Printer", "Scanner", "Webcam"],
+        correct: 0,
+        explanation: "Screen Reader కంప్యూటర్ సమాచారాన్ని శబ్దంగా వినిపిస్తుంది. అందువల్ల దృష్టి లోపం ఉన్న విద్యార్థులకు ఇది అత్యంత ముఖ్యమైన సహాయక సాధనం."
+    },
+    {
+        question: "క్రింది వాటిలో Visual Impairment కు సంబంధించినది",
+        options: ["Snellen Chart", "Audiometer", "Cochlear Implant", "Speech Trainer"],
+        correct: 0,
+        explanation: "Snellen Chart కంటి చూపు స్పష్టతను కొలవడానికి ఉపయోగిస్తారు. ఇది Visual Impairment అంచనాలో ముఖ్యమైన పరికరం."
+    },
+    {
+        question: "\"Learning is best when the learner has a strong desire to achieve\" అనే భావన దేనికి సంబంధించినది?",
+        options: ["Attention", "Motivation", "Perception", "Memory"],
+        correct: 1,
+        explanation: "విద్యార్థిలో నేర్చుకోవాలనే బలమైన ఆసక్తి మరియు లక్ష్యసాధన కోరిక ఉండటం Motivation కు సంబంధించిన ముఖ్యమైన అంశం."
+    },
+    {
+        question: "Maslow అవసరాల క్రమంలో అత్యున్నత స్థాయి",
+        options: ["Safety Needs", "Social Needs", "Esteem Needs", "Self-Actualization"],
         correct: 3,
-        explanation: "Audiogram అనేది వినికిడి సామర్థ్యాన్ని కొలిచే గ్రాఫికల్ నివేదిక. ఇది బోధనా వ్యూహం కాదు."
+        explanation: "Maslow అవసరాల క్రమంలో Self-Actualization అత్యున్నత స్థాయి. వ్యక్తి తన సంపూర్ణ సామర్థ్యాన్ని సాధించాలనే దశను ఇది సూచిస్తుంది."
     },
     {
-        question: "ఒక విద్యార్థి దంతాల శుభ్రత నేర్చుకునేందుకు ప్రతి దశను విడిగా బోధించడం",
-        options: [
-            "Chaining",
-            "Acceleration",
-            "Streaming",
-            "Team Teaching"
-        ],
+        question: "బాహ్య బహుమతుల ద్వారా కలిగే ప్రేరణ",
+        options: ["Intrinsic Motivation", "Extrinsic Motivation", "Self Motivation", "Achievement Motivation"],
+        correct: 1,
+        explanation: "బహుమతులు, ప్రశంసలు లేదా ఇతర బాహ్య ప్రోత్సాహకాల వల్ల కలిగే ప్రేరణను Extrinsic Motivation అంటారు."
+    },
+    {
+        question: "IQ పరీక్షల అభివృద్ధికి ప్రసిద్ధి చెందిన వ్యక్తి",
+        options: ["Piaget", "Kohlberg", "Binet", "Bruner"],
+        correct: 2,
+        explanation: "Alfred Binet మొదటి ఆధునిక మేధస్సు పరీక్షను అభివృద్ధి చేశారు. అందువల్ల IQ పరీక్షల అభివృద్ధిలో ఆయనకు విశేష గుర్తింపు ఉంది."
+    },
+    {
+        question: "Intelligence Quotient (IQ) కు సంక్షిప్త రూపం",
+        options: ["Intelligence Quality", "Intelligent Question", "Intelligence Quotient", "Intelligent Quotient"],
+        correct: 2,
+        explanation: "IQ యొక్క పూర్తి రూపం Intelligence Quotient. ఇది వ్యక్తి మేధస్సు స్థాయిని అంచనా వేయడానికి ఉపయోగించే ప్రమాణం."
+    },
+    {
+        question: "విద్యార్థి తన ఆసక్తితో నేర్చుకోవడం",
+        options: ["Extrinsic Motivation", "Intrinsic Motivation", "Reinforcement", "Punishment"],
+        correct: 1,
+        explanation: "బాహ్య ప్రోత్సాహం లేకుండా స్వయంగా ఆసక్తితో నేర్చుకోవడాన్ని Intrinsic Motivation అంటారు. ఇది స్థిరమైన అభ్యాసానికి దోహదం చేస్తుంది."
+    },
+    {
+        question: "Multiple Intelligence Theory ను ప్రతిపాదించినవారు",
+        options: ["Gardner", "Binet", "Skinner", "Thorndike"],
         correct: 0,
-        explanation: "ఒక పనిని దశలుగా విభజించి క్రమపద్ధతిలో నేర్పడం Chaining. జీవన నైపుణ్యాల బోధనలో ఇది విస్తృతంగా ఉపయోగిస్తారు."
+        explanation: "Howard Gardner Multiple Intelligence Theory ను ప్రతిపాదించారు. ఆయన ప్రకారం మేధస్సుకు అనేక రూపాలు ఉంటాయి."
     },
     {
-        question: "IEP లక్ష్యాలు ఎలా ఉండాలి?",
-        options: [
-            "అస్పష్టంగా",
-            "కొలవలేనివిగా",
-            "SMART విధానంలో",
-            "దీర్ఘంగా మాత్రమే"
-        ],
+        question: "సాధారణంగా Gifted Children IQ",
+        options: ["90 పైగా", "100 పైగా", "130 పైగా", "70 పైగా"],
         correct: 2,
-        explanation: "IEP లక్ష్యాలు Specific, Measurable, Achievable, Relevant, Time-bound (SMART) సూత్రాల ఆధారంగా ఉండాలి."
+        explanation: "సాధారణంగా IQ 130 లేదా అంతకంటే ఎక్కువ ఉన్న పిల్లలను Gifted Children గా పరిగణిస్తారు. వీరికి ప్రత్యేక విద్యా అవసరాలు ఉంటాయి."
     },
     {
-        question: "మల్టీమీడియా బోధనలో ప్రధాన లక్షణం",
-        options: [
-            "కేవలం పాఠ్యాంశం",
-            "కేవలం ధ్వని",
-            "ధ్వని, చిత్రం, వీడియోల సమన్వయం",
-            "కేవలం గ్రాఫిక్స్"
-        ],
+        question: "తరగతిలో ప్రశంసలు ఇవ్వడం ప్రధానంగా",
+        options: ["Punishment", "Motivation", "Evaluation", "Observation"],
+        correct: 1,
+        explanation: "ప్రశంసలు విద్యార్థులను మరింత మెరుగ్గా పనిచేయడానికి ప్రేరేపిస్తాయి. కాబట్టి ఇది Motivation కు ఉదాహరణ."
+    },
+    {
+        question: "\"Intelligence is the ability to act purposefully and think rationally\" అని నిర్వచించినవారు",
+        options: ["Terman", "Wechsler", "Piaget", "Guilford"],
+        correct: 1,
+        explanation: "David Wechsler మేధస్సును ఉద్దేశపూర్వకంగా వ్యవహరించే, తార్కికంగా ఆలోచించే మరియు పరిసరాలకు అనుగుణంగా ప్రవర్తించే సామర్థ్యంగా నిర్వచించారు."
+    },
+    {
+        question: "He arrived ___ Hyderabad yesterday.",
+        options: ["at", "in", "on", "by"],
+        correct: 1,
+        explanation: "పట్టణాలు, నగరాలు, దేశాల పేర్ల ముందు సాధారణంగా 'in' preposition ఉపయోగిస్తారు. కాబట్టి 'He arrived in Hyderabad yesterday' అనేది సరైన వాక్యం."
+    },
+    {
+        question: "The meeting starts ___ 10 a.m.",
+        options: ["in", "on", "at", "from"],
         correct: 2,
-        explanation: "మల్టీమీడియా అనేది పాఠ్యం, ధ్వని, చిత్రాలు, యానిమేషన్ మరియు వీడియోలను కలిపి అభ్యాసాన్ని ప్రభావవంతంగా చేసే విధానం."
+        explanation: "ఖచ్చితమైన సమయాన్ని సూచించేటప్పుడు 'at' preposition ఉపయోగిస్తారు. ఉదాహరణకు at 10 a.m., at noon, at midnight."
     },
     {
-        question: "Flanders Interaction Analysis ప్రధానంగా దేనిని విశ్లేషిస్తుంది?",
-        options: [
-            "పరీక్ష ఫలితాలు",
-            "తరగతి గది పరస్పర చర్యలు",
-            "పాఠ్యపుస్తకాలు",
-            "కంప్యూటర్ పనితీరు"
-        ],
+        question: "She is interested ___ music.",
+        options: ["on", "in", "for", "by"],
         correct: 1,
-        explanation: "Flanders వ్యవస్థ ఉపాధ్యాయుడు మరియు విద్యార్థుల మధ్య జరిగే మౌఖిక పరస్పర చర్యలను విశ్లేషించడానికి ఉపయోగించబడుతుంది."
+        explanation: "Interested అనే adjective తర్వాత సాధారణంగా 'in' preposition వస్తుంది. 'Interested in music' అంటే సంగీతంపై ఆసక్తి కలిగి ఉండటం."
     },
     {
-        question: "DIKSHA అనేది",
-        options: [
-            "ఆపరేటింగ్ సిస్టమ్",
-            "విద్యా డిజిటల్ వేదిక",
-            "యాంటీవైరస్",
-            "ఈమెయిల్ సేవ"
-        ],
+        question: "The book is ___ the table.",
+        options: ["in", "at", "on", "from"],
+        correct: 2,
+        explanation: "'On' అనేది ఒక వస్తువు మరొక వస్తువు పైభాగంలో ఉన్నప్పుడు ఉపయోగిస్తారు. పుస్తకం టేబుల్ మీద ఉన్నందున 'on' సరైన జవాబు."
+    },
+    {
+        question: "We have been waiting ___ two hours.",
+        options: ["since", "for", "from", "by"],
         correct: 1,
-        explanation: "DIKSHA భారత ప్రభుత్వ విద్యా డిజిటల్ ప్లాట్‌ఫారమ్. ఇందులో ఉపాధ్యాయులు మరియు విద్యార్థులకు అనేక వనరులు అందుబాటులో ఉంటాయి."
+        explanation: "సమయ వ్యవధిని సూచించేటప్పుడు 'for' ఉపయోగిస్తారు. 'For two hours' అంటే రెండు గంటలుగా ఎదురుచూస్తున్నామని అర్థం."
     },
     {
-        question: "Moodle దేనికి ఉదాహరణ?",
-        options: [
-            "Learning Management System",
-            "Spreadsheet Software",
-            "Search Engine",
-            "Programming Language"
-        ],
+        question: "He was born ___ 2010.",
+        options: ["in", "on", "at", "from"],
         correct: 0,
-        explanation: "Moodle ఒక Learning Management System (LMS). ఇది ఆన్‌లైన్ బోధన, మూల్యాంకనం మరియు అభ్యాస నిర్వహణకు ఉపయోగించబడుతుంది."
+        explanation: "సంవత్సరాల ముందు 'in' preposition ఉపయోగిస్తారు. ఉదాహరణకు in 2010, in 2025, in 1990 మొదలైనవి."
     },
     {
-        question: "Instructional Media యొక్క ప్రధాన ఉద్దేశ్యం",
-        options: [
-            "అభ్యాసాన్ని సులభతరం చేయడం",
-            "తరగతి సమయం తగ్గించడం",
-            "హాజరు నియంత్రణ",
-            "పరీక్షలు రద్దు చేయడం"
-        ],
+        question: "The cat jumped ___ the wall.",
+        options: ["into", "onto", "at", "from"],
+        correct: 1,
+        explanation: "'Onto' అంటే ఒక ఉపరితలం మీదకు కదలిక జరగడం. పిల్లి గోడపైకి దూకినందున 'onto' సరైన సమాధానం."
+    },
+    {
+        question: "She divided the sweets ___ the children.",
+        options: ["among", "between", "in", "at"],
         correct: 0,
-        explanation: "Instructional Media ద్వారా భావనలను స్పష్టంగా అందించి అభ్యాసాన్ని మరింత ఆసక్తికరంగా మరియు ప్రభావవంతంగా చేయవచ్చు."
+        explanation: "రెండుకంటే ఎక్కువ మందిలో పంచినప్పుడు 'among' ఉపయోగిస్తారు. పిల్లలందరికీ మిఠాయిలు పంచిన సందర్భంలో ఇది సరైనది."
     },
     {
-        question: "MOOC యొక్క విస్తరణ ఏమిటి?",
-        options: [
-            "Modern Online Open Course",
-            "Massive Open Online Course",
-            "Media Oriented Open Course",
-            "Multiple Online Open Class"
-        ],
-        correct: 1,
-        explanation: "MOOC అంటే Massive Open Online Course. ఇది ప్రపంచవ్యాప్తంగా అనేక మంది అభ్యాసకులకు అందుబాటులో ఉండే ఆన్‌లైన్ కోర్సు."
-    },
-    {
-        question: "వీడియో ప్రదర్శన ఏ Instructional Media వర్గానికి చెందుతుంది?",
-        options: [
-            "Print Media",
-            "Aural Media",
-            "Multimedia",
-            "Verbal Media"
-        ],
-        correct: 2,
-        explanation: "వీడియోలో ధ్వని మరియు దృశ్య అంశాలు రెండూ ఉంటాయి. అందువల్ల ఇది Multimedia వర్గంలోకి వస్తుంది."
-    },
-    {
-        question: "Identify the error: Each of the students have submitted the project.",
-        options: [
-            "Each",
-            "students",
-            "have",
-            "submitted"
-        ],
-        correct: 2,
-        explanation: "‘Each of the students’ అనే Subject ఏకవచనం. కాబట్టి ‘have’ స్థానంలో ‘has’ ఉపయోగించాలి."
-    },
-    {
-        question: "She is good ___ Mathematics.",
-        options: [
-            "in",
-            "at",
-            "on",
-            "for"
-        ],
-        correct: 1,
-        explanation: "‘Good at’ అనేది సరైన Prepositional usage. ఒక వ్యక్తి నైపుణ్యాన్ని సూచించేటప్పుడు ‘at’ ఉపయోగిస్తారు."
-    },
-    {
-        question: "No sooner did he arrive ___ it started raining.",
-        options: [
-            "when",
-            "than",
-            "then",
-            "but"
-        ],
-        correct: 1,
-        explanation: "No sooner ... than అనేది స్థిరమైన English Correlative structure. APTETలో తరచుగా పరీక్షించే వ్యాకరణ అంశం."
-    },
-    {
-        question: "One of the students ___ absent today.",
-        options: [
-            "are",
-            "were",
-            "is",
-            "have"
-        ],
-        correct: 2,
-        explanation: "‘One of the students’ అనే Subject ఏకవచనంగా పరిగణించబడుతుంది. అందువల్ల singular verb ‘is’ ఉపయోగించాలి."
-    },
-    {
-        question: "Neither the teacher nor the students ___ ready.",
-        options: [
-            "was",
-            "is",
-            "are",
-            "has"
-        ],
-        correct: 2,
-        explanation: "Neither...nor నిర్మాణంలో దగ్గరలో ఉన్న Subject ప్రకారం Verb వస్తుంది. ఇక్కడ 'students' బహువచనం కాబట్టి 'are' సరైనది."
-    },
-    {
-        question: "Identify the error: He discussed about the issue.",
-        options: [
-            "He",
-            "discussed",
-            "about",
-            "issue"
-        ],
-        correct: 2,
-        explanation: "Discuss అనే Verb తర్వాత 'about' అవసరం లేదు. సరైన వాక్యం: 'He discussed the issue.'"
-    },
-    {
-        question: "The news ___ shocking.",
-        options: [
-            "are",
-            "were",
-            "is",
-            "have"
-        ],
-        correct: 2,
-        explanation: "News అనే పదం రూపంలో pluralలా కనిపించినా grammaticalంగా singular noun. కాబట్టి 'is' ఉపయోగించాలి."
-    },
-    {
-        question: "She has been living here ___ 2018.",
-        options: [
-            "for",
-            "since",
-            "from",
-            "by"
-        ],
-        correct: 1,
-        explanation: "ఒక నిర్దిష్ట కాల బిందువును సూచించేటప్పుడు Present Perfect Continuous Tenseలో 'since' ఉపయోగిస్తారు."
-    },
-    {
-        question: "The furniture ___ expensive.",
-        options: [
-            "are",
-            "were",
-            "is",
-            "have"
-        ],
-        correct: 2,
-        explanation: "Furniture అనేది uncountable singular noun. అందువల్ల singular verb 'is' వాడాలి."
-    },
-    {
-        question: "Identify the error: Ravi and not his friends have won the prize.",
-        options: [
-            "Ravi",
-            "and not",
-            "have",
-            "prize"
-        ],
-        correct: 2,
-        explanation: "వాక్యంలోని ప్రధాన Subject 'Ravi'. కాబట్టి singular verb 'has' రావాలి. 'have' తప్పు."
-    },
-    {
-        question: "‘లాభం’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "నష్టం",
-            "ఆదాయం",
-            "సంపద",
-            "శ్రేయస్సు"
-        ],
+        question: "The train passed ___ the tunnel.",
+        options: ["through", "across", "over", "beside"],
         correct: 0,
-        explanation: "లాభం అంటే పొందిన ప్రయోజనం. దానికి వ్యతిరేక భావం కలిగిన పదం నష్టం."
+        explanation: "'Through' అంటే ఒక వస్తువు లోపల నుంచి వెళ్లడం. రైలు సొరంగం లోపలుగా వెళ్లినందున through సరైన జవాబు."
     },
     {
-        question: "‘ధైర్యం’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "సాహసం",
-            "పిరికితనం",
-            "పట్టుదల",
-            "శక్తి"
-        ],
+        question: "My house is ___ the bank and the post office.",
+        options: ["among", "between", "through", "beside"],
         correct: 1,
-        explanation: "ధైర్యం అంటే భయంలేకుండా వ్యవహరించడం. దానికి వ్యతిరేక పదం పిరికితనం."
+        explanation: "రెండు వస్తువుల మధ్య ఉన్న స్థానాన్ని సూచించడానికి 'between' ఉపయోగిస్తారు. ఇక్కడ ఇల్లు రెండు ప్రదేశాల మధ్య ఉంది."
     },
     {
-        question: "‘సత్యం’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "నీతి",
-            "ధర్మం",
-            "అసత్యం",
-            "న్యాయం"
-        ],
-        correct: 2,
-        explanation: "సత్యం అంటే నిజం. దానికి విరుద్ధార్థక పదం అసత్యం."
-    },
-    {
-        question: "‘ఆరోహణ’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "ప్రగతి",
-            "అభివృద్ధి",
-            "అవరోహణ",
-            "ఉన్నతి"
-        ],
-        correct: 2,
-        explanation: "ఆరోహణ అంటే పైకి వెళ్లడం. అవరోహణ అంటే క్రిందికి దిగడం. ఇవి పరస్పర విరుద్ధ పదాలు."
-    },
-    {
-        question: "‘విజయం’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "సాధన",
-            "గెలుపు",
-            "పరాజయం",
-            "కీర్తి"
-        ],
-        correct: 2,
-        explanation: "విజయం అంటే గెలుపు. దానికి వ్యతిరేక భావం కలిగిన పదం పరాజయం."
-    },
-    {
-        question: "‘ఉన్నతి’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "అభివృద్ధి",
-            "ప్రగతి",
-            "అవనతి",
-            "స్థిరత్వం"
-        ],
-        correct: 2,
-        explanation: "ఉన్నతి అంటే ఎదుగుదల. అవనతి అంటే దిగజారడం. కాబట్టి ఇది సరైన విరుద్ధ పదం."
-    },
-    {
-        question: "‘శాంతి’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "స్నేహం",
-            "సహనం",
-            "యుద్ధం",
-            "క్రమం"
-        ],
-        correct: 2,
-        explanation: "శాంతి అంటే ప్రశాంత పరిస్థితి. యుద్ధం అంటే ఘర్షణ పరిస్థితి. అందువల్ల ఇవి విరుద్ధ పదాలు."
-    },
-    {
-        question: "‘ఆదాయం’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "వ్యయం",
-            "సంపాదన",
-            "వేతనం",
-            "పొదుపు"
-        ],
-        correct: 0,
-        explanation: "ఆదాయం అంటే వచ్చే ధనం. వ్యయం అంటే ఖర్చు చేయబడే ధనం. కాబట్టి ఇది సరైన విరుద్ధ పదం."
-    },
-    {
-        question: "‘ప్రశంస’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "గౌరవం",
-            "కీర్తి",
-            "నింద",
-            "అభినందన"
-        ],
-        correct: 2,
-        explanation: "ప్రశంస అంటే మెచ్చుకోవడం. నింద అంటే తప్పుబట్టడం. ఈ రెండు పరస్పర విరుద్ధ భావాలను సూచిస్తాయి."
-    },
-    {
-        question: "‘స్వర్గం’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "భూమి",
-            "లోకం",
-            "నరకం",
-            "పర్వతం"
-        ],
-        correct: 2,
-        explanation: "సాంప్రదాయిక భావనలో స్వర్గం సుఖానికి, నరకం దుఃఖానికి ప్రతీకలు. అందువల్ల ఇవి విరుద్ధ పదాలు."
-    },
-    {
-        question: "‘విస్తరణ’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "అభివృద్ధి",
-            "వ్యాకోచం",
-            "సంకోచం",
-            "పెరుగుదల"
-        ],
-        correct: 2,
-        explanation: "విస్తరణ అంటే వ్యాపించడం లేదా పెరగడం. సంకోచం అంటే కుదించుకోవడం లేదా తగ్గిపోవడం."
-    },
-    {
-        question: "‘స్వతంత్రం’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "ఆధీనత",
-            "స్వేచ్ఛ",
-            "హక్కు",
-            "సార్వభౌమత్వం"
-        ],
-        correct: 0,
-        explanation: "స్వతంత్రం అంటే ఇతరుల నియంత్రణ లేకుండా ఉండటం. ఆధీనత అంటే ఇతరులపై ఆధారపడటం లేదా వారి నియంత్రణలో ఉండటం."
-    },
-    {
-        question: "‘నూతన’ కు విరుద్ధ పదం ఏది?",
-        options: [
-            "తాజా",
-            "పురాతన",
-            "ఆధునిక",
-            "వినూత్న"
-        ],
+        question: "\"మహా + ఇంద్రుడు\" లో ఏర్పడిన సంధి",
+        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి", "అత్వసంధి"],
         correct: 1,
-        explanation: "నూతన అంటే కొత్త. పురాతన అంటే చాలా కాలం నాటి లేదా పాతది. కాబట్టి ఇది సరైన విరుద్ధ పదం."
+        explanation: "మహా + ఇంద్రుడు కలిసినప్పుడు 'మహేంద్రుడు' రూపం వస్తుంది. ఇది వృద్ధి సంధికి ప్రసిద్ధ ఉదాహరణగా వ్యాకరణంలో చెప్పబడుతుంది."
+    },
+    {
+        question: "\"దేవ + ఆలయం\" లో ఏర్పడిన సంధి",
+        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి", "ఉత్వసంధి"],
+        correct: 0,
+        explanation: "దేవ + ఆలయం → దేవాలయం. అ + ఆ కలయిక ద్వారా ఏర్పడే సంధిని గుణసంధి అంటారు."
+    },
+    {
+        question: "\"గురు + ఆశీర్వాదం\" లో సంధి",
+        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి", "అత్వసంధి"],
+        correct: 1,
+        explanation: "గురు + ఆశీర్వాదం కలయికలో వృద్ధి సంధి లక్షణాలు కనిపిస్తాయి. APTETలో తరచుగా అడిగే ముఖ్యమైన ఉదాహరణ ఇది."
+    },
+    {
+        question: "అత్వ సంధికి ఉదాహరణ",
+        options: ["రాముడు + అతడు", "దేవ + ఆలయం", "మహా + ఇంద్రుడు", "ముని + ఈశ్వరుడు"],
+        correct: 0,
+        explanation: "రాముడు + అతడు వంటి పదాల కలయికలో అత్వ సంధి ఏర్పడుతుంది. తెలుగు సంధులలో ఇది ముఖ్యమైన ఉదాహరణగా పరిగణిస్తారు."
+    },
+    {
+        question: "\"ముని + ఈశ్వరుడు\" లో సంధి",
+        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి", "అత్వసంధి"],
+        correct: 2,
+        explanation: "ముని + ఈశ్వరుడు → మునీశ్వరుడు. ఇది యణాదేశ సంధికి ఉదాహరణ. APTET తెలుగు వ్యాకరణంలో తరచుగా అడుగుతారు."
+    },
+    {
+        question: "\"లోక + ఏక\" లో ఏర్పడే సంధి",
+        options: ["వృద్ధి సంధి", "గుణసంధి", "యణాదేశ సంధి", "ఉత్వసంధి"],
+        correct: 0,
+        explanation: "లోక + ఏక పదాల కలయికలో వృద్ధి సంధి ఏర్పడుతుంది. అ మరియు ఏ అచ్చుల కలయిక ద్వారా ఐ ధ్వని ఉత్పత్తి కావడం వృద్ధి సంధి లక్షణం."
+    },
+    {
+        question: "క్రింది వాటిలో యణాదేశ సంధి ఉదాహరణ ఏది?",
+        options: ["మునీశ్వరుడు", "దేవాలయం", "మహేంద్రుడు", "రాముడతడు"],
+        correct: 0,
+        explanation: "ముని + ఈశ్వరుడు → మునీశ్వరుడు రూపం యణాదేశ సంధికి ఉదాహరణ. APTETలో యణాదేశ సంధిపై ప్రశ్నలు తరచుగా వస్తాయి."
+    },
+    {
+        question: "గుణసంధిలో సాధారణంగా కలిసే అచ్చులు",
+        options: ["అ + అ", "అ + ఇ", "ఇ + ఈ", "ఉ + ఉ"],
+        correct: 1,
+        explanation: "సంస్కృత గుణసంధిలో సాధారణంగా అ + ఇ లేదా అ + ఈ కలిసినప్పుడు గుణరూపం ఏర్పడుతుంది. ఇది వ్యాకరణంలో ముఖ్యమైన సంధి."
+    },
+    {
+        question: "వృద్ధి సంధిలో సాధారణంగా ఏర్పడేది",
+        options: ["ఏ", "ఓ", "ఐ", "ఉ"],
+        correct: 2,
+        explanation: "వృద్ధి సంధిలో సాధారణంగా ఐ లేదా ఔ వంటి వృద్ధి స్వరాలు ఏర్పడతాయి. APTET పరీక్షలో ఇది తరచుగా అడిగే అంశం."
+    },
+    {
+        question: "క్రింది వాటిలో గుణసంధి ఉదాహరణ ఏది?",
+        options: ["దేవాలయం", "మహేంద్రుడు", "మునీశ్వరుడు", "రాముడతడు"],
+        correct: 0,
+        explanation: "దేవ + ఆలయం → దేవాలయం గుణసంధికి ప్రామాణిక ఉదాహరణ. APTETలో ఇలాంటి ప్రత్యక్ష ప్రశ్నలు వస్తాయి."
     }
 ];
