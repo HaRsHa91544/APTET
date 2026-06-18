@@ -101,7 +101,7 @@ function refreshTimerUI() {
 
     // Handle options locking logic
     const lockNotice = document.getElementById('lock-notice');
-    const waitTime = timeLeft - 45; // 60 - 45 = 15
+    const waitTime = timeLeft - 50; // 60 - 45 = 15
 
     if (waitTime > 0 && !answered) {
         if (lockNotice) {

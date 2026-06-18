@@ -7,303 +7,383 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: "దృష్టి స్పష్టతను కొలవడానికి ఉపయోగించే పరికరం ఏది?",
-        options: ["Braille Slate", "Snellen Chart", "JAWS", "Abacus"],
+        question: "దృష్టి స్పష్టతను కొలవడానికి సాధారణంగా ఉపయోగించే పరికరం ఏది?",
+        options: ["ఆడియోమీటర్", "స్నెల్లెన్ చార్ట్", "బ్రెయిల్ స్లేట్", "జాస్ సాఫ్ట్‌వేర్"],
         correct: 1,
-        explanation: "Snellen Chart దృష్టి స్పష్టత (Visual Acuity) ను కొలవడానికి ఉపయోగించే ప్రామాణిక పరికరం. కంటి చూపు ఎంత స్పష్టంగా ఉందో దీనివల్ల అంచనా వేయబడుతుంది."
+        explanation: "స్నెల్లెన్ చార్ట్ దూర దృష్టి స్పష్టతను కొలవడానికి ఉపయోగిస్తారు. కంటి పరీక్షలలో ఇది అత్యంత సాధారణ సాధనం. 6/6, 6/18 వంటి దృష్టి ప్రమాణాలు దీని ద్వారా నిర్ణయించబడతాయి."
     },
     {
-        question: "6/60 కంటే తక్కువ దృష్టి స్పష్టత కలిగిన వ్యక్తిని సాధారణంగా ఏమని పరిగణిస్తారు?",
-        options: ["Low Vision", "Blindness", "Deaf Blind", "Multiple Disability"],
-        correct: 1,
-        explanation: "6/60 కంటే తక్కువ దృష్టి స్పష్టత ఉన్న వ్యక్తిని సాధారణంగా Blindness వర్గంలో పరిగణిస్తారు. ఇది తీవ్రమైన దృష్టి లోపాన్ని సూచించే ప్రమాణం."
-    },
-    {
-        question: "Braille లిపిని అభివృద్ధి చేసిన వ్యక్తి ఎవరు?",
-        options: ["Helen Keller", "Samuel Gridley Howe", "Louis Braille", "Thomas Edison"],
+        question: "RPWD Act-2016 ప్రకారం అంధత్వానికి సంబంధించిన ప్రమాణం ఏది?",
+        options: ["6/18 కంటే తక్కువ", "6/60 కంటే తక్కువ", "3/60 కంటే తక్కువ", "18/60 కంటే తక్కువ"],
         correct: 2,
-        explanation: "Louis Braille దృష్టి లోపం ఉన్నవారి కోసం Braille లిపిని రూపొందించారు. ఈ లిపి స్పర్శ ఆధారంగా చదవడానికి మరియు వ్రాయడానికి ఉపయోగపడుతుంది."
+        explanation: "RPWD Act-2016 ప్రకారం మెరుగైన కంటిలో సరిదిద్దిన తర్వాత కూడా దృష్టి 3/60 కంటే తక్కువగా ఉంటే అంధత్వంగా పరిగణిస్తారు. ఇది ముఖ్యమైన చట్టపరమైన ప్రమాణం."
     },
     {
-        question: "JAWS ప్రధానంగా ఉపయోగించేది",
-        options: ["Hearing Impairment", "Visual Impairment", "Autism", "Intellectual Disability"],
-        correct: 1,
-        explanation: "JAWS అనేది Visual Impairment ఉన్న వ్యక్తుల కోసం రూపొందించిన స్క్రీన్ రీడర్. ఇది కంప్యూటర్‌లోని సమాచారాన్ని శబ్ద రూపంలో వినిపిస్తుంది."
-    },
-    {
-        question: "JAWS అనేది",
-        options: ["Hearing Aid Software", "Screen Reader Software", "Speech Therapy Tool", "Magnification Device"],
-        correct: 1,
-        explanation: "JAWS ఒక Screen Reader Software. ఇది కంప్యూటర్ స్క్రీన్‌లో కనిపించే సమాచారాన్ని మాటల రూపంలో వినిపించి దృష్టి లోపం ఉన్నవారికి సహాయం చేస్తుంది."
-    },
-    {
-        question: "Snellen Chart లో సాధారణ దృష్టి స్పష్టత",
-        options: ["6/6", "6/18", "6/60", "3/60"],
-        correct: 0,
-        explanation: "6/6 అనేది సాధారణ దృష్టి స్పష్టతకు ప్రామాణిక కొలత. వ్యక్తి 6 మీటర్ల దూరంలో సాధారణ వ్యక్తి చూసే అక్షరాలను స్పష్టంగా చూడగలడు."
-    },
-    {
-        question: "Braille లిపి ప్రధానంగా ఏ ఇంద్రియాన్ని ఆధారంగా చేసుకొని చదవబడుతుంది?",
-        options: ["వినికిడి", "చూపు", "స్పర్శ", "వాసన"],
+        question: "JAWS ప్రధానంగా ఉపయోగించబడేది",
+        options: ["వినికిడి లోపం", "ఆటిజం", "దృష్టి లోపం", "అభ్యసన లోపం"],
         correct: 2,
-        explanation: "Braille లిపిని వేళ్లతో స్పర్శించి చదువుతారు. అందువల్ల ఇది స్పర్శ ఇంద్రియంపై ఆధారపడిన చదవు విధానం."
+        explanation: "JAWS ఒక Screen Reader సాఫ్ట్‌వేర్. ఇది కంప్యూటర్‌లోని పాఠ్యాన్ని ధ్వనిగా చదివి దృష్టిలోపం ఉన్న వ్యక్తులు కంప్యూటర్‌ను స్వతంత్రంగా ఉపయోగించడానికి సహాయపడుతుంది."
     },
     {
-        question: "క్రింది వాటిలో దృష్టి లోపం ఉన్న విద్యార్థులకు సహాయక సాంకేతికత ఏది?",
-        options: ["Braille Display", "Hearing Aid", "Cochlear Implant", "FM System"],
-        correct: 0,
-        explanation: "Braille Display కంప్యూటర్ సమాచారాన్ని Braille రూపంలో చూపిస్తుంది. ఇది దృష్టి లోపం ఉన్న విద్యార్థులకు ఉపయోగపడే సహాయక సాంకేతికత."
-    },
-    {
-        question: "JAWS యొక్క విస్తరించిన రూపం",
-        options: ["Job Access With Speech", "Joint Access With Sound", "Job Assistance With Screen", "Joint Audio Work System"],
-        correct: 0,
-        explanation: "JAWS యొక్క పూర్తి రూపం Job Access With Speech. ఇది స్క్రీన్‌లోని సమాచారాన్ని శబ్ద రూపంలో వినిపించే ప్రముఖ స్క్రీన్ రీడర్."
-    },
-    {
-        question: "Blindness ప్రమాణాల్లో తరచుగా ఉపయోగించే కొలత",
-        options: ["IQ", "Visual Acuity", "Motivation Score", "Achievement Score"],
+        question: "Screen Reader సాఫ్ట్‌వేర్ యొక్క ప్రధాన ప్రయోజనం",
+        options: ["చిత్రాలను పెద్దగా చూపించడం", "పాఠ్యాన్ని ధ్వనిగా చదవడం", "బ్రెయిల్ ముద్రించడం", "వీడియోలను సవరించడం"],
         correct: 1,
-        explanation: "Blindness ను నిర్ధారించడంలో Visual Acuity ప్రధాన ప్రమాణం. వ్యక్తి చూపు స్థాయిని కొలిచి దృష్టి లోప తీవ్రతను నిర్ణయిస్తారు."
+        explanation: "Screen Reader సాఫ్ట్‌వేర్ స్క్రీన్‌పై ఉన్న పాఠ్యాన్ని శబ్ద రూపంలో చదివి వినిపిస్తుంది. ఇది అంధులు మరియు దృష్టిలోపం ఉన్నవారికి సమాచారాన్ని అందుబాటులోకి తెస్తుంది."
     },
     {
-        question: "Braille Cell లో మొత్తం చుక్కల సంఖ్య",
-        options: ["4", "5", "6", "8"],
+        question: "Low Vision కలిగిన విద్యార్థికి మొదట ఉపాధ్యాయుడు చేయవలసినది",
+        options: [
+            "బ్రెయిల్ నేర్పడం",
+            "విద్యార్థిని వెనుక బెంచ్‌లో కూర్చోబెట్టడం",
+            "మిగిలిన దృష్టిని వినియోగించే అవకాశాలు కల్పించడం",
+            "ప్రత్యేక పాఠశాలకు పంపించడం"
+        ],
         correct: 2,
-        explanation: "ఒక Braille Cell లో 6 చుక్కలు ఉంటాయి. వీటి వివిధ కలయికల ద్వారా అక్షరాలు, సంఖ్యలు మరియు చిహ్నాలు సూచించబడతాయి."
+        explanation: "Low Vision విద్యార్థులకు మిగిలిన దృష్టిని గరిష్టంగా ఉపయోగించుకునే అవకాశాలు కల్పించాలి. సరైన వెలుతురు, పెద్ద అక్షరాలు మరియు సహాయక పరికరాలు ఉపయోగపడతాయి."
     },
     {
-        question: "దృష్టి లోపం ఉన్న విద్యార్థికి కంప్యూటర్‌లో పాఠ్యాన్ని వినిపించే సాఫ్ట్‌వేర్",
-        options: ["Excel", "Moodle", "JAWS", "Canva"],
+        question: "Magnifier ఉపయోగం ఏమిటి?",
+        options: ["శబ్దాన్ని పెంచడం", "అక్షరాలను పెద్దగా చూపించడం", "బ్రెయిల్ రాయడం", "రంగులను గుర్తించడం"],
+        correct: 1,
+        explanation: "Magnifier అక్షరాలు, చిత్రాలు మరియు ఇతర దృశ్య సమాచారాన్ని పెద్దగా చూపిస్తుంది. Low Vision ఉన్న విద్యార్థులు చదవడంలో ఇది ఎంతో సహాయపడుతుంది."
+    },
+    {
+        question: "దృష్టిలోపం ఉన్న విద్యార్థికి పాఠ్యాంశ అనుసరణ (Adaptation) కు ఉదాహరణ",
+        options: ["పరీక్ష మినహాయింపు", "పెద్ద అక్షరాల పుస్తకాలు", "హాజరు మాఫీ", "తరగతి మార్పు"],
+        correct: 1,
+        explanation: "పెద్ద అక్షరాల పుస్తకాలు Low Vision విద్యార్థులకు పాఠ్యాన్ని సులభంగా చదవడానికి సహాయపడే ముఖ్యమైన పాఠ్యాంశ అనుసరణగా పరిగణించబడుతుంది."
+    },
+    {
+        question: "Low Vision విద్యార్థులకు అత్యంత అనుకూలమైనది",
+        options: ["తక్కువ వెలుతురు", "వెనుక వరుస", "తగిన వెలుతురు", "కళ్ళు మూసుకొని వినడం"],
         correct: 2,
-        explanation: "JAWS సాఫ్ట్‌వేర్ కంప్యూటర్ స్క్రీన్‌పై ఉన్న పాఠ్యాన్ని శబ్దంగా చదివి వినిపిస్తుంది. ఇది దృష్టి లోపం ఉన్న విద్యార్థులకు ఎంతో ఉపయోగకరం."
+        explanation: "తగిన వెలుతురు దృష్టి లోపం ఉన్న విద్యార్థుల దృష్టి సామర్థ్యాన్ని మెరుగుపరుస్తుంది. సరైన కాంతి చదవడం మరియు బోర్డు చూడడంలో సౌలభ్యాన్ని కలిగిస్తుంది."
     },
     {
-        question: "Snellen Chart పరీక్ష ప్రధానంగా ఏదిని గుర్తిస్తుంది?",
-        options: ["Hearing Loss", "Visual Acuity", "IQ Level", "Speech Disorder"],
+        question: "Embossed Diagrams ఉపయోగించబడేది",
+        options: ["వినికిడి లోపం", "దృష్టి లోపం", "మేధో వైకల్యం", "ఆటిజం"],
         correct: 1,
-        explanation: "Snellen Chart ద్వారా వ్యక్తి Visual Acuity లేదా దృష్టి స్పష్టతను కొలుస్తారు. కంటి చూపు స్థాయిని అంచనా వేయడానికి ఇది ఉపయోగపడుతుంది."
+        explanation: "Embossed Diagrams స్పర్శ ద్వారా గ్రాఫులు, ఆకృతులు మరియు పటాలను అర్థం చేసుకోవడానికి ఉపయోగిస్తారు. ఇవి ముఖ్యంగా దృష్టిలోపం ఉన్న విద్యార్థులకు ఉపయోగకరంగా ఉంటాయి."
     },
     {
-        question: "క్రింది వాటిలో Low Vision కు సంబంధించినది",
-        options: ["పూర్తిగా చూపులేకపోవడం", "కొంత ఉపయోగకరమైన చూపు ఉండడం", "వినికిడి లోపం", "బుద్ధిమాంద్యం"],
-        correct: 1,
-        explanation: "Low Vision అంటే పూర్తిగా చూపు కోల్పోకపోయినా సాధారణ చూపు కంటే తక్కువగా ఉండడం. కొంత ఉపయోగకరమైన చూపు మాత్రం మిగిలి ఉంటుంది."
-    },
-    {
-        question: "Braille పుస్తకాలు ప్రధానంగా ఏ విద్యార్థులకు ఉపయోగపడతాయి?",
-        options: ["ASD", "LD", "VI", "HI"],
+        question: "Braille లిపిని అభివృద్ధి చేసినవారు",
+        options: ["Louis Pasteur", "Helen Keller", "Louis Braille", "Samuel Gridley Howe"],
         correct: 2,
-        explanation: "Braille పుస్తకాలు ప్రధానంగా Visual Impairment (VI) ఉన్న విద్యార్థుల కోసం రూపొందించబడతాయి. ఇవి స్పర్శ ద్వారా చదవడానికి సహాయపడతాయి."
+        explanation: "Louis Braille అంధుల కోసం బ్రెయిల్ లిపిని అభివృద్ధి చేశారు. ఈ లిపి ఆరు బిందువుల వ్యవస్థపై ఆధారపడి ప్రపంచవ్యాప్తంగా ఉపయోగించబడుతోంది."
     },
     {
-        question: "Screen Reader ఉపయోగించే విద్యార్థి ఎక్కువగా ఏ వర్గానికి చెందినవాడు?",
-        options: ["HI", "VI", "ID", "LD"],
+        question: "దృష్టిలోపం ఉన్న విద్యార్థి గణిత ఆకృతులను అర్థం చేసుకోవడానికి ఉత్తమ సాధనం",
+        options: ["Audio Book", "Raised Line Drawings", "Hearing Aid", "Talking Calculator"],
         correct: 1,
-        explanation: "Screen Reader సాఫ్ట్‌వేర్ స్క్రీన్‌లోని సమాచారాన్ని శబ్ద రూపంలో చదివి వినిపిస్తుంది. ఇది ప్రధానంగా Visual Impairment (VI) ఉన్న విద్యార్థులకు ఉపయోగపడుతుంది."
+        explanation: "Raised Line Drawings ద్వారా గణిత ఆకృతులు మరియు రేఖాచిత్రాలను స్పర్శ ద్వారా గుర్తించవచ్చు. ఇది దృష్టిలోపం ఉన్న విద్యార్థులకు సమర్థవంతమైన సాధనం."
     },
     {
-        question: "Blindness నిర్వచనంలో తరచుగా పేర్కొనే దృష్టి స్పష్టత",
-        options: ["3/60 లేదా తక్కువ", "6/6", "6/9", "6/12"],
+        question: "Talking Calculator ఉపయోగం",
+        options: [
+            "గణన ఫలితాలను ధ్వనిగా వినిపించడం",
+            "అక్షరాలను పెంచడం",
+            "చిత్రాలను గుర్తించడం",
+            "బ్రెయిల్ ముద్రించడం"
+        ],
         correct: 0,
-        explanation: "3/60 లేదా అంతకంటే తక్కువ దృష్టి స్పష్టత తీవ్రమైన దృష్టి లోపాన్ని సూచిస్తుంది. అందువల్ల Blindness నిర్వచనంలో ఈ ప్రమాణాన్ని తరచుగా ఉపయోగిస్తారు."
+        explanation: "Talking Calculator గణనల ఫలితాలను ధ్వనిగా వినిపిస్తుంది. ఇది దృష్టిలోపం ఉన్న విద్యార్థులకు గణిత కార్యకలాపాలను స్వతంత్రంగా చేయడంలో సహాయపడుతుంది."
     },
     {
-        question: "Braille ను చదివే సమయంలో ఉపయోగించే వేళ్లు",
-        options: ["బొటనవేలు", "చూపుడు వేళ్లు", "చిటికెన వేళ్లు", "మధ్యవేలు"],
+        question: "Orientation and Mobility Training లక్ష్యం",
+        options: ["చదవడం నేర్పడం", "స్వతంత్ర సంచారం", "వినికిడి మెరుగుపరచడం", "భాషాభివృద్ధి"],
         correct: 1,
-        explanation: "Braille చదివేటప్పుడు ఎక్కువగా చూపుడు వేళ్లను ఉపయోగిస్తారు. ఇవి స్పర్శను సులభంగా గుర్తించగల సామర్థ్యం కలిగి ఉంటాయి."
+        explanation: "Orientation and Mobility Training ద్వారా వ్యక్తి పరిసరాలను అర్థం చేసుకొని స్వతంత్రంగా కదలడం నేర్చుకుంటాడు. ఇది దైనందిన జీవిత నైపుణ్యాలలో ముఖ్యమైనది."
     },
     {
-        question: "దృష్టి లోపం ఉన్న విద్యార్థులకు కంప్యూటర్ వినియోగంలో అత్యంత ఉపయుక్తమైనది",
-        options: ["Screen Reader", "Printer", "Scanner", "Webcam"],
-        correct: 0,
-        explanation: "Screen Reader కంప్యూటర్ సమాచారాన్ని శబ్దంగా వినిపిస్తుంది. అందువల్ల దృష్టి లోపం ఉన్న విద్యార్థులకు ఇది అత్యంత ముఖ్యమైన సహాయక సాధనం."
-    },
-    {
-        question: "క్రింది వాటిలో Visual Impairment కు సంబంధించినది",
-        options: ["Snellen Chart", "Audiometer", "Cochlear Implant", "Speech Trainer"],
-        correct: 0,
-        explanation: "Snellen Chart కంటి చూపు స్పష్టతను కొలవడానికి ఉపయోగిస్తారు. ఇది Visual Impairment అంచనాలో ముఖ్యమైన పరికరం."
-    },
-    {
-        question: "\"Learning is best when the learner has a strong desire to achieve\" అనే భావన దేనికి సంబంధించినది?",
-        options: ["Attention", "Motivation", "Perception", "Memory"],
+        question: "దృష్టి లోపం ఉన్న విద్యార్థికి పరీక్షలో అనుసరణగా ఇవ్వగలది",
+        options: ["ప్రశ్నల తొలగింపు", "అదనపు సమయం", "మార్కుల మినహాయింపు", "హాజరు మినహాయింపు"],
         correct: 1,
-        explanation: "విద్యార్థిలో నేర్చుకోవాలనే బలమైన ఆసక్తి మరియు లక్ష్యసాధన కోరిక ఉండటం Motivation కు సంబంధించిన ముఖ్యమైన అంశం."
+        explanation: "దృష్టిలోపం ఉన్న విద్యార్థులకు పరీక్షలలో అదనపు సమయం ఇవ్వడం సాధారణ అనుసరణ. ఇది ప్రశ్నలను చదవడం మరియు సమాధానాలు రాయడానికి సహాయపడుతుంది."
     },
     {
-        question: "Maslow అవసరాల క్రమంలో అత్యున్నత స్థాయి",
-        options: ["Safety Needs", "Social Needs", "Esteem Needs", "Self-Actualization"],
+        question: "Large Print Materials ప్రధానంగా ఉపయోగపడేది",
+        options: [
+            "Blind విద్యార్థులకు",
+            "Low Vision విద్యార్థులకు",
+            "Hearing Impaired విద్యార్థులకు",
+            "ASD విద్యార్థులకు"
+        ],
+        correct: 1,
+        explanation: "Large Print Materials పెద్ద అక్షరాలతో ఉంటాయి. ఇవి Low Vision విద్యార్థులకు పాఠ్యాన్ని స్పష్టంగా చదవడంలో సహాయపడే ముఖ్యమైన విద్యా వనరులు."
+    },
+    {
+        question: "CCTV Magnifier ఉపయోగం",
+        options: ["వినికిడి పెంపు", "పాఠ్యాన్ని పెద్దగా చూపడం", "బ్రెయిల్ తయారీ", "భాషా అభివృద్ధి"],
+        correct: 1,
+        explanation: "CCTV Magnifier కెమెరా మరియు స్క్రీన్ సహాయంతో పాఠ్యాన్ని అనేక రెట్లు పెద్దగా చూపిస్తుంది. Low Vision విద్యార్థులు పుస్తకాలు మరియు చిత్రాలను సులభంగా చూడగలరు."
+    },
+    {
+        question: "దృష్టి లోపం ఉన్న విద్యార్థికి తరగతి గదిలో ఉత్తమ స్థానం",
+        options: ["ద్వారం వద్ద", "వెనుక వరుస", "బోర్డు దగ్గర", "కిటికీ వెనుక"],
+        correct: 2,
+        explanation: "బోర్డు దగ్గర కూర్చోబెట్టడం ద్వారా విద్యార్థి బోర్డుపై ఉన్న సమాచారాన్ని స్పష్టంగా చూడగలడు. ఇది Low Vision విద్యార్థులకు సాధారణ తరగతి అనుసరణ."
+    },
+    {
+        question: "Assistive Technology యొక్క ప్రధాన ఉద్దేశ్యం",
+        options: ["వైకల్యాన్ని తొలగించడం", "సామర్థ్యాన్ని పెంపొందించడం", "ప్రత్యేక పాఠశాలకు పంపడం", "పరీక్షలు తగ్గించడం"],
+        correct: 1,
+        explanation: "Assistive Technology వైకల్యాన్ని తొలగించదు కానీ వ్యక్తి సామర్థ్యాన్ని పెంచి స్వతంత్రంగా నేర్చుకోవడం, పనిచేయడం మరియు జీవించడం సులభం చేస్తుంది."
+    },
+    {
+        question: "Low Vision మరియు Blindness మధ్య ప్రధాన తేడా",
+        options: ["వయస్సు", "మిగిలిన దృష్టి వినియోగం", "వినికిడి", "మేధస్సు"],
+        correct: 1,
+        explanation: "Low Vision ఉన్నవారు మిగిలిన దృష్టిని ఉపయోగించగలరు. Blindness లో ఉపయోగకరమైన దృష్టి చాలా తక్కువగా లేదా లేకపోవచ్చు. ఇదే ప్రధాన తేడా."
+    },
+    {
+        question: "సమగ్ర విద్యలో దృష్టి లోపం ఉన్న విద్యార్థికి అత్యంత సరైన బోధనా విధానం",
+        options: ["ఒకే విధమైన బోధన", "వ్యక్తిగత అవసరాలకు అనుగుణ అనుసరణలు", "వేరు తరగతి", "పరీక్షల మినహాయింపు"],
+        correct: 1,
+        explanation: "సమగ్ర విద్యలో ప్రతి విద్యార్థి అవసరాలను గుర్తించి అనుసరణలు కల్పించాలి. వ్యక్తిగత అవసరాలకు అనుగుణ బోధన ఉత్తమమైన సమగ్ర విద్యా పద్ధతి."
+    },
+    {
+        question: "By next June, she _____ her course.",
+        options: ["completes", "completed", "will have completed", "has completed"],
+        correct: 2,
+        explanation: "Future Perfect Tense భవిష్యత్తులో ఒక నిర్దిష్ట సమయానికి ముందు పని పూర్తవుతుందని సూచిస్తుంది. 'By next June' అనే సూచనకు 'will have completed' సరైనది."
+    },
+    {
+        question: "When I reached the station, the train _____.",
+        options: ["leaves", "had left", "left", "has left"],
+        correct: 1,
+        explanation: "ఒక గత చర్యకు ముందే మరొక చర్య పూర్తయితే Past Perfect Tense ఉపయోగిస్తారు. నేను చేరుకునేలోపు రైలు వెళ్లిపోయింది కాబట్టి 'had left' సరైనది."
+    },
+    {
+        question: "He _____ in Hyderabad since 2020.",
+        options: ["lives", "lived", "has lived", "had lived"],
+        correct: 2,
+        explanation: "'Since 2020' గతంలో ప్రారంభమై ఇప్పటికీ కొనసాగుతున్న చర్యను సూచిస్తుంది. అందువల్ల Present Perfect Tense అయిన 'has lived' ఉపయోగించాలి."
+    },
+    {
+        question: "Look! The baby _____.",
+        options: ["sleeps", "slept", "is sleeping", "has slept"],
+        correct: 2,
+        explanation: "'Look!' అనే పదం ప్రస్తుతం జరుగుతున్న చర్యను సూచిస్తుంది. అందువల్ల Present Continuous Tense అయిన 'is sleeping' సరైన సమాధానం."
+    },
+    {
+        question: "If it rains tomorrow, we _____ at home.",
+        options: ["stay", "stayed", "will stay", "staying"],
+        correct: 2,
+        explanation: "First Conditional లో If-Clause Present Simple లో ఉండగా Main Clause Future Simple లో ఉంటుంది. కాబట్టి 'will stay' సరైన జవాబు."
+    },
+    {
+        question: "The teacher _____ the lesson before the bell rang.",
+        options: ["finished", "had finished", "has finished", "finishes"],
+        correct: 1,
+        explanation: "గంట మోగకముందే పాఠం పూర్తయింది. గతంలో మరో చర్యకు ముందే జరిగిన పని Past Perfect Tense ద్వారా వ్యక్తం చేస్తారు."
+    },
+    {
+        question: "I _____ this book twice.",
+        options: ["read", "have read", "had read", "am reading"],
+        correct: 1,
+        explanation: "ఇప్పటివరకు రెండు సార్లు చదివిన అనుభవాన్ని చెప్పడానికి Present Perfect Tense ఉపయోగిస్తారు. కాబట్టి 'have read' సరైనది."
+    },
+    {
+        question: "She _____ dinner when I called her.",
+        options: ["cooks", "cooked", "was cooking", "has cooked"],
+        correct: 2,
+        explanation: "నేను ఫోన్ చేసిన సమయంలో ఆమె వంట చేస్తోంది. గతంలో ఒక సమయంలో జరుగుతున్న చర్యను Past Continuous Tense ద్వారా చూపిస్తారు."
+    },
+    {
+        question: "The sun _____ in the east.",
+        options: ["rose", "rises", "is rising", "has risen"],
+        correct: 1,
+        explanation: "శాశ్వత సత్యాలు మరియు సాధారణ నిజాలను Simple Present Tense లో చెబుతారు. సూర్యుడు తూర్పున ఉదయిస్తాడు కాబట్టి 'rises' సరైనది."
+    },
+    {
+        question: "At 8 PM tomorrow, I _____ for the examination.",
+        options: ["study", "studied", "will be studying", "have studied"],
+        correct: 2,
+        explanation: "భవిష్యత్తులో ఒక నిర్దిష్ట సమయంలో జరుగుతున్న చర్యను Future Continuous Tense సూచిస్తుంది. కాబట్టి 'will be studying' సరైన జవాబు."
+    },
+    {
+        question: "They _____ the project yet.",
+        options: ["did not finish", "have not finished", "had not finished", "are not finishing"],
+        correct: 1,
+        explanation: "The word 'yet' is commonly used with Present Perfect Tense. It indicates that the action has not been completed up to the present moment."
+    },
+    {
+        question: "Before she arrived, we _____ the meeting.",
+        options: ["start", "started", "had started", "have started"],
+        correct: 2,
+        explanation: "Past Perfect Tense is used for an action completed before another past action. The meeting started before her arrival, so 'had started' is correct."
+    },
+    {
+        question: "He usually _____ tea in the morning.",
+        options: ["drinks", "drank", "is drinking", "has drunk"],
+        correct: 0,
+        explanation: "The adverb 'usually' indicates a habitual action. Simple Present Tense is used to describe habits and routines, making 'drinks' the correct answer."
+    },
+    {
+        question: "The students _____ an essay now.",
+        options: ["write", "wrote", "are writing", "have written"],
+        correct: 2,
+        explanation: "The word 'now' shows that the action is happening at the present moment. Therefore, Present Continuous Tense 'are writing' is appropriate."
+    },
+    {
+        question: "By the time you come, I _____ my homework.",
+        options: ["finish", "finished", "will have finished", "have finished"],
+        correct: 2,
+        explanation: "Future Perfect Tense expresses an action that will be completed before a future point in time. Hence 'will have finished' is correct."
+    },
+    {
+        question: "\"దేవాలయం\" పదంలో ఉన్న సంధి",
+        options: ["గుణసంధి", "అత్వసంధి", "యణాదేశసంధి", "వృద్ధి సంధి"],
+        correct: 0,
+        explanation: "దేవ + ఆలయం = దేవాలయం. అ + ఆ కలయిక ద్వారా ఏర్పడిన రూపం గుణసంధికి ఉదాహరణగా పరిగణించబడుతుంది."
+    },
+    {
+        question: "\"మహోత్సవం\" పదంలో సంధి",
+        options: ["గుణసంధి", "యణాదేశసంధి", "అత్వసంధి", "ఉత్వసంధి"],
+        correct: 0,
+        explanation: "మహా + ఉత్సవం → మహోత్సవం. అ + ఉ కలయిక వల్ల 'ఓ' ఏర్పడుతుంది. ఇది గుణసంధికి ప్రసిద్ధ ఉదాహరణ."
+    },
+    {
+        question: "\"రామాలయం\" పదంలో సంధి",
+        options: ["వృద్ధి సంధి", "అత్వసంధి", "గుణసంధి", "ఇట్వసంధి"],
+        correct: 1,
+        explanation: "రామ + ఆలయం → రామాలయం. తెలుగు వ్యాకరణంలో ఇది అత్వసంధికి ఉదాహరణగా పేర్కొనబడుతుంది."
+    },
+    {
+        question: "\"గురుపదేశం\" పదంలో సంధి",
+        options: ["గుణసంధి", "యణాదేశసంధి", "ఉత్వసంధి", "వృద్ధి సంధి"],
+        correct: 2,
+        explanation: "గురు + ఉపదేశం → గురుపదేశం. ఉ అక్షర సంబంధ మార్పు కారణంగా ఇది ఉత్వసంధిగా వర్గీకరించబడుతుంది."
+    },
+    {
+        question: "\"ప్రత్యేకం\" పదంలో సంధి",
+        options: ["యణాదేశసంధి", "గుణసంధి", "వృద్ధి సంధి", "అత్వసంధి"],
+        correct: 0,
+        explanation: "ప్రతి + ఏకం → ప్రత్యేకం. ఇ లేదా ఈ తరువాత అచ్చు వచ్చినప్పుడు య్ ఆగమం రావడం యణాదేశసంధి లక్షణం."
+    },
+    {
+        question: "\"రాజేంద్రుడు\" పదంలో సంధి",
+        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశసంధి", "అత్వసంధి"],
+        correct: 1,
+        explanation: "రాజ + ఇంద్రుడు → రాజేంద్రుడు. అ + ఇ కలయిక ద్వారా 'ఏ' ఏర్పడటం వృద్ధి సంధికి ఉదాహరణగా పరిగణిస్తారు."
+    },
+    {
+        question: "\"లోకైక\" పదంలో సంధి",
+        options: ["గుణసంధి", "వృద్ధి సంధి", "అత్వసంధి", "ఉత్వసంధి"],
+        correct: 1,
+        explanation: "లోక + ఏక → లోకైక. అ + ఏ కలయికతో 'ఐ' ఏర్పడుతుంది. ఇది వృద్ధి సంధికి ముఖ్యమైన ఉదాహరణ."
+    },
+    {
+        question: "\"దేవేంద్రుడు\" పదంలో సంధి",
+        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశసంధి", "అత్వసంధి"],
+        correct: 0,
+        explanation: "దేవ + ఇంద్రుడు → దేవేంద్రుడు. అ + ఇ కలయికతో ఏర్పడిన ఈ రూపం గుణసంధి ఉదాహరణగా బోధించబడుతుంది."
+    },
+    {
+        question: "\"మహర్షి\" పదంలో సంధి",
+        options: ["గుణసంధి", "యణాదేశసంధి", "వృద్ధి సంధి", "ఉత్వసంధి"],
+        correct: 0,
+        explanation: "మహా + ఋషి → మహర్షి. అ మరియు ఋ సంయోగంతో ఏర్పడిన రూపం గుణసంధి పరిధిలో చర్చించబడుతుంది."
+    },
+    {
+        question: "\"జగన్నాథుడు\" పదంలో ఉన్న సంధి",
+        options: ["ద్విరుక్తటకార సంధి", "గుణసంధి", "యణాదేశసంధి", "వృద్ధి సంధి"],
+        correct: 0,
+        explanation: "జగత్ + నాథుడు → జగన్నాథుడు. టకార ధ్వని ద్విరుక్తం కావడం వల్ల ఇది ద్విరుక్తటకార సంధిగా గుర్తించబడుతుంది."
+    },
+    {
+        question: "అ + ఇ కలిసినప్పుడు సాధారణంగా ఏర్పడేది",
+        options: ["ఆ", "ఏ", "ఓ", "ఐ"],
+        correct: 1,
+        explanation: "సంస్కృత గుణసంధి నియమం ప్రకారం అ + ఇ లేదా అ + ఈ కలిసినప్పుడు 'ఏ' ఏర్పడుతుంది. ఉదాహరణ: దేవ + ఇంద్రుడు → దేవేంద్రుడు."
+    },
+    {
+        question: "అ + ఉ కలిసినప్పుడు ఏర్పడేది",
+        options: ["ఓ", "ఏ", "ఐ", "య"],
+        correct: 0,
+        explanation: "గుణసంధి నియమం ప్రకారం అ + ఉ లేదా అ + ఊ కలిసినప్పుడు 'ఓ' ఏర్పడుతుంది. ఉదాహరణ: మహా + ఉత్సవం → మహోత్సవం."
+    },
+    {
+        question: "ఎ + అ కలిసినప్పుడు ఏర్పడేది",
+        options: ["ఐ", "ఏ", "ఓ", "ఆ"],
+        correct: 1,
+        explanation: "సంధి నియమాల ప్రకారం ఎ + అ కలిసినప్పుడు సాధారణంగా 'ఏ' రూపం ఏర్పడుతుంది. ఇది అచ్చుల సంయోగంతో ఏర్పడే మార్పు."
+    },
+    {
+        question: "ఇ, ఈ తరువాత అచ్చుతో ప్రారంభమయ్యే పదం వచ్చినప్పుడు సాధారణంగా వచ్చే సంధి",
+        options: ["యణాదేశ సంధి", "గుణసంధి", "వృద్ధి సంధి", "అత్వసంధి"],
+        correct: 0,
+        explanation: "ఇ లేదా ఈ తరువాత అచ్చు వస్తే 'య్' ఆగమం వస్తుంది. దీనినే యణాదేశ సంధి అంటారు. ఉదాహరణ: ప్రతి + ఏకం → ప్రత్యేకం."
+    },
+    {
+        question: "అ + ఏ కలిసినప్పుడు ఏర్పడేది",
+        options: ["ఐ", "ఏ", "ఓ", "ఆ"],
+        correct: 1,
+        explanation: "అ మరియు ఏ సంయోగంతో ఏర్పడే రూపం 'ఏ'. ఈ రకమైన అచ్చు మార్పులు సంధి ప్రక్రియలో ముఖ్యమైనవి."
+    },
+    {
+        question: "పిల్లలలో శారీరక, మానసిక, సామాజిక మార్పులు క్రమపద్ధతిలో జరిగే ప్రక్రియను ఏమంటారు?",
+        options: ["అభ్యాసం", "అభివృద్ధి", "పరిపక్వత", "ప్రేరణ"],
+        correct: 1,
+        explanation: "శారీరక, మానసిక, భావోద్వేగ మరియు సామాజిక రంగాలలో క్రమబద్ధంగా జరిగే మార్పులను అభివృద్ధి అంటారు. ఇది జననం నుండి జీవితాంతం కొనసాగే నిరంతర ప్రక్రియ."
+    },
+    {
+        question: "\"వ్యక్తుల మధ్య ఉన్న తేడాలను గుర్తించి బోధనను అనుకూలపరచాలి\" అనే భావన దేనికి సంబంధించినది?",
+        options: ["వ్యక్తిగత భేదాలు", "పునరుద్ధరణ", "మూల్యాంకనం", "ప్రోత్సాహం"],
+        correct: 0,
+        explanation: "ప్రతి విద్యార్థి సామర్థ్యాలు, ఆసక్తులు, అభ్యాస వేగం మరియు నేపథ్యం వేర్వేరుగా ఉంటాయి. ఈ తేడాలను వ్యక్తిగత భేదాలు అంటారు."
+    },
+    {
+        question: "మాస్లో అవసరాల శ్రేణిలో అత్యున్నత స్థాయి ఏది?",
+        options: ["భద్రత అవసరాలు", "ప్రేమ మరియు అనుబంధం", "గౌరవ అవసరాలు", "స్వీయ సాకారత (Self-Actualization)"],
         correct: 3,
-        explanation: "Maslow అవసరాల క్రమంలో Self-Actualization అత్యున్నత స్థాయి. వ్యక్తి తన సంపూర్ణ సామర్థ్యాన్ని సాధించాలనే దశను ఇది సూచిస్తుంది."
+        explanation: "మాస్లో సిద్ధాంతంలో స్వీయ సాకారత అత్యున్నత స్థాయి. వ్యక్తి తన పూర్తి సామర్థ్యాన్ని తెలుసుకొని సాధించే దశను ఇది సూచిస్తుంది."
     },
     {
-        question: "బాహ్య బహుమతుల ద్వారా కలిగే ప్రేరణ",
-        options: ["Intrinsic Motivation", "Extrinsic Motivation", "Self Motivation", "Achievement Motivation"],
+        question: "విద్యార్థుల అభ్యాసంలో ఆసక్తి మరియు ఉత్సాహాన్ని పెంచడానికి ఉపయోగపడేది ఏది?",
+        options: ["పునరావృతం", "బలపరచడం (Reinforcement)", "శిక్ష", "పరీక్ష"],
         correct: 1,
-        explanation: "బహుమతులు, ప్రశంసలు లేదా ఇతర బాహ్య ప్రోత్సాహకాల వల్ల కలిగే ప్రేరణను Extrinsic Motivation అంటారు."
+        explanation: "సరైన ప్రవర్తన లేదా అభ్యాసాన్ని ప్రశంసలు, బహుమతులు వంటి బలపరచడం ద్వారా విద్యార్థుల ఆసక్తి మరియు ఉత్సాహం పెరుగుతుంది."
     },
     {
-        question: "IQ పరీక్షల అభివృద్ధికి ప్రసిద్ధి చెందిన వ్యక్తి",
-        options: ["Piaget", "Kohlberg", "Binet", "Bruner"],
+        question: "\"తెలివితేటలను కొలవడానికి రూపొందించిన మొదటి మేధస్సు పరీక్ష\"ను రూపొందించినవారు ఎవరు?",
+        options: ["జీన్ పియాజే", "బినే", "కోహ్ల్‌బర్గ్", "స్కిన్నర్"],
+        correct: 1,
+        explanation: "ఆల్ఫ్రెడ్ బినే ప్రపంచంలోని తొలి మేధస్సు పరీక్షను రూపొందించారు. ఈ పరీక్ష విద్యార్థుల మానసిక సామర్థ్యాన్ని అంచనా వేయడానికి ఉపయోగించబడింది."
+    },
+    {
+        question: "విద్యార్థి పాఠంపై దృష్టిని కేంద్రీకరించే మానసిక ప్రక్రియను ఏమంటారు?",
+        options: ["గ్రహణశక్తి", "జ్ఞాపకశక్తి", "శ్రద్ధ", "ఆలోచన"],
         correct: 2,
-        explanation: "Alfred Binet మొదటి ఆధునిక మేధస్సు పరీక్షను అభివృద్ధి చేశారు. అందువల్ల IQ పరీక్షల అభివృద్ధిలో ఆయనకు విశేష గుర్తింపు ఉంది."
+        explanation: "ఒక నిర్దిష్ట విషయం లేదా కార్యంపై మనస్సును కేంద్రీకరించే ప్రక్రియను శ్రద్ధ అంటారు. అభ్యాసంలో ఇది కీలక పాత్ర పోషిస్తుంది."
     },
     {
-        question: "Intelligence Quotient (IQ) కు సంక్షిప్త రూపం",
-        options: ["Intelligence Quality", "Intelligent Question", "Intelligence Quotient", "Intelligent Quotient"],
+        question: "క్రింది వాటిలో అభివృద్ధికి సంబంధించిన సరైన లక్షణం ఏది?",
+        options: [
+            "అభివృద్ధి ఒక్కసారిగా జరుగుతుంది",
+            "అందరిలో ఒకే విధంగా జరుగుతుంది",
+            "నిరంతర ప్రక్రియ",
+            "శారీరక మార్పులకు మాత్రమే పరిమితం"
+        ],
         correct: 2,
-        explanation: "IQ యొక్క పూర్తి రూపం Intelligence Quotient. ఇది వ్యక్తి మేధస్సు స్థాయిని అంచనా వేయడానికి ఉపయోగించే ప్రమాణం."
+        explanation: "అభివృద్ధి నిరంతరంగా జరిగే ప్రక్రియ. ఇది శారీరక, మానసిక, సామాజిక మరియు భావోద్వేగ అంశాలను కలిగి ఉంటుంది."
     },
     {
-        question: "విద్యార్థి తన ఆసక్తితో నేర్చుకోవడం",
-        options: ["Extrinsic Motivation", "Intrinsic Motivation", "Reinforcement", "Punishment"],
+        question: "పిల్లవాడు తన అనుభవాల ఆధారంగా జ్ఞానాన్ని నిర్మించుకుంటాడని చెప్పిన సిద్ధాంతం ఏది?",
+        options: ["ప్రవర్తనావాదం", "నిర్మాణవాదం", "పరిపక్వత సిద్ధాంతం", "అనుకరణ సిద్ధాంతం"],
         correct: 1,
-        explanation: "బాహ్య ప్రోత్సాహం లేకుండా స్వయంగా ఆసక్తితో నేర్చుకోవడాన్ని Intrinsic Motivation అంటారు. ఇది స్థిరమైన అభ్యాసానికి దోహదం చేస్తుంది."
+        explanation: "నిర్మాణవాద సిద్ధాంతం ప్రకారం పిల్లలు తమ అనుభవాలు మరియు పరిసరాలతో పరస్పర చర్యల ద్వారా జ్ఞానాన్ని స్వయంగా నిర్మించుకుంటారు."
     },
     {
-        question: "Multiple Intelligence Theory ను ప్రతిపాదించినవారు",
-        options: ["Gardner", "Binet", "Skinner", "Thorndike"],
-        correct: 0,
-        explanation: "Howard Gardner Multiple Intelligence Theory ను ప్రతిపాదించారు. ఆయన ప్రకారం మేధస్సుకు అనేక రూపాలు ఉంటాయి."
-    },
-    {
-        question: "సాధారణంగా Gifted Children IQ",
-        options: ["90 పైగా", "100 పైగా", "130 పైగా", "70 పైగా"],
+        question: "విద్యార్థి చదివిన విషయాన్ని గుర్తుంచుకొని తరువాత గుర్తుకు తెచ్చుకోవడం ఏ మానసిక ప్రక్రియకు సంబంధించినది?",
+        options: ["ప్రేరణ", "గ్రహణశక్తి", "జ్ఞాపకశక్తి", "శ్రద్ధ"],
         correct: 2,
-        explanation: "సాధారణంగా IQ 130 లేదా అంతకంటే ఎక్కువ ఉన్న పిల్లలను Gifted Children గా పరిగణిస్తారు. వీరికి ప్రత్యేక విద్యా అవసరాలు ఉంటాయి."
+        explanation: "సమాచారాన్ని నిల్వచేసి అవసరమైనప్పుడు తిరిగి గుర్తుకు తెచ్చుకునే సామర్థ్యాన్ని జ్ఞాపకశక్తి అంటారు. అభ్యాసంలో ఇది ముఖ్యమైన అంశం."
     },
     {
-        question: "తరగతిలో ప్రశంసలు ఇవ్వడం ప్రధానంగా",
-        options: ["Punishment", "Motivation", "Evaluation", "Observation"],
-        correct: 1,
-        explanation: "ప్రశంసలు విద్యార్థులను మరింత మెరుగ్గా పనిచేయడానికి ప్రేరేపిస్తాయి. కాబట్టి ఇది Motivation కు ఉదాహరణ."
-    },
-    {
-        question: "\"Intelligence is the ability to act purposefully and think rationally\" అని నిర్వచించినవారు",
-        options: ["Terman", "Wechsler", "Piaget", "Guilford"],
-        correct: 1,
-        explanation: "David Wechsler మేధస్సును ఉద్దేశపూర్వకంగా వ్యవహరించే, తార్కికంగా ఆలోచించే మరియు పరిసరాలకు అనుగుణంగా ప్రవర్తించే సామర్థ్యంగా నిర్వచించారు."
-    },
-    {
-        question: "He arrived ___ Hyderabad yesterday.",
-        options: ["at", "in", "on", "by"],
-        correct: 1,
-        explanation: "పట్టణాలు, నగరాలు, దేశాల పేర్ల ముందు సాధారణంగా 'in' preposition ఉపయోగిస్తారు. కాబట్టి 'He arrived in Hyderabad yesterday' అనేది సరైన వాక్యం."
-    },
-    {
-        question: "The meeting starts ___ 10 a.m.",
-        options: ["in", "on", "at", "from"],
-        correct: 2,
-        explanation: "ఖచ్చితమైన సమయాన్ని సూచించేటప్పుడు 'at' preposition ఉపయోగిస్తారు. ఉదాహరణకు at 10 a.m., at noon, at midnight."
-    },
-    {
-        question: "She is interested ___ music.",
-        options: ["on", "in", "for", "by"],
-        correct: 1,
-        explanation: "Interested అనే adjective తర్వాత సాధారణంగా 'in' preposition వస్తుంది. 'Interested in music' అంటే సంగీతంపై ఆసక్తి కలిగి ఉండటం."
-    },
-    {
-        question: "The book is ___ the table.",
-        options: ["in", "at", "on", "from"],
-        correct: 2,
-        explanation: "'On' అనేది ఒక వస్తువు మరొక వస్తువు పైభాగంలో ఉన్నప్పుడు ఉపయోగిస్తారు. పుస్తకం టేబుల్ మీద ఉన్నందున 'on' సరైన జవాబు."
-    },
-    {
-        question: "We have been waiting ___ two hours.",
-        options: ["since", "for", "from", "by"],
-        correct: 1,
-        explanation: "సమయ వ్యవధిని సూచించేటప్పుడు 'for' ఉపయోగిస్తారు. 'For two hours' అంటే రెండు గంటలుగా ఎదురుచూస్తున్నామని అర్థం."
-    },
-    {
-        question: "He was born ___ 2010.",
-        options: ["in", "on", "at", "from"],
-        correct: 0,
-        explanation: "సంవత్సరాల ముందు 'in' preposition ఉపయోగిస్తారు. ఉదాహరణకు in 2010, in 2025, in 1990 మొదలైనవి."
-    },
-    {
-        question: "The cat jumped ___ the wall.",
-        options: ["into", "onto", "at", "from"],
-        correct: 1,
-        explanation: "'Onto' అంటే ఒక ఉపరితలం మీదకు కదలిక జరగడం. పిల్లి గోడపైకి దూకినందున 'onto' సరైన సమాధానం."
-    },
-    {
-        question: "She divided the sweets ___ the children.",
-        options: ["among", "between", "in", "at"],
-        correct: 0,
-        explanation: "రెండుకంటే ఎక్కువ మందిలో పంచినప్పుడు 'among' ఉపయోగిస్తారు. పిల్లలందరికీ మిఠాయిలు పంచిన సందర్భంలో ఇది సరైనది."
-    },
-    {
-        question: "The train passed ___ the tunnel.",
-        options: ["through", "across", "over", "beside"],
-        correct: 0,
-        explanation: "'Through' అంటే ఒక వస్తువు లోపల నుంచి వెళ్లడం. రైలు సొరంగం లోపలుగా వెళ్లినందున through సరైన జవాబు."
-    },
-    {
-        question: "My house is ___ the bank and the post office.",
-        options: ["among", "between", "through", "beside"],
-        correct: 1,
-        explanation: "రెండు వస్తువుల మధ్య ఉన్న స్థానాన్ని సూచించడానికి 'between' ఉపయోగిస్తారు. ఇక్కడ ఇల్లు రెండు ప్రదేశాల మధ్య ఉంది."
-    },
-    {
-        question: "\"మహా + ఇంద్రుడు\" లో ఏర్పడిన సంధి",
-        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి", "అత్వసంధి"],
-        correct: 1,
-        explanation: "మహా + ఇంద్రుడు కలిసినప్పుడు 'మహేంద్రుడు' రూపం వస్తుంది. ఇది వృద్ధి సంధికి ప్రసిద్ధ ఉదాహరణగా వ్యాకరణంలో చెప్పబడుతుంది."
-    },
-    {
-        question: "\"దేవ + ఆలయం\" లో ఏర్పడిన సంధి",
-        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి", "ఉత్వసంధి"],
-        correct: 0,
-        explanation: "దేవ + ఆలయం → దేవాలయం. అ + ఆ కలయిక ద్వారా ఏర్పడే సంధిని గుణసంధి అంటారు."
-    },
-    {
-        question: "\"గురు + ఆశీర్వాదం\" లో సంధి",
-        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి", "అత్వసంధి"],
-        correct: 1,
-        explanation: "గురు + ఆశీర్వాదం కలయికలో వృద్ధి సంధి లక్షణాలు కనిపిస్తాయి. APTETలో తరచుగా అడిగే ముఖ్యమైన ఉదాహరణ ఇది."
-    },
-    {
-        question: "అత్వ సంధికి ఉదాహరణ",
-        options: ["రాముడు + అతడు", "దేవ + ఆలయం", "మహా + ఇంద్రుడు", "ముని + ఈశ్వరుడు"],
-        correct: 0,
-        explanation: "రాముడు + అతడు వంటి పదాల కలయికలో అత్వ సంధి ఏర్పడుతుంది. తెలుగు సంధులలో ఇది ముఖ్యమైన ఉదాహరణగా పరిగణిస్తారు."
-    },
-    {
-        question: "\"ముని + ఈశ్వరుడు\" లో సంధి",
-        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి", "అత్వసంధి"],
-        correct: 2,
-        explanation: "ముని + ఈశ్వరుడు → మునీశ్వరుడు. ఇది యణాదేశ సంధికి ఉదాహరణ. APTET తెలుగు వ్యాకరణంలో తరచుగా అడుగుతారు."
-    },
-    {
-        question: "\"లోక + ఏక\" లో ఏర్పడే సంధి",
-        options: ["వృద్ధి సంధి", "గుణసంధి", "యణాదేశ సంధి", "ఉత్వసంధి"],
-        correct: 0,
-        explanation: "లోక + ఏక పదాల కలయికలో వృద్ధి సంధి ఏర్పడుతుంది. అ మరియు ఏ అచ్చుల కలయిక ద్వారా ఐ ధ్వని ఉత్పత్తి కావడం వృద్ధి సంధి లక్షణం."
-    },
-    {
-        question: "క్రింది వాటిలో యణాదేశ సంధి ఉదాహరణ ఏది?",
-        options: ["మునీశ్వరుడు", "దేవాలయం", "మహేంద్రుడు", "రాముడతడు"],
-        correct: 0,
-        explanation: "ముని + ఈశ్వరుడు → మునీశ్వరుడు రూపం యణాదేశ సంధికి ఉదాహరణ. APTETలో యణాదేశ సంధిపై ప్రశ్నలు తరచుగా వస్తాయి."
-    },
-    {
-        question: "గుణసంధిలో సాధారణంగా కలిసే అచ్చులు",
-        options: ["అ + అ", "అ + ఇ", "ఇ + ఈ", "ఉ + ఉ"],
-        correct: 1,
-        explanation: "సంస్కృత గుణసంధిలో సాధారణంగా అ + ఇ లేదా అ + ఈ కలిసినప్పుడు గుణరూపం ఏర్పడుతుంది. ఇది వ్యాకరణంలో ముఖ్యమైన సంధి."
-    },
-    {
-        question: "వృద్ధి సంధిలో సాధారణంగా ఏర్పడేది",
-        options: ["ఏ", "ఓ", "ఐ", "ఉ"],
-        correct: 2,
-        explanation: "వృద్ధి సంధిలో సాధారణంగా ఐ లేదా ఔ వంటి వృద్ధి స్వరాలు ఏర్పడతాయి. APTET పరీక్షలో ఇది తరచుగా అడిగే అంశం."
-    },
-    {
-        question: "క్రింది వాటిలో గుణసంధి ఉదాహరణ ఏది?",
-        options: ["దేవాలయం", "మహేంద్రుడు", "మునీశ్వరుడు", "రాముడతడు"],
-        correct: 0,
-        explanation: "దేవ + ఆలయం → దేవాలయం గుణసంధికి ప్రామాణిక ఉదాహరణ. APTETలో ఇలాంటి ప్రత్యక్ష ప్రశ్నలు వస్తాయి."
+        question: "క్రింది వాటిలో అభ్యాసాన్ని ప్రభావితం చేసే అంశం ఏది?",
+        options: ["ప్రేరణ", "ఆసక్తి", "పూర్వ అనుభవాలు", "పైవన్నీ"],
+        correct: 3,
+        explanation: "అభ్యాసాన్ని ప్రేరణ, ఆసక్తి, పూర్వ అనుభవాలు మరియు ఇతర వ్యక్తిగత అంశాలు ప్రభావితం చేస్తాయి. అందువల్ల సరైన సమాధానం పైవన్నీ."
     }
 ];
