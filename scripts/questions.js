@@ -1,389 +1,559 @@
 const SUBJECTS = [
-    "Visual Impairment",
-    "Child Development",
+    "Multiple Disabilities",
+    "ICT",
     "English",
     "Telugu",
 ];
 
 const QUESTIONS = [
     {
-        question: "దృష్టి స్పష్టతను కొలవడానికి సాధారణంగా ఉపయోగించే పరికరం ఏది?",
-        options: ["ఆడియోమీటర్", "స్నెల్లెన్ చార్ట్", "బ్రెయిల్ స్లేట్", "జాస్ సాఫ్ట్‌వేర్"],
-        correct: 1,
-        explanation: "స్నెల్లెన్ చార్ట్ దూర దృష్టి స్పష్టతను కొలవడానికి ఉపయోగిస్తారు. కంటి పరీక్షలలో ఇది అత్యంత సాధారణ సాధనం. 6/6, 6/18 వంటి దృష్టి ప్రమాణాలు దీని ద్వారా నిర్ణయించబడతాయి."
-    },
-    {
-        question: "RPWD Act-2016 ప్రకారం అంధత్వానికి సంబంధించిన ప్రమాణం ఏది?",
-        options: ["6/18 కంటే తక్కువ", "6/60 కంటే తక్కువ", "3/60 కంటే తక్కువ", "18/60 కంటే తక్కువ"],
-        correct: 2,
-        explanation: "RPWD Act-2016 ప్రకారం మెరుగైన కంటిలో సరిదిద్దిన తర్వాత కూడా దృష్టి 3/60 కంటే తక్కువగా ఉంటే అంధత్వంగా పరిగణిస్తారు. ఇది ముఖ్యమైన చట్టపరమైన ప్రమాణం."
-    },
-    {
-        question: "JAWS ప్రధానంగా ఉపయోగించబడేది",
-        options: ["వినికిడి లోపం", "ఆటిజం", "దృష్టి లోపం", "అభ్యసన లోపం"],
-        correct: 2,
-        explanation: "JAWS ఒక Screen Reader సాఫ్ట్‌వేర్. ఇది కంప్యూటర్‌లోని పాఠ్యాన్ని ధ్వనిగా చదివి దృష్టిలోపం ఉన్న వ్యక్తులు కంప్యూటర్‌ను స్వతంత్రంగా ఉపయోగించడానికి సహాయపడుతుంది."
-    },
-    {
-        question: "Screen Reader సాఫ్ట్‌వేర్ యొక్క ప్రధాన ప్రయోజనం",
-        options: ["చిత్రాలను పెద్దగా చూపించడం", "పాఠ్యాన్ని ధ్వనిగా చదవడం", "బ్రెయిల్ ముద్రించడం", "వీడియోలను సవరించడం"],
-        correct: 1,
-        explanation: "Screen Reader సాఫ్ట్‌వేర్ స్క్రీన్‌పై ఉన్న పాఠ్యాన్ని శబ్ద రూపంలో చదివి వినిపిస్తుంది. ఇది అంధులు మరియు దృష్టిలోపం ఉన్నవారికి సమాచారాన్ని అందుబాటులోకి తెస్తుంది."
-    },
-    {
-        question: "Low Vision కలిగిన విద్యార్థికి మొదట ఉపాధ్యాయుడు చేయవలసినది",
+        question: "Hearing Impairment మరియు Intellectual Disability రెండూ కలిగి ఉన్న వ్యక్తిని ఏమంటారు?",
         options: [
-            "బ్రెయిల్ నేర్పడం",
-            "విద్యార్థిని వెనుక బెంచ్‌లో కూర్చోబెట్టడం",
-            "మిగిలిన దృష్టిని వినియోగించే అవకాశాలు కల్పించడం",
-            "ప్రత్యేక పాఠశాలకు పంపించడం"
-        ],
-        correct: 2,
-        explanation: "Low Vision విద్యార్థులకు మిగిలిన దృష్టిని గరిష్టంగా ఉపయోగించుకునే అవకాశాలు కల్పించాలి. సరైన వెలుతురు, పెద్ద అక్షరాలు మరియు సహాయక పరికరాలు ఉపయోగపడతాయి."
-    },
-    {
-        question: "Magnifier ఉపయోగం ఏమిటి?",
-        options: ["శబ్దాన్ని పెంచడం", "అక్షరాలను పెద్దగా చూపించడం", "బ్రెయిల్ రాయడం", "రంగులను గుర్తించడం"],
-        correct: 1,
-        explanation: "Magnifier అక్షరాలు, చిత్రాలు మరియు ఇతర దృశ్య సమాచారాన్ని పెద్దగా చూపిస్తుంది. Low Vision ఉన్న విద్యార్థులు చదవడంలో ఇది ఎంతో సహాయపడుతుంది."
-    },
-    {
-        question: "దృష్టిలోపం ఉన్న విద్యార్థికి పాఠ్యాంశ అనుసరణ (Adaptation) కు ఉదాహరణ",
-        options: ["పరీక్ష మినహాయింపు", "పెద్ద అక్షరాల పుస్తకాలు", "హాజరు మాఫీ", "తరగతి మార్పు"],
-        correct: 1,
-        explanation: "పెద్ద అక్షరాల పుస్తకాలు Low Vision విద్యార్థులకు పాఠ్యాన్ని సులభంగా చదవడానికి సహాయపడే ముఖ్యమైన పాఠ్యాంశ అనుసరణగా పరిగణించబడుతుంది."
-    },
-    {
-        question: "Low Vision విద్యార్థులకు అత్యంత అనుకూలమైనది",
-        options: ["తక్కువ వెలుతురు", "వెనుక వరుస", "తగిన వెలుతురు", "కళ్ళు మూసుకొని వినడం"],
-        correct: 2,
-        explanation: "తగిన వెలుతురు దృష్టి లోపం ఉన్న విద్యార్థుల దృష్టి సామర్థ్యాన్ని మెరుగుపరుస్తుంది. సరైన కాంతి చదవడం మరియు బోర్డు చూడడంలో సౌలభ్యాన్ని కలిగిస్తుంది."
-    },
-    {
-        question: "Embossed Diagrams ఉపయోగించబడేది",
-        options: ["వినికిడి లోపం", "దృష్టి లోపం", "మేధో వైకల్యం", "ఆటిజం"],
-        correct: 1,
-        explanation: "Embossed Diagrams స్పర్శ ద్వారా గ్రాఫులు, ఆకృతులు మరియు పటాలను అర్థం చేసుకోవడానికి ఉపయోగిస్తారు. ఇవి ముఖ్యంగా దృష్టిలోపం ఉన్న విద్యార్థులకు ఉపయోగకరంగా ఉంటాయి."
-    },
-    {
-        question: "Braille లిపిని అభివృద్ధి చేసినవారు",
-        options: ["Louis Pasteur", "Helen Keller", "Louis Braille", "Samuel Gridley Howe"],
-        correct: 2,
-        explanation: "Louis Braille అంధుల కోసం బ్రెయిల్ లిపిని అభివృద్ధి చేశారు. ఈ లిపి ఆరు బిందువుల వ్యవస్థపై ఆధారపడి ప్రపంచవ్యాప్తంగా ఉపయోగించబడుతోంది."
-    },
-    {
-        question: "దృష్టిలోపం ఉన్న విద్యార్థి గణిత ఆకృతులను అర్థం చేసుకోవడానికి ఉత్తమ సాధనం",
-        options: ["Audio Book", "Raised Line Drawings", "Hearing Aid", "Talking Calculator"],
-        correct: 1,
-        explanation: "Raised Line Drawings ద్వారా గణిత ఆకృతులు మరియు రేఖాచిత్రాలను స్పర్శ ద్వారా గుర్తించవచ్చు. ఇది దృష్టిలోపం ఉన్న విద్యార్థులకు సమర్థవంతమైన సాధనం."
-    },
-    {
-        question: "Talking Calculator ఉపయోగం",
-        options: [
-            "గణన ఫలితాలను ధ్వనిగా వినిపించడం",
-            "అక్షరాలను పెంచడం",
-            "చిత్రాలను గుర్తించడం",
-            "బ్రెయిల్ ముద్రించడం"
-        ],
-        correct: 0,
-        explanation: "Talking Calculator గణనల ఫలితాలను ధ్వనిగా వినిపిస్తుంది. ఇది దృష్టిలోపం ఉన్న విద్యార్థులకు గణిత కార్యకలాపాలను స్వతంత్రంగా చేయడంలో సహాయపడుతుంది."
-    },
-    {
-        question: "Orientation and Mobility Training లక్ష్యం",
-        options: ["చదవడం నేర్పడం", "స్వతంత్ర సంచారం", "వినికిడి మెరుగుపరచడం", "భాషాభివృద్ధి"],
-        correct: 1,
-        explanation: "Orientation and Mobility Training ద్వారా వ్యక్తి పరిసరాలను అర్థం చేసుకొని స్వతంత్రంగా కదలడం నేర్చుకుంటాడు. ఇది దైనందిన జీవిత నైపుణ్యాలలో ముఖ్యమైనది."
-    },
-    {
-        question: "దృష్టి లోపం ఉన్న విద్యార్థికి పరీక్షలో అనుసరణగా ఇవ్వగలది",
-        options: ["ప్రశ్నల తొలగింపు", "అదనపు సమయం", "మార్కుల మినహాయింపు", "హాజరు మినహాయింపు"],
-        correct: 1,
-        explanation: "దృష్టిలోపం ఉన్న విద్యార్థులకు పరీక్షలలో అదనపు సమయం ఇవ్వడం సాధారణ అనుసరణ. ఇది ప్రశ్నలను చదవడం మరియు సమాధానాలు రాయడానికి సహాయపడుతుంది."
-    },
-    {
-        question: "Large Print Materials ప్రధానంగా ఉపయోగపడేది",
-        options: [
-            "Blind విద్యార్థులకు",
-            "Low Vision విద్యార్థులకు",
-            "Hearing Impaired విద్యార్థులకు",
-            "ASD విద్యార్థులకు"
+            "Learning Disability",
+            "Multiple Disabilities",
+            "Autism",
+            "Cerebral Palsy"
         ],
         correct: 1,
-        explanation: "Large Print Materials పెద్ద అక్షరాలతో ఉంటాయి. ఇవి Low Vision విద్యార్థులకు పాఠ్యాన్ని స్పష్టంగా చదవడంలో సహాయపడే ముఖ్యమైన విద్యా వనరులు."
+        explanation: "రెండు లేదా అంతకంటే ఎక్కువ వైకల్యాలు ఒకే వ్యక్తిలో కలిసివుంటే దానిని Multiple Disabilities అంటారు. Hearing Impairment మరియు Intellectual Disability కలిసి ఉన్నప్పుడు ఈ వర్గంలోకి వస్తుంది."
     },
     {
-        question: "CCTV Magnifier ఉపయోగం",
-        options: ["వినికిడి పెంపు", "పాఠ్యాన్ని పెద్దగా చూపడం", "బ్రెయిల్ తయారీ", "భాషా అభివృద్ధి"],
+        question: "Multiple Disabilities యొక్క సరైన నిర్వచనం ఏది?",
+        options: [
+            "ఒకే వైకల్యం కలిగి ఉండటం",
+            "రెండు లేదా అంతకంటే ఎక్కువ వైకల్యాలు కలిసి ఉండటం",
+            "తాత్కాలిక వైకల్యం",
+            "మానసిక వ్యాధి"
+        ],
         correct: 1,
-        explanation: "CCTV Magnifier కెమెరా మరియు స్క్రీన్ సహాయంతో పాఠ్యాన్ని అనేక రెట్లు పెద్దగా చూపిస్తుంది. Low Vision విద్యార్థులు పుస్తకాలు మరియు చిత్రాలను సులభంగా చూడగలరు."
+        explanation: "Multiple Disabilities అనగా ఒక వ్యక్తికి రెండు లేదా అంతకంటే ఎక్కువ వైకల్యాలు ఒకేసారి ఉండటం. దీనివల్ల ప్రత్యేక బోధన మరియు మద్దతు అవసరం అవుతుంది."
     },
     {
-        question: "దృష్టి లోపం ఉన్న విద్యార్థికి తరగతి గదిలో ఉత్తమ స్థానం",
-        options: ["ద్వారం వద్ద", "వెనుక వరుస", "బోర్డు దగ్గర", "కిటికీ వెనుక"],
+        question: "క్రింది వాటిలో Multiple Disabilities కు ఉదాహరణ ఏది?",
+        options: [
+            "Blindness మాత్రమే",
+            "Hearing Loss మాత్రమే",
+            "Visual Impairment + Cerebral Palsy",
+            "Dyslexia మాత్రమే"
+        ],
         correct: 2,
-        explanation: "బోర్డు దగ్గర కూర్చోబెట్టడం ద్వారా విద్యార్థి బోర్డుపై ఉన్న సమాచారాన్ని స్పష్టంగా చూడగలడు. ఇది Low Vision విద్యార్థులకు సాధారణ తరగతి అనుసరణ."
+        explanation: "Visual Impairment మరియు Cerebral Palsy రెండు వేర్వేరు వైకల్యాలు. ఇవి ఒకే వ్యక్తిలో ఉన్నప్పుడు Multiple Disabilities కు ఉదాహరణగా పరిగణిస్తారు."
     },
     {
-        question: "Assistive Technology యొక్క ప్రధాన ఉద్దేశ్యం",
-        options: ["వైకల్యాన్ని తొలగించడం", "సామర్థ్యాన్ని పెంపొందించడం", "ప్రత్యేక పాఠశాలకు పంపడం", "పరీక్షలు తగ్గించడం"],
+        question: "Multiple Disabilities గల విద్యార్థి అవసరాలను గుర్తించడానికి మొదటి దశ",
+        options: [
+            "పరీక్ష నిర్వహణ",
+            "Assessment",
+            "Remediation",
+            "Certification"
+        ],
         correct: 1,
-        explanation: "Assistive Technology వైకల్యాన్ని తొలగించదు కానీ వ్యక్తి సామర్థ్యాన్ని పెంచి స్వతంత్రంగా నేర్చుకోవడం, పనిచేయడం మరియు జీవించడం సులభం చేస్తుంది."
+        explanation: "విద్యార్థి బలాలు, బలహీనతలు, అవసరాలను తెలుసుకోవడానికి మొదట Assessment నిర్వహించాలి. దాని ఆధారంగా విద్యా ప్రణాళిక రూపొందించబడుతుంది."
     },
     {
-        question: "Low Vision మరియు Blindness మధ్య ప్రధాన తేడా",
-        options: ["వయస్సు", "మిగిలిన దృష్టి వినియోగం", "వినికిడి", "మేధస్సు"],
+        question: "Functional Assessment ప్రధానంగా దేనిని తెలుసుకోవడానికి ఉపయోగపడుతుంది?",
+        options: [
+            "IQ",
+            "రోజువారీ జీవన నైపుణ్యాలు",
+            "వయస్సు",
+            "హాజరు"
+        ],
         correct: 1,
-        explanation: "Low Vision ఉన్నవారు మిగిలిన దృష్టిని ఉపయోగించగలరు. Blindness లో ఉపయోగకరమైన దృష్టి చాలా తక్కువగా లేదా లేకపోవచ్చు. ఇదే ప్రధాన తేడా."
+        explanation: "Functional Assessment ద్వారా విద్యార్థి రోజువారీ జీవన నైపుణ్యాలు, స్వీయ సంరక్షణ, సామాజిక మరియు ప్రాయోగిక సామర్థ్యాలను అంచనా వేస్తారు."
     },
     {
-        question: "సమగ్ర విద్యలో దృష్టి లోపం ఉన్న విద్యార్థికి అత్యంత సరైన బోధనా విధానం",
-        options: ["ఒకే విధమైన బోధన", "వ్యక్తిగత అవసరాలకు అనుగుణ అనుసరణలు", "వేరు తరగతి", "పరీక్షల మినహాయింపు"],
+        question: "విద్యార్థికి వినికిడి లోపం మరియు దృష్టి లోపం రెండూ ఉంటే దానిని",
+        options: [
+            "Autism",
+            "Deafblindness",
+            "Dysgraphia",
+            "ADHD"
+        ],
         correct: 1,
-        explanation: "సమగ్ర విద్యలో ప్రతి విద్యార్థి అవసరాలను గుర్తించి అనుసరణలు కల్పించాలి. వ్యక్తిగత అవసరాలకు అనుగుణ బోధన ఉత్తమమైన సమగ్ర విద్యా పద్ధతి."
+        explanation: "వినికిడి మరియు దృష్టి లోపాలు రెండూ కలిసి ఉన్న పరిస్థితిని Deafblindness అంటారు. దీనికి ప్రత్యేక కమ్యూనికేషన్ మరియు బోధనా పద్ధతులు అవసరం."
     },
     {
-        question: "By next June, she _____ her course.",
-        options: ["completes", "completed", "will have completed", "has completed"],
-        correct: 2,
-        explanation: "Future Perfect Tense భవిష్యత్తులో ఒక నిర్దిష్ట సమయానికి ముందు పని పూర్తవుతుందని సూచిస్తుంది. 'By next June' అనే సూచనకు 'will have completed' సరైనది."
-    },
-    {
-        question: "When I reached the station, the train _____.",
-        options: ["leaves", "had left", "left", "has left"],
+        question: "Multiple Disabilities విద్యార్థుల కోసం IEP లో తప్పనిసరిగా ఉండవలసిన అంశం",
+        options: [
+            "Index",
+            "Goals",
+            "Preface",
+            "Annexure"
+        ],
         correct: 1,
-        explanation: "ఒక గత చర్యకు ముందే మరొక చర్య పూర్తయితే Past Perfect Tense ఉపయోగిస్తారు. నేను చేరుకునేలోపు రైలు వెళ్లిపోయింది కాబట్టి 'had left' సరైనది."
+        explanation: "IEP లో విద్యార్థి సాధించాల్సిన స్పష్టమైన లక్ష్యాలు ఉండాలి. Goals ఆధారంగా బోధన, మూల్యాంకనం మరియు పురోగతి పర్యవేక్షణ జరుగుతుంది."
     },
     {
-        question: "He _____ in Hyderabad since 2020.",
-        options: ["lives", "lived", "has lived", "had lived"],
-        correct: 2,
-        explanation: "'Since 2020' గతంలో ప్రారంభమై ఇప్పటికీ కొనసాగుతున్న చర్యను సూచిస్తుంది. అందువల్ల Present Perfect Tense అయిన 'has lived' ఉపయోగించాలి."
-    },
-    {
-        question: "Look! The baby _____.",
-        options: ["sleeps", "slept", "is sleeping", "has slept"],
-        correct: 2,
-        explanation: "'Look!' అనే పదం ప్రస్తుతం జరుగుతున్న చర్యను సూచిస్తుంది. అందువల్ల Present Continuous Tense అయిన 'is sleeping' సరైన సమాధానం."
-    },
-    {
-        question: "If it rains tomorrow, we _____ at home.",
-        options: ["stay", "stayed", "will stay", "staying"],
-        correct: 2,
-        explanation: "First Conditional లో If-Clause Present Simple లో ఉండగా Main Clause Future Simple లో ఉంటుంది. కాబట్టి 'will stay' సరైన జవాబు."
-    },
-    {
-        question: "The teacher _____ the lesson before the bell rang.",
-        options: ["finished", "had finished", "has finished", "finishes"],
+        question: "క్రింది వాటిలో Assistive Technology కు ఉదాహరణ",
+        options: [
+            "Chalk Piece",
+            "Braille Display",
+            "Blackboard",
+            "Notebook"
+        ],
         correct: 1,
-        explanation: "గంట మోగకముందే పాఠం పూర్తయింది. గతంలో మరో చర్యకు ముందే జరిగిన పని Past Perfect Tense ద్వారా వ్యక్తం చేస్తారు."
+        explanation: "Braille Display దృష్టి లోపం గల వ్యక్తులకు డిజిటల్ సమాచారాన్ని బ్రెయిల్ రూపంలో అందించే Assistive Technology పరికరం."
     },
     {
-        question: "I _____ this book twice.",
-        options: ["read", "have read", "had read", "am reading"],
+        question: "Wheelchair ప్రధానంగా దేనికి సహాయపడుతుంది?",
+        options: [
+            "Communication",
+            "Mobility",
+            "Hearing",
+            "Vision"
+        ],
         correct: 1,
-        explanation: "ఇప్పటివరకు రెండు సార్లు చదివిన అనుభవాన్ని చెప్పడానికి Present Perfect Tense ఉపయోగిస్తారు. కాబట్టి 'have read' సరైనది."
+        explanation: "Wheelchair కదలికలలో ఇబ్బందులు ఉన్న వ్యక్తులకు స్వతంత్రంగా ప్రయాణించడానికి మరియు చలనం మెరుగుపరచడానికి ఉపయోగపడుతుంది."
     },
     {
-        question: "She _____ dinner when I called her.",
-        options: ["cooks", "cooked", "was cooking", "has cooked"],
-        correct: 2,
-        explanation: "నేను ఫోన్ చేసిన సమయంలో ఆమె వంట చేస్తోంది. గతంలో ఒక సమయంలో జరుగుతున్న చర్యను Past Continuous Tense ద్వారా చూపిస్తారు."
-    },
-    {
-        question: "The sun _____ in the east.",
-        options: ["rose", "rises", "is rising", "has risen"],
+        question: "UDL యొక్క పూర్తి రూపం",
+        options: [
+            "Universal Development of Learning",
+            "Universal Design for Learning",
+            "Unified Design for Learners",
+            "Universal Disability Learning"
+        ],
         correct: 1,
-        explanation: "శాశ్వత సత్యాలు మరియు సాధారణ నిజాలను Simple Present Tense లో చెబుతారు. సూర్యుడు తూర్పున ఉదయిస్తాడు కాబట్టి 'rises' సరైనది."
+        explanation: "UDL అంటే Universal Design for Learning. ఇది వివిధ అవసరాలున్న విద్యార్థులందరికీ అందుబాటులో ఉండే బోధన విధానాలను ప్రోత్సహిస్తుంది."
     },
     {
-        question: "At 8 PM tomorrow, I _____ for the examination.",
-        options: ["study", "studied", "will be studying", "have studied"],
-        correct: 2,
-        explanation: "భవిష్యత్తులో ఒక నిర్దిష్ట సమయంలో జరుగుతున్న చర్యను Future Continuous Tense సూచిస్తుంది. కాబట్టి 'will be studying' సరైన జవాబు."
-    },
-    {
-        question: "They _____ the project yet.",
-        options: ["did not finish", "have not finished", "had not finished", "are not finishing"],
+        question: "UDL యొక్క ప్రధాన ఉద్దేశ్యం",
+        options: [
+            "అందరికీ ఒకే బోధన",
+            "వైవిధ్యమైన అభ్యాస అవసరాలను తీర్చడం",
+            "పరీక్షల నిర్వహణ",
+            "హాజరు పెంచడం"
+        ],
         correct: 1,
-        explanation: "The word 'yet' is commonly used with Present Perfect Tense. It indicates that the action has not been completed up to the present moment."
+        explanation: "UDL యొక్క లక్ష్యం ప్రతి విద్యార్థి అభ్యాస శైలిని గుర్తించి, వివిధ మార్గాల్లో బోధన అందించడం ద్వారా అభ్యాసాన్ని సులభతరం చేయడం."
     },
     {
-        question: "Before she arrived, we _____ the meeting.",
-        options: ["start", "started", "had started", "have started"],
-        correct: 2,
-        explanation: "Past Perfect Tense is used for an action completed before another past action. The meeting started before her arrival, so 'had started' is correct."
-    },
-    {
-        question: "He usually _____ tea in the morning.",
-        options: ["drinks", "drank", "is drinking", "has drunk"],
+        question: "UDL లో Multiple Means of Representation అంటే",
+        options: [
+            "అనేక విధాలుగా సమాచారం అందించడం",
+            "ఒకే పాఠ్యపుస్తకం ఉపయోగించడం",
+            "పరీక్షలు నిర్వహించడం",
+            "శిక్షణ ఇవ్వడం"
+        ],
         correct: 0,
-        explanation: "The adverb 'usually' indicates a habitual action. Simple Present Tense is used to describe habits and routines, making 'drinks' the correct answer."
+        explanation: "Multiple Means of Representation అనగా సమాచారం, భావనలు మరియు విషయాలను విద్యార్థులకు వివిధ రూపాల్లో అందించడం. ఇది UDL యొక్క ప్రధాన సూత్రాలలో ఒకటి."
     },
     {
-        question: "The students _____ an essay now.",
-        options: ["write", "wrote", "are writing", "have written"],
+        question: "Assistive Technology ఎంపికకు ముందు చేయవలసింది",
+        options: [
+            "Admission",
+            "Need Assessment",
+            "Examination",
+            "Promotion"
+        ],
+        correct: 1,
+        explanation: "Assistive Technology ఎంపికకు ముందు విద్యార్థి అవసరాలు, సామర్థ్యాలు మరియు పరిసరాలను అంచనా వేయడానికి Need Assessment చేయాలి."
+    },
+    {
+        question: "Multiple Disabilities గల విద్యార్థి పురోగతిని కొలవడానికి సరైన పద్ధతి",
+        options: [
+            "Continuous Assessment",
+            "Punishment",
+            "Attendance Record",
+            "Oral Reading Only"
+        ],
+        correct: 0,
+        explanation: "Continuous Assessment ద్వారా విద్యార్థి అభ్యాస పురోగతిని నిరంతరం గమనించి, అవసరమైన మార్పులు బోధనలో చేయవచ్చు."
+    },
+    {
+        question: "Inclusive Education లో Multiple Disabilities గల పిల్లల కోసం ప్రధాన సూత్రం",
+        options: [
+            "Segregation",
+            "Exclusion",
+            "Participation",
+            "Isolation"
+        ],
         correct: 2,
-        explanation: "The word 'now' shows that the action is happening at the present moment. Therefore, Present Continuous Tense 'are writing' is appropriate."
+        explanation: "Inclusive Education లో ప్రతి విద్యార్థి పూర్తి భాగస్వామ్యంతో నేర్చుకునే అవకాశం పొందాలి. Participation అనేది సమగ్ర విద్య యొక్క ప్రధాన సూత్రం."
     },
     {
-        question: "By the time you come, I _____ my homework.",
-        options: ["finish", "finished", "will have finished", "have finished"],
-        correct: 2,
-        explanation: "Future Perfect Tense expresses an action that will be completed before a future point in time. Hence 'will have finished' is correct."
-    },
-    {
-        question: "\"దేవాలయం\" పదంలో ఉన్న సంధి",
-        options: ["గుణసంధి", "అత్వసంధి", "యణాదేశసంధి", "వృద్ధి సంధి"],
-        correct: 0,
-        explanation: "దేవ + ఆలయం = దేవాలయం. అ + ఆ కలయిక ద్వారా ఏర్పడిన రూపం గుణసంధికి ఉదాహరణగా పరిగణించబడుతుంది."
-    },
-    {
-        question: "\"మహోత్సవం\" పదంలో సంధి",
-        options: ["గుణసంధి", "యణాదేశసంధి", "అత్వసంధి", "ఉత్వసంధి"],
-        correct: 0,
-        explanation: "మహా + ఉత్సవం → మహోత్సవం. అ + ఉ కలయిక వల్ల 'ఓ' ఏర్పడుతుంది. ఇది గుణసంధికి ప్రసిద్ధ ఉదాహరణ."
-    },
-    {
-        question: "\"రామాలయం\" పదంలో సంధి",
-        options: ["వృద్ధి సంధి", "అత్వసంధి", "గుణసంధి", "ఇట్వసంధి"],
+        question: "Communication Board ఉపయోగించేది",
+        options: [
+            "Mobility కోసం",
+            "Communication కోసం",
+            "Vision కోసం",
+            "Hearing కోసం"
+        ],
         correct: 1,
-        explanation: "రామ + ఆలయం → రామాలయం. తెలుగు వ్యాకరణంలో ఇది అత్వసంధికి ఉదాహరణగా పేర్కొనబడుతుంది."
+        explanation: "Communication Board మాట్లాడడంలో ఇబ్బంది ఉన్న విద్యార్థులకు చిత్రాలు, చిహ్నాలు లేదా పదాల ద్వారా తమ ఆలోచనలు వ్యక్తపరచడానికి సహాయపడే పరికరం."
     },
     {
-        question: "\"గురుపదేశం\" పదంలో సంధి",
-        options: ["గుణసంధి", "యణాదేశసంధి", "ఉత్వసంధి", "వృద్ధి సంధి"],
-        correct: 2,
-        explanation: "గురు + ఉపదేశం → గురుపదేశం. ఉ అక్షర సంబంధ మార్పు కారణంగా ఇది ఉత్వసంధిగా వర్గీకరించబడుతుంది."
-    },
-    {
-        question: "\"ప్రత్యేకం\" పదంలో సంధి",
-        options: ["యణాదేశసంధి", "గుణసంధి", "వృద్ధి సంధి", "అత్వసంధి"],
-        correct: 0,
-        explanation: "ప్రతి + ఏకం → ప్రత్యేకం. ఇ లేదా ఈ తరువాత అచ్చు వచ్చినప్పుడు య్ ఆగమం రావడం యణాదేశసంధి లక్షణం."
-    },
-    {
-        question: "\"రాజేంద్రుడు\" పదంలో సంధి",
-        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశసంధి", "అత్వసంధి"],
+        question: "Assistive Devices ఎంపికలో ముఖ్యమైనది",
+        options: [
+            "Cost మాత్రమే",
+            "Student Need",
+            "Brand",
+            "Colour"
+        ],
         correct: 1,
-        explanation: "రాజ + ఇంద్రుడు → రాజేంద్రుడు. అ + ఇ కలయిక ద్వారా 'ఏ' ఏర్పడటం వృద్ధి సంధికి ఉదాహరణగా పరిగణిస్తారు."
+        explanation: "Assistive Device ఎంపికలో విద్యార్థి అవసరాలు, సామర్థ్యాలు మరియు ఉపయోగించే పరిస్థితులు ముఖ్యమైనవి. ఖర్చు లేదా బ్రాండ్ మాత్రమే ప్రమాణం కాదు."
     },
     {
-        question: "\"లోకైక\" పదంలో సంధి",
-        options: ["గుణసంధి", "వృద్ధి సంధి", "అత్వసంధి", "ఉత్వసంధి"],
-        correct: 1,
-        explanation: "లోక + ఏక → లోకైక. అ + ఏ కలయికతో 'ఐ' ఏర్పడుతుంది. ఇది వృద్ధి సంధికి ముఖ్యమైన ఉదాహరణ."
-    },
-    {
-        question: "\"దేవేంద్రుడు\" పదంలో సంధి",
-        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశసంధి", "అత్వసంధి"],
-        correct: 0,
-        explanation: "దేవ + ఇంద్రుడు → దేవేంద్రుడు. అ + ఇ కలయికతో ఏర్పడిన ఈ రూపం గుణసంధి ఉదాహరణగా బోధించబడుతుంది."
-    },
-    {
-        question: "\"మహర్షి\" పదంలో సంధి",
-        options: ["గుణసంధి", "యణాదేశసంధి", "వృద్ధి సంధి", "ఉత్వసంధి"],
-        correct: 0,
-        explanation: "మహా + ఋషి → మహర్షి. అ మరియు ఋ సంయోగంతో ఏర్పడిన రూపం గుణసంధి పరిధిలో చర్చించబడుతుంది."
-    },
-    {
-        question: "\"జగన్నాథుడు\" పదంలో ఉన్న సంధి",
-        options: ["ద్విరుక్తటకార సంధి", "గుణసంధి", "యణాదేశసంధి", "వృద్ధి సంధి"],
-        correct: 0,
-        explanation: "జగత్ + నాథుడు → జగన్నాథుడు. టకార ధ్వని ద్విరుక్తం కావడం వల్ల ఇది ద్విరుక్తటకార సంధిగా గుర్తించబడుతుంది."
-    },
-    {
-        question: "అ + ఇ కలిసినప్పుడు సాధారణంగా ఏర్పడేది",
-        options: ["ఆ", "ఏ", "ఓ", "ఐ"],
-        correct: 1,
-        explanation: "సంస్కృత గుణసంధి నియమం ప్రకారం అ + ఇ లేదా అ + ఈ కలిసినప్పుడు 'ఏ' ఏర్పడుతుంది. ఉదాహరణ: దేవ + ఇంద్రుడు → దేవేంద్రుడు."
-    },
-    {
-        question: "అ + ఉ కలిసినప్పుడు ఏర్పడేది",
-        options: ["ఓ", "ఏ", "ఐ", "య"],
-        correct: 0,
-        explanation: "గుణసంధి నియమం ప్రకారం అ + ఉ లేదా అ + ఊ కలిసినప్పుడు 'ఓ' ఏర్పడుతుంది. ఉదాహరణ: మహా + ఉత్సవం → మహోత్సవం."
-    },
-    {
-        question: "ఎ + అ కలిసినప్పుడు ఏర్పడేది",
-        options: ["ఐ", "ఏ", "ఓ", "ఆ"],
-        correct: 1,
-        explanation: "సంధి నియమాల ప్రకారం ఎ + అ కలిసినప్పుడు సాధారణంగా 'ఏ' రూపం ఏర్పడుతుంది. ఇది అచ్చుల సంయోగంతో ఏర్పడే మార్పు."
-    },
-    {
-        question: "ఇ, ఈ తరువాత అచ్చుతో ప్రారంభమయ్యే పదం వచ్చినప్పుడు సాధారణంగా వచ్చే సంధి",
-        options: ["యణాదేశ సంధి", "గుణసంధి", "వృద్ధి సంధి", "అత్వసంధి"],
-        correct: 0,
-        explanation: "ఇ లేదా ఈ తరువాత అచ్చు వస్తే 'య్' ఆగమం వస్తుంది. దీనినే యణాదేశ సంధి అంటారు. ఉదాహరణ: ప్రతి + ఏకం → ప్రత్యేకం."
-    },
-    {
-        question: "అ + ఏ కలిసినప్పుడు ఏర్పడేది",
-        options: ["ఐ", "ఏ", "ఓ", "ఆ"],
-        correct: 1,
-        explanation: "అ మరియు ఏ సంయోగంతో ఏర్పడే రూపం 'ఏ'. ఈ రకమైన అచ్చు మార్పులు సంధి ప్రక్రియలో ముఖ్యమైనవి."
-    },
-    {
-        question: "పిల్లలలో శారీరక, మానసిక, సామాజిక మార్పులు క్రమపద్ధతిలో జరిగే ప్రక్రియను ఏమంటారు?",
-        options: ["అభ్యాసం", "అభివృద్ధి", "పరిపక్వత", "ప్రేరణ"],
-        correct: 1,
-        explanation: "శారీరక, మానసిక, భావోద్వేగ మరియు సామాజిక రంగాలలో క్రమబద్ధంగా జరిగే మార్పులను అభివృద్ధి అంటారు. ఇది జననం నుండి జీవితాంతం కొనసాగే నిరంతర ప్రక్రియ."
-    },
-    {
-        question: "\"వ్యక్తుల మధ్య ఉన్న తేడాలను గుర్తించి బోధనను అనుకూలపరచాలి\" అనే భావన దేనికి సంబంధించినది?",
-        options: ["వ్యక్తిగత భేదాలు", "పునరుద్ధరణ", "మూల్యాంకనం", "ప్రోత్సాహం"],
-        correct: 0,
-        explanation: "ప్రతి విద్యార్థి సామర్థ్యాలు, ఆసక్తులు, అభ్యాస వేగం మరియు నేపథ్యం వేర్వేరుగా ఉంటాయి. ఈ తేడాలను వ్యక్తిగత భేదాలు అంటారు."
-    },
-    {
-        question: "మాస్లో అవసరాల శ్రేణిలో అత్యున్నత స్థాయి ఏది?",
-        options: ["భద్రత అవసరాలు", "ప్రేమ మరియు అనుబంధం", "గౌరవ అవసరాలు", "స్వీయ సాకారత (Self-Actualization)"],
+        question: "Multiple Disabilities గుర్తింపులో భాగం కానిది",
+        options: [
+            "Medical Assessment",
+            "Educational Assessment",
+            "Functional Assessment",
+            "Election Assessment"
+        ],
         correct: 3,
-        explanation: "మాస్లో సిద్ధాంతంలో స్వీయ సాకారత అత్యున్నత స్థాయి. వ్యక్తి తన పూర్తి సామర్థ్యాన్ని తెలుసుకొని సాధించే దశను ఇది సూచిస్తుంది."
+        explanation: "Medical, Educational మరియు Functional Assessments గుర్తింపు ప్రక్రియలో భాగాలు. Election Assessment కు వైకల్యాల గుర్తింపుతో సంబంధం లేదు."
     },
     {
-        question: "విద్యార్థుల అభ్యాసంలో ఆసక్తి మరియు ఉత్సాహాన్ని పెంచడానికి ఉపయోగపడేది ఏది?",
-        options: ["పునరావృతం", "బలపరచడం (Reinforcement)", "శిక్ష", "పరీక్ష"],
-        correct: 1,
-        explanation: "సరైన ప్రవర్తన లేదా అభ్యాసాన్ని ప్రశంసలు, బహుమతులు వంటి బలపరచడం ద్వారా విద్యార్థుల ఆసక్తి మరియు ఉత్సాహం పెరుగుతుంది."
-    },
-    {
-        question: "\"తెలివితేటలను కొలవడానికి రూపొందించిన మొదటి మేధస్సు పరీక్ష\"ను రూపొందించినవారు ఎవరు?",
-        options: ["జీన్ పియాజే", "బినే", "కోహ్ల్‌బర్గ్", "స్కిన్నర్"],
-        correct: 1,
-        explanation: "ఆల్ఫ్రెడ్ బినే ప్రపంచంలోని తొలి మేధస్సు పరీక్షను రూపొందించారు. ఈ పరీక్ష విద్యార్థుల మానసిక సామర్థ్యాన్ని అంచనా వేయడానికి ఉపయోగించబడింది."
-    },
-    {
-        question: "విద్యార్థి పాఠంపై దృష్టిని కేంద్రీకరించే మానసిక ప్రక్రియను ఏమంటారు?",
-        options: ["గ్రహణశక్తి", "జ్ఞాపకశక్తి", "శ్రద్ధ", "ఆలోచన"],
-        correct: 2,
-        explanation: "ఒక నిర్దిష్ట విషయం లేదా కార్యంపై మనస్సును కేంద్రీకరించే ప్రక్రియను శ్రద్ధ అంటారు. అభ్యాసంలో ఇది కీలక పాత్ర పోషిస్తుంది."
-    },
-    {
-        question: "క్రింది వాటిలో అభివృద్ధికి సంబంధించిన సరైన లక్షణం ఏది?",
+        question: "Family involvement ఎందుకు అవసరం?",
         options: [
-            "అభివృద్ధి ఒక్కసారిగా జరుగుతుంది",
-            "అందరిలో ఒకే విధంగా జరుగుతుంది",
-            "నిరంతర ప్రక్రియ",
-            "శారీరక మార్పులకు మాత్రమే పరిమితం"
+            "Attendance కోసం",
+            "Consistency of support కోసం",
+            "Marks కోసం",
+            "Certification కోసం"
+        ],
+        correct: 1,
+        explanation: "కుటుంబ సభ్యుల భాగస్వామ్యం వల్ల పాఠశాల మరియు ఇంటి మధ్య మద్దతు కొనసాగుతుంది. ఇది విద్యార్థి అభివృద్ధికి ఎంతో ఉపయోగపడుతుంది."
+    },
+    {
+        question: "Multiple Disabilities విద్యార్థుల బోధనలో ఉత్తమ విధానం",
+        options: [
+            "One-size-fits-all",
+            "Individualized Approach",
+            "Rote Learning",
+            "Memorization Only"
+        ],
+        correct: 1,
+        explanation: "ప్రతి విద్యార్థి అవసరాలు వేర్వేరుగా ఉంటాయి. అందువల్ల Individualized Approach ద్వారా వ్యక్తిగత అవసరాలకు అనుగుణంగా బోధించాలి."
+    },
+    {
+        question: "MOOC యొక్క పూర్తి రూపం",
+        options: [
+            "Massive Open Online Course",
+            "Massive Online Open Class",
+            "Modern Open Online Course",
+            "Multiple Open Online Course"
+        ],
+        correct: 0,
+        explanation: "MOOC అంటే Massive Open Online Course. ఇది ప్రపంచవ్యాప్తంగా పెద్ద సంఖ్యలో విద్యార్థులకు అందుబాటులో ఉండే ఆన్‌లైన్ కోర్సు."
+    },
+    {
+        question: "DIKSHA ప్రధానంగా",
+        options: [
+            "Social Media Platform",
+            "Educational Platform",
+            "Gaming Platform",
+            "Shopping Portal"
+        ],
+        correct: 1,
+        explanation: "DIKSHA భారత విద్యా రంగానికి సంబంధించిన డిజిటల్ ప్లాట్‌ఫారమ్. ఇందులో ఉపాధ్యాయులు మరియు విద్యార్థుల కోసం పాఠ్య వనరులు ఉంటాయి."
+    },
+    {
+        question: "Moodle అనేది",
+        options: [
+            "Operating System",
+            "Learning Management System",
+            "Browser",
+            "Search Engine"
+        ],
+        correct: 1,
+        explanation: "Moodle ఒక Learning Management System (LMS). ఇది ఆన్‌లైన్ కోర్సుల నిర్వహణ, బోధన మరియు మూల్యాంకనానికి ఉపయోగపడుతుంది."
+    },
+    {
+        question: "MOOCs యొక్క ముఖ్య లక్షణం",
+        options: [
+            "Limited Access",
+            "Open Access Learning",
+            "Offline Only",
+            "Printed Learning"
+        ],
+        correct: 1,
+        explanation: "MOOCs యొక్క ముఖ్య లక్షణం Open Access. ఇంటర్నెట్ ఉన్న ఎవరైనా ఈ కోర్సుల్లో చేరి నేర్చుకోవచ్చు."
+    },
+    {
+        question: "DIKSHA ను అభివృద్ధి చేసిన సంస్థ",
+        options: [
+            "NCERT",
+            "RBI",
+            "ISRO",
+            "UGC"
+        ],
+        correct: 0,
+        explanation: "DIKSHA వేదికను NCERT మరియు విద్యా శాఖల సహకారంతో అభివృద్ధి చేశారు. ఇది డిజిటల్ విద్యా వనరులను అందిస్తుంది."
+    },
+    {
+        question: "Moodle ఉపయోగించేది",
+        options: [
+            "Online Course Management",
+            "Hardware Repair",
+            "Network Installation",
+            "Email Creation"
+        ],
+        correct: 0,
+        explanation: "Moodle ద్వారా కోర్సులను రూపొందించడం, విద్యార్థులను నిర్వహించడం, అసైన్‌మెంట్లు ఇవ్వడం మరియు మూల్యాంకనం చేయడం సాధ్యమవుతుంది."
+    },
+    {
+        question: "E-learning లో ప్రధాన ప్రయోజనం",
+        options: [
+            "Time Flexibility",
+            "Chalk Saving",
+            "Classroom Reduction",
+            "Examination Avoidance"
+        ],
+        correct: 0,
+        explanation: "E-learning లో విద్యార్థులు తమకు అనుకూలమైన సమయాల్లో నేర్చుకునే అవకాశం ఉంటుంది. దీనిని Time Flexibility అంటారు."
+    },
+    {
+        question: "MOOCs లో సాధారణంగా ఉండేది",
+        options: [
+            "Video Lectures",
+            "Cinema Songs",
+            "Newspapers",
+            "Magazines"
+        ],
+        correct: 0,
+        explanation: "MOOCs లో సాధారణంగా వీడియో లెక్చర్లు, క్విజ్‌లు, అసైన్‌మెంట్లు మరియు చర్చా వేదికలు ఉంటాయి. Video Lectures ప్రధాన భాగం."
+    },
+    {
+        question: "DIKSHA లో QR Code వినియోగం దేనికి?",
+        options: [
+            "Attendance",
+            "Digital Content Access",
+            "Fee Collection",
+            "Examination"
+        ],
+        correct: 1,
+        explanation: "పాఠ్యపుస్తకాలలోని QR కోడ్‌ను స్కాన్ చేసి సంబంధిత డిజిటల్ కంటెంట్, వీడియోలు మరియు అభ్యాస వనరులను పొందవచ్చు."
+    },
+    {
+        question: "Moodle లో Teacher చేయగలిగేది",
+        options: [
+            "Course Creation",
+            "Vehicle Registration",
+            "Banking",
+            "Ticket Booking"
+        ],
+        correct: 0,
+        explanation: "Moodle లో ఉపాధ్యాయులు కోర్సులను సృష్టించడం, అభ్యాస పదార్థాలను అప్‌లోడ్ చేయడం మరియు విద్యార్థుల పురోగతిని పర్యవేక్షించడం చేయగలరు."
+    },
+    {
+        question: "She is good ___ Mathematics.",
+        options: [
+            "in",
+            "on",
+            "at",
+            "for"
         ],
         correct: 2,
-        explanation: "అభివృద్ధి నిరంతరంగా జరిగే ప్రక్రియ. ఇది శారీరక, మానసిక, సామాజిక మరియు భావోద్వేగ అంశాలను కలిగి ఉంటుంది."
+        explanation: "The adjective 'good' is commonly followed by the preposition 'at' when referring to skill or ability in a subject or activity."
     },
     {
-        question: "పిల్లవాడు తన అనుభవాల ఆధారంగా జ్ఞానాన్ని నిర్మించుకుంటాడని చెప్పిన సిద్ధాంతం ఏది?",
-        options: ["ప్రవర్తనావాదం", "నిర్మాణవాదం", "పరిపక్వత సిద్ధాంతం", "అనుకరణ సిద్ధాంతం"],
-        correct: 1,
-        explanation: "నిర్మాణవాద సిద్ధాంతం ప్రకారం పిల్లలు తమ అనుభవాలు మరియు పరిసరాలతో పరస్పర చర్యల ద్వారా జ్ఞానాన్ని స్వయంగా నిర్మించుకుంటారు."
-    },
-    {
-        question: "విద్యార్థి చదివిన విషయాన్ని గుర్తుంచుకొని తరువాత గుర్తుకు తెచ్చుకోవడం ఏ మానసిక ప్రక్రియకు సంబంధించినది?",
-        options: ["ప్రేరణ", "గ్రహణశక్తి", "జ్ఞాపకశక్తి", "శ్రద్ధ"],
+        question: "Each of the boys ___ present.",
+        options: [
+            "are",
+            "were",
+            "is",
+            "have"
+        ],
         correct: 2,
-        explanation: "సమాచారాన్ని నిల్వచేసి అవసరమైనప్పుడు తిరిగి గుర్తుకు తెచ్చుకునే సామర్థ్యాన్ని జ్ఞాపకశక్తి అంటారు. అభ్యాసంలో ఇది ముఖ్యమైన అంశం."
+        explanation: "Each is a singular subject. Therefore, it takes the singular verb 'is' regardless of the plural noun that follows."
     },
     {
-        question: "క్రింది వాటిలో అభ్యాసాన్ని ప్రభావితం చేసే అంశం ఏది?",
-        options: ["ప్రేరణ", "ఆసక్తి", "పూర్వ అనుభవాలు", "పైవన్నీ"],
+        question: "The train arrived ___ time.",
+        options: [
+            "on",
+            "at",
+            "in",
+            "for"
+        ],
+        correct: 0,
+        explanation: "The correct expression is 'on time', which means arriving at the scheduled or expected time without delay."
+    },
+    {
+        question: "Neither Ram nor his friends ___ coming.",
+        options: [
+            "is",
+            "are",
+            "was",
+            "be"
+        ],
+        correct: 1,
+        explanation: "With 'neither...nor', the verb agrees with the subject nearest to it. Since 'friends' is plural, 'are' is correct."
+    },
+    {
+        question: "We have lived here ___ 2015.",
+        options: [
+            "for",
+            "since",
+            "from",
+            "by"
+        ],
+        correct: 1,
+        explanation: "Since is used with a specific point of time. Here, 2015 is a specific starting year, so 'since' is correct."
+    },
+    {
+        question: "One of the students ___ selected.",
+        options: [
+            "were",
+            "have",
+            "are",
+            "was"
+        ],
         correct: 3,
-        explanation: "అభ్యాసాన్ని ప్రేరణ, ఆసక్తి, పూర్వ అనుభవాలు మరియు ఇతర వ్యక్తిగత అంశాలు ప్రభావితం చేస్తాయి. అందువల్ల సరైన సమాధానం పైవన్నీ."
+        explanation: "The subject is 'One', which is singular. Therefore, the singular verb 'was' must be used."
+    },
+    {
+        question: "The book is ___ the table.",
+        options: [
+            "on",
+            "at",
+            "into",
+            "from"
+        ],
+        correct: 0,
+        explanation: "The preposition 'on' is used when something is placed on the surface of an object, such as a table."
+    },
+    {
+        question: "Mathematics ___ my favourite subject.",
+        options: [
+            "are",
+            "were",
+            "is",
+            "have"
+        ],
+        correct: 2,
+        explanation: "Although Mathematics ends with 's', it is treated as a singular subject name and takes the singular verb 'is'."
+    },
+    {
+        question: "He divided the sweets ___ the children.",
+        options: [
+            "among",
+            "between",
+            "over",
+            "into"
+        ],
+        correct: 0,
+        explanation: "Among is used when something is distributed to more than two people. Here, sweets are shared among children."
+    },
+    {
+        question: "Everybody ___ appreciated the program.",
+        options: [
+            "were",
+            "are",
+            "have",
+            "was"
+        ],
+        correct: 3,
+        explanation: "Everybody is a singular indefinite pronoun. Therefore, it takes the singular verb 'was'."
+    },
+    {
+        question: "“భగీరథ ప్రయత్నం” అనే జాతీయానికి అర్థం",
+        options: [
+            "చిన్న పని",
+            "కష్టసాధ్యమైన ప్రయత్నం",
+            "వ్యర్థ ప్రయత్నం",
+            "రహస్య పని"
+        ],
+        correct: 1,
+        explanation: "భగీరథుడు గంగను భూమికి తీసుకురావడానికి చేసిన గొప్ప కృషిని సూచిస్తూ, అత్యంత కష్టమైన ప్రయత్నాన్ని భగీరథ ప్రయత్నం అంటారు."
+    },
+    {
+        question: "“వల్లభ” పదానికి పర్యాయపదం",
+        options: [
+            "శత్రువు",
+            "ప్రియుడు",
+            "సేవకుడు",
+            "రాజు"
+        ],
+        correct: 1,
+        explanation: "వల్లభ అంటే ఇష్టమైనవాడు లేదా ప్రియమైనవాడు. అందువల్ల 'ప్రియుడు' సరైన పర్యాయపదం."
+    },
+    {
+        question: "“అదిగో పులి అంటే ఇదిగో తోక” అనేది",
+        options: [
+            "జాతీయం",
+            "సామెత",
+            "పద్యం",
+            "కథ"
+        ],
+        correct: 1,
+        explanation: "ఇది ఒక ప్రసిద్ధ సామెత. ఎవరైనా చెప్పిన విషయాన్ని వెంటనే ఆధారం లేకుండా నమ్మే పరిస్థితిని సూచిస్తుంది."
+    },
+    {
+        question: "“నరుడు” పదానికి పర్యాయపదం",
+        options: [
+            "మానవుడు",
+            "దేవుడు",
+            "రాక్షసుడు",
+            "పక్షి"
+        ],
+        correct: 0,
+        explanation: "నరుడు అంటే మనిషి. మానవుడు అనే పదం అదే అర్థాన్ని ఇస్తుంది కాబట్టి ఇది సరైన పర్యాయపదం."
+    },
+    {
+        question: "“కాలధర్మం చెందడం” జాతీయానికి అర్థం",
+        options: [
+            "ఎదగడం",
+            "మరణించడం",
+            "ప్రయాణించడం",
+            "గెలవడం"
+        ],
+        correct: 1,
+        explanation: "కాలధర్మం చెందడం అనే జాతీయం మరణాన్ని సూచిస్తుంది. ప్రతి జీవి కాలక్రమంలో మరణించడం సహజ ధర్మమని భావం."
+    },
+    {
+        question: "“కవి” పదానికి వికృతి",
+        options: [
+            "కావ్యం",
+            "కవిత",
+            "కై",
+            "కయ్యం"
+        ],
+        correct: 2,
+        explanation: "తెలుగు వ్యాకరణంలో 'కవి' పదానికి వికృతి రూపం 'కై'. ఇది తత్సమ పదం నుండి రూపాంతరం చెందిన వికృత పదంగా పరిగణించబడుతుంది."
+    },
+    {
+        question: "“యమకం” ఏ విభాగానికి చెందుతుంది?",
+        options: [
+            "ఛందస్సు",
+            "అలంకారం",
+            "సమాసం",
+            "సంధి"
+        ],
+        correct: 1,
+        explanation: "యమకం ఒక శబ్దాలంకారం. ఒకే పదం లేదా శబ్దం పునరావృతమైనా అర్థభేదం కలిగే విధంగా ఉపయోగించడం యమక లక్షణం."
+    },
+    {
+        question: "“ఉపమ” అనేది",
+        options: [
+            "అర్థాలంకారం",
+            "శబ్దాలంకారం",
+            "సమాసం",
+            "సంధి"
+        ],
+        correct: 0,
+        explanation: "ఉపమలో ఒక వస్తువును మరొక వస్తువుతో పోల్చి భావాన్ని వ్యక్తపరుస్తారు. అందువల్ల ఇది అర్థాలంకారాల విభాగానికి చెందుతుంది."
+    },
+    {
+        question: "“భాను” పదానికి పర్యాయపదం",
+        options: [
+            "చంద్రుడు",
+            "సూర్యుడు",
+            "నక్షత్రం",
+            "గ్రహం"
+        ],
+        correct: 1,
+        explanation: "భాను అంటే సూర్యుడు. తెలుగు సాహిత్యంలో భాస్కరుడు, రవి, ఆదిత్యుడు వంటి పదాలు కూడా సూర్యుని పర్యాయపదాలే."
+    },
+    {
+        question: "“అత్వ సంధి” తెలుగు సంధులలో ఒకటి.",
+        options: [
+            "సరైనది",
+            "తప్పు",
+            "సమాసం",
+            "అలంకారం"
+        ],
+        correct: 0,
+        explanation: "అత్వ సంధి తెలుగు సంధులలో ఒకటి. తెలుగు వ్యాకరణంలో అత్వ, ఇత్వ, ఉత్వ వంటి సంధులు ముఖ్యమైనవి."
     }
 ];
