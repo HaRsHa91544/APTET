@@ -1,4 +1,7 @@
 const SUBJECTS = [
+    "CDP",
+    "Visual Impairment",
+    "Intellectual Disability",
     "Multiple Disabilities",
     "ICT",
     "English",
@@ -7,553 +10,553 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: "Hearing Impairment మరియు Intellectual Disability రెండూ కలిగి ఉన్న వ్యక్తిని ఏమంటారు?",
+        question: "గార్డ్నర్ బహుళ మేధస్సుల సిద్ధాంతంలో \"ఇతరుల భావాలను అర్థం చేసుకునే సామర్థ్యం\" ఏ మేధస్సుకు సంబంధించినది?",
         options: [
-            "Learning Disability",
-            "Multiple Disabilities",
-            "Autism",
-            "Cerebral Palsy"
+            "భాషా మేధస్సు",
+            "అంతర్వ్యక్తి మేధస్సు",
+            "అంతర్ముఖ మేధస్సు",
+            "స్థల మేధస్సు"
         ],
         correct: 1,
-        explanation: "రెండు లేదా అంతకంటే ఎక్కువ వైకల్యాలు ఒకే వ్యక్తిలో కలిసివుంటే దానిని Multiple Disabilities అంటారు. Hearing Impairment మరియు Intellectual Disability కలిసి ఉన్నప్పుడు ఈ వర్గంలోకి వస్తుంది."
+        explanation: "అంతర్వ్యక్తి మేధస్సు అనేది ఇతరుల భావాలు, ఉద్దేశాలు, ప్రవర్తనలను అర్థం చేసుకుని వారితో సమర్థవంతంగా పరస్పర చర్యలు నిర్వహించే సామర్థ్యాన్ని సూచిస్తుంది."
     },
     {
-        question: "Multiple Disabilities యొక్క సరైన నిర్వచనం ఏది?",
+        question: "\"మేధస్సు అనేది ఒక సాధారణ కారకం (G-factor)\" అని ప్రతిపాదించిన మనోవిజ్ఞాన శాస్త్రవేత్త",
         options: [
-            "ఒకే వైకల్యం కలిగి ఉండటం",
-            "రెండు లేదా అంతకంటే ఎక్కువ వైకల్యాలు కలిసి ఉండటం",
-            "తాత్కాలిక వైకల్యం",
-            "మానసిక వ్యాధి"
-        ],
-        correct: 1,
-        explanation: "Multiple Disabilities అనగా ఒక వ్యక్తికి రెండు లేదా అంతకంటే ఎక్కువ వైకల్యాలు ఒకేసారి ఉండటం. దీనివల్ల ప్రత్యేక బోధన మరియు మద్దతు అవసరం అవుతుంది."
-    },
-    {
-        question: "క్రింది వాటిలో Multiple Disabilities కు ఉదాహరణ ఏది?",
-        options: [
-            "Blindness మాత్రమే",
-            "Hearing Loss మాత్రమే",
-            "Visual Impairment + Cerebral Palsy",
-            "Dyslexia మాత్రమే"
+            "థర్‌స్టన్",
+            "గార్డ్నర్",
+            "స్పీర్మన్",
+            "స్టెర్న్‌బర్గ్"
         ],
         correct: 2,
-        explanation: "Visual Impairment మరియు Cerebral Palsy రెండు వేర్వేరు వైకల్యాలు. ఇవి ఒకే వ్యక్తిలో ఉన్నప్పుడు Multiple Disabilities కు ఉదాహరణగా పరిగణిస్తారు."
+        explanation: "స్పీర్మన్ మేధస్సులో ఒక సాధారణ కారకం G-factor ఉంటుందని ప్రతిపాదించాడు. ఇది వివిధ మానసిక సామర్థ్యాల పనితీరును ప్రభావితం చేస్తుందని భావించాడు."
     },
     {
-        question: "Multiple Disabilities గల విద్యార్థి అవసరాలను గుర్తించడానికి మొదటి దశ",
+        question: "ఒక విద్యార్థి బహుమతి పొందిన తరువాత మరింత ఆసక్తితో చదవడం ప్రారంభించాడు. ఇది ఏ ప్రేరణ విధానానికి ఉదాహరణ?",
         options: [
-            "పరీక్ష నిర్వహణ",
-            "Assessment",
-            "Remediation",
-            "Certification"
+            "అంతర్గత ప్రేరణ",
+            "బాహ్య ప్రేరణ",
+            "జీవసంబంధ ప్రేరణ",
+            "సామాజిక ప్రేరణ"
         ],
         correct: 1,
-        explanation: "విద్యార్థి బలాలు, బలహీనతలు, అవసరాలను తెలుసుకోవడానికి మొదట Assessment నిర్వహించాలి. దాని ఆధారంగా విద్యా ప్రణాళిక రూపొందించబడుతుంది."
+        explanation: "బహుమతి వంటి బాహ్య ప్రోత్సాహకాలు విద్యార్థి ప్రవర్తనను ప్రభావితం చేస్తే దానిని బాహ్య ప్రేరణ అంటారు. ఇది నేర్చుకోవడంపై ఆసక్తిని పెంచుతుంది."
     },
     {
-        question: "Functional Assessment ప్రధానంగా దేనిని తెలుసుకోవడానికి ఉపయోగపడుతుంది?",
+        question: "మాస్లో అవసరాల సోపానక్రమంలో \"ఆత్మసాక్షాత్కారం\" ఏ స్థాయికి చెందుతుంది?",
         options: [
-            "IQ",
-            "రోజువారీ జీవన నైపుణ్యాలు",
-            "వయస్సు",
-            "హాజరు"
-        ],
-        correct: 1,
-        explanation: "Functional Assessment ద్వారా విద్యార్థి రోజువారీ జీవన నైపుణ్యాలు, స్వీయ సంరక్షణ, సామాజిక మరియు ప్రాయోగిక సామర్థ్యాలను అంచనా వేస్తారు."
-    },
-    {
-        question: "విద్యార్థికి వినికిడి లోపం మరియు దృష్టి లోపం రెండూ ఉంటే దానిని",
-        options: [
-            "Autism",
-            "Deafblindness",
-            "Dysgraphia",
-            "ADHD"
-        ],
-        correct: 1,
-        explanation: "వినికిడి మరియు దృష్టి లోపాలు రెండూ కలిసి ఉన్న పరిస్థితిని Deafblindness అంటారు. దీనికి ప్రత్యేక కమ్యూనికేషన్ మరియు బోధనా పద్ధతులు అవసరం."
-    },
-    {
-        question: "Multiple Disabilities విద్యార్థుల కోసం IEP లో తప్పనిసరిగా ఉండవలసిన అంశం",
-        options: [
-            "Index",
-            "Goals",
-            "Preface",
-            "Annexure"
-        ],
-        correct: 1,
-        explanation: "IEP లో విద్యార్థి సాధించాల్సిన స్పష్టమైన లక్ష్యాలు ఉండాలి. Goals ఆధారంగా బోధన, మూల్యాంకనం మరియు పురోగతి పర్యవేక్షణ జరుగుతుంది."
-    },
-    {
-        question: "క్రింది వాటిలో Assistive Technology కు ఉదాహరణ",
-        options: [
-            "Chalk Piece",
-            "Braille Display",
-            "Blackboard",
-            "Notebook"
-        ],
-        correct: 1,
-        explanation: "Braille Display దృష్టి లోపం గల వ్యక్తులకు డిజిటల్ సమాచారాన్ని బ్రెయిల్ రూపంలో అందించే Assistive Technology పరికరం."
-    },
-    {
-        question: "Wheelchair ప్రధానంగా దేనికి సహాయపడుతుంది?",
-        options: [
-            "Communication",
-            "Mobility",
-            "Hearing",
-            "Vision"
-        ],
-        correct: 1,
-        explanation: "Wheelchair కదలికలలో ఇబ్బందులు ఉన్న వ్యక్తులకు స్వతంత్రంగా ప్రయాణించడానికి మరియు చలనం మెరుగుపరచడానికి ఉపయోగపడుతుంది."
-    },
-    {
-        question: "UDL యొక్క పూర్తి రూపం",
-        options: [
-            "Universal Development of Learning",
-            "Universal Design for Learning",
-            "Unified Design for Learners",
-            "Universal Disability Learning"
-        ],
-        correct: 1,
-        explanation: "UDL అంటే Universal Design for Learning. ఇది వివిధ అవసరాలున్న విద్యార్థులందరికీ అందుబాటులో ఉండే బోధన విధానాలను ప్రోత్సహిస్తుంది."
-    },
-    {
-        question: "UDL యొక్క ప్రధాన ఉద్దేశ్యం",
-        options: [
-            "అందరికీ ఒకే బోధన",
-            "వైవిధ్యమైన అభ్యాస అవసరాలను తీర్చడం",
-            "పరీక్షల నిర్వహణ",
-            "హాజరు పెంచడం"
-        ],
-        correct: 1,
-        explanation: "UDL యొక్క లక్ష్యం ప్రతి విద్యార్థి అభ్యాస శైలిని గుర్తించి, వివిధ మార్గాల్లో బోధన అందించడం ద్వారా అభ్యాసాన్ని సులభతరం చేయడం."
-    },
-    {
-        question: "UDL లో Multiple Means of Representation అంటే",
-        options: [
-            "అనేక విధాలుగా సమాచారం అందించడం",
-            "ఒకే పాఠ్యపుస్తకం ఉపయోగించడం",
-            "పరీక్షలు నిర్వహించడం",
-            "శిక్షణ ఇవ్వడం"
-        ],
-        correct: 0,
-        explanation: "Multiple Means of Representation అనగా సమాచారం, భావనలు మరియు విషయాలను విద్యార్థులకు వివిధ రూపాల్లో అందించడం. ఇది UDL యొక్క ప్రధాన సూత్రాలలో ఒకటి."
-    },
-    {
-        question: "Assistive Technology ఎంపికకు ముందు చేయవలసింది",
-        options: [
-            "Admission",
-            "Need Assessment",
-            "Examination",
-            "Promotion"
-        ],
-        correct: 1,
-        explanation: "Assistive Technology ఎంపికకు ముందు విద్యార్థి అవసరాలు, సామర్థ్యాలు మరియు పరిసరాలను అంచనా వేయడానికి Need Assessment చేయాలి."
-    },
-    {
-        question: "Multiple Disabilities గల విద్యార్థి పురోగతిని కొలవడానికి సరైన పద్ధతి",
-        options: [
-            "Continuous Assessment",
-            "Punishment",
-            "Attendance Record",
-            "Oral Reading Only"
-        ],
-        correct: 0,
-        explanation: "Continuous Assessment ద్వారా విద్యార్థి అభ్యాస పురోగతిని నిరంతరం గమనించి, అవసరమైన మార్పులు బోధనలో చేయవచ్చు."
-    },
-    {
-        question: "Inclusive Education లో Multiple Disabilities గల పిల్లల కోసం ప్రధాన సూత్రం",
-        options: [
-            "Segregation",
-            "Exclusion",
-            "Participation",
-            "Isolation"
-        ],
-        correct: 2,
-        explanation: "Inclusive Education లో ప్రతి విద్యార్థి పూర్తి భాగస్వామ్యంతో నేర్చుకునే అవకాశం పొందాలి. Participation అనేది సమగ్ర విద్య యొక్క ప్రధాన సూత్రం."
-    },
-    {
-        question: "Communication Board ఉపయోగించేది",
-        options: [
-            "Mobility కోసం",
-            "Communication కోసం",
-            "Vision కోసం",
-            "Hearing కోసం"
-        ],
-        correct: 1,
-        explanation: "Communication Board మాట్లాడడంలో ఇబ్బంది ఉన్న విద్యార్థులకు చిత్రాలు, చిహ్నాలు లేదా పదాల ద్వారా తమ ఆలోచనలు వ్యక్తపరచడానికి సహాయపడే పరికరం."
-    },
-    {
-        question: "Assistive Devices ఎంపికలో ముఖ్యమైనది",
-        options: [
-            "Cost మాత్రమే",
-            "Student Need",
-            "Brand",
-            "Colour"
-        ],
-        correct: 1,
-        explanation: "Assistive Device ఎంపికలో విద్యార్థి అవసరాలు, సామర్థ్యాలు మరియు ఉపయోగించే పరిస్థితులు ముఖ్యమైనవి. ఖర్చు లేదా బ్రాండ్ మాత్రమే ప్రమాణం కాదు."
-    },
-    {
-        question: "Multiple Disabilities గుర్తింపులో భాగం కానిది",
-        options: [
-            "Medical Assessment",
-            "Educational Assessment",
-            "Functional Assessment",
-            "Election Assessment"
+            "భద్రతా అవసరాలు",
+            "గౌరవ అవసరాలు",
+            "సామాజిక అవసరాలు",
+            "అత్యున్నత అవసరాలు"
         ],
         correct: 3,
-        explanation: "Medical, Educational మరియు Functional Assessments గుర్తింపు ప్రక్రియలో భాగాలు. Election Assessment కు వైకల్యాల గుర్తింపుతో సంబంధం లేదు."
+        explanation: "ఆత్మసాక్షాత్కారం మాస్లో అవసరాల సోపానక్రమంలో అత్యున్నత స్థాయి. వ్యక్తి తన పూర్తి సామర్థ్యాన్ని సాధించాలనే అవసరాన్ని ఇది సూచిస్తుంది."
     },
     {
-        question: "Family involvement ఎందుకు అవసరం?",
+        question: "థర్‌స్టన్ ప్రతిపాదించిన మౌలిక మానసిక సామర్థ్యాలలో కిందివాటిలో ఏది ఒకటి?",
         options: [
-            "Attendance కోసం",
-            "Consistency of support కోసం",
-            "Marks కోసం",
-            "Certification కోసం"
+            "శారీరక సామర్థ్యం",
+            "సంఖ్యా సామర్థ్యం",
+            "భావోద్వేగ సామర్థ్యం",
+            "నాయకత్వ సామర్థ్యం"
         ],
         correct: 1,
-        explanation: "కుటుంబ సభ్యుల భాగస్వామ్యం వల్ల పాఠశాల మరియు ఇంటి మధ్య మద్దతు కొనసాగుతుంది. ఇది విద్యార్థి అభివృద్ధికి ఎంతో ఉపయోగపడుతుంది."
+        explanation: "థర్‌స్టన్ Primary Mental Abilities లో సంఖ్యా సామర్థ్యాన్ని పేర్కొన్నాడు. సంఖ్యలతో పని చేయడం, గణన చేయడం ఇందులో భాగం."
     },
     {
-        question: "Multiple Disabilities విద్యార్థుల బోధనలో ఉత్తమ విధానం",
+        question: "\"పరిస్థితిని అర్థవంతంగా గ్రహించి అర్థం చేసుకోవడం\" అనేది",
         options: [
-            "One-size-fits-all",
-            "Individualized Approach",
-            "Rote Learning",
-            "Memorization Only"
+            "సంచలనం",
+            "అవధానం",
+            "ప్రేరణ",
+            "గ్రహణం"
+        ],
+        correct: 3,
+        explanation: "గ్రహణం అనేది ఇంద్రియాల ద్వారా వచ్చిన సమాచారాన్ని అర్థవంతంగా విశ్లేషించి అర్థం చేసుకునే మానసిక ప్రక్రియ. ఇది సంచలనానికి తర్వాతి దశ."
+    },
+    {
+        question: "ఒక ఉపాధ్యాయుడు విద్యార్థులలో నేర్చుకోవాలనే ఆసక్తిని పెంచడానికి ప్రశంసలను ఉపయోగిస్తున్నాడు. ఇది",
+        options: [
+            "శిక్ష",
+            "పునర్బలనం",
+            "అంతర్దృష్టి",
+            "పరిపక్వత"
         ],
         correct: 1,
-        explanation: "ప్రతి విద్యార్థి అవసరాలు వేర్వేరుగా ఉంటాయి. అందువల్ల Individualized Approach ద్వారా వ్యక్తిగత అవసరాలకు అనుగుణంగా బోధించాలి."
+        explanation: "ప్రశంసలు సానుకూల పునర్బలనం. ఇవి కోరుకున్న ప్రవర్తనను మళ్లీ ప్రదర్శించడానికి విద్యార్థులను ప్రోత్సహిస్తాయి."
     },
     {
-        question: "MOOC యొక్క పూర్తి రూపం",
+        question: "విద్యార్థులకు వీడియో, ఆడియో, యానిమేషన్, చిత్రాలను కలిపి బోధించే విధానాన్ని ఏమంటారు?",
         options: [
-            "Massive Open Online Course",
-            "Massive Online Open Class",
-            "Modern Open Online Course",
-            "Multiple Open Online Course"
+            "వెబ్ డిజైనింగ్",
+            "మల్టీమీడియా",
+            "ప్రోగ్రామింగ్",
+            "నెట్‌వర్కింగ్"
+        ],
+        correct: 1,
+        explanation: "టెక్స్ట్, ఆడియో, వీడియో, యానిమేషన్ మరియు చిత్రాలను సమన్వయపరచి బోధించే విధానాన్ని మల్టీమీడియా అంటారు. ఇది బహుఇంద్రియ అభ్యాసాన్ని ప్రోత్సహిస్తుంది."
+    },
+    {
+        question: "భారత ప్రభుత్వ డిజిటల్ విద్యా వేదిక",
+        options: [
+            "Moodle",
+            "Coursera",
+            "DIKSHA",
+            "SWAYAMPRABHA"
+        ],
+        correct: 2,
+        explanation: "DIKSHA భారత ప్రభుత్వ డిజిటల్ విద్యా వేదిక. ఇది ఉపాధ్యాయులు మరియు విద్యార్థులకు డిజిటల్ అభ్యాస వనరులను అందిస్తుంది."
+    },
+    {
+        question: "MOOCs యొక్క పూర్తి రూపం",
+        options: [
+            "Massive Open Online Courses",
+            "Multiple Online Open Courses",
+            "Massive Offline Open Courses",
+            "Modern Online Open Classes"
         ],
         correct: 0,
-        explanation: "MOOC అంటే Massive Open Online Course. ఇది ప్రపంచవ్యాప్తంగా పెద్ద సంఖ్యలో విద్యార్థులకు అందుబాటులో ఉండే ఆన్‌లైన్ కోర్సు."
+        explanation: "MOOCs అంటే Massive Open Online Courses. ఇవి ఇంటర్నెట్ ద్వారా పెద్ద సంఖ్యలో అభ్యాసకులకు అందుబాటులో ఉండే కోర్సులు."
     },
     {
-        question: "DIKSHA ప్రధానంగా",
+        question: "Moodle ప్రధానంగా ఉపయోగించబడేది",
         options: [
-            "Social Media Platform",
-            "Educational Platform",
-            "Gaming Platform",
-            "Shopping Portal"
-        ],
-        correct: 1,
-        explanation: "DIKSHA భారత విద్యా రంగానికి సంబంధించిన డిజిటల్ ప్లాట్‌ఫారమ్. ఇందులో ఉపాధ్యాయులు మరియు విద్యార్థుల కోసం పాఠ్య వనరులు ఉంటాయి."
-    },
-    {
-        question: "Moodle అనేది",
-        options: [
-            "Operating System",
+            "ఆడియో రికార్డింగ్",
             "Learning Management System",
-            "Browser",
-            "Search Engine"
+            "వీడియో ఎడిటింగ్",
+            "డేటాబేస్ నిర్వహణ"
         ],
         correct: 1,
-        explanation: "Moodle ఒక Learning Management System (LMS). ఇది ఆన్‌లైన్ కోర్సుల నిర్వహణ, బోధన మరియు మూల్యాంకనానికి ఉపయోగపడుతుంది."
+        explanation: "Moodle ఒక Learning Management System (LMS). ఇది కోర్సుల నిర్వహణ, అసైన్‌మెంట్లు, మూల్యాంకనం మరియు ఆన్‌లైన్ బోధనకు ఉపయోగపడుతుంది."
     },
     {
-        question: "MOOCs యొక్క ముఖ్య లక్షణం",
+        question: "క్రింది వాటిలో మల్టీమీడియా అంశం కానిది",
         options: [
-            "Limited Access",
-            "Open Access Learning",
-            "Offline Only",
-            "Printed Learning"
-        ],
-        correct: 1,
-        explanation: "MOOCs యొక్క ముఖ్య లక్షణం Open Access. ఇంటర్నెట్ ఉన్న ఎవరైనా ఈ కోర్సుల్లో చేరి నేర్చుకోవచ్చు."
-    },
-    {
-        question: "DIKSHA ను అభివృద్ధి చేసిన సంస్థ",
-        options: [
-            "NCERT",
-            "RBI",
-            "ISRO",
-            "UGC"
-        ],
-        correct: 0,
-        explanation: "DIKSHA వేదికను NCERT మరియు విద్యా శాఖల సహకారంతో అభివృద్ధి చేశారు. ఇది డిజిటల్ విద్యా వనరులను అందిస్తుంది."
-    },
-    {
-        question: "Moodle ఉపయోగించేది",
-        options: [
-            "Online Course Management",
-            "Hardware Repair",
-            "Network Installation",
-            "Email Creation"
-        ],
-        correct: 0,
-        explanation: "Moodle ద్వారా కోర్సులను రూపొందించడం, విద్యార్థులను నిర్వహించడం, అసైన్‌మెంట్లు ఇవ్వడం మరియు మూల్యాంకనం చేయడం సాధ్యమవుతుంది."
-    },
-    {
-        question: "E-learning లో ప్రధాన ప్రయోజనం",
-        options: [
-            "Time Flexibility",
-            "Chalk Saving",
-            "Classroom Reduction",
-            "Examination Avoidance"
-        ],
-        correct: 0,
-        explanation: "E-learning లో విద్యార్థులు తమకు అనుకూలమైన సమయాల్లో నేర్చుకునే అవకాశం ఉంటుంది. దీనిని Time Flexibility అంటారు."
-    },
-    {
-        question: "MOOCs లో సాధారణంగా ఉండేది",
-        options: [
-            "Video Lectures",
-            "Cinema Songs",
-            "Newspapers",
-            "Magazines"
-        ],
-        correct: 0,
-        explanation: "MOOCs లో సాధారణంగా వీడియో లెక్చర్లు, క్విజ్‌లు, అసైన్‌మెంట్లు మరియు చర్చా వేదికలు ఉంటాయి. Video Lectures ప్రధాన భాగం."
-    },
-    {
-        question: "DIKSHA లో QR Code వినియోగం దేనికి?",
-        options: [
-            "Attendance",
-            "Digital Content Access",
-            "Fee Collection",
-            "Examination"
-        ],
-        correct: 1,
-        explanation: "పాఠ్యపుస్తకాలలోని QR కోడ్‌ను స్కాన్ చేసి సంబంధిత డిజిటల్ కంటెంట్, వీడియోలు మరియు అభ్యాస వనరులను పొందవచ్చు."
-    },
-    {
-        question: "Moodle లో Teacher చేయగలిగేది",
-        options: [
-            "Course Creation",
-            "Vehicle Registration",
-            "Banking",
-            "Ticket Booking"
-        ],
-        correct: 0,
-        explanation: "Moodle లో ఉపాధ్యాయులు కోర్సులను సృష్టించడం, అభ్యాస పదార్థాలను అప్‌లోడ్ చేయడం మరియు విద్యార్థుల పురోగతిని పర్యవేక్షించడం చేయగలరు."
-    },
-    {
-        question: "She is good ___ Mathematics.",
-        options: [
-            "in",
-            "on",
-            "at",
-            "for"
-        ],
-        correct: 2,
-        explanation: "The adjective 'good' is commonly followed by the preposition 'at' when referring to skill or ability in a subject or activity."
-    },
-    {
-        question: "Each of the boys ___ present.",
-        options: [
-            "are",
-            "were",
-            "is",
-            "have"
-        ],
-        correct: 2,
-        explanation: "Each is a singular subject. Therefore, it takes the singular verb 'is' regardless of the plural noun that follows."
-    },
-    {
-        question: "The train arrived ___ time.",
-        options: [
-            "on",
-            "at",
-            "in",
-            "for"
-        ],
-        correct: 0,
-        explanation: "The correct expression is 'on time', which means arriving at the scheduled or expected time without delay."
-    },
-    {
-        question: "Neither Ram nor his friends ___ coming.",
-        options: [
-            "is",
-            "are",
-            "was",
-            "be"
-        ],
-        correct: 1,
-        explanation: "With 'neither...nor', the verb agrees with the subject nearest to it. Since 'friends' is plural, 'are' is correct."
-    },
-    {
-        question: "We have lived here ___ 2015.",
-        options: [
-            "for",
-            "since",
-            "from",
-            "by"
-        ],
-        correct: 1,
-        explanation: "Since is used with a specific point of time. Here, 2015 is a specific starting year, so 'since' is correct."
-    },
-    {
-        question: "One of the students ___ selected.",
-        options: [
-            "were",
-            "have",
-            "are",
-            "was"
+            "టెక్స్ట్",
+            "ఆడియో",
+            "వీడియో",
+            "RAM"
         ],
         correct: 3,
-        explanation: "The subject is 'One', which is singular. Therefore, the singular verb 'was' must be used."
+        explanation: "RAM కంప్యూటర్ మెమరీ భాగం. ఇది మల్టీమీడియా అంశం కాదు. టెక్స్ట్, ఆడియో, వీడియోలు మల్టీమీడియా భాగాలు."
     },
     {
-        question: "The book is ___ the table.",
+        question: "\"భగీరథ ప్రయత్నం\" జాతీయానికి సరైన అర్థం",
         options: [
-            "on",
-            "at",
-            "into",
-            "from"
+            "వృథా ప్రయత్నం",
+            "గొప్ప కృషి",
+            "చిన్న ప్రయత్నం",
+            "వేగవంతమైన పని"
         ],
-        correct: 0,
-        explanation: "The preposition 'on' is used when something is placed on the surface of an object, such as a table."
+        correct: 1,
+        explanation: "భగీరథుడు గంగను భూమికి తీసుకురావడానికి చేసిన మహత్తర కృషి ఆధారంగా 'భగీరథ ప్రయత్నం' అనే జాతీయం ఏర్పడింది."
     },
     {
-        question: "Mathematics ___ my favourite subject.",
+        question: "\"నరుడు\" పదానికి పర్యాయపదం",
         options: [
-            "are",
-            "were",
-            "is",
-            "have"
+            "రాక్షసుడు",
+            "దేవుడు",
+            "మానవుడు",
+            "యక్షుడు"
         ],
         correct: 2,
-        explanation: "Although Mathematics ends with 's', it is treated as a singular subject name and takes the singular verb 'is'."
+        explanation: "నరుడు అంటే మనిషి. మానవుడు అనే పదం దీనికి సమానార్థకంగా ఉపయోగించబడుతుంది."
     },
     {
-        question: "He divided the sweets ___ the children.",
+        question: "\"చేయి\" పదానికి వికృతి రూపం",
         options: [
-            "among",
-            "between",
-            "over",
-            "into"
+            "చేతి",
+            "చేయు",
+            "చేత",
+            "చేయ"
         ],
         correct: 0,
-        explanation: "Among is used when something is distributed to more than two people. Here, sweets are shared among children."
+        explanation: "చేయి పదానికి రూపాంతరం చెందిన వికృతి రూపం 'చేతి'. ఇది వ్యావహారిక వాడుకలో సాధారణంగా కనిపిస్తుంది."
     },
     {
-        question: "Everybody ___ appreciated the program.",
+        question: "\"లోక + ఈశుడు\" సంధి రూపం",
         options: [
-            "were",
-            "are",
-            "have",
-            "was"
+            "లోకేశుడు",
+            "లోకఈశుడు",
+            "లోకయీశుడు",
+            "లోకైశుడు"
         ],
-        correct: 3,
-        explanation: "Everybody is a singular indefinite pronoun. Therefore, it takes the singular verb 'was'."
+        correct: 0,
+        explanation: "లోక + ఈశుడు పదాలకు గుణసంధి జరిగి 'లోకేశుడు' రూపం ఏర్పడుతుంది. ఇది తెలుగు వ్యాకరణంలోని సాధారణ సంధి ఉదాహరణ."
     },
     {
-        question: "“భగీరథ ప్రయత్నం” అనే జాతీయానికి అర్థం",
+        question: "\"రాజపుత్రుడు\" ఏ సమాసానికి ఉదాహరణ?",
         options: [
-            "చిన్న పని",
-            "కష్టసాధ్యమైన ప్రయత్నం",
-            "వ్యర్థ ప్రయత్నం",
-            "రహస్య పని"
+            "ద్వంద్వ",
+            "ద్విగు",
+            "తత్పురుష",
+            "బహువ్రీహి"
         ],
-        correct: 1,
-        explanation: "భగీరథుడు గంగను భూమికి తీసుకురావడానికి చేసిన గొప్ప కృషిని సూచిస్తూ, అత్యంత కష్టమైన ప్రయత్నాన్ని భగీరథ ప్రయత్నం అంటారు."
+        correct: 2,
+        explanation: "రాజు యొక్క పుత్రుడు అనే విగ్రహ వాక్యం కలిగిన సమాసం తత్పురుష సమాసం. ఇందులో ఉత్తరపదార్థం ప్రధానంగా ఉంటుంది."
     },
     {
-        question: "“వల్లభ” పదానికి పర్యాయపదం",
-        options: [
-            "శత్రువు",
-            "ప్రియుడు",
-            "సేవకుడు",
-            "రాజు"
-        ],
-        correct: 1,
-        explanation: "వల్లభ అంటే ఇష్టమైనవాడు లేదా ప్రియమైనవాడు. అందువల్ల 'ప్రియుడు' సరైన పర్యాయపదం."
-    },
-    {
-        question: "“అదిగో పులి అంటే ఇదిగో తోక” అనేది",
+        question: "\"అదిగో పులి అంటే ఇదిగో తోక\" అనేది",
         options: [
             "జాతీయం",
             "సామెత",
-            "పద్యం",
-            "కథ"
+            "పొడుపుకథ",
+            "నానుడి"
         ],
         correct: 1,
-        explanation: "ఇది ఒక ప్రసిద్ధ సామెత. ఎవరైనా చెప్పిన విషయాన్ని వెంటనే ఆధారం లేకుండా నమ్మే పరిస్థితిని సూచిస్తుంది."
+        explanation: "ఈ వాక్యం ప్రజల అనుభవాల నుంచి వచ్చిన సామెత. ఏదైనా విషయాన్ని వెంటనే నిరూపించడానికి ఉపయోగించే సందర్భంలో వాడతారు."
     },
     {
-        question: "“నరుడు” పదానికి పర్యాయపదం",
+        question: "\"వల్లభ\" పదానికి పర్యాయపదం",
         options: [
-            "మానవుడు",
-            "దేవుడు",
-            "రాక్షసుడు",
-            "పక్షి"
-        ],
-        correct: 0,
-        explanation: "నరుడు అంటే మనిషి. మానవుడు అనే పదం అదే అర్థాన్ని ఇస్తుంది కాబట్టి ఇది సరైన పర్యాయపదం."
-    },
-    {
-        question: "“కాలధర్మం చెందడం” జాతీయానికి అర్థం",
-        options: [
-            "ఎదగడం",
-            "మరణించడం",
-            "ప్రయాణించడం",
-            "గెలవడం"
-        ],
-        correct: 1,
-        explanation: "కాలధర్మం చెందడం అనే జాతీయం మరణాన్ని సూచిస్తుంది. ప్రతి జీవి కాలక్రమంలో మరణించడం సహజ ధర్మమని భావం."
-    },
-    {
-        question: "“కవి” పదానికి వికృతి",
-        options: [
-            "కావ్యం",
-            "కవిత",
-            "కై",
-            "కయ్యం"
+            "శత్రువు",
+            "మిత్రుడు",
+            "ప్రియుడు",
+            "రాజు"
         ],
         correct: 2,
-        explanation: "తెలుగు వ్యాకరణంలో 'కవి' పదానికి వికృతి రూపం 'కై'. ఇది తత్సమ పదం నుండి రూపాంతరం చెందిన వికృత పదంగా పరిగణించబడుతుంది."
+        explanation: "వల్లభ అంటే ఇష్టమైన వ్యక్తి లేదా ప్రియమైనవాడు. అందువల్ల 'ప్రియుడు' సరైన పర్యాయపదం."
     },
     {
-        question: "“యమకం” ఏ విభాగానికి చెందుతుంది?",
+        question: "Choose the correct preposition: She is good ___ Mathematics.",
         options: [
-            "ఛందస్సు",
-            "అలంకారం",
-            "సమాసం",
-            "సంధి"
+            "in",
+            "at",
+            "on",
+            "for"
         ],
         correct: 1,
-        explanation: "యమకం ఒక శబ్దాలంకారం. ఒకే పదం లేదా శబ్దం పునరావృతమైనా అర్థభేదం కలిగే విధంగా ఉపయోగించడం యమక లక్షణం."
+        explanation: "ఒక వ్యక్తి ఏదైనా నైపుణ్యంలో మంచి ప్రావీణ్యం కలిగి ఉన్నప్పుడు 'good at' అనే preposition combination ఉపయోగిస్తారు."
     },
     {
-        question: "“ఉపమ” అనేది",
+        question: "Choose the correct verb: Each of the students ___ present.",
         options: [
-            "అర్థాలంకారం",
-            "శబ్దాలంకారం",
-            "సమాసం",
-            "సంధి"
+            "are",
+            "were",
+            "is",
+            "have"
         ],
-        correct: 0,
-        explanation: "ఉపమలో ఒక వస్తువును మరొక వస్తువుతో పోల్చి భావాన్ని వ్యక్తపరుస్తారు. అందువల్ల ఇది అర్థాలంకారాల విభాగానికి చెందుతుంది."
+        correct: 2,
+        explanation: "Each అనే పదం singular subject గా పరిగణించబడుతుంది. కాబట్టి singular verb అయిన 'is' ఉపయోగించాలి."
     },
     {
-        question: "“భాను” పదానికి పర్యాయపదం",
+        question: "Identify the error: Neither the teacher nor the students was absent.",
         options: [
-            "చంద్రుడు",
-            "సూర్యుడు",
-            "నక్షత్రం",
-            "గ్రహం"
+            "Neither",
+            "teacher",
+            "students",
+            "was"
+        ],
+        correct: 3,
+        explanation: "Neither...nor నిర్మాణంలో verb సమీప subject కు అనుగుణంగా ఉంటుంది. 'students' plural కాబట్టి 'were' వాడాలి."
+    },
+    {
+        question: "Choose the correct tense: By next year, she ___ her degree.",
+        options: [
+            "completes",
+            "completed",
+            "will have completed",
+            "has completed"
+        ],
+        correct: 2,
+        explanation: "భవిష్యత్తులో ఒక నిర్దిష్ట సమయానికి ముందే పూర్తయ్యే చర్యను తెలియజేయడానికి Future Perfect Tense ఉపయోగిస్తారు."
+    },
+    {
+        question: "If I ___ harder, I would have passed.",
+        options: [
+            "study",
+            "studied",
+            "had studied",
+            "have studied"
+        ],
+        correct: 2,
+        explanation: "ఇది Type-3 Conditional sentence. If clause లో Past Perfect (had studied) ఉపయోగించాలి."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "The news are interesting.",
+            "The news is interesting.",
+            "The news were interesting.",
+            "The news have interesting."
         ],
         correct: 1,
-        explanation: "భాను అంటే సూర్యుడు. తెలుగు సాహిత్యంలో భాస్కరుడు, రవి, ఆదిత్యుడు వంటి పదాలు కూడా సూర్యుని పర్యాయపదాలే."
+        explanation: "News అనే పదం రూపంలో plural లాగా కనిపించినా grammatical గా singular noun. కాబట్టి 'is' ఉపయోగించాలి."
     },
     {
-        question: "“అత్వ సంధి” తెలుగు సంధులలో ఒకటి.",
+        question: "తక్కువ స్థాయి మేధో వైకల్యం (Mild Intellectual Disability) గల వారి IQ పరిధి",
         options: [
-            "సరైనది",
-            "తప్పు",
-            "సమాసం",
-            "అలంకారం"
+            "20–34",
+            "35–49",
+            "50–69",
+            "70–84"
+        ],
+        correct: 2,
+        explanation: "సాధారణ వర్గీకరణ ప్రకారం Mild Intellectual Disability గల వ్యక్తుల IQ పరిధి 50 నుండి 69 వరకు ఉంటుంది."
+    },
+    {
+        question: "\"సమాజంలో స్వతంత్రంగా జీవించడానికి అవసరమైన మేధో సామర్థ్యం లోపించడం\"ను మేధో వైకల్యంగా నిర్వచించినవారు",
+        options: [
+            "బినెట్",
+            "బెండా",
+            "గార్డ్నర్",
+            "పియాజే"
+        ],
+        correct: 1,
+        explanation: "బెండా మేధో వైకల్యాన్ని సామాజిక అనుకూలన మరియు స్వతంత్ర జీవన సామర్థ్యాల లోపంతో సంబంధపెట్టి నిర్వచించాడు."
+    },
+    {
+        question: "వ్యక్తిగత విద్యా ప్రణాళిక (IEP) లో తప్పనిసరిగా ఉండవలసిన అంశం",
+        options: [
+            "విషయ సూచిక",
+            "పీఠిక",
+            "లక్ష్యాలు",
+            "ధన్యవాదాలు"
+        ],
+        correct: 2,
+        explanation: "IEP లో విద్యార్థి అవసరాలకు అనుగుణంగా స్పష్టమైన విద్యా లక్ష్యాలు తప్పనిసరిగా ఉండాలి. అవే ప్రణాళికకు ఆధారం."
+    },
+    {
+        question: "తీవ్ర మేధో వైకల్యం (Severe Intellectual Disability) గల వ్యక్తుల IQ పరిధి",
+        options: [
+            "50–69",
+            "35–49",
+            "20–34",
+            "70–84"
+        ],
+        correct: 2,
+        explanation: "Severe Intellectual Disability వర్గానికి సాధారణంగా IQ 20–34 మధ్యలో ఉంటుంది. దీనికి అధిక మద్దతు అవసరం."
+    },
+    {
+        question: "క్రింది వాటిలో మేధో వైకల్య వర్గీకరణకు ఆధారం",
+        options: [
+            "ఎత్తు",
+            "బరువు",
+            "IQ",
+            "వయస్సు"
+        ],
+        correct: 2,
+        explanation: "మేధో వైకల్య తీవ్రతను నిర్ణయించడానికి ప్రధానంగా IQ స్కోర్లు మరియు అనుకూలన ప్రవర్తనలను పరిగణనలోకి తీసుకుంటారు."
+    },
+    {
+        question: "IEP ప్రధాన ఉద్దేశ్యం",
+        options: [
+            "అన్ని పిల్లలకు ఒకే బోధన",
+            "వ్యక్తిగత అవసరాలకు అనుగుణంగా విద్యా లక్ష్యాల రూపకల్పన",
+            "పరీక్షల సంఖ్య పెంచడం",
+            "పాఠశాల నిర్వహణ సులభతరం చేయడం"
+        ],
+        correct: 1,
+        explanation: "IEP యొక్క ప్రధాన లక్ష్యం ప్రతి విద్యార్థి ప్రత్యేక అవసరాలను గుర్తించి వాటికి అనుగుణంగా వ్యక్తిగత విద్యా లక్ష్యాలను రూపొందించడం."
+    },
+    {
+        question: "అత్యంత తీవ్ర మేధో వైకల్యం (Profound Intellectual Disability) గల వారి IQ",
+        options: [
+            "35–49",
+            "20–34",
+            "50–69",
+            "20 కంటే తక్కువ"
+        ],
+        correct: 3,
+        explanation: "Profound Intellectual Disability గల వ్యక్తుల IQ సాధారణంగా 20 కంటే తక్కువగా ఉంటుంది. వీరికి నిరంతర మద్దతు అవసరం."
+    },
+    {
+        question: "దృష్టి లోపం గల విద్యార్థులు సాధారణంగా ఉపయోగించే లిపి",
+        options: [
+            "సంకేత లిపి",
+            "బ్రెయిల్",
+            "మోర్స్ కోడ్",
+            "ఫోనెటిక్ లిపి"
+        ],
+        correct: 1,
+        explanation: "బ్రెయిల్ లిపి స్పర్శ ఆధారిత పఠన వ్యవస్థ. దృష్టి లోపం గల వ్యక్తులు చదవడం మరియు వ్రాయడం కోసం దీనిని ఉపయోగిస్తారు."
+    },
+    {
+        question: "దృష్టి స్పష్టత (Visual Acuity) కొలవడానికి ఉపయోగించే పరికరం",
+        options: [
+            "బ్రెయిల్ స్లేట్",
+            "JAWS",
+            "Snellen Chart",
+            "Stylus"
+        ],
+        correct: 2,
+        explanation: "Snellen Chart కంటి చూపు స్పష్టతను కొలవడానికి ఉపయోగించే ప్రమాణ పరీక్షా పరికరం. ఇది దూర దృష్టిని అంచనా వేస్తుంది."
+    },
+    {
+        question: "క్రింది వాటిలో Screen Reading Software ఏది?",
+        options: [
+            "MS Office",
+            "Windows",
+            "JAWS",
+            "Paint"
+        ],
+        correct: 2,
+        explanation: "JAWS ఒక ప్రముఖ Screen Reader Software. ఇది కంప్యూటర్ స్క్రీన్‌లోని సమాచారాన్ని శబ్ద రూపంలో వినిపిస్తుంది."
+    },
+    {
+        question: "RPWD Act ప్రకారం అంధత్వం (Blindness) కు సంబంధించిన ప్రమాణం",
+        options: [
+            "6/60 కంటే తక్కువ",
+            "3/60 కంటే తక్కువ",
+            "18/60 కంటే తక్కువ",
+            "24/60 కంటే తక్కువ"
+        ],
+        correct: 1,
+        explanation: "RPWD Act ప్రకారం ఉత్తమ సవరణతో కూడా Visual Acuity 3/60 కంటే తక్కువగా ఉంటే Blindness గా పరిగణిస్తారు."
+    },
+    {
+        question: "JAWS సాఫ్ట్‌వేర్ ప్రధానంగా సహాయపడేది",
+        options: [
+            "వినికిడి లోపం",
+            "దృష్టి లోపం",
+            "మేధో వైకల్యం",
+            "ఆటిజం"
+        ],
+        correct: 1,
+        explanation: "JAWS ప్రత్యేకంగా దృష్టి లోపం గల వ్యక్తుల కోసం రూపొందించబడిన Screen Reader. ఇది డిజిటల్ సమాచారాన్ని అందుబాటులోకి తెస్తుంది."
+    },
+    {
+        question: "బ్రెయిల్ లిపిని అభివృద్ధి చేసినవారు",
+        options: [
+            "హెలెన్ కెల్లర్",
+            "లూయిస్ బ్రెయిల్",
+            "సామ్యూల్ కిర్క్",
+            "బినెట్"
+        ],
+        correct: 1,
+        explanation: "లూయిస్ బ్రెయిల్ దృష్టి లోపం గల వ్యక్తుల కోసం బ్రెయిల్ లిపిని అభివృద్ధి చేశాడు. ఇది ప్రపంచవ్యాప్తంగా ఉపయోగించబడుతోంది."
+    },
+    {
+        question: "Snellen Chart ఉపయోగించబడేది",
+        options: [
+            "వినికిడి పరీక్ష",
+            "మేధస్సు పరీక్ష",
+            "దృష్టి స్పష్టత పరీక్ష",
+            "భాషా పరీక్ష"
+        ],
+        correct: 2,
+        explanation: "Snellen Chart ద్వారా వ్యక్తి Visual Acuity లేదా దృష్టి స్పష్టతను కొలుస్తారు. ఇది నేత్ర పరీక్షల్లో విస్తృతంగా ఉపయోగిస్తారు."
+    },
+    {
+        question: "వినికిడి లోపం మరియు మేధో వైకల్యం రెండూ కలిగి ఉన్న వ్యక్తిని",
+        options: [
+            "Learning Disability",
+            "Autism",
+            "Multiple Disabilities",
+            "Cerebral Palsy"
+        ],
+        correct: 2,
+        explanation: "ఒక వ్యక్తికి రెండు లేదా అంతకంటే ఎక్కువ వైకల్యాలు కలిసి ఉన్నప్పుడు దానిని Multiple Disabilities అంటారు."
+    },
+    {
+        question: "బహుళ వైకల్యాలున్న విద్యార్థుల కోసం Assistive Technology యొక్క ప్రధాన ఉద్దేశ్యం",
+        options: [
+            "పరీక్షలు నిర్వహించడం",
+            "స్వతంత్రత పెంపొందించడం",
+            "హాజరు నమోదు",
+            "గ్రేడింగ్"
+        ],
+        correct: 1,
+        explanation: "Assistive Technology విద్యార్థుల స్వతంత్ర జీవనం, కమ్యూనికేషన్ మరియు అభ్యాసంలో భాగస్వామ్యాన్ని పెంచడానికి ఉపయోగపడుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో సహాయక సాంకేతిక పరికరం (Assistive Device)",
+        options: [
+            "Hearing Aid",
+            "Attendance Register",
+            "Chalk Piece",
+            "Time Table"
         ],
         correct: 0,
-        explanation: "అత్వ సంధి తెలుగు సంధులలో ఒకటి. తెలుగు వ్యాకరణంలో అత్వ, ఇత్వ, ఉత్వ వంటి సంధులు ముఖ్యమైనవి."
+        explanation: "Hearing Aid వినికిడి లోపం గల వ్యక్తులకు శబ్దాలను స్పష్టంగా వినిపించేందుకు ఉపయోగించే సహాయక పరికరం."
+    },
+    {
+        question: "బహుళ వైకల్యాలున్న విద్యార్థికి కమ్యూనికేషన్ కోసం ఉపయోగించే సాంకేతికత",
+        options: [
+            "AAC Device",
+            "Scanner",
+            "Printer",
+            "Projector"
+        ],
+        correct: 0,
+        explanation: "AAC (Augmentative and Alternative Communication) పరికరాలు మాట్లాడలేని లేదా కమ్యూనికేషన్ కష్టాలు ఉన్న విద్యార్థులకు సహాయపడతాయి."
+    },
+    {
+        question: "Assistive Technology ఎంపికలో ముఖ్యంగా పరిగణించవలసింది",
+        options: [
+            "ఉపాధ్యాయుని అభిరుచి",
+            "విద్యార్థి అవసరం",
+            "పాఠశాల రంగు",
+            "తరగతి గది పరిమాణం"
+        ],
+        correct: 1,
+        explanation: "Assistive Technology ఎంపికలో విద్యార్థి వ్యక్తిగత అవసరాలు, సామర్థ్యాలు మరియు లక్ష్యాలు అత్యంత ముఖ్యమైనవి."
+    },
+    {
+        question: "RPWD Act ప్రకారం బహుళ వైకల్యం అనగా",
+        options: [
+            "ఒకే వైకల్యం",
+            "రెండు లేదా అంతకంటే ఎక్కువ వైకల్యాల కలయిక",
+            "తాత్కాలిక అనారోగ్యం",
+            "భాషా సమస్య"
+        ],
+        correct: 1,
+        explanation: "RPWD Act ప్రకారం రెండు లేదా అంతకంటే ఎక్కువ వైకల్యాలు ఒకే వ్యక్తిలో కలిసి ఉన్న పరిస్థితిని Multiple Disabilities అంటారు."
+    },
+    {
+        question: "బహుళ వైకల్యాలున్న విద్యార్థికి సరైన విద్యా విధానం",
+        options: [
+            "ఒకే విధాన బోధన",
+            "వ్యక్తిగత అవసరాలకు అనుగుణ బోధన",
+            "పరీక్షల ఆధారిత బోధన",
+            "ఉపన్యాస పద్ధతి మాత్రమే"
+        ],
+        correct: 1,
+        explanation: "బహుళ వైకల్యాలున్న విద్యార్థుల అభ్యాస అవసరాలు భిన్నంగా ఉంటాయి. కాబట్టి వ్యక్తిగత అవసరాలకు అనుగుణంగా బోధన అందించాలి."
+    },
+    {
+        question: "క్రింది వాటిలో IEP కు సంబంధించి సరైనది ఏది?\n\na) విద్యార్థి బలాలను పరిగణిస్తుంది\n\nb) వ్యక్తిగత లక్ష్యాలను కలిగి ఉంటుంది",
+        options: [
+            "a మాత్రమే",
+            "b మాత్రమే",
+            "a మరియు b",
+            "రెండూ కావు"
+        ],
+        correct: 2,
+        explanation: "IEP విద్యార్థి బలాలు, అవసరాలను పరిగణనలోకి తీసుకుని వ్యక్తిగత లక్ష్యాలను నిర్దేశిస్తుంది. కాబట్టి a మరియు b రెండూ సరైనవే."
+    },
+    {
+        question: "క్రింది జతలలో సరైనది",
+        options: [
+            "JAWS – Hearing Impairment",
+            "Braille – Visual Impairment",
+            "Snellen Chart – Intellectual Disability",
+            "IEP – Visual Acuity"
+        ],
+        correct: 1,
+        explanation: "Braille దృష్టి లోపం గల వ్యక్తుల కోసం ఉపయోగించే స్పర్శ ఆధారిత లిపి. మిగిలిన జతలు సరైనవి కావు."
+    },
+    {
+        question: "A student with multiple disabilities uses an AAC device to express needs. This device mainly supports",
+        options: [
+            "Mobility",
+            "Communication",
+            "Vision Testing",
+            "Assessment"
+        ],
+        correct: 1,
+        explanation: "AAC Device యొక్క ప్రధాన ఉద్దేశ్యం కమ్యూనికేషన్‌ను సులభతరం చేయడం. ఇది విద్యార్థి తన అవసరాలు, ఆలోచనలను వ్యక్తపరచడానికి సహాయపడుతుంది."
+    },
+    {
+        question: "Identify the correct sequence from concrete to abstract learning.",
+        options: [
+            "Sounds → Words → Pictures → Models → Real Objects",
+            "Real Objects → Models → Pictures → Symbols → Words",
+            "Pictures → Models → Real Objects → Words",
+            "Models → Real Objects → Symbols → Pictures"
+        ],
+        correct: 1,
+        explanation: "అభ్యాసం Concrete నుండి Abstract వైపు సాగాలి. మొదట నిజమైన వస్తువులు, తరువాత నమూనాలు, చిత్రాలు, చిహ్నాలు, చివరకు పదాలు వస్తాయి."
     }
 ];
