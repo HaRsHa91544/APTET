@@ -5,418 +5,323 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: '"g-factor" అనే భావనను ప్రతిపాదించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?',
-        options: ["Thurstone", "Gardner", "Spearman", "Sternberg"],
+        question: "క్లాసికల్ కండిషనింగ్ సిద్ధాంతాన్ని ప్రతిపాదించిన మనోవిజ్ఞాన శాస్త్రవేత్త",
+        options: ["స్కిన్నర్", "థార్న్‌డైక్", "పావ్‌లావ్", "కోహ్లర్"],
         correct: 2,
-        explanation: "Spearman మేధస్సులో ఒక సాధారణ అంశం (g-factor) అన్ని మానసిక పనులలో ప్రభావం చూపుతుందని ప్రతిపాదించాడు. ఇది అతని Two-Factor Theory యొక్క ప్రధాన భాగం."
+        explanation: "క్లాసికల్ కండిషనింగ్ సిద్ధాంతాన్ని ఇవాన్ పావ్‌లావ్ ప్రతిపాదించాడు. గంట శబ్దాన్ని ఆహారంతో అనుసంధానించి కుక్కలలో షరతు ప్రతిస్పందన ఏర్పడుతుందని తన ప్రయోగంలో చూపించాడు."
     },
     {
-        question: 'ఒక విద్యార్థి గణితంలో బాగా ప్రతిభ చూపుతాడు కానీ సంగీతంలో ఆసక్తి తక్కువగా ఉంటుంది. ఈ పరిస్థితిని ఏ సిద్ధాంతం బాగా వివరిస్తుంది?',
-        options: [
-            "Two-Factor Theory",
-            "Primary Mental Abilities Theory",
-            "Triarchic Theory",
-            "Cognitive Theory"
-        ],
-        correct: 1,
-        explanation: "Thurstone ప్రకారం మేధస్సు అనేక స్వతంత్ర సామర్థ్యాల సమాహారం. ఒక వ్యక్తి గణితంలో ప్రతిభ చూపినా సంగీతంలో తక్కువ సామర్థ్యం కలిగి ఉండవచ్చు."
-    },
-    {
-        question: 'క్రింది వాటిలో Thurstone ప్రతిపాదించిన Primary Mental Ability కాదు.',
-        options: [
-            "Verbal Comprehension",
-            "Spatial Ability",
-            "Musical Ability",
-            "Numerical Ability"
-        ],
-        correct: 2,
-        explanation: "Musical Ability ను Thurstone తన Primary Mental Abilities జాబితాలో చేర్చలేదు. Verbal, Spatial, Numerical వంటి సామర్థ్యాలను మాత్రమే ప్రతిపాదించాడు."
-    },
-    {
-        question: 'Gardner ప్రకారం ఒక విద్యార్థి ఇతరుల భావోద్వేగాలను అర్థం చేసుకొని సమర్థవంతంగా స్పందించగలిగితే అది',
-        options: [
-            "Intrapersonal Intelligence",
-            "Interpersonal Intelligence",
-            "Linguistic Intelligence",
-            "Logical Intelligence"
-        ],
-        correct: 1,
-        explanation: "Interpersonal Intelligence అనేది ఇతరుల భావాలు, ఉద్దేశాలు మరియు ప్రవర్తనలను అర్థం చేసుకొని సమర్థవంతంగా వ్యవహరించే సామర్థ్యాన్ని సూచిస్తుంది."
-    },
-    {
-        question: 'Sternberg సిద్ధాంతం ప్రకారం కొత్త పరిస్థితులకు సృజనాత్మకంగా అనుగుణం కావడం',
-        options: [
-            "Analytical Intelligence",
-            "Practical Intelligence",
-            "Creative Intelligence",
-            "Emotional Intelligence"
-        ],
-        correct: 2,
-        explanation: "Creative Intelligence అనేది కొత్త పరిస్థితులను ఎదుర్కొని సృజనాత్మక పరిష్కారాలు కనుగొనే సామర్థ్యం. ఇది Sternberg యొక్క Triarchic Theoryలో ఒక భాగం."
-    },
-    {
-        question: '"Intelligence is the ability to act purposefully, think rationally and deal effectively with environment." అని పేర్కొన్నది',
-        options: ["Terman", "Wechsler", "Gardner", "Spearman"],
-        correct: 1,
-        explanation: "ఈ ప్రసిద్ధ నిర్వచనాన్ని Wechsler ఇచ్చాడు. అతని ప్రకారం మేధస్సు లక్ష్యపూర్వక చర్య, తార్కిక ఆలోచన మరియు పరిసరాలతో సమర్థవంతమైన అనుసంధానం."
-    },
-    {
-        question: 'Cognitive Development Theory ను ప్రతిపాదించినవారు',
-        options: ["Piaget", "Vygotsky", "Bruner", "Skinner"],
+        question: "\"ఉద్దీపన - ప్రతిస్పందన\" (Stimulus-Response) అనుబంధానికి ప్రాధాన్యత ఇచ్చిన సిద్ధాంతం",
+        options: ["అనుసంధానవాదం", "గెస్టాల్ట్ సిద్ధాంతం", "నిర్మాణవాదం", "మానవతావాదం"],
         correct: 0,
-        explanation: "Jean Piaget Cognitive Development Theory ను ప్రతిపాదించాడు. పిల్లల ఆలోచనా విధానం దశలవారీగా అభివృద్ధి చెందుతుందని వివరించాడు."
+        explanation: "అనుసంధానవాదం ప్రకారం అభ్యసనం ఉద్దీపన మరియు ప్రతిస్పందన మధ్య సంబంధాల ఏర్పాటుతో జరుగుతుంది. దీనిని ప్రధానంగా థార్న్‌డైక్ అభివృద్ధి చేశాడు."
     },
     {
-        question: 'Social interaction నేర్చుకోవడంలో ప్రధాన పాత్ర పోషిస్తుందని నమ్మినవారు',
-        options: ["Piaget", "Thorndike", "Vygotsky", "Pavlov"],
+        question: "క్రింది వారిలో ఆపరెంట్ కండిషనింగ్ సిద్ధాంతాన్ని ప్రతిపాదించినవారు",
+        options: ["పావ్‌లావ్", "స్కిన్నర్", "వాట్సన్", "బ్రూనర్"],
+        correct: 1,
+        explanation: "బి.ఎఫ్. స్కిన్నర్ ఆపరెంట్ కండిషనింగ్ సిద్ధాంతాన్ని ప్రతిపాదించాడు. ప్రవర్తనపై బలపరచడం మరియు శిక్ష ప్రభావాన్ని వివరించాడు."
+    },
+    {
+        question: "థార్న్‌డైక్ ప్రతిపాదించిన అభ్యసన నియమాలలో ప్రధానమైనది",
+        options: ["సన్నద్ధత నియమం", "వ్యాయామ నియమం", "ఫలిత నియమం", "అనుకరణ నియమం"],
         correct: 2,
-        explanation: "Vygotsky ప్రకారం సామాజిక పరస్పర చర్యలు మరియు సంస్కృతి నేర్చుకోవడంలో కీలక పాత్ర పోషిస్తాయి. జ్ఞాన వికాసం సామాజిక వాతావరణంతో ముడిపడి ఉంటుంది."
+        explanation: "ఫలిత నియమం థార్న్‌డైక్ అభ్యసన నియమాలలో అత్యంత ముఖ్యమైనది. సంతృప్తికర ఫలితాలు వచ్చే ప్రవర్తనలు పునరావృతం అవుతాయని ఇది చెబుతుంది."
     },
     {
-        question: 'ఒక ఉపాధ్యాయుడు విద్యార్థికి సహాయం చేస్తూ క్రమంగా ఆ సహాయాన్ని తగ్గిస్తే దీనిని ఏమంటారు?',
-        options: [
-            "Conditioning",
-            "Reinforcement",
-            "Scaffolding",
-            "Insight"
-        ],
+        question: "పిల్లవాడు సరైన సమాధానం చెప్పిన వెంటనే ఉపాధ్యాయుడు ప్రశంసిస్తే అది",
+        options: ["శిక్ష", "ప్రతికూల బలపరచడం", "సానుకూల బలపరచడం", "అంతరాయం"],
         correct: 2,
-        explanation: "Scaffolding లో ఉపాధ్యాయుడు ప్రారంభంలో సహాయం అందించి, విద్యార్థి స్వతంత్రంగా నేర్చుకునే కొద్దీ ఆ సహాయాన్ని క్రమంగా తగ్గిస్తాడు."
+        explanation: "ప్రశంస ఒక సానుకూల బలపరచడం. ఇది విద్యార్థి సరైన ప్రవర్తనను మళ్లీ ప్రదర్శించే అవకాశాన్ని పెంచుతుంది."
     },
     {
-        question: 'Piaget ప్రకారం Pre-operational stage వయస్సు',
-        options: [
-            "0–2 సంవత్సరాలు",
-            "2–7 సంవత్సరాలు",
-            "7–11 సంవత్సరాలు",
-            "11+ సంవత్సరాలు"
-        ],
+        question: "కుక్క గంట శబ్దం విన్న వెంటనే లాలాజలం విడుదల చేయడం పావ్‌లావ్ ప్రయోగంలో",
+        options: ["సహజ ప్రతిస్పందన", "షరతు ప్రతిస్పందన", "ప్రేరణ", "అంతర్దృష్టి"],
         correct: 1,
-        explanation: "Pre-operational Stage సుమారు 2 నుండి 7 సంవత్సరాల మధ్య ఉంటుంది. ఈ దశలో పిల్లలు చిహ్నాలు మరియు భాషను ఉపయోగించడం ప్రారంభిస్తారు."
+        explanation: "గంట శబ్దం విన్న తర్వాత లాలాజలం విడుదల కావడం షరతు ప్రతిస్పందన. ఇది అభ్యసన ఫలితంగా ఏర్పడిన ప్రతిస్పందన."
     },
     {
-        question: '"Zone of Proximal Development" భావనకు సంబంధించినవారు',
-        options: ["Piaget", "Vygotsky", "Gardner", "Sternberg"],
+        question: "\"Law of Effect\" ను ప్రతిపాదించినవారు",
+        options: ["స్కిన్నర్", "థార్న్‌డైక్", "పావ్‌లావ్", "బినెట్"],
         correct: 1,
-        explanation: "Zone of Proximal Development (ZPD) భావనను Vygotsky ప్రతిపాదించాడు. ఇది సహాయంతో చేయగలిగే మరియు స్వతంత్రంగా చేయలేని పనుల మధ్య వ్యత్యాసం."
+        explanation: "లా ఆఫ్ ఎఫెక్ట్‌ను థార్న్‌డైక్ ప్రతిపాదించాడు. అనుకూల ఫలితాలు ఇచ్చే చర్యలు భవిష్యత్తులో మరింత బలపడతాయని తెలిపాడు."
     },
     {
-        question: 'Concrete Operational Stage లో పిల్లలు అభివృద్ధి చేసుకునే సామర్థ్యం',
-        options: [
-            "Hypothetical Thinking",
-            "Conservation",
-            "Abstract Reasoning",
-            "Formal Logic"
-        ],
+        question: "విద్యార్థి గణితంలో నేర్చుకున్న సమస్య పరిష్కార నైపుణ్యాన్ని సైన్స్‌లో ఉపయోగించగలిగితే అది",
+        options: ["మరుపు", "బదిలీ అభ్యసనం", "అంతర్దృష్టి", "అనుకరణ"],
         correct: 1,
-        explanation: "Concrete Operational Stage లో పిల్లలు Conservation భావనను అర్థం చేసుకుంటారు. వస్తువు ఆకారం మారినా పరిమాణం మారదని గ్రహిస్తారు."
+        explanation: "ఒక సందర్భంలో నేర్చుకున్న జ్ఞానం లేదా నైపుణ్యాన్ని మరో సందర్భంలో ఉపయోగించడం బదిలీ అభ్యసనం అంటారు."
     },
     {
-        question: 'ఒక పిల్లవాడు కొత్త సమాచారాన్ని పాత స్కీమాలో కలుపుకుంటే అది',
+        question: "సానుకూల బదిలీ అభ్యసనానికి ఉదాహరణ",
         options: [
-            "Accommodation",
-            "Assimilation",
-            "Equilibrium",
-            "Adaptation"
-        ],
-        correct: 1,
-        explanation: "Assimilation అనేది కొత్త సమాచారాన్ని ఇప్పటికే ఉన్న స్కీమా లేదా జ్ఞాన నిర్మాణంలో చేర్చే ప్రక్రియ. Piaget దీనిని జ్ఞాన వికాసంలో ముఖ్యంగా వివరించాడు."
-    },
-    {
-        question: 'పాత స్కీమాను మార్చి కొత్త సమాచారానికి అనుగుణంగా సవరించడాన్ని',
-        options: [
-            "Accommodation",
-            "Assimilation",
-            "Reinforcement",
-            "Mediation"
+            "సైకిల్ నేర్చుకున్న తర్వాత మోటార్ సైకిల్ నేర్చుకోవడం",
+            "తెలుగు నేర్చుకున్న తర్వాత ఇంగ్లీషు మరచిపోవడం",
+            "ఒక విషయం మరో విషయానికి ఆటంకం కలిగించడం",
+            "పరీక్ష భయం"
         ],
         correct: 0,
-        explanation: "Accommodation లో వ్యక్తి కొత్త అనుభవాలకు అనుగుణంగా తన పాత స్కీమాలను సవరిస్తాడు లేదా కొత్త స్కీమాలను నిర్మించుకుంటాడు."
+        explanation: "సైకిల్ నేర్చుకున్న అనుభవం మోటార్ సైకిల్ నేర్చుకోవడాన్ని సులభతరం చేస్తుంది. ఇది సానుకూల బదిలీకి మంచి ఉదాహరణ."
     },
     {
-        question: 'Piaget ప్రకారం Formal Operational Stage లక్షణం',
+        question: "ప్రతికూల బదిలీ అభ్యసనానికి ఉదాహరణ",
         options: [
-            "Object Permanence",
-            "Symbolic Thinking",
-            "Conservation",
-            "Abstract Thinking"
+            "టైపింగ్ నేర్చుకోవడం",
+            "ఈత నేర్చుకోవడం",
+            "పాత అలవాటు కొత్త అభ్యసనానికి ఆటంకం కలిగించడం",
+            "సాధన వల్ల పురోగతి"
         ],
+        correct: 2,
+        explanation: "పాత అభ్యసనం కొత్త అభ్యసనాన్ని అడ్డుకుంటే దాన్ని ప్రతికూల బదిలీ అంటారు. ఇది అభ్యసన పురోగతిని తగ్గిస్తుంది."
+    },
+    {
+        question: "స్కిన్నర్ ప్రకారం ప్రవర్తనను బలపరచేది",
+        options: ["వారసత్వం", "పరిణతి", "బలపరచడం", "అంతర్దృష్టి"],
+        correct: 2,
+        explanation: "స్కిన్నర్ ప్రకారం బలపరచడం ద్వారా ప్రవర్తన కొనసాగుతుంది. బలపరచిన ప్రవర్తనలు ఎక్కువగా పునరావృతమవుతాయి."
+    },
+    {
+        question: "విద్యార్థి హోంవర్క్ పూర్తి చేస్తే స్టిక్కర్ ఇవ్వడం",
+        options: ["శిక్ష", "సానుకూల బలపరచడం", "ప్రతికూల బలపరచడం", "మరుపు"],
+        correct: 1,
+        explanation: "స్టిక్కర్ వంటి బహుమతి ఇవ్వడం సానుకూల బలపరచడం. ఇది హోంవర్క్ పూర్తి చేసే అలవాటును పెంచుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో అభ్యసన సిద్ధాంతవేత్త కాదు",
+        options: ["పావ్‌లావ్", "స్కిన్నర్", "థార్న్‌డైక్", "క్రెట్ష్మర్"],
         correct: 3,
-        explanation: "Formal Operational Stage లో విద్యార్థులు Abstract Thinking మరియు Hypothetical Reasoning సామర్థ్యాలను అభివృద్ధి చేస్తారు. ఇది Piaget చివరి అభివృద్ధి దశ."
+        explanation: "క్రెట్ష్మర్ వ్యక్తిత్వ సిద్ధాంతాలకు ప్రసిద్ధుడు. ఆయన ప్రధానంగా అభ్యసన సిద్ధాంతవేత్తగా గుర్తించబడడు."
     },
     {
-        question: 'Gardner సిద్ధాంతం ప్రకారం క్రీడాకారుడి ప్రధాన మేధస్సు',
-        options: [
-            "Linguistic",
-            "Bodily-Kinesthetic",
-            "Naturalistic",
-            "Musical"
-        ],
+        question: "పిల్లవాడు పొరపాట్లు చేస్తూ సరైన సమాధానానికి చేరుకోవడం",
+        options: ["అంతర్దృష్టి", "ట్రయల్ అండ్ ఎరర్", "అనుకరణ", "పరిశీలన"],
         correct: 1,
-        explanation: "Gardner ప్రకారం క్రీడాకారులు శరీర కదలికలను సమర్థవంతంగా నియంత్రించే Bodily-Kinesthetic Intelligence ను ఎక్కువగా ప్రదర్శిస్తారు. ఇది శారీరక నైపుణ్యాలకు సంబంధించిన మేధస్సు."
+        explanation: "పొరపాట్లు చేస్తూ సరైన పరిష్కారాన్ని కనుగొనడం ట్రయల్ అండ్ ఎరర్ అభ్యసనం. ఇది థార్న్‌డైక్ సిద్ధాంతానికి సంబంధించినది."
     },
     {
-        question: 'Sternberg సిద్ధాంతంలో "street smartness" కు దగ్గరైనది',
+        question: "ట్రయల్ అండ్ ఎరర్ అభ్యసనాన్ని ప్రతిపాదించినవారు",
+        options: ["థార్న్‌డైక్", "పావ్‌లావ్", "స్కిన్నర్", "ఫ్రాయిడ్"],
+        correct: 0,
+        explanation: "ట్రయల్ అండ్ ఎరర్ అభ్యసనాన్ని ఎడ్వర్డ్ థార్న్‌డైక్ ప్రతిపాదించాడు. ఆయన పిల్లి పజిల్ బాక్స్ ప్రయోగం ద్వారా దీనిని వివరించాడు."
+    },
+    {
+        question: "క్రింది వాటిలో బలపరచడం యొక్క ముఖ్య ఉద్దేశ్యం",
+        options: ["ప్రవర్తన తగ్గించడం", "ప్రవర్తన కొనసాగించడం", "మరుపు పెంచడం", "శిక్షించడం"],
+        correct: 1,
+        explanation: "బలపరచడం యొక్క ప్రధాన ఉద్దేశ్యం కోరుకున్న ప్రవర్తనను కొనసాగించడం మరియు దాని పునరావృతిని పెంచడం. ఇది అభ్యసనాన్ని మరింత స్థిరపరుస్తుంది."
+    },
+    {
+        question: "క్రింది జతలలో సరైనది",
         options: [
-            "Analytical",
-            "Creative",
-            "Practical",
-            "Logical"
+            "పావ్‌లావ్ – ఆపరెంట్ కండిషనింగ్",
+            "స్కిన్నర్ – క్లాసికల్ కండిషనింగ్",
+            "థార్న్‌డైక్ – ఫలిత నియమం",
+            "కోహ్లర్ – బలపరచడం"
         ],
         correct: 2,
-        explanation: "Practical Intelligence అనేది రోజువారీ జీవిత సమస్యలను సమర్థవంతంగా పరిష్కరించే సామర్థ్యం. దీనినే సాధారణంగా street smartness అని పిలుస్తారు."
+        explanation: "థార్న్‌డైక్ ఫలిత నియమాన్ని ప్రతిపాదించాడు. మిగిలిన జతలు సిద్ధాంతవేత్తలు మరియు వారి సిద్ధాంతాలకు సరిపోవు."
     },
     {
-        question: 'Piaget ప్రకారం Sensorimotor Stage లో అభివృద్ధి చెందే ముఖ్య భావన',
-        options: [
-            "Conservation",
-            "Object Permanence",
-            "Reversibility",
-            "Formal Reasoning"
-        ],
+        question: "విద్యార్థి శబ్దం చేయకుండా ఉంటే జరిమానా తొలగించడం",
+        options: ["సానుకూల బలపరచడం", "ప్రతికూల బలపరచడం", "శిక్ష", "బదిలీ"],
         correct: 1,
-        explanation: "Sensorimotor Stage లో పిల్లలు వస్తువులు కనబడకపోయినా అవి ఉనికిలో ఉంటాయని గ్రహిస్తారు. దీనినే Object Permanence అంటారు."
+        explanation: "అసౌకర్యకరమైన పరిస్థితిని తొలగించడం ద్వారా ప్రవర్తనను పెంచితే దాన్ని ప్రతికూల బలపరచడం అంటారు. జరిమానా తొలగించడం దీనికి ఉదాహరణ."
     },
     {
-        question: '"More Knowledgeable Other" అనే పదం సంబంధించినది',
-        options: [
-            "Piaget",
-            "Vygotsky",
-            "Bruner",
-            "Skinner"
-        ],
-        correct: 1,
-        explanation: "More Knowledgeable Other (MKO) భావనను Vygotsky ప్రతిపాదించాడు. ఇది విద్యార్థికంటే ఎక్కువ జ్ఞానం లేదా నైపుణ్యం కలిగిన వ్యక్తిని సూచిస్తుంది."
+        question: "క్రింది వాటిలో సానుకూల బలపరచడానికి ఉదాహరణ",
+        options: ["ప్రశంస", "హెచ్చరిక", "జరిమానా", "మందలింపు"],
+        correct: 0,
+        explanation: "ప్రశంస, బహుమతి లేదా ప్రోత్సాహం వంటి చర్యలు సానుకూల బలపరచడానికి ఉదాహరణలు. ఇవి మంచి ప్రవర్తనను పెంచుతాయి."
     },
     {
-        question: 'Gardner సిద్ధాంతంలో ప్రకృతితో అనుబంధాన్ని సూచించే మేధస్సు',
+        question: "అభ్యసన బదిలీని ప్రభావితం చేయని అంశం",
+        options: ["పూర్వ జ్ఞానం", "అభ్యసన సారూప్యత", "ప్రేరణ", "రక్తగ్రూప్"],
+        correct: 3,
+        explanation: "రక్తగ్రూప్‌కు అభ్యసన బదిలీతో ఎలాంటి సంబంధం లేదు. పూర్వ జ్ఞానం, సారూప్యత మరియు ప్రేరణ మాత్రం ప్రభావితం చేస్తాయి."
+    },
+    {
+        question: "Assertion (A): బలపరచడం అభ్యసనాన్ని బలపరుస్తుంది. Reason (R): బలపరచడం ప్రవర్తన పునరావృతిని పెంచుతుంది.",
         options: [
-            "Naturalistic",
-            "Spatial",
-            "Musical",
-            "Interpersonal"
+            "A, R రెండూ సత్యాలు; R సరైన వివరణ",
+            "A, R రెండూ సత్యాలు; R వివరణ కాదు",
+            "A సత్యం; R అసత్యం",
+            "A అసత్యం; R సత్యం"
         ],
         correct: 0,
-        explanation: "Naturalistic Intelligence ప్రకృతి, మొక్కలు, జంతువులు మరియు సహజ వాతావరణాన్ని గుర్తించి అర్థం చేసుకునే సామర్థ్యాన్ని సూచిస్తుంది."
+        explanation: "బలపరచడం వల్ల ప్రవర్తన పునరావృతమవుతుంది. అందువల్ల అభ్యసనం బలపడుతుంది. కాబట్టి R, Aకి సరైన వివరణ."
     },
     {
-        question: 'Spearman సిద్ధాంతం ప్రకారం ప్రతి పనిలో పాల్గొనే సాధారణ మేధస్సు',
-        options: [
-            "s-factor",
-            "p-factor",
-            "g-factor",
-            "i-factor"
-        ],
-        correct: 2,
-        explanation: "Spearman ప్రకారం అన్ని మానసిక కార్యకలాపాలలో పాల్గొనే సాధారణ మేధస్సును g-factor అంటారు. ఇది వ్యక్తి యొక్క సాధారణ మేధోశక్తిని సూచిస్తుంది."
-    },
-    {
-        question: 'Thurstone సిద్ధాంతం ప్రధానంగా వ్యతిరేకించినది',
-        options: [
-            "Multiple Intelligences",
-            "Social Learning",
-            "Single General Intelligence",
-            "Conditioning"
-        ],
-        correct: 2,
-        explanation: "Thurstone ఒకే సాధారణ మేధస్సు సిద్ధాంతాన్ని వ్యతిరేకించాడు. మేధస్సు అనేక స్వతంత్ర సామర్థ్యాల సమాహారమని వాదించాడు."
-    },
-    {
-        question: 'ZPD లో విద్యార్థి పనితీరు అత్యుత్తమంగా ఉండేది',
-        options: [
-            "ఒంటరిగా పనిచేసినప్పుడు",
-            "సహాయం లేనప్పుడు",
-            "మార్గదర్శకత్వంతో పనిచేసినప్పుడు",
-            "పరీక్ష సమయంలో"
-        ],
-        correct: 2,
-        explanation: "ZPD లో విద్యార్థి తగిన మార్గదర్శకత్వం లేదా సహాయంతో పనిచేసినప్పుడు అత్యుత్తమ పనితీరును ప్రదర్శిస్తాడు."
-    },
-    {
-        question: 'Cognitive development ప్రధానంగా దేనికి సంబంధించినది?',
-        options: [
-            "భావోద్వేగాలు",
-            "ఆలోచన ప్రక్రియలు",
-            "శారీరక పెరుగుదల",
-            "సామాజిక స్థితి"
-        ],
+        question: "క్రింది వాటిలో షరతు ఉద్దీపన",
+        options: ["ఆహారం", "గంట శబ్దం", "లాలాజలం", "ఆకలి"],
         correct: 1,
-        explanation: "Cognitive Development అనేది ఆలోచన, జ్ఞాపకశక్తి, సమస్య పరిష్కారం, నిర్ణయాలు తీసుకోవడం వంటి మానసిక ప్రక్రియల అభివృద్ధికి సంబంధించినది."
+        explanation: "పావ్‌లావ్ ప్రయోగంలో గంట శబ్దం ప్రారంభంలో తటస్థ ఉద్దీపన. తరువాత అది షరతు ఉద్దీపనగా మారింది."
     },
     {
-        question: 'Piaget మరియు Vygotsky ఇద్దరూ అంగీకరించిన అంశం',
-        options: [
-            "Learning precedes development",
-            "Punishment improves learning",
-            "Child is an active learner",
-            "Memory is fixed"
-        ],
-        correct: 2,
-        explanation: "Piaget మరియు Vygotsky ఇద్దరూ పిల్లలు నేర్చుకునే ప్రక్రియలో చురుకైన పాత్ర పోషిస్తారని, వారు Active Learners అని అంగీకరించారు."
-    },
-    {
-        question: 'He is ____ honest man.',
-        options: ["a", "an", "the", "no article"],
+        question: "పిల్లవాడు నేర్చుకున్న నైపుణ్యాన్ని కొత్త పరిస్థితిలో ఉపయోగించడం",
+        options: ["ప్రేరణ", "బదిలీ అభ్యసనం", "మరుపు", "పునశ్చరణ"],
         correct: 1,
-        explanation: "Honest అనే పదం vowel sound తో ప్రారంభమవుతుంది. కాబట్టి article గా 'an' ఉపయోగించాలి."
+        explanation: "పూర్వ అభ్యసనాన్ని కొత్త పరిస్థితుల్లో ఉపయోగించడం బదిలీ అభ్యసనం. ఇది విద్యా ప్రక్రియలో ముఖ్యమైన లక్ష్యం."
     },
     {
-        question: 'I saw ____ moon last night.',
-        options: ["a", "an", "the", "no article"],
-        correct: 2,
-        explanation: "Moon ప్రపంచంలో ఒక్కటే ఉన్న ప్రత్యేక వస్తువు. అందువల్ల definite article 'the' ఉపయోగించాలి."
-    },
-    {
-        question: 'She wants to become ____ engineer.',
-        options: ["a", "an", "the", "no article"],
-        correct: 1,
-        explanation: "Engineer పదం vowel sound తో ప్రారంభమవుతుంది. కాబట్టి 'an engineer' అనడం సరైనది."
-    },
-    {
-        question: 'Ganga is ____ holy river.',
-        options: ["a", "an", "the", "no article"],
-        correct: 2,
-        explanation: "నదుల పేర్ల ముందు సాధారణంగా definite article 'the' ఉపయోగిస్తారు. అందువల్ల 'the Ganga' సరైన రూపం."
-    },
-    {
-        question: 'Hyderabad is ____ capital of Telangana.',
-        options: ["a", "an", "the", "no article"],
-        correct: 2,
-        explanation: "Capital అనే పదం ఒక రాష్ట్రానికి ప్రత్యేకమైనది. అందువల్ల 'the capital of Telangana' అని వాడాలి."
-    },
-    {
-        question: 'He is good ____ Mathematics.',
-        options: ["in", "at", "on", "with"],
-        correct: 1,
-        explanation: "Good at అనేది నైపుణ్యం లేదా ప్రతిభను సూచించే స్థిరమైన prepositional phrase. కాబట్టి 'good at Mathematics' సరైన వాడుక."
-    },
-    {
-        question: 'The meeting starts ____ 10 a.m.',
-        options: ["on", "at", "in", "from"],
-        correct: 1,
-        explanation: "ఖచ్చితమైన సమయాల ముందు 'at' ఉపయోగిస్తారు. కాబట్టి 'at 10 a.m.' అనేది సరైన ప్రయోగం."
-    },
-    {
-        question: 'She has been living here ____ 2020.',
-        options: ["for", "since", "from", "by"],
-        correct: 1,
-        explanation: "ఒక నిర్దిష్ట ప్రారంభ కాలాన్ని సూచించేటప్పుడు Present Perfect Continuous తో 'since' ఉపయోగిస్తారు. 2020 ఒక నిర్దిష్ట సంవత్సరం."
-    },
-    {
-        question: 'The book is ____ the table.',
-        options: ["on", "at", "into", "beside"],
+        question: "క్రింది వారిలో అభ్యసనాన్ని 'ప్రవర్తనలో సాపేక్ష స్థిరమైన మార్పు'గా వివరించిన దృక్పథం",
+        options: ["ప్రవర్తనావాదం", "మానవతావాదం", "నిర్మాణవాదం", "గెస్టాల్ట్"],
         correct: 0,
-        explanation: "ఒక వస్తువు మరో వస్తువు మీద ఉన్నప్పుడు 'on' ఉపయోగిస్తారు. కాబట్టి book is on the table."
+        explanation: "ప్రవర్తనావాదులు అభ్యసనాన్ని అనుభవం వల్ల ప్రవర్తనలో వచ్చే సాపేక్ష స్థిరమైన మార్పుగా నిర్వచించారు."
     },
     {
-        question: 'We travelled ____ train.',
-        options: ["on", "in", "by", "with"],
+        question: "స్కిన్నర్ బాక్స్ ప్రయోగం ప్రధానంగా దేనికి సంబంధించినది?",
+        options: ["అంతర్దృష్టి", "ఆపరెంట్ కండిషనింగ్", "క్లాసికల్ కండిషనింగ్", "సామాజిక అభ్యసనం"],
+        correct: 1,
+        explanation: "స్కిన్నర్ బాక్స్ ప్రయోగం ఆపరెంట్ కండిషనింగ్‌ను వివరించడానికి ఉపయోగించబడింది. బలపరచడం ప్రభావాన్ని ఇది చూపిస్తుంది."
+    },
+    {
+        question: "Each of the boys ______ a notebook.",
+        options: ["have", "has", "are having", "were having"],
+        correct: 1,
+        explanation: "‘Each’ ఏకవచన భావాన్ని ఇస్తుంది. కాబట్టి singular verb అయిన ‘has’ ఉపయోగించాలి."
+    },
+    {
+        question: "Neither the teacher nor the students ______ present.",
+        options: ["was", "is", "were", "has"],
         correct: 2,
-        explanation: "రవాణా సాధనాన్ని సూచించేటప్పుడు సాధారణంగా 'by' ఉపయోగిస్తారు. ఉదాహరణ: by train, by bus, by car."
+        explanation: "Neither...nor నిర్మాణంలో క్రియ దగ్గర ఉన్న subject ప్రకారం verb వస్తుంది. 'students' plural కాబట్టి 'were' సరైనది."
     },
     {
-        question: 'Each of the boys ____ present.',
+        question: "Identify the error: One of the students have completed the work.",
+        options: ["One", "students", "have", "work"],
+        correct: 2,
+        explanation: "‘One of the students’ అనే subject ఏకవచనం. కాబట్టి ‘have’ స్థానంలో ‘has’ రావాలి."
+    },
+    {
+        question: "The list of items ______ on the table.",
         options: ["are", "were", "is", "have"],
         correct: 2,
-        explanation: "Each అనే పదం singular subject గా పరిగణించబడుతుంది. కాబట్టి singular verb 'is' ఉపయోగించాలి."
+        explanation: "Subject 'list' ఏకవచనం. 'items' కాదు. కాబట్టి singular verb 'is' వాడాలి."
     },
     {
-        question: 'Neither Ram nor his friends ____ coming.',
-        options: ["is", "are", "was", "has"],
-        correct: 1,
-        explanation: "Neither...nor నిర్మాణంలో verb దగ్గర ఉన్న subject ను అనుసరిస్తుంది. Friends plural కాబట్టి 'are' సరైనది."
+        question: "Either Ram or his friends ______ responsible.",
+        options: ["is", "was", "are", "has"],
+        correct: 2,
+        explanation: "Either...or నిర్మాణంలో దగ్గర subject 'friends' plural. అందువల్ల plural verb 'are' ఉపయోగించాలి."
     },
     {
-        question: 'One of the students ____ absent today.',
+        question: "The news ______ very surprising.",
         options: ["are", "were", "is", "have"],
         correct: 2,
-        explanation: "One of the students లో ప్రధాన subject 'One'. ఇది singular కాబట్టి 'is' ఉపయోగించాలి."
+        explanation: "‘News’ రూపంలో plural లాగా కనిపించినా, అది singular noun. అందువల్ల singular verb ‘is’ ఉపయోగించాలి."
     },
     {
-        question: 'The quality of the apples ____ good.',
+        question: "Identify the error: Each of the players were given a medal.",
+        options: ["Each", "players", "were", "medal"],
+        correct: 2,
+        explanation: "‘Each of the players’ అనే subject singular. కాబట్టి ‘were’ స్థానంలో ‘was’ రావాలి."
+    },
+    {
+        question: "Mathematics ______ my favourite subject.",
         options: ["are", "were", "is", "have"],
         correct: 2,
-        explanation: "ఇక్కడ ప్రధాన subject 'quality'. ఇది singular noun కాబట్టి singular verb 'is' వాడాలి."
+        explanation: "Mathematics ఒక subject name. ఇది singular noun గా పరిగణించబడుతుంది. కాబట్టి ‘is’ సరైనది."
     },
     {
-        question: 'Mathematics ____ my favourite subject.',
-        options: ["are", "is", "were", "have"],
-        correct: 1,
-        explanation: "Mathematics చివర s ఉన్నప్పటికీ ఇది ఒక subject name. కాబట్టి singular verb 'is' ఉపయోగించాలి."
-    },
-    {
-        question: 'Choose the correct sentence.',
-        options: [
-            "He go to school daily.",
-            "He goes to school daily.",
-            "He going to school daily.",
-            "He gone to school daily."
-        ],
-        correct: 1,
-        explanation: "Simple Present Tense లో third person singular subject 'He' తో verb కు 'es' జతచేస్తారు. కాబట్టి 'He goes' సరైనది."
-    },
-    {
-        question: 'The opposite of "Ancient" is',
-        options: ["Old", "Historic", "Modern", "Traditional"],
+        question: "Neither of the answers ______ correct.",
+        options: ["are", "were", "is", "have"],
         correct: 2,
-        explanation: "Ancient అంటే చాలా పాతది. దీనికి వ్యతిరేక పదం Modern అంటే ఆధునికమైనది."
+        explanation: "‘Neither’ ఎప్పుడూ singular భావాన్ని ఇస్తుంది. అందువల్ల singular verb ‘is’ ఉపయోగించాలి."
     },
     {
-        question: '"At sixes and sevens" means',
-        options: ["Organized", "Confused", "Happy", "Silent"],
-        correct: 1,
-        explanation: "At sixes and sevens అనే idiom గందరగోళం లేదా అయోమయం ఉన్న పరిస్థితిని సూచిస్తుంది."
+        question: "The committee ______ decided to postpone the meeting.",
+        options: ["has", "have", "are", "were"],
+        correct: 0,
+        explanation: "Committee ఒక collective noun. ఒక యూనిట్‌గా భావించినప్పుడు singular verb ‘has’ వాడాలి."
     },
     {
-        question: 'One who cannot read or write is',
-        options: ["Scholar", "Literate", "Illiterate", "Author"],
+        question: "Identify the error: The quality of the apples are good.",
+        options: ["quality", "apples", "are", "good"],
         correct: 2,
-        explanation: "చదవడం లేదా రాయడం రాని వ్యక్తిని Illiterate అంటారు. ఇది సాధారణ one-word substitution."
+        explanation: "Subject ‘quality’ singular. కాబట్టి ‘are’ స్థానంలో singular verb ‘is’ రావాలి."
     },
     {
-        question: 'Choose the correct spelling.',
-        options: [
-            "Accomodation",
-            "Accommodation",
-            "Acommodation",
-            "Accommadation"
-        ],
-        correct: 1,
-        explanation: "Accommodation అనే పదంలో double 'c' మరియు double 'm' ఉంటాయి. మిగతా spellings తప్పు."
-    },
-    {
-        question: 'Find the correctly punctuated sentence.',
-        options: [
-            "Where are you going.",
-            "Where are you going?",
-            "Where are you going,",
-            "Where are you going!"
-        ],
-        correct: 1,
-        explanation: "ప్రశ్నార్థక వాక్యం చివర Question Mark (?) ఉపయోగించాలి. కాబట్టి రెండవ వాక్యం సరైనది."
-    },
-    {
-        question: '"Look after" means',
-        options: ["Search", "Care for", "Cancel", "Reject"],
-        correct: 1,
-        explanation: "Look after అనే phrasal verb అర్థం care for లేదా take care of. అంటే చూసుకోవడం."
-    },
-    {
-        question: 'If I ____ rich, I would help the poor.',
-        options: ["am", "was", "were", "be"],
+        question: "Bread and butter ______ his usual breakfast.",
+        options: ["are", "were", "is", "have"],
         correct: 2,
-        explanation: "Second Conditional లో hypothetical situations కోసం 'were' ఉపయోగిస్తారు. కాబట్టి 'If I were rich' సరైనది."
+        explanation: "Bread and butter ఒకే ఆహారంగా భావించినప్పుడు singular verb ఉపయోగిస్తారు. కాబట్టి ‘is’ సరైనది."
     },
     {
-        question: 'Choose the correct article. He bought ____ umbrella yesterday.',
-        options: ["a", "an", "the", "no article"],
-        correct: 1,
-        explanation: "Umbrella vowel sound తో ప్రారంభమవుతుంది. కాబట్టి indefinite article 'an' ఉపయోగించాలి."
-    },
-    {
-        question: 'Identify the error: Each of the players have a certificate.',
-        options: ["Each", "players", "have", "certificate"],
+        question: "Every student and every teacher ______ invited.",
+        options: ["are", "were", "is", "have"],
         correct: 2,
-        explanation: "Each singular subject. కాబట్టి 'have' బదులుగా 'has' రావాలి. అందువల్ల error 'have' లో ఉంది."
+        explanation: "Every...and every నిర్మాణం singular భావాన్ని ఇస్తుంది. అందువల్ల ‘is’ ఉపయోగించాలి."
+    },
+    {
+        question: "The furniture ______ old.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "Furniture అనేది uncountable noun. ఇది singular గా పరిగణించబడుతుంది. కాబట్టి ‘is’ సరైనది."
+    },
+    {
+        question: "Identify the error: Neither of the boys have arrived.",
+        options: ["Neither", "boys", "have", "arrived"],
+        correct: 2,
+        explanation: "‘Neither’ singular pronoun. కాబట్టి ‘have’ స్థానంలో singular verb ‘has’ ఉపయోగించాలి."
+    },
+    {
+        question: "A number of students ______ absent today.",
+        options: ["is", "was", "are", "has"],
+        correct: 2,
+        explanation: "‘A number of’ తరువాత plural noun వస్తే plural verb ఉపయోగించాలి. అందువల్ల ‘are’ సరైనది."
+    },
+    {
+        question: "The number of students ______ increasing.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "‘The number of’ అనే subject singular. కాబట్టి singular verb ‘is’ ఉపయోగించాలి."
+    },
+    {
+        question: "Identify the error: The poet along with his friends are attending the function.",
+        options: ["poet", "along with", "are", "function"],
+        correct: 2,
+        explanation: "Subject ‘poet’ singular. ‘along with’ subjectను మార్చదు. కాబట్టి ‘are’ స్థానంలో ‘is’ రావాలి."
+    },
+    {
+        question: "Not only the principal but also the teachers ______ present.",
+        options: ["was", "is", "are", "has"],
+        correct: 2,
+        explanation: "Not only...but also నిర్మాణంలో దగ్గర subject ‘teachers’ plural. కాబట్టి ‘are’ సరైనది."
+    },
+    {
+        question: "The police ______ investigating the case.",
+        options: ["is", "was", "are", "has"],
+        correct: 2,
+        explanation: "Police అనే collective noun సాధారణంగా plural verb తీసుకుంటుంది. అందువల్ల ‘are’ సరైనది."
+    },
+    {
+        question: "Identify the error: Either the students or the teacher have made the mistake.",
+        options: ["Either", "students", "have", "mistake"],
+        correct: 2,
+        explanation: "దగ్గర subject ‘teacher’ singular. కాబట్టి ‘have’ స్థానంలో ‘has’ ఉపయోగించాలి."
+    },
+    {
+        question: "Ten kilometers ______ a long distance to walk.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "దూరం, సమయం, డబ్బు వంటి కొలతలు ఒక యూనిట్‌గా భావించినప్పుడు singular verb వాడాలి. కాబట్టి ‘is’ సరైనది."
+    },
+    {
+        question: "The scissors ______ on the table.",
+        options: ["is", "was", "are", "has"],
+        correct: 2,
+        explanation: "Scissors plural noun. కాబట్టి plural verb ‘are’ ఉపయోగించాలి."
+    },
+    {
+        question: "Identify the error: Everybody know the answer.",
+        options: ["Everybody", "know", "the", "answer"],
+        correct: 1,
+        explanation: "Everybody singular pronoun. కాబట్టి ‘know’ స్థానంలో ‘knows’ రావాలి."
+    },
+    {
+        question: "One of my friends ______ selected for the competition.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "‘One of my friends’ అనే subject singular. కాబట్టి singular verb ‘is’ సరైనది."
     }
 ];
