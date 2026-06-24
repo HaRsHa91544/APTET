@@ -5,323 +5,358 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: "క్లాసికల్ కండిషనింగ్ సిద్ధాంతాన్ని ప్రతిపాదించిన మనోవిజ్ఞాన శాస్త్రవేత్త",
-        options: ["స్కిన్నర్", "థార్న్‌డైక్", "పావ్‌లావ్", "కోహ్లర్"],
-        correct: 2,
-        explanation: "క్లాసికల్ కండిషనింగ్ సిద్ధాంతాన్ని ఇవాన్ పావ్‌లావ్ ప్రతిపాదించాడు. గంట శబ్దాన్ని ఆహారంతో అనుసంధానించి కుక్కలలో షరతు ప్రతిస్పందన ఏర్పడుతుందని తన ప్రయోగంలో చూపించాడు."
+        question: "విద్యార్థి సరైన సమాధానం చెప్పిన ప్రతిసారి ఉపాధ్యాయుడు ప్రశంసిస్తే అది",
+        options: ["శిక్ష", "పునర్బలనం", "అనుకరణ", "అవగాహన"],
+        correct: 1,
+        explanation: "విద్యార్థి సరైన ప్రవర్తన తర్వాత ప్రశంస అందుకోవడం వల్ల ఆ ప్రవర్తన మళ్లీ జరగే అవకాశం పెరుగుతుంది. దీనిని పునర్బలనం (Reinforcement) అంటారు."
     },
     {
-        question: "\"ఉద్దీపన - ప్రతిస్పందన\" (Stimulus-Response) అనుబంధానికి ప్రాధాన్యత ఇచ్చిన సిద్ధాంతం",
-        options: ["అనుసంధానవాదం", "గెస్టాల్ట్ సిద్ధాంతం", "నిర్మాణవాదం", "మానవతావాదం"],
+        question: "మాస్లో అవసరాల సిద్ధాంతంలో అత్యున్నత స్థాయి అవసరం",
+        options: ["భద్రత", "శారీరక అవసరాలు", "ఆత్మసాక్షాత్కారం", "ప్రేమ మరియు అనుబంధం"],
+        correct: 2,
+        explanation: "మాస్లో అవసరాల క్రమంలో అత్యున్నత స్థానం ఆత్మసాక్షాత్కారం. వ్యక్తి తన సామర్థ్యాలను పూర్తిగా అభివృద్ధి చేసుకోవాలనే అవసరాన్ని ఇది సూచిస్తుంది."
+    },
+    {
+        question: "విద్యార్థి చదవడానికి అంతర్గత ఆసక్తితో కృషి చేయడం",
+        options: ["బాహ్య ప్రేరణ", "అంతర్గత ప్రేరణ", "ప్రతికూల ప్రేరణ", "బలవంతపు ప్రేరణ"],
+        correct: 1,
+        explanation: "వ్యక్తి స్వంత ఆసక్తి, ఆనందం లేదా సంతృప్తి కోసం చేసే కృషిని అంతర్గత ప్రేరణ అంటారు. దీనికి బాహ్య బహుమతులు అవసరం ఉండవు."
+    },
+    {
+        question: "“పురస్కారం ప్రవర్తనను బలపరుస్తుంది” అని చెప్పిన మనోవిజ్ఞాన శాస్త్రవేత్త",
+        options: ["స్కిన్నర్", "పియాజే", "కోహ్ల్బర్గ్", "బ్రూనర్"],
         correct: 0,
-        explanation: "అనుసంధానవాదం ప్రకారం అభ్యసనం ఉద్దీపన మరియు ప్రతిస్పందన మధ్య సంబంధాల ఏర్పాటుతో జరుగుతుంది. దీనిని ప్రధానంగా థార్న్‌డైక్ అభివృద్ధి చేశాడు."
+        explanation: "బి.ఎఫ్. స్కిన్నర్ ఆపరెంట్ కండిషనింగ్ సిద్ధాంతంలో పురస్కారాలు ప్రవర్తనను బలపరుస్తాయని వివరించాడు. ఇది అభ్యసనంలో ముఖ్యమైన భావన."
     },
     {
-        question: "క్రింది వారిలో ఆపరెంట్ కండిషనింగ్ సిద్ధాంతాన్ని ప్రతిపాదించినవారు",
-        options: ["పావ్‌లావ్", "స్కిన్నర్", "వాట్సన్", "బ్రూనర్"],
-        correct: 1,
-        explanation: "బి.ఎఫ్. స్కిన్నర్ ఆపరెంట్ కండిషనింగ్ సిద్ధాంతాన్ని ప్రతిపాదించాడు. ప్రవర్తనపై బలపరచడం మరియు శిక్ష ప్రభావాన్ని వివరించాడు."
-    },
-    {
-        question: "థార్న్‌డైక్ ప్రతిపాదించిన అభ్యసన నియమాలలో ప్రధానమైనది",
-        options: ["సన్నద్ధత నియమం", "వ్యాయామ నియమం", "ఫలిత నియమం", "అనుకరణ నియమం"],
+        question: "క్రింది వాటిలో విద్యార్థుల అభ్యసనానికి అత్యంత శక్తివంతమైన ప్రేరణ ఏది?",
+        options: ["శిక్ష", "పరీక్ష భయం", "విజయం అనుభవం", "పోటీ"],
         correct: 2,
-        explanation: "ఫలిత నియమం థార్న్‌డైక్ అభ్యసన నియమాలలో అత్యంత ముఖ్యమైనది. సంతృప్తికర ఫలితాలు వచ్చే ప్రవర్తనలు పునరావృతం అవుతాయని ఇది చెబుతుంది."
+        explanation: "విజయం అనుభవం విద్యార్థిలో ఆత్మవిశ్వాసాన్ని పెంచి మరింత నేర్చుకోవాలనే ఆసక్తిని కలిగిస్తుంది. అందువల్ల ఇది బలమైన ప్రేరణగా పనిచేస్తుంది."
     },
     {
-        question: "పిల్లవాడు సరైన సమాధానం చెప్పిన వెంటనే ఉపాధ్యాయుడు ప్రశంసిస్తే అది",
-        options: ["శిక్ష", "ప్రతికూల బలపరచడం", "సానుకూల బలపరచడం", "అంతరాయం"],
-        correct: 2,
-        explanation: "ప్రశంస ఒక సానుకూల బలపరచడం. ఇది విద్యార్థి సరైన ప్రవర్తనను మళ్లీ ప్రదర్శించే అవకాశాన్ని పెంచుతుంది."
-    },
-    {
-        question: "కుక్క గంట శబ్దం విన్న వెంటనే లాలాజలం విడుదల చేయడం పావ్‌లావ్ ప్రయోగంలో",
-        options: ["సహజ ప్రతిస్పందన", "షరతు ప్రతిస్పందన", "ప్రేరణ", "అంతర్దృష్టి"],
+        question: "తరగతి గదిలో ఆసక్తి మరియు ఉత్సాహం పెంచడానికి ఉపాధ్యాయుడు ఎక్కువగా ఉపయోగించవలసినది",
+        options: ["పునరావృతం", "పునర్బలనం", "నిర్బంధం", "పరీక్ష"],
         correct: 1,
-        explanation: "గంట శబ్దం విన్న తర్వాత లాలాజలం విడుదల కావడం షరతు ప్రతిస్పందన. ఇది అభ్యసన ఫలితంగా ఏర్పడిన ప్రతిస్పందన."
+        explanation: "సానుకూల పునర్బలనం విద్యార్థులలో ఆసక్తి, పాల్గొనడం మరియు ఉత్సాహాన్ని పెంచుతుంది. ప్రశంసలు, బహుమతులు దీనికి ఉదాహరణలు."
     },
     {
-        question: "\"Law of Effect\" ను ప్రతిపాదించినవారు",
-        options: ["స్కిన్నర్", "థార్న్‌డైక్", "పావ్‌లావ్", "బినెట్"],
-        correct: 1,
-        explanation: "లా ఆఫ్ ఎఫెక్ట్‌ను థార్న్‌డైక్ ప్రతిపాదించాడు. అనుకూల ఫలితాలు ఇచ్చే చర్యలు భవిష్యత్తులో మరింత బలపడతాయని తెలిపాడు."
-    },
-    {
-        question: "విద్యార్థి గణితంలో నేర్చుకున్న సమస్య పరిష్కార నైపుణ్యాన్ని సైన్స్‌లో ఉపయోగించగలిగితే అది",
-        options: ["మరుపు", "బదిలీ అభ్యసనం", "అంతర్దృష్టి", "అనుకరణ"],
-        correct: 1,
-        explanation: "ఒక సందర్భంలో నేర్చుకున్న జ్ఞానం లేదా నైపుణ్యాన్ని మరో సందర్భంలో ఉపయోగించడం బదిలీ అభ్యసనం అంటారు."
-    },
-    {
-        question: "సానుకూల బదిలీ అభ్యసనానికి ఉదాహరణ",
-        options: [
-            "సైకిల్ నేర్చుకున్న తర్వాత మోటార్ సైకిల్ నేర్చుకోవడం",
-            "తెలుగు నేర్చుకున్న తర్వాత ఇంగ్లీషు మరచిపోవడం",
-            "ఒక విషయం మరో విషయానికి ఆటంకం కలిగించడం",
-            "పరీక్ష భయం"
-        ],
+        question: "క్రింది ప్రకటనలను పరిశీలించండి. a) ప్రేరణ అభ్యసనాన్ని ప్రభావితం చేస్తుంది b) ప్రేరణ లేకుండా కూడా సమర్థవంతమైన అభ్యసనం జరుగుతుంది",
+        options: ["a మాత్రమే సరైనది", "b మాత్రమే సరైనది", "రెండూ సరైనవి", "రెండూ తప్పు"],
         correct: 0,
-        explanation: "సైకిల్ నేర్చుకున్న అనుభవం మోటార్ సైకిల్ నేర్చుకోవడాన్ని సులభతరం చేస్తుంది. ఇది సానుకూల బదిలీకి మంచి ఉదాహరణ."
+        explanation: "ప్రేరణ అభ్యసన నాణ్యతను ప్రభావితం చేస్తుంది. సరైన ప్రేరణ లేకుండా సమర్థవంతమైన అభ్యసనం సాధారణంగా జరగదు."
     },
     {
-        question: "ప్రతికూల బదిలీ అభ్యసనానికి ఉదాహరణ",
-        options: [
-            "టైపింగ్ నేర్చుకోవడం",
-            "ఈత నేర్చుకోవడం",
-            "పాత అలవాటు కొత్త అభ్యసనానికి ఆటంకం కలిగించడం",
-            "సాధన వల్ల పురోగతి"
-        ],
-        correct: 2,
-        explanation: "పాత అభ్యసనం కొత్త అభ్యసనాన్ని అడ్డుకుంటే దాన్ని ప్రతికూల బదిలీ అంటారు. ఇది అభ్యసన పురోగతిని తగ్గిస్తుంది."
-    },
-    {
-        question: "స్కిన్నర్ ప్రకారం ప్రవర్తనను బలపరచేది",
-        options: ["వారసత్వం", "పరిణతి", "బలపరచడం", "అంతర్దృష్టి"],
-        correct: 2,
-        explanation: "స్కిన్నర్ ప్రకారం బలపరచడం ద్వారా ప్రవర్తన కొనసాగుతుంది. బలపరచిన ప్రవర్తనలు ఎక్కువగా పునరావృతమవుతాయి."
-    },
-    {
-        question: "విద్యార్థి హోంవర్క్ పూర్తి చేస్తే స్టిక్కర్ ఇవ్వడం",
-        options: ["శిక్ష", "సానుకూల బలపరచడం", "ప్రతికూల బలపరచడం", "మరుపు"],
+        question: "ఒక విద్యార్థి ఉపాధ్యాయుడు చెప్పే విషయాన్ని మాత్రమే గమనించి మిగిలిన శబ్దాలను విస్మరిస్తే అది",
+        options: ["విభజిత అవధానం", "ఎంపిక చేసిన అవధానం", "అనైచ్ఛిక అవధానం", "వ్యాప్త అవధానం"],
         correct: 1,
-        explanation: "స్టిక్కర్ వంటి బహుమతి ఇవ్వడం సానుకూల బలపరచడం. ఇది హోంవర్క్ పూర్తి చేసే అలవాటును పెంచుతుంది."
+        explanation: "అనేక ఉద్దీపనలలో ఒకదానిపై మాత్రమే దృష్టి కేంద్రీకరించి మిగతావాటిని విస్మరించడాన్ని ఎంపిక చేసిన అవధానం అంటారు."
     },
     {
-        question: "క్రింది వాటిలో అభ్యసన సిద్ధాంతవేత్త కాదు",
-        options: ["పావ్‌లావ్", "స్కిన్నర్", "థార్న్‌డైక్", "క్రెట్ష్మర్"],
+        question: "అవధానాన్ని ఎక్కువసేపు కొనసాగించే సామర్థ్యాన్ని",
+        options: ["గ్రహణం", "నిలకడైన అవధానం", "స్మరణ", "అవగాహన"],
+        correct: 1,
+        explanation: "ఒక పనిపై లేదా ఉద్దీపనపై ఎక్కువసేపు దృష్టిని నిలుపుకోవడాన్ని నిలకడైన అవధానం లేదా Sustained Attention అంటారు."
+    },
+    {
+        question: "పెద్ద శబ్దం వినిపించగానే విద్యార్థి దృష్టి ఆ దిశగా మళ్లితే అది",
+        options: ["స్వచ్ఛంద అవధానం", "అనైచ్ఛిక అవధానం", "ఎంపిక అవధానం", "స్థిర అవధానం"],
+        correct: 1,
+        explanation: "ఆకస్మికంగా వచ్చిన శబ్దం వంటి బాహ్య ఉద్దీపనల కారణంగా స్వయంచాలకంగా దృష్టి మళ్లడాన్ని అనైచ్ఛిక అవధానం అంటారు."
+    },
+    {
+        question: "అవధాన వ్యవధిని ప్రభావితం చేయని అంశం",
+        options: ["ఆసక్తి", "ఆరోగ్యం", "వయస్సు", "రక్తగ్రూప్"],
         correct: 3,
-        explanation: "క్రెట్ష్మర్ వ్యక్తిత్వ సిద్ధాంతాలకు ప్రసిద్ధుడు. ఆయన ప్రధానంగా అభ్యసన సిద్ధాంతవేత్తగా గుర్తించబడడు."
+        explanation: "ఆసక్తి, ఆరోగ్యం, వయస్సు అవధానాన్ని ప్రభావితం చేస్తాయి. రక్తగ్రూప్‌కు అవధాన వ్యవధితో ప్రత్యక్ష సంబంధం లేదు."
     },
     {
-        question: "పిల్లవాడు పొరపాట్లు చేస్తూ సరైన సమాధానానికి చేరుకోవడం",
-        options: ["అంతర్దృష్టి", "ట్రయల్ అండ్ ఎరర్", "అనుకరణ", "పరిశీలన"],
+        question: "ఒకేసారి రెండు పనులపై దృష్టి పెట్టడాన్ని",
+        options: ["స్థిర అవధానం", "విభజిత అవధానం", "ఎంపిక అవధానం", "కేంద్రీకరణ"],
         correct: 1,
-        explanation: "పొరపాట్లు చేస్తూ సరైన పరిష్కారాన్ని కనుగొనడం ట్రయల్ అండ్ ఎరర్ అభ్యసనం. ఇది థార్న్‌డైక్ సిద్ధాంతానికి సంబంధించినది."
+        explanation: "ఒకేసారి రెండు లేదా అంతకంటే ఎక్కువ పనులపై దృష్టిని విభజించి పనిచేయడాన్ని విభజిత అవధానం అంటారు."
     },
     {
-        question: "ట్రయల్ అండ్ ఎరర్ అభ్యసనాన్ని ప్రతిపాదించినవారు",
-        options: ["థార్న్‌డైక్", "పావ్‌లావ్", "స్కిన్నర్", "ఫ్రాయిడ్"],
+        question: "అవధానం పెరగడానికి ఉపాధ్యాయుడు చేయవలసినది",
+        options: ["ఏకరీతి బోధన", "బోధనలో వైవిధ్యం", "దీర్ఘ ఉపన్యాసం", "ఎక్కువ గృహపాఠం"],
+        correct: 1,
+        explanation: "బోధనలో వైవిధ్యం, చర్చలు, చిత్రాలు, కార్యకలాపాలు విద్యార్థుల ఆసక్తిని పెంచి అవధానాన్ని మెరుగుపరుస్తాయి."
+    },
+    {
+        question: "క్రింది వాటిలో అవధానానికి సంబంధించినది",
+        options: ["Concentration", "Retention", "Recall", "Recognition"],
         correct: 0,
-        explanation: "ట్రయల్ అండ్ ఎరర్ అభ్యసనాన్ని ఎడ్వర్డ్ థార్న్‌డైక్ ప్రతిపాదించాడు. ఆయన పిల్లి పజిల్ బాక్స్ ప్రయోగం ద్వారా దీనిని వివరించాడు."
+        explanation: "Concentration అనేది అవధానానికి సంబంధించిన భావన. ఇది ఒక నిర్దిష్ట విషయంపై మనస్సును కేంద్రీకరించే సామర్థ్యాన్ని సూచిస్తుంది."
     },
     {
-        question: "క్రింది వాటిలో బలపరచడం యొక్క ముఖ్య ఉద్దేశ్యం",
-        options: ["ప్రవర్తన తగ్గించడం", "ప్రవర్తన కొనసాగించడం", "మరుపు పెంచడం", "శిక్షించడం"],
+        question: "ఉద్దీపనలకు అర్థం ఇవ్వడం",
+        options: ["అవధానం", "గ్రహణం", "ప్రేరణ", "స్మరణ"],
         correct: 1,
-        explanation: "బలపరచడం యొక్క ప్రధాన ఉద్దేశ్యం కోరుకున్న ప్రవర్తనను కొనసాగించడం మరియు దాని పునరావృతిని పెంచడం. ఇది అభ్యసనాన్ని మరింత స్థిరపరుస్తుంది."
+        explanation: "ఇంద్రియాల ద్వారా వచ్చిన సమాచారాన్ని అర్థవంతంగా వ్యాఖ్యానించే మానసిక ప్రక్రియను గ్రహణం లేదా Perception అంటారు."
     },
     {
-        question: "క్రింది జతలలో సరైనది",
-        options: [
-            "పావ్‌లావ్ – ఆపరెంట్ కండిషనింగ్",
-            "స్కిన్నర్ – క్లాసికల్ కండిషనింగ్",
-            "థార్న్‌డైక్ – ఫలిత నియమం",
-            "కోహ్లర్ – బలపరచడం"
-        ],
+        question: "ఒకే చిత్రం కొందరికి భిన్నంగా కనిపించడం కారణం",
+        options: ["వ్యక్తిగత అనుభవాలు", "కంటి రంగు", "ఎత్తు", "బరువు"],
+        correct: 0,
+        explanation: "ప్రతి వ్యక్తి గత అనుభవాలు, ఆసక్తులు, అంచనాల ఆధారంగా సమాచారాన్ని అర్థం చేసుకుంటాడు. అందువల్ల ఒకే చిత్రం భిన్నంగా గ్రహించబడవచ్చు."
+    },
+    {
+        question: "భ్రమలు (Illusions) సంబంధించిన మానసిక ప్రక్రియ",
+        options: ["స్మృతి", "ప్రేరణ", "గ్రహణం", "అవధానం"],
         correct: 2,
-        explanation: "థార్న్‌డైక్ ఫలిత నియమాన్ని ప్రతిపాదించాడు. మిగిలిన జతలు సిద్ధాంతవేత్తలు మరియు వారి సిద్ధాంతాలకు సరిపోవు."
+        explanation: "భ్రమలు ఉద్దీపనలను తప్పుగా అర్థం చేసుకోవడం వల్ల ఏర్పడతాయి. కాబట్టి ఇవి గ్రహణం అనే మానసిక ప్రక్రియకు సంబంధించినవి."
     },
     {
-        question: "విద్యార్థి శబ్దం చేయకుండా ఉంటే జరిమానా తొలగించడం",
-        options: ["సానుకూల బలపరచడం", "ప్రతికూల బలపరచడం", "శిక్ష", "బదిలీ"],
+        question: "“మొత్తం భాగాల కంటే గొప్పది” అనే భావన ఏ సిద్ధాంతానికి సంబంధించినది?",
+        options: ["ప్రవర్తనావాదం", "గెస్టాల్ట్", "అనుసంధానవాదం", "మానవతావాదం"],
         correct: 1,
-        explanation: "అసౌకర్యకరమైన పరిస్థితిని తొలగించడం ద్వారా ప్రవర్తనను పెంచితే దాన్ని ప్రతికూల బలపరచడం అంటారు. జరిమానా తొలగించడం దీనికి ఉదాహరణ."
+        explanation: "గెస్టాల్ట్ సిద్ధాంతం ప్రకారం వ్యక్తి విషయాలను మొత్తం రూపంలో గ్రహిస్తాడు. మొత్తం భాగాల సమాహారంకంటే ఎక్కువ అర్థాన్ని కలిగి ఉంటుంది."
     },
     {
-        question: "క్రింది వాటిలో సానుకూల బలపరచడానికి ఉదాహరణ",
-        options: ["ప్రశంస", "హెచ్చరిక", "జరిమానా", "మందలింపు"],
-        correct: 0,
-        explanation: "ప్రశంస, బహుమతి లేదా ప్రోత్సాహం వంటి చర్యలు సానుకూల బలపరచడానికి ఉదాహరణలు. ఇవి మంచి ప్రవర్తనను పెంచుతాయి."
-    },
-    {
-        question: "అభ్యసన బదిలీని ప్రభావితం చేయని అంశం",
-        options: ["పూర్వ జ్ఞానం", "అభ్యసన సారూప్యత", "ప్రేరణ", "రక్తగ్రూప్"],
+        question: "క్రింది వాటిలో గ్రహణాన్ని ప్రభావితం చేసేది",
+        options: ["అనుభవం", "ఆసక్తి", "అంచనాలు", "పైవన్నీ"],
         correct: 3,
-        explanation: "రక్తగ్రూప్‌కు అభ్యసన బదిలీతో ఎలాంటి సంబంధం లేదు. పూర్వ జ్ఞానం, సారూప్యత మరియు ప్రేరణ మాత్రం ప్రభావితం చేస్తాయి."
+        explanation: "వ్యక్తి అనుభవాలు, ఆసక్తులు మరియు అంచనాలు గ్రహణాన్ని ప్రభావితం చేస్తాయి. అందువల్ల సరైన సమాధానం పైవన్నీ."
     },
     {
-        question: "Assertion (A): బలపరచడం అభ్యసనాన్ని బలపరుస్తుంది. Reason (R): బలపరచడం ప్రవర్తన పునరావృతిని పెంచుతుంది.",
+        question: "తరగతిలో ఒక విద్యార్థి “6” ను “9” గా చదవడం ప్రధానంగా ఏ సమస్యకు ఉదాహరణ?",
+        options: ["ప్రేరణ", "గ్రహణం", "అవధానం", "శిక్షణ"],
+        correct: 1,
+        explanation: "సంఖ్యను తప్పుగా అర్థం చేసుకోవడం గ్రహణ దోషానికి ఉదాహరణ. ఇది సమాచారాన్ని సరిగ్గా వ్యాఖ్యానించలేకపోవడాన్ని సూచిస్తుంది."
+    },
+    {
+        question: "కొద్దిసేపు మాత్రమే సమాచారాన్ని నిల్వచేసే స్మృతి",
+        options: ["దీర్ఘకాలిక స్మృతి", "తక్షణ స్మృతి", "శాశ్వత స్మృతి", "అర్థ స్మృతి"],
+        correct: 1,
+        explanation: "తక్షణ స్మృతి లేదా Short-Term Memory కొద్దిసేపు మాత్రమే సమాచారాన్ని నిల్వ చేస్తుంది. తరువాత అది మరచిపోవచ్చు లేదా దీర్ఘకాలిక స్మృతికి మారవచ్చు."
+    },
+    {
+        question: "దీర్ఘకాలిక స్మృతిలో సమాచారాన్ని నిల్వచేయడానికి ముఖ్యమైన ప్రక్రియ",
+        options: ["పునరావృతం", "మరచిపోవడం", "శిక్ష", "అలసట"],
+        correct: 0,
+        explanation: "పునరావృతం ద్వారా సమాచారం బలపడుతుంది. ఇది దీర్ఘకాలిక స్మృతిలో సమాచారాన్ని నిల్వ చేయడంలో ముఖ్య పాత్ర పోషిస్తుంది."
+    },
+    {
+        question: "స్మృతి ప్రక్రియల సరైన క్రమం",
         options: [
-            "A, R రెండూ సత్యాలు; R సరైన వివరణ",
-            "A, R రెండూ సత్యాలు; R వివరణ కాదు",
-            "A సత్యం; R అసత్యం",
-            "A అసత్యం; R సత్యం"
+            "Recall → Encoding → Storage",
+            "Storage → Recall → Encoding",
+            "Encoding → Storage → Recall",
+            "Storage → Encoding → Recall"
+        ],
+        correct: 2,
+        explanation: "మొదట సమాచారం Encoding చేయబడుతుంది, తరువాత Storageలో నిల్వ అవుతుంది, అవసరమైనప్పుడు Recall ద్వారా తిరిగి గుర్తుకు తెచ్చుకుంటాం."
+    },
+    {
+        question: "క్రింది వాటిలో గుర్తింపు స్మృతికి ఉదాహరణ",
+        options: ["సమాధానం వ్రాయడం", "కవిత చెప్పడం", "ఫోటో చూసి వ్యక్తిని గుర్తించడం", "నిర్వచనం చెప్పడం"],
+        correct: 2,
+        explanation: "గుర్తింపు స్మృతిలో ముందుగా చూసిన లేదా తెలిసిన విషయాన్ని గుర్తిస్తారు. ఫోటో చూసి వ్యక్తిని గుర్తించడం దీనికి ఉదాహరణ."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి. a) మరచిపోవడం ఎల్లప్పుడూ హానికరం b) అవసరం లేని సమాచారాన్ని తొలగించడంలో మరచిపోవడం సహాయపడుతుంది",
+        options: ["a మాత్రమే", "b మాత్రమే", "రెండూ", "రెండూ కాదు"],
+        correct: 1,
+        explanation: "మరచిపోవడం ఎల్లప్పుడూ హానికరం కాదు. అవసరం లేని సమాచారాన్ని తొలగించి ఉపయోగకరమైన సమాచారానికి స్థలం కల్పిస్తుంది."
+    },
+    {
+        question: "She ____ to school every day.",
+        options: ["go", "goes", "went", "going"],
+        correct: 1,
+        explanation: "‘She’ మూడవ వ్యక్తి ఏకవచనం కాబట్టి Simple Present Tenseలో verb కు ‘s/es’ జతచేయాలి. కాబట్టి ‘goes’ సరైనది."
+    },
+    {
+        question: "They ____ cricket when it started raining.",
+        options: ["play", "played", "were playing", "have played"],
+        correct: 2,
+        explanation: "ఒక పని జరుగుతున్న సమయంలో మరో పని జరిగితే Past Continuous Tense ఉపయోగిస్తారు. కాబట్టి ‘were playing’ సరైన సమాధానం."
+    },
+    {
+        question: "By next year, I ____ this course.",
+        options: ["complete", "completed", "will complete", "will have completed"],
+        correct: 3,
+        explanation: "భవిష్యత్తులో ఒక నిర్దిష్ట సమయానికి ముందు పని పూర్తవుతుందని చెప్పడానికి Future Perfect Tense ఉపయోగిస్తారు."
+    },
+    {
+        question: "He ____ in Hyderabad since 2020.",
+        options: ["lives", "lived", "has lived", "is living"],
+        correct: 2,
+        explanation: "‘Since 2020’ అనే కాల సూచన Present Perfect Tense ను సూచిస్తుంది. కాబట్టి ‘has lived’ సరైన సమాధానం."
+    },
+    {
+        question: "Choose the correct tense. “I ____ my homework already.”",
+        options: ["did", "do", "have done", "doing"],
+        correct: 2,
+        explanation: "‘Already’ అనే పదంతో పూర్తి అయిన పనిని సూచించడానికి Present Perfect Tense ఉపయోగిస్తారు. కాబట్టి ‘have done’ సరైనది."
+    },
+    {
+        question: "If she worked harder, she ____ the exam.",
+        options: ["passes", "passed", "would pass", "will pass"],
+        correct: 2,
+        explanation: "ఇది Second Conditional sentence. If + Past Simple వచ్చినప్పుడు ప్రధాన వాక్యంలో would + verb ఉపయోగిస్తారు. కాబట్టి 'would pass' సరైనది."
+    },
+    {
+        question: "The train ____ before we reached the station.",
+        options: ["leaves", "left", "had left", "has left"],
+        correct: 2,
+        explanation: "గతంలో మరో చర్యకు ముందు పూర్తైన చర్యను సూచించడానికి Past Perfect Tense ఉపయోగిస్తారు. కాబట్టి 'had left' సరైన సమాధానం."
+    },
+    {
+        question: "While the teacher was teaching, the students ____ notes.",
+        options: ["take", "took", "were taking", "have taken"],
+        correct: 2,
+        explanation: "రెండు చర్యలు ఒకేసారి గతంలో కొనసాగుతున్నప్పుడు Past Continuous Tense ఉపయోగిస్తారు. కాబట్టి 'were taking' సరైనది."
+    },
+    {
+        question: "I ____ him yesterday.",
+        options: ["see", "saw", "seen", "have seen"],
+        correct: 1,
+        explanation: "‘Yesterday’ గత కాలాన్ని సూచిస్తుంది. కాబట్టి Simple Past Tense ఉపయోగించి 'saw' అని వ్రాయాలి."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "I am knowing the answer.",
+            "I know the answer.",
+            "I have knowing the answer.",
+            "I knew the answer now."
+        ],
+        correct: 1,
+        explanation: "‘Know’ ఒక stative verb. ఇది సాధారణంగా continuous form లో ఉపయోగించరు. అందువల్ల 'I know the answer' సరైన వాక్యం."
+    },
+    {
+        question: "The letter was written by Raju. Active Voice:",
+        options: [
+            "Raju writes the letter.",
+            "Raju wrote the letter.",
+            "Raju has written the letter.",
+            "Raju writing the letter."
+        ],
+        correct: 1,
+        explanation: "Passive sentence 'was written' Past Simple Tenseలో ఉంది. Active Voiceలో 'Raju wrote the letter' అవుతుంది."
+    },
+    {
+        question: "Active: The teacher praised the student. Passive:",
+        options: [
+            "The student was praised by the teacher.",
+            "The student is praised by the teacher.",
+            "The student has praised by the teacher.",
+            "The student praised by the teacher."
         ],
         correct: 0,
-        explanation: "బలపరచడం వల్ల ప్రవర్తన పునరావృతమవుతుంది. అందువల్ల అభ్యసనం బలపడుతుంది. కాబట్టి R, Aకి సరైన వివరణ."
+        explanation: "Simple Past Active Voiceను Passive Voiceలోకి మార్చినప్పుడు was/were + V3 ఉపయోగిస్తారు. కాబట్టి మొదటి ఎంపిక సరైనది."
     },
     {
-        question: "క్రింది వాటిలో షరతు ఉద్దీపన",
-        options: ["ఆహారం", "గంట శబ్దం", "లాలాజలం", "ఆకలి"],
+        question: "Passive: The work will be completed tomorrow. Active:",
+        options: [
+            "They complete the work tomorrow.",
+            "They will complete the work tomorrow.",
+            "They completed the work tomorrow.",
+            "They have completed the work tomorrow."
+        ],
         correct: 1,
-        explanation: "పావ్‌లావ్ ప్రయోగంలో గంట శబ్దం ప్రారంభంలో తటస్థ ఉద్దీపన. తరువాత అది షరతు ఉద్దీపనగా మారింది."
+        explanation: "Future Passive Voiceలోని 'will be completed' ను Active Voiceలో 'will complete' గా మారుస్తారు."
     },
     {
-        question: "పిల్లవాడు నేర్చుకున్న నైపుణ్యాన్ని కొత్త పరిస్థితిలో ఉపయోగించడం",
-        options: ["ప్రేరణ", "బదిలీ అభ్యసనం", "మరుపు", "పునశ్చరణ"],
-        correct: 1,
-        explanation: "పూర్వ అభ్యసనాన్ని కొత్త పరిస్థితుల్లో ఉపయోగించడం బదిలీ అభ్యసనం. ఇది విద్యా ప్రక్రియలో ముఖ్యమైన లక్ష్యం."
-    },
-    {
-        question: "క్రింది వారిలో అభ్యసనాన్ని 'ప్రవర్తనలో సాపేక్ష స్థిరమైన మార్పు'గా వివరించిన దృక్పథం",
-        options: ["ప్రవర్తనావాదం", "మానవతావాదం", "నిర్మాణవాదం", "గెస్టాల్ట్"],
+        question: "Choose the correct passive form. 'People speak English all over the world.'",
+        options: [
+            "English is spoken all over the world.",
+            "English was spoken all over the world.",
+            "English has spoken all over the world.",
+            "English speaks all over the world."
+        ],
         correct: 0,
-        explanation: "ప్రవర్తనావాదులు అభ్యసనాన్ని అనుభవం వల్ల ప్రవర్తనలో వచ్చే సాపేక్ష స్థిరమైన మార్పుగా నిర్వచించారు."
+        explanation: "Simple Present Active Voiceకు Passive రూపం is/am/are + V3. కాబట్టి 'English is spoken' సరైనది."
     },
     {
-        question: "స్కిన్నర్ బాక్స్ ప్రయోగం ప్రధానంగా దేనికి సంబంధించినది?",
-        options: ["అంతర్దృష్టి", "ఆపరెంట్ కండిషనింగ్", "క్లాసికల్ కండిషనింగ్", "సామాజిక అభ్యసనం"],
+        question: "The room ____ every day.",
+        options: ["cleans", "cleaned", "is cleaned", "cleaning"],
+        correct: 2,
+        explanation: "గది శుభ్రం చేయబడుతుంది కాబట్టి Passive Voice అవసరం. Simple Present Passive రూపం 'is cleaned'."
+    },
+    {
+        question: "Active: Somebody stole my bicycle. Passive:",
+        options: [
+            "My bicycle stole.",
+            "My bicycle was stolen.",
+            "My bicycle is stolen.",
+            "My bicycle has stolen."
+        ],
         correct: 1,
-        explanation: "స్కిన్నర్ బాక్స్ ప్రయోగం ఆపరెంట్ కండిషనింగ్‌ను వివరించడానికి ఉపయోగించబడింది. బలపరచడం ప్రభావాన్ని ఇది చూపిస్తుంది."
+        explanation: "Simple Past Active Voiceలోని objectను subjectగా మార్చి was + V3 ఉపయోగిస్తారు. కాబట్టి 'was stolen' సరైనది."
     },
     {
-        question: "Each of the boys ______ a notebook.",
-        options: ["have", "has", "are having", "were having"],
-        correct: 1,
-        explanation: "‘Each’ ఏకవచన భావాన్ని ఇస్తుంది. కాబట్టి singular verb అయిన ‘has’ ఉపయోగించాలి."
-    },
-    {
-        question: "Neither the teacher nor the students ______ present.",
-        options: ["was", "is", "were", "has"],
-        correct: 2,
-        explanation: "Neither...nor నిర్మాణంలో క్రియ దగ్గర ఉన్న subject ప్రకారం verb వస్తుంది. 'students' plural కాబట్టి 'were' సరైనది."
-    },
-    {
-        question: "Identify the error: One of the students have completed the work.",
-        options: ["One", "students", "have", "work"],
-        correct: 2,
-        explanation: "‘One of the students’ అనే subject ఏకవచనం. కాబట్టి ‘have’ స్థానంలో ‘has’ రావాలి."
-    },
-    {
-        question: "The list of items ______ on the table.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "Subject 'list' ఏకవచనం. 'items' కాదు. కాబట్టి singular verb 'is' వాడాలి."
-    },
-    {
-        question: "Either Ram or his friends ______ responsible.",
-        options: ["is", "was", "are", "has"],
-        correct: 2,
-        explanation: "Either...or నిర్మాణంలో దగ్గర subject 'friends' plural. అందువల్ల plural verb 'are' ఉపయోగించాలి."
-    },
-    {
-        question: "The news ______ very surprising.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "‘News’ రూపంలో plural లాగా కనిపించినా, అది singular noun. అందువల్ల singular verb ‘is’ ఉపయోగించాలి."
-    },
-    {
-        question: "Identify the error: Each of the players were given a medal.",
-        options: ["Each", "players", "were", "medal"],
-        correct: 2,
-        explanation: "‘Each of the players’ అనే subject singular. కాబట్టి ‘were’ స్థానంలో ‘was’ రావాలి."
-    },
-    {
-        question: "Mathematics ______ my favourite subject.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "Mathematics ఒక subject name. ఇది singular noun గా పరిగణించబడుతుంది. కాబట్టి ‘is’ సరైనది."
-    },
-    {
-        question: "Neither of the answers ______ correct.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "‘Neither’ ఎప్పుడూ singular భావాన్ని ఇస్తుంది. అందువల్ల singular verb ‘is’ ఉపయోగించాలి."
-    },
-    {
-        question: "The committee ______ decided to postpone the meeting.",
-        options: ["has", "have", "are", "were"],
+        question: "Choose the correct passive form. 'They are building a bridge.'",
+        options: [
+            "A bridge is being built.",
+            "A bridge was being built.",
+            "A bridge has built.",
+            "A bridge built."
+        ],
         correct: 0,
-        explanation: "Committee ఒక collective noun. ఒక యూనిట్‌గా భావించినప్పుడు singular verb ‘has’ వాడాలి."
+        explanation: "Present Continuous Passive Voice రూపం is/am/are + being + V3. కాబట్టి 'is being built' సరైనది."
     },
     {
-        question: "Identify the error: The quality of the apples are good.",
-        options: ["quality", "apples", "are", "good"],
-        correct: 2,
-        explanation: "Subject ‘quality’ singular. కాబట్టి ‘are’ స్థానంలో singular verb ‘is’ రావాలి."
-    },
-    {
-        question: "Bread and butter ______ his usual breakfast.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "Bread and butter ఒకే ఆహారంగా భావించినప్పుడు singular verb ఉపయోగిస్తారు. కాబట్టి ‘is’ సరైనది."
-    },
-    {
-        question: "Every student and every teacher ______ invited.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "Every...and every నిర్మాణం singular భావాన్ని ఇస్తుంది. అందువల్ల ‘is’ ఉపయోగించాలి."
-    },
-    {
-        question: "The furniture ______ old.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "Furniture అనేది uncountable noun. ఇది singular గా పరిగణించబడుతుంది. కాబట్టి ‘is’ సరైనది."
-    },
-    {
-        question: "Identify the error: Neither of the boys have arrived.",
-        options: ["Neither", "boys", "have", "arrived"],
-        correct: 2,
-        explanation: "‘Neither’ singular pronoun. కాబట్టి ‘have’ స్థానంలో singular verb ‘has’ ఉపయోగించాలి."
-    },
-    {
-        question: "A number of students ______ absent today.",
-        options: ["is", "was", "are", "has"],
-        correct: 2,
-        explanation: "‘A number of’ తరువాత plural noun వస్తే plural verb ఉపయోగించాలి. అందువల్ల ‘are’ సరైనది."
-    },
-    {
-        question: "The number of students ______ increasing.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "‘The number of’ అనే subject singular. కాబట్టి singular verb ‘is’ ఉపయోగించాలి."
-    },
-    {
-        question: "Identify the error: The poet along with his friends are attending the function.",
-        options: ["poet", "along with", "are", "function"],
-        correct: 2,
-        explanation: "Subject ‘poet’ singular. ‘along with’ subjectను మార్చదు. కాబట్టి ‘are’ స్థానంలో ‘is’ రావాలి."
-    },
-    {
-        question: "Not only the principal but also the teachers ______ present.",
-        options: ["was", "is", "are", "has"],
-        correct: 2,
-        explanation: "Not only...but also నిర్మాణంలో దగ్గర subject ‘teachers’ plural. కాబట్టి ‘are’ సరైనది."
-    },
-    {
-        question: "The police ______ investigating the case.",
-        options: ["is", "was", "are", "has"],
-        correct: 2,
-        explanation: "Police అనే collective noun సాధారణంగా plural verb తీసుకుంటుంది. అందువల్ల ‘are’ సరైనది."
-    },
-    {
-        question: "Identify the error: Either the students or the teacher have made the mistake.",
-        options: ["Either", "students", "have", "mistake"],
-        correct: 2,
-        explanation: "దగ్గర subject ‘teacher’ singular. కాబట్టి ‘have’ స్థానంలో ‘has’ ఉపయోగించాలి."
-    },
-    {
-        question: "Ten kilometers ______ a long distance to walk.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "దూరం, సమయం, డబ్బు వంటి కొలతలు ఒక యూనిట్‌గా భావించినప్పుడు singular verb వాడాలి. కాబట్టి ‘is’ సరైనది."
-    },
-    {
-        question: "The scissors ______ on the table.",
-        options: ["is", "was", "are", "has"],
-        correct: 2,
-        explanation: "Scissors plural noun. కాబట్టి plural verb ‘are’ ఉపయోగించాలి."
-    },
-    {
-        question: "Identify the error: Everybody know the answer.",
-        options: ["Everybody", "know", "the", "answer"],
+        question: "The homework ____ by the students yesterday.",
+        options: ["completed", "was completed", "is completed", "completes"],
         correct: 1,
-        explanation: "Everybody singular pronoun. కాబట్టి ‘know’ స్థానంలో ‘knows’ రావాలి."
+        explanation: "‘Yesterday’ గత కాలాన్ని సూచిస్తుంది. Passive Voiceలో Simple Past రూపం was/were + V3 అవుతుంది."
     },
     {
-        question: "One of my friends ______ selected for the competition.",
-        options: ["are", "were", "is", "have"],
+        question: "Active: The police arrested the thief. Passive:",
+        options: [
+            "The thief arrested.",
+            "The thief is arrested.",
+            "The thief was arrested by the police.",
+            "The thief has arrested."
+        ],
         correct: 2,
-        explanation: "‘One of my friends’ అనే subject singular. కాబట్టి singular verb ‘is’ సరైనది."
+        explanation: "Simple Past Active Voiceను Passive Voiceలోకి మార్చినప్పుడు 'was arrested by the police' రూపం వస్తుంది."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "The meeting has been postponed.",
+            "The meeting has postponed.",
+            "The meeting postponed.",
+            "The meeting being postponed."
+        ],
+        correct: 0,
+        explanation: "Present Perfect Passive Voiceలో has/have been + V3 ఉపయోగిస్తారు. కాబట్టి మొదటి వాక్యం సరైనది."
+    },
+    {
+        question: "Identify the error. 'The project has completed yesterday.'",
+        options: ["project", "has completed", "yesterday", "No error"],
+        correct: 1,
+        explanation: "‘Yesterday’తో Present Perfect ఉపయోగించరు. అలాగే Passive రూపం కావాలి. కాబట్టి 'has completed' భాగంలో తప్పు ఉంది."
+    },
+    {
+        question: "Choose the correct form. 'By 8 PM, she ____ dinner.'",
+        options: ["cooks", "cooked", "will cook", "will have cooked"],
+        correct: 3,
+        explanation: "భవిష్యత్తులో నిర్దిష్ట సమయానికి ముందు పని పూర్తవుతుందని సూచించడానికి Future Perfect Tense ఉపయోగిస్తారు."
+    },
+    {
+        question: "If I had known the answer, I ____ you.",
+        options: ["help", "helped", "would have helped", "will help"],
+        correct: 2,
+        explanation: "ఇది Third Conditional sentence. If + Past Perfect వచ్చినప్పుడు would have + V3 ఉపయోగిస్తారు."
+    },
+    {
+        question: "Passive form of: 'They have finished the work.'",
+        options: [
+            "The work has finished.",
+            "The work has been finished.",
+            "The work was finished.",
+            "The work is finished."
+        ],
+        correct: 1,
+        explanation: "Present Perfect Passive Voice రూపం has/have been + V3. కాబట్టి 'has been finished' సరైనది."
+    },
+    {
+        question: "Choose the correct tense. 'Look! The children ____ in the playground.'",
+        options: ["play", "played", "are playing", "have played"],
+        correct: 2,
+        explanation: "‘Look!’ అనే సూచన ప్రస్తుతం జరుగుతున్న చర్యను తెలియజేస్తుంది. కాబట్టి Present Continuous Tense ఉపయోగించాలి."
     }
 ];
