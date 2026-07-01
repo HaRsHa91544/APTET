@@ -1,433 +1,582 @@
 const SUBJECTS = [
     "Child Development",
     "English",
-    "ICT"
+    "Special Education"
 ];
 
 const QUESTIONS = [
     {
-        question: "కింది వారిలో సృజనాత్మకత (Creativity)ను కొలవడానికి ప్రసిద్ధ పరీక్షను రూపొందించినవారు ఎవరు?",
-        options: ["బినే", "టోరెన్స్", "థర్‌స్టోన్", "స్పీర్మన్"],
-        correct: 1,
-        explanation: "టోరెన్స్ రూపొందించిన Torrance Tests of Creative Thinking (TTCT) ప్రపంచవ్యాప్తంగా సృజనాత్మకతను అంచనా వేయడానికి ఉపయోగించే ప్రముఖ పరీక్ష. ఇది ప్రవాహం, వైవిధ్యం, వినూత్నత, విస్తరణ వంటి సృజనాత్మక ఆలోచనా లక్షణాలను కొలుస్తుంది."
-    },
-    {
-        question: "సృజనాత్మక విద్యార్థుల ప్రధాన లక్షణం ఏది?",
+        question: "కొలత (Measurement) యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
         options: [
-            "సూచనలను యథాతథంగా అనుసరించడం",
-            "కొత్త ఆలోచనలను స్వతంత్రంగా ప్రతిపాదించడం",
-            "పాఠాలను కంఠస్థం చేయడం",
-            "ఎక్కువ సమయం మౌనంగా ఉండటం"
+            "విద్యార్థి ప్రవర్తనను వివరించడం",
+            "విద్యార్థి లక్షణాలకు సంఖ్యాత్మక విలువ కేటాయించడం",
+            "విద్యార్థికి గ్రేడ్ ఇవ్వడం",
+            "విద్యార్థి పురోగతిపై నిర్ణయం తీసుకోవడం"
         ],
         correct: 1,
-        explanation: "సృజనాత్మక విద్యార్థులు కొత్త ఆలోచనలు ప్రతిపాదించడం, సమస్యలకు వినూత్న పరిష్కారాలు సూచించడం, స్వతంత్రంగా ఆలోచించడం వంటి లక్షణాలను ప్రదర్శిస్తారు. వారు సాధారణ సమాధానాలకు మాత్రమే పరిమితం కాకుండా ప్రత్యామ్నాయ మార్గాలను కూడా అన్వేషిస్తారు."
+        explanation:
+            "కొలత అనేది విద్యార్థి లక్షణాలు, సామర్థ్యాలు లేదా ప్రదర్శనను సంఖ్యాత్మక విలువలుగా వ్యక్తీకరించే ప్రక్రియ. ఇది కేవలం డేటాను అందిస్తుంది. నిర్ణయాలు లేదా విలువ నిర్ధారణ తర్వాత జరిగే మదింపు మరియు మూల్యాంకనంలో భాగంగా ఉంటాయి."
     },
     {
-        question: "కింది వాటిలో సృజనాత్మక ఆలోచన (Creative Thinking)కు సంబంధించిన అంశం ఏది?",
+        question: 'క్రింది వాటిలో "మదింపు (Assessment)"కు సరైన వివరణ ఏది?',
         options: [
-            "అభిసరణ ఆలోచన (Convergent Thinking)",
-            "అపసరణ ఆలోచన (Divergent Thinking)",
-            "యాంత్రిక అభ్యాసం",
-            "అనుకరణ"
+            "పరీక్షలో వచ్చిన మార్కులను మాత్రమే నమోదు చేయడం",
+            "అభ్యాసానికి సంబంధించిన సమాచారాన్ని సేకరించి విశ్లేషించడం",
+            "విద్యార్థికి గ్రేడ్ ఇవ్వడం",
+            "ఉత్తీర్ణత నిర్ణయించడం"
         ],
         correct: 1,
-        explanation: "అపసరణ ఆలోచన ఒక సమస్యకు అనేక విభిన్న పరిష్కారాలను కనుగొనే సామర్థ్యాన్ని సూచిస్తుంది. ఇది సృజనాత్మకతకు ప్రధాన ఆధారం కాగా, కొత్త అవకాశాలను అన్వేషించే ఆలోచనా విధానాన్ని అభివృద్ధి చేస్తుంది."
+        explanation:
+            "మదింపు అనేది విద్యార్థి అభ్యాసానికి సంబంధించిన సమాచారాన్ని సేకరించి, విశ్లేషించి, అభ్యాస పురోగతిని అర్థం చేసుకునే ప్రక్రియ. దీని ద్వారా బలాలు, బలహీనతలు గుర్తించి బోధనను మెరుగుపరచడానికి అవసరమైన సమాచారం లభిస్తుంది."
     },
     {
-        question: "ఒక ఉపాధ్యాయుడు విద్యార్థులకు ఒక సమస్యకు అనేక పరిష్కారాలను సూచించమని అడిగాడు. ఇది ప్రధానంగా ఏ నైపుణ్యాన్ని అభివృద్ధి చేస్తుంది?",
-        options: ["జ్ఞాపకశక్తి", "సృజనాత్మకత", "అనుకరణ", "కంఠస్థం"],
-        correct: 1,
-        explanation: "ఒక సమస్యకు అనేక పరిష్కారాలను ఆలోచించడం విద్యార్థుల అపసరణ ఆలోచనను పెంపొందిస్తుంది. ఇది సృజనాత్మకత, విమర్శనాత్మక ఆలోచన మరియు స్వతంత్ర సమస్య పరిష్కార సామర్థ్యాలను అభివృద్ధి చేయడంలో సహాయపడుతుంది."
-    },
-    {
-        question: "టర్మన్ (Terman) ప్రకారం ప్రతిభావంతులైన (Gifted) పిల్లల IQ సాధారణంగా ఎంత లేదా అంతకంటే ఎక్కువగా ఉంటుంది?",
-        options: ["100", "110", "120", "140"],
-        correct: 3,
-        explanation: "టర్మన్ వర్గీకరణ ప్రకారం IQ 140 లేదా అంతకంటే ఎక్కువ ఉన్న పిల్లలను అత్యంత ప్రతిభావంతులుగా పరిగణిస్తారు. వీరు వేగంగా నేర్చుకోవడం, ఉన్నత స్థాయి తార్కిక ఆలోచన మరియు ప్రత్యేక ప్రతిభను ప్రదర్శిస్తారు."
-    },
-    {
-        question: "ప్రతిభావంతులైన పిల్లల కోసం అత్యంత అనుకూలమైన బోధనా విధానం ఏది?",
+        question: "మూల్యాంకనం (Evaluation) ప్రధానంగా దేనికి సంబంధించినది?",
         options: [
-            "అందరికీ ఒకే వేగంతో బోధించడం",
-            "వారి సామర్థ్యానికి అనుగుణంగా సుసంపన్న (Enrichment) కార్యక్రమాలు అందించడం",
-            "పునరావృత అభ్యాసం మాత్రమే చేయించడం",
-            "తరచూ శిక్షించడం"
+            "సంఖ్యాత్మక కొలత",
+            "విలువ నిర్ణయం",
+            "ప్రశ్నపత్రం తయారీ",
+            "హాజరు నమోదు"
         ],
         correct: 1,
-        explanation: "ప్రతిభావంతులైన విద్యార్థులకు వారి సామర్థ్యానికి అనుగుణంగా సవాలుతో కూడిన Enrichment కార్యక్రమాలు అవసరం. ఇవి వారి ప్రతిభను మరింత అభివృద్ధి చేసి ఉన్నత స్థాయి అభ్యాస అవకాశాలను అందిస్తాయి."
+        explanation:
+            "మూల్యాంకనం అనేది కొలత మరియు మదింపు ద్వారా సేకరించిన సమాచారాన్ని ఆధారంగా చేసుకొని విద్యార్థి అభ్యాసంపై విలువ నిర్ణయం తీసుకునే ప్రక్రియ. ఇది విద్యా లక్ష్యాల సాధన స్థాయిని నిర్ధారిస్తుంది."
     },
     {
-        question: "కింది వాటిలో ప్రతిభావంతులైన పిల్లల లక్షణం ఏది?",
+        question: "క్రింది వాటిలో సరైన క్రమాన్ని గుర్తించండి.",
         options: [
-            "కొత్త విషయాలు నేర్చుకోవడంలో నెమ్మదిగా ఉండటం",
-            "బలమైన ఉత్సుకత మరియు వేగవంతమైన అభ్యాసం",
-            "సూచనలు మాత్రమే అనుసరించడం",
-            "ప్రతి పనిలో సహాయం అవసరం కావడం"
-        ],
-        correct: 1,
-        explanation: "ప్రతిభావంతులైన పిల్లలు అధిక జిజ్ఞాస, వేగవంతమైన అభ్యాసం, లోతైన అవగాహన మరియు క్లిష్టమైన సమస్యలను పరిష్కరించే సామర్థ్యాన్ని ప్రదర్శిస్తారు. వారు సాధారణంగా స్వయంగా నేర్చుకోవడంపై ఆసక్తి చూపుతారు."
-    },
-    {
-        question: "విద్యా పరంగా వెనుకబడిన (Backward) పిల్లల గురించి సరైన ప్రకటన ఏది?",
-        options: [
-            "వారందరికీ బుద్ధిమాంద్యం ఉంటుంది.",
-            "వారు తరగతి స్థాయికి తగిన విద్యా ఫలితాలను సాధించలేరు.",
-            "వారు ఎల్లప్పుడూ ప్రతిభావంతులే.",
-            "వారు ప్రత్యేక విద్యకు అర్హులు కారు."
-        ],
-        correct: 1,
-        explanation: "విద్యా పరంగా వెనుకబడిన పిల్లలు తమ వయస్సు లేదా తరగతి స్థాయికి అనుగుణమైన విద్యా ప్రగతిని సాధించలేరు. దీనికి బోధన, కుటుంబం, ఆరోగ్యం లేదా ఇతర కారణాలు ఉండవచ్చు."
-    },
-    {
-        question: "విద్యా పరంగా వెనుకబడిన విద్యార్థిని గుర్తించిన ఉపాధ్యాయుడు మొదట చేయవలసిన చర్య ఏది?",
-        options: [
-            "శిక్షించడం",
-            "కారణాలను గుర్తించి తగిన బోధనా సహాయం అందించడం",
-            "తరగతి మార్చడం",
-            "పరీక్షల నుండి తొలగించడం"
-        ],
-        correct: 1,
-        explanation: "ఉపాధ్యాయుడు ముందుగా వెనుకబడటానికి గల కారణాలను గుర్తించి, వ్యక్తిగత అవసరాలకు అనుగుణమైన బోధన మరియు విద్యా సహాయాన్ని అందించాలి. శిక్ష లేదా తొలగింపు సరైన పరిష్కారం కాదు."
-    },
-    {
-        question: "ప్రతిభావంతులైన విద్యార్థిని సాధారణ తరగతిలో బోధిస్తున్న ఉపాధ్యాయుడు అనుసరించాల్సిన ఉత్తమ విధానం ఏది?",
-        options: [
-            "ఒకే విధమైన పనిని అందరికీ ఇవ్వడం",
-            "అదనపు సవాళ్లు మరియు విస్తృత అభ్యాస అవకాశాలు కల్పించడం",
-            "అతనిని బోధనలో పాల్గొననివ్వకపోవడం",
-            "కేవలం పాఠ్యపుస్తకానికే పరిమితం చేయడం"
-        ],
-        correct: 1,
-        explanation: "ప్రతిభావంతులైన విద్యార్థులకు అదనపు సవాళ్లు, ఉన్నత స్థాయి కార్యకలాపాలు మరియు విస్తృత అభ్యాస అవకాశాలు కల్పించడం ద్వారా వారి ప్రతిభను సమర్థవంతంగా అభివృద్ధి చేయవచ్చు. ఇదే సమగ్ర బోధనలో ఉత్తమ పద్ధతి."
-    },
-    {
-        question: "విద్యాపరంగా వెనుకబడిన (Backward) విద్యార్థిని గుర్తించడంలో అత్యంత ముఖ్యమైన ప్రమాణం ఏది?",
-        options: [
-            "వయస్సు",
-            "శారీరక ఎదుగుదల",
-            "తరగతి స్థాయికి తగిన విద్యా ప్రదర్శన లేకపోవడం",
-            "ఎత్తు మరియు బరువు"
+            "మూల్యాంకనం → కొలత → మదింపు",
+            "మదింపు → మూల్యాంకనం → కొలత",
+            "కొలత → మదింపు → మూల్యాంకనం",
+            "మదింపు → కొలత → మూల్యాంకనం"
         ],
         correct: 2,
-        explanation: "విద్యాపరంగా వెనుకబడిన విద్యార్థులను వారి వయస్సు లేదా శారీరక ఎదుగుదల ఆధారంగా కాదు. తరగతి స్థాయికి అనుగుణంగా ఆశించిన విద్యా ప్రదర్శన చేయలేకపోవడం ప్రధాన గుర్తింపు ప్రమాణంగా పరిగణించబడుతుంది."
+        explanation:
+            "ముందుగా కొలత ద్వారా సంఖ్యాత్మక సమాచారం సేకరిస్తారు. ఆ తర్వాత మదింపు ద్వారా దానిని విశ్లేషిస్తారు. చివరగా మూల్యాంకనం ద్వారా విలువ నిర్ణయం తీసుకుంటారు. ఈ క్రమమే విద్యా మూల్యాంకన ప్రక్రియలో సరైనది."
     },
     {
-        question: "కింది వాటిలో విద్యాపరంగా వెనుకబడటానికి ప్రధాన కారణం కానిది ఏది?",
+        question:
+            "విద్యార్థి నేర్చుకునే సమయంలో అతని బలాలు, బలహీనతలను గుర్తించడానికి ఉపయోగించే మదింపు ఏది?",
         options: [
-            "అనారోగ్యం",
-            "అనుకూలం కాని కుటుంబ వాతావరణం",
-            "సరైన బోధనా పద్ధతుల లోపం",
-            "ఎక్కువ సృజనాత్మకత"
-        ],
-        correct: 3,
-        explanation: "అనారోగ్యం, కుటుంబ సమస్యలు, సరైన బోధన లేకపోవడం విద్యాపరమైన వెనుకబాటుకు కారణాలు కావచ్చు. అయితే అధిక సృజనాత్మకత వెనుకబడటానికి కారణం కాదు, అది ప్రత్యేక సామర్థ్యాన్ని సూచిస్తుంది."
-    },
-    {
-        question: "విద్యాపరంగా వెనుకబడిన విద్యార్థులకు అత్యంత అనుకూలమైన బోధనా విధానం ఏది?",
-        options: [
-            "ఒకే విధమైన బోధన",
-            "వ్యక్తిగత అవసరాలకు అనుగుణమైన సహాయక బోధన",
-            "ఎక్కువ గృహపాఠాలు ఇవ్వడం",
-            "తరచూ పరీక్షలు నిర్వహించడం"
+            "సమ్మేటివ్ మదింపు",
+            "ఫార్మేటివ్ మదింపు",
+            "వార్షిక పరీక్ష",
+            "బోర్డు పరీక్ష"
         ],
         correct: 1,
-        explanation: "విద్యార్థుల అభ్యాస అవసరాలు, సామర్థ్యాలు మరియు వేగాన్ని పరిగణనలోకి తీసుకొని వ్యక్తిగత సహాయక బోధన అందించడం ఉత్తమ విధానం. దీనివల్ల వారు క్రమంగా విద్యా ప్రగతిని సాధించగలరు."
+        explanation:
+            "ఫార్మేటివ్ మదింపు బోధన జరుగుతున్న సమయంలో నిర్వహించబడుతుంది. ఇది విద్యార్థుల బలాలు, బలహీనతలు గుర్తించి వెంటనే బోధనలో మార్పులు చేయడానికి ఉపాధ్యాయులకు ఉపయోగపడుతుంది."
     },
     {
-        question: "సమగ్ర తరగతి గదిలో (Inclusive Classroom) ఉపాధ్యాయుని ప్రధాన పాత్ర ఏమిటి?",
+        question: "సమ్మేటివ్ మదింపు (Summative Assessment) సాధారణంగా ఎప్పుడు నిర్వహించబడుతుంది?",
         options: [
-            "ప్రతిభావంతులపై మాత్రమే దృష్టి పెట్టడం",
-            "అందరికీ సమాన అవకాశాలు కల్పించడం",
-            "ప్రత్యేక అవసరాలున్న విద్యార్థులను వేరు చేయడం",
-            "పరీక్షలపై మాత్రమే దృష్టి పెట్టడం"
+            "ప్రతి పాఠం అనంతరం",
+            "ప్రతి కార్యకలాపం తర్వాత",
+            "బోధన పూర్తయిన తర్వాత",
+            "పాఠం ప్రారంభానికి ముందు"
         ],
-        correct: 1,
-        explanation: "సమగ్ర తరగతి గదిలో ప్రతి విద్యార్థి సమానంగా పాల్గొనేలా అవకాశాలు కల్పించడం ఉపాధ్యాయుని ప్రధాన బాధ్యత. వివిధ అవసరాలను గౌరవిస్తూ అందరికీ సమాన అభ్యాస అవకాశాలు కల్పించాలి."
+        correct: 2,
+        explanation:
+            "సమ్మేటివ్ మదింపు యూనిట్, టర్మ్ లేదా కోర్సు పూర్తయిన తర్వాత నిర్వహించబడుతుంది. దీని ఉద్దేశ్యం విద్యార్థి మొత్తం అభ్యాస ఫలితాన్ని అంచనా వేసి గ్రేడ్ లేదా ఫలితాన్ని నిర్ణయించడం."
     },
     {
-        question: "సమగ్ర తరగతి గది నిర్వహణలో కింది వాటిలో ఉత్తమ పద్ధతి ఏది?",
+        question: "క్రింది వాటిలో ఫార్మేటివ్ మదింపుకు ఉదాహరణ ఏది?",
         options: [
-            "ఒకే బోధనా పద్ధతి ఉపయోగించడం",
-            "విద్యార్థుల అవసరాలకు అనుగుణంగా బోధనలో మార్పులు చేయడం",
-            "బలహీన విద్యార్థులను చివరి బెంచ్‌లో కూర్చోబెట్టడం",
-            "పరీక్షల సంఖ్య పెంచడం"
+            "వార్షిక పరీక్ష",
+            "యూనిట్ టెస్ట్",
+            "తరగతి గది పరిశీలన",
+            "బోర్డు పరీక్ష"
         ],
-        correct: 1,
-        explanation: "సమగ్ర తరగతి గదిలో విద్యార్థుల వ్యక్తిగత అవసరాలు భిన్నంగా ఉంటాయి. అందువల్ల బోధన, అభ్యాస కార్యకలాపాలు మరియు మూల్యాంకనంలో అవసరమైన మార్పులు చేయడం అత్యంత ప్రభావవంతమైన పద్ధతి."
+        correct: 2,
+        explanation:
+            "తరగతి గది పరిశీలన ద్వారా ఉపాధ్యాయుడు విద్యార్థి అభ్యాసాన్ని నిరంతరం గమనిస్తాడు. ఈ సమాచారం ఆధారంగా బోధనలో అవసరమైన మార్పులు చేస్తాడు. అందువల్ల ఇది ఫార్మేటివ్ మదింపుకు ఉదాహరణ."
     },
     {
-        question: "సమగ్ర తరగతి గదిలో సహ విద్యార్థుల సహకారాన్ని పెంపొందించే ఉత్తమ వ్యూహం ఏది?",
+        question: "నిరంతర సమగ్ర మూల్యాంకనం (CCE) యొక్క ప్రధాన లక్ష్యం ఏమిటి?",
         options: [
-            "వ్యక్తిగత పోటీలు మాత్రమే నిర్వహించడం",
-            "సహకార అభ్యాసం (Co-operative Learning)",
-            "శిక్ష ఆధారిత క్రమశిక్షణ",
-            "నిశ్శబ్ద అభ్యాసం మాత్రమే"
-        ],
-        correct: 1,
-        explanation: "సహకార అభ్యాసం ద్వారా విద్యార్థులు ఒకరికి ఒకరు సహాయం చేసుకుంటారు. ఇది పరస్పర గౌరవం, అంగీకారం, జట్టు భావన మరియు సమగ్ర అభ్యాస వాతావరణాన్ని అభివృద్ధి చేయడంలో ముఖ్య పాత్ర పోషిస్తుంది."
-    },
-    {
-        question: "ఒక విద్యార్థి తరచుగా పాఠాన్ని అర్థం చేసుకోవడంలో ఇబ్బంది పడుతున్నాడు. సమగ్ర తరగతి గదిలో ఉపాధ్యాయుడు మొదట చేయవలసిన పని ఏమిటి?",
-        options: [
-            "తరగతి నుండి బయటకు పంపడం",
-            "విద్యార్థి అవసరాలను అంచనా వేయడం",
-            "మార్కులు తగ్గించడం",
-            "తల్లిదండ్రులకు ఫిర్యాదు చేయడం"
-        ],
-        correct: 1,
-        explanation: "విద్యార్థి ఎదుర్కొంటున్న అభ్యాస సమస్యలకు గల కారణాలను ముందుగా అంచనా వేయాలి. సరైన మూల్యాంకనం చేసిన తర్వాత మాత్రమే తగిన బోధనా సహాయం మరియు మద్దతు అందించవచ్చు."
-    },
-    {
-        question: "సమగ్ర విద్య (Inclusive Education) యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
-        options: [
-            "ప్రత్యేక పాఠశాలల సంఖ్య పెంచడం",
-            "ప్రత్యేక అవసరాలున్న విద్యార్థులను సాధారణ విద్యా వ్యవస్థలో భాగం చేయడం",
             "పరీక్షల సంఖ్య పెంచడం",
-            "ప్రత్యేక పాఠ్యపుస్తకాలు మాత్రమే ఉపయోగించడం"
+            "కేవలం మార్కులు ఇవ్వడం",
+            "విద్యార్థి సమగ్ర అభివృద్ధిని అంచనా వేయడం",
+            "ఉత్తీర్ణత శాతం పెంచడం"
         ],
-        correct: 1,
-        explanation: "సమగ్ర విద్య ప్రతి విద్యార్థికి, ప్రత్యేక అవసరాలున్న పిల్లలతో సహా, సాధారణ పాఠశాలలో నాణ్యమైన విద్యను అందించడమే లక్ష్యం. సమాన అవకాశాలు, భాగస్వామ్యం మరియు సమగ్ర అభివృద్ధిని ప్రోత్సహిస్తుంది."
-    },
-    {
-        question: "సమగ్ర తరగతి గదిలో కింది వాటిలో ఏది ఉపాధ్యాయుని ప్రభావవంతమైన తరగతి నిర్వహణను సూచిస్తుంది?",
-        options: [
-            "ఒకే రకమైన మూల్యాంకనం",
-            "అనువైన బోధన మరియు తరగతి నిర్వహణ",
-            "శిక్షలను పెంచడం",
-            "పాఠ్యాంశాన్ని వేగంగా పూర్తి చేయడం"
-        ],
-        correct: 1,
-        explanation: "ప్రభావవంతమైన సమగ్ర తరగతి నిర్వహణలో అనువైన బోధన, భిన్నమైన మూల్యాంకనం, విద్యార్థుల భాగస్వామ్యం మరియు సహాయక అభ్యాస వాతావరణం కీలక అంశాలుగా ఉంటాయి. ఇవి అందరికీ సమాన అవకాశాలు కల్పిస్తాయి."
-    },
-    {
-        question: "సమగ్ర తరగతి గదిలో విద్యార్థుల మధ్య పరస్పర గౌరవాన్ని పెంపొందించడానికి అత్యంత ప్రభావవంతమైన చర్య ఏది?",
-        options: [
-            "విద్యార్థులను సామర్థ్యాల ఆధారంగా వేరు చేయడం",
-            "సమూహ కార్యకలాపాలు మరియు సహకార అభ్యాసాన్ని ప్రోత్సహించడం",
-            "పరీక్షల ఆధారంగా మాత్రమే గుర్తింపు ఇవ్వడం",
-            "తరచూ హెచ్చరికలు ఇవ్వడం"
-        ],
-        correct: 1,
-        explanation: "సమూహ కార్యకలాపాలు మరియు సహకార అభ్యాసం ద్వారా విద్యార్థులు పరస్పరం సహకరించడం, గౌరవించడం మరియు వైవిధ్యాన్ని అంగీకరించడం నేర్చుకుంటారు. ఇది సమగ్ర తరగతి వాతావరణాన్ని బలపరుస్తుంది."
-    },
-    {
-        question: 'Choose the word nearest in meaning to "Abundant."',
-        options: ["Scarce", "Plenty", "Rare", "Limited"],
-        correct: 1,
-        explanation: 'The word "abundant" means available in large quantities or more than enough. "Plenty" is its closest synonym because both describe something existing in great amount or sufficient supply.'
-    },
-    {
-        question: "Choose the correct One Word Substitution.\n\nOne who cannot read or write is called ________.",
-        options: ["Literate", "Scholar", "Illiterate", "Graduate"],
         correct: 2,
-        explanation: 'An illiterate person is someone who cannot read or write. This term is commonly used in education to describe individuals lacking basic literacy skills required for everyday communication.'
+        explanation:
+            "CCE యొక్క ముఖ్య ఉద్దేశ్యం విద్యార్థి విద్యా, సామాజిక, భావోద్వేగ, సహపాఠ్య అభివృద్ధిని సమగ్రంగా అంచనా వేయడం. ఇది కేవలం మార్కులపై కాకుండా సంపూర్ణ వ్యక్తిత్వ వికాసంపై దృష్టి పెడుతుంది."
     },
     {
-        question: 'Choose the correct meaning of the idiom:\n\n"Once in a blue moon"',
-        options: ["Every day", "Very rarely", "At night", "Very quickly"],
-        correct: 1,
-        explanation: 'The idiom "once in a blue moon" describes an event that happens very rarely. It is used when something occurs only on exceptional or uncommon occasions, not regularly.'
-    },
-    {
-        question: "Choose the correct phrasal verb.\n\nThe meeting was ______ due to heavy rain.",
-        options: ["Called off", "Called on", "Called for", "Called at"],
-        correct: 0,
-        explanation: 'The phrasal verb "call off" means to cancel an event, meeting, or activity. Since heavy rain prevented the meeting from taking place, "called off" is the correct answer.'
-    },
-    {
-        question: 'Choose the word opposite in meaning to "Ancient."',
-        options: ["Old", "Historic", "Modern", "Primitive"],
+        question:
+            "క్రింది ప్రకటనలను పరిశీలించండి.\n\na. కొలత సంఖ్యాత్మక ఫలితాలను ఇస్తుంది.\n\nb. మూల్యాంకనం విలువ నిర్ణయంతో సంబంధం కలిగి ఉంటుంది.\n\nసరైన సమాధానం ఏది?",
+        options: [
+            "a మాత్రమే",
+            "b మాత్రమే",
+            "a మరియు b రెండూ సరైనవి",
+            "రెండూ తప్పు"
+        ],
         correct: 2,
-        explanation: 'The word "modern" is the opposite of "ancient." Ancient refers to something belonging to the distant past, whereas modern refers to something belonging to the present or recent times.'
+        explanation:
+            "కొలత సంఖ్యాత్మక డేటాను అందిస్తుంది. మూల్యాంకనం ఆ సమాచారాన్ని ప్రమాణాలతో పోల్చి విలువ నిర్ణయం తీసుకుంటుంది. కాబట్టి ఇచ్చిన రెండు ప్రకటనలూ సరైనవే."
     },
     {
-        question: "Choose the correct One Word Substitution.\n\nA person who loves mankind is called a ________.",
-        options: ["Philanthropist", "Pessimist", "Optimist", "Critic"],
-        correct: 0,
-        explanation: 'A philanthropist is a person who loves humanity and works for the welfare of others, often through charity or public service. The word comes from Greek meaning "love of mankind."'
-    },
-    {
-        question: 'Choose the correct meaning of the idiom.\n\n"At sixes and sevens"',
-        options: ["Very happy", "In confusion", "Well organised", "Fully prepared"],
-        correct: 1,
-        explanation: 'The idiom "at sixes and sevens" means being in a state of confusion, disorder, or lack of organization. It describes situations where things are not properly arranged or managed.'
-    },
-    {
-        question: "Choose the correct phrasal verb.\n\nTeachers should ______ every child in the classroom.",
-        options: ["Look after", "Look over", "Look into", "Look across"],
-        correct: 0,
-        explanation: 'The phrasal verb "look after" means to take care of someone responsibly. Teachers are expected to care for every child and ensure their safety, learning, and overall well-being.'
-    },
-    {
-        question: 'Choose the synonym of "Rapid."',
-        options: ["Slow", "Fast", "Weak", "Quiet"],
-        correct: 1,
-        explanation: 'The word "rapid" means happening quickly or moving at great speed. "Fast" has the same meaning and is therefore the correct synonym among the given options.'
-    },
-    {
-        question: "Choose the correct One Word Substitution.\n\nA person who speaks many languages is called a ________.",
-        options: ["Bilingual", "Polyglot", "Monolingual", "Translator"],
-        correct: 1,
-        explanation: 'A polyglot is a person who can speak, read, or understand many languages. Unlike a bilingual person, who knows two languages, a polyglot has proficiency in several languages.'
-    },
-    {
-        question: 'Choose the correct meaning of the idiom.\n\n"A blessing in disguise"',
+        question:
+            "విద్యార్థి పురోగతిని నిరంతరం గమనిస్తూ అభ్యాసాన్ని మెరుగుపరచడానికి ఉపయోగపడేది",
         options: [
-            "A hidden danger",
-            "Something good that first appears bad",
-            "A public honour",
-            "A false promise"
+            "సమ్మేటివ్ మదింపు",
+            "ఫార్మేటివ్ మదింపు",
+            "ఎంపిక పరీక్ష",
+            "ప్రవేశ పరీక్ష"
         ],
         correct: 1,
-        explanation: 'The idiom "a blessing in disguise" refers to something that initially seems unfortunate but later proves to be beneficial. It highlights unexpected positive outcomes from difficult situations.'
+        explanation:
+            "ఫార్మేటివ్ మదింపు నిరంతర ప్రక్రియ. ఇది విద్యార్థి అభ్యాస పురోగతిని గమనించి అవసరమైన సూచనలు, అభిప్రాయాలు అందిస్తుంది. తద్వారా అభ్యాస నాణ్యతను మెరుగుపరచడం సాధ్యమవుతుంది."
     },
     {
-        question: "Choose the correct phrasal verb.\n\nThe principal asked the students to ______ their homework.",
-        options: ["Hand in", "Hand over", "Hand out", "Hand down"],
-        correct: 0,
-        explanation: 'The phrasal verb "hand in" means to submit work, assignments, or documents to an authority such as a teacher or principal. Therefore, it correctly completes the sentence.'
-    },
-    {
-        question: 'Choose the antonym of "Generous."',
-        options: ["Kind", "Selfish", "Helpful", "Noble"],
-        correct: 1,
-        explanation: 'The word "selfish" is the opposite of "generous." A generous person willingly shares with others, whereas a selfish person mainly thinks about personal benefit and interests.'
-    },
-    {
-        question: "Choose the correct One Word Substitution.\n\nOne who studies birds is called a ________.",
-        options: ["Botanist", "Zoologist", "Ornithologist", "Geologist"],
+        question: 'CCEలో "Comprehensive" అనే పదం సూచించేది',
+        options: [
+            "కేవలం విద్యా ఫలితాలు",
+            "కేవలం పరీక్షా మార్కులు",
+            "విద్యార్థి సమగ్ర అభివృద్ధి",
+            "కేవలం హాజరు"
+        ],
         correct: 2,
-        explanation: 'An ornithologist is a scientist who specializes in the study of birds, including their behavior, habitats, classification, and conservation. This branch of science is called ornithology.'
+        explanation:
+            "CCEలో Comprehensive అంటే విద్యార్థి జ్ఞానాత్మక, భావాత్మక, మానసిక-చలనాత్మక, సహపాఠ్య మరియు వ్యక్తిత్వ అభివృద్ధి వంటి అన్ని అంశాలను సమగ్రంగా పరిగణించడం అని అర్థం."
     },
     {
-        question: "Choose the correct phrasal verb.\n\nNever ______ your parents.",
-        options: ["Look down upon", "Look after", "Look into", "Look for"],
-        correct: 0,
-        explanation: 'The phrasal verb "look down upon" means to disrespect or consider someone inferior. Children should always respect their parents, so this expression appropriately completes the sentence.'
-    },
-    {
-        question: "ఉపాధ్యాయుడు విద్యార్థుల కోసం పోస్టర్లు, ప్రజెంటేషన్లు మరియు ఇన్ఫోగ్రాఫిక్స్‌ను సులభంగా రూపొందించడానికి ఉపయోగించే వెబ్ ఆధారిత సాధనం ఏది?",
-        options: ["Moodle", "Canva", "Google Forms", "DIKSHA"],
-        correct: 1,
-        explanation: "Canva అనేది పోస్టర్లు, ప్రజెంటేషన్లు, ఇన్ఫోగ్రాఫిక్స్, వర్క్‌షీట్లు మరియు ఇతర విద్యా దృశ్య వనరులను సులభంగా రూపొందించడానికి ఉపయోగించే ప్రముఖ వెబ్ ఆధారిత డిజైన్ సాధనం. ఉపాధ్యాయులకు ఇది ఎంతో ఉపయోగకరంగా ఉంటుంది."
-    },
-    {
-        question: "Canvaలో ఒకే ప్రాజెక్టును అనేక మంది కలిసి ఒకేసారి సవరించడానికి ఉపయోగపడే లక్షణం ఏది?",
-        options: ["Spell Check", "Real-time Collaboration", "Mail Merge", "File Compression"],
-        correct: 1,
-        explanation: "Real-time Collaboration ద్వారా ఒకే Canva డిజైన్‌ను అనేక మంది ఒకేసారి సవరించవచ్చు. ఇది జట్టు పనిని సులభతరం చేసి ఉపాధ్యాయులు మరియు విద్యార్థుల మధ్య సమర్థవంతమైన సహకారాన్ని ప్రోత్సహిస్తుంది."
-    },
-    {
-        question: "Google Forms యొక్క ప్రధాన ఉపయోగం ఏమిటి?",
+        question:
+            "ఉపాధ్యాయుడు ప్రతి వారమూ చిన్న చిన్న కార్యకలాపాల ద్వారా విద్యార్థి అభ్యాసాన్ని పరిశీలిస్తున్నాడు. ఇది",
         options: [
-            "వీడియో ఎడిటింగ్",
-            "ఆన్‌లైన్ సర్వేలు, క్విజ్‌లు మరియు డేటా సేకరణ",
-            "చిత్రాల రూపకల్పన",
-            "ప్రోగ్రామింగ్"
+            "సమ్మేటివ్ మదింపు",
+            "ఫార్మేటివ్ మదింపు",
+            "ప్రజ్ఞా పరీక్ష",
+            "వార్షిక మూల్యాంకనం"
         ],
         correct: 1,
-        explanation: "Google Forms ద్వారా ఆన్‌లైన్ సర్వేలు, పరీక్షలు, క్విజ్‌లు మరియు అభిప్రాయాలను సులభంగా సేకరించవచ్చు. సేకరించిన సమాచారం స్వయంచాలకంగా భద్రపరచబడి విశ్లేషణకు కూడా ఉపయోగపడుతుంది."
+        explanation:
+            "చిన్న చిన్న కార్యకలాపాలు, పరిశీలనలు, తరగతి చర్చలు వంటి నిరంతర ప్రక్రియల ద్వారా అభ్యాసాన్ని అంచనా వేయడం ఫార్మేటివ్ మదింపు. ఇది బోధనను నిరంతరం మెరుగుపరచడానికి ఉపయోగపడుతుంది."
     },
     {
-        question: "Google Formsలో Quiz Mode ను ప్రారంభించడం ద్వారా ప్రధాన ప్రయోజనం ఏమిటి?",
+        question: "క్రింది వాటిలో మూల్యాంకనం (Evaluation) లక్షణం ఏది?",
         options: [
-            "ఫైల్ పరిమాణం తగ్గుతుంది.",
-            "స్వయంచాలక మూల్యాంకనం మరియు మార్కుల కేటాయింపు సాధ్యమవుతుంది.",
-            "ఇంటర్నెట్ అవసరం ఉండదు.",
-            "వీడియోలు మాత్రమే జోడించవచ్చు."
+            "సంఖ్యాత్మక విలువ మాత్రమే",
+            "సమాచార సేకరణ మాత్రమే",
+            "నిర్ణయం తీసుకోవడం",
+            "పరీక్ష నిర్వహించడం"
+        ],
+        correct: 2,
+        explanation:
+            "మూల్యాంకనం ద్వారా సేకరించిన సమాచారాన్ని విశ్లేషించి విద్యార్థి పనితీరుపై విలువ నిర్ణయం తీసుకుంటారు. ఇది కేవలం పరీక్ష నిర్వహించడం లేదా సంఖ్యలు ఇవ్వడం మాత్రమే కాదు."
+    },
+    {
+        question:
+            "విద్యార్థి ప్రదర్శనను ప్రమాణాలతో పోల్చి నిర్ణయం తీసుకోవడం ఏ ప్రక్రియలో భాగం?",
+        options: [
+            "కొలత",
+            "మదింపు",
+            "మూల్యాంకనం",
+            "పరీక్ష"
+        ],
+        correct: 2,
+        explanation:
+            "మూల్యాంకనం సమయంలో విద్యార్థి ప్రదర్శనను నిర్ణయించిన ప్రమాణాలతో పోల్చి విలువ నిర్ణయం తీసుకుంటారు. అందువల్ల ఇది Evaluation యొక్క ప్రధాన లక్షణంగా పరిగణించబడుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో కొలత (Measurement) యొక్క ఫలితం ఏది?",
+        options: [
+            "గ్రేడ్",
+            "నిర్ణయం",
+            "సంఖ్యాత్మక స్కోరు",
+            "వ్యాఖ్య"
+        ],
+        correct: 2,
+        explanation:
+            "కొలత ఫలితంగా సంఖ్యాత్మక స్కోరు లేదా మార్కు లభిస్తుంది. ఈ సంఖ్యలను తర్వాత మదింపు, మూల్యాంకన ప్రక్రియల్లో ఉపయోగించి విద్యార్థి అభ్యాస స్థాయిని నిర్ణయిస్తారు."
+    },
+    {
+        question:
+            "ఒక ఉపాధ్యాయుడు విద్యార్థుల అభ్యాసంలో లోపాలను గుర్తించి వెంటనే బోధనలో మార్పులు చేశాడు. ఇది",
+        options: [
+            "సమ్మేటివ్ మదింపు ఉద్దేశ్యం",
+            "ఫార్మేటివ్ మదింపు ఉద్దేశ్యం",
+            "ప్రవేశ పరీక్ష ఉద్దేశ్యం",
+            "వార్షిక పరీక్ష ఉద్దేశ్యం"
         ],
         correct: 1,
-        explanation: "Quiz Mode ద్వారా సరైన సమాధానాలను ముందుగానే నిర్ణయించి విద్యార్థుల సమాధానాలను స్వయంచాలకంగా మూల్యాంకనం చేయవచ్చు. దీనివల్ల సమయం ఆదా కావడంతో పాటు మార్కుల కేటాయింపులో ఖచ్చితత్వం పెరుగుతుంది."
+        explanation:
+            "ఫార్మేటివ్ మదింపు ద్వారా విద్యార్థుల లోపాలను వెంటనే గుర్తించి బోధనా పద్ధతులను సవరించవచ్చు. ఈ ప్రక్రియ అభ్యాస నాణ్యతను మెరుగుపరచడంలో అత్యంత ప్రభావవంతంగా ఉంటుంది."
     },
     {
-        question: "OER (Open Educational Resources) యొక్క ముఖ్య లక్షణం ఏది?",
+        question:
+            "క్రింది వాటిలో Continuous and Comprehensive Evaluation (CCE) యొక్క ముఖ్య లక్షణం ఏది?",
         options: [
-            "చెల్లింపు చేసిన వారికి మాత్రమే అందుబాటులో ఉండటం",
-            "ఉచితంగా ఉపయోగించడం, మార్చడం మరియు పంచుకోవడం సాధ్యమవడం",
-            "ప్రభుత్వ ఉద్యోగులకు మాత్రమే అందుబాటులో ఉండటం",
-            "ముద్రిత పుస్తకాలకే పరిమితం కావడం"
+            "సంవత్సరాంత పరీక్ష మాత్రమే",
+            "ఒకే పరీక్ష ఆధారంగా నిర్ణయం",
+            "నిరంతర మరియు సమగ్ర మదింపు",
+            "కేవలం రాత పరీక్షలు"
+        ],
+        correct: 2,
+        explanation:
+            "CCEలో విద్యార్థిని ఒకే పరీక్షతో కాకుండా నిరంతర పరిశీలన, వివిధ అభ్యాస కార్యకలాపాలు మరియు సమగ్ర మూల్యాంకనం ద్వారా అన్ని అభివృద్ధి అంశాలలో అంచనా వేస్తారు."
+    },
+    {
+        question: "క్రింది వాటిలో సమ్మేటివ్ మదింపు (Summative Assessment) యొక్క ప్రధాన ఉద్దేశ్యం ఏది?",
+        options: [
+            "బోధనలో వెంటనే మార్పులు చేయడం",
+            "అభ్యాస ప్రక్రియను నిరంతరం పరిశీలించడం",
+            "అభ్యాసం ముగిసిన తర్వాత సాధించిన ఫలితాన్ని నిర్ణయించడం",
+            "విద్యార్థి ఆసక్తులను గుర్తించడం"
+        ],
+        correct: 2,
+        explanation: "సమ్మేటివ్ మదింపు బోధన లేదా కోర్సు పూర్తయిన తర్వాత నిర్వహించబడుతుంది. దీని ప్రధాన ఉద్దేశ్యం విద్యార్థి సాధించిన మొత్తం అభ్యాస ఫలితాన్ని అంచనా వేసి గ్రేడ్, మార్కులు లేదా తుది నిర్ణయం ఇవ్వడం."
+    },
+    {
+        question: "క్రింది వాటిలో కొలత (Measurement), మదింపు (Assessment), మూల్యాంకనం (Evaluation) మధ్య సరైన సంబంధం ఏది?",
+        options: [
+            "కొలత → మూల్యాంకనం → మదింపు",
+            "మదింపు → కొలత → మూల్యాంకనం",
+            "కొలత → మదింపు → మూల్యాంకనం",
+            "మూల్యాంకనం → కొలత → మదింపు"
+        ],
+        correct: 2,
+        explanation: "ముందుగా కొలత ద్వారా సంఖ్యాత్మక సమాచారం సేకరిస్తారు. తరువాత మదింపు ద్వారా ఆ సమాచారాన్ని విశ్లేషిస్తారు. చివరగా మూల్యాంకనం ద్వారా విలువ నిర్ణయం తీసుకుని విద్యార్థి అభ్యాస స్థాయిని నిర్ధారిస్తారు."
+    },
+    {
+        question: "ఒక ఉపాధ్యాయుడు విద్యార్థుల ప్రాజెక్టులు, తరగతి కార్యకలాపాలు, మౌఖిక సమాధానాలు మరియు పరీక్ష ఫలితాలను కలిపి అభ్యాసాన్ని అంచనా వేస్తున్నాడు. ఇది CCEలో ఏ లక్షణాన్ని సూచిస్తుంది?",
+        options: [
+            "నిరంతరత",
+            "సమగ్రత",
+            "ప్రమాణీకరణ",
+            "వర్గీకరణ"
         ],
         correct: 1,
-        explanation: "Open Educational Resources (OER) తెరవెనుక లైసెన్స్‌లతో ఉచితంగా అందుబాటులో ఉంటాయి. వీటిని ఉపయోగించడం, సవరించడం, పంచుకోవడం మరియు విద్యా అవసరాలకు అనుగుణంగా తిరిగి వినియోగించడం సాధ్యమవుతుంది."
+        explanation: "CCEలో సమగ్రత అంటే విద్యార్థి అభివృద్ధిని కేవలం పరీక్షలతో కాకుండా ప్రాజెక్టులు, మౌఖిక సమాధానాలు, తరగతి కార్యకలాపాలు మరియు ఇతర అంశాలను కలిపి సమగ్రంగా అంచనా వేయడం."
     },
     {
-        question: "కింది వాటిలో Open Educational Resource (OER) వేదిక ఏది?",
-        options: ["DIKSHA", "Adobe Photoshop", "MS Paint", "Notepad"],
-        correct: 0,
-        explanation: "DIKSHA భారత ప్రభుత్వ డిజిటల్ విద్యా వేదిక. ఇది ఉపాధ్యాయులు మరియు విద్యార్థులకు నాణ్యమైన విద్యా వనరులు, పాఠాలు, వీడియోలు మరియు ఇతర OER ఆధారిత అభ్యాస సామగ్రిని అందిస్తుంది."
-    },
-    {
-        question: "Learning Management System (LMS) యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
+        question: "Choose the correct passive voice.\n\nThe teacher explained the lesson.",
         options: [
-            "కంప్యూటర్ వైరస్‌లను తొలగించడం",
-            "బోధన, అభ్యాసం, అసైన్‌మెంట్‌లు మరియు మూల్యాంకనాన్ని నిర్వహించడం",
-            "ఫోటో ఎడిటింగ్ చేయడం",
-            "వీడియో గేమ్స్ రూపొందించడం"
+            "The lesson explains by the teacher.",
+            "The lesson was explained by the teacher.",
+            "The lesson is explained by the teacher.",
+            "The lesson had explained by the teacher."
         ],
         correct: 1,
-        explanation: "Learning Management System (LMS) ద్వారా కోర్సులు, పాఠాలు, అసైన్‌మెంట్‌లు, పరీక్షలు, మార్కులు మరియు విద్యార్థుల అభ్యాస పురోగతిని సమగ్రంగా నిర్వహించడం మరియు పర్యవేక్షించడం సాధ్యమవుతుంది."
+        explanation: "The active sentence is in the simple past tense. Its passive form uses 'was/were + past participle'. Therefore, 'The lesson was explained by the teacher' is the grammatically correct transformation."
     },
     {
-        question: "కింది వాటిలో Learning Management System (LMS) కు ఉదాహరణ ఏది?",
-        options: ["Moodle", "Canva", "Google Maps", "VLC Media Player"],
-        correct: 0,
-        explanation: "Moodle ప్రపంచవ్యాప్తంగా విస్తృతంగా ఉపయోగించే ఓపెన్ సోర్స్ Learning Management System. ఇది బోధన, అభ్యాసం, పరీక్షలు మరియు విద్యార్థుల పురోగతి నిర్వహణకు అనుకూలంగా ఉంటుంది."
-    },
-    {
-        question: "డిజిటల్ మూల్యాంకనం (Digital Assessment) యొక్క ప్రధాన ప్రయోజనం ఏమిటి?",
+        question: "Choose the correct active voice.\n\nThe prize was won by Raju.",
         options: [
-            "పేపర్ వినియోగం పెరగడం",
-            "ఫలితాలు త్వరగా మరియు ఖచ్చితంగా పొందడం",
-            "పరీక్షలను ముద్రించడం",
-            "విద్యార్థుల సంఖ్య తగ్గించడం"
+            "Raju wins the prize.",
+            "Raju won the prize.",
+            "Raju has won the prize.",
+            "Raju was winning the prize."
         ],
         correct: 1,
-        explanation: "డిజిటల్ మూల్యాంకనం ద్వారా పరీక్ష ఫలితాలు వేగంగా మరియు ఖచ్చితంగా పొందవచ్చు. ఇది ఉపాధ్యాయుల సమయాన్ని ఆదా చేయడంతో పాటు మూల్యాంకన ప్రక్రియను మరింత సమర్థవంతంగా చేస్తుంది."
+        explanation: "The passive sentence uses 'was won', which is the simple past tense. Therefore, the correct active voice is 'Raju won the prize', preserving both meaning and tense."
     },
     {
-        question: "కింది వాటిలో Formative Assessment కోసం ఎక్కువగా ఉపయోగించే డిజిటల్ సాధనం ఏది?",
-        options: ["Google Forms", "Calculator", "Paint", "WordPad"],
-        correct: 0,
-        explanation: "Google Forms ద్వారా చిన్న క్విజ్‌లు నిర్వహించి విద్యార్థుల అభ్యాసాన్ని నిరంతరం అంచనా వేయవచ్చు. తక్షణ ఫీడ్‌బ్యాక్ అందించడం వల్ల ఇది Formative Assessmentకు అత్యంత అనుకూలమైన సాధనం."
-    },
-    {
-        question: "ఉపాధ్యాయుడు విద్యార్థుల అభ్యాస పురోగతిని నిరంతరం పర్యవేక్షించడానికి అత్యంత అనుకూలమైన డిజిటల్ వేదిక ఏది?",
-        options: ["LMS", "Scanner", "Printer", "Pen Drive"],
-        correct: 0,
-        explanation: "LMS ద్వారా విద్యార్థుల హాజరు, అసైన్‌మెంట్‌లు, పరీక్షలు, మార్కులు మరియు అభ్యాస పురోగతిని ఒకే వేదికపై నిరంతరం పర్యవేక్షించడం మరియు నిర్వహించడం సులభమవుతుంది."
-    },
-    {
-        question: "Open Educational Resources (OER) వినియోగం వల్ల కలిగే ముఖ్య ప్రయోజనం ఏది?",
+        question: "Change into indirect speech.\n\nRavi said, \"I am busy.\"",
         options: [
-            "విద్యా వనరులకు సమాన ప్రాప్యత",
-            "ఇంటర్నెట్ వినియోగాన్ని నిలిపివేయడం",
-            "పాఠ్యపుస్తకాల అవసరాన్ని పూర్తిగా తొలగించడం",
+            "Ravi said that I am busy.",
+            "Ravi said that he was busy.",
+            "Ravi said he is busy.",
+            "Ravi told that he was busy."
+        ],
+        correct: 1,
+        explanation: "In indirect speech, the pronoun 'I' changes to 'he' and the present tense 'am' changes to the past tense 'was'. Hence, 'Ravi said that he was busy' is correct."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nThe teacher said to the students, \"Work hard.\"",
+        options: [
+            "The teacher said that the students worked hard.",
+            "The teacher advised the students to work hard.",
+            "The teacher told the students work hard.",
+            "The teacher asked the students worked hard."
+        ],
+        correct: 1,
+        explanation: "Imperative sentences in indirect speech are reported using verbs such as advised, ordered, or requested followed by 'to + verb'. Therefore, 'advised the students to work hard' is correct."
+    },
+    {
+        question: "Choose the correct passive form.\n\nThey are cleaning the classroom.",
+        options: [
+            "The classroom is cleaned.",
+            "The classroom is being cleaned.",
+            "The classroom was being cleaned.",
+            "The classroom has been cleaned."
+        ],
+        correct: 1,
+        explanation: "The sentence is in the present continuous tense. The passive voice follows the pattern 'is/are being + past participle'. Therefore, 'The classroom is being cleaned' is the correct answer."
+    },
+    {
+        question: "Choose the correct active voice.\n\nThe letter was written by Sita.",
+        options: [
+            "Sita writes the letter.",
+            "Sita wrote the letter.",
+            "Sita has written the letter.",
+            "Sita is writing the letter."
+        ],
+        correct: 1,
+        explanation: "The passive sentence uses 'was written', indicating the simple past tense. Therefore, the correct active voice is 'Sita wrote the letter', maintaining the original tense and meaning."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nShe said, \"I have finished my work.\"",
+        options: [
+            "She said that she had finished her work.",
+            "She said she has finished her work.",
+            "She said that I had finished my work.",
+            "She told that she had finished her work."
+        ],
+        correct: 0,
+        explanation: "In reported speech, the present perfect tense changes to the past perfect tense. The pronoun 'I' changes to 'she'. Therefore, 'She said that she had finished her work' is correct."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nThe students will complete the project.",
+        options: [
+            "The project will complete.",
+            "The project will be completed by the students.",
+            "The project is completed.",
+            "The project has been completed."
+        ],
+        correct: 1,
+        explanation: "The future tense passive voice follows the structure 'will be + past participle'. Hence, 'The project will be completed by the students' is the correct passive transformation."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nFather said, \"Do not waste time.\"",
+        options: [
+            "Father advised me not to waste time.",
+            "Father said not waste time.",
+            "Father told that do not waste time.",
+            "Father ordered me don't waste time."
+        ],
+        correct: 0,
+        explanation: "Negative imperative sentences are reported using 'advised/ordered + object + not to + verb'. Therefore, 'Father advised me not to waste time' correctly changes the sentence into indirect speech."
+    },
+    {
+        question: "Choose the correct active voice.\n\nThe match was watched by thousands of people.",
+        options: [
+            "Thousands of people watch the match.",
+            "Thousands of people watched the match.",
+            "Thousands of people have watched the match.",
+            "Thousands of people were watching the match."
+        ],
+        correct: 1,
+        explanation: "The passive sentence is in the simple past tense using 'was watched'. Therefore, the active form should also be in the simple past: 'Thousands of people watched the match.'"
+    },
+    {
+        question: "Choose the correct passive voice.\n\nSomeone has stolen my bicycle.",
+        options: [
+            "My bicycle has been stolen.",
+            "My bicycle was stolen.",
+            "My bicycle had stolen.",
+            "My bicycle is stolen."
+        ],
+        correct: 0,
+        explanation: "The active sentence is in the present perfect tense. The passive form uses 'has/have been + past participle'. Therefore, 'My bicycle has been stolen' is the correct answer."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nThe boy said, \"We are playing cricket.\"",
+        options: [
+            "The boy said that they were playing cricket.",
+            "The boy said that we were playing cricket.",
+            "The boy said that they are playing cricket.",
+            "The boy told they were playing cricket."
+        ],
+        correct: 0,
+        explanation: "In indirect speech, the present continuous tense changes to the past continuous tense. The pronoun 'we' changes according to context. Thus, 'they were playing cricket' is the correct form."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nPeople speak English all over the world.",
+        options: [
+            "English spoke all over the world.",
+            "English is spoken all over the world.",
+            "English was spoken all over the world.",
+            "English has spoken all over the world."
+        ],
+        correct: 1,
+        explanation: "The sentence is in the simple present tense. The passive voice uses 'is/am/are + past participle'. Hence, 'English is spoken all over the world' is the correct passive sentence."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nThe teacher said, \"The Earth revolves around the Sun.\"",
+        options: [
+            "The teacher said that the Earth revolved around the Sun.",
+            "The teacher said that the Earth revolves around the Sun.",
+            "The teacher said that Earth had revolved around the Sun.",
+            "The teacher told that the Earth revolves around the Sun."
+        ],
+        correct: 1,
+        explanation: "Universal truths do not undergo tense changes in indirect speech. Since the Earth always revolves around the Sun, the present tense remains unchanged in the reported statement."
+    },
+    {
+        question: "అధిక మేధస్సు (Gifted) గల విద్యార్థుల ప్రధాన లక్షణం ఏది?",
+        options: [
+            "నేర్చుకోవడానికి ఎక్కువ సమయం తీసుకోవడం",
+            "సగటు స్థాయి కంటే వేగంగా నేర్చుకోవడం",
+            "తరచుగా పాఠశాలకు గైర్హాజరు కావడం",
+            "అన్ని విషయాల్లో తక్కువ ప్రతిభ చూపడం"
+        ],
+        correct: 1,
+        explanation: "ప్రతిభావంతులైన విద్యార్థులు సాధారణంగా సగటు విద్యార్థుల కంటే వేగంగా నేర్చుకుంటారు. వారు ఉన్నత స్థాయి ఆలోచన, సమస్య పరిష్కార నైపుణ్యం, సృజనాత్మకత మరియు స్వతంత్ర అభ్యాస సామర్థ్యాన్ని ప్రదర్శిస్తారు."
+    },
+    {
+        question: "క్రింది వాటిలో ప్రతిభావంతులైన విద్యార్థులకు అనుకూలమైన బోధనా విధానం ఏది?",
+        options: [
+            "ఒకే పాఠాన్ని పదే పదే బోధించడం",
+            "పాఠ్యాంశాన్ని సరళీకరించడం",
+            "విస్తరణ (Enrichment) కార్యక్రమాలు నిర్వహించడం",
+            "తరచుగా శిక్షించడం"
+        ],
+        correct: 2,
+        explanation: "Enrichment కార్యక్రమాలు ప్రతిభావంతులైన విద్యార్థులకు సవాలుతో కూడిన అదనపు అభ్యాస అవకాశాలను కల్పిస్తాయి. ఇవి వారి సృజనాత్మకత, పరిశోధన ఆసక్తి మరియు ఉన్నత స్థాయి ఆలోచనా నైపుణ్యాలను అభివృద్ధి చేస్తాయి."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\na. ప్రతిభావంతులైన విద్యార్థులు సృజనాత్మకతను ప్రదర్శిస్తారు.\n\nb. వారు క్లిష్ట సమస్యలను త్వరగా పరిష్కరించగలరు.\n\nసరైన సమాధానం ఏది?",
+        options: [
+            "a మాత్రమే",
+            "b మాత్రమే",
+            "a మరియు b రెండూ సరైనవి",
+            "రెండూ తప్పు"
+        ],
+        correct: 2,
+        explanation: "ప్రతిభావంతులైన విద్యార్థుల ముఖ్య లక్షణాలలో సృజనాత్మకత, విమర్శనాత్మక ఆలోచన మరియు క్లిష్ట సమస్యలను త్వరగా పరిష్కరించే సామర్థ్యం ఉన్నాయి. కాబట్టి ఇచ్చిన రెండు ప్రకటనలూ సరైనవే."
+    },
+    {
+        question: "నెమ్మదిగా నేర్చుకునే (Slow Learner) విద్యార్థి గురించి సరైన ప్రకటన ఏది?",
+        options: [
+            "అతనికి మేధో వైకల్యం తప్పనిసరిగా ఉంటుంది.",
+            "అతను సాధారణ విద్యా వాతావరణంలో నేర్చుకోలేడు.",
+            "అతనికి ఎక్కువ సమయం మరియు తగిన బోధనా సహాయం అవసరం.",
+            "అతనికి ప్రత్యేక పాఠశాల మాత్రమే అవసరం."
+        ],
+        correct: 2,
+        explanation: "Slow Learner తప్పనిసరిగా మేధో వైకల్యం కలిగి ఉండాల్సిన అవసరం లేదు. తగిన సమయం, పునరావృత బోధన, వ్యక్తిగత మార్గదర్శకత్వం మరియు సహాయక వ్యూహాలతో విజయవంతంగా అభ్యసించగలడు."
+    },
+    {
+        question: "నెమ్మదిగా నేర్చుకునే విద్యార్థికి ఉపాధ్యాయుడు ముందుగా చేయవలసినది ఏది?",
+        options: [
+            "కఠినమైన హోంవర్క్ ఇవ్వడం",
+            "తరగతి నుండి వేరు చేయడం",
+            "అభ్యాస అవసరాలను గుర్తించడం",
+            "వార్షిక పరీక్ష నిర్వహించడం"
+        ],
+        correct: 2,
+        explanation: "సమర్థవంతమైన బోధన ప్రారంభానికి ముందు విద్యార్థి అభ్యాస అవసరాలు, బలాలు మరియు బలహీనతలను గుర్తించడం అవసరం. దాని ఆధారంగా తగిన బోధనా వ్యూహాలను రూపొందించవచ్చు."
+    },
+    {
+        question: "క్రింది వాటిలో Slow Learner కోసం సరైన తరగతి గది వ్యూహం ఏది?",
+        options: [
+            "వేగంగా పాఠాలు ముగించడం",
+            "చిన్న చిన్న దశలుగా బోధించడం",
+            "తరచుగా శిక్షించడం",
+            "కేవలం స్వీయ అభ్యాసం ఇవ్వడం"
+        ],
+        correct: 1,
+        explanation: "చిన్న చిన్న దశలుగా బోధించడం, తరచూ పునరావృతం చేయడం మరియు స్పష్టమైన ఉదాహరణలు ఇవ్వడం ద్వారా Slow Learners సులభంగా అర్థం చేసుకొని అభ్యాసంలో పురోగతి సాధిస్తారు."
+    },
+    {
+        question: "సమగ్ర విద్య (Inclusive Education)లో Classroom Adaptation యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
+        options: [
+            "పాఠ్యాంశాన్ని పూర్తిగా తొలగించడం",
+            "విద్యార్థి అవసరాలకు అనుగుణంగా బోధనను సవరించడం",
+            "విద్యార్థులను వేరు చేయడం",
             "పరీక్షలను రద్దు చేయడం"
         ],
-        correct: 0,
-        explanation: "OER ద్వారా ప్రతి విద్యార్థి మరియు ఉపాధ్యాయుడు నాణ్యమైన విద్యా వనరులను ఉచితంగా పొందగలరు. ఇది విద్యలో సమాన అవకాశాలను పెంపొందించి అభ్యాసాన్ని అందరికీ అందుబాటులోకి తీసుకువస్తుంది."
+        correct: 1,
+        explanation: "Classroom Adaptation ద్వారా విద్యార్థుల వ్యక్తిగత అవసరాలు, సామర్థ్యాలు మరియు అభ్యాస శైలులకు అనుగుణంగా బోధనా పద్ధతులు, వాతావరణం మరియు బోధనా సామగ్రిని సవరిస్తారు."
     },
     {
-        question: "Google Formsలో విద్యార్థి స్పందనలు స్వయంచాలకంగా ఏ సేవలో నిల్వ చేయబడతాయి?",
-        options: ["Google Sheets", "MS Excel మాత్రమే", "Paint", "Chrome"],
-        correct: 0,
-        explanation: "Google Formsలో సేకరించిన స్పందనలను Google Sheetsతో అనుసంధానించి స్వయంచాలకంగా భద్రపరచవచ్చు. దీనివల్ల డేటా విశ్లేషణ, గ్రాఫ్‌లు మరియు నివేదికలు రూపొందించడం సులభమవుతుంది."
-    },
-    {
-        question: "సమగ్ర విద్య (Inclusive Education)లో Canva వంటి సాధనాల ఉపయోగం ప్రధానంగా దేనిని ప్రోత్సహిస్తుంది?",
+        question: "క్రింది వాటిలో Classroom Adaptation కు ఉదాహరణ ఏది?",
         options: [
-            "బహుఇంద్రియ (Multisensory) అభ్యాసం",
-            "పరీక్షల సంఖ్య పెంచడం",
-            "హోంవర్క్ తగ్గించడం",
-            "పాఠ్యాంశాన్ని తగ్గించడం"
+            "అందరికీ ఒకే విధమైన పరీక్ష",
+            "విద్యార్థిని వెనుక బెంచ్‌లో కూర్చోబెట్టడం",
+            "పెద్ద అక్షరాలతో ముద్రించిన పాఠ్య సామగ్రి అందించడం",
+            "అదనపు పనులు మాత్రమే ఇవ్వడం"
+        ],
+        correct: 2,
+        explanation: "విద్యార్థి అవసరాలను దృష్టిలో ఉంచుకొని పెద్ద అక్షరాలతో పాఠ్య సామగ్రి అందించడం ఒక Classroom Adaptation. ఇది అభ్యాసాన్ని సులభతరం చేసి అందరికీ సమాన అవకాశాలు కల్పిస్తుంది."
+    },
+    {
+        question: "ఒక విద్యార్థికి రాయడంలో ఇబ్బంది ఉంది. ఉపాధ్యాయుడు మౌఖిక సమాధానానికి అవకాశం ఇవ్వడం ఏది?",
+        options: [
+            "Acceleration",
+            "Classroom Adaptation",
+            "Segregation",
+            "Labelling"
+        ],
+        correct: 1,
+        explanation: "రాయడంలో ఇబ్బంది ఉన్న విద్యార్థికి మౌఖిక సమాధానాల అవకాశం ఇవ్వడం Classroom Adaptation. ఇది విద్యార్థి నిజమైన జ్ఞానాన్ని వ్యక్తపరచడానికి ప్రత్యామ్నాయ మార్గాన్ని అందిస్తుంది."
+    },
+    {
+        question: "క్రింది వాటిలో ప్రతిభావంతులైన విద్యార్థుల కోసం ఉపయోగించే కార్యక్రమం ఏది?",
+        options: [
+            "Remedial Teaching",
+            "Enrichment Programme",
+            "Drill Method మాత్రమే",
+            "Behaviour Contract"
+        ],
+        correct: 1,
+        explanation: "Enrichment Programme ప్రతిభావంతులైన విద్యార్థులకు అదనపు సవాళ్లు, సృజనాత్మక కార్యక్రమాలు మరియు ఉన్నత స్థాయి అభ్యాస అవకాశాలను అందించి వారి సామర్థ్యాలను మరింత అభివృద్ధి చేస్తుంది."
+    },
+    {
+        question: "తరగతి గదిలో నెమ్మదిగా నేర్చుకునే విద్యార్థికి ఉపాధ్యాయుడు ఏది చేయాలి?",
+        options: [
+            "ఇతర విద్యార్థులతో పోల్చడం",
+            "సానుకూల ప్రోత్సాహం ఇవ్వడం",
+            "తప్పులను ఎత్తిచూపడం",
+            "తరగతి నుండి బయటకు పంపడం"
+        ],
+        correct: 1,
+        explanation: "సానుకూల ప్రోత్సాహం విద్యార్థిలో ఆత్మవిశ్వాసాన్ని పెంచుతుంది. ఇది అభ్యాసంపై ఆసక్తిని పెంచి, నిరంతర ప్రయత్నానికి ప్రేరణనిస్తుంది మరియు విద్యా పురోగతికి సహాయపడుతుంది."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\na. Classroom Adaptation బోధనను సులభతరం చేస్తుంది.\n\nb. ఇది విద్యార్థుల వ్యక్తిగత అవసరాలను పరిగణనలోకి తీసుకుంటుంది.\n\nసరైన సమాధానం ఏది?",
+        options: [
+            "a మాత్రమే",
+            "b మాత్రమే",
+            "a మరియు b రెండూ సరైనవి",
+            "రెండూ తప్పు"
+        ],
+        correct: 2,
+        explanation: "Classroom Adaptation విద్యార్థుల వ్యక్తిగత అవసరాలు, అభ్యాస శైలులు మరియు సామర్థ్యాలను పరిగణనలోకి తీసుకొని బోధనను సులభతరం చేస్తుంది. అందువల్ల రెండు ప్రకటనలూ సరైనవే."
+    },
+    {
+        question: "ప్రతిభావంతులైన విద్యార్థుల బోధనలో Acceleration అంటే ఏమిటి?",
+        options: [
+            "పాఠ్యాంశాన్ని సరళీకరించడం",
+            "సాధారణ వేగం కంటే వేగంగా విద్యా పురోగతి కల్పించడం",
+            "తరగతిని పునరావృతం చేయించడం",
+            "అదనపు పరీక్షలు నిర్వహించడం"
+        ],
+        correct: 1,
+        explanation: "Acceleration అనేది ప్రతిభావంతులైన విద్యార్థులకు వారి సామర్థ్యానికి అనుగుణంగా వేగవంతమైన విద్యా పురోగతి కల్పించే విధానం. ఇది వారి అభ్యాస సామర్థ్యాన్ని పూర్తిగా ఉపయోగించుకునే అవకాశం ఇస్తుంది."
+    },
+    {
+        question: "Slow Learner కోసం అత్యంత అనుకూలమైన బోధనా విధానం ఏది?",
+        options: [
+            "Lecture Method మాత్రమే",
+            "Activity-based Teaching",
+            "Memorization మాత్రమే",
+            "Surprise Tests మాత్రమే"
+        ],
+        correct: 1,
+        explanation: "Activity-based Teaching ద్వారా విద్యార్థులు ప్రత్యక్ష అనుభవాల ద్వారా నేర్చుకుంటారు. ఇది Slow Learners కు భావాలను సులభంగా అర్థం చేసుకోవడంలో మరియు దీర్ఘకాలిక అభ్యాసాన్ని పెంపొందించడంలో సహాయపడుతుంది."
+    },
+    {
+        question: "సమగ్ర తరగతి గదిలో ఉపాధ్యాయుడు బోధనా సామగ్రిని విద్యార్థుల అవసరాలకు అనుగుణంగా మార్చడం ఏ సూత్రాన్ని ప్రతిబింబిస్తుంది?",
+        options: [
+            "Classroom Adaptation",
+            "Standardisation",
+            "Segregation",
+            "Streaming"
         ],
         correct: 0,
-        explanation: "Canvaలో చిత్రాలు, వీడియోలు, గ్రాఫిక్స్ మరియు దృశ్య వనరులను ఉపయోగించడం ద్వారా బహుఇంద్రియ అభ్యాసం ప్రోత్సహించబడుతుంది. ఇది వివిధ అవసరాలున్న విద్యార్థుల అభ్యాసాన్ని మరింత ప్రభావవంతంగా చేస్తుంది."
+        explanation: "బోధనా సామగ్రి, బోధనా పద్ధతులు లేదా అభ్యాస వనరులను విద్యార్థుల అవసరాలకు అనుగుణంగా మార్చడం Classroom Adaptation యొక్క ముఖ్యమైన సూత్రాన్ని ప్రతిబింబిస్తుంది."
     },
     {
-        question: "డిజిటల్ మూల్యాంకనంలో తక్షణ ఫీడ్‌బ్యాక్ (Immediate Feedback) ఇవ్వగల సాధనం ఏది?",
-        options: ["Google Forms Quiz", "MS Paint", "Notepad", "Calculator"],
-        correct: 0,
-        explanation: "Google Forms Quiz ద్వారా విద్యార్థులు సమాధానాలు సమర్పించిన వెంటనే సరైన సమాధానాలు, మార్కులు మరియు ఫీడ్‌బ్యాక్ పొందగలరు. ఇది వేగవంతమైన మరియు సమర్థవంతమైన డిజిటల్ మూల్యాంకనాన్ని అందిస్తుంది."
+        question: "ఒక ప్రతిభావంతుడైన విద్యార్థి సాధారణ పాఠ్యాంశాన్ని చాలా త్వరగా పూర్తి చేస్తున్నాడు. ఉపాధ్యాయుడు అనుసరించవలసిన ఉత్తమ వ్యూహం ఏది?",
+        options: [
+            "అదే పనిని మళ్లీ చేయించడం",
+            "అదనపు సవాలుతో కూడిన అభ్యాస కార్యక్రమాలు ఇవ్వడం",
+            "తరగతి నుండి బయటకు పంపించడం",
+            "పాఠ్యాంశాన్ని తగ్గించడం"
+        ],
+        correct: 1,
+        explanation: "ప్రతిభావంతులైన విద్యార్థులు త్వరగా అభ్యాసాన్ని పూర్తి చేసినప్పుడు వారికి Enrichment కార్యక్రమాలు, పరిశోధన పనులు లేదా సవాలుతో కూడిన కార్యకలాపాలు ఇవ్వడం వారి సామర్థ్యాన్ని మరింత అభివృద్ధి చేస్తుంది."
     }
 ];
