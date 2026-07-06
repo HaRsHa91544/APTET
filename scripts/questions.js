@@ -1,5 +1,6 @@
 const SUBJECTS = [
     "Child Development",
+    "Pedagogy",
     "Telugu",
     "English",
     "Special Education"
