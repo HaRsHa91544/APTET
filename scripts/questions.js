@@ -6,508 +6,553 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: "పియాజే ప్రకారం, ఒక విద్యార్థి \"ద్రవ పరిమాణం పాత్ర ఆకారాన్ని బట్టి మారుతుంది\" అని నమ్ముతున్నాడు. ఈ విద్యార్థి ఏ జ్ఞాన వికాస దశలో ఉండే అవకాశం ఎక్కువ?",
+        question: "విద్యార్థి అభ్యసన పురోగతిని నిరంతరం గమనించి, వెంటనే బోధనలో మార్పులు చేయడానికి అత్యంత అనుకూలమైన మూల్యాంకనం ఏది?",
         options: [
-            "సంచేతన-చలన దశ",
-            "పూర్వ కార్యాచరణ దశ",
-            "స్పష్ట కార్యాచరణ దశ",
-            "సాంప్రదాయిక కార్యాచరణ దశ"
+            "సమాపన మూల్యాంకనం (Summative Assessment)",
+            "నిర్మాణాత్మక మూల్యాంకనం (Formative Assessment)",
+            "ప్రమాణీకృత పరీక్ష (Standardized Test)",
+            "సాధన పరీక్ష (Achievement Test)"
         ],
         correct: 1,
-        explanation:
-            "పూర్వ కార్యాచరణ దశలో పిల్లలు సంరక్షణ (Conservation) భావనను ఇంకా పూర్తిగా అర్థం చేసుకోరు. పాత్ర ఆకారం మారితే ద్రవ పరిమాణం కూడా మారిందని భావించడం ఈ దశకు ముఖ్య లక్షణం."
+        explanation: "నిర్మాణాత్మక మూల్యాంకనం బోధన జరుగుతున్న సమయంలోనే విద్యార్థుల అభ్యసన లోపాలను గుర్తించి, తక్షణ ప్రతిస్పందనతో బోధనను సవరించి అభ్యసన నాణ్యతను మెరుగుపరచడానికి ఉపయోగపడుతుంది."
     },
     {
-        question: "విద్యార్థి తనకు సాధ్యమైన దానికంటే కాస్త క్లిష్టమైన పనిని ఉపాధ్యాయుడి సహాయంతో పూర్తి చేస్తున్నాడు. ఈ పరిస్థితి ఏ సిద్ధాంతాన్ని సూచిస్తుంది?",
+        question: "కొలత (Measurement) మరియు మూల్యాంకనం (Evaluation) గురించి క్రింది వాటిలో సరైనది ఏది?",
         options: [
-            "స్కాఫోల్డింగ్ (Scaffolding)",
-            "క్లాసికల్ కండిషనింగ్",
-            "డిస్కవరీ లెర్నింగ్",
-            "ట్రయల్ అండ్ ఎరర్"
-        ],
-        correct: 0,
-        explanation:
-            "విద్యార్థి స్వతంత్రంగా చేయలేని పనిని ఉపాధ్యాయుడి తాత్కాలిక సహాయంతో పూర్తి చేయడం స్కాఫోల్డింగ్. ఇది విగోట్స్కీ యొక్క ZPD భావనకు సంబంధించిన ముఖ్యమైన బోధనా పద్ధతి."
-    },
-    {
-        question: "\"విద్యార్థి స్వయంగా అన్వేషించి జ్ఞానాన్ని నిర్మించుకోవాలి\" అనే భావనను ఎక్కువగా సమర్థించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
-        options: [
-            "బాండురా",
-            "బ్రూనర్",
-            "స్కిన్నర్",
-            "థార్న్‌డైక్"
-        ],
-        correct: 1,
-        explanation:
-            "బ్రూనర్ డిస్కవరీ లెర్నింగ్ సిద్ధాంతాన్ని ప్రతిపాదించాడు. ఇందులో విద్యార్థులు అన్వేషణ, పరిశీలన, సమస్య పరిష్కారం ద్వారా స్వయంగా జ్ఞానాన్ని నిర్మించుకోవాలని ఆయన సూచించాడు."
-    },
-    {
-        question: "\"మంచి బాలుడు/బాలికగా గుర్తింపు పొందాలని కోరుకోవడం\" కోల్‌బర్గ్ నైతిక వికాసంలోని ఏ దశకు చెందినది?",
-        options: [
-            "శిక్ష-విధేయత దశ",
-            "వ్యక్తిగత ప్రయోజన దశ",
-            "మంచి బాలుడు/బాలిక దశ",
-            "చట్టం మరియు క్రమం దశ"
+            "రెండూ ఒకే అర్థాన్ని సూచిస్తాయి.",
+            "మూల్యాంకనం సంఖ్యాత్మక సమాచారం మాత్రమే అందిస్తుంది.",
+            "కొలత పరిమాణాత్మక సమాచారం ఇస్తుంది; మూల్యాంకనం విలువ నిర్ణయాన్ని కూడా కలిగి ఉంటుంది.",
+            "మూల్యాంకనం లేకుండా కొలత సాధ్యం కాదు."
         ],
         correct: 2,
-        explanation:
-            "ఇతరుల ప్రశంసలు, ఆమోదం పొందేందుకు మంచి ప్రవర్తన చూపడం కోల్‌బర్గ్ Conventional స్థాయిలోని 'Good Boy/Good Girl Orientation' దశకు చెందిన లక్షణం."
+        explanation: "కొలత విద్యార్థి ప్రదర్శనను సంఖ్యల రూపంలో తెలియజేస్తుంది. మూల్యాంకనం ఆ సమాచారాన్ని విశ్లేషించి విద్యా లక్ష్యాలు ఎంతవరకు సాధించబడ్డాయో విలువ నిర్ణయం చేస్తుంది."
     },
     {
-        question: "ఒక విద్యార్థి గణితంలో అత్యుత్తమ ప్రతిభ కనబరుస్తున్నాడు కానీ సంగీతంలో ఆసక్తి తక్కువగా ఉంది. గార్డ్నర్ సిద్ధాంతం ప్రకారం దీనిని ఎలా అర్థం చేసుకోవాలి?",
+        question: "ఒక ఉపాధ్యాయుడు ప్రతి పాఠం అనంతరం చిన్న ప్రశ్నల ద్వారా విద్యార్థుల అవగాహనను పరీక్షించి, మరుసటి రోజు బోధనను మార్చుతున్నాడు. ఇది ఏ మూల్యాంకనానికి ఉదాహరణ?",
         options: [
-            "సాధారణ మేధస్సు ఎక్కువ",
-            "తార్కిక-గణిత మేధస్సు బలంగా ఉంది",
-            "సృజనాత్మక మేధస్సు అధికం",
-            "ప్రాయోగిక మేధస్సు అధికం"
+            "సమాపన మూల్యాంకనం",
+            "నిర్మాణాత్మక మూల్యాంకనం",
+            "ప్రవేశ పరీక్ష",
+            "నిర్ధారణ పరీక్ష"
         ],
         correct: 1,
-        explanation:
-            "గార్డ్నర్ ప్రకారం మేధస్సు ఒకటే కాదు. తార్కిక-గణిత మేధస్సు బలంగా ఉండవచ్చు, సంగీత మేధస్సు తక్కువగా ఉండవచ్చు. ప్రతి మేధస్సు స్వతంత్రంగా అభివృద్ధి చెందుతుంది."
+        explanation: "పాఠం తర్వాత వెంటనే అభ్యసన స్థాయిని తెలుసుకొని తదుపరి బోధనను మార్చడం నిర్మాణాత్మక మూల్యాంకనానికి ముఖ్య లక్షణం. దీని ఉద్దేశ్యం అభ్యసనాన్ని మెరుగుపరచడం."
     },
     {
-        question: "స్టెర్న్‌బర్గ్ త్రిముఖ మేధస్సు సిద్ధాంతంలో \"కొత్త పరిస్థితులకు సృజనాత్మకంగా స్పందించే సామర్థ్యం\" ఏ మేధస్సుకు చెందినది?",
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\n(a) కొలత ఎల్లప్పుడూ సంఖ్యాత్మక ఫలితాన్ని ఇస్తుంది.\n(b) మూల్యాంకనం గుణాత్మక మరియు పరిమాణాత్మక సమాచారాన్ని పరిగణిస్తుంది.\n\nసరైన సమాధానం:",
         options: [
-            "విశ్లేషణాత్మక మేధస్సు",
-            "ప్రాయోగిక మేధస్సు",
-            "సృజనాత్మక మేధస్సు",
-            "భాషా మేధస్సు"
-        ],
-        correct: 2,
-        explanation:
-            "కొత్త పరిస్థితులను ఎదుర్కొని వినూత్న పరిష్కారాలను రూపొందించే సామర్థ్యాన్ని స్టెర్న్‌బర్గ్ Creative Intelligenceగా వివరించాడు. ఇది కొత్త అనుభవాలకు అనుకూలంగా ఆలోచించే శక్తిని సూచిస్తుంది."
-    },
-    {
-        question: "కింది వాటిలో థార్న్‌డైక్ \"ప్రభావ నియమం (Law of Effect)\"ను ఉత్తమంగా ప్రతిబింబించేది ఏది?",
-        options: [
-            "పరిశీలన ద్వారా నేర్చుకోవడం",
-            "ఆనందకర ఫలితాలు వచ్చే ప్రతిస్పందనలు బలపడతాయి",
-            "తటస్థ ఉద్దీపన ప్రతిచర్యను కలిగిస్తుంది",
-            "అనుకరణ ద్వారా అభ్యాసం జరుగుతుంది"
-        ],
-        correct: 1,
-        explanation:
-            "థార్న్‌డైక్ ప్రకారం సంతృప్తికర ఫలితాలను ఇచ్చే ప్రతిస్పందనలు భవిష్యత్తులో మరింత బలపడతాయి. అసంతృప్తికర ఫలితాలు ఇచ్చే ప్రతిస్పందనలు క్రమంగా బలహీనపడతాయి."
-    },
-    {
-        question: "ఉపాధ్యాయుడు ప్రతి సరైన సమాధానానికి విద్యార్థికి స్టార్ ఇస్తున్నాడు. ఇది స్కిన్నర్ ప్రకారం ఏ ప్రక్రియ?",
-        options: [
-            "నెగటివ్ రీన్‌ఫోర్స్‌మెంట్",
-            "పాజిటివ్ రీన్‌ఫోర్స్‌మెంట్",
-            "శిక్ష",
-            "నిర్మూలనం"
-        ],
-        correct: 1,
-        explanation:
-            "కావలసిన ప్రవర్తన తరువాత స్టార్ వంటి బహుమతి ఇవ్వడం ద్వారా ఆ ప్రవర్తన పునరావృతం అయ్యే అవకాశం పెరుగుతుంది. దీనిని పాజిటివ్ రీన్‌ఫోర్స్‌మెంట్ అంటారు."
-    },
-    {
-        question: "గంట శబ్దాన్ని పలుమార్లు ఆహారంతో కలిపి చూపిన తరువాత, గంట శబ్దం విన్న వెంటనే కుక్క లాలాజలం స్రవించడం ఏ అభ్యాస సిద్ధాంతానికి ఉదాహరణ?",
-        options: [
-            "ఆపరెంట్ కండిషనింగ్",
-            "పరిశీలనాత్మక అభ్యాసం",
-            "క్లాసికల్ కండిషనింగ్",
-            "అంతర్దృష్టి అభ్యాసం"
-        ],
-        correct: 2,
-        explanation:
-            "పావ్‌లవ్ క్లాసికల్ కండిషనింగ్ ప్రకారం తటస్థ ఉద్దీపనను సహజ ఉద్దీపనతో పదేపదే అనుసంధానిస్తే, తటస్థ ఉద్దీపనే తరువాత ప్రతిచర్యను కలిగిస్తుంది."
-    },
-    {
-        question: "ఒక విద్యార్థి తన ఉపాధ్యాయుడు ప్రశంసలు పొందుతున్న మరో విద్యార్థిని గమనించి, అదే విధంగా ప్రవర్తించడం ప్రారంభించాడు. ఇది బాండురా సిద్ధాంతంలోని ఏ భావనను సూచిస్తుంది?",
-        options: [
-            "ట్రయల్ అండ్ ఎరర్",
-            "పరిశీలనాత్మక అభ్యాసం",
-            "క్లాసికల్ కండిషనింగ్",
-            "డిస్కవరీ లెర్నింగ్"
-        ],
-        correct: 1,
-        explanation:
-            "బాండురా ప్రకారం ఇతరుల ప్రవర్తనను గమనించి, దానిని అనుకరించడం పరిశీలనాత్మక అభ్యాసం. మోడల్‌కు లభించిన ప్రశంస కూడా నేర్చుకోవడాన్ని ప్రభావితం చేస్తుంది."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\na) పియాజే సిద్ధాంతంలో అభ్యాసం అభివృద్ధికి ముందు జరుగుతుంది.\n\nb) వైగాట్స్కీ సిద్ధాంతంలో సామాజిక పరస్పర చర్య అభ్యాసానికి ప్రధాన ఆధారం.\n\nసరైన సమాధానాన్ని గుర్తించండి.",
-        options: [
-            "a మాత్రమే సరైనది",
-            "b మాత్రమే సరైనది",
-            "a, b రెండూ సరైనవి",
-            "a, b రెండూ తప్పు"
-        ],
-        correct: 1,
-        explanation: "వైగాట్స్కీ ప్రకారం సామాజిక పరస్పర చర్య, భాష మరియు మార్గదర్శకత్వం అభ్యాసానికి కీలకం. పియాజే ప్రకారం అభివృద్ధి స్థాయి సిద్ధమైన తరువాతే నిర్దిష్ట అభ్యాసం సమర్థవంతంగా జరుగుతుంది."
-    },
-    {
-        question: "క్రింది వాటిలో సామాజిక అభ్యాస సిద్ధాంతం (Social Learning Theory) కు సంబంధించిన భావన ఏది?",
-        options: [
-            "స్కాఫోల్డింగ్",
-            "మోడలింగ్",
-            "రీన్‌ఫోర్స్‌మెంట్ షెడ్యూల్",
-            "సంరక్షణ (Conservation)"
-        ],
-        correct: 1,
-        explanation: "బాండురా సామాజిక అభ్యాస సిద్ధాంతంలో పరిశీలన, అనుకరణ, మోడలింగ్ ముఖ్యమైనవి. ఇతరుల ప్రవర్తనను గమనించి నేర్చుకోవడాన్ని మోడలింగ్ అంటారు."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు కొత్త పాఠాన్ని ప్రారంభించే ముందు విద్యార్థులు ఇప్పటికే తెలిసిన భావనలను గుర్తు చేసి వాటిపై కొత్త భావనలను నిర్మిస్తున్నాడు. ఈ విధానం బ్రూనర్ ఏ భావనకు దగ్గరగా ఉంటుంది?",
-        options: [
-            "స్పైరల్ కరికులం",
-            "క్లాసికల్ కండిషనింగ్",
-            "ప్రతిస్పందన సాధారణీకరణ",
-            "శిక్షణ ద్వారా అభ్యాసం"
-        ],
-        correct: 0,
-        explanation: "బ్రూనర్ యొక్క స్పైరల్ కరికులంలో అదే భావనలను విద్యార్థుల స్థాయికి అనుగుణంగా మళ్లీ మళ్లీ లోతుగా బోధిస్తారు. పూర్వజ్ఞానం కొత్త అభ్యాసానికి పునాది అవుతుంది."
-    },
-    {
-        question: "గార్డ్నర్ బహుళ మేధస్సుల సిద్ధాంతం ప్రకారం, ఇతరుల భావాలను అర్థం చేసుకొని సమర్థవంతంగా వ్యవహరించే సామర్థ్యాన్ని ఏమంటారు?",
-        options: [
-            "అంతర్వ్యక్తి మేధస్సు",
-            "అంతర్ముఖ మేధస్సు",
-            "భాషా మేధస్సు",
-            "సంగీత మేధస్సు"
-        ],
-        correct: 0,
-        explanation: "ఇతరుల భావోద్వేగాలు, ఉద్దేశాలు, అవసరాలను అర్థం చేసుకొని వారితో సమర్థవంతంగా మెలగగల సామర్థ్యాన్ని గార్డ్నర్ అంతర్వ్యక్తి మేధస్సుగా వివరించాడు."
-    },
-    {
-        question: "క్రింది జతలలో తప్పుగా ఉన్నది ఏది?",
-        options: [
-            "పావ్‌లవ్ — క్లాసికల్ కండిషనింగ్",
-            "స్కిన్నర్ — ఆపరెంట్ కండిషనింగ్",
-            "థార్న్‌డైక్ — ట్రయల్ అండ్ ఎరర్",
-            "బాండురా — డిస్కవరీ లెర్నింగ్"
-        ],
-        correct: 3,
-        explanation: "డిస్కవరీ లెర్నింగ్ సిద్ధాంతాన్ని ప్రతిపాదించింది బ్రూనర్. బాండురా సామాజిక అభ్యాస సిద్ధాంతాన్ని ప్రతిపాదించి పరిశీలనాత్మక అభ్యాసానికి ప్రాధాన్యత ఇచ్చాడు."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\na) రీన్‌ఫోర్స్‌మెంట్ ప్రవర్తన సంభావ్యతను పెంచుతుంది.\n\nb) శిక్ష (Punishment) ఎల్లప్పుడూ శాశ్వత ప్రవర్తనా మార్పును కలిగిస్తుంది.\n\nసరైన సమాధానం ఏది?",
-        options: [
-            "a మాత్రమే సరైనది",
-            "b మాత్రమే సరైనది",
-            "రెండూ సరైనవి",
+            "(a) మాత్రమే సరైనది",
+            "(b) మాత్రమే సరైనది",
+            "(a), (b) రెండూ సరైనవి",
             "రెండూ తప్పు"
         ],
+        correct: 2,
+        explanation: "కొలతలో సంఖ్యాత్మక ఫలితాలు లభిస్తాయి. మూల్యాంకనం మాత్రం సంఖ్యలతో పాటు గుణాత్మక అంశాలను కూడా పరిగణనలోకి తీసుకొని సమగ్ర నిర్ణయం చేస్తుంది."
+    },
+    {
+        question: "క్రింది వాటిలో మూల్యాంకనం (Evaluation) యొక్క ప్రధాన ఉద్దేశ్యం ఏది?",
+        options: [
+            "మార్కులను నమోదు చేయడం",
+            "విద్యార్థులను ర్యాంక్ చేయడం",
+            "విద్యా లక్ష్యాలు ఎంతవరకు సాధించబడ్డాయో నిర్ణయించడం",
+            "పరీక్ష నిర్వహించడం"
+        ],
+        correct: 2,
+        explanation: "మూల్యాంకనం కేవలం మార్కులను నమోదు చేయడం కాదు. విద్యార్థులు నిర్దేశించిన విద్యా లక్ష్యాలను ఎంతవరకు సాధించారో విశ్లేషించి నిర్ణయించడం దీని ప్రధాన ఉద్దేశ్యం."
+    },
+    {
+        question: "నిరంతర సమగ్ర మూల్యాంకనం (CCE) యొక్క ప్రధాన లక్షణం ఏది?",
+        options: [
+            "వార్షిక పరీక్షలకు మాత్రమే ప్రాధాన్యం ఇవ్వడం",
+            "విద్యార్థి విద్యా మరియు సహవిద్యా అభివృద్ధిని సమగ్రంగా అంచనా వేయడం",
+            "కేవలం లిఖిత పరీక్షల ఆధారంగా మూల్యాంకనం చేయడం",
+            "సంవత్సరాంతంలో మాత్రమే మూల్యాంకనం నిర్వహించడం"
+        ],
+        correct: 1,
+        explanation: "CCE విద్యార్థి విద్యా, సహవిద్యా, వ్యక్తిత్వ అభివృద్ధిని నిరంతరంగా పరిశీలించి సమగ్రంగా మూల్యాంకనం చేస్తుంది. ఇది ఒక్క పరీక్షపై ఆధారపడదు."
+    },
+    {
+        question: "క్రింది వాటిలో సమాపన మూల్యాంకనం (Summative Assessment) కు సరైన ఉదాహరణ ఏది?",
+        options: [
+            "తరగతి గది పరిశీలన",
+            "యూనిట్ అనంతర చర్చ",
+            "వార్షిక పరీక్ష",
+            "గృహపని పరిశీలన"
+        ],
+        correct: 2,
+        explanation: "సమాపన మూల్యాంకనం బోధన పూర్తయిన తర్వాత నిర్వహించబడుతుంది. వార్షిక పరీక్ష విద్యార్థి మొత్తం అభ్యసన ఫలితాన్ని అంచనా వేయడానికి నిర్వహించే పరీక్ష."
+    },
+    {
+        question: "క్రింది వాటిలో కొలత (Measurement) యొక్క లక్షణం కానిది ఏది?",
+        options: [
+            "పరిమాణాత్మక సమాచారం అందిస్తుంది",
+            "సంఖ్యాత్మక ఫలితాన్ని ఇస్తుంది",
+            "విలువ నిర్ణయాన్ని కలిగి ఉంటుంది",
+            "ప్రమాణాలతో పోల్చవచ్చు"
+        ],
+        correct: 2,
+        explanation: "కొలత సంఖ్యలు మరియు పరిమాణాత్మక సమాచారాన్ని మాత్రమే అందిస్తుంది. విలువ నిర్ణయం చేయడం మూల్యాంకన లక్షణం కానీ కొలత లక్షణం కాదు."
+    },
+    {
+        question: "ఒక విద్యార్థి గణితంలో 40/50 మార్కులు సాధించాడు. \"అతని గణిత నైపుణ్యం సంతృప్తికరంగా ఉంది\" అని ఉపాధ్యాయుడు వ్యాఖ్యానించాడు.\n\n40/50 అనేది ________, \"సంతృప్తికరంగా ఉంది\" అనేది ________.",
+        options: [
+            "మూల్యాంకనం, కొలత",
+            "కొలత, మూల్యాంకనం",
+            "పరీక్ష, పరిశీలన",
+            "పరిశీలన, పరీక్ష"
+        ],
+        correct: 1,
+        explanation: "40/50 మార్కులు సంఖ్యాత్మక కొలతను సూచిస్తాయి. ఆ మార్కుల ఆధారంగా 'సంతృప్తికరంగా ఉంది' అనే విలువ నిర్ణయం చేయడం మూల్యాంకనం అవుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో నిర్మాణాత్మక మూల్యాంకనం (Formative Assessment) యొక్క ముఖ్య ఉద్దేశ్యం ఏది?",
+        options: [
+            "విద్యార్థులకు గ్రేడ్ ఇవ్వడం",
+            "అభ్యసన లోపాలను గుర్తించి తక్షణ మెరుగుదలకు సహాయపడడం",
+            "పదోన్నతి నిర్ణయించడం",
+            "విద్యార్థులను వర్గీకరించడం"
+        ],
+        correct: 1,
+        explanation: "నిర్మాణాత్మక మూల్యాంకనం అభ్యసనలో ఉన్న లోపాలను గుర్తించి వెంటనే సవరణ చర్యలు చేపట్టేందుకు ఉపాధ్యాయుడు మరియు విద్యార్థికి ఉపయోగకరమైన ప్రతిస్పందనను అందిస్తుంది."
+    },
+    {
+        question: "ఒక ఉపాధ్యాయుడు విద్యార్థుల ప్రవర్తన, పాల్గొనడం, నాయకత్వ లక్షణాలను రోజువారీ పరిశీలన ద్వారా నమోదు చేస్తున్నాడు. ఈ మూల్యాంకన సాధనం ఏది?",
+        options: [
+            "రేటింగ్ స్కేలు (Rating Scale)",
+            "ప్రశ్నాపత్రం",
+            "సాధన పరీక్ష",
+            "ప్రమాణీకృత పరీక్ష"
+        ],
         correct: 0,
-        explanation: "రీన్‌ఫోర్స్‌మెంట్ కావలసిన ప్రవర్తనను బలపరుస్తుంది. అయితే శిక్ష ఎల్లప్పుడూ శాశ్వత ప్రవర్తనా మార్పును కలిగించదు; తాత్కాలిక ప్రభావం మాత్రమే ఉండవచ్చు."
+        explanation: "రేటింగ్ స్కేలు ద్వారా విద్యార్థుల ప్రవర్తన, పాల్గొనడం, నాయకత్వం, సహకారం వంటి లక్షణాలను క్రమబద్ధంగా పరిశీలించి వివిధ స్థాయిలలో అంచనా వేయడం సాధ్యమవుతుంది."
     },
     {
-        question: "ఒక విద్యార్థి సమస్యను అనేక కోణాల నుండి విశ్లేషించి, ఉత్తమ పరిష్కారాన్ని ఎంచుకుంటాడు. స్టెర్న్‌బర్గ్ సిద్ధాంతం ప్రకారం ఇది ఏ మేధస్సు?",
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\n(a) పరీక్ష (Test) అనేది సమాచార సేకరణకు ఉపయోగించే ఒక సాధనం.\n(b) మూల్యాంకనం (Evaluation) అనేది పరీక్ష కంటే విస్తృతమైన ప్రక్రియ.\n\nసరైన సమాధానం:",
         options: [
-            "ప్రాయోగిక మేధస్సు",
-            "విశ్లేషణాత్మక మేధస్సు",
-            "సృజనాత్మక మేధస్సు",
-            "సంగీత మేధస్సు"
-        ],
-        correct: 1,
-        explanation: "సమస్యలను విశ్లేషించడం, పోల్చడం, తర్కించడం, మూల్యాంకనం చేసి సరైన నిర్ణయం తీసుకోవడం స్టెర్న్‌బర్గ్ విశ్లేషణాత్మక మేధస్సుకు చెందిన లక్షణం."
-    },
-    {
-        question: "క్రింది వాటిలో ఉద్దీపన సాధారణీకరణ (Stimulus Generalization) కు సరైన ఉదాహరణ ఏది?",
-        options: [
-            "పాఠశాల గంట విన్నప్పుడే విద్యార్థి తరగతిలోకి రావడం",
-            "ఒకే రకమైన రెండు గంటల శబ్దాలకు ఒకే విధంగా ప్రతిస్పందించడం",
-            "తప్పు సమాధానానికి మార్కులు తగ్గించడం",
-            "ఉపాధ్యాయుని ప్రవర్తనను అనుకరించడం"
-        ],
-        correct: 1,
-        explanation: "ఒక ఉద్దీపనకు ఏర్పడిన ప్రతిచర్య అదే పోలిక ఉన్న ఇతర ఉద్దీపనలకు కూడా కనిపించడం ఉద్దీపన సాధారణీకరణగా పావ్‌లవ్ వివరించాడు."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు \"విద్యార్థులు స్వయంగా అన్వేషించి భావనను నిర్మించాలి\" అని నమ్ముతాడు. అదే సమయంలో అవసరమైనప్పుడు సూచనలు కూడా ఇస్తాడు. ఈ విధానానికి అత్యంత దగ్గరైన సిద్ధాంతాల కలయిక ఏది?",
-        options: [
-            "పావ్‌లవ్ మరియు స్కిన్నర్",
-            "బ్రూనర్ మరియు వైగాట్స్కీ",
-            "థార్న్‌డైక్ మరియు పావ్‌లవ్",
-            "గార్డ్నర్ మరియు స్టెర్న్‌బర్గ్"
-        ],
-        correct: 1,
-        explanation: "స్వయంగా అన్వేషించడం బ్రూనర్ డిస్కవరీ లెర్నింగ్‌ను సూచిస్తుంది. అవసరమైనప్పుడు ఉపాధ్యాయుని మార్గదర్శకత్వం ఇవ్వడం వైగాట్స్కీ స్కాఫోల్డింగ్ భావనకు అనుగుణంగా ఉంటుంది."
-    },
-    {
-        question: "క్రింది జతలను పరిశీలించండి.\n\n1. పియాజే — జ్ఞాన వికాస దశలు\n2. కోల్‌బర్గ్ — నైతిక వికాస దశలు\n3. గార్డ్నర్ — బహుళ మేధస్సులు\n4. బాండురా — సామాజిక అభ్యాస సిద్ధాంతం\n\nసరైన సమాధానం ఏది?",
-        options: [
-            "1, 2 మాత్రమే",
-            "2, 3 మాత్రమే",
-            "1, 2, 3 మాత్రమే",
-            "1, 2, 3, 4"
-        ],
-        correct: 3,
-        explanation: "ఈ నాలుగు జతలూ సరైనవే. పియాజే జ్ఞాన వికాసం, కోల్‌బర్గ్ నైతిక వికాసం, గార్డ్నర్ బహుళ మేధస్సులు, బాండురా సామాజిక అభ్యాస సిద్ధాంతాన్ని ప్రతిపాదించారు."
-    },
-    {
-        question: "Choose the correct article.\n\nRavi is ____ honest boy.",
-        options: ["a", "an", "the", "No article"],
-        correct: 1,
-        explanation: "The word 'honest' begins with a silent 'h', producing a vowel sound. English articles depend on pronunciation rather than spelling, so 'an honest boy' is grammatically correct."
-    },
-    {
-        question: "Choose the correct preposition.\n\nThe meeting will start _____ 9:30 a.m.",
-        options: ["in", "on", "at", "by"],
-        correct: 2,
-        explanation: "The preposition 'at' is used before exact clock times such as 9:30 a.m., 5:00 p.m., or midnight. Therefore, 'at 9:30 a.m.' is the correct expression."
-    },
-    {
-        question: "Choose the correct verb.\n\nEach of the students _____ submitted the assignment.",
-        options: ["have", "are", "has", "were"],
-        correct: 2,
-        explanation: "The subject 'Each' is singular, although followed by a plural noun. Singular subjects require singular verbs, making 'has submitted' the correct grammatical choice."
-    },
-    {
-        question: "Identify the part containing an error.\n\nA. One of my friends\nB. have bought\nC. a new laptop\nD. yesterday.",
-        options: [
-            "One of my friends",
-            "have bought",
-            "a new laptop",
-            "yesterday."
-        ],
-        correct: 1,
-        explanation: "The subject 'One' is singular, so the verb should also be singular. 'Have bought' should be replaced with 'has bought' to maintain subject–verb agreement."
-    },
-    {
-        question: "Choose the correct option.\n\nNeither the teacher nor the students _____ present in the classroom.",
-        options: ["was", "is", "were", "has"],
-        correct: 2,
-        explanation: "With 'Neither...nor', the verb agrees with the subject nearest to it. Since 'students' is plural and closest to the verb, 'were' is the correct choice."
-    },
-    {
-        question: "Choose the correct preposition.\n\nShe has been living here _____ 2018.",
-        options: ["for", "since", "from", "by"],
-        correct: 1,
-        explanation: "The preposition 'since' is used before a specific point in time, such as a year or date. 'For' is used with durations like two years or five months."
-    },
-    {
-        question: "Choose the correct article.\n\nHe bought _____ umbrella because it was raining.",
-        options: ["a", "an", "the", "no article"],
-        correct: 1,
-        explanation: "The word 'umbrella' begins with a vowel sound, so the indefinite article 'an' is required. Therefore, 'an umbrella' is the grammatically correct expression."
-    },
-    {
-        question: "Identify the sentence with the correct Subject–Verb Agreement.",
-        options: [
-            "Mathematics are my favourite subject.",
-            "Mathematics is my favourite subject.",
-            "Mathematics have my favourite subject.",
-            "Mathematics were my favourite subject."
-        ],
-        correct: 1,
-        explanation: "When referring to the academic subject, 'Mathematics' is treated as singular. Therefore, it takes the singular verb 'is' instead of plural verb forms."
-    },
-    {
-        question: "Choose the correct option.\n\nThe principal, along with the teachers, _____ attending the meeting.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "The phrase 'along with the teachers' is parenthetical and does not affect the verb. The main subject 'principal' is singular, so the correct verb is 'is'."
-    },
-    {
-        question: "Identify the part containing an error.\n\nA. The news\nB. are\nC. very encouraging\nD. today.",
-        options: [
-            "The news",
-            "are",
-            "very encouraging",
-            "today."
-        ],
-        correct: 1,
-        explanation: "Although 'news' ends with 's', it is a singular uncountable noun. Therefore, it requires the singular verb 'is', making 'are' the incorrect part."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "Every one of the boys have completed the work.",
-            "Every one of the boys has completed the work.",
-            "Every one of the boys were completed the work.",
-            "Every one of the boys are completed the work."
-        ],
-        correct: 1,
-        explanation: "The subject is 'Every one', which is singular. Therefore, it requires the singular auxiliary verb 'has'. The phrase 'of the boys' does not affect subject–verb agreement."
-    },
-    {
-        question: "Choose the correct preposition.\n\nThe train arrived _____ the station before sunrise.",
-        options: ["in", "at", "on", "into"],
-        correct: 1,
-        explanation: "The preposition 'at' is used for arrival at specific places such as stations, airports, or bus stops. Hence, 'arrived at the station' is grammatically correct."
-    },
-    {
-        question: "Identify the part containing an error.\n\nA. Neither of the answers\nB. are\nC. correct\nD. today.",
-        options: [
-            "Neither of the answers",
-            "are",
-            "correct",
-            "today."
-        ],
-        correct: 1,
-        explanation: "'Neither' is treated as a singular subject in standard English. Therefore, it should take the singular verb 'is' instead of the plural verb 'are'."
-    },
-    {
-        question: "Choose the correct article.\n\nShe is _____ M.A. student.",
-        options: ["a", "an", "the", "no article"],
-        correct: 1,
-        explanation: "The abbreviation 'M.A.' begins with the vowel sound /em/. Since articles depend on pronunciation rather than spelling, 'an M.A. student' is correct."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "The quality of the books are excellent.",
-            "The quality of the books were excellent.",
-            "The quality of the books is excellent.",
-            "The quality of the books have been excellent."
-        ],
-        correct: 2,
-        explanation: "The main subject is 'quality', which is singular. The phrase 'of the books' only modifies the subject and does not influence the verb."
-    },
-    {
-        question: "Choose the correct preposition.\n\nHe insisted _____ paying the bill himself.",
-        options: ["on", "in", "for", "with"],
-        correct: 0,
-        explanation: "The verb 'insist' is followed by the preposition 'on' before a noun or gerund. Therefore, 'insisted on paying' is the correct collocation."
-    },
-    {
-        question: "Identify the sentence without any grammatical error.",
-        options: [
-            "One of the girls have won the prize.",
-            "One of the girls has won the prize.",
-            "One of the girls were won the prize.",
-            "One of the girls are winning the prize."
-        ],
-        correct: 1,
-        explanation: "The subject is 'One', which is singular. Hence, the singular auxiliary verb 'has' must be used. The phrase 'of the girls' does not affect agreement."
-    },
-    {
-        question: "Choose the correct option.\n\nThe furniture _____ very expensive.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "'Furniture' is an uncountable noun in English and always takes a singular verb. Therefore, 'The furniture is very expensive' is grammatically correct."
-    },
-    {
-        question: "Identify the part containing an error.\n\nA. My brother\nB. as well as his friends\nC. are going to attend\nD. the seminar.",
-        options: [
-            "My brother",
-            "as well as his friends",
-            "are going to attend",
-            "the seminar."
-        ],
-        correct: 2,
-        explanation: "The phrase 'as well as his friends' is parenthetical. The main subject is 'My brother', which is singular, so the correct verb is 'is going to attend'."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "The teacher divided the sweets among the two boys.",
-            "The teacher divided the sweets between the two boys.",
-            "The teacher divided the sweets into the two boys.",
-            "The teacher divided the sweets from the two boys."
-        ],
-        correct: 1,
-        explanation: "'Between' is used when referring to exactly two people or things, while 'among' is generally used for three or more. Hence, 'between the two boys' is correct."
-    },
-    {
-        question: "వ్యక్తిగత విద్యా ప్రణాళిక (IEP) యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
-        options: [
-            "పాఠశాల వార్షిక ప్రణాళికను రూపొందించడం",
-            "ప్రతి విద్యార్థి అవసరాలకు అనుగుణంగా వ్యక్తిగత విద్యా లక్ష్యాలను రూపొందించడం",
-            "ఉపాధ్యాయుల పనితీరును అంచనా వేయడం",
-            "పరీక్షల షెడ్యూల్ రూపొందించడం"
-        ],
-        correct: 1,
-        explanation: "IEP (Individualized Education Plan) ప్రతి ప్రత్యేక అవసరాలు గల విద్యార్థి సామర్థ్యాలు, అవసరాలు, విద్యా లక్ష్యాలు, బోధనా వ్యూహాలు మరియు మద్దతు సేవలను వ్యక్తిగతంగా నిర్దేశించే అధికారిక పత్రం."
-    },
-    {
-        question: "దివ్యాంగుల హక్కుల చట్టం (RPWD Act), 2016 ప్రకారం గుర్తించబడిన దివ్యాంగతల సంఖ్య ఎంత?",
-        options: [
-            "18",
-            "19",
-            "21",
-            "24"
-        ],
-        correct: 2,
-        explanation: "RPWD Act, 2016 ప్రకారం 21 రకాల దివ్యాంగతలు అధికారికంగా గుర్తించబడ్డాయి. ఈ చట్టం సమాన అవకాశాలు, హక్కుల పరిరక్షణ మరియు సమగ్ర భాగస్వామ్యాన్ని ప్రోత్సహిస్తుంది."
-    },
-    {
-        question: "పునరావాస వృత్తి నిపుణుల విద్య, శిక్షణ మరియు నమోదు (Registration)ను నియంత్రించే చట్టం ఏది?",
-        options: [
-            "జాతీయ ట్రస్ట్ చట్టం, 1999",
-            "RCI చట్టం, 1992",
-            "RTE చట్టం, 2009",
-            "RPWD చట్టం, 2016"
-        ],
-        correct: 1,
-        explanation: "Rehabilitation Council of India (RCI) Act, 1992 పునరావాస వృత్తి నిపుణుల శిక్షణ, అర్హతలు, నమోదు మరియు వృత్తి ప్రమాణాలను నియంత్రించే ప్రధాన చట్టం."
-    },
-    {
-        question: "జాతీయ ట్రస్ట్ చట్టం, 1999 ప్రధానంగా క్రింది వారిలో ఎవరి సంక్షేమం కోసం రూపొందించబడింది?",
-        options: [
-            "అన్ని రకాల దివ్యాంగుల కోసం",
-            "ఆటిజం, సెరెబ్రల్ పాల్సీ, మేధో వైకల్యం మరియు బహుళ వైకల్యాలు గల వ్యక్తుల కోసం",
-            "కేవలం దృష్టి లోపం గల వ్యక్తుల కోసం",
-            "కేవలం శ్రవణ లోపం గల వ్యక్తుల కోసం"
-        ],
-        correct: 1,
-        explanation: "National Trust Act, 1999 ప్రధానంగా Autism, Cerebral Palsy, Intellectual Disability మరియు Multiple Disabilities గల వ్యక్తుల సంక్షేమం, సంరక్షణ మరియు స్వతంత్ర జీవనాన్ని ప్రోత్సహించేందుకు రూపొందించబడింది."
-    },
-    {
-        question: "సమగ్ర శిక్ష (Samagra Shiksha) కార్యక్రమం యొక్క ప్రధాన లక్ష్యం ఏది?",
-        options: [
-            "ఉన్నత విద్యాభివృద్ధి మాత్రమే",
-            "పాఠశాల విద్యలో సమగ్ర, సమాన మరియు నాణ్యమైన విద్యను అందించడం",
-            "కేవలం వృత్తి విద్యను అభివృద్ధి చేయడం",
-            "పరీక్షా విధానాన్ని మార్చడం"
-        ],
-        correct: 1,
-        explanation: "Samagra Shiksha కార్యక్రమం పాఠశాల విద్యలో సమానత్వం, నాణ్యత, సమగ్రత మరియు అందరికీ అందుబాటులో ఉండే విద్యను ప్రోత్సహించే సమగ్ర కేంద్ర ప్రభుత్వ పథకం."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\na) IEP ప్రతి విద్యార్థికి ఒకే విధంగా రూపొందించబడుతుంది.\n\nb) IEP రూపకల్పనలో తల్లిదండ్రుల భాగస్వామ్యం ముఖ్యమైనది.\n\nసరైన సమాధానం ఏది?",
-        options: [
-            "a మాత్రమే సరైనది",
-            "b మాత్రమే సరైనది",
-            "రెండూ సరైనవి",
+            "(a) మాత్రమే",
+            "(b) మాత్రమే",
+            "(a), (b) రెండూ",
             "రెండూ తప్పు"
         ],
+        correct: 2,
+        explanation: "పరీక్ష అనేది విద్యార్థి పనితీరుకు సంబంధించిన సమాచారాన్ని సేకరించే సాధనం మాత్రమే. మూల్యాంకనం పరీక్షతో పాటు ఇతర ఆధారాలను ఉపయోగించి సమగ్ర విలువ నిర్ణయం చేస్తుంది."
+    },
+    {
+        question: "ఒక పాఠశాలలో ఉపాధ్యాయుడు విద్యార్థుల ప్రాజెక్టులు, తరగతి కార్యకలాపాలు, గృహపనులు, మౌఖిక ప్రతిస్పందనలు అన్నింటినీ పరిగణనలోకి తీసుకొని అభ్యసనాన్ని అంచనా వేస్తున్నాడు. ఇది ఏ విధానానికి అనుగుణం?",
+        options: [
+            "సమాపన మూల్యాంకనం",
+            "నిరంతర సమగ్ర మూల్యాంకనం (CCE)",
+            "ప్రవేశ పరీక్ష",
+            "ప్రమాణ పరీక్ష"
+        ],
         correct: 1,
-        explanation: "IEP ప్రతి విద్యార్థి వ్యక్తిగత అవసరాల ఆధారంగా రూపొందించబడుతుంది. దాని రూపకల్పన, అమలు మరియు సమీక్షలో తల్లిదండ్రుల భాగస్వామ్యం అత్యంత ముఖ్యమైన అంశంగా పరిగణించబడుతుంది."
+        explanation: "CCEలో ప్రాజెక్టులు, తరగతి కార్యకలాపాలు, గృహపనులు, మౌఖిక ప్రతిస్పందనలు వంటి అనేక ఆధారాల ద్వారా విద్యార్థి అభ్యసనాన్ని నిరంతరంగా మరియు సమగ్రంగా అంచనా వేస్తారు."
+    },
+    {
+        question: "క్రింది వాటిలో ఏది కొలత (Measurement) యొక్క లక్ష్యం?",
+        options: [
+            "విద్యార్థి విలువలను నిర్ణయించడం",
+            "విద్యార్థి సాధనను సంఖ్యల రూపంలో తెలియజేయడం",
+            "బోధనా పద్ధతిని నిర్ణయించడం",
+            "పాఠ్యాంశాన్ని రూపొందించడం"
+        ],
+        correct: 1,
+        explanation: "కొలత యొక్క ప్రధాన లక్ష్యం విద్యార్థి సాధనను సంఖ్యలు లేదా స్కోర్ల రూపంలో వ్యక్తపరచడం. ఇది విలువ నిర్ణయం చేయకుండా పరిమాణాత్మక సమాచారాన్ని మాత్రమే అందిస్తుంది."
+    },
+    {
+        question: "సమాపన మూల్యాంకనం ప్రధానంగా దేనికి ఉపయోగపడుతుంది?",
+        options: [
+            "బోధనలో తక్షణ మార్పులకు",
+            "అభ్యసన లోపాలను వెంటనే సరిదిద్దడానికి",
+            "అభ్యసన ఫలితాలను ధృవీకరించడానికి",
+            "విద్యార్థి ఆసక్తులను గుర్తించడానికి"
+        ],
+        correct: 2,
+        explanation: "సమాపన మూల్యాంకనం బోధన పూర్తైన తరువాత నిర్వహించబడుతుంది. ఇది విద్యార్థి సాధించిన అభ్యసన ఫలితాలను ధృవీకరించి గ్రేడ్ లేదా ప్రమోషన్ నిర్ణయాలకు ఉపయోగపడుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో నిర్ధారణ మూల్యాంకనం (Diagnostic Assessment) యొక్క ప్రధాన ఉద్దేశ్యం ఏది?",
+        options: [
+            "తుది గ్రేడ్ ఇవ్వడం",
+            "అభ్యసన లోపాల కారణాలను గుర్తించడం",
+            "విద్యార్థులను ర్యాంక్ చేయడం",
+            "పాఠశాల పనితీరును అంచనా వేయడం"
+        ],
+        correct: 1,
+        explanation: "నిర్ధారణ మూల్యాంకనం విద్యార్థి అభ్యసనంలో ఉన్న లోపాలు, వాటి కారణాలను గుర్తించి తగిన సవరణ బోధన అందించడానికి ఉపయోగించే ముఖ్యమైన ప్రక్రియ."
     },
     {
         question: "క్రింది జతలలో సరైనది ఏది?",
         options: [
-            "RCI Act — ఉచిత మరియు నిర్బంధ విద్య",
-            "RPWD Act — దివ్యాంగుల హక్కుల పరిరక్షణ",
-            "National Trust Act — ఉపాధ్యాయుల నియామకం",
-            "Samagra Shiksha — పునరావాస నిపుణుల నమోదు"
-        ],
-        correct: 1,
-        explanation: "RPWD Act, 2016 దివ్యాంగుల హక్కులు, సమాన అవకాశాలు, వివక్ష నిరోధం మరియు సమగ్ర భాగస్వామ్యాన్ని నిర్ధారించే ముఖ్యమైన భారతీయ చట్టం."
-    },
-    {
-        question: "ఒక ప్రత్యేక అవసరాలు గల విద్యార్థికి బోధనా విధానంలో మార్పులు, అనుకూలీకరణలు మరియు వార్షిక లక్ష్యాలను లిఖితపూర్వకంగా నమోదు చేసే అధికారిక పత్రం ఏది?",
-        options: [
-            "పాఠశాల అభివృద్ధి ప్రణాళిక",
-            "వ్యక్తిగత విద్యా ప్రణాళిక (IEP)",
-            "నిరంతర సమగ్ర మూల్యాంకన పత్రం",
-            "ప్రవేశ నమోదు పత్రం"
-        ],
-        correct: 1,
-        explanation: "IEP అనేది ప్రత్యేక అవసరాలు గల విద్యార్థి కోసం విద్యా లక్ష్యాలు, సేవలు, అనుకూలీకరణలు, మూల్యాంకన విధానాలు మరియు బాధ్యతలను లిఖితపూర్వకంగా నమోదు చేసే అధికారిక పత్రం."
-    },
-    {
-        question: "క్రింది వాటిలో సమగ్ర విద్య (Inclusive Education) సూత్రానికి అత్యంత అనుకూలమైనది ఏది?",
-        options: [
-            "ప్రత్యేక అవసరాలు గల పిల్లలను ఎల్లప్పుడూ ప్రత్యేక పాఠశాలలోనే ఉంచడం",
-            "అన్ని విద్యార్థులను ఒకే విధంగా బోధించడం",
-            "సాధారణ పాఠశాలలో అవసరమైన అనుకూలీకరణలతో విద్యను అందించడం",
-            "పరీక్షల్లో మాత్రమే అదనపు సమయం ఇవ్వడం"
+            "కొలత — విలువ నిర్ణయం",
+            "మూల్యాంకనం — సంఖ్యాత్మక సమాచారం మాత్రమే",
+            "పరీక్ష — సమాచార సేకరణ సాధనం",
+            "CCE — వార్షిక పరీక్ష మాత్రమే"
         ],
         correct: 2,
-        explanation: "సమగ్ర విద్యలో ప్రత్యేక అవసరాలు గల పిల్లలు సాధారణ పాఠశాలలోనే అవసరమైన సౌకర్యాలు, అనుకూలీకరణలు మరియు మద్దతుతో ఇతర విద్యార్థులతో కలిసి అభ్యసిస్తారు."
+        explanation: "పరీక్ష అనేది విద్యార్థి అభ్యసనానికి సంబంధించిన సమాచారాన్ని సేకరించే సాధనం. ఇది మూల్యాంకన ప్రక్రియలో భాగం మాత్రమే, పూర్తి మూల్యాంకనం కాదు."
     },
     {
-        question: "క్రింది జతలను పరిశీలించండి.\n\n1. RCI Act — 1992\n2. National Trust Act — 1999\n3. RPWD Act — 2016\n4. Samagra Shiksha — పాఠశాల విద్యలో సమగ్ర పథకం\n\nసరైన సమాధానం ఏది?",
+        question: "ఒక ఉపాధ్యాయుడు ప్రతి వారాంతంలో చిన్న పరీక్ష నిర్వహించి, ఫలితాల ఆధారంగా తదుపరి బోధన ప్రణాళికను రూపొందిస్తున్నాడు. ఇది ఏ సూత్రాన్ని ప్రతిబింబిస్తుంది?",
         options: [
-            "1, 2 మాత్రమే",
-            "2, 3 మాత్రమే",
-            "1, 2, 3 మాత్రమే",
-            "1, 2, 3, 4"
+            "సమాపన మూల్యాంకనం",
+            "నిర్మాణాత్మక మూల్యాంకనం",
+            "ప్రమాణ పరీక్ష",
+            "ఎంపిక పరీక్ష"
         ],
-        correct: 3,
-        explanation: "ఈ నాలుగు జతలూ సరైనవే. RCI Act (1992), National Trust Act (1999), RPWD Act (2016), Samagra Shiksha పాఠశాల విద్యలో సమగ్ర అభివృద్ధికి సంబంధించిన ముఖ్యమైన అంశాలు."
+        correct: 1,
+        explanation: "చిన్న పరీక్షల ఫలితాలను ఉపయోగించి తదుపరి బోధనలో మార్పులు చేయడం నిర్మాణాత్మక మూల్యాంకనానికి ముఖ్య లక్షణం. దీని ద్వారా అభ్యసనాన్ని నిరంతరం మెరుగుపరచవచ్చు."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\n(a) CCEలో విద్యార్థి సహపాఠ్య కార్యకలాపాలకు కూడా ప్రాధాన్యం ఉంటుంది.\n(b) CCEలో కేవలం లిఖిత పరీక్షల ఆధారంగానే మూల్యాంకనం జరుగుతుంది.\n\nసరైన సమాధానం:",
+        options: [
+            "(a) మాత్రమే",
+            "(b) మాత్రమే",
+            "రెండూ సరైనవి",
+            "రెండూ తప్పు"
+        ],
+        correct: 0,
+        explanation: "CCEలో విద్యార్థి విద్యా మరియు సహపాఠ్య అభివృద్ధి రెండింటినీ పరిగణనలోకి తీసుకుంటారు. కేవలం లిఖిత పరీక్షల ఆధారంగా మాత్రమే మూల్యాంకనం జరగదు."
+    },
+    {
+        question: "క్రింది వాటిలో మూల్యాంకనం (Evaluation) యొక్క అత్యంత సమగ్ర నిర్వచనం ఏది?",
+        options: [
+            "పరీక్ష నిర్వహించడం",
+            "మార్కులు కేటాయించడం",
+            "కొలత ఆధారంగా విద్యార్థి సాధనపై విలువ నిర్ణయం చేయడం",
+            "ప్రశ్నాపత్రం రూపొందించడం"
+        ],
+        correct: 2,
+        explanation: "మూల్యాంకనం అనేది కొలత ద్వారా పొందిన సమాచారాన్ని విశ్లేషించి విద్యార్థి సాధన, పురోగతి మరియు విద్యా లక్ష్యాల సాధనపై విలువ నిర్ణయం చేసే సమగ్ర ప్రక్రియ."
+    },
+    {
+        question: "Choose the correct passive voice of the following sentence.\n\nThe teacher praised the student.",
+        options: [
+            "The student has been praised by the teacher.",
+            "The student was praised by the teacher.",
+            "The student is praised by the teacher.",
+            "The student had praised by the teacher."
+        ],
+        correct: 1,
+        explanation: "The sentence is in the Simple Past tense. The passive voice follows the pattern 'was/were + past participle'. Therefore, 'The student was praised by the teacher' is the correct answer."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nRavi said, \"I am preparing for APTET.\"",
+        options: [
+            "Ravi said that I was preparing for APTET.",
+            "Ravi said that he was preparing for APTET.",
+            "Ravi said that he is preparing for APTET.",
+            "Ravi told that he was preparing for APTET."
+        ],
+        correct: 1,
+        explanation: "In reported speech, the pronoun 'I' changes to 'he' and the present tense 'am' changes to the past tense 'was'. Hence option B is correct."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "Each of the boys have completed the work.",
+            "Each of the boys has completed the work.",
+            "Each of the boys were completed the work.",
+            "Each of the boys are completed the work."
+        ],
+        correct: 1,
+        explanation: "The subject 'Each' is singular even though it refers to many boys. Therefore, it always takes a singular verb, making 'has completed' grammatically correct."
+    },
+    {
+        question: "Choose the correct passive form.\n\nPeople speak Telugu in Andhra Pradesh.",
+        options: [
+            "Telugu is spoken in Andhra Pradesh.",
+            "Telugu was spoken in Andhra Pradesh.",
+            "Telugu has spoken in Andhra Pradesh.",
+            "Telugu speaks in Andhra Pradesh."
+        ],
+        correct: 0,
+        explanation: "The sentence is in the Simple Present tense. Its passive voice is formed using 'is/am/are + past participle', giving 'Telugu is spoken in Andhra Pradesh'."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nThe teacher said to the students, \"Work hard.\"",
+        options: [
+            "The teacher advised the students to work hard.",
+            "The teacher advised the students that work hard.",
+            "The teacher told the students work hard.",
+            "The teacher asked the students worked hard."
+        ],
+        correct: 0,
+        explanation: "Imperative sentences are generally reported using verbs like advised, told, or ordered followed by 'to + base verb'. Therefore, option A is grammatically correct."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "By next June, she will complete the course.",
+            "By next June, she will have completed the course.",
+            "By next June, she completed the course.",
+            "By next June, she has completed the course."
+        ],
+        correct: 1,
+        explanation: "The Future Perfect tense expresses an action that will be completed before a specified future time. The correct form is 'will have completed'."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nSomeone has stolen my bicycle.",
+        options: [
+            "My bicycle has stolen.",
+            "My bicycle has been stolen.",
+            "My bicycle had been stolen.",
+            "My bicycle was stolen."
+        ],
+        correct: 1,
+        explanation: "The sentence is in the Present Perfect tense. The passive voice is formed with 'has/have been + past participle', making option B the correct answer."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nShe said, \"I have finished my homework.\"",
+        options: [
+            "She said that she had finished her homework.",
+            "She said that she has finished her homework.",
+            "She said that I had finished my homework.",
+            "She told that she had finished her homework."
+        ],
+        correct: 0,
+        explanation: "In reported speech, the Present Perfect tense changes to the Past Perfect tense. Pronouns also change appropriately, resulting in option A."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "Neither of the answers are correct.",
+            "Neither of the answers were correct.",
+            "Neither of the answers is correct.",
+            "Neither of the answers have been correct."
+        ],
+        correct: 2,
+        explanation: "The subject 'Neither' is treated as singular in standard English and therefore requires the singular verb 'is', making option C grammatically correct."
+    },
+    {
+        question: "Choose the correct tense.\n\nWhen I reached the station, the train ________.",
+        options: [
+            "leaves",
+            "has left",
+            "had left",
+            "will leave"
+        ],
+        correct: 2,
+        explanation: "The Past Perfect tense describes an action completed before another action in the past. Since reaching the station happened later, 'had left' is correct."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nWho wrote this novel?",
+        options: [
+            "By whom was this novel written?",
+            "By whom this novel was written?",
+            "Who was this novel written by?",
+            "This novel was written by whom?"
+        ],
+        correct: 0,
+        explanation: "Interrogative sentences beginning with 'Who' change to passive using 'By whom was + object + past participle'. Therefore, 'By whom was this novel written?' is the correct passive form."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nThe teacher said, \"The Earth revolves around the Sun.\"",
+        options: [
+            "The teacher said that the Earth revolved around the Sun.",
+            "The teacher said that the Earth revolves around the Sun.",
+            "The teacher said that the Earth has revolved around the Sun.",
+            "The teacher said that the Earth had revolved around the Sun."
+        ],
+        correct: 1,
+        explanation: "Universal truths and scientific facts do not undergo tense changes in reported speech. Therefore, the present tense 'revolves' remains unchanged in the indirect speech."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "If I knew the answer, I will tell you.",
+            "If I know the answer, I would tell you.",
+            "If I knew the answer, I would tell you.",
+            "If I had known the answer, I would tell you."
+        ],
+        correct: 2,
+        explanation: "The Second Conditional expresses unreal or imaginary situations in the present. It follows the structure: 'If + Past Simple, would + base verb', making option C correct."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nThey are repairing the bridge.",
+        options: [
+            "The bridge is repaired.",
+            "The bridge is being repaired.",
+            "The bridge has been repaired.",
+            "The bridge was being repaired."
+        ],
+        correct: 1,
+        explanation: "The sentence is in the Present Continuous tense. Its passive voice is formed using 'is/am/are being + past participle', resulting in 'The bridge is being repaired'."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nMother said to her son, \"Do not waste your time.\"",
+        options: [
+            "Mother advised her son not to waste his time.",
+            "Mother advised her son to not wasted his time.",
+            "Mother said that her son should not wasted time.",
+            "Mother told her son don't waste time."
+        ],
+        correct: 0,
+        explanation: "Negative imperative sentences are reported using 'advised/told + object + not to + base verb'. Hence, 'Mother advised her son not to waste his time' is correct."
+    },
+    {
+        question: "క్రింది వాటిలో ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD) యొక్క ప్రధాన లక్షణం ఏది?",
+        options: [
+            "నిరంతరం జ్వరంతో బాధపడటం",
+            "సామాజిక పరస్పర చర్యలు మరియు సంభాషణలో లోపాలు",
+            "కేవలం దృష్టి లోపం ఉండటం",
+            "కేవలం వినికిడి లోపం ఉండటం"
+        ],
+        correct: 1,
+        explanation: "ASD ఉన్న పిల్లల్లో ప్రధానంగా సామాజిక పరస్పర చర్యలు, కమ్యూనికేషన్ నైపుణ్యాలు మరియు ప్రవర్తనలో పరిమిత లేదా పునరావృత నమూనాలు కనిపిస్తాయి. ఇవే ప్రధాన నిర్ధారణ లక్షణాలు."
+    },
+    {
+        question: "ఒక విద్యార్థి ఉపాధ్యాయుడు చెప్పిన చివరి పదాలను అర్థం లేకుండా పదేపదే పునరావృతం చేస్తున్నాడు. ఈ లక్షణాన్ని ఏమంటారు?",
+        options: [
+            "స్టీరియోటైపీ",
+            "ఎకోలాలియా (Echolalia)",
+            "ఎకోప్రాక్సియా",
+            "డిస్ఫేసియా"
+        ],
+        correct: 1,
+        explanation: "ఇతరులు చెప్పిన పదాలు లేదా వాక్యాలను అర్థం లేకుండా వెంటనే లేదా కొంత సమయం తర్వాత పునరావృతం చేయడాన్ని ఎకోలాలియా అంటారు. ఇది ASDలో సాధారణ లక్షణం."
+    },
+    {
+        question: "IQ 35–49 ఉన్న విద్యార్థి ఏ మేధో వైకల్య వర్గానికి చెందినవాడు?",
+        options: [
+            "స్వల్ప మేధో వైకల్యం (Mild)",
+            "మధ్యస్థ మేధో వైకల్యం (Moderate)",
+            "తీవ్రమైన మేధో వైకల్యం (Severe)",
+            "అత్యంత తీవ్రమైన మేధో వైకల్యం (Profound)"
+        ],
+        correct: 1,
+        explanation: "సాంప్రదాయ IQ వర్గీకరణ ప్రకారం 35–49 IQ పరిధి మధ్యస్థ (Moderate) మేధో వైకల్యంగా పరిగణించబడుతుంది. వీరికి స్వతంత్ర జీవనానికి గణనీయమైన శిక్షణ అవసరం."
+    },
+    {
+        question: "ఒక విద్యార్థి \"beautiful\" అనే పదాన్ని తరచూ \"beutiful\" లేదా \"butiful\" అని వ్రాస్తున్నాడు. ఇది ప్రధానంగా ఏ వైకల్యానికి సంకేతం?",
+        options: [
+            "మేధో వైకల్యం",
+            "అభ్యాస వైకల్యం (Learning Disability)",
+            "ఆటిజం స్పెక్ట్రమ్ డిజార్డర్",
+            "వినికిడి లోపం"
+        ],
+        correct: 1,
+        explanation: "స్పెల్లింగ్, అక్షరాల క్రమం మరియు పదాలను సరైన విధంగా వ్రాయడంలో నిరంతర ఇబ్బందులు డిస్లెక్సియా వంటి అభ్యాస వైకల్యాలకు సాధారణ లక్షణాలుగా పరిగణించబడతాయి."
+    },
+    {
+        question: "ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD) ఉన్న విద్యార్థికి బోధనలో అత్యంత ప్రభావవంతమైన వ్యూహం ఏది?",
+        options: [
+            "ప్రతిరోజూ బోధనా పద్ధతిని పూర్తిగా మార్చడం",
+            "దృశ్య సూచనలు, క్రమబద్ధమైన దినచర్య మరియు స్పష్టమైన సూచనలు ఉపయోగించడం",
+            "మౌఖిక ఉపన్యాసం మాత్రమే ఇవ్వడం",
+            "ఒకేసారి అనేక కార్యకలాపాలు ఇవ్వడం"
+        ],
+        correct: 1,
+        explanation: "ASD విద్యార్థులు దృశ్య మద్దతు, స్థిరమైన దినచర్య, స్పష్టమైన సూచనలు మరియు నిర్మిత బోధన ద్వారా మెరుగైన అవగాహన, భాగస్వామ్యం మరియు అభ్యసన ఫలితాలను సాధిస్తారు."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\n(a) ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD) ఉన్న ప్రతి విద్యార్థికి మేధో వైకల్యం ఉంటుంది.\n(b) ASD ఉన్న కొంతమంది విద్యార్థులు సాధారణ లేదా అధిక మేధస్సును కలిగి ఉండవచ్చు.\n\nసరైన సమాధానం ఏది?",
+        options: [
+            "(a) మాత్రమే సరైనది",
+            "(b) మాత్రమే సరైనది",
+            "రెండూ సరైనవి",
+            "రెండూ తప్పు"
+        ],
+        correct: 1,
+        explanation: "ASD మరియు మేధో వైకల్యం ఒకే పరిస్థితి కావు. కొంతమంది ASD విద్యార్థులకు సాధారణ లేదా అధిక మేధస్సు ఉండవచ్చు. అందువల్ల ప్రతి ASD విద్యార్థికి మేధో వైకల్యం ఉండాల్సిన అవసరం లేదు."
+    },
+    {
+        question: "అభ్యాస వైకల్యం (Learning Disability) ఉన్న విద్యార్థిని గుర్తించడానికి ప్రారంభ దశలో అత్యంత ఉపయోగకరమైన పద్ధతి ఏది?",
+        options: [
+            "ఒక్కసారి నిర్వహించే వార్షిక పరీక్ష",
+            "తరగతి గది పరిశీలన, నిరంతర మూల్యాంకనం మరియు సాధన విశ్లేషణ",
+            "IQ పరీక్ష మాత్రమే",
+            "వైద్య పరీక్ష మాత్రమే"
+        ],
+        correct: 1,
+        explanation: "Learning Disability ప్రారంభ గుర్తింపులో తరగతి గది పరిశీలన, నిరంతర మూల్యాంకనం, విద్యార్థి పనితీరు విశ్లేషణ మరియు బహుళ ఆధారాలపై సమాచార సేకరణ అత్యంత ప్రభావవంతమైన పద్ధతి."
+    },
+    {
+        question: "క్రింది వాటిలో మేధో వైకల్యం (Intellectual Disability) యొక్క ముఖ్య లక్షణం ఏది?",
+        options: [
+            "వినికిడి శక్తి తగ్గిపోవడం",
+            "అనుకూల ప్రవర్తన (Adaptive Behaviour) మరియు మేధో సామర్థ్యంలో గణనీయమైన లోపం",
+            "కేవలం చదవడంలో మాత్రమే ఇబ్బంది",
+            "కేవలం మాట ఆలస్యంగా రావడం"
+        ],
+        correct: 1,
+        explanation: "మేధో వైకల్యం అనేది మేధో సామర్థ్యం మరియు అనుకూల ప్రవర్తనలో గణనీయమైన లోపాలతో గుర్తించబడుతుంది. ఈ రెండు అంశాలు నిర్ధారణలో ప్రధాన ప్రమాణాలుగా పరిగణించబడతాయి."
+    },
+    {
+        question: "ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD) ఉన్న విద్యార్థికి కొత్త నైపుణ్యాన్ని బోధించేటప్పుడు ఉపాధ్యాయుడు మొదట చేయవలసినది ఏది?",
+        options: [
+            "ఒకేసారి అనేక నైపుణ్యాలు బోధించడం",
+            "నైపుణ్యాన్ని చిన్న చిన్న దశలుగా విభజించి బోధించడం",
+            "కేవలం మౌఖిక సూచనలు ఇవ్వడం",
+            "పొరపాట్లు చేసినప్పుడల్లా శిక్షించడం"
+        ],
+        correct: 1,
+        explanation: "Task Analysis ద్వారా క్లిష్టమైన నైపుణ్యాన్ని చిన్న చిన్న దశలుగా విభజించి క్రమంగా బోధించడం ASD విద్యార్థులకు అర్థం చేసుకోవడం మరియు నేర్చుకోవడం సులభతరం చేస్తుంది."
+    },
+    {
+        question: "డిస్క్యాల్కులియా (Dyscalculia) ప్రధానంగా ఏ రంగంలో సమస్యను సూచిస్తుంది?",
+        options: [
+            "పఠనం",
+            "గణిత నైపుణ్యాలు",
+            "చేతిరాత",
+            "ఉచ్చారణ"
+        ],
+        correct: 1,
+        explanation: "Dyscalculia అనేది సంఖ్యల అవగాహన, గణనలు, గణిత భావనలు మరియు సమస్య పరిష్కారానికి సంబంధించిన ప్రత్యేక అభ్యాస వైకల్యం. ఇది ప్రధానంగా గణిత నైపుణ్యాలను ప్రభావితం చేస్తుంది."
+    },
+    {
+        question: "మేధో వైకల్యం ఉన్న విద్యార్థికి వ్యక్తిగత విద్యా ప్రణాళిక (IEP) రూపొందించే ముందు అత్యంత ముఖ్యమైన దశ ఏది?",
+        options: [
+            "తల్లిదండ్రుల అభిప్రాయం లేకుండా లక్ష్యాలు నిర్ణయించడం",
+            "సమగ్ర కార్యాత్మక మూల్యాంకనం (Comprehensive Functional Assessment)",
+            "వార్షిక పరీక్ష మార్కులు మాత్రమే పరిశీలించడం",
+            "తరగతి ఉపాధ్యాయుని అభిప్రాయం మాత్రమే తీసుకోవడం"
+        ],
+        correct: 1,
+        explanation: "IEP విద్యార్థి వ్యక్తిగత అవసరాలు, సామర్థ్యాలు మరియు కార్యాత్మక పనితీరుపై ఆధారపడాలి. అందుకే సమగ్ర కార్యాత్మక మూల్యాంకనం IEP రూపకల్పనకు మొదటి మరియు ముఖ్యమైన దశ."
+    },
+    {
+        question: "క్రింది వాటిలో Learning Disability ఉన్న విద్యార్థులకు అత్యంత అనుకూలమైన బోధనా విధానం ఏది?",
+        options: [
+            "ఒకే విధమైన ఉపన్యాస పద్ధతి",
+            "బహుఇంద్రియ (Multisensory) బోధన",
+            "గృహపని మాత్రమే",
+            "కంఠస్థ పద్ధతి మాత్రమే"
+        ],
+        correct: 1,
+        explanation: "Multisensory బోధనలో దృశ్య, శ్రవణ, స్పర్శ మరియు కదలిక ఆధారిత అనుభవాలను ఉపయోగిస్తారు. ఈ విధానం Learning Disability ఉన్న విద్యార్థుల అభ్యసనాన్ని గణనీయంగా మెరుగుపరుస్తుంది."
+    },
+    {
+        question: "క్రింది జతలలో సరైనది ఏది?",
+        options: [
+            "Dyslexia — గణిత సమస్య",
+            "Dysgraphia — రచనా నైపుణ్య సమస్య",
+            "Dyscalculia — సామాజిక పరస్పర చర్య సమస్య",
+            "Dyspraxia — చదవడంలో మాత్రమే సమస్య"
+        ],
+        correct: 1,
+        explanation: "Dysgraphia ప్రధానంగా రచనా నైపుణ్యాలు, అక్షర నిర్మాణం, చేతిరాత మరియు వ్రాత వ్యక్తీకరణను ప్రభావితం చేస్తుంది. మిగతా జతలు సంబంధిత వైకల్యాలకు సరిపోవు."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\n(a) ASD ఉన్న విద్యార్థులందరికీ ఒకే విధమైన లక్షణాలు ఉంటాయి.\n(b) ASDలో లక్షణాల తీవ్రత వ్యక్తికి వ్యక్తికి భిన్నంగా ఉంటుంది.\n\nసరైన సమాధానం ఏది?",
+        options: [
+            "(a) మాత్రమే",
+            "(b) మాత్రమే",
+            "రెండూ సరైనవి",
+            "రెండూ తప్పు"
+        ],
+        correct: 1,
+        explanation: "Autism ఒక స్పెక్ట్రమ్ రుగ్మత. అందువల్ల లక్షణాల స్వభావం, తీవ్రత మరియు అవసరాలు వ్యక్తికి వ్యక్తికి మారుతూ ఉంటాయి. ప్రతి ASD విద్యార్థి ఒకే విధంగా ఉండరు."
+    },
+    {
+        question: "ఒక Learning Disability ఉన్న విద్యార్థి పదేపదే అదే రకమైన చదవడం మరియు వ్రాయడంలో తప్పులు చేస్తున్నాడు. ఉపాధ్యాయుని మొదటి చర్య ఏమై ఉండాలి?",
+        options: [
+            "తక్కువ మార్కులు ఇవ్వడం",
+            "తరగతి ముందు మందలించడం",
+            "నిర్దిష్ట లోపాన్ని విశ్లేషించి తగిన పరిహార బోధన (Remedial Teaching) ప్రారంభించడం",
+            "అదే పనిని ఎక్కువసార్లు కాపీ చేయించడం"
+        ],
+        correct: 2,
+        explanation: "Learning Disabilityలో విద్యార్థి చేసిన నిర్దిష్ట లోపాలను విశ్లేషించి, వాటికి అనుగుణంగా లక్ష్యబద్ధమైన పరిహార బోధన అందించడం అత్యంత సమర్థవంతమైన మరియు శాస్త్రీయమైన విధానం."
     }
 ];
