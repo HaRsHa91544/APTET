@@ -7,553 +7,553 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: "సమగ్ర విద్య (Inclusive Education) యొక్క ప్రధాన లక్ష్యం ఏది?",
+        question: "వృద్ధి (Growth) మరియు అభివృద్ధి (Development) మధ్య సరైన తేడా ఏది?",
         options: [
-            "ప్రత్యేక అవసరాలున్న విద్యార్థులను ప్రత్యేక పాఠశాలల్లో మాత్రమే బోధించడం",
-            "విద్యార్థులను వారి వైకల్యం ఆధారంగా వేరు చేయడం",
-            "అన్ని విద్యార్థులు ఒకే తరగతి గదిలో అవసరమైన సహాయంతో నేర్చుకునే అవకాశాన్ని కల్పించడం",
-            "ప్రతిభావంతులైన విద్యార్థులకు మాత్రమే ప్రత్యేక బోధన అందించడం"
+            "వృద్ధి గుణాత్మక మార్పు, అభివృద్ధి పరిమాణాత్మక మార్పు",
+            "వృద్ధి పరిమాణాత్మక మార్పు, అభివృద్ధి పరిమాణాత్మక మరియు గుణాత్మక మార్పుల సమాహారం",
+            "రెండూ ఒకే భావన",
+            "వృద్ధి జీవితాంతం కొనసాగుతుంది, అభివృద్ధి బాల్యంలోనే ముగుస్తుంది"
+        ],
+        correct: 1,
+        explanation: "వృద్ధి శరీర పరిమాణంలో వచ్చే మార్పులను సూచిస్తుంది. అభివృద్ధి మాత్రం శారీరక, మానసిక, సామాజిక, భావోద్వేగ పరమైన గుణాత్మక మరియు పరిమాణాత్మక మార్పుల సమగ్ర ప్రక్రియగా జీవితాంతం కొనసాగుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో మూల్యాంకనం (Evaluation) యొక్క ప్రధాన లక్షణం ఏది?",
+        options: [
+            "విద్యార్థి పనితీరుకు మార్కులు ఇవ్వడం మాత్రమే",
+            "సమాచారాన్ని సేకరించడం మాత్రమే",
+            "సేకరించిన సమాచారంపై విలువ నిర్ణయం చేయడం",
+            "పరీక్ష నిర్వహించడం మాత్రమే"
         ],
         correct: 2,
-        explanation: "సమగ్ర విద్యలో అన్ని విద్యార్థులు కలిసి నేర్చుకుంటారు. అవసరమైన సహాయక సేవలు, బోధనా అనుకూలీకరణలు మరియు సమాన అవకాశాలు కల్పించడం దీని ప్రధాన లక్ష్యం."
+        explanation: "మూల్యాంకనం అనేది పరీక్షలు, పరిశీలనలు వంటి ఆధారాల ద్వారా సేకరించిన సమాచారాన్ని విశ్లేషించి విద్యార్థి పురోగతి, లక్ష్యాల సాధన మరియు బోధన ప్రభావాన్ని విలువ నిర్ణయం చేసే ప్రక్రియ."
     },
     {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\n(a) మార్గదర్శనం (Guidance) ప్రధానంగా అభివృద్ధి ప్రక్రియ.\n(b) కౌన్సెలింగ్ (Counselling) వ్యక్తిగత సమస్యల పరిష్కారానికి సహాయపడుతుంది.\n\nసరైన సమాధానం ఏది?",
+        question: "సమగ్ర విద్య (Inclusive Education)లో Accommodation యొక్క ముఖ్య ఉద్దేశ్యం ఏమిటి?",
         options: [
-            "(a) మాత్రమే సరైనది",
-            "(b) మాత్రమే సరైనది",
-            "(a), (b) రెండూ సరైనవి",
-            "(a), (b) రెండూ తప్పు"
+            "పాఠ్యాంశాలను తగ్గించడం",
+            "అభ్యాస లక్ష్యాలను మార్చడం",
+            "లక్ష్యాలను మార్చకుండా నేర్చుకునే అవకాశాన్ని కల్పించడం",
+            "పరీక్షలను తొలగించడం"
         ],
         correct: 2,
-        explanation: "మార్గదర్శనం వ్యక్తి అభివృద్ధికి దోహదపడే నిరంతర ప్రక్రియ. కౌన్సెలింగ్ వ్యక్తిగత, భావోద్వేగ లేదా విద్యాసంబంధ సమస్యలను అర్థం చేసుకొని పరిష్కరించేందుకు సహాయపడుతుంది."
+        explanation: "Accommodationలో బోధనా పద్ధతి, పరీక్ష సమయం, కూర్చునే స్థానం లేదా సహాయక సాధనాల్లో మార్పులు చేస్తారు. కానీ విద్యార్థి నేర్చుకోవాల్సిన అభ్యాస లక్ష్యాలు లేదా ప్రమాణాలు మారవు."
     },
     {
-        question: "ఒక విద్యార్థి పరీక్షలో విఫలమైన తర్వాత తన భావోద్వేగాలను నియంత్రించి, మళ్లీ ప్రణాళిక రూపొందించి చదవడం ప్రారంభించాడు. ఇది ప్రధానంగా దేనిని సూచిస్తుంది?",
+        question: "Modification గురించి సరైన వాక్యం ఏది?",
         options: [
-            "మానసిక ఆరోగ్యం",
-            "భావోద్వేగ మేధస్సు (Emotional Intelligence)",
-            "ప్రేరణ (Motivation)",
-            "అవధానం (Attention)"
-        ],
-        correct: 1,
-        explanation: "విఫలమైన తర్వాత నిరాశను నియంత్రించి, కొత్త ప్రణాళికతో ముందుకు సాగడం స్వీయ నియంత్రణకు ఉదాహరణ. ఇది భావోద్వేగ మేధస్సులోని ముఖ్యమైన అంశం."
-    },
-    {
-        question: "పాఠశాల కౌన్సెలర్ ఒక విద్యార్థి సమస్యను వింటూ, ఎటువంటి తీర్పు ఇవ్వకుండా అతని భావాలను అర్థం చేసుకోవడానికి ప్రయత్నిస్తాడు. ఇది ఏ కౌన్సెలింగ్ నైపుణ్యాన్ని సూచిస్తుంది?",
-        options: [
-            "విమర్శించడం",
-            "క్రియాశీల వినికిడి (Active Listening)",
-            "శిక్షించడం",
-            "సూచనలు మాత్రమే ఇవ్వడం"
-        ],
-        correct: 1,
-        explanation: "కౌన్సెలింగ్‌లో క్రియాశీల వినికిడి ద్వారా వ్యక్తి భావాలను శ్రద్ధగా విని, తీర్పు ఇవ్వకుండా అర్థం చేసుకోవడం విశ్వాసాన్ని పెంపొందించి సమస్య పరిష్కారానికి సహాయపడుతుంది."
-    },
-    {
-        question: "మానసిక ఆరోగ్యాన్ని అత్యుత్తమంగా ప్రతిబింబించే లక్షణం ఏది?",
-        options: [
-            "ఎప్పుడూ సమస్యలు లేకపోవడం",
-            "భావోద్వేగాలను పూర్తిగా దాచుకోవడం",
-            "ఒత్తిడిని సమర్థంగా ఎదుర్కొంటూ సాధారణ జీవితాన్ని కొనసాగించడం",
-            "ఇతరులతో సంబంధాలు పెట్టుకోకపోవడం"
+            "విద్యార్థి కోసం పాఠ్య లక్ష్యాలను మార్చరు",
+            "పరీక్ష సమయాన్ని మాత్రమే పెంచుతారు",
+            "విద్యార్థి అవసరాలకు అనుగుణంగా అభ్యాస లక్ష్యాలను మారుస్తారు",
+            "ఇది Accommodationకు సమానం"
         ],
         correct: 2,
-        explanation: "మానసిక ఆరోగ్యం అంటే సమస్యలు లేకపోవడం కాదు. ఒత్తిడిని సమర్థంగా ఎదుర్కొని, సంబంధాలు కొనసాగిస్తూ, సాధారణ జీవితాన్ని సమతుల్యంగా నిర్వహించడం."
+        explanation: "Modificationలో విద్యార్థి సామర్థ్యాన్ని దృష్టిలో ఉంచుకొని పాఠ్యాంశం లేదా అభ్యాస లక్ష్యాలను మార్చుతారు. ఇది Accommodationతో భిన్నం, ఎందుకంటే లక్ష్యాలే సవరించబడతాయి."
     },
     {
-        question: "సమగ్ర విద్యలో క్రింది వాటిలో ఏది 'Accommodation' కు ఉదాహరణ?",
+        question: "\"beautiful\" అనే పదాన్ని విద్యార్థి తరచుగా \"dueatiful\"గా వ్రాస్తున్నాడు. ఇది ప్రధానంగా ఏ సమస్యకు సూచన?",
         options: [
-            "పాఠ్యాంశాలను పూర్తిగా మార్చడం",
-            "నేర్చుకునే లక్ష్యాలను తగ్గించడం",
-            "అదనపు పరీక్షా సమయం కల్పించడం",
-            "విద్యార్థిని ప్రత్యేక పాఠశాలకు పంపించడం"
+            "డిస్కాల్కులియా (Dyscalculia)",
+            "డిస్‌గ్రాఫియా (Dysgraphia)",
+            "డిస్‌లెక్సియా (Dyslexia)",
+            "డైస్ప్రాక్సియా (Dyspraxia)"
         ],
         correct: 2,
-        explanation: "Accommodationలో నేర్చుకునే లక్ష్యాలు మారవు. బోధన లేదా మూల్యాంకన విధానంలో మాత్రమే మార్పులు చేస్తారు. అదనపు పరీక్షా సమయం దీనికి సాధారణ ఉదాహరణ."
+        explanation: "పదాలను తప్పుగా చదవడం, అక్షరాల క్రమాన్ని మార్చడం లేదా స్పెల్లింగ్‌లో పొరపాట్లు చేయడం డిస్‌లెక్సియా లక్షణాలు. ఇది ప్రధానంగా చదవడం మరియు భాషా ప్రాసెసింగ్‌కు సంబంధించిన అభ్యాస లోపం."
     },
     {
-        question: "ఒక విద్యార్థి తన సహచరుడు బాధలో ఉన్నాడని గుర్తించి అతనికి సహాయం చేశాడు. ఇది భావోద్వేగ మేధస్సులో ఏ అంశానికి ఉదాహరణ?",
+        question: "అక్షరాలను స్పష్టంగా వ్రాయడంలో ఇబ్బంది పడే విద్యార్థిలో ఎక్కువగా కనిపించే సమస్య ఏది?",
         options: [
-            "స్వీయ అవగాహన",
-            "స్వీయ నియంత్రణ",
-            "సానుభూతి (Empathy)",
-            "జ్ఞాపకశక్తి"
+            "డిస్‌లెక్సియా",
+            "డిస్‌గ్రాఫియా",
+            "డిస్కాల్కులియా",
+            "ADHD"
+        ],
+        correct: 1,
+        explanation: "డిస్‌గ్రాఫియా ఉన్న విద్యార్థులకు అక్షరాల ఆకారం, స్పేసింగ్, వ్రాత వేగం మరియు చేతివ్రాత స్పష్టతలో ఇబ్బందులు ఉంటాయి. ఇది ప్రధానంగా వ్రాత నైపుణ్యాలకు సంబంధించిన అభ్యాస లోపం."
+    },
+    {
+        question: "స్కిన్నర్ ప్రకారం విద్యార్థి మంచి పనితీరును ప్రశంసించడం ఏది?",
+        options: [
+            "శిక్ష (Punishment)",
+            "ప్రతికూల పునర్బలం (Negative Reinforcement)",
+            "సానుకూల పునర్బలం (Positive Reinforcement)",
+            "నిరోధం (Extinction)"
         ],
         correct: 2,
-        explanation: "ఇతరుల భావాలను గుర్తించి, వాటిని అర్థం చేసుకొని సహాయం చేయడం సానుభూతి. ఇది భావోద్వేగ మేధస్సులో అత్యంత ముఖ్యమైన సామాజిక నైపుణ్యం."
+        explanation: "సరైన ప్రవర్తన తర్వాత ప్రశంస, బహుమతి లేదా ప్రోత్సాహం ఇవ్వడం ద్వారా ఆ ప్రవర్తన మళ్లీ జరగే అవకాశాన్ని పెంచడం సానుకూల పునర్బలం అని స్కిన్నర్ వివరించాడు."
     },
     {
-        question: 'Choose the correct synonym of "Abundant."',
+        question: "Negative Reinforcement అంటే ఏమిటి?",
         options: [
-            "Scarce",
-            "Plentiful",
-            "Tiny",
-            "Weak"
+            "తప్పు చేసినందుకు శిక్షించడం",
+            "ఇష్టంలేని పరిస్థితిని తొలగించి సరైన ప్రవర్తనను పెంచడం",
+            "మంచి పనికి బహుమతి ఇవ్వడం",
+            "ప్రవర్తనను పూర్తిగా నిర్లక్ష్యం చేయడం"
         ],
         correct: 1,
-        explanation: "The word 'Abundant' means available in large quantities or more than enough. 'Plentiful' carries the same meaning, while the remaining options have different meanings."
+        explanation: "Negative Reinforcementలో శిక్ష ఉండదు. విద్యార్థి సరైన ప్రవర్తన చూపినప్పుడు అసౌకర్యం లేదా ఇష్టంలేని పరిస్థితిని తొలగించడం ద్వారా ఆ ప్రవర్తనను బలపరుస్తారు."
     },
     {
-        question: 'Choose the correct idiom.\n\n"To spill the beans" means:',
+        question: "Intelligence మరియు Aptitude మధ్య సరైన తేడా ఏది?",
         options: [
-            "To cook food",
-            "To reveal a secret",
-            "To waste money",
-            "To lose interest"
-        ],
-        correct: 1,
-        explanation: "The idiom 'spill the beans' means to reveal confidential information or disclose a secret unintentionally or deliberately. It has no connection with cooking or money."
-    },
-    {
-        question: "Choose the correct phrasal verb.\n\nThe meeting was ______ because the principal was absent.",
-        options: [
-            "called off",
-            "looked after",
-            "brought up",
-            "carried out"
-        ],
-        correct: 0,
-        explanation: "'Called off' means cancelled. Since the principal was absent, the meeting was cancelled. The other phrasal verbs have unrelated meanings in this context."
-    },
-    {
-        question: "Choose the correct one-word substitution.\n\nA person who cannot read or write",
-        options: [
-            "Scholar",
-            "Illiterate",
-            "Author",
-            "Orator"
-        ],
-        correct: 1,
-        explanation: "An illiterate person is unable to read or write. A scholar is learned, an author writes books, and an orator is a skilled public speaker."
-    },
-    {
-        question: 'Choose the correct idiom.\n\n"Once in a blue moon" means:',
-        options: [
-            "Every day",
-            "Frequently",
-            "Very rarely",
-            "Suddenly"
+            "రెండూ ఒకే భావన",
+            "Intelligence భవిష్యత్ సామర్థ్యాన్ని, Aptitude ప్రస్తుత సామర్థ్యాన్ని కొలుస్తుంది",
+            "Intelligence సాధారణ మేధస్సు; Aptitude నిర్దిష్ట రంగంలో సామర్థ్యాన్ని సూచిస్తుంది",
+            "రెండూ విద్యా ఫలితాలను మాత్రమే కొలుస్తాయి"
         ],
         correct: 2,
-        explanation: "The idiom 'once in a blue moon' refers to something that happens very rarely. It describes an event that occurs infrequently rather than regularly."
+        explanation: "Intelligence వ్యక్తి యొక్క సాధారణ మేధస్సు మరియు సమస్య పరిష్కార సామర్థ్యాన్ని సూచిస్తుంది. Aptitude మాత్రం సంగీతం, గణితం లేదా భాష వంటి నిర్దిష్ట రంగాల్లో భవిష్యత్ సామర్థ్యాన్ని సూచిస్తుంది."
     },
     {
-        question: "DIKSHA platform is primarily designed to:",
+        question: "Guidance మరియు Counselling మధ్య సరైన జత ఏది?",
         options: [
-            "Conduct parliamentary elections",
-            "Support digital teaching-learning resources",
-            "Develop operating systems",
-            "Manage school admissions"
-        ],
-        correct: 1,
-        explanation: "DIKSHA is India's national digital education platform. It provides teachers and learners with digital textbooks, lesson plans, assessments and interactive educational resources."
-    },
-    {
-        question: "Which of the following is an example of a MOOC platform?",
-        options: [
-            "Moodle",
-            "SWAYAM",
-            "Photoshop",
-            "LibreOffice"
-        ],
-        correct: 1,
-        explanation: "SWAYAM is India's official Massive Open Online Course platform that offers free online courses. Moodle is an LMS, while Photoshop and LibreOffice are not MOOC platforms."
-    },
-    {
-        question: "Moodle is mainly used as:",
-        options: [
-            "Database software",
-            "Learning Management System (LMS)",
-            "Antivirus software",
-            "Operating System"
-        ],
-        correct: 1,
-        explanation: "Moodle is an open-source Learning Management System used to create, manage and deliver online courses, assignments, quizzes and other digital learning activities."
-    },
-    {
-        question: "Which statement correctly describes Open Educational Resources (OER)?",
-        options: [
-            "They can only be accessed after purchasing a license.",
-            "They are freely accessible educational resources that may be reused under open licenses.",
-            "They are available only to universities.",
-            "They cannot be modified by educators."
-        ],
-        correct: 1,
-        explanation: "Open Educational Resources are freely available teaching and learning materials released under open licenses, allowing educators to use, adapt, modify and redistribute them legally."
-    },
-    {
-        question: "Which combination best represents multimedia in educational technology?",
-        options: [
-            "Text only",
-            "Audio and video only",
-            "Text, audio, images, animation and video",
-            "Printed books only"
+            "రెండూ ఒకే ప్రక్రియ",
+            "Guidance వ్యక్తిగత సమస్యల పరిష్కారం మాత్రమే",
+            "Counselling వ్యక్తిగత పరస్పర చర్య; Guidance విస్తృత మార్గదర్శక ప్రక్రియ",
+            "Guidance నిపుణులు మాత్రమే అందించగలరు"
         ],
         correct: 2,
-        explanation: "Multimedia integrates multiple forms of media such as text, audio, images, animation and video to improve learner engagement and make teaching more interactive and effective."
+        explanation: "Guidance విద్య, వృత్తి మరియు వ్యక్తిగత అభివృద్ధికి సంబంధించిన విస్తృత మార్గదర్శక ప్రక్రియ. Counselling మాత్రం వ్యక్తిగత సమస్యలను పరిష్కరించేందుకు పరస్పర చర్చ ద్వారా అందించే సహాయక సేవ."
     },
     {
-        question: "సమగ్ర విద్య (Inclusive Education) సందర్భంలో క్రింది ప్రకటనలను పరిశీలించండి.\n\n(a) పాఠ్యాంశంలో అవసరమైన మార్పులు చేయడం Modification.\n(b) బోధనా విధానంలో మార్పులు చేసి విద్యార్థికి అవకాశాలు కల్పించడం Accommodation.\n\nసరైన సమాధానం ఏది?",
+        question: "Identify the error.\n\nEach of the students have submitted the assignment.",
         options: [
-            "(a) మాత్రమే సరైనది",
-            "(b) మాత్రమే సరైనది",
-            "(a), (b) రెండూ సరైనవి",
-            "(a), (b) రెండూ తప్పు"
+            "Each",
+            "of the students",
+            "have",
+            "submitted the assignment"
         ],
         correct: 2,
-        explanation: "Modificationలో పాఠ్యాంశం లేదా నేర్చుకునే లక్ష్యాలు మారతాయి. Accommodationలో లక్ష్యాలు మారకుండా బోధన, పరీక్ష లేదా అభ్యాస విధానంలో మాత్రమే అవసరమైన సర్దుబాట్లు చేస్తారు."
+        explanation: "The subject 'Each' is singular, so it requires the singular verb 'has'. The correct sentence is 'Each of the students has submitted the assignment.'"
     },
     {
-        question: "క్రింది వాటిలో పాఠశాల మార్గదర్శనం (Guidance) యొక్క ప్రధాన ఉద్దేశ్యం ఏది?",
+        question: "Identify the error.\n\nShe is good in Mathematics.",
         options: [
-            "విద్యార్థులకు శిక్ష విధించడం",
-            "విద్యార్థుల సమగ్ర అభివృద్ధికి సహాయపడడం",
-            "పరీక్షల్లో ఉత్తీర్ణత మాత్రమే సాధించడం",
-            "బలహీన విద్యార్థులను వేరు చేయడం"
+            "She",
+            "is",
+            "in",
+            "Mathematics"
         ],
-        correct: 1,
-        explanation: "మార్గదర్శనం విద్యార్థుల విద్యా, వ్యక్తిగత, సామాజిక మరియు వృత్తి అభివృద్ధికి సహాయపడుతుంది. వారి సామర్థ్యాలను గుర్తించి సరైన నిర్ణయాలు తీసుకునేలా ప్రోత్సహిస్తుంది."
+        correct: 2,
+        explanation: "The adjective 'good' takes the preposition 'at' when referring to skill or ability. Therefore, the correct expression is 'good at Mathematics.'"
     },
     {
-        question: "ఒక ఉపాధ్యాయుడు విద్యార్థుల భావోద్వేగాలను గౌరవిస్తూ, భయరహిత తరగతి వాతావరణాన్ని కల్పిస్తాడు. ఇది ప్రధానంగా దేనిని ప్రోత్సహిస్తుంది?",
+        question: "Identify the error.\n\nNeither the teacher nor the students was present.",
         options: [
-            "జ్ఞాపకశక్తి",
-            "మానసిక ఆరోగ్యం",
-            "శారీరక వికాసం",
-            "తెలివితేటలు"
-        ],
-        correct: 1,
-        explanation: "భయరహిత, మద్దతుతో కూడిన తరగతి వాతావరణం విద్యార్థుల ఆత్మవిశ్వాసం, భావోద్వేగ స్థిరత్వం మరియు మానసిక ఆరోగ్యాన్ని పెంపొందించి మెరుగైన అభ్యాసానికి దోహదపడుతుంది."
-    },
-    {
-        question: 'Choose the correct synonym of "Reluctant."',
-        options: [
-            "Willing",
-            "Hesitant",
-            "Confident",
-            "Cheerful"
-        ],
-        correct: 1,
-        explanation: "The word 'Reluctant' means unwilling or showing hesitation before doing something. 'Hesitant' has the closest meaning, whereas the other options express different ideas."
-    },
-    {
-        question: "Choose the correct one-word substitution.\n\nOne who speaks many languages",
-        options: [
-            "Linguist",
-            "Polyglot",
-            "Interpreter",
-            "Translator"
-        ],
-        correct: 1,
-        explanation: "A polyglot is a person who can speak and use several languages fluently. A linguist studies language, while interpreters and translators perform language conversion."
-    },
-    {
-        question: "Choose the correct phrasal verb.\n\nThe teacher asked the students to ______ their assignments before Monday.",
-        options: [
-            "put off",
-            "hand in",
-            "look into",
-            "break down"
-        ],
-        correct: 1,
-        explanation: "'Hand in' means to submit assignments or documents. 'Put off' means postpone, 'look into' means investigate, and 'break down' means stop functioning."
-    },
-    {
-        question: 'Choose the correct idiom.\n\n"Hit the nail on the head" means',
-        options: [
-            "To make a careless mistake",
-            "To speak exactly the right thing",
-            "To work very slowly",
-            "To become angry"
-        ],
-        correct: 1,
-        explanation: "The idiom 'hit the nail on the head' means to describe or explain something with complete accuracy by saying exactly what is correct."
-    },
-    {
-        question: 'Choose the correct synonym of "Brief."',
-        options: [
-            "Lengthy",
-            "Short",
-            "Ancient",
-            "Difficult"
-        ],
-        correct: 1,
-        explanation: "The adjective 'Brief' means short in length or duration. It refers to something that lasts for only a small amount of time or contains few words."
-    },
-    {
-        question: "Choose the correct one-word substitution.\n\nOne who loves books",
-        options: [
-            "Bibliophile",
-            "Biologist",
-            "Biographer",
-            "Librarian"
-        ],
-        correct: 0,
-        explanation: "A bibliophile is a person who has a great love for books and reading. The other options refer to different professions or areas of study."
-    },
-    {
-        question: 'Choose the correct idiom.\n\n"A blessing in disguise" means',
-        options: [
-            "A visible reward",
-            "Something that appears bad but turns out to be good",
-            "A hidden treasure",
-            "A dangerous situation"
-        ],
-        correct: 1,
-        explanation: "The idiom 'a blessing in disguise' refers to an event that initially seems unfortunate but later brings positive results or unexpected benefits."
-    },
-    {
-        question: "Which of the following is an example of an Open Educational Resource (OER)?",
-        options: [
-            "A copyrighted textbook that cannot be shared",
-            "A learning module released under a Creative Commons license",
-            "A private examination answer key",
-            "A licensed antivirus program"
-        ],
-        correct: 1,
-        explanation: "Open Educational Resources are teaching and learning materials released under open licenses such as Creative Commons, allowing users to reuse, adapt and share them legally."
-    },
-    {
-        question: "Which feature best distinguishes MOOCs from conventional classroom courses?",
-        options: [
-            "Limited enrollment",
-            "Open access to a large number of learners through the Internet",
-            "Only face-to-face instruction",
-            "Printed learning materials only"
-        ],
-        correct: 1,
-        explanation: "MOOCs are designed to provide online learning opportunities for thousands of learners simultaneously through the Internet without the limitations of physical classrooms."
-    },
-    {
-        question: "A teacher uploads lessons, conducts quizzes, records grades and facilitates discussions through a single online platform. Which platform is most suitable?",
-        options: [
-            "Moodle",
-            "Paint",
-            "Notepad",
-            "Calculator"
-        ],
-        correct: 0,
-        explanation: "Moodle is a Learning Management System that enables teachers to manage courses, assignments, quizzes, grades, discussions and learning resources from one platform."
-    },
-    {
-        question: "Which of the following is the primary objective of Educational Technology?",
-        options: [
-            "Replacing teachers with computers",
-            "Enhancing teaching-learning through systematic use of resources and methods",
-            "Conducting only online examinations",
-            "Increasing the number of textbooks"
-        ],
-        correct: 1,
-        explanation: "Educational Technology aims to improve teaching and learning by systematically applying appropriate methods, media, instructional strategies and technological resources for better outcomes."
-    },
-    {
-        question: "In classroom communication, the use of animation, narration, graphics and video together mainly improves",
-        options: [
-            "Printer speed",
-            "Multisensory learning",
-            "Keyboard efficiency",
-            "Hard disk capacity"
-        ],
-        correct: 1,
-        explanation: "Combining text, audio, animation, graphics and video stimulates multiple senses simultaneously, improving learner engagement, understanding, memory retention and overall learning effectiveness."
-    },
-    {
-        question: "DIKSHA platform primarily supports teachers by providing",
-        options: [
-            "Banking services",
-            "Digital teaching-learning resources and professional development",
-            "Social networking only",
-            "Computer programming software"
-        ],
-        correct: 1,
-        explanation: "DIKSHA provides teachers with digital textbooks, lesson plans, assessments, QR-based resources, training courses and professional development opportunities to enhance classroom teaching."
-    },
-    {
-        question: "Which of the following is NOT an essential characteristic of Educational Technology?",
-        options: [
-            "Goal-oriented instruction",
-            "Systematic planning",
-            "Scientific approach",
-            "Memorization without feedback"
+            "Neither",
+            "teacher",
+            "students",
+            "was"
         ],
         correct: 3,
-        explanation: "Educational Technology emphasizes systematic planning, scientific methods, learner interaction and continuous feedback. Memorization without feedback does not support effective learning or improvement."
+        explanation: "With 'Neither...nor', the verb agrees with the subject nearest to it. Since 'students' is plural, the correct verb is 'were' instead of 'was'."
     },
     {
-        question: "ఒక విద్యార్థి తన వృత్తి ఎంపికపై అయోమయంలో ఉన్నాడు. అతని ఆసక్తులు, సామర్థ్యాలు, విలువలను విశ్లేషించి సరైన నిర్ణయం తీసుకునేందుకు సహాయపడే సేవ ఏది?",
+        question: "Identify the error.\n\nHe has been working here since three years.",
         options: [
-            "మూల్యాంకనం",
-            "కౌన్సెలింగ్ (Counselling)",
-            "పర్యవేక్షణ",
-            "శిక్షణ"
+            "has been",
+            "working",
+            "since",
+            "three years"
         ],
-        correct: 1,
-        explanation: "కౌన్సెలింగ్ వ్యక్తి ఆసక్తులు, సామర్థ్యాలు, విలువలు మరియు వ్యక్తిగత లక్ష్యాలను విశ్లేషించి స్వతంత్రంగా సరైన విద్యా లేదా వృత్తి నిర్ణయం తీసుకునేలా సహాయపడుతుంది."
+        correct: 2,
+        explanation: "Use 'for' to indicate a period or duration of time and 'since' to indicate a specific starting point. Therefore, 'for three years' is correct."
     },
     {
-        question: "భావోద్వేగ మేధస్సు (Emotional Intelligence)లో క్రింది వాటిలో ఏది ప్రధాన భాగం కాదు?",
+        question: "Identify the error.\n\nOne of my friends are a Special Educator.",
         options: [
-            "స్వీయ అవగాహన",
-            "స్వీయ నియంత్రణ",
-            "సామాజిక నైపుణ్యాలు",
-            "యాంత్రిక జ్ఞాపకశక్తి"
+            "One",
+            "my friends",
+            "are",
+            "Special Educator"
+        ],
+        correct: 2,
+        explanation: "The subject is 'One', which is singular. Therefore, the singular verb 'is' should be used. The correct sentence is 'One of my friends is a Special Educator.'"
+    },
+    {
+        question: "Identify the error.\n\nThe Principal as well as the teachers were present.",
+        options: [
+            "Principal",
+            "as well as",
+            "teachers",
+            "were"
         ],
         correct: 3,
-        explanation: "భావోద్వేగ మేధస్సులో స్వీయ అవగాహన, స్వీయ నియంత్రణ, ప్రేరణ, సానుభూతి మరియు సామాజిక నైపుణ్యాలు ఉంటాయి. యాంత్రిక జ్ఞాపకశక్తి దీనిలో భాగం కాదు."
+        explanation: "The phrase 'as well as' does not change the number of the main subject. 'Principal' is singular, so the correct verb is 'was', not 'were'."
     },
     {
-        question: "సమగ్ర విద్యలో ఉపాధ్యాయుడు బోధనను విద్యార్థుల వ్యక్తిగత అవసరాలకు అనుగుణంగా మార్చడం ఏ సూత్రాన్ని ప్రతిబింబిస్తుంది?",
+        question: "Identify the error.\n\nThe information are useful for teachers.",
         options: [
-            "సమాన బోధన",
-            "వ్యక్తిగత భేదాలకు గౌరవం",
-            "పోటీ ఆధారిత బోధన",
-            "ప్రమాణీకృత బోధన"
+            "information",
+            "are",
+            "useful",
+            "teachers"
         ],
         correct: 1,
-        explanation: "సమగ్ర విద్య ప్రతి విద్యార్థి ప్రత్యేక అవసరాలను గుర్తించి, వ్యక్తిగత భేదాలను గౌరవిస్తూ బోధన, వనరులు మరియు వ్యూహాలను అనుకూలపరచడాన్ని ప్రోత్సహిస్తుంది."
+        explanation: "The noun 'information' is uncountable and always takes a singular verb. Therefore, the correct sentence is 'The information is useful for teachers.'"
     },
     {
-        question: "Choose the correct phrasal verb.\n\nThe principal asked the committee to ______ the complaint carefully.",
+        question: "నిర్మాణాత్మక మూల్యాంకనం (Formative Assessment) యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
         options: [
-            "look into",
-            "call off",
-            "put away",
-            "give up"
+            "తుది గ్రేడ్ నిర్ణయించడం",
+            "అభ్యాస ప్రక్రియలో అభిప్రాయం ఇచ్చి అభివృద్ధిని మెరుగుపరచడం",
+            "విద్యార్థులను ర్యాంకుల ప్రకారం విభజించడం",
+            "ప్రమోషన్ నిర్ణయించడం"
+        ],
+        correct: 1,
+        explanation: "నిర్మాణాత్మక మూల్యాంకనం బోధన జరుగుతున్న సమయంలోనే విద్యార్థి పురోగతిని తెలుసుకొని తక్షణ అభిప్రాయం ఇవ్వడానికి ఉపయోగపడుతుంది. దీనివల్ల బోధనలో మార్పులు చేసి అభ్యాసాన్ని మరింత సమర్థవంతంగా చేయవచ్చు."
+    },
+    {
+        question: "సమ్మేటివ్ మూల్యాంకనం (Summative Assessment) సాధారణంగా ఎప్పుడు నిర్వహిస్తారు?",
+        options: [
+            "ప్రతి పాఠం అనంతరం",
+            "బోధన ప్రారంభానికి ముందు",
+            "యూనిట్/టర్మ్ ముగింపులో",
+            "ప్రతి తరగతి ప్రారంభంలో"
+        ],
+        correct: 2,
+        explanation: "Summative Assessment సాధారణంగా యూనిట్, సెమిస్టర్ లేదా టర్మ్ ముగింపులో నిర్వహించబడుతుంది. ఇది విద్యార్థి మొత్తం అభ్యాస ఫలితాన్ని కొలిచి గ్రేడ్ లేదా ప్రమోషన్ నిర్ణయానికి ఉపయోగపడుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో ప్రమాణ ఆధారిత మూల్యాంకనం (Criterion-referenced Assessment)కు ఉదాహరణ ఏది?",
+        options: [
+            "తరగతిలో మొదటి 10 మంది ఎంపిక",
+            "ఇతర విద్యార్థులతో పోల్చి మార్కులు ఇవ్వడం",
+            "నిర్ణయించిన అభ్యాస ఫలితాలను విద్యార్థి సాధించాడా లేదా అనేది నిర్ధారించడం",
+            "శాతం ఆధారంగా ర్యాంకులు ఇవ్వడం"
+        ],
+        correct: 2,
+        explanation: "Criterion-referenced Assessmentలో విద్యార్థి పనితీరును ముందుగా నిర్ణయించిన అభ్యాస ప్రమాణాలతో పోలుస్తారు. ఇతర విద్యార్థుల పనితీరుతో పోల్చకుండా లక్ష్యాలను సాధించాడా లేదా అనే అంశాన్ని పరిశీలిస్తారు."
+    },
+    {
+        question: "Norm-referenced Assessment యొక్క ప్రధాన లక్షణం ఏమిటి?",
+        options: [
+            "నిర్దిష్ట లక్ష్యాలతో పోల్చడం",
+            "ఇతర విద్యార్థులతో పనితీరును పోల్చడం",
+            "వ్యక్తిగత IEP లక్ష్యాలను కొలవడం",
+            "నిరంతర పరిశీలన చేయడం"
+        ],
+        correct: 1,
+        explanation: "Norm-referenced Assessmentలో ఒక విద్యార్థి పనితీరును అదే సమూహంలోని ఇతర విద్యార్థులతో పోల్చుతారు. ర్యాంకులు, శాతాలు మరియు సాపేక్ష స్థానం నిర్ణయించడానికి ఇది ఉపయోగపడుతుంది."
+    },
+    {
+        question: "సమగ్ర విద్య (Inclusive Education) మరియు సమీకృత విద్య (Integrated Education) మధ్య ప్రధాన తేడా ఏమిటి?",
+        options: [
+            "రెండూ ఒకే భావన",
+            "సమీకృత విద్యలో విద్యార్థి వ్యవస్థకు అనుగుణంగా మారాలి; సమగ్ర విద్యలో వ్యవస్థ విద్యార్థికి అనుగుణంగా మారాలి",
+            "సమగ్ర విద్య ప్రత్యేక పాఠశాలల్లో మాత్రమే ఉంటుంది",
+            "సమీకృత విద్యలో IEP ఉండదు"
+        ],
+        correct: 1,
+        explanation: "Integrated Educationలో విద్యార్థి ప్రస్తుత విద్యా వ్యవస్థకు అనుగుణంగా మారాలి. Inclusive Educationలో మాత్రం పాఠశాల, బోధన మరియు వాతావరణం విద్యార్థి అవసరాలకు అనుగుణంగా సవరించబడుతుంది."
+    },
+    {
+        question: "RPWD Act–2016 ప్రకారం \"Impairment\" అనే పదం ప్రధానంగా దేనిని సూచిస్తుంది?",
+        options: [
+            "సామాజిక పరిమితి",
+            "శారీరక లేదా మానసిక క్రియలో లోపం",
+            "విద్యా వెనుకబాటు",
+            "ఉపాధి లోపం"
+        ],
+        correct: 1,
+        explanation: "Impairment అనేది శారీరక నిర్మాణం, అవయవం లేదా మానసిక క్రియలో ఏర్పడిన లోపాన్ని సూచిస్తుంది. ఇది Disability మరియు Handicap భావనలకు పునాది అయిన ప్రాథమిక పరిస్థితి."
+    },
+    {
+        question: "క్రింది వాటిలో అభ్యాస కష్టం (Learning Difficulty) మరియు అభ్యాస వైకల్యం (Learning Disability) మధ్య సరైన తేడా ఏది?",
+        options: [
+            "రెండూ ఒకటే",
+            "Learning Disability నాడీ సంబంధితది; Learning Difficulty అనేక బాహ్య కారణాల వల్ల కలగవచ్చు",
+            "రెండూ IQ తక్కువగా ఉండటాన్ని సూచిస్తాయి",
+            "రెండింటికీ IEP అవసరం ఉండదు"
+        ],
+        correct: 1,
+        explanation: "Learning Disability అనేది నాడీ వ్యవస్థకు సంబంధించిన నిర్దిష్ట అభ్యాస లోపం. Learning Difficulty మాత్రం బోధనా పద్ధతి, భాష, పర్యావరణం లేదా ఇతర బాహ్య కారణాల వల్ల కూడా కలగవచ్చు."
+    },
+    {
+        question: "ఆడిటరీ-వర్బల్ థెరపీ (AVT) యొక్క ప్రధాన లక్ష్యం ఏమిటి?",
+        options: [
+            "సంకేత భాష నేర్పడం",
+            "మిగిలిన వినికిడి సామర్థ్యాన్ని ఉపయోగించి మాట్లాడే భాష అభివృద్ధి చేయడం",
+            "బ్రెయిల్ నేర్పడం",
+            "పెదవుల కదలికలు మాత్రమే నేర్పడం"
+        ],
+        correct: 1,
+        explanation: "Auditory-Verbal Therapyలో వినికిడి పరికరాల సహాయంతో మిగిలిన వినికిడి సామర్థ్యాన్ని ఉపయోగించి పిల్లల్లో వినడం, అర్థం చేసుకోవడం మరియు మాట్లాడే భాషను సహజంగా అభివృద్ధి చేస్తారు."
+    },
+    {
+        question: "Auditory Training ప్రధానంగా దేనిపై దృష్టి పెడుతుంది?",
+        options: [
+            "వ్రాత నైపుణ్యాలు",
+            "వినికిడి ద్వారా శబ్దాలను గుర్తించడం మరియు అర్థం చేసుకోవడం",
+            "గణిత నైపుణ్యాలు",
+            "సంకేత భాష మాత్రమే"
+        ],
+        correct: 1,
+        explanation: "Auditory Trainingలో శబ్దాలను గుర్తించడం, వేరు చేయడం, అర్థం చేసుకోవడం మరియు మాట్లాడే భాషను వినికిడి ద్వారా అభివృద్ధి చేయడంపై ప్రత్యేక శిక్షణ అందిస్తారు."
+    },
+    {
+        question: "వ్యక్తిగత విద్యా ప్రణాళిక (IEP) ప్రధానంగా ఎవరి కోసం రూపొందించబడుతుంది?",
+        options: [
+            "మొత్తం తరగతి కోసం",
+            "ఒకే పాఠశాల కోసం",
+            "ప్రతి ప్రత్యేక అవసరాలున్న విద్యార్థి కోసం",
+            "ఉపాధ్యాయుల శిక్షణ కోసం"
+        ],
+        correct: 2,
+        explanation: "IEP అనేది ప్రతి ప్రత్యేక అవసరాలున్న విద్యార్థి యొక్క సామర్థ్యాలు, అవసరాలు, అభ్యాస లక్ష్యాలు మరియు అవసరమైన సహాయక సేవలను దృష్టిలో ఉంచుకొని వ్యక్తిగతంగా రూపొందించే విద్యా ప్రణాళిక."
+    },
+    {
+        question: "Identify the error.\n\nEither of the answers are correct.",
+        options: [
+            "Either",
+            "of the answers",
+            "are",
+            "correct"
+        ],
+        correct: 2,
+        explanation: "The pronoun 'Either' is singular and always takes a singular verb. Therefore, 'are' is incorrect and should be replaced with 'is' in this sentence."
+    },
+    {
+        question: "Identify the error.\n\nHe insisted to go there immediately.",
+        options: [
+            "insisted",
+            "to",
+            "go",
+            "immediately"
+        ],
+        correct: 1,
+        explanation: "The verb 'insist' is followed by 'on' and a gerund. The correct expression is 'insisted on going there immediately', not 'insisted to go'."
+    },
+    {
+        question: "Identify the error.\n\nShe prefers tea than coffee.",
+        options: [
+            "prefers",
+            "tea",
+            "than",
+            "coffee"
+        ],
+        correct: 2,
+        explanation: "The verb 'prefer' is followed by the preposition 'to' while comparing two things. Therefore, 'than' should be replaced with 'to'."
+    },
+    {
+        question: "Identify the error.\n\nNo sooner did he reached the school than the bell rang.",
+        options: [
+            "did",
+            "reached",
+            "school",
+            "bell"
+        ],
+        correct: 1,
+        explanation: "After the auxiliary verb 'did', the main verb must be in its base form. Therefore, 'reached' is incorrect and should be changed to 'reach'."
+    },
+    {
+        question: "Identify the error.\n\nThe committee have submitted its report.",
+        options: [
+            "committee",
+            "have",
+            "submitted",
+            "its"
+        ],
+        correct: 1,
+        explanation: "Here 'committee' is treated as a singular collective noun because it acts as one unit. Therefore, the correct verb is 'has', not 'have'."
+    },
+    {
+        question: "Identify the error.\n\nHardly had I entered the room than the phone rang.",
+        options: [
+            "Hardly",
+            "entered",
+            "than",
+            "phone"
+        ],
+        correct: 2,
+        explanation: "The correct correlative conjunction is 'Hardly...when...'. Using 'than' is grammatically incorrect. The sentence should read 'Hardly had I entered the room when the phone rang.'"
+    },
+    {
+        question: "Identify the error.\n\nThe teacher asked me where was I going.",
+        options: [
+            "teacher",
+            "asked",
+            "where was I going",
+            "going"
+        ],
+        correct: 2,
+        explanation: "Indirect questions follow statement word order instead of question word order. Therefore, the correct expression is 'where I was going', not 'where was I going'."
+    },
+    {
+        question: "పియాజే సిద్ధాంతంలో Assimilation అంటే ఏమిటి?",
+        options: [
+            "కొత్త అనుభవాలకు అనుగుణంగా మానసిక నిర్మాణాన్ని మార్చడం",
+            "ఇప్పటికే ఉన్న మానసిక నిర్మాణంలో కొత్త సమాచారాన్ని చేర్చడం",
+            "నేర్చుకున్న విషయాన్ని మరచిపోవడం",
+            "పునర్బలం ద్వారా ప్రవర్తన మార్పు"
+        ],
+        correct: 1,
+        explanation: "Assimilationలో కొత్త సమాచారాన్ని ఇప్పటికే ఉన్న స్కీమా లేదా మానసిక నిర్మాణంలోనే కలిపి అర్థం చేసుకుంటారు. కొత్త సమాచారం కోసం స్కీమాను మార్చాల్సిన అవసరం ఉండదు."
+    },
+    {
+        question: "Accommodation (Piaget) యొక్క సరైన వివరణ ఏది?",
+        options: [
+            "కొత్త సమాచారాన్ని పాత స్కీమాలో చేర్చడం",
+            "అనుభవానికి అనుగుణంగా స్కీమాను సవరించడం",
+            "జ్ఞాపకశక్తిని పెంచడం",
+            "ప్రవర్తనను శిక్ష ద్వారా నియంత్రించడం"
+        ],
+        correct: 1,
+        explanation: "Accommodationలో కొత్త అనుభవాలు పాత స్కీమాతో సరిపోకపోతే, వ్యక్తి తన మానసిక నిర్మాణాన్ని సవరించి కొత్త సమాచారాన్ని అర్థం చేసుకునే విధంగా మార్పులు చేసుకుంటాడు."
+    },
+    {
+        question: "క్రింది వాటిలో Attention యొక్క సరైన నిర్వచనం ఏది?",
+        options: [
+            "అనుభవాలకు అర్థం ఇవ్వడం",
+            "ఒక నిర్దిష్ట ఉద్దీపనపై చైతన్యాన్ని కేంద్రీకరించడం",
+            "సమస్యలను పరిష్కరించే సామర్థ్యం",
+            "గత అనుభవాలను గుర్తుంచుకోవడం"
+        ],
+        correct: 1,
+        explanation: "Attention అనేది అనేక ఉద్దీపనలలో ఒక ముఖ్యమైన ఉద్దీపనపై మనస్సు మరియు చైతన్యాన్ని కేంద్రీకరించే మానసిక ప్రక్రియ. సమర్థవంతమైన అభ్యాసానికి ఇది అత్యంత అవసరం."
+    },
+    {
+        question: "Perception ప్రధానంగా దేనిని సూచిస్తుంది?",
+        options: [
+            "సమాచారాన్ని గుర్తుంచుకోవడం",
+            "ఇంద్రియాల ద్వారా వచ్చిన సమాచారానికి అర్థం ఇవ్వడం",
+            "ప్రేరణను కలిగించడం",
+            "అభ్యాసాన్ని కొలవడం"
+        ],
+        correct: 1,
+        explanation: "Perception అనేది కళ్ళు, చెవులు వంటి ఇంద్రియాల ద్వారా వచ్చిన సమాచారాన్ని మెదడు విశ్లేషించి దానికి అర్థవంతమైన రూపం ఇవ్వడం జరిగే మానసిక ప్రక్రియ."
+    },
+    {
+        question: "క్రింది వాటిలో Aptitude Test యొక్క ప్రధాన ఉద్దేశ్యం ఏది?",
+        options: [
+            "ప్రస్తుత విద్యా ఫలితాలను కొలవడం",
+            "భవిష్యత్తులో నిర్దిష్ట రంగంలో విజయసామర్థ్యాన్ని అంచనా వేయడం",
+            "వ్యక్తిత్వాన్ని కొలవడం",
+            "మానసిక ఆరోగ్యాన్ని కొలవడం"
+        ],
+        correct: 1,
+        explanation: "Aptitude Test వ్యక్తి భవిష్యత్తులో సంగీతం, గణితం, భాష లేదా ఇతర నిర్దిష్ట రంగాలలో ఎంత విజయవంతంగా ఉండగలడో అంచనా వేయడానికి ఉపయోగించబడుతుంది."
+    },
+    {
+        question: "విద్యార్థి ప్రవర్తనను తగ్గించేందుకు అవాంఛనీయ ఫలితాన్ని ఇవ్వడం ఏమని అంటారు?",
+        options: [
+            "Positive Reinforcement",
+            "Negative Reinforcement",
+            "Punishment",
+            "Shaping"
+        ],
+        correct: 2,
+        explanation: "Punishmentలో అవాంఛిత ప్రవర్తన తర్వాత అసహ్యకరమైన పరిణామం లేదా శిక్ష ఇవ్వడం ద్వారా ఆ ప్రవర్తన మళ్లీ జరగకుండా తగ్గించే ప్రయత్నం చేస్తారు."
+    },
+    {
+        question: "Identify the error.\n\nEveryone in the class know the answer.",
+        options: [
+            "Everyone",
+            "in the class",
+            "know",
+            "the answer"
+        ],
+        correct: 2,
+        explanation: "The pronoun 'Everyone' is singular and always takes a singular verb. Therefore, 'know' should be replaced with 'knows' in the sentence."
+    },
+    {
+        question: "Identify the error.\n\nThe scenery are very beautiful.",
+        options: [
+            "scenery",
+            "are",
+            "very",
+            "beautiful"
+        ],
+        correct: 1,
+        explanation: "The noun 'scenery' is an uncountable singular noun. Hence it requires the singular verb 'is' instead of the plural verb 'are'."
+    },
+    {
+        question: "Identify the error.\n\nShe is married with a doctor.",
+        options: [
+            "is",
+            "married",
+            "with",
+            "doctor"
+        ],
+        correct: 2,
+        explanation: "The adjective 'married' is followed by the preposition 'to', not 'with'. Therefore, the correct expression is 'married to a doctor'."
+    },
+    {
+        question: "Identify the error.\n\nI look forward to meet you.",
+        options: [
+            "look",
+            "forward",
+            "to meet",
+            "you"
+        ],
+        correct: 2,
+        explanation: "The phrase 'look forward to' is always followed by a noun or gerund. Therefore, 'to meet' should be replaced with 'meeting'."
+    },
+    {
+        question: "Identify the error.\n\nOne should do their duty sincerely.",
+        options: [
+            "One",
+            "should",
+            "their",
+            "duty"
+        ],
+        correct: 2,
+        explanation: "In formal grammar, the pronoun referring to 'One' should remain singular. Therefore, 'their' should be replaced with 'one's' or 'his or her'."
+    },
+    {
+        question: "Identify the error.\n\nNeither Ravi nor his friends has completed the work.",
+        options: [
+            "Neither",
+            "Ravi",
+            "has",
+            "completed"
+        ],
+        correct: 2,
+        explanation: "In 'Neither...nor' constructions, the verb agrees with the subject nearest to it. Since 'friends' is plural, the correct verb is 'have'."
+    },
+    {
+        question: "Identify the error.\n\nHe is one of the best teachers who teaches English.",
+        options: [
+            "one",
+            "best",
+            "teaches",
+            "English"
+        ],
+        correct: 2,
+        explanation: "The relative pronoun 'who' refers to the plural noun 'teachers'. Therefore, the verb should also be plural: 'teach', not 'teaches'."
+    },
+    {
+        question: "Identify the error.\n\nThe news are encouraging.",
+        options: [
+            "news",
+            "are",
+            "encouraging",
+            "No error"
+        ],
+        correct: 1,
+        explanation: "Although 'news' ends with 's', it is a singular uncountable noun. Therefore, the correct verb is 'is', making 'are' the grammatical error."
+    },
+    {
+        question: "Identify the error.\n\nShe has been living here from 2021.",
+        options: [
+            "has been",
+            "living",
+            "from",
+            "2021"
+        ],
+        correct: 2,
+        explanation: "Use 'since' with a specific point in time such as a year or date. Therefore, 'from 2021' should be replaced with 'since 2021'."
+    },
+    {
+        question: "Identify the error.\n\nIf I would have known, I would have informed you earlier.",
+        options: [
+            "would have known",
+            "would have informed",
+            "earlier",
+            "No error"
         ],
         correct: 0,
-        explanation: "The phrasal verb 'look into' means to investigate or examine something carefully. It fits the context of examining a complaint before taking action."
-    },
-    {
-        question: 'Choose the correct synonym of "Diligent."',
-        options: [
-            "Lazy",
-            "Careless",
-            "Hardworking",
-            "Proud"
-        ],
-        correct: 2,
-        explanation: "The word 'Diligent' describes someone who works carefully, consistently and with great effort. 'Hardworking' is its closest synonym among the given choices."
-    },
-    {
-        question: 'Choose the correct idiom.\n\n"Burn the midnight oil" means',
-        options: [
-            "Waste electricity",
-            "Work or study late into the night",
-            "Sleep early",
-            "Travel at night"
-        ],
-        correct: 1,
-        explanation: "The idiom 'burn the midnight oil' refers to studying or working late into the night, usually to complete important tasks or prepare for examinations."
-    },
-    {
-        question: "Choose the correct one-word substitution.\n\nOne who studies the origin of words",
-        options: [
-            "Archaeologist",
-            "Lexicographer",
-            "Etymologist",
-            "Philatelist"
-        ],
-        correct: 2,
-        explanation: "An etymologist studies the origin, historical development and evolution of words. A lexicographer compiles dictionaries, while the other options refer to different fields."
-    },
-    {
-        question: 'Choose the correct synonym of "Transparent."',
-        options: [
-            "Opaque",
-            "Clear",
-            "Rough",
-            "Narrow"
-        ],
-        correct: 1,
-        explanation: "The word 'Transparent' means allowing light to pass through so objects can be seen clearly. Therefore, 'Clear' is the correct synonym."
-    },
-    {
-        question: "Open Educational Resources (OER) are primarily intended to",
-        options: [
-            "Restrict access to educational content",
-            "Promote free access, reuse and adaptation of learning resources",
-            "Replace classroom teaching completely",
-            "Provide only paid certification"
-        ],
-        correct: 1,
-        explanation: "Open Educational Resources are openly licensed learning materials that encourage free access, adaptation, reuse and sharing to improve educational opportunities for everyone."
-    },
-    {
-        question: "Which ICT platform is specifically developed by the Government of India to support digital school education?",
-        options: [
-            "Moodle",
-            "Coursera",
-            "DIKSHA",
-            "Blackboard"
-        ],
-        correct: 2,
-        explanation: "DIKSHA is the Government of India's national digital infrastructure for school education, providing e-content, teacher training, assessments and QR-enabled learning resources."
-    },
-    {
-        question: "Which of the following best defines Educational Technology?",
-        options: [
-            "Teaching only through computers",
-            "Scientific application of methods, media and resources to improve learning",
-            "Replacing teachers with digital devices",
-            "Conducting examinations online"
-        ],
-        correct: 1,
-        explanation: "Educational Technology applies scientific principles, instructional methods, media and technological resources systematically to improve teaching effectiveness and enhance student learning outcomes."
-    },
-    {
-        question: "A teacher asks students to watch an instructional video, participate in an online discussion and submit assignments digitally. This approach mainly promotes",
-        options: [
-            "Passive learning",
-            "ICT-enriched learning",
-            "Mechanical memorization",
-            "Printed instruction"
-        ],
-        correct: 1,
-        explanation: "ICT-enriched learning integrates digital technologies such as videos, online discussions and electronic assignments to create interactive, collaborative and engaging learning experiences."
-    },
-    {
-        question: "Which of the following is an example of a Massive Open Online Course (MOOC)?",
-        options: [
-            "SWAYAM",
-            "MS Paint",
-            "Windows Explorer",
-            "Adobe Reader"
-        ],
-        correct: 0,
-        explanation: "SWAYAM is India's official Massive Open Online Course platform that provides free online courses from schools to higher education through the Internet."
-    },
-    {
-        question: "Which feature of Moodle helps teachers continuously monitor student learning?",
-        options: [
-            "Attendance register only",
-            "Gradebook and quiz reports",
-            "Screen resolution",
-            "File compression"
-        ],
-        correct: 1,
-        explanation: "Moodle's Gradebook and quiz reports allow teachers to monitor learner performance, analyze progress, identify learning gaps and provide timely academic feedback."
-    },
-    {
-        question: "Educational multimedia becomes most effective when",
-        options: [
-            "Only text is presented",
-            "Multiple media are integrated according to learning objectives",
-            "Only animation is used",
-            "Audio is completely avoided"
-        ],
-        correct: 1,
-        explanation: "Educational multimedia is most effective when text, audio, images, animation and video are purposefully combined to support instructional objectives and learner understanding."
-    },
-    {
-        question: "Which statement best reflects the purpose of ICT integration in education?",
-        options: [
-            "To reduce teacher-student interaction",
-            "To improve learning experiences through appropriate technology",
-            "To eliminate classroom teaching",
-            "To replace textbooks permanently"
-        ],
-        correct: 1,
-        explanation: "ICT integration aims to enrich teaching and learning through appropriate digital technologies, improving engagement, collaboration, accessibility and overall educational outcomes without replacing teachers."
+        explanation: "In third conditional sentences, the if-clause uses the past perfect tense. Therefore, 'would have known' should be replaced with 'had known'."
     }
 ];
