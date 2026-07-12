@@ -712,6 +712,38 @@ main {
     transform: translateY(-1px);
 }
 
+/* ─── RESULT ACTIONS ──────────────────────────── */
+.result-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.download-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--white);
+    color: var(--teal);
+    border: 2px solid var(--teal);
+    border-radius: var(--radius-md);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .15s;
+    box-shadow: 0 3px 14px rgba(13, 115, 119, 0.12);
+}
+
+.download-btn:hover {
+    background: var(--teal);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
 /* ─── FOOTER ─────────────────────────────────── */
 footer {
     position: relative;
