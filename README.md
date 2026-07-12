@@ -17,10 +17,9 @@ This project didn't start perfect. It grew step by step, solving one problem at 
 **The Problem:** The quiz looked ugly and didn't show where he was going in the test. The explanations were in the middle of the screen, making it hard to read them while answering.
 
 **What I Fixed:**
-- Added a "Goal" display (120+ marks target) to keep him motivated
+- Added a "Goal" display (120+ marks target) and also a quote to keep him motivated
 - Fixed the explanation box to stay at the bottom - much easier to read
-- Added a "Next Question" button for smooth navigation
-- Changed how the app loads so it works properly when deployed
+- Added a Fixed "Next Question" button for smooth navigation
 - Added subject pills/badges so you can see what topic each question covers
 
 ### Stage 3: The Smart Options Lock Feature (June 14, 2026)
@@ -64,25 +63,6 @@ This helps him identify weak areas and focus his preparation.
 8. After finishing all questions, see your score report
 9. Download the PDF report to track your mistakes
 
-## Features at a Glance
-
-- **Personalized Experience:** Shows your name and motivational messages in Telugu
-- **30 Days of Content:** Over 30 complete days of APTET practice questions
-- **Mock Tests:** Weekly full-length mock tests to simulate exam conditions
-- **Smart Options Lock:** 10-second timer on options to prevent rushed guessing - gives enough time to think without rushing
-- **Live Progress:** See your score and wrong answers as you go
-- **Detailed Reports:** Get PDF reports with your mistake analysis
-- **Subject Organization:** Questions organized by topics with visual badges
-- **60-Second Timer:** Each question has a 60-second time limit, just like the real exam
-- **Clean Design:** Easy-to-read interface that works on all devices
-
-## Technology Used
-
-- **JavaScript (86.7%):** Powers all the quiz logic, timers, and interactivity
-- **CSS (10%):** Creates a clean, modern, responsive design
-- **HTML (3.3%):** Provides the structure and layout
-- **PDF Generation:** For downloading mistake reports
-
 ## Why I Built This
 
 My father was preparing for an important exam. There are many online platforms, but they don't feel personal. I wanted to build something that:
@@ -107,17 +87,10 @@ So I started with one day of quizzes and kept improving it based on what he need
 ## Current Status
 
 - **30+ days of APTET questions:** Ready for practice
-- **Mock tests:** Multiple full-length tests included
+- **Mock tests:** Multiple full-length 150 MCQs tests included
 - **Active development:** Still being improved based on feedback
 - **Live and ready:** Can be accessed anytime, anywhere
 - **Options timer:** Optimized to 10 seconds for better exam preparation
-
-## What's Next
-
-- Adding more mock tests
-- Better mistake tracking across multiple quizzes
-- Performance analysis to show which topics need the most work
-- User accounts to save progress
 
 ## A Message
 
