@@ -96,7 +96,7 @@ So I started with one day of quizzes and kept improving it based on what he need
 
 This app represents my commitment to helping my father succeed in his APTET exam. Every feature was added because he needed it. Every bug was fixed because it mattered for his preparation. Every day of content was added with the goal of making him confident on exam day.
 
-If you're using this app to prepare for APTET, remember: consistency beats intensity. Use it every day, read the explanations carefully, and review your mistake reports. You'll see improvement.
+If you're using this app to prepare for APTET, **Remember: Consistency beats Intensity**. Use it every day, read the explanations carefully, and review your mistake reports. You'll see improvement.
 
 ## Built with dedication by your Son
 
