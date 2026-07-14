@@ -119,7 +119,7 @@ function refreshTimerUI() {
 
     // Handle options locking logic
     const lockNotice = document.getElementById('lock-notice');
-    const waitTime = timeLeft - 50; // 60 - 45 = 15
+    const waitTime = timeLeft - 50; // 60 - 50 = 10
 
     if (waitTime > 0 && !answered) {
         if (lockNotice) {
@@ -195,7 +195,7 @@ function showBottomBar(explanation) {
     const bar = document.getElementById('bottom-bar');
     document.getElementById('exp-text').textContent = explanation;
     const isLast = (qIdx + 1 >= QUESTIONS.length);
-    document.getElementById('next-btn').textContent = isLast ? 'See Results →' : 'Next Question →';
+    document.getElementById('next-btn').textContent = isLast ? 'See Results' : 'Next Question';
 
     bar.classList.add('visible');
 

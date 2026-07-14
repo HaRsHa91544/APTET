@@ -103,7 +103,7 @@ header {
     background: var(--white);
     border: 1.5px solid var(--border);
     border-radius: 100px;
-    padding: 7px 16px;
+    padding: 0.5rem 1rem;
     font-size: 0.78rem;
     font-weight: 600;
     color: var(--ink-mid);
@@ -117,7 +117,7 @@ header {
     height: 8px;
     background: var(--coral);
     border-radius: 50%;
-    animation: blink 1.6s ease infinite;
+    animation: blink 2s ease infinite;
 }
 
 @keyframes blink {
@@ -144,18 +144,18 @@ header {
     line-height: 1.5;
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .telugu-motivation .goal-badge {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.5rem;
     background: linear-gradient(100deg, #ecfdf5, #fff7ed);
     border: 1.5px solid #a7f3d0;
     border-radius: 100px;
-    padding: 3px 12px;
+    padding: 0.25rem 0.5rem;
     font-size: 0.8rem;
     font-weight: 800;
     color: var(--teal);
@@ -167,7 +167,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 14px;
+    margin-top: 1rem;
 }
 
 .subject-tag {
@@ -351,7 +351,7 @@ main {
     border: 1.5px solid var(--border);
     border-radius: var(--radius-lg);
     padding: 26px 26px 24px 34px;
-    margin-bottom: 14px;
+    margin-bottom: 1rem;
     position: relative;
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
@@ -364,16 +364,15 @@ main {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 5px;
+    width: 3px;
     background: linear-gradient(180deg, var(--teal), var(--coral));
-    border-radius: 4px 0 0 4px;
 }
 
 .q-card h2 {
     font-family: 'DM Serif Display', serif;
     font-size: clamp(1rem, 3vw, 1.22rem);
-    font-weight: 400;
-    line-height: 1.6;
+    font-weight: 500;
+    line-height: 1.8;
     color: var(--ink);
 }
 
@@ -387,7 +386,7 @@ main {
     background: #fff9eb;
     padding: 6px 16px;
     border-radius: 100px;
-    border: 1px solid #fef3c7;
+    border: 1px solid var(--amber);
     display: block;
     width: fit-content;
     animation: fadeUp .3s ease both;
@@ -401,17 +400,17 @@ main {
 .options-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .opt {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 1rem;
     background: var(--white);
     border: 1.5px solid var(--border);
     border-radius: var(--radius-md);
-    padding: 14px 18px;
+    padding: 1rem 1.5rem;
     cursor: pointer;
     font-size: 0.92rem;
     color: var(--ink);
@@ -438,13 +437,12 @@ main {
     color: var(--ink-light);
     flex-shrink: 0;
     background: var(--page-bg);
-    transition: background .15s, border-color .15s, color .15s;
+    transition: all 0.3s ease-in-out;
 }
 
 .opt:not(:disabled):hover {
     border-color: var(--teal);
     background: #f0fafb;
-    transform: translateX(3px);
 }
 
 .opt:not(:disabled):hover .opt-key {
@@ -520,10 +518,11 @@ main {
     background: #fffbeb;
     border: 1.5px solid #fde68a;
     border-radius: var(--radius-md);
-    padding: 12px 16px;
+    padding: 0.5rem 1rem;
     font-size: 0.85rem;
+    font-weight: 600;
     line-height: 1.7;
-    color: #78350f;
+    color: var(--teal);
 }
 
 .exp-head {
@@ -532,22 +531,22 @@ main {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #92400e;
-    margin-bottom: 5px;
 }
 
 /* Next button */
 .next-btn {
     width: 100%;
-    padding: 14px 20px;
+    padding: 1rem 1.5rem;
     background: linear-gradient(100deg, var(--teal) 0%, var(--coral) 100%);
     color: var(--white);
     border: none;
     border-radius: var(--radius-md);
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: 0.7;
     cursor: pointer;
-    transition: opacity .15s, transform .15s;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 3px 14px rgba(13, 115, 119, 0.25);
 }
 
