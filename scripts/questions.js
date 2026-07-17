@@ -1,584 +1,556 @@
 const SUBJECTS = [
-    "Tough Psychology"
+    "Engilsh Grammer"
 ];
 
 const QUESTIONS = [
     {
-        question: "...'వృద్ధి (Growth)' మరియు 'అభివృద్ధి (Development)' మధ్య సరైన తేడా ఏది?",
+        question: "Identify the part containing the error.\n\nEach of the students (A) / have submitted (B) / their assignment (C) / on time. (D)",
         options: [
-            "వృద్ధి గుణాత్మక మార్పు, అభివృద్ధి పరిమాణాత్మక మార్పు",
-            "వృద్ధి పరిమాణాత్మక మార్పు, అభివృద్ధి పరిమాణాత్మక మరియు గుణాత్మక మార్పుల సమ్మేళనం",
-            "రెండూ ఒకే అర్థాన్ని సూచిస్తాయి",
-            "అభివృద్ధి కేవలం శారీరక మార్పులను మాత్రమే సూచిస్తుంది"
+            "Each of the students",
+            "have submitted",
+            "their assignment",
+            "on time"
         ],
         correct: 1,
-        explanation:
-            "వృద్ధి అనేది శరీర పరిమాణంలో జరిగే కొలవగల మార్పు. అభివృద్ధి అనేది శారీరక, మానసిక, సామాజిక, భావోద్వేగ అంశాల్లో జరిగే పరిమాణాత్మక మరియు గుణాత్మక మార్పుల సమగ్ర ప్రక్రియ."
+        explanation: "The subject 'Each' is singular, even though it refers to many students. Therefore, the singular verb 'has submitted' must be used instead of 'have submitted' to maintain subject-verb agreement."
     },
     {
-        question:
-            "ఒక విద్యార్థికి గణితంలో సహజ సామర్థ్యం ఉన్నప్పటికీ ఇతర విషయాల్లో సాధారణ స్థాయి ప్రతిభ ఉంది. ఇది దేనికి ఉదాహరణ?",
+        question: "Choose the correct replacement.\n\nShe is good ___ Mathematics.",
         options: [
-            "మేధస్సు (Intelligence)",
-            "అభ్యాసం (Learning)",
-            "సామర్థ్యం (Aptitude)",
-            "ప్రేరణ (Motivation)"
+            "in",
+            "on",
+            "at",
+            "with"
         ],
         correct: 2,
-        explanation:
-            "సామర్థ్యం (Aptitude) అనేది ఒక నిర్దిష్ట రంగంలో భవిష్యత్తులో విజయాన్ని సాధించే సహజ సామర్థ్యాన్ని సూచిస్తుంది. ఇది సాధారణ మేధస్సుతో సమానం కాదు."
+        explanation: "The adjective 'good' is commonly followed by the preposition 'at' when referring to someone's skill or ability in a subject, activity, or task. Therefore, 'good at Mathematics' is correct."
     },
     {
-        question:
-            "క్రింది వాటిలో 'Guidance' యొక్క ప్రధాన లక్ష్యం ఏది?",
+        question: "Choose the correct passive form.\n\nThey will complete the project next week.",
         options: [
-            "తీవ్రమైన వ్యక్తిగత సమస్యలను పరిష్కరించడం",
-            "వ్యక్తికి సరైన నిర్ణయం తీసుకునేందుకు దిశానిర్దేశం చేయడం",
-            "వైద్య చికిత్స అందించడం",
-            "ప్రవర్తనను శిక్ష ద్వారా మార్చడం"
-        ],
-        correct: 1,
-        explanation:
-            "Guidance వ్యక్తి విద్య, వృత్తి మరియు వ్యక్తిగత జీవితంలో సరైన నిర్ణయాలు తీసుకోవడానికి సమాచారం, సలహా మరియు దిశానిర్దేశం అందించే ప్రక్రియ."
-    },
-    {
-        question:
-            "వ్యక్తిగత భావోద్వేగ సమస్యలను ముఖాముఖి చర్చల ద్వారా పరిష్కరించే ప్రక్రియను ఏమంటారు?",
-        options: [
-            "మూల్యాంకనం",
-            "బోధన",
-            "కౌన్సెలింగ్ (Counselling)",
-            "మార్గదర్శనం (Guidance)"
+            "The project is completed next week.",
+            "The project will complete next week.",
+            "The project will be completed next week.",
+            "The project has been completed next week."
         ],
         correct: 2,
-        explanation:
-            "Counselling అనేది వ్యక్తిగత, భావోద్వేగ, సామాజిక లేదా ప్రవర్తనా సమస్యలను గోప్యతతో చర్చించి పరిష్కార మార్గాలను కనుగొనే సహాయక ప్రక్రియ."
+        explanation: "A future tense active sentence changes into passive using 'will be + past participle'. Hence, 'The project will be completed next week' is the correct passive construction."
     },
     {
-        question:
-            "ఒక విద్యార్థి పరీక్షలో తక్కువ మార్కులు సాధించినా, భావనలను బాగా అర్థం చేసుకున్నాడు. ఈ పరిస్థితి ఏ జంట మధ్య తేడాను సూచిస్తుంది?",
+        question: "Choose the correct indirect speech.\n\nThe teacher said, \"Work hard.\"",
         options: [
-            "మేధస్సు – సామర్థ్యం",
-            "అభ్యాసం – ప్రదర్శన",
-            "వృద్ధి – అభివృద్ధి",
-            "మూల్యాంకనం – అంచనా"
-        ],
-        correct: 1,
-        explanation:
-            "అభ్యాసం (Learning) జరిగినప్పటికీ, ప్రదర్శన (Performance) ఆరోగ్యం, ఆందోళన, పరీక్షా పరిస్థితులు వంటి కారణాల వల్ల తక్కువగా ఉండవచ్చు."
-    },
-    {
-        question:
-            "బోధనా ప్రక్రియలో విద్యార్థి అభ్యాస పురోగతిని నిరంతరం గమనించి సవరణలు చేయడానికి ఉపయోగించే ప్రక్రియ ఏది?",
-        options: [
-            "సమాపన మూల్యాంకనం (Summative Evaluation)",
-            "నిర్మాణాత్మక మూల్యాంకనం (Formative Evaluation)",
-            "వార్షిక పరీక్ష",
-            "ప్రవేశ పరీక్ష"
-        ],
-        correct: 1,
-        explanation:
-            "Formative Evaluation బోధన జరుగుతున్న సమయంలో విద్యార్థి పురోగతిని నిరంతరం పరిశీలించి, అవసరమైన సవరణలు చేయడానికి ఉపయోగపడుతుంది."
-    },
-    {
-        question:
-            "పరీక్ష ముగిసిన తర్వాత విద్యార్థి సాధించిన మొత్తం ఫలితాన్ని నిర్ణయించడానికి నిర్వహించే మూల్యాంకనం ఏది?",
-        options: [
-            "నిర్ధారణాత్మక మూల్యాంకనం",
-            "నిర్మాణాత్మక మూల్యాంకనం",
-            "సమాపన మూల్యాంకనం",
-            "స్వీయ మూల్యాంకనం"
+            "The teacher said that work hard.",
+            "The teacher advised to work hard.",
+            "The teacher advised the students to work hard.",
+            "The teacher said work hard."
         ],
         correct: 2,
-        explanation:
-            "Summative Evaluation అనేది కోర్సు లేదా బోధన పూర్తయిన తర్వాత విద్యార్థి మొత్తం అభ్యాస ఫలితాన్ని నిర్ణయించడానికి నిర్వహించే తుది మూల్యాంకనం."
+        explanation: "Imperative sentences expressing advice are reported using 'advised + object + to + base verb'. Including the listener makes the reported speech grammatically complete and meaningful."
     },
     {
-        question:
-            "తరగతిలో బాగా సమాధానం చెప్పిన విద్యార్థికి ఉపాధ్యాయుడు ప్రశంసించడం ఏ సిద్ధాంతానికి ఉదాహరణ?",
+        question: "Identify the incorrect part.\n\nNeither of the boys (A) / were willing (B) / to accept (C) / the responsibility. (D)",
         options: [
-            "శిక్ష (Punishment)",
-            "ప్రతికూల పునర్బలనం",
-            "అనుకూల పునర్బలనం (Positive Reinforcement)",
-            "నిర్మూలనం (Extinction)"
+            "Neither of the boys",
+            "were willing",
+            "to accept",
+            "the responsibility"
+        ],
+        correct: 1,
+        explanation: "The pronoun 'Neither' is singular and requires a singular verb. Therefore, 'was willing' is grammatically correct instead of 'were willing' in this sentence."
+    },
+    {
+        question: "Read the passage and answer.\n\nRavi was known for his punctuality. Every day, he reached school fifteen minutes before the first bell. One rainy morning, however, he arrived late because a large tree had fallen across the road. Instead of returning home, he helped local people remove the branches before continuing to school. Though he reached after the assembly, his teacher appreciated his sense of responsibility.\n\nWhy was Ravi late to school?",
+        options: [
+            "He missed the bus.",
+            "He overslept.",
+            "A tree blocked the road.",
+            "His bicycle broke down."
         ],
         correct: 2,
-        explanation:
-            "మంచి ప్రవర్తన తర్వాత ప్రశంస లేదా బహుమతి ఇవ్వడం వల్ల ఆ ప్రవర్తన మరింత పెరుగుతుంది. దీనినే అనుకూల పునర్బలనం అంటారు."
+        explanation: "The passage clearly mentions that Ravi was delayed because a large tree had fallen across the road, preventing normal movement until the branches were removed."
     },
     {
-        question:
-            "విద్యార్థి సమయానికి హోంవర్క్ పూర్తి చేసినప్పుడు అదనపు పనిని రద్దు చేశారు. ఇది ఏ విధమైన పునర్బలనం?",
+        question: "Read the passage and answer.\n\nWhich quality best describes Ravi?",
         options: [
-            "అనుకూల పునర్బలనం",
-            "ప్రతికూల పునర్బలనం",
-            "అనుకూల శిక్ష",
-            "ప్రతికూల శిక్ష"
+            "Careless",
+            "Responsible",
+            "Impatient",
+            "Lazy"
         ],
         correct: 1,
-        explanation:
-            "ఇష్టంలేని పనిని తొలగించడం ద్వారా మంచి ప్రవర్తనను పెంచితే దానిని ప్రతికూల పునర్బలనం (Negative Reinforcement) అంటారు."
+        explanation: "Ravi chose to help local people clear the road before going to school. His willingness to help others reflects responsibility rather than carelessness or laziness."
     },
     {
-        question:
-            "ప్రవర్తన పునరావృతం కాకుండా తగ్గించడానికి ఉపయోగించే ప్రక్రియ ఏది?",
+        question: "Read the passage and answer.\n\nThe teacher appreciated Ravi mainly because he",
         options: [
-            "పునర్బలనం",
-            "శిక్ష",
-            "ప్రేరణ",
-            "అనుకరణ"
-        ],
-        correct: 1,
-        explanation:
-            "శిక్ష (Punishment) అనేది అనుచిత ప్రవర్తన పునరావృతం కాకుండా దాని సంభవాన్ని తగ్గించడానికి ఉపయోగించే ప్రవర్తనా సాంకేతికత."
-    },
-    {
-        question:
-            "సమగ్ర విద్యలో (Inclusive Education) విద్యార్థి పాఠ్యాంశం స్థాయిని మార్చకుండా బోధనా విధానంలో మాత్రమే మార్పులు చేయడం ఏమని అంటారు?",
-        options: [
-            "మార్పు (Modification)",
-            "అనుకూలీకరణ (Accommodation)",
-            "పునర్బలనం",
-            "పునరావాసం"
-        ],
-        correct: 1,
-        explanation:
-            "Accommodationలో బోధనా విధానం, పరీక్ష విధానం లేదా నేర్చుకునే వాతావరణంలో మార్పులు చేస్తారు. కానీ అభ్యాస లక్ష్యాలు మారవు."
-    },
-    {
-        question:
-            "విద్యార్థి సామర్థ్యానికి అనుగుణంగా పాఠ్య లక్ష్యాలను తగ్గించడం లేదా మార్చడం ఏమని అంటారు?",
-        options: [
-            "Accommodation",
-            "Guidance",
-            "Modification",
-            "Assessment"
+            "reached school early.",
+            "obeyed traffic rules.",
+            "showed social responsibility.",
+            "completed his homework."
         ],
         correct: 2,
-        explanation:
-            "Modificationలో విద్యార్థి అవసరాలకు అనుగుణంగా పాఠ్య లక్ష్యాలు, ప్రమాణాలు లేదా అభ్యాస ఫలితాలను మార్చడం జరుగుతుంది."
+        explanation: "Although Ravi arrived late, he first helped people remove the fallen tree branches. His teacher appreciated this responsible social behavior rather than his punctuality or academic work."
     },
     {
-        question:
-            "'beautiful' అనే పదాన్ని విద్యార్థి తరచుగా 'dueatiful'గా వ్రాస్తున్నాడు. ఇది సాధారణంగా ఏ సమస్యకు సంకేతం?",
+        question: "Read the passage and answer.\n\nThe word 'punctuality' means",
         options: [
-            "డిస్గ్రాఫియా (Dysgraphia)",
-            "డిస్లెక్సియా (Dyslexia)",
-            "శ్రవణ లోపం",
-            "మేధో వైకల్యం"
-        ],
-        correct: 1,
-        explanation:
-            "డిస్లెక్సియా ఉన్న విద్యార్థులు పదాలను చదవడం, గుర్తించడం, అక్షరాల క్రమాన్ని సరిగ్గా ఉంచడం లేదా స్పెల్లింగ్‌లో తరచూ పొరపాట్లు చేస్తారు."
-    },
-    {
-        question:
-            "డిస్గ్రాఫియా (Dysgraphia) ప్రధానంగా దేనితో సంబంధం కలిగి ఉంటుంది?",
-        options: [
-            "చదవడంలో ఇబ్బంది",
-            "రాయడంలో ఇబ్బంది",
-            "గణిత గణనలో ఇబ్బంది",
-            "వినికిడిలో ఇబ్బంది"
-        ],
-        correct: 1,
-        explanation:
-            "డిస్గ్రాఫియా అనేది వ్రాత నైపుణ్యానికి సంబంధించిన అభ్యాస వైకల్యం. అక్షరాలను సరిగా రాయడం, స్పష్టంగా వ్రాయడం మరియు వ్రాత నిర్వహణలో ఇబ్బందులు ఉంటాయి."
-    },
-    {
-        question:
-            "క్రింది వాక్యాలను పరిశీలించండి.\n\n1. Assessment అనేది సమాచార సేకరణ ప్రక్రియ.\n2. Evaluation అనేది సేకరించిన సమాచారంపై విలువ నిర్ణయం చేయడం.\n\nపై వాక్యాలలో సరైనది ఏది?",
-        options: [
-            "1 మాత్రమే",
-            "2 మాత్రమే",
-            "1 మరియు 2 రెండూ",
-            "1, 2 రెండూ తప్పు"
+            "honesty",
+            "kindness",
+            "being on time",
+            "bravery"
         ],
         correct: 2,
-        explanation:
-            "Assessment ద్వారా అభ్యాసానికి సంబంధించిన సమాచారం సేకరిస్తారు. Evaluation ద్వారా ఆ సమాచారాన్ని విశ్లేషించి విద్యార్థి పనితీరుపై విలువ నిర్ణయం తీసుకుంటారు."
-    }, {
-        question: "క్రింది వాటిలో మేధస్సు (Intelligence) గురించి సరైన వాక్యం ఏది?",
-        options: [
-            "ఇది ఒక నిర్దిష్ట వృత్తిలో మాత్రమే విజయాన్ని సూచిస్తుంది.",
-            "ఇది వ్యక్తి యొక్క సాధారణ మానసిక సామర్థ్యాన్ని సూచిస్తుంది.",
-            "ఇది కేవలం పాఠశాల మార్కులతో మాత్రమే కొలవబడుతుంది.",
-            "ఇది అభ్యాసం తరువాత మాత్రమే ఏర్పడుతుంది."
-        ],
-        correct: 1,
-        explanation: "మేధస్సు అనేది సమస్యలను పరిష్కరించడం, తార్కికంగా ఆలోచించడం, కొత్త విషయాలను నేర్చుకోవడం మరియు పరిస్థితులకు అనుగుణంగా ప్రవర్తించే సాధారణ మానసిక సామర్థ్యాన్ని సూచిస్తుంది."
+        explanation: "Punctuality refers to the habit of arriving, starting, or completing something at the expected or scheduled time. It reflects discipline and respect for time."
     },
     {
-        question: "క్రింది వాటిలో Aptitude Test యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
+        question: "Read the passage and answer.\n\nWhich statement is TRUE?",
         options: [
-            "ప్రస్తుత జ్ఞానాన్ని కొలవడం",
-            "వ్యక్తి భవిష్యత్తులో నిర్దిష్ట రంగంలో సాధించే సామర్థ్యాన్ని అంచనా వేయడం",
-            "వ్యక్తిత్వాన్ని కొలవడం",
-            "ప్రేరణ స్థాయిని కొలవడం"
-        ],
-        correct: 1,
-        explanation: "Aptitude Test వ్యక్తిలో ఉన్న సహజ సామర్థ్యాన్ని గుర్తించి, భవిష్యత్తులో నిర్దిష్ట రంగంలో విజయం సాధించే అవకాశాన్ని అంచనా వేయడానికి ఉపయోగిస్తారు."
-    },
-    {
-        question: "ఉపాధ్యాయుడు ప్రతి పాఠం తర్వాత చిన్న పరీక్ష నిర్వహించి, లోపాలను గుర్తించి వెంటనే సరిదిద్దుతున్నాడు. ఇది ఏ మూల్యాంకనానికి ఉదాహరణ?",
-        options: [
-            "సమాపన మూల్యాంకనం",
-            "నిర్మాణాత్మక మూల్యాంకనం",
-            "బాహ్య మూల్యాంకనం",
-            "వార్షిక మూల్యాంకనం"
-        ],
-        correct: 1,
-        explanation: "నిర్మాణాత్మక మూల్యాంకనం బోధన జరుగుతున్న సమయంలో విద్యార్థి పురోగతిని తెలుసుకొని వెంటనే లోపాలను సరిదిద్దడానికి ఉపాధ్యాయుడికి సహాయపడుతుంది."
-    },
-    {
-        question: "ఒక విద్యార్థి బాగా నేర్చుకున్నప్పటికీ పరీక్ష సమయంలో భయంతో సరైన సమాధానాలు రాయలేకపోయాడు. ఇది దేనికి ఉదాహరణ?",
-        options: [
-            "అభ్యాసం లేకపోవడం",
-            "ప్రదర్శన (Performance) లోపం",
-            "తక్కువ మేధస్సు",
-            "తక్కువ సామర్థ్యం"
-        ],
-        correct: 1,
-        explanation: "అభ్యాసం జరిగినప్పటికీ పరీక్ష భయం, ఒత్తిడి లేదా ఇతర పరిస్థితుల వల్ల ప్రదర్శన తగ్గవచ్చు. దీనిని Performance లోపం అంటారు."
-    },
-    {
-        question: "క్రింది వాక్యాలను పరిశీలించండి.\n\n1. Guidance సాధారణంగా నివారణాత్మక (Preventive).\n2. Counselling సాధారణంగా చికిత్సాత్మక (Remedial/Therapeutic).\n\nసరైన సమాధానం ఏది?",
-        options: [
-            "1 మాత్రమే",
-            "2 మాత్రమే",
-            "1 మరియు 2 రెండూ",
-            "రెండూ తప్పు"
+            "Ravi returned home.",
+            "Ravi ignored the fallen tree.",
+            "Ravi helped clear the road.",
+            "Ravi reached before assembly."
         ],
         correct: 2,
-        explanation: "Guidance ముందస్తు దిశానిర్దేశం చేసి సమస్యలను నివారించడానికి ఉపయోగపడుతుంది. Counselling ఇప్పటికే ఉన్న వ్యక్తిగత లేదా భావోద్వేగ సమస్యల పరిష్కారంపై దృష్టి పెడుతుంది."
+        explanation: "The passage explicitly states that Ravi helped local people remove the branches blocking the road before continuing to school, making this the only correct statement."
     },
     {
-        question: "విద్యార్థి తరగతిలో మాట్లాడినందుకు ఉపాధ్యాయుడు అతని ఆట సమయాన్ని రద్దు చేశాడు. ఇది ఏది?",
+        question: "Choose the correct word.\n\nEducation is one of the most powerful tools _____ changing society.",
         options: [
-            "అనుకూల పునర్బలనం",
-            "ప్రతికూల పునర్బలనం",
-            "అనుకూల శిక్ష",
-            "ప్రతికూల శిక్ష"
-        ],
-        correct: 3,
-        explanation: "ఇష్టమైన అవకాశాన్ని లేదా హక్కును తొలగించడం ద్వారా అనుచిత ప్రవర్తనను తగ్గిస్తే దానిని ప్రతికూల శిక్ష (Negative Punishment) అంటారు."
-    },
-    {
-        question: "మంచి ప్రవర్తనను పెంచే ఉద్దేశ్యంతో ప్రోత్సాహాన్ని అందించే ప్రక్రియను ఏమంటారు?",
-        options: [
-            "Punishment",
-            "Reinforcement",
-            "Evaluation",
-            "Guidance"
+            "on",
+            "for",
+            "by",
+            "with"
         ],
         correct: 1,
-        explanation: "Reinforcement అనేది మంచి ప్రవర్తన తర్వాత ప్రోత్సాహం ఇవ్వడం ద్వారా అదే ప్రవర్తన మళ్లీ జరిగే అవకాశాన్ని పెంచే ప్రక్రియ."
+        explanation: "The noun 'tool' is naturally followed by the preposition 'for' when expressing purpose. Thus, 'tools for changing society' is the correct and standard expression."
     },
     {
-        question: "క్రింది వాటిలో Assessment యొక్క ముఖ్య ఉద్దేశ్యం ఏది?",
+        question: "Choose the correct word.\n\nTeachers should encourage students _____ ask questions.",
         options: [
-            "విద్యార్థికి గ్రేడ్ ఇవ్వడం",
-            "అభ్యాస సమాచారాన్ని సేకరించడం",
-            "ప్రమోషన్ నిర్ణయించడం",
-            "ఉత్తీర్ణత నిర్ణయించడం"
+            "for",
+            "to",
+            "at",
+            "of"
         ],
         correct: 1,
-        explanation: "Assessment ద్వారా విద్యార్థి అభ్యాస పురోగతి, బలాలు మరియు లోపాలకు సంబంధించిన సమాచారాన్ని సేకరించి బోధనను మెరుగుపరుస్తారు."
+        explanation: "The verb 'encourage' is followed by an object and an infinitive. Therefore, the correct structure is 'encourage students to ask questions', not any other preposition."
     },
     {
-        question: "Evaluation ప్రధానంగా దేనిపై ఆధారపడి ఉంటుంది?",
+        question: "Choose the correct replacement.\n\nNo sooner did he arrive _____ it started raining.",
         options: [
-            "ఊహ",
-            "అభిప్రాయం",
-            "Assessment ద్వారా సేకరించిన సమాచారం",
-            "విద్యార్థి ప్రవర్తన మాత్రమే"
+            "and",
+            "than",
+            "when",
+            "then"
+        ],
+        correct: 1,
+        explanation: "The fixed English expression is 'No sooner...than...'. It is used to show that one action happened immediately after another in formal English usage."
+    },
+    {
+        question: "Choose the incorrect part.\n\nOne of my friends (A) / have been selected (B) / for the national competition (C) / this year. (D)",
+        options: [
+            "One of my friends",
+            "have been selected",
+            "for the national competition",
+            "this year"
+        ],
+        correct: 1,
+        explanation: "The subject is 'One', which is singular. Therefore, the correct verb phrase is 'has been selected'. Using 'have been selected' violates subject-verb agreement."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nShe said, \"I have finished my work.\"",
+        options: [
+            "She said that she finished her work.",
+            "She said that she has finished her work.",
+            "She said that she had finished her work.",
+            "She said that she will finish her work."
         ],
         correct: 2,
-        explanation: "Evaluation అనేది Assessment ద్వారా సేకరించిన సమాచారాన్ని విశ్లేషించి విద్యార్థి పనితీరుపై విలువ నిర్ణయం తీసుకునే ప్రక్రియ."
+        explanation: "When the reporting verb is in the past, the present perfect tense generally changes to the past perfect in reported speech. Therefore, 'had finished' is correct."
     },
     {
-        question: "సమగ్ర విద్యలో Accommodation కి సరైన ఉదాహరణ ఏది?",
+        question: "Identify the part containing the error.\n\nShe (A) / does not (B) / knows (C) / the answer. (D)",
         options: [
-            "పాఠ్యాంశాన్ని సగానికి తగ్గించడం",
-            "పరీక్షకు అదనపు సమయం ఇవ్వడం",
-            "అభ్యాస లక్ష్యాలను మార్చడం",
-            "పాఠ్యపుస్తకాన్ని తొలగించడం"
-        ],
-        correct: 1,
-        explanation: "Accommodationలో అభ్యాస లక్ష్యాలు మారవు. విద్యార్థి అవసరాలకు అనుగుణంగా పరీక్ష సమయం, బోధనా పద్ధతి లేదా వాతావరణంలో మాత్రమే మార్పులు చేస్తారు."
-    },
-    {
-        question: "క్రింది వాటిలో Modification కి ఉదాహరణ ఏది?",
-        options: [
-            "పెద్ద అక్షరాల పుస్తకం ఇవ్వడం",
-            "పరీక్ష సమయాన్ని పెంచడం",
-            "పాఠ్య లక్ష్యాలను విద్యార్థి సామర్థ్యానికి అనుగుణంగా మార్చడం",
-            "ముందు బెంచ్‌లో కూర్చోబెట్టడం"
+            "She",
+            "does not",
+            "knows",
+            "the answer"
         ],
         correct: 2,
-        explanation: "Modificationలో విద్యార్థి సామర్థ్యాన్ని దృష్టిలో ఉంచుకొని పాఠ్య లక్ష్యాలు, అభ్యాస ప్రమాణాలు లేదా ఆశించిన ఫలితాలను మార్చడం జరుగుతుంది."
+        explanation: "After the auxiliary verb 'does not', the main verb must be in its base form. Therefore, 'knows' is incorrect and should be replaced with 'know'."
     },
     {
-        question: "డిస్లెక్సియా (Dyslexia) మరియు డిస్గ్రాఫియా (Dysgraphia) మధ్య ప్రధాన తేడా ఏమిటి?",
+        question: "Choose the correct option.\n\nHardly had the train left the station _____ it started raining.",
         options: [
-            "రెండూ వినికిడి సమస్యలు",
-            "డిస్లెక్సియా చదవడంలో, డిస్గ్రాఫియా వ్రాయడంలో ఇబ్బంది",
-            "రెండూ గణిత సమస్యలు",
-            "రెండూ మేధో వైకల్యాలు"
+            "than",
+            "when",
+            "then",
+            "and"
         ],
         correct: 1,
-        explanation: "డిస్లెక్సియా ప్రధానంగా చదవడం మరియు స్పెల్లింగ్‌లో ఇబ్బంది కలిగిస్తుంది. డిస్గ్రాఫియా ప్రధానంగా వ్రాయడం మరియు అక్షరాలను సరిగ్గా రాయడంలో ఇబ్బంది కలిగిస్తుంది."
+        explanation: "The correct correlative conjunction is 'Hardly... when...'. 'Than' is used with 'No sooner', making 'when' the only grammatically correct choice."
     },
     {
-        question: "క్రింది జంటలలో సరైన జత ఏది?",
+        question: "Choose the correct passive form.\n\nPeople speak English all over the world.",
         options: [
-            "Intelligence – నిర్దిష్ట సామర్థ్యం",
-            "Aptitude – సాధారణ మానసిక సామర్థ్యం",
-            "Intelligence – సాధారణ మానసిక సామర్థ్యం",
-            "Aptitude – సాధించిన విద్యా ఫలితం"
+            "English spoke all over the world.",
+            "English is spoken all over the world.",
+            "English has spoken all over the world.",
+            "English was spoken all over the world."
+        ],
+        correct: 1,
+        explanation: "The sentence is in the simple present tense. Its passive form uses 'is spoken', following the structure 'is/am/are + past participle'."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nThe officer said, \"Do not enter this room.\"",
+        options: [
+            "The officer warned us not to enter that room.",
+            "The officer said not enter this room.",
+            "The officer requested that do not enter.",
+            "The officer ordered us don't enter that room."
+        ],
+        correct: 0,
+        explanation: "Negative commands are reported using 'warned' or 'ordered' followed by an object and 'not to' plus the base verb. Option A follows the correct reporting structure."
+    },
+    {
+        question: "Identify the incorrect part.\n\nThe quality of the books (A) / were appreciated (B) / by the committee (C) / yesterday. (D)",
+        options: [
+            "The quality of the books",
+            "were appreciated",
+            "by the committee",
+            "yesterday"
+        ],
+        correct: 1,
+        explanation: "The subject is 'quality', which is singular. Therefore, the verb should also be singular. 'Were appreciated' should be corrected to 'was appreciated'."
+    },
+    {
+        question: "Why did Anita keep a notebook?",
+        options: [
+            "To write homework",
+            "To record new words",
+            "To prepare timetables",
+            "To write stories"
+        ],
+        correct: 1,
+        explanation: "The passage clearly states that Anita maintained a notebook to write down newly learned words and improve her vocabulary systematically."
+    },
+    {
+        question: "Which activity contributed MOST to Anita's vocabulary development?",
+        options: [
+            "Watching movies",
+            "Reading newspapers",
+            "Playing games",
+            "Visiting libraries"
+        ],
+        correct: 1,
+        explanation: "Reading newspapers exposed Anita to new vocabulary daily, and she reinforced learning by recording unfamiliar words in her notebook."
+    },
+    {
+        question: "The word 'significantly' is closest in meaning to",
+        options: [
+            "slightly",
+            "greatly",
+            "rarely",
+            "suddenly"
+        ],
+        correct: 1,
+        explanation: "The word 'significantly' means considerably or to a great extent. It describes a noticeable improvement in Anita's confidence over time."
+    },
+    {
+        question: "Which statement is NOT mentioned in the passage?",
+        options: [
+            "Anita listened to English news.",
+            "Anita practised using new words.",
+            "Anita joined a spoken English course.",
+            "Anita read newspapers regularly."
         ],
         correct: 2,
-        explanation: "Intelligence అనేది వ్యక్తి యొక్క సాధారణ మానసిక సామర్థ్యం. Aptitude అనేది ఒక నిర్దిష్ట రంగంలో భవిష్యత్తు విజయానికి సంబంధించిన సహజ సామర్థ్యం."
+        explanation: "The passage mentions reading newspapers, listening to English news, and practising vocabulary, but it never states that Anita joined any spoken English course."
     },
     {
-        question: "క్రింది వాక్యాలలో సరైనది ఏది?\n\n1. Formative Evaluation బోధనను మెరుగుపరుస్తుంది.\n2. Summative Evaluation తుది ఫలితాన్ని నిర్ణయించడానికి ఉపయోగపడుతుంది.",
+        question: "The central idea of the passage is",
         options: [
-            "1 మాత్రమే",
-            "2 మాత్రమే",
-            "1 మరియు 2 రెండూ",
-            "రెండూ తప్పు"
+            "Grammar alone is enough.",
+            "Vocabulary develops through regular language exposure and practice.",
+            "English newspapers are expensive.",
+            "Confidence cannot be improved."
+        ],
+        correct: 1,
+        explanation: "The passage emphasizes that regular exposure to English and continuous practice help improve vocabulary, communication skills, and overall confidence."
+    },
+    {
+        question: "Choose the correct word.\n\nHonesty is admired _____ everyone.",
+        options: [
+            "with",
+            "by",
+            "from",
+            "into"
+        ],
+        correct: 1,
+        explanation: "The verb 'admired' is followed by the preposition 'by' to indicate the people who admire someone or something."
+    },
+    {
+        question: "Teachers expect students _____ punctual.",
+        options: [
+            "are",
+            "being",
+            "to be",
+            "be"
         ],
         correct: 2,
-        explanation: "Formative Evaluation నిరంతర అభ్యాసాన్ని మెరుగుపరుస్తుంది. Summative Evaluation కోర్సు చివరలో విద్యార్థి తుది సాధనను అంచనా వేయడానికి ఉపయోగపడుతుంది."
+        explanation: "After the verb 'expect', English uses the infinitive structure 'expect someone to be'. Therefore, 'to be' is the correct completion."
     },
     {
-        question: "ఒక విద్యార్థి హోంవర్క్ పూర్తి చేసిన ప్రతిసారీ ఉపాధ్యాయుడు ప్రశంసిస్తున్నాడు. కొంతకాలం తరువాత విద్యార్థి హోంవర్క్ క్రమం తప్పకుండా పూర్తి చేస్తున్నాడు. ఈ మార్పుకు ప్రధాన కారణం ఏది?",
+        question: "If I _____ enough money, I would buy a new laptop.",
         options: [
-            "శిక్ష",
-            "అనుకూల పునర్బలనం",
-            "ప్రతికూల పునర్బలనం",
-            "మూల్యాంకనం"
+            "have",
+            "had",
+            "will have",
+            "has"
         ],
         correct: 1,
-        explanation: "మంచి ప్రవర్తన తర్వాత ప్రశంస లేదా బహుమతి ఇవ్వడం ద్వారా అదే ప్రవర్తన మళ్లీ మళ్లీ జరుగుతుంది. దీనినే అనుకూల పునర్బలనం అంటారు."
+        explanation: "This sentence expresses an unreal present situation, so it follows the second conditional pattern: 'If + past simple, would + base verb'."
     },
     {
-        question: "క్రింది వాక్యాలను పరిశీలించండి.\n\n1. వృద్ధి (Growth) ఒక నిర్దిష్ట దశ తర్వాత ఆగిపోవచ్చు.\n2. అభివృద్ధి (Development) జీవితాంతం కొనసాగుతుంది.\n\nసరైన సమాధానాన్ని గుర్తించండి.",
+        question: "Identify the incorrect part.\n\nNeither the teacher nor the students (A) / was interested (B) / in cancelling (C) / the excursion. (D)",
         options: [
-            "1 మాత్రమే",
-            "2 మాత్రమే",
-            "1 మరియు 2 రెండూ",
-            "1, 2 రెండూ తప్పు"
+            "Neither the teacher nor the students",
+            "was interested",
+            "in cancelling",
+            "the excursion"
+        ],
+        correct: 1,
+        explanation: "With 'neither...nor', the verb agrees with the nearer subject. Since 'students' is plural, the correct verb is 'were interested'."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nHe said, \"Where are you going?\"",
+        options: [
+            "He asked where was I going.",
+            "He asked where I was going.",
+            "He asked where am I going.",
+            "He asked where I had gone."
+        ],
+        correct: 1,
+        explanation: "Reported questions follow statement word order and appropriate tense backshifting. Therefore, 'He asked where I was going' is the correct indirect speech."
+    },
+    {
+        question: "Identify the incorrect part.\n\nThe children (A) / was playing (B) / in the playground (C) / happily. (D)",
+        options: [
+            "The children",
+            "was playing",
+            "in the playground",
+            "happily"
+        ],
+        correct: 1,
+        explanation: "The noun 'children' is plural, so it requires the plural auxiliary verb 'were'. Therefore, 'was playing' should be changed to 'were playing'."
+    },
+    {
+        question: "Choose the correct option.\n\nHe is senior _____ me.",
+        options: [
+            "than",
+            "from",
+            "to",
+            "with"
         ],
         correct: 2,
-        explanation: "వృద్ధి ప్రధానంగా శారీరక పరిమాణంలో జరిగే మార్పు కావడంతో ఒక దశ తర్వాత ఆగుతుంది. అభివృద్ధి మాత్రం శారీరక, మానసిక, సామాజిక, భావోద్వేగ అంశాల్లో జీవితాంతం కొనసాగుతుంది."
+        explanation: "The adjective 'senior' is always followed by the preposition 'to', not 'than'. Therefore, 'He is senior to me' is the correct expression."
     },
     {
-        question: "క్రింది వాటిలో 'Assessment' మరియు 'Evaluation' మధ్య సరైన సంబంధం ఏది?",
+        question: "Choose the correct passive form.\n\nSomeone has stolen my bicycle.",
         options: [
-            "రెండూ ఒకే ప్రక్రియ",
-            "Assessment అనేది Evaluation లో భాగం",
-            "Evaluation అనేది Assessment లో భాగం",
-            "రెండింటికీ సంబంధం లేదు"
+            "My bicycle has stolen.",
+            "My bicycle has been stolen.",
+            "My bicycle was stolen.",
+            "My bicycle had stolen."
         ],
         correct: 1,
-        explanation: "Assessment ద్వారా అభ్యాసానికి సంబంధించిన సమాచారం సేకరిస్తారు. ఆ సమాచారాన్ని విశ్లేషించి విలువ నిర్ణయం చేయడం Evaluation. కాబట్టి Assessment అనేది Evaluationలో ఒక ముఖ్య భాగం."
+        explanation: "The sentence is in the present perfect tense. Its passive form is 'has/have been + past participle', making 'has been stolen' the correct answer."
     },
     {
-        question: "ఒక ఉపాధ్యాయుడు బోధన ప్రారంభానికి ముందు విద్యార్థుల పూర్వజ్ఞానాన్ని తెలుసుకోవడానికి పరీక్ష నిర్వహించాడు. ఇది ప్రధానంగా ఏ ప్రక్రియ?",
+        question: "Choose the correct indirect speech.\n\nHe said, \"I can solve this problem.\"",
         options: [
-            "Summative Evaluation",
-            "Diagnostic Assessment",
-            "Performance Test",
-            "Achievement Evaluation"
+            "He said that he can solve that problem.",
+            "He said that he could solve that problem.",
+            "He said that he solved that problem.",
+            "He said that he has solved that problem."
         ],
         correct: 1,
-        explanation: "Diagnostic Assessment బోధన ప్రారంభానికి ముందు విద్యార్థుల పూర్వజ్ఞానం, బలాలు మరియు లోపాలను గుర్తించి తగిన బోధనా ప్రణాళిక రూపొందించడానికి ఉపయోగపడుతుంది."
+        explanation: "In reported speech, 'can' changes to 'could' and 'this' changes to 'that'. Therefore, option B correctly follows the reporting rules."
     },
     {
-        question: "క్రింది జంటలలో తప్పుగా జతచేయబడింది ఏది?",
+        question: "Identify the incorrect part.\n\nScarcely (A) / had I reached (B) / than the meeting began. (C) / No error (D)",
         options: [
-            "Intelligence — General Ability",
-            "Aptitude — Future Potential",
-            "Achievement — Present Learning",
-            "Aptitude — Previous Academic Achievement"
-        ],
-        correct: 3,
-        explanation: "Aptitude అనేది భవిష్యత్తులో నిర్దిష్ట రంగంలో విజయం సాధించే సహజ సామర్థ్యాన్ని సూచిస్తుంది. గతంలో సాధించిన విద్యా ఫలితాలను Achievement సూచిస్తుంది."
-    },
-    {
-        question: "క్రింది వాటిలో ఏది Positive Reinforcement కు సరైన ఉదాహరణ?",
-        options: [
-            "హోంవర్క్ చేయకపోతే శిక్షించడం",
-            "మంచి సమాధానానికి ప్రశంసాపత్రం ఇవ్వడం",
-            "శబ్దం చేసినందుకు ఆట సమయం తగ్గించడం",
-            "పరీక్షలో విఫలమైనందుకు అదనపు పని ఇవ్వడం"
-        ],
-        correct: 1,
-        explanation: "మంచి ప్రవర్తన తర్వాత ప్రశంస, బహుమతి లేదా ప్రోత్సాహం ఇవ్వడం ద్వారా ఆ ప్రవర్తన మరింత పెరుగుతుంది. దీనినే Positive Reinforcement అంటారు."
-    },
-    {
-        question: "క్రింది వాక్యాలను పరిశీలించండి.\n\n1. Punishment ప్రవర్తనను తగ్గిస్తుంది.\n2. Reinforcement ప్రవర్తనను పెంచుతుంది.\n\nసరైనది ఏది?",
-        options: [
-            "1 మాత్రమే",
-            "2 మాత్రమే",
-            "1 మరియు 2 రెండూ",
-            "రెండూ తప్పు"
+            "Scarcely",
+            "had I reached",
+            "than the meeting began",
+            "No error"
         ],
         correct: 2,
-        explanation: "Punishment అనుచిత ప్రవర్తనను తగ్గించడానికి ఉపయోగపడుతుంది. Reinforcement మంచి ప్రవర్తనను ప్రోత్సహించి దాని పునరావృతాన్ని పెంచుతుంది."
+        explanation: "The correct correlative expression is 'Scarcely...when...'. Using 'than' is incorrect and should be replaced with 'when'."
     },
     {
-        question: "ఒక విద్యార్థి పరీక్ష భయంతో తనకు తెలిసిన సమాధానాలను కూడా రాయలేకపోయాడు. ఉపాధ్యాయుడు అతనికి తక్కువ మేధస్సు ఉందని నిర్ణయించాడు. ఈ నిర్ణయం ఎందుకు సరైంది కాదు?",
+        question: "What was the purpose of the programme?",
         options: [
-            "పరీక్షలు మేధస్సును కొలవవు",
-            "Performance ఎల్లప్పుడూ Intelligence ను ప్రతిబింబించదు",
-            "Aptitude మాత్రమే మేధస్సును సూచిస్తుంది",
-            "పరీక్షలు Motivation ను మాత్రమే కొలుస్తాయి"
+            "Sports practice",
+            "Environmental awareness",
+            "Science exhibition",
+            "Cultural programme"
         ],
         correct: 1,
-        explanation: "పరీక్ష ప్రదర్శన పరీక్ష భయం, ఆరోగ్యం, ఒత్తిడి వంటి అనేక కారణాలపై ఆధారపడుతుంది. అందువల్ల ఒక్క పరీక్ష ఆధారంగా మేధస్సును నిర్ణయించడం సరైంది కాదు."
+        explanation: "The passage clearly states that the tree plantation programme was organized to create environmental awareness among students."
     },
     {
-        question: "Accommodation యొక్క ముఖ్య ఉద్దేశ్యం ఏమిటి?",
+        question: "Which benefit of planting trees is mentioned?",
         options: [
-            "పాఠ్యాంశాన్ని తగ్గించడం",
-            "బోధనా పరిస్థితులను విద్యార్థికి అనుకూలంగా మార్చడం",
-            "IEP రద్దు చేయడం",
-            "మూల్యాంకనాన్ని తొలగించడం"
+            "Reduces rainfall",
+            "Prevents soil erosion",
+            "Increases pollution",
+            "Reduces biodiversity"
         ],
         correct: 1,
-        explanation: "Accommodationలో అభ్యాస లక్ష్యాలు మారవు. విద్యార్థి అవసరాలకు అనుగుణంగా బోధనా పద్ధతి, పరీక్ష విధానం లేదా నేర్చుకునే వాతావరణంలో మాత్రమే మార్పులు చేస్తారు."
+        explanation: "According to the passage, planting trees helps prevent soil erosion, improve air quality, and support wildlife."
     },
     {
-        question: "క్రింది వాటిలో Modification కి ఉదాహరణ ఏది?",
+        question: "The word 'saplings' refers to",
         options: [
-            "బ్రెయిల్ పుస్తకం ఇవ్వడం",
-            "అదనపు సమయం ఇవ్వడం",
-            "ఐదవ తరగతి విద్యార్థికి మూడవ తరగతి స్థాయి అభ్యాస లక్ష్యాలు ఇవ్వడం",
-            "ముందు బెంచ్‌లో కూర్చోబెట్టడం"
+            "dried leaves",
+            "young trees",
+            "seeds",
+            "flowers"
+        ],
+        correct: 1,
+        explanation: "A sapling is a young tree that has recently started growing and is planted to develop into a mature tree."
+    },
+    {
+        question: "Which statement is TRUE?",
+        options: [
+            "Only teachers planted trees.",
+            "Students promised to care for the plants.",
+            "Trees were planted only near classrooms.",
+            "Each student planted one tree."
+        ],
+        correct: 1,
+        explanation: "The passage mentions that students promised to take care of the saplings throughout the year after the plantation programme."
+    },
+    {
+        question: "The central idea of the passage is",
+        options: [
+            "Gardening is expensive.",
+            "Environmental conservation requires participation.",
+            "Wildlife lives only in forests.",
+            "Trees grow quickly."
+        ],
+        correct: 1,
+        explanation: "The passage emphasizes collective participation in planting and caring for trees to promote environmental conservation and awareness."
+    },
+    {
+        question: "Choose the correct word.\n\nShe insisted _____ paying the bill herself.",
+        options: [
+            "on",
+            "in",
+            "for",
+            "at"
+        ],
+        correct: 0,
+        explanation: "The verb 'insist' is followed by the preposition 'on'. Therefore, the correct phrase is 'insisted on paying'."
+    },
+    {
+        question: "Choose the correct option.\n\nThe principal congratulated the students _____ their excellent performance.",
+        options: [
+            "on",
+            "with",
+            "for",
+            "about"
+        ],
+        correct: 0,
+        explanation: "The standard expression is 'congratulate someone on something'. Hence, 'on their excellent performance' is grammatically correct."
+    },
+    {
+        question: "If he _____ harder, he would have passed the examination.",
+        options: [
+            "studies",
+            "had studied",
+            "studied",
+            "has studied"
+        ],
+        correct: 1,
+        explanation: "This sentence expresses an unreal past condition, so it follows the third conditional pattern: 'If + had + past participle, would have + past participle'."
+    },
+    {
+        question: "Identify the incorrect part.\n\nThe number of applicants (A) / are increasing (B) / every year. (C) / No error. (D)",
+        options: [
+            "The number of applicants",
+            "are increasing",
+            "every year",
+            "No error"
+        ],
+        correct: 1,
+        explanation: "The subject 'The number' is singular. Therefore, the correct verb is 'is increasing', not 'are increasing'."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nThe teacher said, \"Why are you absent today?\"",
+        options: [
+            "The teacher asked why I was absent that day.",
+            "The teacher asked why was I absent that day.",
+            "The teacher asked why I am absent today.",
+            "The teacher asked why had I been absent."
+        ],
+        correct: 0,
+        explanation: "Reported questions use statement word order without inversion, and 'today' changes to 'that day' with the appropriate tense shift."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "She enjoys to sing.",
+            "She enjoys singing.",
+            "She enjoy singing.",
+            "She enjoyed to singing."
+        ],
+        correct: 1,
+        explanation: "The verb 'enjoy' is always followed by a gerund (-ing form). Therefore, 'She enjoys singing' is grammatically correct."
+    },
+    {
+        question: "Choose the correct passive form.\n\nWho wrote this novel?",
+        options: [
+            "By whom was this novel written?",
+            "Who was written this novel?",
+            "By whom this novel wrote?",
+            "This novel wrote by whom?"
+        ],
+        correct: 0,
+        explanation: "The passive form of a WH-question begins with 'By whom' followed by the auxiliary verb and past participle: 'By whom was this novel written?'"
+    },
+    {
+        question: "Identify the incorrect part.\n\nNot only the students (A) / but also the teacher (B) / were present (C) / at the meeting. (D)",
+        options: [
+            "Not only the students",
+            "but also the teacher",
+            "were present",
+            "at the meeting"
         ],
         correct: 2,
-        explanation: "Modificationలో విద్యార్థి సామర్థ్యాన్ని బట్టి పాఠ్య లక్ష్యాలు లేదా అభ్యాస ప్రమాణాలను మార్చుతారు. ఇది Accommodationతో పోలిస్తే లక్ష్యాల్లో మార్పు కలిగిస్తుంది."
+        explanation: "With 'not only...but also', the verb agrees with the nearer subject. Since 'teacher' is singular, the verb should be 'was present'."
     },
     {
-        question: "ఒక విద్యార్థి \"17\" ను \"71\"గా చదువుతున్నాడు. ఇది ఎక్కువగా ఏ అభ్యాస వైకల్యాన్ని సూచిస్తుంది?",
+        question: "Choose the correct option.\n\nThe meeting has been postponed _____ next Monday.",
         options: [
-            "Dysgraphia",
-            "Dyslexia",
-            "Dyscalculia",
-            "Dyspraxia"
-        ],
-        correct: 2,
-        explanation: "సంఖ్యలను గుర్తించడం, వాటి క్రమాన్ని అర్థం చేసుకోవడం లేదా గణిత సంబంధిత భావనల్లో ఇబ్బందులు ఉండటం Dyscalculia యొక్క ప్రధాన లక్షణం."
-    },
-    {
-        question: "డిస్లెక్సియా (Dyslexia) ప్రధానంగా ఏ నైపుణ్యాన్ని ప్రభావితం చేస్తుంది?",
-        options: [
-            "మాట్లాడటం",
-            "చదవడం",
-            "వినడం",
-            "సామాజిక ప్రవర్తన"
+            "for",
+            "to",
+            "until",
+            "by"
         ],
         correct: 1,
-        explanation: "డిస్లెక్సియా ప్రధానంగా చదవడం, పదాలను గుర్తించడం, స్పెల్లింగ్ మరియు అక్షరాల క్రమాన్ని సరిగ్గా అర్థం చేసుకోవడంపై ప్రభావం చూపుతుంది."
+        explanation: "The standard expression is 'postponed to' a particular date or time. Therefore, 'to next Monday' is the correct usage."
     },
     {
-        question: "క్రింది వాటిలో Counselling యొక్క ముఖ్య లక్షణం ఏది?",
+        question: "Choose the most appropriate word.\n\nSuccess depends not only on intelligence _____ on perseverance.",
         options: [
-            "ఒకే సమావేశంలో పూర్తవుతుంది",
-            "వ్యక్తిగత సమస్యల పరిష్కారానికి సహాయక సంబంధం",
-            "కేవలం విద్యార్థులకు మాత్రమే వర్తిస్తుంది",
-            "పరీక్షల నిర్వహణ"
+            "and",
+            "but",
+            "also",
+            "rather"
         ],
         correct: 1,
-        explanation: "Counselling అనేది నమ్మకం మరియు గోప్యత ఆధారంగా వ్యక్తిగత, భావోద్వేగ లేదా ప్రవర్తనా సమస్యలను పరిష్కరించేందుకు సహాయపడే పరస్పర సంబంధ ప్రక్రియ."
-    },
-    {
-        question: "సరైన జతను గుర్తించండి.",
-        options: [
-            "Guidance — Remedial Therapy",
-            "Counselling — Preventive Information",
-            "Guidance — Educational & Vocational Direction",
-            "Guidance — Psychological Treatment"
-        ],
-        correct: 2,
-        explanation: "Guidance వ్యక్తికి విద్యా, వృత్తి మరియు జీవిత నిర్ణయాలలో దిశానిర్దేశం చేస్తుంది. Counselling మాత్రం వ్యక్తిగత సమస్యల పరిష్కారంపై ఎక్కువ దృష్టి పెడుతుంది."
-    },
-    {
-        question: "క్రింది వాటిలో Formative Evaluation యొక్క ప్రధాన లక్ష్యం ఏమిటి?",
-        options: [
-            "ర్యాంకులు ప్రకటించడం",
-            "తుది ఫలితాన్ని నిర్ణయించడం",
-            "బోధనలో అవసరమైన సవరణలు చేయడం",
-            "ప్రమోషన్ ఇవ్వడం"
-        ],
-        correct: 2,
-        explanation: "Formative Evaluation బోధన జరుగుతున్న సమయంలో నిరంతర అభిప్రాయం అందించి విద్యార్థి అభ్యాసాన్ని మరియు ఉపాధ్యాయుని బోధనను మెరుగుపరచడానికి ఉపయోగపడుతుంది."
-    },
-    {
-        question: "క్రింది వాక్యాలను పరిశీలించండి.\n\n1. Intelligence Test సాధారణ మానసిక సామర్థ్యాన్ని కొలుస్తుంది.\n2. Aptitude Test భవిష్యత్ సామర్థ్యాన్ని అంచనా వేస్తుంది.\n3. Achievement Test గత అభ్యాస ఫలితాన్ని కొలుస్తుంది.\n\nసరైన సమాధానం ఏది?",
-        options: [
-            "1 మరియు 2 మాత్రమే",
-            "2 మరియు 3 మాత్రమే",
-            "1 మరియు 3 మాత్రమే",
-            "1, 2 మరియు 3"
-        ],
-        correct: 3,
-        explanation: "Intelligence Test సాధారణ మానసిక సామర్థ్యాన్ని, Aptitude Test భవిష్యత్తు విజయ సామర్థ్యాన్ని, Achievement Test ఇప్పటికే నేర్చుకున్న విద్యా ఫలితాలను కొలుస్తుంది."
-    },
-    {
-        question: "ఒక విద్యార్థి తరచుగా పదాలను వదిలివేయడం, అక్షరాల క్రమాన్ని మార్చి చదవడం, చదివిన విషయాన్ని అర్థం చేసుకోవడంలో ఇబ్బంది పడుతున్నాడు. అయితే అతని మేధస్సు సాధారణ స్థాయిలో ఉంది. ఈ పరిస్థితి ప్రధానంగా దేనిని సూచిస్తుంది?",
-        options: [
-            "డిస్క్యాల్కులియా (Dyscalculia)",
-            "డిస్లెక్సియా (Dyslexia)",
-            "డిస్గ్రాఫియా (Dysgraphia)",
-            "మేధో వైకల్యం (Intellectual Disability)"
-        ],
-        correct: 1,
-        explanation: "సాధారణ మేధస్సు ఉన్నప్పటికీ పదాలను గుర్తించడం, అక్షరాల క్రమాన్ని సరిగ్గా చదవడం, చదివిన విషయాన్ని అర్థం చేసుకోవడంలో ఇబ్బంది ఉండటం డిస్లెక్సియా యొక్క ప్రధాన లక్షణం."
-    },
-    {
-        question: "క్రింది వాక్యాలను పరిశీలించండి.\n\n1. Assessment నిరంతర ప్రక్రియ.\n2. Evaluation ఒక నిర్ణయాత్మక (Judgmental) ప్రక్రియ.\n3. Assessment లేకుండా Evaluation సమర్థవంతంగా చేయలేము.\n\nసరైన సమాధానం ఏది?",
-        options: [
-            "1 మాత్రమే",
-            "1 మరియు 2 మాత్రమే",
-            "2 మరియు 3 మాత్రమే",
-            "1, 2 మరియు 3"
-        ],
-        correct: 3,
-        explanation: "Assessment ద్వారా నిరంతరం అభ్యాస సమాచారాన్ని సేకరిస్తారు. ఆ సమాచారాన్ని ఆధారంగా Evaluation ద్వారా విలువ నిర్ణయం చేస్తారు. అందువల్ల మూడు వాక్యాలూ సరైనవే."
-    },
-    {
-        question: "ఒక విద్యార్థి ప్రతిసారి తరగతిలో క్రమశిక్షణ పాటించినప్పుడు ఉపాధ్యాయుడు అతనికి అదనపు ఆట సమయం ఇస్తున్నాడు. ఈ చర్య యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
-        options: [
-            "అనుచిత ప్రవర్తనను తగ్గించడం",
-            "సరైన ప్రవర్తన సంభవాన్ని పెంచడం",
-            "విద్యార్థిని శిక్షించడం",
-            "విద్యార్థి మేధస్సును కొలవడం"
-        ],
-        correct: 1,
-        explanation: "మంచి ప్రవర్తన తర్వాత ఇష్టమైన ప్రోత్సాహాన్ని ఇవ్వడం వల్ల అదే ప్రవర్తన మళ్లీ మళ్లీ జరిగే అవకాశం పెరుగుతుంది. దీనినే Positive Reinforcement అంటారు."
-    },
-    {
-        question: "క్రింది జంటలలో సరైన సంబంధాన్ని గుర్తించండి.",
-        options: [
-            "Guidance – వ్యక్తిగత చికిత్స",
-            "Counselling – విద్యా మరియు వృత్తి సమాచారాన్ని మాత్రమే అందించడం",
-            "Aptitude – భవిష్యత్ సామర్థ్యం",
-            "Intelligence – గత విద్యా సాధన"
-        ],
-        correct: 2,
-        explanation: "Aptitude అనేది వ్యక్తి భవిష్యత్తులో నిర్దిష్ట రంగంలో విజయాన్ని సాధించే సహజ సామర్థ్యాన్ని సూచిస్తుంది. ఇది Intelligence లేదా Achievementతో సమానం కాదు."
-    },
-    {
-        question: "క్రింది వాటిలో ఏది Accommodation మరియు Modification మధ్య సరైన తేడాను సూచిస్తుంది?",
-        options: [
-            "రెండింటిలోనూ పాఠ్య లక్ష్యాలు మారుతాయి.",
-            "Accommodationలో పాఠ్య లక్ష్యాలు మారవు; Modificationలో పాఠ్య లక్ష్యాలు మారవచ్చు.",
-            "Modificationలో అదనపు సమయం మాత్రమే ఇస్తారు.",
-            "రెండింటికీ సమగ్ర విద్యతో సంబంధం లేదు."
-        ],
-        correct: 1,
-        explanation: "Accommodationలో బోధనా విధానం, పరీక్షా పద్ధతి లేదా వాతావరణంలో మాత్రమే మార్పులు చేస్తారు. Modificationలో విద్యార్థి అవసరాలకు అనుగుణంగా అభ్యాస లక్ష్యాలు లేదా ప్రమాణాలు కూడా మార్చబడతాయి."
+        explanation: "The correct correlative conjunction is 'not only...but also...'. Therefore, 'but' completes the expression correctly before the implied 'also'."
     }
 ];
