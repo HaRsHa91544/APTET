@@ -25,9 +25,9 @@
     --border: rgba(201, 164, 76, 0.12);
     --border-strong: rgba(201, 164, 76, 0.3);
     --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 16px;
-    --radius-xl: 20px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 16px;
     --bottom-bar-h: 0px;
 }
 
@@ -251,23 +251,23 @@ main {
     gap: 5px;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 100px;
-    padding: 5px 14px;
-    font-size: 0.75rem;
+    border-radius: 12px;
+    padding: 6px 16px;
+    font-size: 0.78rem;
     font-weight: 700;
     color: var(--text-dim);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
 }
 
 .stat-chip.wrong-chip {
-    border-color: rgba(245, 160, 160, 0.18);
-    background: rgba(245, 160, 160, 0.05);
+    border-color: rgba(245, 160, 160, 0.3);
+    background: rgba(245, 160, 160, 0.1);
     color: var(--wrong);
 }
 
 .stat-chip.score-chip {
-    border-color: rgba(126, 232, 190, 0.18);
-    background: rgba(126, 232, 190, 0.05);
+    border-color: rgba(126, 232, 190, 0.3);
+    background: rgba(126, 232, 190, 0.1);
     color: var(--correct);
 }
 
@@ -461,7 +461,7 @@ main {
     align-items: center;
     gap: 1rem;
     background: var(--surface-alt);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-md);
     padding: 1.05rem 1.5rem;
     cursor: pointer;
@@ -472,7 +472,7 @@ main {
     transition: border-color .2s, background .2s, box-shadow .25s;
     position: relative;
     overflow: hidden;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .opt::before {
@@ -528,17 +528,15 @@ main {
 }
 
 .opt.correct {
-    border-color: rgba(126, 232, 190, 0.4);
-    background: rgba(126, 232, 190, 0.08);
-    box-shadow:
-        inset 0 1px 0 rgba(126, 232, 190, 0.06),
-        0 0 20px rgba(126, 232, 190, 0.08);
+    border-color: rgba(126, 232, 190, 0.25);
+    background: transparent;
+    box-shadow: none;
 }
 
 .opt.correct::before {
     opacity: 1;
     background: var(--correct);
-    width: 3px;
+    width: 4px;
 }
 
 .opt.correct .opt-key {
@@ -550,17 +548,15 @@ main {
 }
 
 .opt.wrong {
-    border-color: rgba(245, 160, 160, 0.4);
-    background: rgba(245, 160, 160, 0.08);
-    box-shadow:
-        inset 0 1px 0 rgba(245, 160, 160, 0.06),
-        0 0 20px rgba(245, 160, 160, 0.08);
+    border-color: rgba(245, 160, 160, 0.25);
+    background: transparent;
+    box-shadow: none;
 }
 
 .opt.wrong::before {
     opacity: 1;
     background: var(--wrong);
-    width: 3px;
+    width: 4px;
 }
 
 .opt.wrong .opt-key {
@@ -576,7 +572,7 @@ main {
 }
 
 .opt:disabled:not(.correct):not(.wrong) {
-    opacity: 0.6;
+    opacity: 0.65;
     background: var(--bg);
     border-color: rgba(255, 255, 255, 0.03);
 }
@@ -638,7 +634,7 @@ main {
     background: linear-gradient(135deg, var(--gold), var(--gold-bright));
     color: var(--bg);
     border: none;
-    border-radius: 14px;
+    border-radius: var(--radius-lg);
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 700;
@@ -844,7 +840,7 @@ main {
     background: linear-gradient(135deg, var(--gold), var(--gold-bright));
     color: var(--bg);
     border: none;
-    border-radius: 14px;
+    border-radius: var(--radius-lg);
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 700;
@@ -877,7 +873,7 @@ main {
     background: transparent;
     color: var(--gold);
     border: 1px solid rgba(201, 164, 76, 0.25);
-    border-radius: 14px;
+    border-radius: var(--radius-lg);
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 700;
