@@ -1,556 +1,436 @@
 const SUBJECTS = [
-    "Psychology theories"
+    "English Grammer"
 ];
 
 const QUESTIONS = [
     {
-        question: "పిల్లలు తమ పరిసరాలతో పరస్పర చర్యల ద్వారా జ్ఞానాన్ని నిర్మించుకుంటారని ప్రతిపాదించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
-        options: [
-            "లెవ్ వైగోట్స్కీ",
-            "జీన్ పియాజే",
-            "జెరోమ్ బ్రూనర్",
-            "కార్ల్ రోజర్స్"
-        ],
-        correct: 1,
-        explanation: "జీన్ పియాజే Constructivism సిద్ధాంతాన్ని ప్రతిపాదించాడు. పిల్లలు అనుభవాలు, పరిసరాలతో పరస్పర చర్యలు, పరిశీలన మరియు ఆలోచన ద్వారా స్వయంగా జ్ఞానాన్ని నిర్మించుకుంటారని ఆయన వివరించాడు. అందువల్ల రెండవ ఎంపిక సరైనది."
+        question: "Each of the students _____ given a participation certificate.",
+        options: ["were", "are", "was", "have been"],
+        correct: 2,
+        explanation: "The expression 'Each of' is always treated as singular. Therefore, it requires a singular verb. Hence, 'was' is correct, while 'were', 'are', and 'have been' are incorrect."
     },
     {
-        question: "క్రింది వాటిలో Zone of Proximal Development (ZPD) భావనకు సంబంధించినది ఏది?",
-        options: [
-            "స్వతంత్ర అభ్యాసం",
-            "మార్గదర్శక సహాయంతో నేర్చుకోవడం",
-            "శిక్ష ద్వారా నేర్చుకోవడం",
-            "పునరావృత అభ్యాసం"
-        ],
+        question: "Neither Ravi nor his friends _____ present in the classroom.",
+        options: ["was", "were", "is", "has"],
         correct: 1,
-        explanation: "వైగోట్స్కీ ప్రతిపాదించిన ZPD ప్రకారం విద్యార్థి ఒంటరిగా చేయలేని పనిని ఉపాధ్యాయుడు లేదా సహచరుల మార్గదర్శక సహాయంతో విజయవంతంగా చేయగలడు. దీనినే మార్గదర్శిత అభ్యాసం అంటారు."
+        explanation: "In 'Neither...nor' constructions, the verb agrees with the subject nearest to it. Since 'friends' is plural and closest to the verb, the correct answer is 'were'."
     },
     {
-        question: "క్రింది ప్రకటనలను పరిశీలించి సరైన సమాధానాన్ని గుర్తించండి.\n\nఅ. బ్రూనర్ \"Scaffolding\" భావనను అభ్యాసంలో ఉపయోగించాడు.\nఆ. వైగోట్స్కీ \"Zone of Proximal Development\" భావనను ప్రతిపాదించాడు.",
+        question: "Choose the correct sentence.",
         options: [
-            "అ మాత్రమే సరైనది",
-            "ఆ మాత్రమే సరైనది",
-            "అ, ఆ రెండూ సరైనవి",
-            "రెండూ తప్పు"
+            "Either the teachers or the Headmaster are attending the meeting.",
+            "Either the teachers or the Headmaster is attending the meeting.",
+            "Either the teachers or the Headmaster were attending the meeting.",
+            "Either the teachers or the Headmaster have attending the meeting."
+        ],
+        correct: 1,
+        explanation: "With 'Either...or', the verb agrees with the nearest subject. Since 'Headmaster' is singular and nearest to the verb, the correct verb is 'is'."
+    },
+    {
+        question: "Hardly had the train left the station _____ it started raining.",
+        options: ["than", "when", "then", "and"],
+        correct: 1,
+        explanation: "The fixed grammatical pair is 'Hardly...when'. It expresses that one event happened immediately after another. Using 'than', 'then', or 'and' is grammatically incorrect."
+    },
+    {
+        question: "No sooner had she entered the room _____ everyone stood up.",
+        options: ["then", "when", "than", "and"],
+        correct: 2,
+        explanation: "The correct correlative conjunction is 'No sooner...than'. This structure indicates that one action occurred immediately after another. Therefore, 'than' is the only correct choice."
+    },
+    {
+        question: 'The passive form of "They are repairing the road." is:',
+        options: [
+            "The road repaired by them.",
+            "The road is being repaired by them.",
+            "The road has been repaired by them.",
+            "The road was repaired by them."
+        ],
+        correct: 1,
+        explanation: "The sentence is in the Present Continuous Tense. Its passive form follows the pattern 'is/am/are + being + past participle', giving 'The road is being repaired by them.'"
+    },
+    {
+        question: 'Choose the correct reported speech.\n\nRavi said, "I can solve this problem."',
+        options: [
+            "Ravi said that I can solve that problem.",
+            "Ravi said that he could solve that problem.",
+            "Ravi said he can solved that problem.",
+            "Ravi said that he solves that problem."
+        ],
+        correct: 1,
+        explanation: "In reported speech, 'can' changes to 'could' when the reporting verb is in the past. Pronouns and demonstratives also change appropriately, making option B correct."
+    },
+    {
+        question: "If she _____ harder, she would have passed the examination.",
+        options: ["studies", "studied", "had studied", "has studied"],
+        correct: 2,
+        explanation: "This is a Third Conditional sentence expressing an unreal past situation. The correct structure is 'If + had + past participle, would have + past participle'."
+    },
+    {
+        question: "Each of the books _____ properly arranged.",
+        options: ["are", "have", "is", "were"],
+        correct: 2,
+        explanation: "The phrase 'Each of' always takes a singular verb because it refers to every individual item separately. Therefore, 'is' is the correct verb."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "Neither of the boys have finished the work.",
+            "Neither of the boys has finished the work.",
+            "Neither of the boys were finishing the work.",
+            "Neither of the boys are finishing the work."
+        ],
+        correct: 1,
+        explanation: "The expression 'Neither of' is grammatically singular. Therefore, it must be followed by the singular verb 'has', not 'have', 'were', or 'are'."
+    },
+    {
+        question: "If I _____ you, I would accept the offer immediately.",
+        options: ["am", "was", "were", "had been"],
+        correct: 2,
+        explanation: "This sentence expresses a hypothetical present situation. Standard English uses 'were' with all subjects in the Second Conditional, including 'I', making 'were' correct."
+    },
+    {
+        question: 'Choose the correct passive form.\n\nPeople believe that she is honest.',
+        options: [
+            "She believes to be honest.",
+            "She is believed to be honest.",
+            "She believed honest.",
+            "She has believed to be honest."
+        ],
+        correct: 1,
+        explanation: "Reporting verbs like 'believe' form the passive structure 'Subject + is believed + to + verb'. Therefore, 'She is believed to be honest' is grammatically correct."
+    },
+    {
+        question: "Either my brother or my sisters _____ responsible for this mistake.",
+        options: ["is", "was", "are", "has"],
+        correct: 2,
+        explanation: "In 'Either...or' constructions, the verb agrees with the nearest subject. Since 'sisters' is plural and closest to the verb, 'are' is correct."
+    },
+    {
+        question: 'Choose the correct reported speech.\n\nThe teacher said, "Do not waste your time."',
+        options: [
+            "The teacher told not waste your time.",
+            "The teacher advised not to waste our time.",
+            "The teacher advised us not to waste our time.",
+            "The teacher said us not waste our time."
         ],
         correct: 2,
-        explanation: "Scaffolding భావనను బ్రూనర్ అభివృద్ధి చేశాడు. Zone of Proximal Development భావనను వైగోట్స్కీ ప్రతిపాదించాడు. రెండూ బోధనలో పరస్పర సంబంధం కలిగి ఉండటంతో రెండు ప్రకటనలూ సరైనవే."
+        explanation: "Negative commands in reported speech use the pattern 'advised/told + object + not to + base verb'. Therefore, 'The teacher advised us not to waste our time' is correct."
     },
     {
-        question: "Operant Conditioning సిద్ధాంతాన్ని ప్రతిపాదించినవారు ఎవరు?",
+        question: "Identify the grammatically correct sentence.",
         options: [
-            "ఇవాన్ పావ్లోవ్",
-            "బి. ఎఫ్. స్కిన్నర్",
-            "ఎడ్వర్డ్ థార్న్‌డైక్",
-            "ఆల్బర్ట్ బండూరా"
-        ],
-        correct: 1,
-        explanation: "బి.ఎఫ్. స్కిన్నర్ Operant Conditioning సిద్ధాంతాన్ని ప్రతిపాదించాడు. Reinforcement మరియు Punishment ద్వారా ప్రవర్తనను బలపరచడం లేదా తగ్గించడం ఈ సిద్ధాంతం ప్రధాన భావనగా పేర్కొంటుంది."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు మంచి సమాధానం చెప్పిన ప్రతి విద్యార్థిని ప్రశంసిస్తున్నాడు. ఈ విధానం ఏ సిద్ధాంతాన్ని ఎక్కువగా ప్రతిబింబిస్తుంది?",
-        options: [
-            "Classical Conditioning",
-            "Operant Conditioning",
-            "Insight Learning",
-            "Trial and Error Learning"
-        ],
-        correct: 1,
-        explanation: "విద్యార్థిని ప్రశంసించడం Positive Reinforcement. ఇది మంచి ప్రవర్తనను మరింత పెంచుతుంది. Reinforcement ఆధారంగా ప్రవర్తన మారుతుందని స్కిన్నర్ Operant Conditioning సిద్ధాంతం వివరిస్తుంది."
-    },
-    {
-        question: "Mental Age అనే భావనను మొదటగా ఉపయోగించినవారు ఎవరు?",
-        options: [
-            "డేవిడ్ వెక్స్లర్",
-            "ఆల్ఫ్రెడ్ బినే",
-            "స్పియర్‌మన్",
-            "గిల్‌ఫోర్డ్"
-        ],
-        correct: 1,
-        explanation: "ఆల్ఫ్రెడ్ బినే రూపొందించిన తొలి మేధస్సు పరీక్షలో Mental Age భావనను ఉపయోగించారు. పిల్లల మానసిక వికాసాన్ని వారి వయస్సుతో పోల్చి అంచనా వేయడం దీని ముఖ్య ఉద్దేశ్యం."
-    },
-    {
-        question: "క్రింది జతలలో సరైనది కానిది ఏది?",
-        options: [
-            "స్పియర్‌మన్ – g Factor",
-            "థర్‌స్టోన్ – Primary Mental Abilities",
-            "గార్డ్నర్ – Triarchic Theory",
-            "స్టెర్న్‌బర్గ్ – Analytical, Creative, Practical Intelligence"
+            "Hardly had I reached the bus stop than the bus arrived.",
+            "No sooner did I reached home than it began to rain.",
+            "Hardly had I reached the bus stop when the bus arrived.",
+            "No sooner had I reached the bus stop when the bus arrived."
         ],
         correct: 2,
-        explanation: "గార్డ్నర్ Multiple Intelligences సిద్ధాంతాన్ని ప్రతిపాదించాడు. Triarchic Theory మాత్రం స్టెర్న్‌బర్గ్ ప్రతిపాదించాడు. అందువల్ల గార్డ్నర్–Triarchic Theory అనే జత తప్పుగా ఉంది."
+        explanation: "The correct pair is 'Hardly...when'. 'No sooner' is followed by 'than', not 'when'. Hence, only option C follows the correct grammatical structure."
     },
     {
-        question: "క్రింది వారిలో Multiple Intelligences Theoryని ప్రతిపాదించినవారు ఎవరు?",
+        question: "Neither the Principal nor the teachers _____ willing to postpone the examination.",
+        options: ["is", "are", "was", "has"],
+        correct: 1,
+        explanation: "In 'Neither...nor' constructions, the verb agrees with the subject nearest to it. Since 'teachers' is plural and closest to the verb, the correct verb is 'are'."
+    },
+    {
+        question: "Each of the players _____ expected to attend the practice session.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "The expression 'Each of' is always singular because it refers to every individual separately. Therefore, it requires the singular verb 'is' instead of plural forms."
+    },
+    {
+        question: "Choose the correct sentence.",
         options: [
-            "స్పియర్‌మన్",
-            "గార్డ్నర్",
-            "థర్‌స్టోన్",
-            "వెక్స్లర్"
+            "No sooner had the bell rung when the students entered.",
+            "No sooner did the bell ring than the students entered.",
+            "No sooner had the bell rung than the students entered.",
+            "No sooner the bell had rung than the students entered."
+        ],
+        correct: 2,
+        explanation: "The standard grammatical structure is 'No sooner had + subject + past participle + than'. Option C correctly follows this pattern with proper auxiliary inversion and conjunction."
+    },
+    {
+        question: 'The passive form of "The committee will announce the results tomorrow." is:',
+        options: [
+            "The results will announce tomorrow.",
+            "The results will be announced tomorrow.",
+            "The results are announced tomorrow.",
+            "The results have been announced tomorrow."
         ],
         correct: 1,
-        explanation: "హోవర్డ్ గార్డ్నర్ Multiple Intelligences సిద్ధాంతాన్ని ప్రతిపాదించాడు. ప్రతి వ్యక్తిలో భిన్న రకాల మేధస్సులు ఉంటాయని, ఒక్క IQ ద్వారా మేధస్సును పూర్తిగా అంచనా వేయలేమని ఆయన వివరించాడు."
+        explanation: "Future Simple Passive follows the structure 'will be + past participle'. Hence, 'The results will be announced tomorrow' is the correct passive transformation of the sentence."
     },
     {
-        question: "ఒక విద్యార్థి తన సహపాఠిని గమనించి అదే విధంగా ప్రవర్తించడం ప్రారంభించాడు. ఇది ఏ సిద్ధాంతానికి ఉదాహరణ?",
-        options: [
-            "Trial and Error",
-            "Social Learning Theory",
-            "Classical Conditioning",
-            "Psychoanalytic Theory"
-        ],
-        correct: 1,
-        explanation: "బండూరా Social Learning Theory ప్రకారం పరిశీలన, అనుకరణ మరియు మోడలింగ్ ద్వారా కొత్త ప్రవర్తనలు నేర్చుకుంటారు. సహపాఠిని గమనించి అదే విధంగా ప్రవర్తించడం దీనికి ఉదాహరణ."
+        question: "Either Ramesh or his brother _____ responsible for the loss.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "With 'Either...or', the verb agrees with the subject nearest to it. Since 'brother' is singular, the correct verb is 'is'."
     },
     {
-        question: "క్రింది వాటిలో Psychosocial Development Theoryకి సంబంధించినది ఏది?",
-        options: [
-            "కోహ్ల్‌బర్గ్",
-            "ఎరిక్ ఎరిక్సన్",
-            "ఫ్రాయిడ్",
-            "పియాజే"
-        ],
-        correct: 1,
-        explanation: "ఎరిక్ ఎరిక్సన్ Psychosocial Development సిద్ధాంతాన్ని ప్రతిపాదించాడు. జీవితంలోని ప్రతి దశలో వ్యక్తి ఒక మానసిక-సామాజిక సంక్షోభాన్ని ఎదుర్కొని దానిని విజయవంతంగా పరిష్కరించాల్సి ఉంటుందని వివరించాడు."
+        question: "If they _____ earlier, they would not have missed the train.",
+        options: ["leave", "left", "had left", "have left"],
+        correct: 2,
+        explanation: "This is a Third Conditional sentence expressing an unreal past event. The correct pattern is 'If + had + past participle, would have + past participle'."
     },
     {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\nఅ. కోహ్ల్‌బర్గ్ నైతిక వికాస దశలను ప్రతిపాదించాడు.\nఆ. పియాజే నైతిక వికాసాన్ని ఆరు దశలుగా విభజించాడు.",
+        question: 'Choose the correct reported speech.\n\nShe said, "I have finished my homework."',
         options: [
-            "అ మాత్రమే సరైనది",
-            "ఆ మాత్రమే సరైనది",
-            "రెండూ సరైనవి",
-            "రెండూ తప్పు"
+            "She said that she had finished her homework.",
+            "She said that she has finished her homework.",
+            "She said she finished my homework.",
+            "She told that she had finished her homework."
         ],
         correct: 0,
-        explanation: "కోహ్ల్‌బర్గ్ నైతిక వికాసాన్ని మూడు స్థాయిలు, ఆరు దశలుగా వివరించాడు. పియాజే నైతిక వికాసాన్ని అధ్యయనం చేసినప్పటికీ ఆరు దశల సిద్ధాంతాన్ని ప్రతిపాదించలేదు. అందువల్ల మొదటి ప్రకటన మాత్రమే సరైనది."
+        explanation: "In reported speech, Present Perfect usually changes to Past Perfect when the reporting verb is in the past. Pronouns also change appropriately, making option A correct."
     },
     {
-        question: "శరీర నిర్మాణం ఆధారంగా వ్యక్తిత్వాన్ని వర్గీకరించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
+        question: 'Choose the correct passive form.\n\n"Someone has stolen my bicycle."',
         options: [
-            "క్రెట్ష్మర్",
-            "రోజర్స్",
-            "మాస్లో",
-            "గిల్‌ఫోర్డ్"
+            "My bicycle has stolen.",
+            "My bicycle has been stolen.",
+            "My bicycle was stolen.",
+            "My bicycle had been stolen."
+        ],
+        correct: 1,
+        explanation: "The sentence is in the Present Perfect Tense. Its passive form follows 'has/have been + past participle', giving 'My bicycle has been stolen'."
+    },
+    {
+        question: "Hardly _____ the announcement made when the students started cheering.",
+        options: ["was", "had", "did", "has"],
+        correct: 1,
+        explanation: "The fixed expression is 'Hardly had...when'. It requires the auxiliary 'had' before the subject to form the correct inverted grammatical structure."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "Neither the students nor the teacher have completed the work.",
+            "Neither the students nor the teacher has completed the work.",
+            "Neither the students nor the teacher were completed the work.",
+            "Neither the students nor the teacher are completed the work."
+        ],
+        correct: 1,
+        explanation: "The verb agrees with the nearest subject in 'Neither...nor' constructions. Since 'teacher' is singular, the correct verb is 'has', making option B correct."
+    },
+    {
+        question: "Each of the questions _____ worth one mark.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "The phrase 'Each of' is always followed by a singular verb because it emphasizes every individual item separately. Therefore, 'is' is the correct answer."
+    },
+    {
+        question: 'Choose the correct reported speech.\n\nThe doctor said, "Take this medicine twice a day."',
+        options: [
+            "The doctor advised me to take that medicine twice a day.",
+            "The doctor said me to take this medicine.",
+            "The doctor advised that take medicine twice a day.",
+            "The doctor told take the medicine twice a day."
         ],
         correct: 0,
-        explanation: "ఎర్నెస్ట్ క్రెట్ష్మర్ శరీర నిర్మాణాన్ని ఆధారంగా తీసుకుని వ్యక్తిత్వ రకాలను వివరించాడు. శారీరక ఆకృతి మరియు వ్యక్తిత్వ లక్షణాల మధ్య సంబంధం ఉంటుందని ఆయన అభిప్రాయపడ్డాడు."
+        explanation: "Imperative sentences are reported using 'advised/told + object + to + base verb'. Demonstratives also change appropriately, making option A grammatically correct."
     },
     {
-        question: "క్రింది వాటిలో Hierarchy of Needs సిద్ధాంతంలో అత్యున్నత స్థాయి ఏది?",
+        question: "If I _____ enough money, I would buy a laptop.",
+        options: ["have", "had", "had had", "will have"],
+        correct: 1,
+        explanation: "This is a Second Conditional sentence expressing an unreal present situation. The correct structure is 'If + Past Simple, would + base verb', so 'had' is correct."
+    },
+    {
+        question: "Either the Headmaster or the teachers _____ attending the seminar.",
+        options: ["is", "was", "are", "has"],
+        correct: 2,
+        explanation: "In 'Either...or' constructions, the verb agrees with the nearest subject. Since 'teachers' is plural, the correct verb is 'are'."
+    },
+    {
+        question: "Identify the grammatically correct sentence.",
         options: [
-            "భద్రత అవసరాలు",
-            "గౌరవ అవసరాలు",
-            "స్వీయ సాకారత (Self-Actualization)",
-            "శారీరక అవసరాలు"
+            "Hardly had we reached home than it began to rain.",
+            "No sooner had we reached home than it began to rain.",
+            "No sooner did we reached home than it began to rain.",
+            "Hardly we had reached home when it began to rain."
+        ],
+        correct: 1,
+        explanation: "The correct correlative pair is 'No sooner...than' with auxiliary inversion. Option B follows the standard grammatical pattern, while the other options contain structural errors."
+    },
+    {
+        question: "Neither the teacher nor the students _____ absent yesterday.",
+        options: ["was", "is", "were", "has"],
+        correct: 2,
+        explanation: "In 'Neither...nor' constructions, the verb agrees with the subject nearest to it. Since 'students' is plural and closest to the verb, the correct answer is 'were'."
+    },
+    {
+        question: "Each of the candidates _____ an identity card.",
+        options: ["have", "has", "are having", "were having"],
+        correct: 1,
+        explanation: "The phrase 'Each of' is grammatically singular because it refers to every individual separately. Therefore, it always takes the singular verb 'has' in the present tense."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "Hardly had I entered the room than the lights went off.",
+            "Hardly did I enter the room when the lights went off.",
+            "Hardly had I entered the room when the lights went off.",
+            "Hardly I had entered the room when the lights went off."
         ],
         correct: 2,
-        explanation: "మాస్లో అవసరాల సోపాన సిద్ధాంతంలో అత్యున్నత స్థాయి Self-Actualization. వ్యక్తి తన సంపూర్ణ సామర్థ్యాన్ని అభివృద్ధి చేసుకొని జీవిత లక్ష్యాలను సాధించే స్థితిని ఇది సూచిస్తుంది."
+        explanation: "The correct grammatical structure is 'Hardly had + subject + past participle + when'. Option C correctly uses auxiliary inversion and the proper conjunction 'when'."
     },
     {
-        question: "విద్యార్థి-కేంద్రిత బోధన (Student-centred Learning)ను ప్రధానంగా సమర్థించినవారు ఎవరు?",
+        question: 'Choose the passive form.\n\n"People speak English all over the world."',
         options: [
-            "కార్ల్ రోజర్స్",
-            "మాస్లో",
-            "ఫ్రాయిడ్",
-            "పావ్లోవ్"
+            "English is spoken all over the world.",
+            "English speaks all over the world.",
+            "English has spoken all over the world.",
+            "English was speaking all over the world."
         ],
         correct: 0,
-        explanation: "కార్ల్ రోజర్స్ Humanistic విద్యా సిద్ధాంతంలో విద్యార్థి-కేంద్రిత బోధనకు ప్రాధాన్యం ఇచ్చాడు. ఉపాధ్యాయుడు మార్గదర్శిగా ఉండి విద్యార్థి స్వయంగా నేర్చుకునే అవకాశాలు కల్పించాలని సూచించాడు."
+        explanation: "The sentence is in the Present Simple Tense. Its passive voice follows the structure 'is/am/are + past participle', making 'English is spoken all over the world' correct."
     },
     {
-        question: "క్రింది జతలను పరిశీలించండి.\n\n1. పావ్లోవ్ — Classical Conditioning\n2. స్కిన్నర్ — Reinforcement\n3. థార్న్‌డైక్ — Law of Effect\n4. బండూరా — Observation Learning\n\nపై జతలలో సరైనవి ఏవి?",
+        question: 'Choose the correct reported speech.\n\nHe said, "I am reading a novel."',
         options: [
-            "1, 2 మాత్రమే",
-            "2, 3, 4 మాత్రమే",
-            "1, 3, 4 మాత్రమే",
-            "1, 2, 3, 4"
-        ],
-        correct: 3,
-        explanation: "పావ్లోవ్ Classical Conditioning, స్కిన్నర్ Reinforcement, థార్న్‌డైక్ Law of Effect, బండూరా Observation Learning సిద్ధాంతాలను ప్రతిపాదించారు. అందువల్ల ఇచ్చిన నాలుగు జతలూ పూర్తిగా సరైనవే."
-    },
-    {
-        question: "క్రింది జతలలో తప్పుగా జత చేయబడినది ఏది?",
-        options: [
-            "పియాజే — సంజ్ఞానాత్మక వికాసం",
-            "కోహ్ల్‌బర్గ్ — నైతిక వికాసం",
-            "ఫ్రాయిడ్ — సామాజిక అభ్యాస సిద్ధాంతం",
-            "ఎరిక్సన్ — మానసిక-సామాజిక వికాసం"
-        ],
-        correct: 2,
-        explanation: "సామాజిక అభ్యాస సిద్ధాంతాన్ని ఆల్బర్ట్ బండూరా ప్రతిపాదించాడు. ఫ్రాయిడ్ Psychoanalytic Theoryలో చేతన, అచేతన మనస్సు మరియు వ్యక్తిత్వ వికాసాన్ని వివరించాడు. కాబట్టి మూడవ జత మాత్రమే తప్పుగా ఇవ్వబడింది."
-    },
-    {
-        question: "\"గంట శబ్దం విన్న వెంటనే కుక్క నోరూరించడం\" ఏ సిద్ధాంతానికి ఉదాహరణ?",
-        options: [
-            "Operant Conditioning",
-            "Trial and Error Learning",
-            "Classical Conditioning",
-            "Discovery Learning"
-        ],
-        correct: 2,
-        explanation: "పావ్లోవ్ Classical Conditioningలో గంట శబ్దం Conditioned Stimulusగా మారి, ఆహారం లేకపోయినా కుక్క నోరూరిస్తుంది. ఇది నేర్చుకున్న ప్రతిస్పందనకు ప్రసిద్ధ ఉదాహరణగా పరిగణించబడుతుంది."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు క్లిష్టమైన పనిని చిన్న చిన్న దశలుగా విభజించి విద్యార్థులకు సహాయం చేస్తాడు. ఇది ఏ భావనకు ఉదాహరణ?",
-        options: [
-            "Reinforcement",
-            "Scaffolding",
-            "Readiness",
-            "Insight"
-        ],
-        correct: 1,
-        explanation: "Scaffoldingలో ఉపాధ్యాయుడు ప్రారంభంలో ఎక్కువ సహాయం చేసి, విద్యార్థి నైపుణ్యం పెరిగే కొద్దీ సహాయాన్ని క్రమంగా తగ్గిస్తాడు. ఇది బ్రూనర్ బోధనా విధానంలోని ముఖ్యమైన భావన."
-    },
-    {
-        question: "Law of Effectను ప్రతిపాదించినవారు ఎవరు?",
-        options: [
-            "థార్న్‌డైక్",
-            "స్కిన్నర్",
-            "పావ్లోవ్",
-            "గార్డ్నర్"
+            "He said that he was reading a novel.",
+            "He said that he is reading a novel.",
+            "He told that he was reading a novel.",
+            "He said he reading a novel."
         ],
         correct: 0,
-        explanation: "ఎడ్వర్డ్ థార్న్‌డైక్ Trial and Error Learning సిద్ధాంతంలో Law of Effectను ప్రతిపాదించాడు. సంతృప్తికర ఫలితాలిచ్చే ప్రవర్తన మళ్లీ జరిగే అవకాశాలు ఎక్కువగా ఉంటాయని వివరించాడు."
+        explanation: "When the reporting verb is in the past, Present Continuous changes to Past Continuous. Pronouns also change appropriately, making option A the correct reported speech."
     },
     {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\nఅ. స్కిన్నర్ శిక్ష (Punishment) కంటే బలపరిచే చర్యలకు (Reinforcement) ఎక్కువ ప్రాధాన్యత ఇచ్చాడు.\nఆ. పావ్లోవ్ Operant Conditioning సిద్ధాంతాన్ని ప్రతిపాదించాడు.",
+        question: "Either my father or my brothers _____ going to Hyderabad.",
+        options: ["is", "was", "are", "has"],
+        correct: 2,
+        explanation: "With 'Either...or', the verb agrees with the subject nearest to it. Since 'brothers' is plural and nearest the verb, the correct answer is 'are'."
+    },
+    {
+        question: "If you _____ me earlier, I would have helped you.",
+        options: ["inform", "informed", "had informed", "have informed"],
+        correct: 2,
+        explanation: "This is a Third Conditional sentence describing an unreal past situation. The correct structure is 'If + had + past participle, would have + past participle'."
+    },
+    {
+        question: "Choose the correct sentence.",
         options: [
-            "అ మాత్రమే",
-            "ఆ మాత్రమే",
-            "రెండూ సరైనవి",
-            "రెండూ తప్పు"
+            "No sooner had they arrived when the meeting started.",
+            "No sooner did they arrive than the meeting started.",
+            "No sooner had they arrived than the meeting started.",
+            "No sooner they had arrived than the meeting started."
+        ],
+        correct: 2,
+        explanation: "The fixed grammatical pair is 'No sooner...than'. It also requires auxiliary inversion with 'had'. Option C correctly follows both grammar rules."
+    },
+    {
+        question: 'The passive form of "Who wrote this letter?" is:',
+        options: [
+            "By whom was this letter written?",
+            "By whom this letter was written?",
+            "Who was this letter written?",
+            "By whom this letter written?"
         ],
         correct: 0,
-        explanation: "స్కిన్నర్ Reinforcement ద్వారా ప్రవర్తనను బలపరచాలని సూచించాడు. Operant Conditioning ఆయన సిద్ధాంతం. పావ్లోవ్ మాత్రం Classical Conditioningను ప్రతిపాదించాడు. కాబట్టి మొదటి ప్రకటన మాత్రమే సరైనది."
+        explanation: "In interrogative passive voice, the object becomes the subject. The correct pattern is 'By whom was + subject + past participle?', making option A correct."
     },
     {
-        question: "క్రింది వారిలో Triarchic Theory of Intelligenceను ప్రతిపాదించినవారు ఎవరు?",
-        options: [
-            "గార్డ్నర్",
-            "స్పియర్‌మన్",
-            "స్టెర్న్‌బర్గ్",
-            "థర్‌స్టోన్"
-        ],
-        correct: 2,
-        explanation: "రాబర్ట్ స్టెర్న్‌బర్గ్ Triarchic Theoryను ప్రతిపాదించాడు. ఇందులో Analytical, Creative, Practical అనే మూడు ప్రధాన మేధస్సులను వివరించి, మేధస్సు బహుముఖ స్వభావాన్ని వివరించాడు."
+        question: "Each of the teachers _____ appreciated by the Principal.",
+        options: ["were", "was", "are", "have"],
+        correct: 1,
+        explanation: "The expression 'Each of' always requires a singular verb because it refers to every individual separately. Therefore, 'was appreciated' is grammatically correct."
     },
     {
-        question: "ఒక విద్యార్థి సమస్యకు కొత్త విధంగా పరిష్కారం కనుగొన్నాడు. స్టెర్న్‌బర్గ్ ప్రకారం ఇది ప్రధానంగా ఏ మేధస్సుకు చెందినది?",
+        question: 'Choose the correct reported speech.\n\nThe boy said, "We will win the match."',
         options: [
-            "Analytical",
-            "Practical",
-            "Creative",
-            "General"
-        ],
-        correct: 2,
-        explanation: "Creative Intelligence అనేది కొత్త ఆలోచనలు, వినూత్న పరిష్కారాలు, అసాధారణ పరిస్థితుల్లో సృజనాత్మకంగా ఆలోచించే సామర్థ్యాన్ని సూచిస్తుంది. అందువల్ల ఈ ఉదాహరణ Creative Intelligenceకు చెందుతుంది."
-    },
-    {
-        question: "g Factor అనే భావనకు సంబంధించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
-        options: [
-            "స్పియర్‌మన్",
-            "గార్డ్నర్",
-            "గిల్‌ఫోర్డ్",
-            "వెక్స్లర్"
+            "The boy said that they would win the match.",
+            "The boy said they will win the match.",
+            "The boy told that they would win.",
+            "The boy said that we would win."
         ],
         correct: 0,
-        explanation: "చార్ల్స్ స్పియర్‌మన్ Two-Factor Theoryలో General Intelligence లేదా g Factorను ప్రతిపాదించాడు. అన్ని మానసిక కార్యకలాపాలకు సాధారణ మేధస్సు ఆధారమని ఆయన అభిప్రాయపడ్డాడు."
+        explanation: "In reported speech, 'will' changes to 'would' when the reporting verb is in the past. The pronoun 'we' changes appropriately according to the context."
     },
     {
-        question: "క్రింది వాటిలో Primary Mental Abilities సిద్ధాంతానికి సంబంధించినది ఏది?",
+        question: "Choose the correct sentence.",
         options: [
-            "స్పియర్‌మన్",
-            "థర్‌స్టోన్",
-            "గార్డ్నర్",
-            "స్టెర్న్‌బర్గ్"
+            "Neither the Principal nor the teachers has attended the meeting.",
+            "Neither the Principal nor the teachers have attended the meeting.",
+            "Neither the Principal nor the teachers is attended the meeting.",
+            "Neither the Principal nor the teachers attends the meeting yesterday."
         ],
         correct: 1,
-        explanation: "ఎల్.ఎల్. థర్‌స్టోన్ Primary Mental Abilities సిద్ధాంతంలో ఏడు స్వతంత్ర మానసిక సామర్థ్యాలను వివరించాడు. ఒకే g Factorతో మేధస్సును వివరించలేమని ఆయన అభిప్రాయపడ్డాడు."
+        explanation: "In 'Neither...nor' constructions, the verb agrees with the nearest subject. Since 'teachers' is plural, the correct helping verb is 'have', making option B correct."
     },
     {
-        question: "క్రింది జతలలో సరైనది కానిది ఏది?",
+        question: "If it _____ tomorrow, we shall cancel the trip.",
+        options: ["rains", "rained", "had rained", "rain"],
+        correct: 0,
+        explanation: "The First Conditional uses the Present Simple in the if-clause and 'shall/will' in the main clause. Therefore, 'If it rains' is the correct structure."
+    },
+    {
+        question: 'Choose the passive form.\n\n"The students have completed the project."',
         options: [
-            "బినే — Mental Age",
-            "వెక్స్లర్ — WAIS",
-            "గిల్‌ఫోర్డ్ — Structure of Intellect",
-            "గార్డ్నర్ — g Factor"
+            "The project has completed.",
+            "The project has been completed.",
+            "The project had been completed.",
+            "The project was completed."
         ],
-        correct: 3,
-        explanation: "g Factorను స్పియర్‌మన్ ప్రతిపాదించాడు. గార్డ్నర్ Multiple Intelligences సిద్ధాంతాన్ని అభివృద్ధి చేశాడు. కాబట్టి నాలుగవ జత మాత్రమే తప్పుగా ఇవ్వబడింది."
+        correct: 1,
+        explanation: "The sentence is in the Present Perfect Tense. Its passive form follows 'has/have been + past participle', resulting in 'The project has been completed'."
     },
     {
-        question: "క్రింది వారిలో Unconscious Mindకు సంబంధించిన సిద్ధాంతాన్ని ప్రతిపాదించినవారు ఎవరు?",
+        question: 'Choose the correct reported speech.\n\nMother said to me, "Don\'t waste water."',
         options: [
-            "ఫ్రాయిడ్",
-            "ఎరిక్సన్",
-            "రోజర్స్",
-            "మాస్లో"
+            "Mother advised me not to waste water.",
+            "Mother said me not waste water.",
+            "Mother told not to waste water.",
+            "Mother advised that I not waste water."
         ],
         correct: 0,
-        explanation: "సిగ్మండ్ ఫ్రాయిడ్ Psychoanalytic Theoryలో అచేతన మనస్సు, Id, Ego, Superego వంటి భావనలను వివరించాడు. వ్యక్తి ప్రవర్తనపై అచేతన ప్రభావాన్ని ప్రధానంగా గుర్తించాడు."
+        explanation: "Negative imperative sentences are reported using 'advised/told + object + not to + base verb'. Option A correctly follows this reporting pattern with the required object."
     },
     {
-        question: "ఒక ఉపాధ్యాయుడు విద్యార్థుల వ్యక్తిగత సామర్థ్యాలను గౌరవిస్తూ, స్వేచ్ఛగా అభ్యాస అవకాశాలు కల్పిస్తున్నాడు. ఈ విధానం ప్రధానంగా ఎవరి సిద్ధాంతాన్ని ప్రతిబింబిస్తుంది?",
+        question: "Either the captain or the players _____ responsible for the defeat.",
+        options: ["is", "are", "was", "has"],
+        correct: 1,
+        explanation: "With 'Either...or', the verb agrees with the subject nearest to it. Since 'players' is plural, the correct verb is 'are'."
+    },
+    {
+        question: "Choose the correct sentence.",
         options: [
-            "కార్ల్ రోజర్స్",
-            "ఫ్రాయిడ్",
-            "థార్న్‌డైక్",
-            "పావ్లోవ్"
+            "Hardly had the train arrived when the passengers rushed in.",
+            "Hardly the train had arrived when the passengers rushed in.",
+            "Hardly did the train arrived when the passengers rushed in.",
+            "Hardly had the train arrived than the passengers rushed in."
         ],
         correct: 0,
-        explanation: "కార్ల్ రోజర్స్ Humanistic విద్యా సిద్ధాంతంలో విద్యార్థి-కేంద్రిత బోధనను ప్రోత్సహించాడు. ప్రతి విద్యార్థి వ్యక్తిగత సామర్థ్యాలను గౌరవించి స్వతంత్ర అభ్యాసానికి అవకాశాలు కల్పించాలని సూచించాడు."
+        explanation: "The correct expression is 'Hardly...when' with auxiliary inversion. Option A follows both grammatical rules correctly, while the remaining options contain structural mistakes."
     },
     {
-        question: "Self-Actualization అనే భావన ఏ సిద్ధాంతంలో ప్రధానమైనది?",
-        options: [
-            "Psychoanalytic Theory",
-            "Hierarchy of Needs",
-            "Classical Conditioning",
-            "Moral Development"
-        ],
+        question: "If I _____ harder, I would be successful now.",
+        options: ["studied", "had studied", "study", "have studied"],
         correct: 1,
-        explanation: "అబ్రహాం మాస్లో అవసరాల సోపానక్రమంలో Self-Actualization అత్యున్నత స్థాయి. వ్యక్తి తన సంపూర్ణ సామర్థ్యాన్ని అభివృద్ధి చేసి జీవిత లక్ష్యాలను సాధించడం దీనిలో ప్రధాన భావన."
+        explanation: "This is a Mixed Conditional expressing an unreal past condition with a present result. The correct structure is 'If + had + past participle, would + base verb'."
     },
     {
-        question: "క్రింది జతలను పరిశీలించండి.\n\n1. పియాజే — Thinking\n2. వైగోట్స్కీ — Guidance\n3. బ్రూనర్ — Discovery Learning\n4. బండూరా — Modeling\n\nపై వాటిలో సరైనవి ఏవి?",
+        question: 'Choose the passive form.\n\n"Open the window."',
         options: [
-            "1, 2 మాత్రమే",
-            "2, 3, 4 మాత్రమే",
-            "1, 3, 4 మాత్రమే",
-            "1, 2, 3, 4"
-        ],
-        correct: 3,
-        explanation: "పియాజే సంజ్ఞానాత్మక ఆలోచన, వైగోట్స్కీ మార్గదర్శక అభ్యాసం, బ్రూనర్ Discovery Learning, బండూరా Modeling భావనలను ప్రతిపాదించారు. అందువల్ల నాలుగు జతలూ పూర్తిగా సరైనవే."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\nఅ. పియాజే సంజ్ఞానాత్మక వికాసాన్ని దశలుగా వివరించాడు.\nఆ. కోహ్ల్‌బర్గ్ సిద్ధాంతం ప్రధానంగా నైతిక నిర్ణయ వికాసానికి సంబంధించినది.\nఇ. వైగోట్స్కీ వ్యక్తిగత అభ్యాసానికే ప్రాధాన్యత ఇచ్చాడు.\n\nసరైన సమాధానాన్ని గుర్తించండి.",
-        options: [
-            "అ మాత్రమే",
-            "అ, ఆ మాత్రమే",
-            "ఆ, ఇ మాత్రమే",
-            "అ, ఆ, ఇ"
-        ],
-        correct: 1,
-        explanation: "పియాజే సంజ్ఞానాత్మక వికాస దశలను వివరించాడు. కోహ్ల్‌బర్గ్ నైతిక నిర్ణయ వికాసాన్ని ప్రతిపాదించాడు. వైగోట్స్కీ సామాజిక పరస్పర చర్యలు, ZPD, మార్గదర్శక సహాయానికి ప్రాధాన్యత ఇచ్చాడు. కాబట్టి మూడవ ప్రకటన తప్పు."
-    },
-    {
-        question: "క్రింది వాటిలో ప్రేరణ (Motivation) యొక్క అంతర్గత (Intrinsic) ఉదాహరణ ఏది?",
-        options: [
-            "బహుమతి కోసం చదవడం",
-            "పరీక్షలో మార్కుల కోసం చదవడం",
-            "జ్ఞానం పొందాలనే ఆసక్తితో చదవడం",
-            "తల్లిదండ్రుల ఒత్తిడితో చదవడం"
-        ],
-        correct: 2,
-        explanation: "అంతర్గత ప్రేరణలో వ్యక్తి బాహ్య బహుమతుల కోసం కాదు, తన ఆసక్తి, జ్ఞానం పెంపొందించుకోవాలనే కోరిక, వ్యక్తిగత సంతృప్తి కోసం అభ్యసిస్తాడు. అందువల్ల మూడవ ఎంపిక సరైనది."
-    },
-    {
-        question: "మాస్లో అవసరాల సోపానక్రమం ప్రకారం గౌరవ అవసరాలు (Esteem Needs) తరువాత వచ్చే స్థాయి ఏది?",
-        options: [
-            "భద్రత అవసరాలు",
-            "సామాజిక అవసరాలు",
-            "స్వీయ సాకారత",
-            "శారీరక అవసరాలు"
-        ],
-        correct: 2,
-        explanation: "మాస్లో అవసరాల సోపానక్రమంలో Physiological, Safety, Love and Belonging, Esteem తరువాత అత్యున్నత స్థానం Self-Actualizationది. ఇది వ్యక్తి సంపూర్ణ సామర్థ్యాన్ని అభివృద్ధి చేసుకునే దశను సూచిస్తుంది."
-    },
-    {
-        question: "పరిసరాలలోని ఉద్దీపనలకు అర్థవంతమైన రూపం ఇవ్వడాన్ని ఏమంటారు?",
-        options: [
-            "సంచలనం (Sensation)",
-            "గ్రహణం (Perception)",
-            "అభ్యాసం (Learning)",
-            "జ్ఞాపకం (Memory)"
-        ],
-        correct: 1,
-        explanation: "Perception అనేది ఇంద్రియాల ద్వారా వచ్చిన ఉద్దీపనలను మెదడు విశ్లేషించి వాటికి అర్థవంతమైన రూపం ఇవ్వడం. Sensation కేవలం ఉద్దీపనను స్వీకరించడం మాత్రమే."
-    },
-    {
-        question: "క్రింది వాటిలో Attention ను ప్రభావితం చేసే అంశం కానిది ఏది?",
-        options: [
-            "ఉద్దీపన తీవ్రత",
-            "ఆసక్తి",
-            "అలసట",
-            "రక్త గ్రూపు"
-        ],
-        correct: 3,
-        explanation: "శ్రద్ధను ఉద్దీపన తీవ్రత, వ్యక్తిగత ఆసక్తి, అలసట, ఆరోగ్యం వంటి అంశాలు ప్రభావితం చేస్తాయి. రక్త గ్రూపుకు శ్రద్ధతో ప్రత్యక్ష సంబంధం లేదు."
-    },
-    {
-        question: "ఒక విద్యార్థి పాఠంపై పూర్తిగా ఏకాగ్రతతో ఉండి చుట్టూ ఉన్న శబ్దాలను పట్టించుకోకపోవడం ఏ ప్రక్రియకు ఉదాహరణ?",
-        options: [
-            "Sensation",
-            "Selective Attention",
-            "Trial and Error",
-            "Reinforcement"
-        ],
-        correct: 1,
-        explanation: "Selective Attentionలో వ్యక్తి అవసరమైన ఉద్దీపనపై మాత్రమే దృష్టి కేంద్రీకరిస్తాడు. మిగిలిన అనవసర ఉద్దీపనలను మెదడు నిర్లక్ష్యం చేస్తుంది. ఇది సమర్థవంతమైన అభ్యాసానికి అవసరం."
-    },
-    {
-        question: "IQ అనే సంక్షిప్త రూపానికి విస్తరణ ఏమిటి?",
-        options: [
-            "Intelligent Quotient",
-            "Intelligence Quantity",
-            "Intelligence Quotient",
-            "Intelligent Quality"
-        ],
-        correct: 2,
-        explanation: "IQ అంటే Intelligence Quotient. ఇది వ్యక్తి మేధస్సును అంచనా వేయడానికి ఉపయోగించే సూచిక. మొదట బినే భావనల ఆధారంగా తరువాత అనేక పరీక్షలు అభివృద్ధి చేయబడ్డాయి."
-    },
-    {
-        question: "సాధారణ మేధస్సు (General Intelligence)తో పాటు ప్రత్యేక సామర్థ్యాలు (Specific Abilities) కూడా ఉంటాయని చెప్పిన సిద్ధాంతం ఏది?",
-        options: [
-            "Multiple Intelligences",
-            "Two-Factor Theory",
-            "Triarchic Theory",
-            "Structure of Intellect"
-        ],
-        correct: 1,
-        explanation: "స్పియర్‌మన్ Two-Factor Theoryలో ప్రతి పనికి ప్రభావం చూపే General Intelligence (g)తో పాటు ప్రత్యేక పనులకు సంబంధించిన Specific Ability (s) కూడా ఉంటుందని వివరించాడు."
-    },
-    {
-        question: "క్రింది వాటిలో ప్రాథమిక మానసిక సామర్థ్యాల (Primary Mental Abilities)లో ఒకటి ఏది?",
-        options: [
-            "శారీరక బలం",
-            "సంఖ్యా సామర్థ్యం",
-            "భావోద్వేగ స్థిరత్వం",
-            "నాయకత్వం"
-        ],
-        correct: 1,
-        explanation: "థర్‌స్టోన్ పేర్కొన్న Primary Mental Abilitiesలో Numerical Ability, Verbal Comprehension, Word Fluency, Spatial Ability వంటి ప్రధాన మానసిక సామర్థ్యాలు ఉన్నాయి."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\nఅ. Binet మానసిక వయస్సు భావనను ఉపయోగించాడు.\nఆ. Wechsler పరీక్షలు వయోజనులు మరియు పిల్లల కోసం వేర్వేరుగా రూపొందించబడ్డాయి.",
-        options: [
-            "అ మాత్రమే",
-            "ఆ మాత్రమే",
-            "రెండూ సరైనవి",
-            "రెండూ తప్పు"
-        ],
-        correct: 2,
-        explanation: "ఆల్ఫ్రెడ్ బినే Mental Age భావనను ఉపయోగించాడు. వెక్స్లర్ WAIS, WISC వంటి వేర్వేరు మేధస్సు పరీక్షలను పెద్దలు మరియు పిల్లల కోసం రూపొందించాడు."
-    },
-    {
-        question: "శరీర నిర్మాణం ఆధారంగా వ్యక్తిత్వాన్ని వర్గీకరించినవారు ఎవరు?",
-        options: [
-            "కార్ల్ రోజర్స్",
-            "క్రెట్ష్మర్",
-            "మాస్లో",
-            "ఫ్రాయిడ్"
-        ],
-        correct: 1,
-        explanation: "ఎర్నెస్ట్ క్రెట్ష్మర్ శరీర నిర్మాణం ఆధారంగా వ్యక్తిత్వ రకాలను వర్గీకరించాడు. శారీరక ఆకృతి మరియు వ్యక్తిత్వ లక్షణాల మధ్య సంబంధం ఉంటుందని ప్రతిపాదించాడు."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు సరైన సమాధానం ఇచ్చిన ప్రతిసారి విద్యార్థికి స్టార్ ఇస్తున్నాడు. ఈ విధానం ప్రధానంగా ఏ అభ్యాస నియమాన్ని బలపరుస్తుంది?",
-        options: [
-            "Law of Readiness",
-            "Law of Effect",
-            "Law of Exercise",
-            "Insight"
-        ],
-        correct: 1,
-        explanation: "థార్న్‌డైక్ Law of Effect ప్రకారం సానుకూల ఫలితాలు కలిగిన ప్రవర్తన మళ్లీ పునరావృతమవుతుంది. స్టార్ ఇవ్వడం విద్యార్థిని మరింత ప్రోత్సహించే సానుకూల ఫలితం."
-    },
-    {
-        question: "క్రింది వాటిలో Insight Learningకు సంబంధించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
-        options: [
-            "కోహ్లర్",
-            "స్కిన్నర్",
-            "పావ్లోవ్",
-            "బండూరా"
+            "Let the window be opened.",
+            "The window is opened.",
+            "The window should opened.",
+            "Opened the window."
         ],
         correct: 0,
-        explanation: "వోల్ఫ్‌గాంగ్ కోహ్లర్ Gestalt Psychologyలో Insight Learningను వివరించాడు. సమస్యను ఒక్కసారిగా అర్థం చేసుకొని పరిష్కారం కనుగొనడం దీనిలో ప్రధాన లక్షణం."
+        explanation: "The passive form of an imperative sentence follows the pattern 'Let + object + be + past participle'. Therefore, 'Let the window be opened' is correct."
     },
     {
-        question: "క్రింది జతలలో సరైనది కానిది ఏది?",
+        question: "Choose the grammatically correct sentence.",
         options: [
-            "కోహ్లర్ – Insight Learning",
-            "స్కిన్నర్ – Operant Conditioning",
-            "పావ్లోవ్ – Trial and Error",
-            "థార్న్‌డైక్ – Law of Exercise"
+            "No sooner had she completed the work than she submitted it.",
+            "No sooner had she completed the work when she submitted it.",
+            "Hardly had she completed the work than she submitted it.",
+            "Hardly she had completed the work when she submitted it."
         ],
-        correct: 2,
-        explanation: "Trial and Error Learningను థార్న్‌డైక్ ప్రతిపాదించాడు. పావ్లోవ్ Classical Conditioning సిద్ధాంతాన్ని అభివృద్ధి చేశాడు. అందువల్ల మూడవ జత తప్పుగా ఉంది."
-    },
-    {
-        question: "సంజ్ఞానాత్మక వికాసంలో Formal Operational Stage ఏ వయస్సు నుండి ప్రారంభమవుతుంది?",
-        options: [
-            "2 సంవత్సరాలు",
-            "7 సంవత్సరాలు",
-            "11 సంవత్సరాలు",
-            "18 సంవత్సరాలు"
-        ],
-        correct: 2,
-        explanation: "పియాజే ప్రకారం Formal Operational Stage సుమారు 11 సంవత్సరాల వయస్సు నుంచి ప్రారంభమవుతుంది. ఈ దశలో నైరూప్య ఆలోచన, తార్కిక విశ్లేషణ అభివృద్ధి చెందుతాయి."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\nఅ. Gardner ప్రకారం ప్రతి వ్యక్తిలో అన్ని మేధస్సులు సమానంగా ఉండవు.\nఆ. Spearman ప్రకారం ఒకే సాధారణ మేధస్సు అన్ని పనులపై ప్రభావం చూపుతుంది.",
-        options: [
-            "అ మాత్రమే",
-            "ఆ మాత్రమే",
-            "రెండూ సరైనవి",
-            "రెండూ తప్పు"
-        ],
-        correct: 2,
-        explanation: "గార్డ్నర్ ప్రకారం ప్రతి వ్యక్తిలో మేధస్సుల బలం వేర్వేరుగా ఉంటుంది. స్పియర్‌మన్ సాధారణ మేధస్సు అన్ని మానసిక పనులపై ప్రభావం చూపుతుందని తన g Factor సిద్ధాంతంలో వివరించాడు."
-    },
-    {
-        question: "Positive Reinforcement అంటే ఏమిటి?",
-        options: [
-            "శిక్ష ఇవ్వడం",
-            "అసహ్యకర ఉద్దీపన తొలగించడం",
-            "ఇష్టమైన ప్రోత్సాహం ఇవ్వడం",
-            "స్పందనను ఆపివేయడం"
-        ],
-        correct: 2,
-        explanation: "Positive Reinforcementలో కోరుకున్న ప్రవర్తన తర్వాత ఇష్టమైన బహుమతి లేదా ప్రశంస ఇవ్వబడుతుంది. దీనివల్ల ఆ ప్రవర్తన మళ్లీ పునరావృతమయ్యే అవకాశం పెరుగుతుంది."
-    },
-    {
-        question: "ఒక విద్యార్థి గణిత సమస్యను అనేక ప్రయత్నాల తరువాత సరైన పద్ధతిలో పరిష్కరించడం ఏ సిద్ధాంతానికి అనుకూల ఉదాహరణ?",
-        options: [
-            "Insight Learning",
-            "Trial and Error Learning",
-            "Discovery Learning",
-            "Social Learning"
-        ],
-        correct: 1,
-        explanation: "థార్న్‌డైక్ Trial and Error Learning ప్రకారం అనేక ప్రయత్నాలు, పొరపాట్ల ద్వారా సరైన పరిష్కారాన్ని కనుగొంటారు. ఈ ఉదాహరణ అదే అభ్యాస విధానాన్ని సూచిస్తుంది."
-    },
-    {
-        question: "క్రింది వాటిలో Extrinsic Motivation ఉదాహరణ ఏది?",
-        options: [
-            "జ్ఞానం కోసం చదవడం",
-            "ఆసక్తితో చదవడం",
-            "బహుమతి కోసం చదవడం",
-            "స్వీయ సంతృప్తి కోసం చదవడం"
-        ],
-        correct: 2,
-        explanation: "Extrinsic Motivationలో వ్యక్తి బాహ్య బహుమతులు, మార్కులు, ప్రశంసలు లేదా ఇతర ప్రోత్సాహకాల కోసం పని చేస్తాడు. ఇది అంతర్గత ఆసక్తికి భిన్నమైన ప్రేరణ."
-    },
-    {
-        question: "క్రింది వారిలో Humanistic Psychologyకి చెందిన వారు ఎవరు?\n\n1. కార్ల్ రోజర్స్\n2. అబ్రహాం మాస్లో\n3. సిగ్మండ్ ఫ్రాయిడ్\n4. బి.ఎఫ్. స్కిన్నర్",
-        options: [
-            "1 మాత్రమే",
-            "1, 2 మాత్రమే",
-            "2, 3 మాత్రమే",
-            "1, 2, 4 మాత్రమే"
-        ],
-        correct: 1,
-        explanation: "Humanistic Psychology ప్రధాన ప్రతినిధులు కార్ల్ రోజర్స్ మరియు అబ్రహాం మాస్లో. ఫ్రాయిడ్ Psychoanalytic Schoolకు, స్కిన్నర్ Behaviorismకు చెందిన మనోవిజ్ఞాన శాస్త్రవేత్తలు."
-    },
-    {
-        question: "క్రింది జతలను పరిశీలించండి.\n\n1. Bandura — Modeling\n2. Vygotsky — ZPD\n3. Bruner — Discovery Learning\n4. Kohlberg — Moral Development\n\nసరైన సమాధానాన్ని గుర్తించండి.",
-        options: [
-            "1, 2, 3 మాత్రమే",
-            "2, 3, 4 మాత్రమే",
-            "1, 3, 4 మాత్రమే",
-            "1, 2, 3, 4"
-        ],
-        correct: 3,
-        explanation: "బండూరా Modeling, వైగోట్స్కీ ZPD, బ్రూనర్ Discovery Learning, కోహ్ల్‌బర్గ్ Moral Development సిద్ధాంతాలను ప్రతిపాదించారు. అందువల్ల ఇచ్చిన నాలుగు జతలూ పూర్తిగా సరైనవే."
+        correct: 0,
+        explanation: "The correct correlative conjunction is 'No sooner...than'. It also requires auxiliary inversion. Option A correctly follows both grammar rules and is therefore the right answer."
     }
 ];
