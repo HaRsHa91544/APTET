@@ -4,433 +4,603 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: "Each of the students _____ given a participation certificate.",
-        options: ["were", "are", "was", "have been"],
-        correct: 2,
-        explanation: "The expression 'Each of' is always treated as singular. Therefore, it requires a singular verb. Hence, 'was' is correct, while 'were', 'are', and 'have been' are incorrect."
-    },
-    {
-        question: "Neither Ravi nor his friends _____ present in the classroom.",
-        options: ["was", "were", "is", "has"],
-        correct: 1,
-        explanation: "In 'Neither...nor' constructions, the verb agrees with the subject nearest to it. Since 'friends' is plural and closest to the verb, the correct answer is 'were'."
-    },
-    {
-        question: "Choose the correct sentence.",
+        question: "క్రింది వాటిలో కర్తను సూచించే విభక్తి ఏది?",
         options: [
-            "Either the teachers or the Headmaster are attending the meeting.",
-            "Either the teachers or the Headmaster is attending the meeting.",
-            "Either the teachers or the Headmaster were attending the meeting.",
-            "Either the teachers or the Headmaster have attending the meeting."
-        ],
-        correct: 1,
-        explanation: "With 'Either...or', the verb agrees with the nearest subject. Since 'Headmaster' is singular and nearest to the verb, the correct verb is 'is'."
-    },
-    {
-        question: "Hardly had the train left the station _____ it started raining.",
-        options: ["than", "when", "then", "and"],
-        correct: 1,
-        explanation: "The fixed grammatical pair is 'Hardly...when'. It expresses that one event happened immediately after another. Using 'than', 'then', or 'and' is grammatically incorrect."
-    },
-    {
-        question: "No sooner had she entered the room _____ everyone stood up.",
-        options: ["then", "when", "than", "and"],
-        correct: 2,
-        explanation: "The correct correlative conjunction is 'No sooner...than'. This structure indicates that one action occurred immediately after another. Therefore, 'than' is the only correct choice."
-    },
-    {
-        question: 'The passive form of "They are repairing the road." is:',
-        options: [
-            "The road repaired by them.",
-            "The road is being repaired by them.",
-            "The road has been repaired by them.",
-            "The road was repaired by them."
-        ],
-        correct: 1,
-        explanation: "The sentence is in the Present Continuous Tense. Its passive form follows the pattern 'is/am/are + being + past participle', giving 'The road is being repaired by them.'"
-    },
-    {
-        question: 'Choose the correct reported speech.\n\nRavi said, "I can solve this problem."',
-        options: [
-            "Ravi said that I can solve that problem.",
-            "Ravi said that he could solve that problem.",
-            "Ravi said he can solved that problem.",
-            "Ravi said that he solves that problem."
-        ],
-        correct: 1,
-        explanation: "In reported speech, 'can' changes to 'could' when the reporting verb is in the past. Pronouns and demonstratives also change appropriately, making option B correct."
-    },
-    {
-        question: "If she _____ harder, she would have passed the examination.",
-        options: ["studies", "studied", "had studied", "has studied"],
-        correct: 2,
-        explanation: "This is a Third Conditional sentence expressing an unreal past situation. The correct structure is 'If + had + past participle, would have + past participle'."
-    },
-    {
-        question: "Each of the books _____ properly arranged.",
-        options: ["are", "have", "is", "were"],
-        correct: 2,
-        explanation: "The phrase 'Each of' always takes a singular verb because it refers to every individual item separately. Therefore, 'is' is the correct verb."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "Neither of the boys have finished the work.",
-            "Neither of the boys has finished the work.",
-            "Neither of the boys were finishing the work.",
-            "Neither of the boys are finishing the work."
-        ],
-        correct: 1,
-        explanation: "The expression 'Neither of' is grammatically singular. Therefore, it must be followed by the singular verb 'has', not 'have', 'were', or 'are'."
-    },
-    {
-        question: "If I _____ you, I would accept the offer immediately.",
-        options: ["am", "was", "were", "had been"],
-        correct: 2,
-        explanation: "This sentence expresses a hypothetical present situation. Standard English uses 'were' with all subjects in the Second Conditional, including 'I', making 'were' correct."
-    },
-    {
-        question: 'Choose the correct passive form.\n\nPeople believe that she is honest.',
-        options: [
-            "She believes to be honest.",
-            "She is believed to be honest.",
-            "She believed honest.",
-            "She has believed to be honest."
-        ],
-        correct: 1,
-        explanation: "Reporting verbs like 'believe' form the passive structure 'Subject + is believed + to + verb'. Therefore, 'She is believed to be honest' is grammatically correct."
-    },
-    {
-        question: "Either my brother or my sisters _____ responsible for this mistake.",
-        options: ["is", "was", "are", "has"],
-        correct: 2,
-        explanation: "In 'Either...or' constructions, the verb agrees with the nearest subject. Since 'sisters' is plural and closest to the verb, 'are' is correct."
-    },
-    {
-        question: 'Choose the correct reported speech.\n\nThe teacher said, "Do not waste your time."',
-        options: [
-            "The teacher told not waste your time.",
-            "The teacher advised not to waste our time.",
-            "The teacher advised us not to waste our time.",
-            "The teacher said us not waste our time."
+            "ద్వితీయా విభక్తి",
+            "తృతీయా విభక్తి",
+            "ప్రథమా విభక్తి",
+            "సప్తమీ విభక్తి"
         ],
         correct: 2,
-        explanation: "Negative commands in reported speech use the pattern 'advised/told + object + not to + base verb'. Therefore, 'The teacher advised us not to waste our time' is correct."
+        explanation:
+            "ప్రథమా విభక్తి వాక్యంలో కర్తను సూచిస్తుంది. ఒక పని చేసే వ్యక్తి లేదా వస్తువును గుర్తించడానికి ఈ విభక్తిని ఉపయోగిస్తారు. తెలుగు వ్యాకరణంలో ఇది అత్యంత ప్రాథమికమైన విభక్తిగా పరిగణించబడుతుంది."
     },
     {
-        question: "Identify the grammatically correct sentence.",
+        question: '"రామునితో" అనే పదంలో ఉపయోగించిన విభక్తి ఏది?',
         options: [
-            "Hardly had I reached the bus stop than the bus arrived.",
-            "No sooner did I reached home than it began to rain.",
-            "Hardly had I reached the bus stop when the bus arrived.",
-            "No sooner had I reached the bus stop when the bus arrived."
-        ],
-        correct: 2,
-        explanation: "The correct pair is 'Hardly...when'. 'No sooner' is followed by 'than', not 'when'. Hence, only option C follows the correct grammatical structure."
-    },
-    {
-        question: "Neither the Principal nor the teachers _____ willing to postpone the examination.",
-        options: ["is", "are", "was", "has"],
-        correct: 1,
-        explanation: "In 'Neither...nor' constructions, the verb agrees with the subject nearest to it. Since 'teachers' is plural and closest to the verb, the correct verb is 'are'."
-    },
-    {
-        question: "Each of the players _____ expected to attend the practice session.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "The expression 'Each of' is always singular because it refers to every individual separately. Therefore, it requires the singular verb 'is' instead of plural forms."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "No sooner had the bell rung when the students entered.",
-            "No sooner did the bell ring than the students entered.",
-            "No sooner had the bell rung than the students entered.",
-            "No sooner the bell had rung than the students entered."
-        ],
-        correct: 2,
-        explanation: "The standard grammatical structure is 'No sooner had + subject + past participle + than'. Option C correctly follows this pattern with proper auxiliary inversion and conjunction."
-    },
-    {
-        question: 'The passive form of "The committee will announce the results tomorrow." is:',
-        options: [
-            "The results will announce tomorrow.",
-            "The results will be announced tomorrow.",
-            "The results are announced tomorrow.",
-            "The results have been announced tomorrow."
+            "ద్వితీయా",
+            "తృతీయా",
+            "చతుర్థీ",
+            "పంచమీ"
         ],
         correct: 1,
-        explanation: "Future Simple Passive follows the structure 'will be + past participle'. Hence, 'The results will be announced tomorrow' is the correct passive transformation of the sentence."
+        explanation:
+            '"తో" అనే విభక్తి ప్రత్యయం తృతీయా విభక్తిని సూచిస్తుంది. ఇది సహవాసం, సాధనం లేదా తోడ్పాటు భావాన్ని తెలియజేస్తుంది. "రామునితో" అంటే రాముని సహాయంతో లేదా రాముతో కలిసి అనే అర్థం వస్తుంది.'
     },
     {
-        question: "Either Ramesh or his brother _____ responsible for the loss.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "With 'Either...or', the verb agrees with the subject nearest to it. Since 'brother' is singular, the correct verb is 'is'."
-    },
-    {
-        question: "If they _____ earlier, they would not have missed the train.",
-        options: ["leave", "left", "had left", "have left"],
-        correct: 2,
-        explanation: "This is a Third Conditional sentence expressing an unreal past event. The correct pattern is 'If + had + past participle, would have + past participle'."
-    },
-    {
-        question: 'Choose the correct reported speech.\n\nShe said, "I have finished my homework."',
+        question: '"గురువుకు నమస్కారం చేశాను." వాక్యంలో "గురువుకు" పదం ఏ విభక్తికి ఉదాహరణ?',
         options: [
-            "She said that she had finished her homework.",
-            "She said that she has finished her homework.",
-            "She said she finished my homework.",
-            "She told that she had finished her homework."
+            "ప్రథమా",
+            "ద్వితీయా",
+            "చతుర్థీ",
+            "షష్ఠీ"
+        ],
+        correct: 2,
+        explanation:
+            '"కు" అనే ప్రత్యయం చతుర్థీ విభక్తిని సూచిస్తుంది. ఇది పొందేవారిని లేదా ఉద్దేశింపబడిన వ్యక్తిని తెలియజేస్తుంది. "గురువుకు నమస్కారం" అంటే గురువునకు అర్పించిన నమస్కారం అని అర్థం.'
+    },
+    {
+        question: "క్రింది వాటిలో తత్పురుష సమాసం ఏది?",
+        options: [
+            "నీలాకాశం",
+            "అన్నదమ్ములు",
+            "పాదపద్మం",
+            "రామబాణం"
+        ],
+        correct: 3,
+        explanation:
+            'రాముని బాణం → "రామబాణం" అనే విగ్రహవాక్యం తత్పురుష సమాసానికి ఉదాహరణ. ఇందులో పూర్వపదానికి విభక్తి సంబంధం ఉంటుంది. APTETలో ఇది తరచుగా అడిగే సమాస రకం.'
+    },
+    {
+        question: '"అన్నదమ్ములు" అనేది ఏ సమాసం?',
+        options: [
+            "కర్మధారయ",
+            "ద్విగు",
+            "ద్వంద్వ",
+            "బహువ్రీహి"
+        ],
+        correct: 2,
+        explanation:
+            '"అన్న" మరియు "తమ్ముడు" అనే సమాన ప్రాధాన్యం గల రెండు పదాలు కలిసినందున ఇది ద్వంద్వ సమాసం. ఈ సమాసంలో రెండు పదాలకు సమాన స్థానం ఉంటుంది.'
+    },
+    {
+        question: '"త్రిలోకాలు" అనే పదం ఏ సమాసానికి ఉదాహరణ?',
+        options: [
+            "ద్విగు",
+            "అవ్యయీభావ",
+            "తత్పురుష",
+            "కర్మధారయ"
         ],
         correct: 0,
-        explanation: "In reported speech, Present Perfect usually changes to Past Perfect when the reporting verb is in the past. Pronouns also change appropriately, making option A correct."
+        explanation:
+            '"త్రి" అనే సంఖ్యాపదం ముందుగా వచ్చి "లోకాలు"తో కలిసినందున ఇది ద్విగు సమాసం. సంఖ్యాపూర్వక సమాసాలను ద్విగు సమాసాలుగా గుర్తించాలి.'
     },
     {
-        question: 'Choose the correct passive form.\n\n"Someone has stolen my bicycle."',
+        question: "క్రింది వాటిలో గుణసంధికి ఉదాహరణ ఏది?",
         options: [
-            "My bicycle has stolen.",
-            "My bicycle has been stolen.",
-            "My bicycle was stolen.",
-            "My bicycle had been stolen."
-        ],
-        correct: 1,
-        explanation: "The sentence is in the Present Perfect Tense. Its passive form follows 'has/have been + past participle', giving 'My bicycle has been stolen'."
-    },
-    {
-        question: "Hardly _____ the announcement made when the students started cheering.",
-        options: ["was", "had", "did", "has"],
-        correct: 1,
-        explanation: "The fixed expression is 'Hardly had...when'. It requires the auxiliary 'had' before the subject to form the correct inverted grammatical structure."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "Neither the students nor the teacher have completed the work.",
-            "Neither the students nor the teacher has completed the work.",
-            "Neither the students nor the teacher were completed the work.",
-            "Neither the students nor the teacher are completed the work."
-        ],
-        correct: 1,
-        explanation: "The verb agrees with the nearest subject in 'Neither...nor' constructions. Since 'teacher' is singular, the correct verb is 'has', making option B correct."
-    },
-    {
-        question: "Each of the questions _____ worth one mark.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "The phrase 'Each of' is always followed by a singular verb because it emphasizes every individual item separately. Therefore, 'is' is the correct answer."
-    },
-    {
-        question: 'Choose the correct reported speech.\n\nThe doctor said, "Take this medicine twice a day."',
-        options: [
-            "The doctor advised me to take that medicine twice a day.",
-            "The doctor said me to take this medicine.",
-            "The doctor advised that take medicine twice a day.",
-            "The doctor told take the medicine twice a day."
-        ],
-        correct: 0,
-        explanation: "Imperative sentences are reported using 'advised/told + object + to + base verb'. Demonstratives also change appropriately, making option A grammatically correct."
-    },
-    {
-        question: "If I _____ enough money, I would buy a laptop.",
-        options: ["have", "had", "had had", "will have"],
-        correct: 1,
-        explanation: "This is a Second Conditional sentence expressing an unreal present situation. The correct structure is 'If + Past Simple, would + base verb', so 'had' is correct."
-    },
-    {
-        question: "Either the Headmaster or the teachers _____ attending the seminar.",
-        options: ["is", "was", "are", "has"],
-        correct: 2,
-        explanation: "In 'Either...or' constructions, the verb agrees with the nearest subject. Since 'teachers' is plural, the correct verb is 'are'."
-    },
-    {
-        question: "Identify the grammatically correct sentence.",
-        options: [
-            "Hardly had we reached home than it began to rain.",
-            "No sooner had we reached home than it began to rain.",
-            "No sooner did we reached home than it began to rain.",
-            "Hardly we had reached home when it began to rain."
-        ],
-        correct: 1,
-        explanation: "The correct correlative pair is 'No sooner...than' with auxiliary inversion. Option B follows the standard grammatical pattern, while the other options contain structural errors."
-    },
-    {
-        question: "Neither the teacher nor the students _____ absent yesterday.",
-        options: ["was", "is", "were", "has"],
-        correct: 2,
-        explanation: "In 'Neither...nor' constructions, the verb agrees with the subject nearest to it. Since 'students' is plural and closest to the verb, the correct answer is 'were'."
-    },
-    {
-        question: "Each of the candidates _____ an identity card.",
-        options: ["have", "has", "are having", "were having"],
-        correct: 1,
-        explanation: "The phrase 'Each of' is grammatically singular because it refers to every individual separately. Therefore, it always takes the singular verb 'has' in the present tense."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "Hardly had I entered the room than the lights went off.",
-            "Hardly did I enter the room when the lights went off.",
-            "Hardly had I entered the room when the lights went off.",
-            "Hardly I had entered the room when the lights went off."
+            "మహేంద్రుడు",
+            "రామాలయం",
+            "దేవాలయం",
+            "లోకైక"
         ],
         correct: 2,
-        explanation: "The correct grammatical structure is 'Hardly had + subject + past participle + when'. Option C correctly uses auxiliary inversion and the proper conjunction 'when'."
+        explanation:
+            '"దేవ + ఆలయం → దేవాలయం" గుణసంధికి ప్రసిద్ధ ఉదాహరణ. అ మరియు ఆ స్వరాల కలయిక వల్ల గుణసంధి ఏర్పడుతుంది. ఇది APTETలో ఎక్కువగా అడిగే సంధి.'
     },
     {
-        question: 'Choose the passive form.\n\n"People speak English all over the world."',
+        question: '"లోకైక" అనే పదంలో జరిగిన సంధి ఏది?',
         options: [
-            "English is spoken all over the world.",
-            "English speaks all over the world.",
-            "English has spoken all over the world.",
-            "English was speaking all over the world."
+            "గుణసంధి",
+            "వృద్ధి సంధి",
+            "యణాదేశ సంధి",
+            "అత్వసంధి"
         ],
-        correct: 0,
-        explanation: "The sentence is in the Present Simple Tense. Its passive voice follows the structure 'is/am/are + past participle', making 'English is spoken all over the world' correct."
+        correct: 1,
+        explanation:
+            '"లోక + ఏక → లోకైక" రూపంలో ఏర్పడినది వృద్ధి సంధి. ఏ మరియు ఐ సంబంధిత స్వర మార్పు కారణంగా ఈ సంధి ఏర్పడుతుంది.'
     },
     {
-        question: 'Choose the correct reported speech.\n\nHe said, "I am reading a novel."',
+        question: "క్రింది వాటిలో యణాదేశ సంధికి ఉదాహరణ ఏది?",
         options: [
-            "He said that he was reading a novel.",
-            "He said that he is reading a novel.",
-            "He told that he was reading a novel.",
-            "He said he reading a novel."
-        ],
-        correct: 0,
-        explanation: "When the reporting verb is in the past, Present Continuous changes to Past Continuous. Pronouns also change appropriately, making option A the correct reported speech."
-    },
-    {
-        question: "Either my father or my brothers _____ going to Hyderabad.",
-        options: ["is", "was", "are", "has"],
-        correct: 2,
-        explanation: "With 'Either...or', the verb agrees with the subject nearest to it. Since 'brothers' is plural and nearest the verb, the correct answer is 'are'."
-    },
-    {
-        question: "If you _____ me earlier, I would have helped you.",
-        options: ["inform", "informed", "had informed", "have informed"],
-        correct: 2,
-        explanation: "This is a Third Conditional sentence describing an unreal past situation. The correct structure is 'If + had + past participle, would have + past participle'."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "No sooner had they arrived when the meeting started.",
-            "No sooner did they arrive than the meeting started.",
-            "No sooner had they arrived than the meeting started.",
-            "No sooner they had arrived than the meeting started."
+            "అత్యున్నత",
+            "ప్రత్యేకం",
+            "గుర్వాజ్ఞ",
+            "దేవాలయం"
         ],
         correct: 2,
-        explanation: "The fixed grammatical pair is 'No sooner...than'. It also requires auxiliary inversion with 'had'. Option C correctly follows both grammar rules."
+        explanation:
+            '"గురు + ఆజ్ఞ → గుర్వాజ్ఞ" రూపంలో ఉకారం స్థానంలో "వ్" ఆదేశం రావడం వల్ల యణాదేశ సంధి ఏర్పడింది. ఈ సంధిలో యణ్ అక్షరాల ఆదేశం ముఖ్య లక్షణం.'
     },
     {
-        question: 'The passive form of "Who wrote this letter?" is:',
+        question: '"అంబరము" పదానికి సరైన పర్యాయపదం ఏది?',
         options: [
-            "By whom was this letter written?",
-            "By whom this letter was written?",
-            "Who was this letter written?",
-            "By whom this letter written?"
-        ],
-        correct: 0,
-        explanation: "In interrogative passive voice, the object becomes the subject. The correct pattern is 'By whom was + subject + past participle?', making option A correct."
-    },
-    {
-        question: "Each of the teachers _____ appreciated by the Principal.",
-        options: ["were", "was", "are", "have"],
-        correct: 1,
-        explanation: "The expression 'Each of' always requires a singular verb because it refers to every individual separately. Therefore, 'was appreciated' is grammatically correct."
-    },
-    {
-        question: 'Choose the correct reported speech.\n\nThe boy said, "We will win the match."',
-        options: [
-            "The boy said that they would win the match.",
-            "The boy said they will win the match.",
-            "The boy told that they would win.",
-            "The boy said that we would win."
-        ],
-        correct: 0,
-        explanation: "In reported speech, 'will' changes to 'would' when the reporting verb is in the past. The pronoun 'we' changes appropriately according to the context."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "Neither the Principal nor the teachers has attended the meeting.",
-            "Neither the Principal nor the teachers have attended the meeting.",
-            "Neither the Principal nor the teachers is attended the meeting.",
-            "Neither the Principal nor the teachers attends the meeting yesterday."
+            "భూమి",
+            "గగనం",
+            "సముద్రం",
+            "వనం"
         ],
         correct: 1,
-        explanation: "In 'Neither...nor' constructions, the verb agrees with the nearest subject. Since 'teachers' is plural, the correct helping verb is 'have', making option B correct."
+        explanation:
+            '"అంబరము" అంటే ఆకాశం. దీనికి సరైన పర్యాయపదం "గగనం". పర్యాయపదాలపై APTETలో ప్రతి సంవత్సరం ప్రశ్నలు వచ్చే అవకాశం ఉంటుంది.'
     },
     {
-        question: "If it _____ tomorrow, we shall cancel the trip.",
-        options: ["rains", "rained", "had rained", "rain"],
-        correct: 0,
-        explanation: "The First Conditional uses the Present Simple in the if-clause and 'shall/will' in the main clause. Therefore, 'If it rains' is the correct structure."
-    },
-    {
-        question: 'Choose the passive form.\n\n"The students have completed the project."',
+        question: '"నరుడు" పదానికి సరైన పర్యాయపదం ఏది?',
         options: [
-            "The project has completed.",
-            "The project has been completed.",
-            "The project had been completed.",
-            "The project was completed."
+            "మానవుడు",
+            "పక్షి",
+            "దేవుడు",
+            "రాక్షసుడు"
+        ],
+        correct: 0,
+        explanation:
+            '"నరుడు" మరియు "మానవుడు" ఒకే అర్థాన్ని కలిగిన పర్యాయపదాలు. రెండూ మనిషిని సూచించే పదాలే. సరైన అర్థసామ్యాన్ని గుర్తించడం అవసరం.'
+    },
+    {
+        question: "క్రింది పదాలలో దేశ్య పదం ఏది?",
+        options: [
+            "కన్ను",
+            "పుష్పం",
+            "విద్య",
+            "భోజనం"
+        ],
+        correct: 0,
+        explanation:
+            '"కన్ను" స్వచ్ఛమైన తెలుగు మూలపదం కావడంతో ఇది దేశ్య పదం. సంస్కృతం నుండి వచ్చిన పదాలు తత్సమ లేదా తద్భవ పదాలుగా పరిగణించబడతాయి.'
+    },
+    {
+        question: "క్రింది వాటిలో తత్సమ పదం ఏది?",
+        options: [
+            "నిప్పు",
+            "పుష్పం",
+            "చెయ్యి",
+            "ఊరు"
         ],
         correct: 1,
-        explanation: "The sentence is in the Present Perfect Tense. Its passive form follows 'has/have been + past participle', resulting in 'The project has been completed'."
+        explanation:
+            '"పుష్పం" సంస్కృత రూపంలోనే తెలుగులో ఉపయోగించబడుతున్నందున ఇది తత్సమ పదం. రూపంలో మార్పు లేకుండా వచ్చిన పదాలను తత్సమ పదాలు అంటారు.'
     },
     {
-        question: 'Choose the correct reported speech.\n\nMother said to me, "Don\'t waste water."',
+        question: '"భగీరథ ప్రయత్నం" అనే జాతీయం యొక్క అర్థం ఏమిటి?',
         options: [
-            "Mother advised me not to waste water.",
-            "Mother said me not waste water.",
-            "Mother told not to waste water.",
-            "Mother advised that I not waste water."
+            "చిన్న పని",
+            "వ్యర్థ ప్రయత్నం",
+            "మహా కష్టంతో చేసే ప్రయత్నం",
+            "త్వరగా చేసే పని"
         ],
-        correct: 0,
-        explanation: "Negative imperative sentences are reported using 'advised/told + object + not to + base verb'. Option A correctly follows this reporting pattern with the required object."
+        correct: 2,
+        explanation:
+            '"భగీరథ ప్రయత్నం" అంటే అత్యంత కష్టసాధ్యమైన పనిని సాధించేందుకు చేసిన గొప్ప ప్రయత్నం. అసాధ్యమైన లక్ష్యాన్ని సాధించేందుకు చేసిన శ్రమను సూచించే జాతీయం ఇది.'
     },
     {
-        question: "Either the captain or the players _____ responsible for the defeat.",
-        options: ["is", "are", "was", "has"],
+        question: '"అదిగో పులి అంటే ఇదిగో తోక" అనే సామెత ఏ భావాన్ని సూచిస్తుంది?',
+        options: [
+            "ఆలోచించి మాట్లాడడం",
+            "ఆధారం లేకుండా వెంటనే నమ్మడం",
+            "కష్టపడి పనిచేయడం",
+            "సమయాన్ని వృథా చేయడం"
+        ],
         correct: 1,
-        explanation: "With 'Either...or', the verb agrees with the subject nearest to it. Since 'players' is plural, the correct verb is 'are'."
+        explanation:
+            'ఈ సామెత నిజానిజాలు తెలుసుకోకుండా వెంటనే నమ్మే స్వభావాన్ని సూచిస్తుంది. విన్న వెంటనే ఆధారం లేకుండా విశ్వసించే వ్యక్తుల ప్రవర్తనను తెలియజేయడానికి దీనిని ఉపయోగిస్తారు.'
     },
     {
-        question: "Choose the correct sentence.",
+        question: '\"వృక్షం నుండి పండు పడింది.\" వాక్యంలో "వృక్షం నుండి" ఏ విభక్తికి ఉదాహరణ?',
         options: [
-            "Hardly had the train arrived when the passengers rushed in.",
-            "Hardly the train had arrived when the passengers rushed in.",
-            "Hardly did the train arrived when the passengers rushed in.",
-            "Hardly had the train arrived than the passengers rushed in."
+            "తృతీయా విభక్తి",
+            "పంచమీ విభక్తి",
+            "షష్ఠీ విభక్తి",
+            "సప్తమీ విభక్తి"
         ],
-        correct: 0,
-        explanation: "The correct expression is 'Hardly...when' with auxiliary inversion. Option A follows both grammatical rules correctly, while the remaining options contain structural mistakes."
-    },
-    {
-        question: "If I _____ harder, I would be successful now.",
-        options: ["studied", "had studied", "study", "have studied"],
         correct: 1,
-        explanation: "This is a Mixed Conditional expressing an unreal past condition with a present result. The correct structure is 'If + had + past participle, would + base verb'."
+        explanation:
+            '"నుండి" అనే ప్రత్యయం పంచమీ విభక్తిని సూచిస్తుంది. ఇది ఒక వస్తువు లేదా వ్యక్తి నుండి వేరుపడడం, ప్రారంభ స్థానం లేదా మూలాన్ని తెలియజేస్తుంది. ఈ వాక్యంలో పండు వృక్షం నుండి పడిందని అర్థం.'
     },
     {
-        question: 'Choose the passive form.\n\n"Open the window."',
+        question: "క్రింది వాటిలో షష్ఠీ విభక్తి గల పదం ఏది?",
         options: [
-            "Let the window be opened.",
-            "The window is opened.",
-            "The window should opened.",
-            "Opened the window."
+            "బాలునితో",
+            "బాలుని",
+            "బాలునికి",
+            "బాలుని యొక్క"
         ],
-        correct: 0,
-        explanation: "The passive form of an imperative sentence follows the pattern 'Let + object + be + past participle'. Therefore, 'Let the window be opened' is correct."
+        correct: 3,
+        explanation:
+            'షష్ఠీ విభక్తి స్వామ్య సంబంధాన్ని తెలియజేస్తుంది. "యొక్క" అనే రూపం యాజమాన్యాన్ని లేదా సంబంధాన్ని సూచిస్తుంది. "బాలుని యొక్క" అంటే బాలునికి చెందినది అనే భావం వస్తుంది.'
     },
     {
-        question: "Choose the grammatically correct sentence.",
+        question: '"నల్లకలువ" అనేది ఏ సమాసానికి ఉదాహరణ?',
         options: [
-            "No sooner had she completed the work than she submitted it.",
-            "No sooner had she completed the work when she submitted it.",
-            "Hardly had she completed the work than she submitted it.",
-            "Hardly she had completed the work when she submitted it."
+            "ద్వంద్వ సమాసం",
+            "కర్మధారయ సమాసం",
+            "తత్పురుష సమాసం",
+            "బహువ్రీహి సమాసం"
+        ],
+        correct: 1,
+        explanation:
+            '"నల్ల" అనే విశేషణం మరియు "కలువ" అనే విశేష్యం కలిసి ఏర్పడిన సమాసం కర్మధారయ సమాసం. ఇందులో పూర్వపదం ఉత్తరపదాన్ని విశేషిస్తుంది. APTETలో ఇది తరచుగా అడిగే సమాసం.'
+    },
+    {
+        question: '"చతుర్ముఖుడు" అనే పదం ఏ సమాసానికి ఉదాహరణ?',
+        options: [
+            "ద్విగు",
+            "ద్వంద్వ",
+            "తత్పురుష",
+            "బహువ్రీహి"
+        ],
+        correct: 3,
+        explanation:
+            '"చతుర్ముఖుడు" అంటే నాలుగు ముఖాలు గలవాడు. సమాసపదం నేరుగా నాలుగు ముఖాలను కాకుండా ఆ లక్షణం కలిగిన వ్యక్తిని సూచిస్తుంది. అందువల్ల ఇది బహువ్రీహి సమాసానికి ఉదాహరణ.'
+    },
+    {
+        question: '"మహోత్సవం" పదంలో జరిగిన సంధి ఏది?',
+        options: [
+            "వృద్ధి సంధి",
+            "గుణసంధి",
+            "యణాదేశ సంధి",
+            "ఉత్వసంధి"
+        ],
+        correct: 1,
+        explanation:
+            '"మహా + ఉత్సవం → మహోత్సవం" రూపంలో గుణసంధి ఏర్పడింది. రెండు స్వరాల కలయిక వల్ల ఓకారం ఏర్పడటం గుణసంధి యొక్క ముఖ్య లక్షణం.'
+    },
+    {
+        question: "క్రింది వాటిలో వృద్ధి సంధికి ఉదాహరణ ఏది?",
+        options: [
+            "రాజైశ్వర్యం",
+            "దేవాలయం",
+            "గుర్వాజ్ఞ",
+            "మహోత్సవం"
         ],
         correct: 0,
-        explanation: "The correct correlative conjunction is 'No sooner...than'. It also requires auxiliary inversion. Option A correctly follows both grammar rules and is therefore the right answer."
+        explanation:
+            '"రాజ + ఐశ్వర్యం → రాజైశ్వర్యం" రూపంలో ఏర్పడినది వృద్ధి సంధి. ఐ, ఔ వంటి వృద్ధి స్వరాలు ఏర్పడినప్పుడు దానిని వృద్ధి సంధి అంటారు.'
+    },
+    {
+        question: "క్రింది పదాలలో తద్భవ పదం ఏది?",
+        options: [
+            "పుష్పం",
+            "రాజు",
+            "విద్య",
+            "మిత్రుడు"
+        ],
+        correct: 1,
+        explanation:
+            '"రాజు" సంస్కృత పదమైన "రాజన్" నుండి రూపాంతరం చెంది తెలుగులో వాడుకలోకి వచ్చింది. రూపం మారి వచ్చిన పదాలను తద్భవ పదాలు అంటారు.'
+    },
+    {
+        question: '"వనం" పదానికి సరైన పర్యాయపదం ఏది?',
+        options: [
+            "అరణ్యం",
+            "సముద్రం",
+            "ఆకాశం",
+            "గృహం"
+        ],
+        correct: 0,
+        explanation:
+            '"వనం" మరియు "అరణ్యం" రెండూ అడవిని సూచించే పర్యాయపదాలు. ఒకే అర్థాన్ని తెలిపే భిన్న పదాలను పర్యాయపదాలు అంటారు.'
+    },
+    {
+        question: '"చంద్రుడు" పదానికి సరైన పర్యాయపదం ఏది?',
+        options: [
+            "భాస్కరుడు",
+            "శశి",
+            "వాయువు",
+            "పావకుడు"
+        ],
+        correct: 1,
+        explanation:
+            '"శశి" చంద్రునికి ప్రసిద్ధ పర్యాయపదం. భాస్కరుడు అంటే సూర్యుడు, పావకుడు అంటే అగ్ని. కాబట్టి సరైన సమాధానం "శశి".'
+    },
+    {
+        question: "క్రింది వాటిలో దేశ్య పదం ఏది?",
+        options: [
+            "గుడిసె",
+            "విద్య",
+            "శాస్త్రం",
+            "మిత్రుడు"
+        ],
+        correct: 0,
+        explanation:
+            '"గుడిసె" స్వచ్ఛమైన తెలుగు మూలపదం కావడంతో ఇది దేశ్య పదంగా పరిగణించబడుతుంది. సంస్కృత మూలం లేని స్థానిక పదాలను దేశ్య పదాలు అంటారు.'
+    },
+    {
+        question: '"కన్నుగప్పు" అనే జాతీయం యొక్క అర్థం ఏమిటి?',
+        options: [
+            "కోపం తెచ్చుకోవడం",
+            "మోసం చేయడం",
+            "త్వరగా పరుగెత్తడం",
+            "సంతోషించడం"
+        ],
+        correct: 1,
+        explanation:
+            '"కన్నుగప్పు" అనే జాతీయం మోసం చేయడం లేదా వంచించడం అనే భావాన్ని తెలియజేస్తుంది. నిజాన్ని దాచిపెట్టి ఇతరులను మభ్యపెట్టే సందర్భాల్లో దీనిని ఉపయోగిస్తారు.'
+    },
+    {
+        question: '"చేతులు ఎత్తేయడం" అనే జాతీయం ఏ భావాన్ని సూచిస్తుంది?',
+        options: [
+            "పోరాటం చేయడం",
+            "లొంగిపోవడం",
+            "సహాయం చేయడం",
+            "గెలవడం"
+        ],
+        correct: 1,
+        explanation:
+            'ఈ జాతీయం ఇక ప్రయత్నం చేయలేమని భావించి లొంగిపోవడాన్ని సూచిస్తుంది. సమస్యను ఎదుర్కొనే శక్తి లేక విరమించుకోవడం అనే భావంలో దీనిని ఉపయోగిస్తారు.'
+    },
+    {
+        question: '"చేతిలో వెన్న పెట్టుకొని నెయ్యి వెదకడం" అనే సామెత భావం ఏమిటి?',
+        options: [
+            "కష్టపడి పనిచేయడం",
+            "దగ్గరలో ఉన్నదాన్ని గుర్తించకపోవడం",
+            "నిజం మాట్లాడడం",
+            "తెలివిగా వ్యవహరించడం"
+        ],
+        correct: 1,
+        explanation:
+            'తమ వద్దే ఉన్న వస్తువు లేదా అవకాశాన్ని గుర్తించకుండా బయట వెదకడాన్ని ఈ సామెత సూచిస్తుంది. సులభంగా లభించేదాన్ని గుర్తించలేని పరిస్థితిని తెలియజేస్తుంది.'
+    },
+    {
+        question: '"ఎద్దు ముందు వీణ వాయించినట్లు" అనే సామెత ఏ సందర్భంలో ఉపయోగిస్తారు?',
+        options: [
+            "మంచి సలహా ఇవ్వడం",
+            "అర్థం చేసుకోలేని వ్యక్తికి మంచి విషయాలు చెప్పడం",
+            "శ్రమించి విజయం సాధించడం",
+            "తొందరపడడం"
+        ],
+        correct: 1,
+        explanation:
+            'విలువైన విషయాలను వాటి ప్రాముఖ్యత అర్థం చేసుకోలేని వ్యక్తికి చెప్పడం వల్ల ప్రయోజనం ఉండదనే భావాన్ని ఈ సామెత తెలియజేస్తుంది. అనర్హులకు మంచి విషయాలు చెప్పిన సందర్భంలో ఉపయోగిస్తారు.'
+    },
+    {
+        question: "క్రింది పదాలలో తత్సమ పదం ఏది?",
+        options: [
+            "నెత్తురు",
+            "ముఖం",
+            "ముఖము",
+            "మొగం"
+        ],
+        correct: 2,
+        explanation:
+            '"ముఖము" సంస్కృత రూపంలోనే తెలుగులో ఉపయోగించబడుతున్నందున ఇది తత్సమ పదం. రూపంలో మార్పు లేకుండా వచ్చిన పదాలను తత్సమ పదాలుగా గుర్తించాలి.'
+    },
+    {
+        question: '"పుస్తకంలో బొమ్మ ఉంది." వాక్యంలో "పుస్తకంలో" ఏ విభక్తిని సూచిస్తుంది?',
+        options: [
+            "పంచమీ విభక్తి",
+            "షష్ఠీ విభక్తి",
+            "సప్తమీ విభక్తి",
+            "తృతీయా విభక్తి"
+        ],
+        correct: 2,
+        explanation:
+            '"లో" అనే ప్రత్యయం సప్తమీ విభక్తిని సూచిస్తుంది. ఇది స్థలం, స్థితి లేదా స్థానాన్ని తెలియజేస్తుంది. ఈ వాక్యంలో బొమ్మ పుస్తకంలో ఉందని స్థానాన్ని సూచిస్తోంది.'
+    },
+    {
+        question: "క్రింది వాటిలో బహువ్రీహి సమాసం ఏది?",
+        options: [
+            "త్రిలోకాలు",
+            "నీలకంఠుడు",
+            "అన్నదమ్ములు",
+            "రామబాణం"
+        ],
+        correct: 1,
+        explanation:
+            '"నీలకంఠుడు" అంటే నీలి కంఠం కలవాడు. సమాసపదం నేరుగా కంఠాన్ని కాకుండా ఆ లక్షణం గల వ్యక్తిని సూచిస్తుంది. అందువల్ల ఇది బహువ్రీహి సమాసానికి ఉదాహరణ.'
+    },
+    {
+        question: '"చతుర్వేదాలు" అనే పదం ఏ సమాసానికి ఉదాహరణ?',
+        options: [
+            "ద్వంద్వ",
+            "ద్విగు",
+            "తత్పురుష",
+            "కర్మధారయ"
+        ],
+        correct: 1,
+        explanation:
+            '"చతుర్" అనే సంఖ్యాపదం "వేదాలు"తో కలవడం వల్ల ఏర్పడిన సంఖ్యాపూర్వక సమాసం ఇది. సంఖ్యాపూర్వక సమాసాలను ద్విగు సమాసాలుగా పరిగణిస్తారు.'
+    },
+    {
+        question: '"రామాయణం" పదానికి సరైన తత్సమ పదం ఏది?',
+        options: [
+            "రామాయణము",
+            "రామకథ",
+            "రామగాథ",
+            "రామచరిత్ర"
+        ],
+        correct: 0,
+        explanation:
+            '"రామాయణము" సంస్కృత రూపంలోనే తెలుగులో ఉపయోగించబడే పదం. రూపంలో మార్పు లేకుండా వచ్చిన పదాలను తత్సమ పదాలు అంటారు.'
+    },
+    {
+        question: "క్రింది వాటిలో దేశ్య పదం ఏది?",
+        options: [
+            "గుడ్డు",
+            "శాస్త్రం",
+            "విద్య",
+            "పుష్పం"
+        ],
+        correct: 0,
+        explanation:
+            '"గుడ్డు" స్వచ్ఛమైన తెలుగు మూలపదం కావడంతో ఇది దేశ్య పదంగా పరిగణించబడుతుంది. స్థానిక భాషలో పుట్టిన పదాలను దేశ్య పదాలు అంటారు.'
+    },
+    {
+        question: '"సముద్రం" పదానికి సరైన పర్యాయపదం ఏది?',
+        options: [
+            "సాగరం",
+            "పర్వతం",
+            "గిరి",
+            "సరస్సు"
+        ],
+        correct: 0,
+        explanation:
+            '"సాగరం" మరియు "సముద్రం" ఒకే అర్థాన్ని తెలిపే పర్యాయపదాలు. రెండూ విశాలమైన జలరాశిని సూచిస్తాయి. పర్యాయపదాలపై APTETలో తరచుగా ప్రశ్నలు వస్తాయి.'
+    },
+    {
+        question: '"అగ్ని" పదానికి సరైన పర్యాయపదం ఏది?',
+        options: [
+            "పావకుడు",
+            "హిమము",
+            "గగనం",
+            "జలము"
+        ],
+        correct: 0,
+        explanation:
+            '"పావకుడు" అగ్నికి ప్రసిద్ధ పర్యాయపదం. హిమము అంటే మంచు, గగనం అంటే ఆకాశం, జలము అంటే నీరు. కాబట్టి సరైన సమాధానం "పావకుడు".'
+    },
+    {
+        question: "క్రింది జాతీయాలలో రహస్యంగా ఉంచడం అనే భావాన్ని సూచించేది ఏది?",
+        options: [
+            "కడుపులో పెట్టుకోవడం",
+            "కన్ను మూయడం",
+            "చేతులు ఎత్తేయడం",
+            "తలపట్టుకోవడం"
+        ],
+        correct: 0,
+        explanation:
+            '"కడుపులో పెట్టుకోవడం" అనే జాతీయం ఒక విషయాన్ని ఎవరికీ చెప్పకుండా రహస్యంగా దాచుకోవడం అనే భావాన్ని సూచిస్తుంది. వ్యక్తిగత రహస్యాలను గోప్యంగా ఉంచే సందర్భాల్లో ఉపయోగిస్తారు.'
+    },
+    {
+        question: '"నిప్పుతో ఆడుకోవడం" అనే జాతీయం ఏ భావాన్ని సూచిస్తుంది?',
+        options: [
+            "ప్రమాదకరమైన పని చేయడం",
+            "ధైర్యంగా ఉండడం",
+            "సంతోషించడం",
+            "గెలవడం"
+        ],
+        correct: 0,
+        explanation:
+            'ఈ జాతీయం ప్రమాదాన్ని ఆహ్వానించే పనిని చేయడాన్ని సూచిస్తుంది. పరిణామాలు తీవ్రంగా ఉండే పనులను నిర్లక్ష్యంగా చేసే వ్యక్తుల గురించి చెప్పేటప్పుడు దీనిని ఉపయోగిస్తారు.'
+    },
+    {
+        question: '"పుండుమీద కారం చల్లినట్లు" అనే సామెత భావం ఏమిటి?',
+        options: [
+            "సహాయం చేయడం",
+            "బాధను మరింత పెంచడం",
+            "త్వరగా పని చేయడం",
+            "ప్రశంసించడం"
+        ],
+        correct: 1,
+        explanation:
+            'ఇప్పటికే బాధలో ఉన్న వ్యక్తికి మరింత కష్టం కలిగించడం లేదా దుఃఖాన్ని పెంచే విధంగా ప్రవర్తించడం అనే భావాన్ని ఈ సామెత తెలియజేస్తుంది.'
+    },
+    {
+        question: '"అరచేతిలో వైకుంఠం చూపడం" అనే సామెతకు సరైన భావం ఏది?',
+        options: [
+            "అసాధ్యమైనది సులభమని చెప్పడం",
+            "కష్టపడి పని చేయడం",
+            "దానం చేయడం",
+            "ధైర్యంగా ఉండడం"
+        ],
+        correct: 0,
+        explanation:
+            'జరగని విషయాన్ని చాలా సులభంగా జరుగుతుందని నమ్మించడం లేదా అసాధ్యమైన ఆశలు కల్పించడం అనే భావాన్ని ఈ సామెత సూచిస్తుంది.'
+    },
+    {
+        question: '"దేవేంద్రుడు" పదంలో జరిగిన సంధి ఏది?',
+        options: [
+            "గుణసంధి",
+            "వృద్ధి సంధి",
+            "యణాదేశ సంధి",
+            "అత్వసంధి"
+        ],
+        correct: 0,
+        explanation:
+            '"దేవ + ఇంద్రుడు → దేవేంద్రుడు" రూపంలో గుణసంధి ఏర్పడింది. అ మరియు ఇ స్వరాల కలయిక వల్ల ఏకారం ఏర్పడటం గుణసంధి లక్షణం.'
+    },
+    {
+        question: '"మహైశ్వర్యం" పదంలో జరిగిన సంధి ఏది?',
+        options: [
+            "గుణసంధి",
+            "వృద్ధి సంధి",
+            "యణాదేశ సంధి",
+            "ఉత్వసంధి"
+        ],
+        correct: 1,
+        explanation:
+            '"మహా + ఐశ్వర్యం → మహైశ్వర్యం" రూపంలో వృద్ధి సంధి ఏర్పడింది. ఐ స్వరం ఏర్పడినందున దీనిని వృద్ధి సంధిగా గుర్తించాలి.'
+    },
+    {
+        question: "క్రింది వాటిలో కర్మధారయ సమాసం ఏది?",
+        options: [
+            "రాజపుత్రుడు",
+            "తెల్లకాగితం",
+            "చతుర్వేదాలు",
+            "అన్నదమ్ములు"
+        ],
+        correct: 1,
+        explanation:
+            '"తెల్ల" అనే విశేషణం "కాగితం" అనే విశేష్యాన్ని విశేషిస్తుంది. విశేషణం + విశేష్యం కలయికతో ఏర్పడిన సమాసాన్ని కర్మధారయ సమాసం అంటారు.'
+    },
+    {
+        question: '"తల్లిదండ్రులు" ఏ సమాసం?',
+        options: [
+            "ద్వంద్వ",
+            "తత్పురుష",
+            "బహువ్రీహి",
+            "ద్విగు"
+        ],
+        correct: 0,
+        explanation:
+            '"తల్లి" మరియు "తండ్రి" అనే రెండు సమాన ప్రాధాన్యం గల పదాలు కలిసి ఏర్పడిన సమాసం ఇది. అందువల్ల ఇది ద్వంద్వ సమాసానికి ఉదాహరణ.'
+    },
+    {
+        question: '"విద్యార్థికి పుస్తకం ఇచ్చాడు." వాక్యంలో "విద్యార్థికి" ఏ విభక్తి?',
+        options: [
+            "ద్వితీయా",
+            "చతుర్థీ",
+            "పంచమీ",
+            "సప్తమీ"
+        ],
+        correct: 1,
+        explanation:
+            '"కు" అనే ప్రత్యయం చతుర్థీ విభక్తిని సూచిస్తుంది. ఇది పొందేవారిని లేదా ఉద్దేశింపబడిన వ్యక్తిని తెలియజేస్తుంది. ఇక్కడ పుస్తకం విద్యార్థికి ఇవ్వబడింది.'
+    },
+    {
+        question: "క్రింది పదాలలో తద్భవ పదం ఏది?",
+        options: [
+            "సూర్యుడు",
+            "రాజు",
+            "విద్య",
+            "పుష్పం"
+        ],
+        correct: 1,
+        explanation:
+            '"రాజు" సంస్కృత మూలపదం నుండి రూపాంతరం చెంది తెలుగులో వాడుకలోకి వచ్చిన తద్భవ పదంగా పరిగణించబడుతుంది. రూపాంతరం చెందిన పదాలను తద్భవ పదాలు అంటారు.'
+    },
+    {
+        question: '"భూమి" పదానికి సరైన పర్యాయపదం ఏది?',
+        options: [
+            "ధరణి",
+            "గగనం",
+            "జలధి",
+            "పావకుడు"
+        ],
+        correct: 0,
+        explanation:
+            '"ధరణి" భూమికి ప్రసిద్ధ పర్యాయపదం. గగనం అంటే ఆకాశం, జలధి అంటే సముద్రం, పావకుడు అంటే అగ్ని. కాబట్టి సరైన సమాధానం "ధరణి".'
+    },
+    {
+        question: '"కంటి మీద కునుకు లేకపోవడం" అనే జాతీయం ఏ భావాన్ని సూచిస్తుంది?',
+        options: [
+            "బాగా నిద్రపోవడం",
+            "అసలు నిద్ర లేకపోవడం",
+            "సంతోషించడం",
+            "అలసట పోవడం"
+        ],
+        correct: 1,
+        explanation:
+            'ఈ జాతీయం ఏమాత్రం నిద్ర పట్టకపోవడం లేదా తీవ్రమైన ఆందోళన వల్ల నిద్ర లేకపోవడం అనే భావాన్ని సూచిస్తుంది. సాధారణంగా చింత లేదా బాధ సందర్భాల్లో ఉపయోగిస్తారు.'
+    },
+    {
+        question: "క్రింది సామెతలలో చిన్న సమస్యను పెద్దదిగా చేయడం అనే భావాన్ని సూచించేది ఏది?",
+        options: [
+            "గోరంతను కొండంత చేయడం",
+            "కష్టపడి పని చేయడం",
+            "చేతులు కలపడం",
+            "ముక్కుసూటిగా మాట్లాడడం"
+        ],
+        correct: 0,
+        explanation:
+            '"గోరంతను కొండంత చేయడం" అంటే చిన్న విషయాన్ని అతిశయోక్తిగా చెప్పి పెద్ద సమస్యగా చూపించడం. చిన్న లోపాన్ని అనవసరంగా విపరీతంగా పెంచి చెప్పే సందర్భాల్లో ఈ సామెత ఉపయోగిస్తారు.'
     }
 ];
