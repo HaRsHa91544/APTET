@@ -1,558 +1,556 @@
 const SUBJECTS = [
-    "Psychology",
-    "English",
-    "Telugu"
+    "Special Education"
 ];
 
 const QUESTIONS = [
     {
-        question: "మానసిక వికాసాన్ని నాలుగు దశలుగా వివరించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
+        question: "వ్యక్తిగత విద్యా ప్రణాళిక (IEP) యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
         options: [
-            "లెవ్ వైగోట్స్కీ",
-            "జీన్ పియాజే",
-            "జెరోమ్ బ్రూనర్",
-            "ఎరిక్ ఎరిక్సన్"
+            "అన్ని విద్యార్థులకు ఒకే పాఠ్యాంశాన్ని బోధించడం",
+            "ప్రతి విద్యార్థి అవసరాలకు అనుగుణంగా విద్యా లక్ష్యాలను రూపొందించడం",
+            "వార్షిక పరీక్ష నిర్వహించడం",
+            "పాఠశాల బడ్జెట్ రూపొందించడం"
         ],
         correct: 1,
-        explanation: "జీన్ పియాజే జ్ఞాన వికాసాన్ని సెన్సరీమోటార్, ప్రీఆపరేషనల్, కాంక్రీట్ ఆపరేషనల్, ఫార్మల్ ఆపరేషనల్ అనే నాలుగు దశలుగా వివరించాడు. పిల్లల ఆలోచనా వికాసాన్ని అర్థం చేసుకోవడంలో ఈ సిద్ధాంతం ఎంతో ముఖ్యమైనది."
+        explanation: "IEP అనేది ప్రతి విద్యార్థి యొక్క సామర్థ్యాలు, అవసరాలు, అభ్యాస స్థాయి మరియు దీర్ఘకాల లక్ష్యాలను దృష్టిలో ఉంచుకొని రూపొందించే వ్యక్తిగత విద్యా ప్రణాళిక. :contentReference[oaicite:0]{index=0}"
     },
     {
-        question: "\"Zone of Proximal Development (ZPD)\" అనే భావనను ప్రతిపాదించినది ఎవరు?",
+        question: "RPWD Act, 2016 ప్రకారం బెంచ్‌మార్క్ దివ్యాంగత (Benchmark Disability) కనీస శాతం ఎంత?",
         options: [
-            "జెరోమ్ బ్రూనర్",
-            "ఆల్బర్ట్ బండూరా",
-            "లెవ్ వైగోట్స్కీ",
-            "బి.ఎఫ్. స్కిన్నర్"
+            "20%",
+            "30%",
+            "40%",
+            "50%"
         ],
         correct: 2,
-        explanation: "లెవ్ వైగోట్స్కీ ప్రతిపాదించిన ZPD భావన ప్రకారం విద్యార్థి స్వయంగా చేయలేని పనిని గురువు లేదా సహచరుల సహాయంతో చేయగలిగే సామర్థ్యాన్ని సూచిస్తుంది."
+        explanation: "RPWD Act, 2016 ప్రకారం కనీసం 40% దివ్యాంగత కలిగిన వ్యక్తిని Benchmark Disability కింద గుర్తిస్తారు. ఈ గుర్తింపు ద్వారా చట్టపరమైన ప్రయోజనాలు పొందవచ్చు."
     },
     {
-        question: "క్రింది జతలలో సరైనది ఏది?",
+        question: "క్రింది వాటిలో స్వల్ప మేధో వైకల్యం (Mild Intellectual Disability) కు సరిపోయే IQ పరిధి ఏది?",
         options: [
-            "స్కిన్నర్ — Classical Conditioning",
-            "పావ్‌లవ్ — Operant Conditioning",
-            "థార్న్‌డైక్ — Laws of Learning",
-            "బండూరా — Mental Age"
-        ],
-        correct: 2,
-        explanation: "థార్న్‌డైక్ అభ్యాస నియమాలను (Laws of Learning) ప్రతిపాదించాడు. ముఖ్యంగా సిద్ధత, అభ్యాసం మరియు ఫలిత నియమాలు విద్యా మనోవిజ్ఞానంలో అత్యంత ప్రాధాన్యం కలిగినవి."
-    },
-    {
-        question: "Multiple Intelligences సిద్ధాంతాన్ని ప్రతిపాదించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
-        options: [
-            "స్పియర్‌మాన్",
-            "హోవర్డ్ గార్డ్నర్",
-            "స్టెర్న్‌బర్గ్",
-            "గిల్‌ఫోర్డ్"
-        ],
-        correct: 1,
-        explanation: "హోవర్డ్ గార్డ్నర్ వ్యక్తిలో ఒకే మేధస్సు కాకుండా భాషా, సంగీత, తార్కిక, అంతర్వ్యక్తిగత వంటి అనేక మేధస్సులు ఉంటాయని ప్రతిపాదించాడు."
-    },
-    {
-        question: "శరీర నిర్మాణం ఆధారంగా వ్యక్తిత్వ వర్గీకరణను ప్రతిపాదించినది ఎవరు?",
-        options: [
-            "క్రెట్ష్మర్",
-            "మాస్లో",
-            "రోజర్స్",
-            "వెక్స్లర్"
+            "50–69",
+            "35–49",
+            "20–34",
+            "Below 20"
         ],
         correct: 0,
-        explanation: "క్రెట్ష్మర్ శరీర నిర్మాణాన్ని ఆధారంగా వ్యక్తిత్వాన్ని వర్గీకరించాడు. శారీరక ఆకృతి మరియు వ్యక్తిత్వ లక్షణాల మధ్య సంబంధం ఉందని ఆయన వివరించాడు."
+        explanation: "సాధారణ IQ వర్గీకరణ ప్రకారం Mild Intellectual Disability ఉన్న వ్యక్తుల IQ పరిధి 50–69 మధ్య ఉంటుంది. ఇది స్వల్ప మేధో వైకల్యాన్ని సూచిస్తుంది."
     },
     {
-        question: "\"Self-Actualization\" అనే భావన ఏ సిద్ధాంతానికి సంబంధించినది?",
+        question: "బ్రెయిల్ లిపి ప్రధానంగా ఏ ఇంద్రియంపై ఆధారపడి ఉంటుంది?",
         options: [
-            "Psychoanalytic Theory",
-            "Hierarchy of Needs",
-            "Social Learning Theory",
-            "Triarchic Theory"
-        ],
-        correct: 1,
-        explanation: "మాస్లో అవసరాల శ్రేణి సిద్ధాంతంలో Self-Actualization అత్యున్నత స్థాయి. వ్యక్తి తన సంపూర్ణ సామర్థ్యాన్ని అభివృద్ధి చేసుకోవడాన్ని ఇది సూచిస్తుంది."
-    },
-    {
-        question: "Neither Ravi nor his friends ____ present yesterday.",
-        options: [
-            "was",
-            "were",
-            "is",
-            "has"
-        ],
-        correct: 1,
-        explanation: "Neither...nor నిర్మాణంలో క్రియ సమీపంలోని కర్తతో సరిపోతుంది. ఇక్కడ 'friends' బహువచనం కావడంతో 'were' అనే క్రియ సరైనది."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "Hardly had I reached the station than the train left.",
-            "Hardly had I reached the station when the train left.",
-            "Hardly I reached the station when the train left.",
-            "Hardly had I reached station when train left."
-        ],
-        correct: 1,
-        explanation: "Hardly అనే నిర్మాణంతో సాధారణంగా 'Hardly...when' వాడాలి. 'Than' ఉపయోగించడం వ్యాకరణపరంగా తప్పు కాబట్టి రెండవ వాక్యమే సరైనది."
-    },
-    {
-        question: "Change into Passive Voice:\n\nThey will complete the project next week.",
-        options: [
-            "The project is completed next week.",
-            "The project will be completed next week.",
-            "The project was completed next week.",
-            "The project has been completed next week."
-        ],
-        correct: 1,
-        explanation: "Future Simple Passive నిర్మాణం 'will be + past participle'. అందువల్ల 'The project will be completed next week' సరైన Passive Voice."
-    },
-    {
-        question: "Choose the correct conditional sentence.",
-        options: [
-            "If I had money, I will buy a car.",
-            "If I have money, I would buy a car.",
-            "If I have money, I will buy a car.",
-            "If I had had money, I will have bought a car."
+            "దృష్టి",
+            "శ్రవణం",
+            "స్పర్శ",
+            "వాసన"
         ],
         correct: 2,
-        explanation: "First Conditional లో If-Clause లో Present Simple మరియు Main Clause లో 'will + verb' ఉపయోగిస్తారు. అందువల్ల మూడవ వాక్యం సరైనది."
+        explanation: "బ్రెయిల్ లిపిని వేళ్లతో స్పర్శ ద్వారా చదువుతారు. ఇది దృష్టి వైకల్యం గల వ్యక్తులకు చదవడం, వ్రాయడం మరియు స్వతంత్ర అభ్యాసానికి సహాయపడుతుంది."
     },
     {
-        question: "Change into Indirect Speech:\n\nHe said, \"I am busy.\"",
+        question: "JAWS ప్రధానంగా ఎవరి కోసం రూపొందించబడిన సహాయక సాంకేతిక పరికరం?",
         options: [
-            "He said that he is busy.",
-            "He said that he was busy.",
-            "He said he had been busy.",
-            "He told that he was busy."
+            "శ్రవణ వైకల్యం గల విద్యార్థులు",
+            "దృష్టి వైకల్యం గల విద్యార్థులు",
+            "ఆటిజం గల విద్యార్థులు",
+            "అభ్యాస వైకల్యం గల విద్యార్థులు"
         ],
         correct: 1,
-        explanation: "Reported Speech లో Reporting Verb Past Tense లో ఉన్నప్పుడు Present Tense సాధారణంగా Past Tense గా మారుతుంది. కాబట్టి 'was busy' సరైన రూపం."
+        explanation: "JAWS ఒక Screen Reader. ఇది కంప్యూటర్ స్క్రీన్‌లోని సమాచారాన్ని శబ్ద రూపంలో చదివి దృష్టి వైకల్యం గల వినియోగదారులకు కంప్యూటర్ ఉపయోగించడంలో సహాయపడుతుంది."
     },
     {
-        question: "\"రాజపుత్రుడు\" అనే పదం ఏ సమాసానికి ఉదాహరణ?",
+        question: "ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD) లో \"Echolalia\" అంటే ఏమిటి?",
         options: [
-            "ద్వంద్వ సమాసం",
-            "తత్పురుష సమాసం",
-            "బహువ్రీహి సమాసం",
-            "అవ్యయీభావ సమాసం"
+            "అక్షరాలను తారుమారు చేయడం",
+            "ఇతరుల మాటలను యథాతథంగా పునరావృతం చేయడం",
+            "వినికిడి లోపం",
+            "చూపు మందగించడం"
         ],
         correct: 1,
-        explanation: "'రాజు యొక్క పుత్రుడు' అనే విగ్రహ వాక్యంతో ఏర్పడిన సమాసం తత్పురుష సమాసం. ఇందులో పూర్వపదం ఉత్తరపదాన్ని విశేషిస్తుంది."
+        explanation: "Echolalia అనగా ఇతరులు మాట్లాడిన పదాలు లేదా వాక్యాలను వెంటనే లేదా కొంత సమయం తరువాత యథాతథంగా పునరావృతం చేయడం. ఇది ASDలో సాధారణ లక్షణం."
     },
     {
-        question: "\"నయనం\" అనే పదానికి సరైన పర్యాయపదం ఏది?",
+        question: "\"Dyslexia\" ప్రధానంగా ఏ సామర్థ్యాన్ని ప్రభావితం చేస్తుంది?",
         options: [
-            "కర్ణం",
-            "నేత్రం",
-            "నాసిక",
-            "హస్తం"
+            "గణిత నైపుణ్యం",
+            "చదవడం",
+            "వినికిడి",
+            "నడక"
         ],
         correct: 1,
-        explanation: "'నయనం' మరియు 'నేత్రం' రెండూ కంటిని సూచించే పర్యాయపదాలు. మిగిలిన పదాలు చెవి, ముక్కు, చేయి అనే అర్థాలను సూచిస్తాయి."
+        explanation: "Dyslexia అనేది Specific Learning Disability. ఇది ప్రధానంగా చదవడం, పదాలను గుర్తించడం మరియు చదివిన విషయాన్ని అర్థం చేసుకోవడాన్ని ప్రభావితం చేస్తుంది."
     },
     {
-        question: "\"భగీరథ ప్రయత్నం\" అనే జాతీయానికి సరైన అర్థం ఏమిటి?",
+        question: "క్రింది వాటిలో సహాయక సాంకేతిక పరికరం (Assistive Technology) ఏది?",
         options: [
-            "చిన్న పని",
-            "అత్యంత కష్టమైన ప్రయత్నం",
-            "వ్యర్థమైన పని",
-            "తొందరపాటు నిర్ణయం"
-        ],
-        correct: 1,
-        explanation: "'భగీరథ ప్రయత్నం' అంటే అత్యంత కష్టసాధ్యమైన పని కోసం నిరంతర శ్రమ చేయడం. గంగను భూమికి తీసుకువచ్చిన భగీరథుని కథ ఆధారంగా ఈ జాతీయం ఏర్పడింది."
-    },
-    {
-        question: "క్రింది పదాల్లో తత్సమ పదం ఏది?",
-        options: [
-            "చెయ్యి",
-            "మనిషి",
-            "విద్య",
-            "ఊరు"
-        ],
-        correct: 2,
-        explanation: "'విద్య' అనే పదం సంస్కృతం నుండి యథాతథంగా తెలుగులోకి వచ్చిన తత్సమ పదం. మిగిలిన పదాలు తద్భవ లేదా దేశ్య పదాలుగా పరిగణించబడతాయి."
-    },
-    {
-        question: "\"Scaffolding\" అనే భావన ప్రధానంగా ఏ మనోవిజ్ఞాన శాస్త్రవేత్తతో సంబంధం కలిగి ఉంది?",
-        options: [
-            "జీన్ పియాజే",
-            "జెరోమ్ బ్రూనర్",
-            "లెవ్ వైగోట్స్కీ",
-            "ఆల్బర్ట్ బండూరా"
-        ],
-        correct: 1,
-        explanation: "Discovery Learning సిద్ధాంతంలో జెరోమ్ బ్రూనర్ Scaffolding భావనను అభివృద్ధి చేశాడు. అవసరమైన సమయంలో గురువు ఇచ్చే తాత్కాలిక సహాయం ద్వారా విద్యార్థి స్వతంత్రంగా నేర్చుకునే స్థాయికి చేరుకుంటాడు."
-    },
-    {
-        question: "\"Analytical, Creative, Practical Intelligence\" అనే మూడు మేధస్సుల సిద్ధాంతాన్ని ప్రతిపాదించినది ఎవరు?",
-        options: [
-            "హోవర్డ్ గార్డ్నర్",
-            "చార్లెస్ స్పియర్‌మాన్",
-            "రాబర్ట్ స్టెర్న్‌బర్గ్",
-            "ఎల్.ఎల్. థర్‌స్టోన్"
-        ],
-        correct: 2,
-        explanation: "రాబర్ట్ స్టెర్న్‌బర్గ్ Triarchic Theory of Intelligenceను ప్రతిపాదించాడు. ఇందులో విశ్లేషణాత్మక, సృజనాత్మక మరియు ప్రాయోగిక మేధస్సులు వ్యక్తి విజయాన్ని నిర్ణయిస్తాయని వివరించాడు."
-    },
-    {
-        question: "\"g Factor\" అనే భావన ఏ సిద్ధాంతానికి సంబంధించినది?",
-        options: [
-            "Multiple Intelligences",
-            "Structure of Intellect",
-            "Two-Factor Theory",
-            "Primary Mental Abilities"
-        ],
-        correct: 2,
-        explanation: "స్పియర్‌మాన్ ప్రతిపాదించిన Two-Factor Theoryలో General Intelligence (g Factor) అన్ని మానసిక సామర్థ్యాలకు సాధారణమైన అంశంగా పరిగణించబడింది."
-    },
-    {
-        question: "క్రింది వాటిలో \"Mental Age\"తో సంబంధం కలిగిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
-        options: [
-            "డేవిడ్ వెక్స్లర్",
-            "ఆల్ఫ్రెడ్ బినే",
-            "గిల్‌ఫోర్డ్",
-            "గార్డ్నర్"
-        ],
-        correct: 1,
-        explanation: "ఆల్ఫ్రెడ్ బినే మొదటి మేధస్సు పరీక్షను రూపొందించి Mental Age భావనను ఉపయోగించాడు. తరువాత IQ లెక్కింపుకు ఈ భావన ఆధారంగా ఉపయోగించబడింది."
-    },
-    {
-        question: "క్రింది వాటిలో సామాజిక పరిశీలన ద్వారా అభ్యాసం జరుగుతుందని తెలిపిన సిద్ధాంతం ఏది?",
-        options: [
-            "Operant Conditioning",
-            "Classical Conditioning",
-            "Social Learning Theory",
-            "Psychoanalytic Theory"
-        ],
-        correct: 2,
-        explanation: "ఆల్బర్ట్ బండూరా యొక్క Social Learning Theory ప్రకారం వ్యక్తులు ఇతరులను గమనించి, అనుకరించి మరియు పరిశీలన ద్వారా కొత్త ప్రవర్తనలను నేర్చుకుంటారు."
-    },
-    {
-        question: "\"Readiness, Exercise, Effect\" అనే అభ్యాస నియమాలను ప్రతిపాదించినది ఎవరు?",
-        options: [
-            "స్కిన్నర్",
-            "పావ్‌లవ్",
-            "థార్న్‌డైక్",
-            "బ్రూనర్"
-        ],
-        correct: 2,
-        explanation: "థార్న్‌డైక్ Laws of Learningగా ప్రసిద్ధి చెందిన Readiness, Exercise మరియు Effect నియమాలను ప్రతిపాదించాడు. ఇవి అభ్యాస ప్రక్రియను అర్థం చేసుకోవడంలో ప్రాథమిక సూత్రాలు."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "No sooner did the bell ring when the students entered.",
-            "No sooner had the bell rung than the students entered.",
-            "No sooner the bell rang than the students entered.",
-            "No sooner had the bell rung when the students entered."
-        ],
-        correct: 1,
-        explanation: "No sooner అనే నిర్మాణంతో ఎల్లప్పుడూ 'than' ఉపయోగించాలి. సరైన నిర్మాణం 'No sooner had...than...' కాబట్టి రెండవ వాక్యం సరైనది."
-    },
-    {
-        question: "Each of the players ____ given a certificate.",
-        options: [
-            "have",
-            "were",
-            "has",
-            "are"
-        ],
-        correct: 2,
-        explanation: "'Each of' అనే పదబంధం ఎల్లప్పుడూ ఏకవచనంగా పరిగణించబడుతుంది. అందువల్ల Singular Verb అయిన 'has' మాత్రమే సరైన సమాధానం."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "Either the teachers or the principal are attending the meeting.",
-            "Either the teachers or the principal is attending the meeting.",
-            "Either the teachers or the principal have attended the meeting.",
-            "Either the teachers or principal were attending the meeting."
-        ],
-        correct: 1,
-        explanation: "Either...or నిర్మాణంలో క్రియ సమీపంలోని కర్తతో సరిపోతుంది. ఇక్కడ 'principal' ఏకవచనం కాబట్టి 'is attending' సరైనది."
-    },
-    {
-        question: "Change into Indirect Speech.\n\nShe said, \"Do you know the answer?\"",
-        options: [
-            "She asked whether I knew the answer.",
-            "She asked that I knew the answer.",
-            "She told whether I knew the answer.",
-            "She asked do I know the answer."
+            "JAWS",
+            "Blackboard",
+            "Chalk",
+            "Attendance Register"
         ],
         correct: 0,
-        explanation: "Yes/No ప్రశ్నలను Reported Speechలో మార్చేటప్పుడు 'whether' లేదా 'if' ఉపయోగిస్తారు. అలాగే Tense కూడా అవసరమైన విధంగా మారుతుంది."
+        explanation: "JAWS ఒక Assistive Technology. ఇది దృష్టి వైకల్యం గల వ్యక్తులు కంప్యూటర్‌ను స్వతంత్రంగా ఉపయోగించేందుకు రూపొందించిన Screen Reader సాఫ్ట్‌వేర్."
     },
     {
-        question: "Choose the correct passive form.\n\nPeople speak Telugu in Andhra Pradesh.",
+        question: "26–40 dB వినికిడి నష్టం ఏ వర్గంలోకి వస్తుంది?",
         options: [
-            "Telugu speaks in Andhra Pradesh.",
-            "Telugu is spoken in Andhra Pradesh.",
-            "Telugu was spoken in Andhra Pradesh.",
-            "Telugu has spoken in Andhra Pradesh."
-        ],
-        correct: 1,
-        explanation: "Present Simple Passive నిర్మాణం 'is/am/are + past participle'. కాబట్టి 'Telugu is spoken in Andhra Pradesh' సరైన Passive Voice."
-    },
-    {
-        question: "\"రామలక్ష్మణులు\" ఏ సమాసానికి ఉదాహరణ?",
-        options: [
-            "ద్వంద్వ సమాసం",
-            "కర్మధారయ సమాసం",
-            "తత్పురుష సమాసం",
-            "బహువ్రీహి సమాసం"
+            "Mild Hearing Loss",
+            "Moderate Hearing Loss",
+            "Severe Hearing Loss",
+            "Profound Hearing Loss"
         ],
         correct: 0,
-        explanation: "'రామలక్ష్మణులు'లో రెండు సమాన ప్రాధాన్యం గల పదాలు కలిశాయి. ఇటువంటి సమాసాన్ని ద్వంద్వ సమాసం అంటారు."
+        explanation: "26–40 dB వినికిడి నష్టం సాధారణంగా Mild Hearing Lossగా వర్గీకరించబడుతుంది. ఈ స్థాయిలో వ్యక్తికి తక్కువ శబ్దాలను వినడంలో ఇబ్బంది ఉంటుంది."
     },
     {
-        question: "క్రింది వాటిలో దేశ్య పదం ఏది?",
+        question: "IEP రూపకల్పనలో అత్యంత ముఖ్యమైన అంశం ఏది?",
         options: [
-            "పుష్పం",
-            "విద్య",
-            "ఊరు",
-            "అగ్ని"
+            "పాఠశాల సమయ పట్టిక",
+            "విద్యార్థి వ్యక్తిగత విద్యా లక్ష్యాలు",
+            "ఉపాధ్యాయుడి సేవా వివరాలు",
+            "పాఠశాల భవన నమూనా"
+        ],
+        correct: 1,
+        explanation: "IEPలో విద్యార్థి వ్యక్తిగత విద్యా లక్ష్యాలు, ప్రస్తుత పనితీరు, అవసరాలు మరియు పురోగతి కొలిచే విధానాలు ప్రధాన భాగాలుగా ఉంటాయి."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\n1. JAWS ఒక Screen Reader.\n2. Braille ఒక స్పర్శ ఆధారిత లిపి.\n\nసరైనది ఏది?",
+        options: [
+            "1 మాత్రమే",
+            "2 మాత్రమే",
+            "1 మరియు 2 రెండూ",
+            "రెండూ తప్పు"
         ],
         correct: 2,
-        explanation: "'ఊరు' స్వదేశీ మూలం గల దేశ్య పదం. 'పుష్పం', 'విద్య', 'అగ్ని' సంస్కృత ప్రభావంతో వచ్చిన తత్సమ పదాలు."
+        explanation: "JAWS దృష్టి వైకల్యం గల వారికి ఉపయోగించే Screen Reader కాగా, Braille స్పర్శ ఆధారంగా చదివే లిపి. కాబట్టి రెండు ప్రకటనలు సరైనవే."
     },
     {
-        question: "\"అరచేతిలో వైకుంఠం\" అనే జాతీయానికి సరైన అర్థం ఏమిటి?",
+        question: "క్రింది జంటలలో సరైనది ఏది?",
         options: [
-            "చాలా సులభమైన పని",
-            "అత్యంత కష్టమైన పని",
-            "పనికిరాని వస్తువు",
-            "అనుకోని లాభం"
+            "Dyslexia — Reading",
+            "Dysgraphia — Hearing",
+            "Dyscalculia — Vision",
+            "Dyspraxia — Speech Reading"
         ],
         correct: 0,
-        explanation: "'అరచేతిలో వైకుంఠం' అనే జాతీయం చాలా సులభంగా సాధించగల పనిని సూచిస్తుంది. ఎటువంటి కష్టం లేకుండా జరిగే పనికి దీనిని ఉపయోగిస్తారు."
+        explanation: "Dyslexia చదవడాన్ని ప్రభావితం చేస్తుంది. Dysgraphia వ్రాయడాన్ని, Dyscalculia గణిత నైపుణ్యాలను, Dyspraxia కదలికల సమన్వయాన్ని ప్రభావితం చేస్తుంది."
     },
     {
-        question: "క్రింది వాటిలో యణాదేశ సంధికి ఉదాహరణ ఏది?",
+        question: "క్రింది వాటిలో దృష్టి వైకల్యం గల విద్యార్థి కంప్యూటర్ ఉపయోగించేందుకు అత్యంత అనుకూలమైనది ఏది?",
         options: [
-            "ప్రతి + ఒకరు",
-            "గురు + ఆశ్రమం",
-            "అతి + ఉత్సాహం",
-            "పితృ + ఆజ్ఞ"
-        ],
-        correct: 3,
-        explanation: "'పితృ + ఆజ్ఞ' యణాదేశ సంధికి ప్రామాణిక ఉదాహరణగా పరిగణించబడుతుంది. సంధి నియమాల ప్రకారం యణ్ ఆదేశం ఏర్పడి సంయుక్త రూపం వస్తుంది."
-    },
-    {
-        question: "మానవ అభివృద్ధిని \"Psychosocial Stages\"గా వివరించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
-        options: [
-            "సిగ్మండ్ ఫ్రాయిడ్",
-            "ఎరిక్ ఎరిక్సన్",
-            "జీన్ పియాజే",
-            "కోల్‌బర్గ్"
+            "FM System",
+            "JAWS",
+            "Hearing Aid",
+            "Cochlear Implant"
         ],
         correct: 1,
-        explanation: "ఎరిక్ ఎరిక్సన్ మానవ జీవితాన్ని శిశుదశ నుంచి వృద్ధాప్యం వరకు ఎనిమిది మానసిక-సామాజిక దశలుగా విభజించాడు. ప్రతి దశలో వ్యక్తి ఒక నిర్దిష్ట మానసిక సంఘర్షణను విజయవంతంగా అధిగమించాలి."
+        explanation: "JAWS స్క్రీన్‌పై ఉన్న సమాచారాన్ని శబ్దంగా చదివి వినిపిస్తుంది. అందువల్ల దృష్టి వైకల్యం గల విద్యార్థులు కంప్యూటర్‌ను సులభంగా ఉపయోగించగలుగుతారు."
     },
     {
-        question: "\"Operant Conditioning\"లో ప్రవర్తనను బలపరిచే ప్రధాన అంశం ఏది?",
+        question: "RPWD Act, 2016 యొక్క ప్రధాన లక్ష్యం ఏమిటి?",
         options: [
-            "పరిశీలన",
-            "పునర్బలనం (Reinforcement)",
-            "అనుకరణ",
-            "అంతర్దృష్టి"
+            "కేవలం వైద్య చికిత్స అందించడం",
+            "దివ్యాంగుల హక్కులు, సమాన అవకాశాలు మరియు భాగస్వామ్యాన్ని నిర్ధారించడం",
+            "ప్రత్యేక పాఠశాలల సంఖ్య తగ్గించడం",
+            "కేవలం ఉపాధ్యాయుల శిక్షణ"
         ],
         correct: 1,
-        explanation: "బి.ఎఫ్. స్కిన్నర్ ప్రకారం పునర్బలనం (Reinforcement) వల్ల ప్రవర్తన పునరావృతమై బలపడుతుంది. సానుకూల మరియు ప్రతికూల పునర్బలనాలు అభ్యాసంలో ముఖ్యమైన పాత్ర పోషిస్తాయి."
+        explanation: "RPWD Act, 2016 దివ్యాంగుల హక్కులను రక్షించడం, సమాన అవకాశాలు కల్పించడం మరియు సమాజంలోని అన్ని రంగాల్లో వారి భాగస్వామ్యాన్ని ప్రోత్సహించడం లక్ష్యంగా కలిగి ఉంది."
     },
     {
-        question: "క్రింది జతలలో తప్పుగా ఉన్నది ఏది?",
+        question: "ఒక విద్యార్థి విన్న ప్రతి ప్రశ్నను వెంటనే యథాతథంగా పునరావృతం చేస్తున్నాడు. ఉపాధ్యాయుడు మొదట గుర్తించవలసిన లక్షణం ఏది?",
         options: [
-            "గార్డ్నర్ – Multiple Intelligences",
-            "స్పియర్‌మాన్ – g Factor",
-            "గిల్‌ఫోర్డ్ – Structure of Intellect",
-            "వెక్స్లర్ – Mental Age"
-        ],
-        correct: 3,
-        explanation: "Mental Age భావన ఆల్ఫ్రెడ్ బినేతో సంబంధం కలిగి ఉంది. వెక్స్లర్ మాత్రం ఆధునిక మేధస్సు పరీక్షలను రూపొందించి IQ కొలిచే విధానాన్ని అభివృద్ధి చేశాడు."
-    },
-    {
-        question: "\"Unconscious Mind\" భావన ప్రధానంగా ఎవరి సిద్ధాంతంలో కనిపిస్తుంది?",
-        options: [
-            "మాస్లో",
-            "ఫ్రాయిడ్",
-            "ఎరిక్సన్",
-            "బండూరా"
+            "Dyslexia",
+            "Echolalia",
+            "Dysgraphia",
+            "Dyspraxia"
         ],
         correct: 1,
-        explanation: "సిగ్మండ్ ఫ్రాయిడ్ Psychoanalytic Theoryలో అచేతన మనస్సుకు అత్యంత ప్రాధాన్యం ఇచ్చాడు. మన ప్రవర్తనలో చాలా భాగం అచేతన మనస్సు ప్రభావంతోనే జరుగుతుందని వివరించాడు."
+        explanation: "విన్న పదాలు లేదా ప్రశ్నలను వెంటనే యథాతథంగా పునరావృతం చేయడం Echolalia యొక్క ముఖ్య లక్షణం. ఇది ముఖ్యంగా Autism Spectrum Disorderలో తరచుగా కనిపిస్తుంది."
     },
     {
-        question: "విద్యార్థి తన సహచరుడిని గమనించి అదే విధంగా ప్రవర్తించడం ఏ సిద్ధాంతాన్ని సూచిస్తుంది?",
+        question: "క్రింది వాటిలో వ్యక్తిగత విద్యా ప్రణాళిక (IEP)లో తప్పనిసరిగా ఉండే అంశం ఏది?",
         options: [
-            "Classical Conditioning",
-            "Social Learning Theory",
-            "Hierarchy of Needs",
-            "Discovery Learning"
-        ],
-        correct: 1,
-        explanation: "ఆల్బర్ట్ బండూరా Social Learning Theory ప్రకారం వ్యక్తులు ఇతరులను పరిశీలించి, అనుకరించి కొత్త ప్రవర్తనలను నేర్చుకుంటారు. దీనినే Observational Learning అంటారు."
-    },
-    {
-        question: "\"Scaffolding\" బోధనలో ప్రధాన ఉద్దేశ్యం ఏమిటి?",
-        options: [
-            "శిక్ష విధించడం",
-            "విద్యార్థికి తాత్కాలిక సహాయం అందించడం",
-            "పరీక్ష నిర్వహించడం",
-            "మార్కులు కేటాయించడం"
-        ],
-        correct: 1,
-        explanation: "Scaffoldingలో గురువు అవసరమైనంత వరకు మాత్రమే సహాయం అందిస్తాడు. విద్యార్థి స్వతంత్రంగా చేయగలిగే స్థాయికి చేరుకున్న తర్వాత ఆ సహాయాన్ని క్రమంగా తగ్గిస్తారు."
-    },
-    {
-        question: "క్రింది వారిలో మానవతావాద (Humanistic) సిద్ధాంతానికి చెందినవారు ఎవరు?",
-        options: [
-            "స్కిన్నర్ మరియు పావ్‌లవ్",
-            "మాస్లో మరియు కార్ల్ రోజర్స్",
-            "ఫ్రాయిడ్ మరియు ఎరిక్సన్",
-            "బినే మరియు వెక్స్లర్"
-        ],
-        correct: 1,
-        explanation: "అబ్రహం మాస్లో మరియు కార్ల్ రోజర్స్ Humanistic Psychologyకి ప్రముఖ ప్రతినిధులు. వ్యక్తి సామర్థ్యాభివృద్ధి మరియు స్వీయసాకారానికి వారు అత్యంత ప్రాధాన్యం ఇచ్చారు."
-    },
-    {
-        question: "Primary Mental Abilities సిద్ధాంతాన్ని ప్రతిపాదించినది ఎవరు?",
-        options: [
-            "స్పియర్‌మాన్",
-            "స్టెర్న్‌బర్గ్",
-            "ఎల్.ఎల్. థర్‌స్టోన్",
-            "గిల్‌ఫోర్డ్"
-        ],
-        correct: 2,
-        explanation: "ఎల్.ఎల్. థర్‌స్టోన్ Primary Mental Abilities సిద్ధాంతంలో ఏడు ప్రాథమిక మానసిక సామర్థ్యాలను ప్రతిపాదించాడు. ఆయన ఒకే సాధారణ మేధస్సు భావనను అంగీకరించలేదు."
-    },
-    {
-        question: "Neither the teacher nor the students ____ ready.",
-        options: [
-            "is",
-            "was",
-            "are",
-            "has"
-        ],
-        correct: 2,
-        explanation: "Neither...nor నిర్మాణంలో క్రియ సమీపంలోని కర్తతో సరిపోతుంది. ఇక్కడ 'students' బహువచనం కాబట్టి 'are' సరైన సమాధానం."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "If he studied hard, he will pass.",
-            "If he studies hard, he will pass.",
-            "If he studies hard, he would pass.",
-            "If he had studied hard, he will have passed."
-        ],
-        correct: 1,
-        explanation: "First Conditionalలో If-Clauseలో Present Simple మరియు Main Clauseలో 'will + base verb' ఉపయోగిస్తారు. అందువల్ల రెండవ వాక్యం మాత్రమే వ్యాకరణపరంగా సరైనది."
-    },
-    {
-        question: "Change into Passive Voice.\n\nThe committee has selected the winner.",
-        options: [
-            "The winner selected by the committee.",
-            "The winner has been selected by the committee.",
-            "The winner was selected by the committee.",
-            "The winner is selected by the committee."
-        ],
-        correct: 1,
-        explanation: "Present Perfect Passive నిర్మాణం 'has/have been + past participle'. అందువల్ల 'The winner has been selected by the committee' సరైన Passive Voice."
-    },
-    {
-        question: "She said, \"I have finished my work.\"",
-        options: [
-            "She said that she has finished her work.",
-            "She said that she had finished her work.",
-            "She told she had finished her work.",
-            "She said she finished my work."
-        ],
-        correct: 1,
-        explanation: "Reported Speechలో Present Perfect సాధారణంగా Past Perfectగా మారుతుంది. అలాగే 'my' అనే సర్వనామం 'her'గా మారుతుంది."
-    },
-    {
-        question: "Hardly had the match started ____ it began to rain.",
-        options: [
-            "than",
-            "when",
-            "then",
-            "while"
-        ],
-        correct: 1,
-        explanation: "Hardly అనే నిర్మాణంతో ఎల్లప్పుడూ 'when' ఉపయోగించాలి. 'Hardly...when' అనేది స్థిరమైన వ్యాకరణ నిర్మాణం."
-    },
-    {
-        question: "\"నీలాకాశం\" ఏ సమాసానికి ఉదాహరణ?",
-        options: [
-            "ద్వంద్వ సమాసం",
-            "కర్మధారయ సమాసం",
-            "బహువ్రీహి సమాసం",
-            "అవ్యయీభావ సమాసం"
-        ],
-        correct: 1,
-        explanation: "'నీలమైన ఆకాశం' అనే విగ్రహ వాక్యంతో ఏర్పడిన సమాసం కర్మధారయ సమాసం. ఇందులో విశేషణం మరియు విశేష్యం మధ్య సంబంధం ఉంటుంది."
-    },
-    {
-        question: "\"చేయి\" అనే పదం ఏ వర్గానికి చెందుతుంది?",
-        options: [
-            "తత్సమ",
-            "తద్భవ",
-            "దేశ్య",
-            "వైకృత"
-        ],
-        correct: 2,
-        explanation: "'చేయి' స్వదేశీ మూలం గల తెలుగు పదం. అందువల్ల దీనిని దేశ్య పదంగా వర్గీకరిస్తారు."
-    },
-    {
-        question: "\"ముఖం\"కు సరైన పర్యాయపదం ఏది?",
-        options: [
-            "వదనం",
-            "పాదం",
-            "కర్ణం",
-            "నాసిక"
+            "విద్యార్థి వ్యక్తిగత విద్యా లక్ష్యాలు",
+            "పాఠశాల వార్షిక బడ్జెట్",
+            "జిల్లా విద్యా గణాంకాలు",
+            "ఉపాధ్యాయుల సేవా నియమాలు"
         ],
         correct: 0,
-        explanation: "'వదనం' అనేది 'ముఖం'కు పర్యాయపదం. మిగిలిన పదాలు వరుసగా పాదం, చెవి, ముక్కు అనే అర్థాలను సూచిస్తాయి."
+        explanation: "IEPలో విద్యార్థి ప్రస్తుత పనితీరు, అవసరాలు మరియు వ్యక్తిగత విద్యా లక్ష్యాలు తప్పనిసరిగా ఉంటాయి. ఇవే బోధన, మూల్యాంకనం మరియు పురోగతికి మార్గదర్శకంగా పనిచేస్తాయి."
     },
     {
-        question: "\"పులిని చూసి నక్క వాత పెట్టుకున్నట్లు\" అనే సామెత అర్థం ఏమిటి?",
+        question: "RPWD Act, 2016 ప్రకారం \"Reasonable Accommodation\" అంటే ఏమిటి?",
         options: [
-            "తనకు తగని పనిని అనుకరించడం",
-            "ధైర్యంగా వ్యవహరించడం",
-            "శ్రమించి విజయం సాధించడం",
-            "సమయాన్ని వృథా చేయడం"
-        ],
-        correct: 0,
-        explanation: "ఈ సామెత ఇతరులను ఆలోచించకుండా అనుకరించడం వల్ల నష్టం కలుగుతుందని తెలియజేస్తుంది. తన సామర్థ్యాన్ని తెలుసుకొని ప్రవర్తించాలని సూచిస్తుంది."
-    },
-    {
-        question: "క్రింది వాటిలో తద్భవ పదం ఏది?",
-        options: [
-            "పుష్పం",
-            "విద్య",
-            "పువ్వు",
-            "అగ్ని"
-        ],
-        correct: 2,
-        explanation: "'పువ్వు' అనే పదం సంస్కృతంలోని 'పుష్పం' నుండి రూపాంతరం చెంది వచ్చిన తద్భవ పదం. మిగిలిన పదాలు తత్సమ పదాలు."
-    },
-    {
-        question: "\"గజాననుడు\" అనే పదం ఏ సమాసానికి ఉదాహరణ?",
-        options: [
-            "తత్పురుష సమాసం",
-            "బహువ్రీహి సమాసం",
-            "ద్విగు సమాసం",
-            "అవ్యయీభావ సమాసం"
+            "అందరికీ ఒకే విధమైన బోధన",
+            "అవసరానికి అనుగుణంగా తగిన మార్పులు చేసి సమాన అవకాశాలు కల్పించడం",
+            "ప్రత్యేక పాఠశాలల్లో మాత్రమే ప్రవేశం",
+            "పరీక్షల నుండి మినహాయింపు"
         ],
         correct: 1,
-        explanation: "'గజమువంటి ఆననం గలవాడు' అనే అర్థంతో ఏర్పడిన సమాసం బహువ్రీహి సమాసం. సమాస పదం వేరొక వ్యక్తిని సూచిస్తుంది."
+        explanation: "Reasonable Accommodation అంటే దివ్యాంగుల అవసరాలకు అనుగుణంగా తగిన సర్దుబాట్లు చేసి, ఇతరులతో సమాన అవకాశాలు మరియు భాగస్వామ్యాన్ని కల్పించడం."
     },
     {
-        question: "క్రింది వాటిలో గుణసంధికి ఉదాహరణ ఏది?",
+        question: "IQ 35–49 పరిధి సాధారణంగా ఏ వర్గానికి చెందుతుంది?",
         options: [
-            "దేవ + ఆలయం → దేవాలయం",
-            "ప్రతి + ఒకరు",
-            "అతి + ఉత్సాహం",
-            "పితృ + ఆజ్ఞ"
+            "Mild Intellectual Disability",
+            "Moderate Intellectual Disability",
+            "Severe Intellectual Disability",
+            "Profound Intellectual Disability"
+        ],
+        correct: 1,
+        explanation: "సాధారణ IQ వర్గీకరణ ప్రకారం 35–49 మధ్య IQ ఉన్నవారు Moderate Intellectual Disability వర్గానికి చెందుతారు. వీరికి మితమైన మద్దతు అవసరమవుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో బ్రెయిల్‌కు సంబంధించిన సరైన ప్రకటన ఏది?",
+        options: [
+            "ఇది ధ్వని ఆధారిత లిపి.",
+            "ఇది ఆరు చుక్కల (Six-dot Cell) వ్యవస్థపై ఆధారపడిన లిపి.",
+            "ఇది చిత్రలిపి.",
+            "ఇది కంప్యూటర్ ప్రోగ్రామింగ్ భాష."
+        ],
+        correct: 1,
+        explanation: "బ్రెయిల్ లిపి ఆరు చుక్కల కణం (Six-dot Cell) ఆధారంగా రూపొందించబడింది. ఈ చుక్కల కలయికలతో అక్షరాలు, సంఖ్యలు మరియు చిహ్నాలను సూచిస్తారు."
+    },
+    {
+        question: "దృష్టి వైకల్యం గల విద్యార్థి కంప్యూటర్‌లో టైప్ చేసిన పాఠ్యాన్ని శబ్ద రూపంలో వినేందుకు ఉపయోగించే సాంకేతిక సాధనం ఏది?",
+        options: [
+            "Magnifier",
+            "Perkins Brailler",
+            "JAWS",
+            "Stylus"
+        ],
+        correct: 2,
+        explanation: "JAWS ఒక Screen Reader. ఇది కంప్యూటర్ స్క్రీన్‌లోని సమాచారాన్ని శబ్ద రూపంలో చదివి దృష్టి వైకల్యం గల విద్యార్థులకు అందిస్తుంది."
+    },
+    {
+        question: "క్రింది వాటిలో Echolaliaకు ఉదాహరణ ఏది?",
+        options: [
+            "అక్షరాలను తారుమారు చదవడం",
+            "ఇతరులు చెప్పిన మాటలను వెంటనే పునరావృతం చేయడం",
+            "సంఖ్యలను గుర్తించలేకపోవడం",
+            "వినికిడి శక్తి పూర్తిగా కోల్పోవడం"
+        ],
+        correct: 1,
+        explanation: "Echolalia అనగా ఇతరులు చెప్పిన పదాలు లేదా వాక్యాలను వెంటనే లేదా కొంత సమయం తరువాత యథాతథంగా పునరావృతం చేయడం. ఇది ASDలో సాధారణ లక్షణం."
+    },
+    {
+        question: "\"Dyslexia\" ఉన్న విద్యార్థికి ఉపాధ్యాయుడు మొదట ఉపయోగించవలసిన బోధనా విధానం ఏది?",
+        options: [
+            "ఎక్కువ శిక్ష విధించడం",
+            "బహుఇంద్రియ (Multisensory) బోధన",
+            "ఎక్కువ హోంవర్క్ ఇవ్వడం",
+            "పరీక్షల నుండి తొలగించడం"
+        ],
+        correct: 1,
+        explanation: "Dyslexia ఉన్న విద్యార్థులకు Multisensory Teaching అత్యంత ప్రభావవంతమైన పద్ధతి. ఇది చూడటం, వినడం, మాట్లాడటం మరియు స్పర్శను కలిపి అభ్యాసాన్ని మెరుగుపరుస్తుంది."
+    },
+    {
+        question: "క్రింది వాటిలో సహాయక సాంకేతిక పరికరం (Assistive Technology) ఏది?",
+        options: [
+            "Cochlear Implant",
+            "Chalk Piece",
+            "Attendance Register",
+            "White Board Marker"
         ],
         correct: 0,
-        explanation: "'దేవ + ఆలయం → దేవాలయం'లో అ + ఆ కలిసి ఆ అవడం గుణసంధికి ఉదాహరణ. ఇది సంస్కృత సంధులలో ముఖ్యమైన సంధి."
+        explanation: "Cochlear Implant వినికిడి లోపం గల వ్యక్తులకు వినికిడి సామర్థ్యాన్ని మెరుగుపరచేందుకు ఉపయోగించే ముఖ్యమైన సహాయక సాంకేతిక పరికరం."
+    },
+    {
+        question: "41–55 dB వినికిడి నష్టం ఏ వర్గంలోకి వస్తుంది?",
+        options: [
+            "Mild Hearing Loss",
+            "Moderate Hearing Loss",
+            "Severe Hearing Loss",
+            "Profound Hearing Loss"
+        ],
+        correct: 1,
+        explanation: "41–55 dB వినికిడి నష్టం సాధారణంగా Moderate Hearing Lossగా వర్గీకరించబడుతుంది. ఈ స్థాయిలో సాధారణ సంభాషణ వినడంలో ఇబ్బంది ఏర్పడుతుంది."
+    },
+    {
+        question: "క్రింది జంటలలో సరైనది ఏది?",
+        options: [
+            "Braille — స్పర్శ",
+            "JAWS — శ్రవణ లోప నిర్ధారణ",
+            "Dyslexia — వినికిడి",
+            "Echolalia — చూపు"
+        ],
+        correct: 0,
+        explanation: "Braille అనేది స్పర్శ ఆధారంగా చదివే లిపి. JAWS Screen Reader కాగా, Dyslexia చదవడాన్ని మరియు Echolalia మాటల పునరావృతాన్ని సూచిస్తాయి."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\n1. IEP ప్రతి విద్యార్థికి వ్యక్తిగతంగా రూపొందించబడుతుంది.\n2. అన్ని విద్యార్థులకు ఒకే IEP ఉపయోగించాలి.\n\nసరైన సమాధానం ఏది?",
+        options: [
+            "1 మాత్రమే",
+            "2 మాత్రమే",
+            "1 మరియు 2 రెండూ",
+            "రెండూ తప్పు"
+        ],
+        correct: 0,
+        explanation: "IEP ప్రతి విద్యార్థి అవసరాలు, సామర్థ్యాలు మరియు లక్ష్యాలను ఆధారంగా వ్యక్తిగతంగా రూపొందించబడుతుంది. అందరికీ ఒకే IEP వర్తించదు."
+    },
+    {
+        question: "క్రింది వాటిలో Specific Learning Disabilityకు చెందినది ఏది?",
+        options: [
+            "Dyslexia",
+            "Cataract",
+            "Cerebral Palsy",
+            "Hearing Loss"
+        ],
+        correct: 0,
+        explanation: "Dyslexia ఒక Specific Learning Disability. ఇది ప్రధానంగా చదవడం, పదాలను గుర్తించడం మరియు పఠన నైపుణ్యాలను ప్రభావితం చేస్తుంది."
+    },
+    {
+        question: "ఒక విద్యార్థి IQ = 42. సాధారణ వర్గీకరణ ప్రకారం అతను ఏ వర్గానికి చెందుతాడు?",
+        options: [
+            "Mild Intellectual Disability",
+            "Moderate Intellectual Disability",
+            "Severe Intellectual Disability",
+            "Profound Intellectual Disability"
+        ],
+        correct: 1,
+        explanation: "IQ 42 అనేది సాధారణ వర్గీకరణ ప్రకారం Moderate Intellectual Disability పరిధిలోకి వస్తుంది. ఇలాంటి విద్యార్థులకు తగిన విద్యా మద్దతు అవసరం."
+    },
+    {
+        question: "క్రింది వాటిలో దృష్టి వైకల్యం గల విద్యార్థి స్వతంత్రంగా కంప్యూటర్ ఉపయోగించేందుకు అత్యంత అనుకూలమైన కలయిక ఏది?",
+        options: [
+            "Braille Slate + Stylus",
+            "JAWS + Keyboard",
+            "FM System + Microphone",
+            "Hearing Aid + Speaker"
+        ],
+        correct: 1,
+        explanation: "JAWS Screen Reader మరియు Keyboard సహాయంతో దృష్టి వైకల్యం గల విద్యార్థి స్క్రీన్‌ను వినుతూ కంప్యూటర్‌ను స్వతంత్రంగా ఉపయోగించగలడు."
+    },
+    {
+        question: "ఒక ఉపాధ్యాయుడు IEP రూపొందించే సమయంలో ముందుగా ఏ అంశాన్ని పరిగణనలోకి తీసుకోవాలి?",
+        options: [
+            "పాఠశాల వార్షికోత్సవ కార్యక్రమం",
+            "విద్యార్థి ప్రస్తుత విద్యా పనితీరు మరియు అవసరాలు",
+            "జిల్లా విద్యా బడ్జెట్",
+            "ఇతర విద్యార్థుల మార్కులు"
+        ],
+        correct: 1,
+        explanation: "IEP రూపొందించే మొదటి దశ విద్యార్థి ప్రస్తుత విద్యా పనితీరు, బలాలు, బలహీనతలు మరియు ప్రత్యేక అవసరాలను అంచనా వేయడం."
+    },
+    {
+        question: "RPWD Act, 2016 యొక్క ప్రధాన లక్ష్యం ఏమిటి?",
+        options: [
+            "ప్రత్యేక పాఠశాలలను మాత్రమే ఏర్పాటు చేయడం",
+            "దివ్యాంగులకు సమాన హక్కులు, అవకాశాలు మరియు భాగస్వామ్యాన్ని కల్పించడం",
+            "కేవలం వైద్య సేవలు అందించడం",
+            "దివ్యాంగుల నమోదు మాత్రమే చేయడం"
+        ],
+        correct: 1,
+        explanation: "RPWD Act, 2016 దివ్యాంగుల హక్కులను రక్షించడం, సమాన అవకాశాలు కల్పించడం మరియు సమాజంలోని అన్ని రంగాల్లో వారి పూర్తి భాగస్వామ్యాన్ని నిర్ధారించడం లక్ష్యంగా రూపొందించబడింది."
+    },
+    {
+        question: "వ్యక్తిగత విద్యా ప్రణాళిక (IEP)లో వార్షిక లక్ష్యాలు (Annual Goals) ఎవరిని దృష్టిలో ఉంచుకొని రూపొందిస్తారు?",
+        options: [
+            "మొత్తం తరగతి",
+            "పాఠశాల",
+            "వ్యక్తిగత విద్యార్థి",
+            "జిల్లా విద్యాశాఖ"
+        ],
+        correct: 2,
+        explanation: "IEPలోని వార్షిక లక్ష్యాలు ప్రతి విద్యార్థి ప్రస్తుత పనితీరు, సామర్థ్యాలు మరియు ప్రత్యేక విద్యా అవసరాలను ఆధారంగా వ్యక్తిగతంగా రూపొందించబడతాయి."
+    },
+    {
+        question: "క్రింది వాటిలో దృష్టి వైకల్యం గల విద్యార్థులకు చదవడానికి ఉపయోగించే లిపి ఏది?",
+        options: [
+            "మోర్స్ కోడ్",
+            "బ్రెయిల్",
+            "సంకేత భాష",
+            "ఫోనెటిక్ లిపి"
+        ],
+        correct: 1,
+        explanation: "బ్రెయిల్ అనేది దృష్టి వైకల్యం గల వ్యక్తుల కోసం రూపొందించిన స్పర్శ ఆధారిత లిపి. దీనిని వేళ్లతో చుక్కలను స్పర్శించి చదువుతారు."
+    },
+    {
+        question: "క్రింది జంటలలో సరైనది ఏది?",
+        options: [
+            "JAWS — Screen Reader",
+            "Braille — Speech Trainer",
+            "Dyslexia — Hearing Disorder",
+            "Echolalia — Visual Defect"
+        ],
+        correct: 0,
+        explanation: "JAWS ఒక Screen Reader. ఇది కంప్యూటర్ స్క్రీన్‌లోని సమాచారాన్ని శబ్ద రూపంలో చదివి దృష్టి వైకల్యం గల వినియోగదారులకు సహాయపడుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో చదవడంలో ఇబ్బందికి సంబంధించిన అభ్యాస వైకల్యం ఏది?",
+        options: [
+            "Dyscalculia",
+            "Dysgraphia",
+            "Dyslexia",
+            "Dyspraxia"
+        ],
+        correct: 2,
+        explanation: "Dyslexia ఒక Specific Learning Disability. ఇది ప్రధానంగా చదవడం, పదాలను గుర్తించడం మరియు పఠన నైపుణ్యాలను ప్రభావితం చేస్తుంది."
+    },
+    {
+        question: "56–70 dB వినికిడి నష్టం ఏ వర్గానికి చెందుతుంది?",
+        options: [
+            "Mild Hearing Loss",
+            "Moderate Hearing Loss",
+            "Moderately Severe Hearing Loss",
+            "Profound Hearing Loss"
+        ],
+        correct: 2,
+        explanation: "56–70 dB వినికిడి నష్టం సాధారణంగా Moderately Severe Hearing Lossగా వర్గీకరించబడుతుంది. ఈ స్థాయిలో సాధారణ సంభాషణను వినడం కష్టమవుతుంది."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\n1. Braille స్పర్శ ఆధారిత లిపి.\n2. JAWS ఒక Screen Reader.\n\nసరైనది ఏది?",
+        options: [
+            "1 మాత్రమే",
+            "2 మాత్రమే",
+            "1 మరియు 2 రెండూ",
+            "రెండూ తప్పు"
+        ],
+        correct: 2,
+        explanation: "Braille స్పర్శ ఆధారంగా చదివే లిపి కాగా, JAWS దృష్టి వైకల్యం గల వారికి ఉపయోగించే Screen Reader. కాబట్టి రెండు ప్రకటనలు సరైనవే."
+    },
+    {
+        question: "IEP సమావేశంలో క్రింది వారిలో తప్పనిసరిగా పాల్గొనవలసిన వ్యక్తి ఎవరు?",
+        options: [
+            "విద్యార్థి తల్లిదండ్రులు / సంరక్షకులు",
+            "గ్రామ సర్పంచ్",
+            "జిల్లా కలెక్టర్",
+            "పోలీసు అధికారి"
+        ],
+        correct: 0,
+        explanation: "IEP సమావేశంలో తల్లిదండ్రులు లేదా సంరక్షకుల భాగస్వామ్యం అత్యంత ముఖ్యమైనది. వారి సహకారంతో విద్యార్థికి అనుకూలమైన లక్ష్యాలు నిర్ణయించబడతాయి."
+    },
+    {
+        question: "క్రింది వాటిలో సహాయక సాంకేతిక పరికరం ఏది?",
+        options: [
+            "Perkins Brailler",
+            "Blackboard",
+            "Globe",
+            "Attendance Register"
+        ],
+        correct: 0,
+        explanation: "Perkins Brailler అనేది బ్రెయిల్ రాయడానికి ఉపయోగించే సహాయక పరికరం. ఇది దృష్టి వైకల్యం గల విద్యార్థుల రచనా నైపుణ్యాలను అభివృద్ధి చేస్తుంది."
+    },
+    {
+        question: "IQ 20–34 ఉన్న వ్యక్తి సాధారణంగా ఏ వర్గానికి చెందుతాడు?",
+        options: [
+            "Mild Intellectual Disability",
+            "Moderate Intellectual Disability",
+            "Severe Intellectual Disability",
+            "Profound Intellectual Disability"
+        ],
+        correct: 2,
+        explanation: "సాధారణ IQ వర్గీకరణ ప్రకారం 20–34 మధ్య IQ ఉన్నవారు Severe Intellectual Disability వర్గానికి చెందుతారు. వీరికి అధిక స్థాయి మద్దతు అవసరమవుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో సమగ్ర విద్య (Inclusive Education) సూత్రానికి అత్యంత అనుకూలమైనది ఏది?",
+        options: [
+            "అన్ని CwSNలను ప్రత్యేక పాఠశాలలకు పంపడం",
+            "అవసరమైన మద్దతుతో సాధారణ తరగతిలో బోధించడం",
+            "పరీక్షలకు అనుమతించకపోవడం",
+            "వేరు పాఠ్యపుస్తకాలు మాత్రమే ఉపయోగించడం"
+        ],
+        correct: 1,
+        explanation: "సమగ్ర విద్యలో CwSNలకు అవసరమైన మద్దతు, సౌకర్యాలు మరియు బోధనా అనుసరణలతో సాధారణ తరగతిలో విద్య అందించడం ప్రధాన సూత్రం."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\n1. Echolalia ఆటిజంలో కనిపించవచ్చు.\n2. Echolalia అనేది వినికిడి లోపానికి సమానార్థకం.\n\nసరైనది ఏది?",
+        options: [
+            "1 మాత్రమే",
+            "2 మాత్రమే",
+            "1 మరియు 2 రెండూ",
+            "రెండూ తప్పు"
+        ],
+        correct: 0,
+        explanation: "Echolalia అనేది Autism Spectrum Disorderలో కనిపించే భాషా లక్షణం. ఇది ఇతరుల మాటలను పునరావృతం చేయడం మాత్రమే; వినికిడి లోపం కాదు."
+    },
+    {
+        question: "దృష్టి వైకల్యం గల విద్యార్థికి డిజిటల్ పాఠ్యపుస్తకాన్ని స్వతంత్రంగా చదవడానికి ఉత్తమ సాధనం ఏది?",
+        options: [
+            "JAWS",
+            "FM System",
+            "Cochlear Implant",
+            "Audiometer"
+        ],
+        correct: 0,
+        explanation: "JAWS డిజిటల్ పాఠ్యాన్ని శబ్ద రూపంలో చదివి వినిపించే Screen Reader. ఇది దృష్టి వైకల్యం గల విద్యార్థులకు స్వతంత్ర అభ్యాసాన్ని సులభతరం చేస్తుంది."
+    },
+    {
+        question: "క్రింది వాటిలో Dyslexia ఉన్న విద్యార్థికి అత్యంత అనుకూలమైన మూల్యాంకన సౌకర్యం ఏది?",
+        options: [
+            "అదనపు సమయం",
+            "తక్కువ మార్కులు",
+            "పరీక్ష నుండి తొలగించడం",
+            "అన్ని ప్రశ్నలను మౌఖికంగా మాత్రమే అడగడం"
+        ],
+        correct: 0,
+        explanation: "Dyslexia ఉన్న విద్యార్థులకు పరీక్షల్లో అదనపు సమయం ఇవ్వడం ఒక సాధారణ మరియు సముచిత సౌకర్యం. ఇది వారి నిజమైన సామర్థ్యాన్ని ప్రదర్శించేందుకు సహాయపడుతుంది."
+    },
+    {
+        question: "71–90 dB వినికిడి నష్టం ఏ వర్గంలోకి వస్తుంది?",
+        options: [
+            "Moderate",
+            "Moderately Severe",
+            "Severe",
+            "Profound"
+        ],
+        correct: 2,
+        explanation: "71–90 dB వినికిడి నష్టం సాధారణంగా Severe Hearing Lossగా వర్గీకరించబడుతుంది. ఈ స్థాయిలో సాధారణ సంభాషణ వినడం చాలా కష్టంగా ఉంటుంది."
+    },
+    {
+        question: "IEP లక్ష్యాలు ఎలా ఉండాలి?",
+        options: [
+            "అస్పష్టంగా",
+            "కొలవలేనివిగా",
+            "కొలవగలిగే మరియు విద్యార్థి అవసరాలకు అనుగుణంగా",
+            "అన్ని విద్యార్థులకు ఒకే విధంగా"
+        ],
+        correct: 2,
+        explanation: "IEP లక్ష్యాలు స్పష్టంగా, కొలవగలిగే విధంగా మరియు విద్యార్థి వ్యక్తిగత అవసరాలకు అనుగుణంగా ఉండాలి. తద్వారా పురోగతిని సమీక్షించడం సులభమవుతుంది."
+    },
+    {
+        question: "క్రింది జంటలలో సరైనది ఏది?",
+        options: [
+            "Braille — Visual Impairment",
+            "JAWS — Hearing Impairment",
+            "Hearing Aid — Dyslexia",
+            "Echolalia — Intellectual Disability మాత్రమే"
+        ],
+        correct: 0,
+        explanation: "Braille ప్రధానంగా దృష్టి వైకల్యం గల వ్యక్తుల కోసం ఉపయోగించే స్పర్శ ఆధారిత లిపి. మిగిలిన జంటలు సరైన అనుసంధానాలు కావు."
+    },
+    {
+        question: "ఒక విద్యార్థి పదాలను చదివేటప్పుడు అక్షరాలను మార్చి చదువుతున్నాడు, కానీ మేధస్సు సాధారణంగా ఉంది. ఉపాధ్యాయుడు ముందుగా అనుమానించవలసినది ఏది?",
+        options: [
+            "Intellectual Disability",
+            "Dyslexia",
+            "Hearing Loss",
+            "Autism మాత్రమే"
+        ],
+        correct: 1,
+        explanation: "సాధారణ మేధస్సు ఉన్నప్పటికీ చదవడంలో అక్షరాలను మార్చి చదవడం లేదా పదాలను గుర్తించడంలో ఇబ్బంది ఉండటం Dyslexiaకి ప్రధాన లక్షణం."
+    },
+    {
+        question: "క్రింది వాటిలో RPWD Act యొక్క సూత్రాలకు అనుగుణమైన చర్య ఏది?",
+        options: [
+            "దివ్యాంగ విద్యార్థులను సాధారణ పాఠశాలలో చేర్చకపోవడం",
+            "అవసరమైన సౌకర్యాలతో సమాన విద్యా అవకాశాలు కల్పించడం",
+            "ప్రవేశం నిరాకరించడం",
+            "ప్రత్యేక పరీక్షలు మాత్రమే నిర్వహించడం"
+        ],
+        correct: 1,
+        explanation: "RPWD Act దివ్యాంగులకు వివక్ష లేకుండా అవసరమైన సౌకర్యాలతో సమాన విద్యా అవకాశాలు మరియు సమాన భాగస్వామ్యాన్ని కల్పించడాన్ని ప్రోత్సహిస్తుంది."
+    },
+    {
+        question: "ఒక ఉపాధ్యాయుడు IEPలో నిర్ణయించిన లక్ష్యాల సాధనను ప్రతి నెల సమీక్షిస్తున్నాడు. ఈ చర్య యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
+        options: [
+            "పాఠశాల తనిఖీ కోసం",
+            "విద్యార్థి పురోగతిని అంచనా వేసి అవసరమైతే ప్రణాళికను సవరించడం",
+            "మార్కుల జాబితా తయారు చేయడం",
+            "హాజరు నమోదు చేయడం"
+        ],
+        correct: 1,
+        explanation: "IEPను క్రమం తప్పకుండా సమీక్షించడం ద్వారా విద్యార్థి పురోగతిని అంచనా వేసి, అవసరమైతే లక్ష్యాలు లేదా బోధనా విధానాలను సవరించవచ్చు."
     }
 ];
