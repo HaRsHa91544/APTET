@@ -572,8 +572,8 @@ main {
 }
 
 .opt:disabled:not(.correct):not(.wrong) {
-    opacity: 0.65;
-    background: var(--bg);
+    opacity: 0.8;
+    background: var(--surface);
     border-color: rgba(255, 255, 255, 0.03);
 }
 
