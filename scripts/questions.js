@@ -1,321 +1,461 @@
 const SUBJECTS = [
-    "Telugu"
+    "English"
 ];
 
 const QUESTIONS = [
     {
-        question: "క్రింది వాటిలో **ప్రథమా విభక్తి** ప్రత్యయం ఏది?",
-        options: ["ను", "తో", "డు", "కి"],
+        question: "Choose the correct verb.\n\nEach of the students ______ a notebook.",
+        options: ["have", "are having", "has", "were having"],
         correct: 2,
-        explanation: "ప్రథమా విభక్తి కర్తను సూచిస్తుంది. తెలుగులో కర్తకు సాధారణంగా 'డు', 'ము', 'వు' వంటి ప్రత్యయాలు వస్తాయి. అందువల్ల 'డు' ప్రథమా విభక్తి ప్రత్యయం."
+        explanation: "The subject 'Each' is singular, so it always takes a singular verb. Therefore, 'has' is the correct choice, even though 'students' is plural in the prepositional phrase."
     },
     {
-        question: "**రాముడు + ఆలయం** సంధి రూపం ఏది?",
-        options: ["రాముడాలయం", "రామాలయం", "రాముఆలయం", "రాముడిఆలయం"],
+        question: "Choose the correct article.\n\nRavi is ______ honest man.",
+        options: ["a", "an", "the", "no article"],
         correct: 1,
-        explanation: "రాముడు + ఆలయం పదాలు సంధి వల్ల 'రామాలయం'గా మారతాయి. అచ్చుల కలయికతో ఏర్పడే ఈ రూపాన్ని గుణసంధి ఉదాహరణగా పరిగణిస్తారు."
+        explanation: "The word 'honest' begins with a silent 'h' and is pronounced with a vowel sound. Therefore, the correct article before it is 'an'."
     },
     {
-        question: "**రాజపుత్రుడు** ఏ సమాసానికి ఉదాహరణ?",
-        options: ["ద్వంద్వ సమాసం", "కర్మధారయ సమాసం", "తత్పురుష సమాసం", "బహువ్రీహి సమాసం"],
-        correct: 2,
-        explanation: "పూర్వపదం ఉత్తరపదానికి సంబంధించి దాని అర్థాన్ని స్పష్టపరిచినప్పుడు తత్పురుష సమాసం ఏర్పడుతుంది. 'రాజపుత్రుడు' దీనికి ఉదాహరణ."
+        question: "Choose the correct preposition.\n\nThe train arrived ______ the station on time.",
+        options: ["in", "at", "into", "over"],
+        correct: 1,
+        explanation: "The preposition 'at' is used to indicate a specific place or location such as a station, bus stop, or airport."
     },
     {
-        question: "క్రింది వాటిలో **ఉపమా అలంకారం** గలది ఏది?",
+        question: "Choose the correctly punctuated sentence.",
         options: [
-            "అతడు సింహం.",
-            "అతడు సింహంవలె పోరాడాడు.",
-            "గాలి గుసగుసలాడింది.",
-            "నవ్వు పూసింది."
+            "Yes I will help you.",
+            "Yes, I will help you.",
+            "Yes I, will help you.",
+            "Yes; I will help you."
         ],
         correct: 1,
-        explanation: "ఉపమేయం, ఉపమానం మరియు 'వలె', 'వంటి' వంటి ఉపమావాచక పదాలు ఉన్నప్పుడు ఉపమా అలంకారం ఏర్పడుతుంది. అందుకే రెండవ వాక్యం సరైనది."
+        explanation: "Introductory words like 'Yes' are followed by a comma. This punctuation makes the sentence grammatically correct and easier to read."
     },
     {
-        question: "క్రింది పదాలలో **తత్సమ పదం** ఏది?",
-        options: ["అగ్ని", "నిప్పు", "మంట", "సెగ"],
-        correct: 0,
-        explanation: "'అగ్ని' సంస్కృత భాష నుండి ఎలాంటి రూపమార్పు లేకుండా తెలుగులోకి వచ్చిన పదం. అందువల్ల ఇది తత్సమ పదంగా పరిగణించబడుతుంది."
-    },
-    {
-        question: "**పువ్వు** ఏ పదవర్గానికి చెందుతుంది?",
-        options: ["తత్సమ", "తద్భవ", "దేశ్య", "అన్యదేశ్య"],
-        correct: 1,
-        explanation: "'పుష్ప' అనే సంస్కృత పదం రూపాంతరం చెంది 'పువ్వు'గా మారింది. రూపమార్పుతో వచ్చిన పదాలను తద్భవ పదాలు అంటారు."
-    },
-    {
-        question: "క్రింది వాటిలో **దేశ్య పదం** ఏది?",
-        options: ["కన్ను", "విద్య", "ధర్మం", "కీర్తి"],
-        correct: 0,
-        explanation: "తెలుగు భాషలో స్వతంత్రంగా పుట్టిన పదాలను దేశ్య పదాలు అంటారు. 'కన్ను' అలాంటి స్వదేశీ తెలుగు పదం కావడంతో సరైన సమాధానం."
-    },
-    {
-        question: "**దేవ + ఆలయం** లో ఏర్పడిన సంధి ఏది?",
-        options: ["యణాదేశ సంధి", "గుణసంధి", "వృద్ధి సంధి", "ఉత్వసంధి"],
-        correct: 1,
-        explanation: "'దేవ + ఆలయం' కలయికలో అచ్చుల సంధి జరిగి 'దేవాలయం' రూపం ఏర్పడుతుంది. ఇది గుణసంధికి ఉదాహరణగా పరిగణించబడుతుంది."
-    },
-    {
-        question: "**నీలకంఠుడు** ఏ సమాసం?",
-        options: ["ద్విగు", "బహువ్రీహి", "అవ్యయీభావ", "ద్వంద్వ"],
-        correct: 1,
-        explanation: "సమాస పదం తన భాగాల కంటే వేరొక వ్యక్తిని లేదా వస్తువును సూచిస్తే దానిని బహువ్రీహి సమాసం అంటారు. 'నీలకంఠుడు' అలాంటి ఉదాహరణ."
-    },
-    {
-        question: "క్రింది వాటిలో **తృతీయా విభక్తి** ప్రత్యయం ఏది?",
-        options: ["తో", "ను", "లో", "కి"],
-        correct: 0,
-        explanation: "తృతీయా విభక్తి సాధనం లేదా సహచర్యాన్ని తెలియజేస్తుంది. తెలుగులో దీనికి ప్రధానంగా 'తో' అనే ప్రత్యయం ఉపయోగిస్తారు."
-    },
-    {
-        question: "ఒకే అక్షరం పదేపదే రావడం వల్ల ఏర్పడే అలంకారం ఏది?",
-        options: ["ఉపమా", "రూపకం", "అనుప్రాస", "శ్లేష"],
-        correct: 2,
-        explanation: "ఒకే ధ్వని లేదా అక్షరం వరుసగా పునరావృతమైతే అనుప్రాస అలంకారం ఏర్పడుతుంది. ఇది శబ్దాలంకారాలలో ముఖ్యమైనది."
-    },
-    {
-        question: "**అన్నదమ్ములు** ఏ సమాసానికి ఉదాహరణ?",
-        options: ["తత్పురుష", "ద్వంద్వ", "కర్మధారయ", "బహువ్రీహి"],
-        correct: 1,
-        explanation: "సమాన ప్రాధాన్యం గల రెండు పదాలు కలిసి ఒక భావాన్ని తెలియజేస్తే అది ద్వంద్వ సమాసం అవుతుంది. 'అన్నదమ్ములు' దీనికి ఉదాహరణ."
-    },
-    {
-        question: "క్రింది వాటిలో **సప్తమీ విభక్తి** ప్రత్యయం ఏది?",
-        options: ["యొక్క", "లో", "ను", "తో"],
-        correct: 1,
-        explanation: "సప్తమీ విభక్తి స్థలాన్ని లేదా స్థానాన్ని సూచిస్తుంది. తెలుగులో దీనికి సాధారణంగా 'లో' అనే ప్రత్యయం ఉపయోగించబడుతుంది."
-    },
-    {
-        question: "**శివాలయం** ఏర్పడిన సంధి ఏది?",
-        options: ["గుణసంధి", "యణాదేశ సంధి", "ఉత్వసంధి", "అత్వసంధి"],
-        correct: 0,
-        explanation: "'శివ + ఆలయం' పదాల కలయికలో అచ్చుల మార్పు వల్ల 'శివాలయం' రూపం ఏర్పడుతుంది. ఇది గుణసంధికి ప్రసిద్ధ ఉదాహరణ."
-    },
-    {
-        question: "క్రింది వాటిలో **తద్భవ పదం** ఏది?",
-        options: ["ముఖము", "మొగము", "విద్య", "ధర్మము"],
-        correct: 1,
-        explanation: "'ముఖము' అనే సంస్కృత పదం కాలక్రమేణా రూపాంతరం చెంది 'మొగము'గా మారింది. రూపమార్పు చెందిన ఇటువంటి పదాలను తద్భవ పదాలు అంటారు."
-    },
-    {
-        question: "క్రింది వాటిలో **ద్వితీయా విభక్తి** ప్రత్యయం ఏది?",
-        options: ["తో", "ను / ని", "లో", "యొక్క"],
-        correct: 1,
-        explanation: "ద్వితీయా విభక్తి కర్మను సూచిస్తుంది. వాక్యంలో క్రియకు గురయ్యే పదానికి సాధారణంగా 'ను' లేదా 'ని' ప్రత్యయాలు వస్తాయి. అందువల్ల 'ను / ని' ద్వితీయా విభక్తి ప్రత్యయం."
-    },
-    {
-        question: "**మహా + ఋషి** సంధి రూపం ఏది?",
-        options: ["మహర్షి", "మహాఋషి", "మహారుషి", "మహాయృషి"],
-        correct: 0,
-        explanation: "సంధి నియమం ప్రకారం 'మహా' మరియు 'ఋషి' పదాలు కలిసినప్పుడు 'మహర్షి' రూపం ఏర్పడుతుంది. ఇది సంస్కృత సంధికి ప్రసిద్ధ ఉదాహరణ."
-    },
-    {
-        question: "**పీతాంబరుడు** ఏ సమాసానికి ఉదాహరణ?",
-        options: ["తత్పురుష సమాసం", "కర్మధారయ సమాసం", "బహువ్రీహి సమాసం", "ద్విగు సమాసం"],
-        correct: 2,
-        explanation: "సమాస పదం తన భాగాల అర్థాన్ని కాకుండా వేరొక వ్యక్తిని సూచించినప్పుడు అది బహువ్రీహి సమాసం అవుతుంది. 'పీతాంబరుడు' శ్రీమహావిష్ణువును సూచిస్తుంది."
-    },
-    {
-        question: "క్రింది వాటిలో **చతుర్థీ విభక్తి** ప్రత్యయం ఏది?",
-        options: ["చేత", "కి / కు", "నుండి", "లో"],
-        correct: 1,
-        explanation: "చతుర్థీ విభక్తి సంప్రదానార్థాన్ని సూచిస్తుంది. ఒకరికి లేదా దేనికి అనే భావాన్ని తెలియజేయడానికి 'కి' లేదా 'కు' ప్రత్యయాలు ఉపయోగిస్తారు."
-    },
-    {
-        question: "**అతడు చంద్రుడు** అనే వాక్యంలో ఉన్న అలంకారం ఏది?",
-        options: ["ఉపమా", "రూపకం", "అనుప్రాస", "యమకం"],
-        correct: 1,
-        explanation: "ఉపమావాచక పదాలు లేకుండా ఒక వస్తువును మరొక వస్తువుగా నేరుగా చెప్పినప్పుడు రూపక అలంకారం ఏర్పడుతుంది. ఈ వాక్యం రూపకానికి ఉదాహరణ."
-    },
-    {
-        question: "క్రింది వాటిలో **తత్సమ పదం** ఏది?",
-        options: ["చెవి", "కర్ణము", "చెవి గూబ", "వినికిడి"],
-        correct: 1,
-        explanation: "'కర్ణము' సంస్కృత భాష నుండి ఎలాంటి రూపమార్పు లేకుండా తెలుగులోకి వచ్చిన పదం. అందువల్ల ఇది తత్సమ పదంగా పరిగణించబడుతుంది."
-    },
-    {
-        question: "**కన్ను** అనే దేశ్య పదానికి సమానార్థక తత్సమ పదం ఏది?",
-        options: ["నేత్రం", "చూపు", "దృష్టి", "కనులు"],
-        correct: 0,
-        explanation: "'నేత్రం' సంస్కృత మూలం కలిగిన తత్సమ పదం. ఇది తెలుగు దేశ్య పదమైన 'కన్ను'కు సమానార్థకంగా ఉపయోగించబడుతుంది."
-    },
-    {
-        question: "క్రింది వాటిలో **పంచమీ విభక్తి** ప్రత్యయం ఏది?",
-        options: ["యొక్క", "నుండి / వలన", "లో", "ను"],
-        correct: 1,
-        explanation: "పంచమీ విభక్తి అపాదానార్థాన్ని లేదా వేరుపడే భావాన్ని తెలియజేస్తుంది. దీనికి 'నుండి' లేదా 'వలన' వంటి ప్రత్యయాలు వస్తాయి."
-    },
-    {
-        question: "**త్రిలోకం** ఏ సమాసానికి ఉదాహరణ?",
-        options: ["ద్వంద్వ", "ద్విగు", "కర్మధారయ", "బహువ్రీహి"],
-        correct: 1,
-        explanation: "సంఖ్యను సూచించే పదం పూర్వపదంగా వచ్చి సమాసం ఏర్పడితే దానిని ద్విగు సమాసం అంటారు. 'త్రిలోకం' అంటే మూడు లోకాలు."
-    },
-    {
-        question: "క్రింది వాటిలో **అనుప్రాస అలంకారం** గలది ఏది?",
+        question: "Choose the correctly spelt word.",
         options: [
-            "మల్లెలు మురిసె మధురముగా",
-            "అతడు పులిలా పోరాడాడు",
-            "ఆమె చంద్రబింబం",
-            "నవ్వు వికసించింది"
+            "Accomodation",
+            "Accommadation",
+            "Accommodation",
+            "Acommodation"
         ],
-        correct: 0,
-        explanation: "ఒకే అక్షరం లేదా ధ్వని పదేపదే పునరావృతమైతే అనుప్రాస అలంకారం ఏర్పడుతుంది. ఈ వాక్యంలో 'మ' అక్షరం వరుసగా వచ్చింది."
-    },
-    {
-        question: "క్రింది వాటిలో **షష్ఠీ విభక్తి** ప్రత్యయం ఏది?",
-        options: ["యొక్క", "తో", "కు", "లో"],
-        correct: 0,
-        explanation: "షష్ఠీ విభక్తి సంబంధాన్ని లేదా స్వామ్యాన్ని సూచిస్తుంది. దీనికి సాధారణంగా 'యొక్క' అనే ప్రత్యయం ఉపయోగిస్తారు."
-    },
-    {
-        question: "**హిమ + ఆలయం** సంధి రూపం ఏది?",
-        options: ["హిమాలయం", "హిమాఆలయం", "హిమయాలయం", "హిమలయం"],
-        correct: 0,
-        explanation: "'హిమ' మరియు 'ఆలయం' పదాలు సంధి వల్ల 'హిమాలయం'గా మారుతాయి. ఇది గుణసంధికి ప్రసిద్ధ ఉదాహరణ."
-    },
-    {
-        question: "క్రింది వాటిలో **దేశ్య పదం** ఏది?",
-        options: ["గృహం", "ఇల్లు", "ఆలయం", "మందిరం"],
-        correct: 1,
-        explanation: "'ఇల్లు' స్వతంత్ర తెలుగు మూలం కలిగిన పదం. సంస్కృత ప్రభావం లేకుండా వచ్చిన పదాలను దేశ్య పదాలు అంటారు."
-    },
-    {
-        question: "**తల్లిదండ్రులు** ఏ సమాసానికి ఉదాహరణ?",
-        options: ["ద్వంద్వ సమాసం", "తత్పురుష సమాసం", "కర్మధారయ సమాసం", "అవ్యయీభావ సమాసం"],
-        correct: 0,
-        explanation: "సమాన ప్రాధాన్యం కలిగిన రెండు పదాలు కలిసి ఒక భావాన్ని తెలియజేస్తే ద్వంద్వ సమాసం ఏర్పడుతుంది. 'తల్లిదండ్రులు' దీనికి ఉదాహరణ."
-    },
-    {
-        question: "**ముఖము → మొగము** అనే మార్పు ఏ పదవర్గాన్ని సూచిస్తుంది?",
-        options: ["తత్సమ", "దేశ్య", "తద్భవ", "అన్యదేశ్య"],
         correct: 2,
-        explanation: "సంస్కృత పదం కాలక్రమేణా రూపాంతరం చెంది తెలుగులో కొత్త రూపంలో వాడబడితే దానిని తద్భవ పదం అంటారు. 'మొగము' అలాంటి పదమే."
+        explanation: "The correct spelling is 'Accommodation'. It contains double 'c' and double 'm', which are commonly confused in English spelling."
     },
     {
-        question: "క్రింది వాటిలో **సంబోధన విభక్తి**కి ఉదాహరణ ఏది?",
-        options: ["రామునికి", "రామునితో", "ఓ రామా!", "రాముని"],
-        correct: 2,
-        explanation: "ఎవరినైనా నేరుగా పిలిచే సందర్భంలో సంబోధన విభక్తి ఉపయోగిస్తారు. 'ఓ రామా!' అనే ప్రయోగంలో రాముడిని ప్రత్యక్షంగా సంబోధిస్తున్నందున ఇది సంబోధన విభక్తికి ఉదాహరణ."
-    },
-    {
-        question: "**ప్రతి + ఒక్కరు** సంధి రూపం ఏది?",
-        options: ["ప్రతియొక్కరు", "ప్రత్యొక్కరు", "ప్రతొక్కరు", "ప్రతీఒక్కరు"],
-        correct: 1,
-        explanation: "సంధి నియమం ప్రకారం 'ప్రతి' మరియు 'ఒక్కరు' కలిసినప్పుడు యణాదేశ సంధి ఏర్పడి 'ప్రత్యొక్కరు' అనే రూపం వస్తుంది."
-    },
-    {
-        question: "**చక్రపాణి** ఏ సమాసానికి ఉదాహరణ?",
-        options: ["కర్మధారయ సమాసం", "తత్పురుష సమాసం", "బహువ్రీహి సమాసం", "ద్వంద్వ సమాసం"],
-        correct: 2,
-        explanation: "'చక్రపాణి' అంటే చక్రాన్ని చేతిలో ధరించినవాడు, అంటే విష్ణువును సూచిస్తుంది. సమాసపదం వేరొక వ్యక్తిని సూచించడం వల్ల ఇది బహువ్రీహి సమాసం."
-    },
-    {
-        question: "**'తో'** ప్రత్యయం ఏ విభక్తికి చెందుతుంది?",
-        options: ["ప్రథమా", "ద్వితీయా", "తృతీయా", "షష్ఠీ"],
-        correct: 2,
-        explanation: "తృతీయా విభక్తి సాధనం లేదా సహచర్యాన్ని సూచిస్తుంది. తెలుగులో దీనికి ప్రధానంగా 'తో' అనే ప్రత్యయం ఉపయోగిస్తారు."
-    },
-    {
-        question: "క్రింది వాటిలో **రూపక అలంకారం** ఉన్నది ఏది?",
-        options: ["అతడు సింహంలా పోరాడాడు.", "అతడు సింహం.", "అతడు ధైర్యవంతుడు.", "అతడు బలవంతుడు."],
-        correct: 1,
-        explanation: "ఉపమావాచక పదం లేకుండా ఒక వస్తువును లేదా వ్యక్తిని మరొకదానిగా నేరుగా చెప్పినప్పుడు రూపక అలంకారం ఏర్పడుతుంది. 'అతడు సింహం' రూపకానికి ఉదాహరణ."
-    },
-    {
-        question: "**పంకజం** అనే తత్సమ పదానికి తద్భవ రూపం ఏది?",
-        options: ["కమలం", "తామర", "పంకము", "పువ్వు"],
-        correct: 1,
-        explanation: "APTETలో సాధారణంగా 'పంకజం'కు ప్రచలిత తెలుగు రూపంగా 'తామర'ను పరిగణిస్తారు. అందువల్ల ఇచ్చిన ఎంపికల్లో 'తామర' సరైన సమాధానం."
-    },
-    {
-        question: "క్రింది వాటిలో **దేశ్య పదం** ఏది?",
-        options: ["ఇల్లు", "గృహం", "మందిరం", "నివాసం"],
-        correct: 0,
-        explanation: "'ఇల్లు' స్వతంత్ర తెలుగు మూలం కలిగిన పదం. సంస్కృత ప్రభావం లేకుండా పుట్టిన పదాలను దేశ్య పదాలు అంటారు."
-    },
-    {
-        question: "**విద్యాలయం** అనే పదంలో ఏర్పడిన సంధి ఏది?",
-        options: ["గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి", "అత్వసంధి"],
-        correct: 0,
-        explanation: "'విద్య + ఆలయం' కలయికలో సంధి ఏర్పడి 'విద్యాలయం' రూపం వస్తుంది. దీనిని APTET వ్యాకరణంలో గుణసంధిగా బోధిస్తారు."
-    },
-    {
-        question: "క్రింది వాటిలో **కర్మధారయ సమాసం** ఏది?",
-        options: ["నీలకమలం", "తల్లిదండ్రులు", "త్రిలోకం", "చక్రపాణి"],
-        correct: 0,
-        explanation: "విశేషణం మరియు విశేష్యం మధ్య సంబంధం ఉన్న సమాసాన్ని కర్మధారయ సమాసం అంటారు. 'నీలకమలం'లో 'నీల' అనేది 'కమలం'కు విశేషణం."
-    },
-    {
-        question: "క్రింది వాటిలో **షష్ఠీ విభక్తి**ని సూచించే ప్రత్యయం ఏది?",
-        options: ["తో", "యొక్క", "లో", "నుండి"],
-        correct: 1,
-        explanation: "షష్ఠీ విభక్తి సంబంధం లేదా స్వామ్యాన్ని తెలియజేస్తుంది. దీనికి సాధారణంగా 'యొక్క' అనే ప్రత్యయం ఉపయోగిస్తారు."
-    },
-    {
-        question: "ఒకే పదం రెండు అర్థాల్లో ప్రయోగించబడిన అలంకారం ఏది?",
-        options: ["యమకం", "ఉపమా", "శ్లేష", "రూపకం"],
-        correct: 2,
-        explanation: "ఒకే పదం ఒకేసారి రెండు లేదా అంతకంటే ఎక్కువ అర్థాలను సూచించినప్పుడు శ్లేష అలంకారం ఏర్పడుతుంది. ఇది అర్థాలంకారాల్లో ఒకటి."
-    },
-    {
-        question: "**రాజర్షి** ఏ సమాసానికి ఉదాహరణ?",
-        options: ["ద్వంద్వ సమాసం", "కర్మధారయ సమాసం", "అవ్యయీభావ సమాసం", "ద్విగు సమాసం"],
-        correct: 1,
-        explanation: "'రాజైన ఋషి' అనే విశేషణ–విశేష్య సంబంధం ఉన్నందున 'రాజర్షి' కర్మధారయ సమాసానికి ఉదాహరణగా పరిగణించబడుతుంది."
-    },
-    {
-        question: "క్రింది వాటిలో **తద్భవ పదం** ఏది?",
-        options: ["అగ్ని", "నిప్పు", "ధర్మం", "విద్య"],
-        correct: 1,
-        explanation: "APTETలో సాధారణంగా 'నిప్పు'ను తద్భవ పదంగా వర్గీకరిస్తారు. మిగిలిన పదాలు తత్సమ పదాలుగా పరిగణించబడతాయి."
-    },
-    {
-        question: "**లోక + ఈశ్వరుడు** సంధి రూపం ఏది?",
-        options: ["లోకేశ్వరుడు", "లోకఈశ్వరుడు", "లోకయీశ్వరుడు", "లోకైశ్వరుడు"],
-        correct: 0,
-        explanation: "'లోక' మరియు 'ఈశ్వరుడు' కలిసినప్పుడు గుణసంధి ఏర్పడి 'లోకేశ్వరుడు' అనే రూపం వస్తుంది."
-    },
-    {
-        question: "క్రింది వాటిలో **బహువ్రీహి సమాసం** ఏది?",
-        options: ["చతుర్ముఖుడు", "దేవాలయం", "తల్లిదండ్రులు", "త్రిలోకం"],
-        correct: 0,
-        explanation: "'చతుర్ముఖుడు' అంటే నాలుగు ముఖాలు కలవాడు, అంటే బ్రహ్మను సూచిస్తుంది. సమాసపదం వేరొక వ్యక్తిని సూచించడం వల్ల ఇది బహువ్రీహి సమాసం."
-    },
-    {
-        question: "క్రింది వాటిలో **తత్సమ పదం** ఏది?",
-        options: ["మొగము", "కర్ణము", "ఇల్లు", "నిప్పు"],
-        correct: 1,
-        explanation: "'కర్ణము' సంస్కృత రూపంలోనే తెలుగులో వాడబడే పదం. రూపమార్పు లేకుండా వచ్చిన ఇటువంటి పదాలను తత్సమ పదాలు అంటారు."
-    },
-    {
-        question: "**గజాననుడు** ఏ సమాసానికి ఉదాహరణ?",
-        options: ["తత్పురుష సమాసం", "బహువ్రీహి సమాసం", "ద్వంద్వ సమాసం", "ద్విగు సమాసం"],
-        correct: 1,
-        explanation: "'గజాననుడు' అంటే ఏనుగు ముఖం కలవాడు, అంటే గణపతిని సూచిస్తుంది. అందువల్ల ఇది బహువ్రీహి సమాసానికి ఉదాహరణ."
-    },
-    {
-        question: "క్రింది వాటిలో **యమక అలంకారం** లక్షణం ఏది?",
+        question: "Change the sentence into Passive Voice.\n\nThe teacher praised the boy.",
         options: [
-            "ఒకే పదానికి రెండు అర్థాలు రావడం",
-            "ఒకే శబ్దం పునరావృతమై వేర్వేరు అర్థాలు ఇవ్వడం",
-            "ఉపమావాచకం ఉండటం",
-            "విశేషణ–విశేష్య సంబంధం ఉండటం"
+            "The boy praised the teacher.",
+            "The boy was praised by the teacher.",
+            "The teacher was praised by the boy.",
+            "The boy is praised by the teacher."
         ],
         correct: 1,
-        explanation: "ఒకే శబ్దం లేదా పదం పునరావృతమై ప్రతి సందర్భంలో వేర్వేరు అర్థాలను ఇస్తే యమక అలంకారం ఏర్పడుతుంది."
+        explanation: "In the passive voice of a simple past sentence, we use 'was' or 'were' followed by the past participle. Hence, 'The boy was praised by the teacher' is correct."
     },
     {
-        question: "**దేవ + ఇంద్రుడు** సంధి రూపం ఏది?",
-        options: ["దేవేంద్రుడు", "దేవఇంద్రుడు", "దేవయేంద్రుడు", "దేవైంద్రుడు"],
+        question: "Choose the correct indirect speech.\n\nRani said, \"I am reading a novel.\"",
+        options: [
+            "Rani said that she was reading a novel.",
+            "Rani said that I was reading a novel.",
+            "Rani said that she is reading a novel.",
+            "Rani says that she was reading a novel."
+        ],
         correct: 0,
-        explanation: "'దేవ' మరియు 'ఇంద్రుడు' పదాలు సంధి వల్ల 'దేవేంద్రుడు'గా మారుతాయి. ఇది గుణసంధికి ఉదాహరణగా చెప్పబడుతుంది."
+        explanation: "When reporting a past statement, the present continuous tense changes to past continuous. The pronoun 'I' also changes to 'she' in reported speech."
     },
     {
-        question: "క్రింది వాటిలో **దేశ్య పదం** ఏది?",
-        options: ["నేల", "భూమి", "పృథ్వి", "వసుంధర"],
+        question: "Choose the correct verb.\n\nNeither the teacher nor the students ______ present.",
+        options: ["was", "is", "were", "has"],
+        correct: 2,
+        explanation: "With 'neither...nor', the verb agrees with the subject nearest to it. Since 'students' is plural, the correct verb is 'were'."
+    },
+    {
+        question: "Which reading strategy helps locate a specific date quickly?",
+        options: [
+            "Skimming",
+            "Scanning",
+            "Predicting",
+            "Summarising"
+        ],
+        correct: 1,
+        explanation: "Scanning is used to locate specific information such as names, dates, numbers, or facts without reading the entire passage carefully."
+    },
+    {
+        question: "Identify the sentence with correct Subject–Verb Agreement.",
+        options: [
+            "The quality of the apples are excellent.",
+            "The quality of the apples have improved.",
+            "The quality of the apples is excellent.",
+            "The quality of the apples were excellent."
+        ],
+        correct: 2,
+        explanation: "The subject is 'quality', which is singular. Therefore, it must take the singular verb 'is', regardless of the plural noun 'apples'."
+    },
+    {
+        question: "Choose the correct preposition.\n\nShe is good ______ Mathematics.",
+        options: ["with", "at", "in", "on"],
+        correct: 1,
+        explanation: "The standard English expression is 'good at' when referring to someone's skill or ability in a subject or activity."
+    },
+    {
+        question: "Choose the correct article.\n\nHe was appointed ______ MLA last year.",
+        options: ["a", "an", "the", "no article"],
+        correct: 3,
+        explanation: "No article is used before titles or positions when they immediately follow verbs such as appointed, elected, selected, or made."
+    },
+    {
+        question: "Identify the sentence with correct punctuation.",
+        options: [
+            "If you work hard, you will succeed.",
+            "If you work hard you, will succeed.",
+            "If, you work hard you will succeed.",
+            "If you, work hard, you will succeed."
+        ],
         correct: 0,
-        explanation: "'నేల' స్వతంత్ర తెలుగు మూలం కలిగిన పదం. సంస్కృత ప్రభావం లేకుండా ఏర్పడిన ఇటువంటి పదాలను దేశ్య పదాలు అంటారు."
+        explanation: "When a sentence begins with a conditional clause introduced by 'if', a comma separates it from the main clause for correct punctuation."
+    },
+    {
+        question: "Choose the correctly spelt word.",
+        options: [
+            "Privilege",
+            "Privilage",
+            "Priviledge",
+            "Previlege"
+        ],
+        correct: 0,
+        explanation: "The correct spelling is 'Privilege'. The incorrect options contain misplaced vowels or unnecessary letters that make them incorrect spellings."
+    },
+    {
+        question: "Read the sentence and answer the question.\n\n\"The principal advised the students to read the instructions carefully before answering the questions.\"\n\nWhat is the principal purpose of the advice?",
+        options: [
+            "To increase the length of the examination",
+            "To help students avoid unnecessary mistakes",
+            "To postpone the examination",
+            "To reduce the number of questions"
+        ],
+        correct: 1,
+        explanation: "Reading instructions carefully helps students understand the requirements properly and prevents avoidable mistakes during the examination, improving their overall performance."
+    },
+    {
+        question: "Choose the correct verb.\n\nThe news ______ surprising.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "The noun 'news' is grammatically singular, even though it ends with 's'. Therefore, it always takes a singular verb like 'is' in standard English usage."
+    },
+    {
+        question: "Choose the correct article.\n\nShe bought ______ umbrella yesterday.",
+        options: ["a", "an", "the", "no article"],
+        correct: 1,
+        explanation: "The word 'umbrella' begins with a vowel sound, so the indefinite article 'an' is used before it to ensure correct pronunciation."
+    },
+    {
+        question: "Choose the correct preposition.\n\nThe children are interested ______ drawing.",
+        options: ["on", "at", "in", "with"],
+        correct: 2,
+        explanation: "The adjective 'interested' is always followed by the preposition 'in' when referring to an activity, subject, or object of interest."
+    },
+    {
+        question: "Choose the Passive Voice.\n\nPeople speak Telugu in Andhra Pradesh.",
+        options: [
+            "Telugu speaks in Andhra Pradesh.",
+            "Telugu is spoken in Andhra Pradesh.",
+            "Telugu was spoken in Andhra Pradesh.",
+            "Andhra Pradesh speaks Telugu."
+        ],
+        correct: 1,
+        explanation: "The passive voice of the simple present tense uses 'is/am/are' followed by the past participle. Hence, 'Telugu is spoken in Andhra Pradesh' is correct."
+    },
+    {
+        question: "Choose the correct indirect speech.\n\nThe teacher said, \"Do your homework.\"",
+        options: [
+            "The teacher said that do your homework.",
+            "The teacher ordered to do homework.",
+            "The teacher advised the students to do their homework.",
+            "The teacher said that they did homework."
+        ],
+        correct: 2,
+        explanation: "Imperative sentences are usually reported with reporting verbs like 'advised', 'ordered', or 'requested' followed by 'to' and the base form of the verb."
+    },
+    {
+        question: "Choose the correctly punctuated sentence.",
+        options: [
+            "My brother, who lives in Hyderabad, is a doctor.",
+            "My brother who lives in Hyderabad is, a doctor.",
+            "My brother who, lives in Hyderabad is a doctor.",
+            "My brother who lives in Hyderabad, is a doctor."
+        ],
+        correct: 0,
+        explanation: "A non-essential relative clause provides extra information and should be enclosed within commas. This makes the sentence grammatically correct and easier to understand."
+    },
+    {
+        question: "Choose the correctly spelt word.",
+        options: [
+            "Embarrass",
+            "Embarass",
+            "Embarress",
+            "Embarrass"
+        ],
+        correct: 0,
+        explanation: "The correct spelling is 'Embarrass'. It contains double 'r' and double 's', which are often confused in incorrect spellings."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "One of the boys have completed the work.",
+            "One of the boys has completed the work.",
+            "One of the boys were completed the work.",
+            "One of the boys are completing the work."
+        ],
+        correct: 1,
+        explanation: "The subject is 'One', which is singular. Therefore, the singular verb 'has' must be used, not the plural verbs 'have', 'are', or 'were'."
+    },
+    {
+        question: "Which reading strategy is most useful to get the general idea of a passage quickly?",
+        options: [
+            "Scanning",
+            "Guessing",
+            "Skimming",
+            "Memorising"
+        ],
+        correct: 2,
+        explanation: "Skimming means reading rapidly to understand the overall meaning or main idea of a passage without focusing on every detail."
+    },
+    {
+        question: "Choose the correct article.\n\nHe is ______ European citizen.",
+        options: ["a", "an", "the", "no article"],
+        correct: 0,
+        explanation: "Although 'European' begins with the letter 'E', it starts with the consonant sound /yuː/. Therefore, the correct article is 'a'."
+    },
+    {
+        question: "Choose the correct preposition.\n\nThe meeting starts ______ 10 a.m.",
+        options: ["on", "in", "at", "by"],
+        correct: 2,
+        explanation: "The preposition 'at' is used before specific clock times such as '10 a.m.', '6:30 p.m.', or 'midnight'."
+    },
+    {
+        question: "Identify the sentence with the correct punctuation.",
+        options: [
+            "\"Where are you going\"? asked Ravi.",
+            "\"Where are you going?\" asked Ravi.",
+            "\"Where are you going?\" Asked Ravi.",
+            "\"Where are you going\". asked Ravi."
+        ],
+        correct: 1,
+        explanation: "In direct speech, the question mark is placed inside the quotation marks. The reporting clause begins with a lowercase letter unless it starts a new sentence."
+    },
+    {
+        question: "Choose the correctly spelt word.",
+        options: [
+            "Separate",
+            "Seperate",
+            "Seperete",
+            "Seperrate"
+        ],
+        correct: 0,
+        explanation: "The correct spelling is 'Separate'. The incorrect options contain common spelling mistakes involving misplaced vowels and unnecessary letters."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "Neither of the answers are correct.",
+            "Neither of the answers have been correct.",
+            "Neither of the answers is correct.",
+            "Neither of the answers were correct."
+        ],
+        correct: 2,
+        explanation: "The pronoun 'Neither' is singular and therefore takes the singular verb 'is', even when followed by a plural noun like 'answers'."
+    },
+    {
+        question: "Read the sentence.\n\n\"Before attempting the questions, Meena read the instructions carefully and underlined the important words.\"\n\nWhich reading strategy did Meena mainly use?",
+        options: [
+            "Predicting",
+            "Careful reading for instructions",
+            "Scanning for dates",
+            "Guessing meanings"
+        ],
+        correct: 1,
+        explanation: "Meena carefully read the instructions and identified important words before answering. This reflects careful reading to understand directions and avoid unnecessary mistakes."
+    },
+    {
+        question: "Choose the correct verb.\n\nEveryone in the class ______ ready.",
+        options: ["are", "have", "is", "were"],
+        correct: 2,
+        explanation: "The indefinite pronoun 'Everyone' is always singular. Therefore, it takes the singular verb 'is' regardless of how many people are included in the group."
+    },
+    {
+        question: "Choose the correct article.\n\nShe is ______ M.A. student.",
+        options: ["a", "an", "the", "no article"],
+        correct: 1,
+        explanation: "The letter 'M' is pronounced '/em/', which begins with a vowel sound. Therefore, the correct article before 'M.A.' is 'an'."
+    },
+    {
+        question: "Choose the correct preposition.\n\nHe has been working here ______ 2018.",
+        options: ["for", "since", "from", "by"],
+        correct: 1,
+        explanation: "The preposition 'since' is used with a specific point of time, such as a year or date. 'For' is used with a period of time."
+    },
+    {
+        question: "Choose the Passive Voice.\n\nThe police arrested the thief.",
+        options: [
+            "The thief arrested the police.",
+            "The thief was arrested by the police.",
+            "The thief is arrested by the police.",
+            "The police were arrested by the thief."
+        ],
+        correct: 1,
+        explanation: "The passive voice of a simple past sentence is formed using 'was/were' followed by the past participle. Hence, 'The thief was arrested by the police' is correct."
+    },
+    {
+        question: "Choose the correct reported speech.\n\nThe teacher said, \"The Earth revolves around the Sun.\"",
+        options: [
+            "The teacher said that the Earth revolved around the Sun.",
+            "The teacher said that the Earth revolves around the Sun.",
+            "The teacher said that the Earth had revolved around the Sun.",
+            "The teacher said that the Earth was revolving around the Sun."
+        ],
+        correct: 1,
+        explanation: "Universal truths and scientific facts do not change their tense in reported speech. Therefore, 'The Earth revolves around the Sun' remains unchanged."
+    },
+    {
+        question: "Choose the correctly punctuated sentence.",
+        options: [
+            "Alas! We lost the match.",
+            "Alas, We lost the match!",
+            "Alas We, lost the match.",
+            "Alas. we lost the match."
+        ],
+        correct: 0,
+        explanation: "Interjections such as 'Alas!' express strong emotion and are followed by an exclamation mark. The following sentence begins with a capital letter."
+    },
+    {
+        question: "Choose the correctly spelt word.",
+        options: [
+            "Maintenance",
+            "Maintanance",
+            "Maintenence",
+            "Maintinance"
+        ],
+        correct: 0,
+        explanation: "The correct spelling is 'Maintenance'. The incorrect options contain common spelling errors involving misplaced vowels and missing letters."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "A number of students is absent.",
+            "A number of students are absent.",
+            "A number of students was absent.",
+            "A number of students has absent."
+        ],
+        correct: 1,
+        explanation: "The expression 'A number of' refers to several people or things and always takes a plural verb. Therefore, 'are absent' is correct."
+    },
+    {
+        question: "Choose the correct article.\n\n_____ Ganga is considered sacred.",
+        options: ["A", "An", "The", "No article"],
+        correct: 2,
+        explanation: "Names of rivers are preceded by the definite article 'the'. Therefore, we say 'The Ganga' just as we say 'The Nile' or 'The Godavari'."
+    },
+    {
+        question: "Choose the correct preposition.\n\nThe cat jumped ______ the wall.",
+        options: ["between", "over", "among", "inside"],
+        correct: 1,
+        explanation: "The preposition 'over' shows movement across or above something. It correctly describes the cat moving across the top of the wall."
+    },
+    {
+        question: "Choose the correctly punctuated sentence.",
+        options: [
+            "\"Please sit down,\" said the teacher.",
+            "\"Please sit down\". said the teacher.",
+            "\"Please sit down\", said the teacher.",
+            "\"Please sit down.\" said the teacher."
+        ],
+        correct: 0,
+        explanation: "In direct speech, a comma is placed inside the closing quotation marks before the reporting clause when the quoted sentence is not a question or exclamation."
+    },
+    {
+        question: "Choose the correct spelling.",
+        options: [
+            "Government",
+            "Goverment",
+            "Governement",
+            "Government"
+        ],
+        correct: 0,
+        explanation: "The correct spelling is 'Government'. Many learners incorrectly omit or add extra letters, making it a commonly tested spelling word."
+    },
+    {
+        question: "Which reading strategy is most suitable before reading a passage in detail?",
+        options: [
+            "Memorising every word",
+            "Predicting from the title",
+            "Copying difficult words",
+            "Translating every sentence"
+        ],
+        correct: 1,
+        explanation: "Predicting from the title activates prior knowledge and prepares the reader to understand the passage more effectively before detailed reading begins."
+    },
+    {
+        question: "Choose the correct verb.\n\nThe furniture ______ expensive.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "The noun 'Furniture' is an uncountable singular noun. Therefore, it always takes a singular verb such as 'is' in standard English."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "Neither Ram nor his friends was present.",
+            "Neither Ram nor his friends were present.",
+            "Neither Ram nor his friends is present.",
+            "Neither Ram nor his friends has present."
+        ],
+        correct: 1,
+        explanation: "With 'neither...nor', the verb agrees with the subject nearest to it. Since 'friends' is plural, the correct verb is 'were'."
+    },
+    {
+        question: "Choose the correct preposition.\n\nThe principal divided the sweets ______ the children.",
+        options: ["among", "between", "inside", "beside"],
+        correct: 0,
+        explanation: "The preposition 'among' is used when something is shared by more than two people or things. 'Between' is generally used for two."
+    },
+    {
+        question: "Choose the correct article.\n\nHe waited for ______ hour before the bus arrived.",
+        options: ["a", "an", "the", "no article"],
+        correct: 1,
+        explanation: "The word 'hour' begins with a silent 'h' and is pronounced with a vowel sound. Therefore, the correct article is 'an'."
+    },
+    {
+        question: "Read the passage.\n\n\"Rita looked at the headings before reading the lesson. She guessed what the lesson might discuss and then started reading carefully.\"\n\nWhich reading strategy did Rita use first?",
+        options: [
+            "Scanning",
+            "Predicting",
+            "Summarising",
+            "Skipping"
+        ],
+        correct: 1,
+        explanation: "Rita first examined the headings and guessed the possible content. This strategy is called predicting and helps readers understand a text more effectively."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "The scissors is on the table.",
+            "The scissors are on the table.",
+            "The scissors has on the table.",
+            "The scissors was on the table."
+        ],
+        correct: 1,
+        explanation: "The noun 'Scissors' is treated as a plural noun in English. Therefore, it takes the plural verb 'are' instead of 'is' or 'was'."
+    },
+    {
+        question: "Choose the correctly punctuated sentence.",
+        options: [
+            "After finishing the exam, the students left quietly.",
+            "After finishing the exam the students, left quietly.",
+            "After finishing, the exam the students left quietly.",
+            "After, finishing the exam the students left quietly."
+        ],
+        correct: 0,
+        explanation: "An introductory phrase should be followed by a comma before the main clause. This punctuation improves clarity and follows standard English writing conventions."
     }
 ];
