@@ -1,461 +1,558 @@
 const SUBJECTS = [
+    "Psychology",
+    "Telugu",
     "English"
 ];
 
 const QUESTIONS = [
     {
-        question: "Choose the correct verb.\n\nEach of the students ______ a notebook.",
-        options: ["have", "are having", "has", "were having"],
+        question: "జ్ఞాన వికాసాన్ని నాలుగు దశలుగా వివరించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
+        options: [
+            "వైగోట్స్కీ",
+            "పియాజే",
+            "బ్రూనర్",
+            "గార్డ్నర్"
+        ],
+        correct: 1,
+        explanation: "పియాజే జ్ఞాన వికాసాన్ని సెన్సరీ-మోటర్, ప్రీ-ఆపరేషనల్, కాంక్రీట్ ఆపరేషనల్, ఫార్మల్ ఆపరేషనల్ అనే నాలుగు దశలుగా వివరించాడు. ప్రతి దశలో పిల్లల ఆలోచనా విధానం మరియు సమస్య పరిష్కార సామర్థ్యం అభివృద్ధి చెందుతుంది."
+    },
+    {
+        question: "Zone of Proximal Development (ZPD) భావనను ప్రతిపాదించినది ఎవరు?",
+        options: [
+            "బ్రూనర్",
+            "వైగోట్స్కీ",
+            "స్కిన్నర్",
+            "స్టెర్న్‌బర్గ్"
+        ],
+        correct: 1,
+        explanation: "వైగోట్స్కీ ప్రతిపాదించిన ZPD ప్రకారం విద్యార్థి స్వయంగా చేయలేని పనిని గురువు లేదా సమర్థుడి సహాయంతో చేయగలడు. ఇది బోధనలో మార్గదర్శకత్వం యొక్క ప్రాముఖ్యతను తెలియజేస్తుంది."
+    },
+    {
+        question: "\"Scaffolding\" భావన ప్రధానంగా ఏ సిద్ధాంతంతో సంబంధం కలిగి ఉంది?",
+        options: [
+            "బ్రూనర్",
+            "పావ్‌లవ్",
+            "థార్న్‌డైక్",
+            "కోహ్లర్"
+        ],
+        correct: 0,
+        explanation: "బ్రూనర్ ప్రతిపాదించిన Scaffoldingలో విద్యార్థికి అవసరమైన సహాయాన్ని ప్రారంభంలో ఎక్కువగా అందించి, క్రమంగా తగ్గిస్తారు. దీనివల్ల విద్యార్థి స్వతంత్రంగా అభ్యాసం చేయగలడు."
+    },
+    {
+        question: "పరిశీలన ద్వారా నేర్చుకోవడం (Observational Learning) అనే భావనను ప్రతిపాదించినది ఎవరు?",
+        options: [
+            "స్కిన్నర్",
+            "పావ్‌లవ్",
+            "బండూరా",
+            "పియాజే"
+        ],
         correct: 2,
-        explanation: "The subject 'Each' is singular, so it always takes a singular verb. Therefore, 'has' is the correct choice, even though 'students' is plural in the prepositional phrase."
+        explanation: "బండూరా సామాజిక అభ్యాస సిద్ధాంతంలో పరిశీలన, అనుకరణ మరియు మోడలింగ్ ద్వారా అభ్యాసం జరుగుతుందని వివరించాడు. దీనిని Observational Learning అంటారు."
     },
     {
-        question: "Choose the correct article.\n\nRavi is ______ honest man.",
-        options: ["a", "an", "the", "no article"],
-        correct: 1,
-        explanation: "The word 'honest' begins with a silent 'h' and is pronounced with a vowel sound. Therefore, the correct article before it is 'an'."
+        question: "సానుకూల బలపరిచే పద్ధతి (Positive Reinforcement)కు సంబంధిత మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
+        options: [
+            "స్కిన్నర్",
+            "పావ్‌లవ్",
+            "వైగోట్స్కీ",
+            "గార్డ్నర్"
+        ],
+        correct: 0,
+        explanation: "స్కిన్నర్ ఆపరెంట్ కండిషనింగ్ సిద్ధాంతంలో సరైన ప్రవర్తన తర్వాత బహుమతి ఇవ్వడం ద్వారా ఆ ప్రవర్తన పునరావృతమవుతుందని వివరించాడు. దీనినే Positive Reinforcement అంటారు."
     },
     {
-        question: "Choose the correct preposition.\n\nThe train arrived ______ the station on time.",
-        options: ["in", "at", "into", "over"],
+        question: "గంట శబ్దానికి కుక్క లాలాజలం కారడం ద్వారా అభ్యాసాన్ని వివరించిన శాస్త్రవేత్త ఎవరు?",
+        options: [
+            "స్కిన్నర్",
+            "పావ్‌లవ్",
+            "కోహ్లర్",
+            "బ్రూనర్"
+        ],
         correct: 1,
-        explanation: "The preposition 'at' is used to indicate a specific place or location such as a station, bus stop, or airport."
+        explanation: "పావ్‌లవ్ క్లాసికల్ కండిషనింగ్ సిద్ధాంతాన్ని కుక్కలపై చేసిన ప్రయోగం ద్వారా నిరూపించాడు. గంట శబ్దాన్ని ఆహారంతో అనుసంధానించడం వల్ల ప్రతిస్పందన ఏర్పడింది."
+    },
+    {
+        question: "Law of Effectను ప్రతిపాదించినది ఎవరు?",
+        options: [
+            "పావ్‌లవ్",
+            "థార్న్‌డైక్",
+            "స్కిన్నర్",
+            "బండూరా"
+        ],
+        correct: 1,
+        explanation: "థార్న్‌డైక్ ప్రకారం సంతృప్తికర ఫలితాలను ఇచ్చే ప్రవర్తన మళ్లీ మళ్లీ జరుగుతుంది. అసంతృప్తికర ఫలితాలను ఇచ్చే ప్రవర్తన క్రమంగా తగ్గిపోతుంది."
+    },
+    {
+        question: "చింపాంజీ సమస్య పరిష్కారాన్ని ఆధారంగా చేసుకొని Insight Learningను వివరించినది ఎవరు?",
+        options: [
+            "కోహ్లర్",
+            "స్కిన్నర్",
+            "బ్రూనర్",
+            "పియాజే"
+        ],
+        correct: 0,
+        explanation: "కోహ్లర్ గెస్టాల్ట్ సిద్ధాంతంలో చింపాంజీలపై చేసిన ప్రయోగాల ద్వారా అంతర్దృష్టి (Insight) ద్వారా సమస్య పరిష్కారం జరుగుతుందని వివరించాడు."
+    },
+    {
+        question: "శరీర నిర్మాణాన్ని ఆధారంగా చేసుకొని వ్యక్తిత్వ వర్గీకరణ చేసినది ఎవరు?",
+        options: [
+            "గార్డ్నర్",
+            "స్టెర్న్‌బర్గ్",
+            "క్రెట్ష్మర్",
+            "బండూరా"
+        ],
+        correct: 2,
+        explanation: "క్రెట్ష్మర్ వ్యక్తుల శరీర నిర్మాణాన్ని ఆధారంగా తీసుకొని వారి వ్యక్తిత్వ లక్షణాలను వర్గీకరించాడు. ఇది శరీర నిర్మాణ సిద్ధాంతంగా ప్రసిద్ధి పొందింది."
+    },
+    {
+        question: "బహుళ మేధస్సుల సిద్ధాంతాన్ని (Multiple Intelligences) ప్రతిపాదించినది ఎవరు?",
+        options: [
+            "స్టెర్న్‌బర్గ్",
+            "గార్డ్నర్",
+            "పియాజే",
+            "బ్రూనర్"
+        ],
+        correct: 1,
+        explanation: "హోవర్డ్ గార్డ్నర్ ప్రతి వ్యక్తిలో ఒకే రకమైన మేధస్సు కాకుండా అనేక రకాల మేధస్సులు ఉంటాయని తన Multiple Intelligences సిద్ధాంతంలో వివరించాడు."
+    },
+    {
+        question: "విశ్లేషణాత్మక, సృజనాత్మక, ఆచరణాత్మక మేధస్సులను వివరించినది ఎవరు?",
+        options: [
+            "గార్డ్నర్",
+            "స్టెర్న్‌బర్గ్",
+            "పావ్‌లవ్",
+            "వైగోట్స్కీ"
+        ],
+        correct: 1,
+        explanation: "స్టెర్న్‌బర్గ్ త్రికోణ మేధస్సు సిద్ధాంతంలో విశ్లేషణాత్మక, సృజనాత్మక మరియు ఆచరణాత్మక మేధస్సులను వివరించాడు. ఇవి జీవిత విజయానికి అవసరమైన మూడు ప్రధాన సామర్థ్యాలు."
+    },
+    {
+        question: "\"భాష ఆలోచన వికాసానికి ముఖ్య సాధనం\" అని పేర్కొన్నది ఎవరు?",
+        options: [
+            "పియాజే",
+            "వైగోట్స్కీ",
+            "థార్న్‌డైక్",
+            "స్కిన్నర్"
+        ],
+        correct: 1,
+        explanation: "వైగోట్స్కీ ప్రకారం భాష పిల్లల ఆలోచన, సమస్య పరిష్కారం మరియు జ్ఞాన వికాసంలో కీలక పాత్ర పోషిస్తుంది. సామాజిక పరస్పర చర్యలకు కూడా ఇది ముఖ్యమైన సాధనం."
+    },
+    {
+        question: "క్రింది వారిలో Trial and Error Learningకు సంబంధించినవారు ఎవరు?",
+        options: [
+            "థార్న్‌డైక్",
+            "కోహ్లర్",
+            "బ్రూనర్",
+            "బండూరా"
+        ],
+        correct: 0,
+        explanation: "థార్న్‌డైక్ ప్రయత్నం-పొరపాటు ద్వారా అభ్యాసం జరుగుతుందని తన ప్రయోగాల ద్వారా వివరించాడు. సరైన ప్రతిస్పందన లభించే వరకు ప్రయత్నాలు కొనసాగుతాయి."
+    },
+    {
+        question: "విద్యార్థి స్వయంగా జ్ఞానాన్ని కనుగొనే అభ్యాసాన్ని (Discovery Learning) ప్రోత్సహించినది ఎవరు?",
+        options: [
+            "బ్రూనర్",
+            "స్కిన్నర్",
+            "పావ్‌లవ్",
+            "క్రెట్ష్మర్"
+        ],
+        correct: 0,
+        explanation: "బ్రూనర్ Discovery Learningను ప్రోత్సహించాడు. ఇందులో విద్యార్థి అన్వేషణ, పరిశీలన మరియు అనుభవం ద్వారా స్వయంగా జ్ఞానాన్ని నిర్మించుకుంటాడు."
+    },
+    {
+        question: "క్రింది జతలలో సరైనది ఏది?",
+        options: [
+            "పావ్‌లవ్ — ఆపరెంట్ కండిషనింగ్",
+            "స్కిన్నర్ — క్లాసికల్ కండిషనింగ్",
+            "బండూరా — పరిశీలన ద్వారా అభ్యాసం",
+            "కోహ్లర్ — ట్రయల్ అండ్ ఎరర్"
+        ],
+        correct: 2,
+        explanation: "బండూరా సామాజిక అభ్యాస సిద్ధాంతంలో పరిశీలన ద్వారా అభ్యాసాన్ని వివరించాడు. మిగిలిన జతలు తప్పు, ఎందుకంటే అవి సంబంధిత సిద్ధాంతాలతో సరిపోలవు."
+    },
+    {
+        question: "\"రామునిచేత\" అనే పదంలో ఉపయోగించిన విభక్తి ఏది?",
+        options: [
+            "ప్రథమా విభక్తి",
+            "తృతీయా విభక్తి",
+            "చతుర్థీ విభక్తి",
+            "సప్తమీ విభక్తి"
+        ],
+        correct: 1,
+        explanation: "\"చేత\" అనే విభక్తి ప్రత్యయం తృతీయా విభక్తిని సూచిస్తుంది. ఇది కర్తచేత జరిగే క్రియ లేదా సాధనాన్ని తెలియజేయడానికి ఉపయోగించబడుతుంది."
+    },
+    {
+        question: "\"చెట్టునుండి\" అనే పదంలో ఉన్న విభక్తి ఏది?",
+        options: [
+            "ద్వితీయా విభక్తి",
+            "పంచమీ విభక్తి",
+            "షష్ఠీ విభక్తి",
+            "సప్తమీ విభక్తి"
+        ],
+        correct: 1,
+        explanation: "\"నుండి\" అనే ప్రత్యయం పంచమీ విభక్తిని సూచిస్తుంది. ఇది ఒక స్థలం, వ్యక్తి లేదా వస్తువు నుండి విడిపోవడం లేదా ప్రారంభాన్ని తెలియజేస్తుంది."
+    },
+    {
+        question: "\"దేవాలయం\" పదం ఏ రకానికి చెందుతుంది?",
+        options: [
+            "దేశ్య పదం",
+            "తద్భవ పదం",
+            "తత్సమ పదం",
+            "అన్యదేశ్య పదం"
+        ],
+        correct: 2,
+        explanation: "\"దేవాలయం\" సంస్కృత రూపంలోనే తెలుగులో వాడుకలో ఉన్న పదం. రూపంలో మార్పు లేకుండా స్వీకరించినందున ఇది తత్సమ పదంగా పరిగణించబడుతుంది."
+    },
+    {
+        question: "\"మొగము\" పదం ఏ రకానికి చెందుతుంది?",
+        options: [
+            "తత్సమ",
+            "తద్భవ",
+            "దేశ్య",
+            "అన్యదేశ్య"
+        ],
+        correct: 1,
+        explanation: "\"ముఖము\" అనే సంస్కృత పదం రూపాంతరం చెంది \"మొగము\"గా మారింది. మూల పదంలో మార్పు వచ్చినందున ఇది తద్భవ పదం."
+    },
+    {
+        question: "క్రింది వాటిలో దేశ్య పదం ఏది?",
+        options: [
+            "సూర్యుడు",
+            "కన్ను",
+            "విద్య",
+            "దేవుడు"
+        ],
+        correct: 1,
+        explanation: "\"కన్ను\" స్వతంత్ర తెలుగు మూలపదం. ఇతర భాషల నుండి స్వీకరించబడకుండా తెలుగులో పుట్టిన పదాలను దేశ్య పదాలు అంటారు."
+    },
+    {
+        question: "\"రామ + ఆలయం = రామాలయం\" ఇది ఏ సంధి?",
+        options: [
+            "గుణసంధి",
+            "వృద్ధి సంధి",
+            "యణాదేశ సంధి",
+            "ఉత్వ సంధి"
+        ],
+        correct: 0,
+        explanation: "అ + ఆ కలిసి ఆ కావడం గుణసంధి లక్షణం. రెండు అచ్చులు కలిసినప్పుడు గుణ నియమం ప్రకారం ఈ రూపం ఏర్పడుతుంది."
+    },
+    {
+        question: "\"మహా + ఋషి = మహర్షి\" ఇది ఏ సంధి?",
+        options: [
+            "గుణసంధి",
+            "వృద్ధి సంధి",
+            "యణాదేశ సంధి",
+            "అత్వ సంధి"
+        ],
+        correct: 2,
+        explanation: "\"మహా + ఋషి\" కలయికలో ఏర్పడిన రూపాన్ని యణాదేశ సంధిగా పరిగణిస్తారు. ఇది తెలుగు వ్యాకరణంలోని ముఖ్య సంధి రకాలలో ఒకటి."
+    },
+    {
+        question: "\"రాజపుత్రుడు\" ఏ సమాసానికి ఉదాహరణ?",
+        options: [
+            "ద్వంద్వ సమాసం",
+            "కర్మధారయ సమాసం",
+            "తత్పురుష సమాసం",
+            "బహువ్రీహి సమాసం"
+        ],
+        correct: 2,
+        explanation: "విభక్తి లోపంతో ఏర్పడే సమాసాన్ని తత్పురుష సమాసం అంటారు. \"రాజు యొక్క పుత్రుడు\" అనే భావం సంక్షిప్త రూపంలో \"రాజపుత్రుడు\" అయింది."
+    },
+    {
+        question: "\"నీలకంఠుడు\" ఏ సమాసానికి ఉదాహరణ?",
+        options: [
+            "ద్విగు",
+            "బహువ్రీహి",
+            "అవ్యయీభావ",
+            "ద్వంద్వ"
+        ],
+        correct: 1,
+        explanation: "\"నీలకంఠుడు\" అనే సమాస పదం నీలి కంఠం కలిగిన మరొక వ్యక్తిని సూచిస్తుంది. అందువల్ల ఇది బహువ్రీహి సమాసానికి ఉదాహరణ."
+    },
+    {
+        question: "క్రింది వాటిలో ద్వంద్వ సమాసం ఏది?",
+        options: [
+            "తల్లిదండ్రులు",
+            "నీలాకాశం",
+            "రాజభవనం",
+            "పంచవటి"
+        ],
+        correct: 0,
+        explanation: "\"తల్లి\" మరియు \"తండ్రి\" అనే రెండు సమాన ప్రాధాన్యమున్న పదాల కలయికతో \"తల్లిదండ్రులు\" ఏర్పడింది. ఇది ద్వంద్వ సమాసానికి ఉదాహరణ."
+    },
+    {
+        question: "\"ముఖం చంద్రునివలె ఉంది\" అనే వాక్యంలో ఉన్న అలంకారం ఏది?",
+        options: [
+            "రూపకం",
+            "ఉపమా",
+            "యమకం",
+            "శ్లేషం"
+        ],
+        correct: 1,
+        explanation: "\"వలె\" అనే ఉపమావాచక పదం ఉపయోగించి రెండు వస్తువులను పోల్చినప్పుడు ఉపమా అలంకారం ఏర్పడుతుంది. అందువల్ల ఇది ఉపమా అలంకారం."
+    },
+    {
+        question: "ఒకే పదం పునరావృతమై భిన్నార్థాలను సూచించినప్పుడు అది ఏ అలంకారం?",
+        options: [
+            "యమకం",
+            "ఉపమా",
+            "రూపకం",
+            "అనుప్రాస"
+        ],
+        correct: 0,
+        explanation: "ఒకే పదరూపం పునరావృతమై వేర్వేరు అర్థాలను సూచించినప్పుడు యమక అలంకారం ఏర్పడుతుంది. ఇది శబ్దాలంకారాలలో ఒకటి."
+    },
+    {
+        question: "ఒకే అక్షరం లేదా ధ్వని పదేపదే రావడం ఏ అలంకారం?",
+        options: [
+            "రూపకం",
+            "శ్లేషం",
+            "అనుప్రాస",
+            "ఉపమా"
+        ],
+        correct: 2,
+        explanation: "ఒకే అక్షరం లేదా ధ్వని పదేపదే రావడం వల్ల శ్రావ్యత పెరుగుతుంది. ఇటువంటి అలంకారాన్ని అనుప్రాస అలంకారం అంటారు."
+    },
+    {
+        question: "క్రింది వాటిలో తత్సమ–తద్భవ జత సరైనది ఏది?",
+        options: [
+            "ముఖము – మొగము",
+            "కన్ను – నేత్రము",
+            "చెట్టు – వృక్షము",
+            "నీరు – జలం"
+        ],
+        correct: 0,
+        explanation: "\"ముఖము\" సంస్కృత రూపంలో ఉన్న తత్సమ పదం. అదే పదం రూపాంతరం చెంది \"మొగము\"గా మారినందున అది తద్భవ పదంగా పరిగణించబడుతుంది."
+    },
+    {
+        question: "క్రింది జతలలో సరైనది ఏది?",
+        options: [
+            "తత్సమ — సంస్కృతం నుండి యథారూపంగా వచ్చిన పదం",
+            "దేశ్య — సంస్కృత పదం",
+            "తద్భవ — విదేశీ పదం",
+            "దేశ్య — తత్సమ పదానికి మరో పేరు"
+        ],
+        correct: 0,
+        explanation: "సంస్కృత భాష నుండి రూపంలో మార్పు లేకుండా తెలుగులోకి వచ్చిన పదాలను తత్సమ పదాలు అంటారు. మిగిలిన జతలు వ్యాకరణపరంగా సరైనవి కావు."
+    },
+    {
+        question: "Choose the correct article.\n\nShe is ____ honest teacher.",
+        options: [
+            "a",
+            "an",
+            "the",
+            "no article"
+        ],
+        correct: 1,
+        explanation: "\"Honest\" begins with a silent 'h' and has a vowel sound. Therefore, the indefinite article \"an\" is used before the word."
+    },
+    {
+        question: "Choose the correct question tag.\n\nYou are a teacher, ______?",
+        options: [
+            "aren't you?",
+            "are you?",
+            "don't you?",
+            "won't you?"
+        ],
+        correct: 0,
+        explanation: "A positive statement takes a negative question tag. Since the sentence uses \"are,\" the correct tag is \"aren't you?\""
+    },
+    {
+        question: "Choose the correct passive voice.\n\nThey built the bridge in 2020.",
+        options: [
+            "The bridge has built in 2020.",
+            "The bridge was built in 2020.",
+            "The bridge is built in 2020.",
+            "The bridge had built in 2020."
+        ],
+        correct: 1,
+        explanation: "A sentence in the simple past active voice changes to the simple past passive voice using \"was/were + past participle.\" Hence, \"was built\" is correct."
+    },
+    {
+        question: "Choose the correct phrasal verb.\n\nThe meeting was ______ due to heavy rain.",
+        options: [
+            "called off",
+            "called on",
+            "called at",
+            "called up"
+        ],
+        correct: 0,
+        explanation: "\"Call off\" means to cancel something. Since the meeting did not take place because of heavy rain, \"called off\" is the correct choice."
     },
     {
         question: "Choose the correctly punctuated sentence.",
         options: [
-            "Yes I will help you.",
-            "Yes, I will help you.",
-            "Yes I, will help you.",
-            "Yes; I will help you."
+            "Wow what a beautiful flower!",
+            "Wow! What a beautiful flower!",
+            "Wow, What a beautiful flower.",
+            "Wow What a beautiful flower?"
         ],
         correct: 1,
-        explanation: "Introductory words like 'Yes' are followed by a comma. This punctuation makes the sentence grammatically correct and easier to read."
+        explanation: "An interjection like \"Wow\" is followed by an exclamation mark. The sentence also ends with an exclamation mark to express strong emotion."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "Each of the students have a notebook.",
+            "Each of the students has a notebook.",
+            "Each of the students were present.",
+            "Each of the students are ready."
+        ],
+        correct: 1,
+        explanation: "\"Each\" is always treated as a singular subject. Therefore, it takes the singular verb \"has\" instead of \"have.\""
+    },
+    {
+        question: "Fill in the blank.\n\nHe is good ______ Mathematics.",
+        options: [
+            "in",
+            "on",
+            "at",
+            "with"
+        ],
+        correct: 2,
+        explanation: "The correct preposition used with the adjective \"good\" to indicate ability is \"at.\" Therefore, \"good at Mathematics\" is the correct expression."
+    },
+    {
+        question: "Choose the correct reported speech.\n\nRavi said, \"I am busy.\"",
+        options: [
+            "Ravi said that I am busy.",
+            "Ravi said that he was busy.",
+            "Ravi said he is busy.",
+            "Ravi said that he has been busy."
+        ],
+        correct: 1,
+        explanation: "In reported speech, the present tense changes to the past tense when the reporting verb is in the past. Hence, \"am\" becomes \"was.\""
     },
     {
         question: "Choose the correctly spelt word.",
         options: [
             "Accomodation",
-            "Accommadation",
             "Accommodation",
-            "Acommodation"
-        ],
-        correct: 2,
-        explanation: "The correct spelling is 'Accommodation'. It contains double 'c' and double 'm', which are commonly confused in English spelling."
-    },
-    {
-        question: "Change the sentence into Passive Voice.\n\nThe teacher praised the boy.",
-        options: [
-            "The boy praised the teacher.",
-            "The boy was praised by the teacher.",
-            "The teacher was praised by the boy.",
-            "The boy is praised by the teacher."
+            "Acommodation",
+            "Accommadation"
         ],
         correct: 1,
-        explanation: "In the passive voice of a simple past sentence, we use 'was' or 'were' followed by the past participle. Hence, 'The boy was praised by the teacher' is correct."
+        explanation: "\"Accommodation\" is the correct spelling. It contains double 'c' and double 'm,' making it a commonly tested spelling word."
     },
     {
-        question: "Choose the correct indirect speech.\n\nRani said, \"I am reading a novel.\"",
+        question: "The main purpose of skimming is to:",
         options: [
-            "Rani said that she was reading a novel.",
-            "Rani said that I was reading a novel.",
-            "Rani said that she is reading a novel.",
-            "Rani says that she was reading a novel."
+            "remember every word",
+            "understand grammar rules",
+            "get the general idea quickly",
+            "learn spellings"
+        ],
+        correct: 2,
+        explanation: "Skimming is a reading strategy used to understand the main idea of a passage quickly without reading every word in detail."
+    },
+    {
+        question: "Choose the correct article.\n\nMount Everest is ______ highest peak in the world.",
+        options: [
+            "a",
+            "an",
+            "the",
+            "no article"
+        ],
+        correct: 2,
+        explanation: "Superlative adjectives such as \"highest\" are always preceded by the definite article \"the.\" Therefore, \"the\" is the correct answer."
+    },
+    {
+        question: "Choose the correct question tag.\n\nLet's start the class, ______?",
+        options: [
+            "shall we?",
+            "will we?",
+            "don't we?",
+            "aren't we?"
         ],
         correct: 0,
-        explanation: "When reporting a past statement, the present continuous tense changes to past continuous. The pronoun 'I' also changes to 'she' in reported speech."
+        explanation: "Sentences beginning with \"Let's\" are followed by the question tag \"shall we?\" This is the standard grammatical pattern."
     },
     {
-        question: "Choose the correct verb.\n\nNeither the teacher nor the students ______ present.",
-        options: ["was", "is", "were", "has"],
-        correct: 2,
-        explanation: "With 'neither...nor', the verb agrees with the subject nearest to it. Since 'students' is plural, the correct verb is 'were'."
-    },
-    {
-        question: "Which reading strategy helps locate a specific date quickly?",
+        question: "Choose the passive voice.\n\nPeople speak Telugu in Andhra Pradesh.",
         options: [
-            "Skimming",
-            "Scanning",
-            "Predicting",
-            "Summarising"
-        ],
-        correct: 1,
-        explanation: "Scanning is used to locate specific information such as names, dates, numbers, or facts without reading the entire passage carefully."
-    },
-    {
-        question: "Identify the sentence with correct Subject–Verb Agreement.",
-        options: [
-            "The quality of the apples are excellent.",
-            "The quality of the apples have improved.",
-            "The quality of the apples is excellent.",
-            "The quality of the apples were excellent."
-        ],
-        correct: 2,
-        explanation: "The subject is 'quality', which is singular. Therefore, it must take the singular verb 'is', regardless of the plural noun 'apples'."
-    },
-    {
-        question: "Choose the correct preposition.\n\nShe is good ______ Mathematics.",
-        options: ["with", "at", "in", "on"],
-        correct: 1,
-        explanation: "The standard English expression is 'good at' when referring to someone's skill or ability in a subject or activity."
-    },
-    {
-        question: "Choose the correct article.\n\nHe was appointed ______ MLA last year.",
-        options: ["a", "an", "the", "no article"],
-        correct: 3,
-        explanation: "No article is used before titles or positions when they immediately follow verbs such as appointed, elected, selected, or made."
-    },
-    {
-        question: "Identify the sentence with correct punctuation.",
-        options: [
-            "If you work hard, you will succeed.",
-            "If you work hard you, will succeed.",
-            "If, you work hard you will succeed.",
-            "If you, work hard, you will succeed."
-        ],
-        correct: 0,
-        explanation: "When a sentence begins with a conditional clause introduced by 'if', a comma separates it from the main clause for correct punctuation."
-    },
-    {
-        question: "Choose the correctly spelt word.",
-        options: [
-            "Privilege",
-            "Privilage",
-            "Priviledge",
-            "Previlege"
-        ],
-        correct: 0,
-        explanation: "The correct spelling is 'Privilege'. The incorrect options contain misplaced vowels or unnecessary letters that make them incorrect spellings."
-    },
-    {
-        question: "Read the sentence and answer the question.\n\n\"The principal advised the students to read the instructions carefully before answering the questions.\"\n\nWhat is the principal purpose of the advice?",
-        options: [
-            "To increase the length of the examination",
-            "To help students avoid unnecessary mistakes",
-            "To postpone the examination",
-            "To reduce the number of questions"
-        ],
-        correct: 1,
-        explanation: "Reading instructions carefully helps students understand the requirements properly and prevents avoidable mistakes during the examination, improving their overall performance."
-    },
-    {
-        question: "Choose the correct verb.\n\nThe news ______ surprising.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "The noun 'news' is grammatically singular, even though it ends with 's'. Therefore, it always takes a singular verb like 'is' in standard English usage."
-    },
-    {
-        question: "Choose the correct article.\n\nShe bought ______ umbrella yesterday.",
-        options: ["a", "an", "the", "no article"],
-        correct: 1,
-        explanation: "The word 'umbrella' begins with a vowel sound, so the indefinite article 'an' is used before it to ensure correct pronunciation."
-    },
-    {
-        question: "Choose the correct preposition.\n\nThe children are interested ______ drawing.",
-        options: ["on", "at", "in", "with"],
-        correct: 2,
-        explanation: "The adjective 'interested' is always followed by the preposition 'in' when referring to an activity, subject, or object of interest."
-    },
-    {
-        question: "Choose the Passive Voice.\n\nPeople speak Telugu in Andhra Pradesh.",
-        options: [
-            "Telugu speaks in Andhra Pradesh.",
+            "Telugu spoke in Andhra Pradesh.",
             "Telugu is spoken in Andhra Pradesh.",
             "Telugu was spoken in Andhra Pradesh.",
-            "Andhra Pradesh speaks Telugu."
+            "Telugu has spoken in Andhra Pradesh."
         ],
         correct: 1,
-        explanation: "The passive voice of the simple present tense uses 'is/am/are' followed by the past participle. Hence, 'Telugu is spoken in Andhra Pradesh' is correct."
+        explanation: "The simple present passive voice is formed with \"is/am/are + past participle.\" Therefore, \"Telugu is spoken\" is correct."
     },
     {
-        question: "Choose the correct indirect speech.\n\nThe teacher said, \"Do your homework.\"",
+        question: "Choose the correct phrasal verb.\n\nThe teacher asked the students to ______ the homework.",
         options: [
-            "The teacher said that do your homework.",
-            "The teacher ordered to do homework.",
-            "The teacher advised the students to do their homework.",
-            "The teacher said that they did homework."
-        ],
-        correct: 2,
-        explanation: "Imperative sentences are usually reported with reporting verbs like 'advised', 'ordered', or 'requested' followed by 'to' and the base form of the verb."
-    },
-    {
-        question: "Choose the correctly punctuated sentence.",
-        options: [
-            "My brother, who lives in Hyderabad, is a doctor.",
-            "My brother who lives in Hyderabad is, a doctor.",
-            "My brother who, lives in Hyderabad is a doctor.",
-            "My brother who lives in Hyderabad, is a doctor."
+            "hand in",
+            "hand on",
+            "hand over to",
+            "hand off"
         ],
         correct: 0,
-        explanation: "A non-essential relative clause provides extra information and should be enclosed within commas. This makes the sentence grammatically correct and easier to understand."
+        explanation: "\"Hand in\" means to submit work to a teacher or authority. It is the appropriate phrasal verb in this context."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: [
+            "Neither Ravi nor his friends was absent.",
+            "Neither Ravi nor his friends were absent.",
+            "Neither Ravi nor his friends is absent.",
+            "Neither Ravi nor his friends has absent."
+        ],
+        correct: 1,
+        explanation: "When subjects are joined by \"neither...nor,\" the verb agrees with the subject nearest to it. Since \"friends\" is plural, \"were\" is correct."
+    },
+    {
+        question: "Fill in the blank.\n\nThe train arrived ______ time.",
+        options: [
+            "at",
+            "in",
+            "on",
+            "by"
+        ],
+        correct: 2,
+        explanation: "\"On time\" means arriving at the expected or scheduled time. It is the correct expression used in standard English."
+    },
+    {
+        question: "Choose the correct reported speech.\n\nShe said, \"I have finished my work.\"",
+        options: [
+            "She said that she had finished her work.",
+            "She said that she has finished her work.",
+            "She said she finished my work.",
+            "She said that I had finished her work."
+        ],
+        correct: 0,
+        explanation: "In reported speech, the present perfect tense changes to the past perfect tense. Therefore, \"have finished\" becomes \"had finished.\""
+    },
+    {
+        question: "While reading a passage, identifying the meaning of an unfamiliar word from surrounding sentences is called:",
+        options: [
+            "scanning",
+            "contextual guessing",
+            "note making",
+            "summarising"
+        ],
+        correct: 1,
+        explanation: "Readers use context clues from surrounding words and sentences to infer the meaning of unfamiliar words. This strategy is called contextual guessing."
     },
     {
         question: "Choose the correctly spelt word.",
         options: [
-            "Embarrass",
-            "Embarass",
-            "Embarress",
-            "Embarrass"
-        ],
-        correct: 0,
-        explanation: "The correct spelling is 'Embarrass'. It contains double 'r' and double 's', which are often confused in incorrect spellings."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "One of the boys have completed the work.",
-            "One of the boys has completed the work.",
-            "One of the boys were completed the work.",
-            "One of the boys are completing the work."
+            "Pronounciation",
+            "Pronunciation",
+            "Pronounciaton",
+            "Pronouncation"
         ],
         correct: 1,
-        explanation: "The subject is 'One', which is singular. Therefore, the singular verb 'has' must be used, not the plural verbs 'have', 'are', or 'were'."
-    },
-    {
-        question: "Which reading strategy is most useful to get the general idea of a passage quickly?",
-        options: [
-            "Scanning",
-            "Guessing",
-            "Skimming",
-            "Memorising"
-        ],
-        correct: 2,
-        explanation: "Skimming means reading rapidly to understand the overall meaning or main idea of a passage without focusing on every detail."
-    },
-    {
-        question: "Choose the correct article.\n\nHe is ______ European citizen.",
-        options: ["a", "an", "the", "no article"],
-        correct: 0,
-        explanation: "Although 'European' begins with the letter 'E', it starts with the consonant sound /yuː/. Therefore, the correct article is 'a'."
-    },
-    {
-        question: "Choose the correct preposition.\n\nThe meeting starts ______ 10 a.m.",
-        options: ["on", "in", "at", "by"],
-        correct: 2,
-        explanation: "The preposition 'at' is used before specific clock times such as '10 a.m.', '6:30 p.m.', or 'midnight'."
-    },
-    {
-        question: "Identify the sentence with the correct punctuation.",
-        options: [
-            "\"Where are you going\"? asked Ravi.",
-            "\"Where are you going?\" asked Ravi.",
-            "\"Where are you going?\" Asked Ravi.",
-            "\"Where are you going\". asked Ravi."
-        ],
-        correct: 1,
-        explanation: "In direct speech, the question mark is placed inside the quotation marks. The reporting clause begins with a lowercase letter unless it starts a new sentence."
-    },
-    {
-        question: "Choose the correctly spelt word.",
-        options: [
-            "Separate",
-            "Seperate",
-            "Seperete",
-            "Seperrate"
-        ],
-        correct: 0,
-        explanation: "The correct spelling is 'Separate'. The incorrect options contain common spelling mistakes involving misplaced vowels and unnecessary letters."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "Neither of the answers are correct.",
-            "Neither of the answers have been correct.",
-            "Neither of the answers is correct.",
-            "Neither of the answers were correct."
-        ],
-        correct: 2,
-        explanation: "The pronoun 'Neither' is singular and therefore takes the singular verb 'is', even when followed by a plural noun like 'answers'."
-    },
-    {
-        question: "Read the sentence.\n\n\"Before attempting the questions, Meena read the instructions carefully and underlined the important words.\"\n\nWhich reading strategy did Meena mainly use?",
-        options: [
-            "Predicting",
-            "Careful reading for instructions",
-            "Scanning for dates",
-            "Guessing meanings"
-        ],
-        correct: 1,
-        explanation: "Meena carefully read the instructions and identified important words before answering. This reflects careful reading to understand directions and avoid unnecessary mistakes."
-    },
-    {
-        question: "Choose the correct verb.\n\nEveryone in the class ______ ready.",
-        options: ["are", "have", "is", "were"],
-        correct: 2,
-        explanation: "The indefinite pronoun 'Everyone' is always singular. Therefore, it takes the singular verb 'is' regardless of how many people are included in the group."
-    },
-    {
-        question: "Choose the correct article.\n\nShe is ______ M.A. student.",
-        options: ["a", "an", "the", "no article"],
-        correct: 1,
-        explanation: "The letter 'M' is pronounced '/em/', which begins with a vowel sound. Therefore, the correct article before 'M.A.' is 'an'."
-    },
-    {
-        question: "Choose the correct preposition.\n\nHe has been working here ______ 2018.",
-        options: ["for", "since", "from", "by"],
-        correct: 1,
-        explanation: "The preposition 'since' is used with a specific point of time, such as a year or date. 'For' is used with a period of time."
-    },
-    {
-        question: "Choose the Passive Voice.\n\nThe police arrested the thief.",
-        options: [
-            "The thief arrested the police.",
-            "The thief was arrested by the police.",
-            "The thief is arrested by the police.",
-            "The police were arrested by the thief."
-        ],
-        correct: 1,
-        explanation: "The passive voice of a simple past sentence is formed using 'was/were' followed by the past participle. Hence, 'The thief was arrested by the police' is correct."
-    },
-    {
-        question: "Choose the correct reported speech.\n\nThe teacher said, \"The Earth revolves around the Sun.\"",
-        options: [
-            "The teacher said that the Earth revolved around the Sun.",
-            "The teacher said that the Earth revolves around the Sun.",
-            "The teacher said that the Earth had revolved around the Sun.",
-            "The teacher said that the Earth was revolving around the Sun."
-        ],
-        correct: 1,
-        explanation: "Universal truths and scientific facts do not change their tense in reported speech. Therefore, 'The Earth revolves around the Sun' remains unchanged."
+        explanation: "\"Pronunciation\" is the correct spelling. Although it comes from \"pronounce,\" the spelling changes by removing the letter 'o.'"
     },
     {
         question: "Choose the correctly punctuated sentence.",
         options: [
-            "Alas! We lost the match.",
-            "Alas, We lost the match!",
-            "Alas We, lost the match.",
-            "Alas. we lost the match."
+            "My favourite subjects are English, Mathematics, Science, and Telugu.",
+            "My favourite subjects are English Mathematics Science and Telugu",
+            "My favourite subjects are: English Mathematics Science Telugu.",
+            "My favourite subjects are English; Mathematics; Science and Telugu."
         ],
         correct: 0,
-        explanation: "Interjections such as 'Alas!' express strong emotion and are followed by an exclamation mark. The following sentence begins with a capital letter."
-    },
-    {
-        question: "Choose the correctly spelt word.",
-        options: [
-            "Maintenance",
-            "Maintanance",
-            "Maintenence",
-            "Maintinance"
-        ],
-        correct: 0,
-        explanation: "The correct spelling is 'Maintenance'. The incorrect options contain common spelling errors involving misplaced vowels and missing letters."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "A number of students is absent.",
-            "A number of students are absent.",
-            "A number of students was absent.",
-            "A number of students has absent."
-        ],
-        correct: 1,
-        explanation: "The expression 'A number of' refers to several people or things and always takes a plural verb. Therefore, 'are absent' is correct."
-    },
-    {
-        question: "Choose the correct article.\n\n_____ Ganga is considered sacred.",
-        options: ["A", "An", "The", "No article"],
-        correct: 2,
-        explanation: "Names of rivers are preceded by the definite article 'the'. Therefore, we say 'The Ganga' just as we say 'The Nile' or 'The Godavari'."
-    },
-    {
-        question: "Choose the correct preposition.\n\nThe cat jumped ______ the wall.",
-        options: ["between", "over", "among", "inside"],
-        correct: 1,
-        explanation: "The preposition 'over' shows movement across or above something. It correctly describes the cat moving across the top of the wall."
-    },
-    {
-        question: "Choose the correctly punctuated sentence.",
-        options: [
-            "\"Please sit down,\" said the teacher.",
-            "\"Please sit down\". said the teacher.",
-            "\"Please sit down\", said the teacher.",
-            "\"Please sit down.\" said the teacher."
-        ],
-        correct: 0,
-        explanation: "In direct speech, a comma is placed inside the closing quotation marks before the reporting clause when the quoted sentence is not a question or exclamation."
-    },
-    {
-        question: "Choose the correct spelling.",
-        options: [
-            "Government",
-            "Goverment",
-            "Governement",
-            "Government"
-        ],
-        correct: 0,
-        explanation: "The correct spelling is 'Government'. Many learners incorrectly omit or add extra letters, making it a commonly tested spelling word."
-    },
-    {
-        question: "Which reading strategy is most suitable before reading a passage in detail?",
-        options: [
-            "Memorising every word",
-            "Predicting from the title",
-            "Copying difficult words",
-            "Translating every sentence"
-        ],
-        correct: 1,
-        explanation: "Predicting from the title activates prior knowledge and prepares the reader to understand the passage more effectively before detailed reading begins."
-    },
-    {
-        question: "Choose the correct verb.\n\nThe furniture ______ expensive.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "The noun 'Furniture' is an uncountable singular noun. Therefore, it always takes a singular verb such as 'is' in standard English."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "Neither Ram nor his friends was present.",
-            "Neither Ram nor his friends were present.",
-            "Neither Ram nor his friends is present.",
-            "Neither Ram nor his friends has present."
-        ],
-        correct: 1,
-        explanation: "With 'neither...nor', the verb agrees with the subject nearest to it. Since 'friends' is plural, the correct verb is 'were'."
-    },
-    {
-        question: "Choose the correct preposition.\n\nThe principal divided the sweets ______ the children.",
-        options: ["among", "between", "inside", "beside"],
-        correct: 0,
-        explanation: "The preposition 'among' is used when something is shared by more than two people or things. 'Between' is generally used for two."
-    },
-    {
-        question: "Choose the correct article.\n\nHe waited for ______ hour before the bus arrived.",
-        options: ["a", "an", "the", "no article"],
-        correct: 1,
-        explanation: "The word 'hour' begins with a silent 'h' and is pronounced with a vowel sound. Therefore, the correct article is 'an'."
-    },
-    {
-        question: "Read the passage.\n\n\"Rita looked at the headings before reading the lesson. She guessed what the lesson might discuss and then started reading carefully.\"\n\nWhich reading strategy did Rita use first?",
-        options: [
-            "Scanning",
-            "Predicting",
-            "Summarising",
-            "Skipping"
-        ],
-        correct: 1,
-        explanation: "Rita first examined the headings and guessed the possible content. This strategy is called predicting and helps readers understand a text more effectively."
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: [
-            "The scissors is on the table.",
-            "The scissors are on the table.",
-            "The scissors has on the table.",
-            "The scissors was on the table."
-        ],
-        correct: 1,
-        explanation: "The noun 'Scissors' is treated as a plural noun in English. Therefore, it takes the plural verb 'are' instead of 'is' or 'was'."
-    },
-    {
-        question: "Choose the correctly punctuated sentence.",
-        options: [
-            "After finishing the exam, the students left quietly.",
-            "After finishing the exam the students, left quietly.",
-            "After finishing, the exam the students left quietly.",
-            "After, finishing the exam the students left quietly."
-        ],
-        correct: 0,
-        explanation: "An introductory phrase should be followed by a comma before the main clause. This punctuation improves clarity and follows standard English writing conventions."
+        explanation: "Items in a list should be separated by commas for clarity. The first option correctly uses punctuation to separate the subjects."
     }
 ];
