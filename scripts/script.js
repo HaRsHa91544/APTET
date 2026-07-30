@@ -31,7 +31,11 @@ const MISTAKES_EXPIRY_MS = 12 * 60 * 60 * 1000; // 12 hours
 /* ─── Countdown ──────────────────────────────── */
 (function () {
     const diff = Math.ceil((EXAM_DATE - new Date()) / 86400000);
-    document.getElementById('days-left').textContent = diff > 0 ? diff : 0;
+    const el = document.getElementById('days-left');
+    el.textContent = diff > 0 ? `${diff} Days` : `${0} Days`;
+    if (diff <= 10 && diff > 0) {
+        el.closest('.exam-pill').classList.add('danger');
+    }
 })();
 
 /* ─── Start / Restart ────────────────────────── */
