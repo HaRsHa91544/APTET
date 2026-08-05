@@ -1,416 +1,391 @@
 const SUBJECTS = [
-    "Psychology"
+    "English Grammer"
 ];
 
 const QUESTIONS = [
     {
-        question: "పిల్లవాడు తన అనుభవాల ఆధారంగా జ్ఞానాన్ని నిర్మించుకుంటాడని ప్రతిపాదించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
-        options: ["స్కిన్నర్", "పియాజే", "పావ్‌లావ్", "థార్న్‌డైక్"],
+        question: "Choose the correct article.\n\nRavi wants to become ____ engineer.",
+        options: ["a", "an", "the", "No article"],
         correct: 1,
-        explanation: "పియాజే సంజ్ఞానాత్మక వికాస సిద్ధాంతం ప్రకారం పిల్లలు తమ పరిసరాలతో పరస్పర చర్యలు చేస్తూ అనుభవాల ఆధారంగా కొత్త జ్ఞానాన్ని నిర్మించుకుంటారు. ఈ ప్రక్రియలో అనుకూలనం మరియు సమతుల్యత ముఖ్యమైనవి."
+        explanation: "The noun 'engineer' begins with a vowel sound (/e/). We use 'an' before words that start with vowel sounds, not simply vowel letters. Therefore, 'an engineer' is grammatically correct."
     },
     {
-        question: "సమీప వికాస మండలం (Zone of Proximal Development) భావనను ప్రతిపాదించినవారు ఎవరు?",
-        options: ["బ్రూనర్", "విగోట్స్కీ", "గార్డ్నర్", "స్టెర్న్‌బర్గ్"],
-        correct: 1,
-        explanation: "విగోట్స్కీ ప్రకారం విద్యార్థి స్వయంగా చేయలేని పనిని ఉపాధ్యాయుడు లేదా నైపుణ్యం కలిగిన సహచరుడి సహాయంతో చేయగలిగే స్థాయినే సమీప వికాస మండలం (ZPD) అంటారు."
+        question: "Choose the correct article.\n\nThe Sun rises in ____ east.",
+        options: ["a", "an", "the", "No article"],
+        correct: 2,
+        explanation: "Names of directions used as specific geographical references take the definite article 'the'. Hence, the correct expression is 'the east', just like 'the west' or 'the north'."
     },
     {
-        question: "విద్యార్థికి అవసరమైనంత సహాయం చేసి తరువాత క్రమంగా తగ్గించే బోధనా పద్ధతిని ఏమంటారు?",
-        options: ["షేపింగ్", "స్కాఫోల్డింగ్", "ట్రయల్ అండ్ ఎరర్", "క్లాసికల్ కండిషనింగ్"],
-        correct: 1,
-        explanation: "బ్రూనర్ అభివృద్ధి చేసిన స్కాఫోల్డింగ్ పద్ధతిలో ఉపాధ్యాయుడు ప్రారంభంలో అవసరమైన సహాయం అందించి, విద్యార్థి స్వయం సామర్థ్యం పెరిగే కొద్దీ ఆ సహాయాన్ని క్రమంగా తగ్గిస్తాడు."
-    },
-    {
-        question: "క్రింది వారిలో పరిశీలన ద్వారా నేర్చుకోవడాన్ని (Observational Learning) ప్రాధాన్యంగా వివరించినవారు ఎవరు?",
-        options: ["స్కిన్నర్", "బండూరా", "పావ్‌లావ్", "కోహ్లర్"],
-        correct: 1,
-        explanation: "బండూరా సామాజిక అభ్యసన సిద్ధాంతం ప్రకారం వ్యక్తులు ఇతరుల ప్రవర్తనను గమనించి, అనుకరించి మరియు దాని ఫలితాలను పరిశీలించడం ద్వారా కొత్త ప్రవర్తనలను నేర్చుకుంటారు."
-    },
-    {
-        question: "ఎలుకలకు బహుమతి ఇచ్చి ప్రవర్తనను బలపరిచిన పరిశోధనలు చేసినవారు ఎవరు?",
-        options: ["స్కిన్నర్", "పియాజే", "విగోట్స్కీ", "గార్డ్నర్"],
+        question: "Choose the correct question tag.\n\nShe is a teacher, ______?",
+        options: ["isn't she", "doesn't she", "wasn't she", "is she"],
         correct: 0,
-        explanation: "స్కిన్నర్ ఆపరెంట్ కండిషనింగ్ సిద్ధాంతంలో ప్రవర్తన తర్వాత లభించే బహుమతి లేదా శిక్ష భవిష్యత్తులో ఆ ప్రవర్తన పునరావృతాన్ని ప్రభావితం చేస్తుందని నిరూపించాడు."
+        explanation: "The statement is positive and uses the auxiliary verb 'is'. Therefore, the question tag must be negative and use the same auxiliary: 'isn't she?' This follows standard question tag rules."
     },
     {
-        question: "గంట శబ్దం విని కుక్క లాలాజలం కార్చిన ప్రయోగం ఏ సిద్ధాంతానికి సంబంధించినది?",
-        options: ["ట్రయల్ అండ్ ఎరర్", "క్లాసికల్ కండిషనింగ్", "అంతర్దృష్టి అభ్యసనం", "సామాజిక అభ్యసనం"],
+        question: "Choose the correct question tag.\n\nThey don't play cricket, ______?",
+        options: ["don't they", "do they", "didn't they", "aren't they"],
         correct: 1,
-        explanation: "పావ్‌లావ్ నిర్వహించిన ఈ ప్రయోగం క్లాసికల్ కండిషనింగ్‌కు ప్రసిద్ధ ఉదాహరణ. సహజ ఉద్దీపనతో పాటు తటస్థ ఉద్దీపనను పునరావృతం చేయడం ద్వారా ప్రతిస్పందన ఏర్పడుతుంది."
+        explanation: "A negative statement requires a positive question tag. Since the auxiliary is 'do', the correct positive tag is 'do they?' maintaining the same tense and subject."
     },
     {
-        question: "ప్రయత్నం–పొరపాటు అభ్యసనం (Trial and Error Learning) సిద్ధాంతాన్ని ప్రతిపాదించినవారు ఎవరు?",
-        options: ["కోహ్లర్", "థార్న్‌డైక్", "బ్రూనర్", "విగోట్స్కీ"],
-        correct: 1,
-        explanation: "థార్న్‌డైక్ తన పిల్లి పజిల్ బాక్స్ ప్రయోగాల ఆధారంగా ప్రయత్నం–పొరపాటు అభ్యసనాన్ని ప్రతిపాదించాడు. విజయవంతమైన ప్రతిస్పందనలు పునరావృతం అవుతాయని వివరించాడు."
-    },
-    {
-        question: "చింపాంజీ ఒక్కసారిగా సమస్యకు పరిష్కారం కనుగొనడం ఏ అభ్యసన సిద్ధాంతానికి ఉదాహరణ?",
-        options: ["క్లాసికల్ కండిషనింగ్", "ఆపరెంట్ కండిషనింగ్", "అంతర్దృష్టి అభ్యసనం", "అనుకరణ అభ్యసనం"],
-        correct: 2,
-        explanation: "కోహ్లర్ చింపాంజీలపై చేసిన ప్రయోగాల ద్వారా అంతర్దృష్టి అభ్యసనాన్ని వివరించాడు. సమస్యకు ఒక్కసారిగా పరిష్కారం కనిపించడం దీనికి ముఖ్య లక్షణం."
-    },
-    {
-        question: "శరీర నిర్మాణాన్ని ఆధారంగా చేసుకొని వ్యక్తిత్వ రకాలను వర్గీకరించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
-        options: ["గార్డ్నర్", "క్రెట్ష్మర్", "స్టెర్న్‌బర్గ్", "బ్రూనర్"],
-        correct: 1,
-        explanation: "క్రెట్ష్మర్ శరీరాకృతిని ఆధారంగా చేసుకొని వ్యక్తిత్వాన్ని వివిధ రకాలుగా వర్గీకరించాడు. ఈ సిద్ధాంతం శారీరక నిర్మాణం మరియు వ్యక్తిత్వం మధ్య సంబంధాన్ని సూచిస్తుంది."
-    },
-    {
-        question: "భాషా, సంగీత, దృశ్య, శారీరక వంటి అనేక మేధస్సులను ప్రతిపాదించినవారు ఎవరు?",
-        options: ["స్టెర్న్‌బర్గ్", "గార్డ్నర్", "పియాజే", "స్కిన్నర్"],
-        correct: 1,
-        explanation: "గార్డ్నర్ బహుళ మేధస్సుల సిద్ధాంతంలో ప్రతి వ్యక్తికి ఒకే రకం మేధస్సు కాకుండా భాషా, సంగీత, దృశ్య, శారీరక వంటి అనేక మేధస్సులు ఉంటాయని తెలిపాడు."
-    },
-    {
-        question: "విశ్లేషణాత్మక, సృజనాత్మక, ఆచరణాత్మక మేధస్సులను ప్రతిపాదించినవారు ఎవరు?",
-        options: ["గార్డ్నర్", "స్టెర్న్‌బర్గ్", "విగోట్స్కీ", "కోహ్లర్"],
-        correct: 1,
-        explanation: "స్టెర్న్‌బర్గ్ త్రైక మేధస్సు సిద్ధాంతంలో విశ్లేషణాత్మక, సృజనాత్మక మరియు ఆచరణాత్మక మేధస్సులను మూడు ప్రధాన భాగాలుగా వివరించాడు."
-    },
-    {
-        question: "క్రింది జతలలో సరైనది ఏది?",
+        question: "Choose the correct passive voice.\n\nThey built the bridge in 2020.",
         options: [
-            "స్కిన్నర్ — క్లాసికల్ కండిషనింగ్",
-            "పావ్‌లావ్ — క్లాసికల్ కండిషనింగ్",
-            "కోహ్లర్ — ట్రయల్ అండ్ ఎరర్",
-            "బండూరా — ఆపరెంట్ కండిషనింగ్"
+            "The bridge built in 2020.",
+            "The bridge was built in 2020.",
+            "The bridge is built in 2020.",
+            "The bridge has built in 2020."
         ],
         correct: 1,
-        explanation: "క్లాసికల్ కండిషనింగ్ సిద్ధాంతాన్ని పావ్‌లావ్ ప్రతిపాదించాడు. మిగిలిన జతలు తప్పు, ఎందుకంటే ఆయా సిద్ధాంతాలను ఇతర మనోవిజ్ఞాన శాస్త్రవేత్తలు ప్రతిపాదించారు."
+        explanation: "The active sentence is in the simple past tense. In passive voice, simple past changes to 'was/were + past participle'. Therefore, 'The bridge was built in 2020' is correct."
     },
     {
-        question: "విద్యార్థి తన సహచరులను గమనించి మంచి అలవాట్లు అలవరుచుకుంటే, ఇది ఏ సిద్ధాంతానికి ఉదాహరణ?",
-        options: ["అంతర్దృష్టి అభ్యసనం", "సామాజిక అభ్యసనం", "ట్రయల్ అండ్ ఎరర్", "క్లాసికల్ కండిషనింగ్"],
-        correct: 1,
-        explanation: "ఇతరులను గమనించి వారి ప్రవర్తనను అనుకరించడం బండూరా సామాజిక అభ్యసన సిద్ధాంతానికి ఉదాహరణ. పరిశీలన మరియు అనుకరణ ద్వారా అభ్యసనం జరుగుతుంది."
-    },
-    {
-        question: "క్రింది వారిలో సంజ్ఞానాత్మక వికాస దశలను వివరించినవారు ఎవరు?",
-        options: ["పియాజే", "థార్న్‌డైక్", "స్కిన్నర్", "పావ్‌లావ్"],
-        correct: 0,
-        explanation: "పియాజే పిల్లల సంజ్ఞానాత్మక వికాసాన్ని నాలుగు ప్రధాన దశలుగా వివరించాడు. ప్రతి దశలో పిల్లల ఆలోచనా విధానం మరియు సమస్య పరిష్కార సామర్థ్యం అభివృద్ధి చెందుతుంది."
-    },
-    {
-        question: "విద్యార్థి స్వతంత్రంగా చేయలేని పనిని ఉపాధ్యాయుని సహాయంతో పూర్తి చేయగలిగితే, ఇది ఏ భావనకు ఉదాహరణ?",
-        options: ["బహుళ మేధస్సులు", "సమీప వికాస మండలం (ZPD)", "ఆపరెంట్ కండిషనింగ్", "ట్రయల్ అండ్ ఎరర్"],
-        correct: 1,
-        explanation: "విగోట్స్కీ ప్రకారం విద్యార్థి సహాయం లేకుండా చేయలేని పనిని మార్గదర్శకత్వంతో చేయగలిగితే అది సమీప వికాస మండలం (ZPD)కు ఉత్తమ ఉదాహరణ."
-    },
-    {
-        question: "పియాజే ప్రకారం, పిల్లవాడు వస్తువులను వాటి సాధారణ లక్షణాల ఆధారంగా వర్గీకరించడం ప్రధానంగా ఏ దశలో ప్రారంభమవుతుంది?",
-        options: ["ఇంద్రియ-చలన దశ", "పూర్వ కార్యాచరణ దశ", "దృఢ కార్యాచరణ దశ", "సాంప్రదాయ కార్యాచరణ దశ"],
-        correct: 2,
-        explanation: "పియాజే ప్రకారం దృఢ కార్యాచరణ దశలో పిల్లలు వర్గీకరణ, క్రమీకరణ, సంరక్షణ భావన వంటి తార్కిక ఆలోచనా నైపుణ్యాలను అభివృద్ధి చేసుకుంటారు. ఈ దశలో వస్తువులను లక్షణాల ఆధారంగా సమూహాలుగా విభజించగలరు."
-    },
-    {
-        question: "విగోట్స్కీ ప్రకారం పిల్లల అభ్యసనాన్ని అత్యంత ప్రభావితం చేసే అంశం ఏది?",
-        options: ["వారసత్వం", "శారీరక పరిపక్వత", "సామాజిక పరస్పర చర్య", "బహుమతులు"],
-        correct: 2,
-        explanation: "విగోట్స్కీ సిద్ధాంతం ప్రకారం ఉపాధ్యాయులు, తల్లిదండ్రులు, సహచరులతో జరిగే సామాజిక పరస్పర చర్యల ద్వారానే అభ్యసనం వేగంగా జరుగుతుంది. భాష మరియు సంభాషణకు ఇందులో ప్రత్యేక ప్రాధాన్యం ఉంది."
-    },
-    {
-        question: "బ్రూనర్ ప్రతిపాదించిన అభ్యసన విధానాలలో సరైన క్రమం ఏది?",
+        question: "Choose the correct active voice.\n\nThe letter was written by Rani.",
         options: [
-            "సంకేతాత్మక → క్రియాత్మక → చిత్రాత్మక",
-            "క్రియాత్మక → చిత్రాత్మక → సంకేతాత్మక",
-            "చిత్రాత్మక → సంకేతాత్మక → క్రియాత్మక",
-            "క్రియాత్మక → సంకేతాత్మక → చిత్రాత్మక"
-        ],
-        correct: 1,
-        explanation: "బ్రూనర్ మూడు ప్రతినిధిత్వ విధానాలను క్రియాత్మక (Enactive), చిత్రాత్మక (Iconic), సంకేతాత్మక (Symbolic) అనే క్రమంలో వివరించాడు. ఈ క్రమం పిల్లల సంజ్ఞానాత్మక వికాసాన్ని సూచిస్తుంది."
-    },
-    {
-        question: "బండూరా సామాజిక అభ్యసన సిద్ధాంతంలో కింది వాటిలో ఏది ముఖ్యమైనది?",
-        options: ["పునర్బలం", "అనుకరణ", "శిక్ష", "పునరావృత అభ్యాసం"],
-        correct: 1,
-        explanation: "బండూరా ప్రకారం ఇతరుల ప్రవర్తనను గమనించి, అనుకరించడం ద్వారా కొత్త ప్రవర్తనలు నేర్చుకుంటారు. పరిశీలన, అనుకరణ మరియు నమూనా ప్రవర్తన ఈ సిద్ధాంతానికి ప్రధాన ఆధారాలు."
-    },
-    {
-        question: "స్కిన్నర్ ప్రకారం, ప్రవర్తన సంభవించే అవకాశాన్ని పెంచేది ఏది?",
-        options: ["అంతర్దృష్టి", "పునర్బలం", "పరిపక్వత", "వారసత్వం"],
-        correct: 1,
-        explanation: "స్కిన్నర్ ఆపరెంట్ కండిషనింగ్ సిద్ధాంతం ప్రకారం పునర్బలం పొందిన ప్రవర్తన భవిష్యత్తులో మళ్లీ సంభవించే అవకాశం ఎక్కువగా ఉంటుంది. దీనిని ప్రవర్తన బలపరచడం అంటారు."
-    },
-    {
-        question: "పావ్‌లావ్ ప్రయోగంలో గంట శబ్దం ఏ ఉద్దీపనగా మారింది?",
-        options: ["సహజ ఉద్దీపన", "నియత ఉద్దీపన", "తటస్థ ఉద్దీపన నుండి నియత ఉద్దీపన", "సహజ ప్రతిస్పందన"],
-        correct: 2,
-        explanation: "ప్రారంభంలో గంట శబ్దం తటస్థ ఉద్దీపనగా ఉండేది. ఆహారంతో కలిపి పలుమార్లు వినిపించిన తరువాత అది నియత ఉద్దీపనగా మారి లాలాజల ప్రతిస్పందనను కలిగించింది."
-    },
-    {
-        question: "థార్న్‌డైక్ యొక్క 'ఫలిత సూత్రం (Law of Effect)' ప్రకారం ఏ ప్రవర్తన పునరావృతమవుతుంది?",
-        options: ["అసంతృప్తిని కలిగించేది", "సంతృప్తికర ఫలితాన్ని ఇచ్చేది", "యాదృచ్ఛికమైనది", "పరిశీలించినది"],
-        correct: 1,
-        explanation: "థార్న్‌డైక్ ఫలిత సూత్రం ప్రకారం సంతృప్తికరమైన ఫలితాన్ని ఇచ్చే ప్రతిస్పందనలు బలపడతాయి మరియు భవిష్యత్తులో మళ్లీ జరిగే అవకాశం పెరుగుతుంది."
-    },
-    {
-        question: "కోహ్లర్ పరిశోధనలు ప్రధానంగా ఏ జంతువులపై జరిగాయి?",
-        options: ["ఎలుకలు", "కుక్కలు", "చింపాంజీలు", "పిల్లులు"],
-        correct: 2,
-        explanation: "కోహ్లర్ చింపాంజీలపై ప్రయోగాలు చేసి అంతర్దృష్టి అభ్యసనాన్ని వివరించాడు. సమస్యను ఒక్కసారిగా అర్థం చేసుకొని పరిష్కారం కనుగొనడం దీనికి ముఖ్య లక్షణం."
-    },
-    {
-        question: "క్రెట్ష్మర్ ప్రకారం, కింది వాటిలో శరీర నిర్మాణ ఆధారిత వ్యక్తిత్వ వర్గీకరణ ఏది?",
-        options: ["భాషా మేధస్సు", "అథ్లెటిక్ రకం", "విశ్లేషణాత్మక మేధస్సు", "నైతిక వికాసం"],
-        correct: 1,
-        explanation: "క్రెట్ష్మర్ వ్యక్తిత్వాన్ని శరీర నిర్మాణం ఆధారంగా వర్గీకరించాడు. అథ్లెటిక్ రకం ఆయన పేర్కొన్న ప్రధాన శరీరాకృతి-వ్యక్తిత్వ వర్గీకరణలలో ఒకటి."
-    },
-    {
-        question: "కింది వాటిలో గార్డ్నర్ బహుళ మేధస్సుల సిద్ధాంతానికి చెందినది ఏది?",
-        options: ["తార్కిక-గణిత మేధస్సు", "ఆపరెంట్ అభ్యసనం", "ట్రయల్ అండ్ ఎరర్", "స్కాఫోల్డింగ్"],
-        correct: 0,
-        explanation: "గార్డ్నర్ బహుళ మేధస్సుల సిద్ధాంతంలో తార్కిక-గణిత మేధస్సు, భాషా, సంగీత, దృశ్య, శారీరక వంటి అనేక మేధస్సులను ప్రతిపాదించాడు."
-    },
-    {
-        question: "స్టెర్న్‌బర్గ్ ప్రకారం, దైనందిన జీవిత సమస్యలను సమర్థంగా పరిష్కరించే మేధస్సు ఏది?",
-        options: ["విశ్లేషణాత్మక మేధస్సు", "సృజనాత్మక మేధస్సు", "ఆచరణాత్మక మేధస్సు", "భాషా మేధస్సు"],
-        correct: 2,
-        explanation: "స్టెర్న్‌బర్గ్ త్రైక మేధస్సు సిద్ధాంతంలో ఆచరణాత్మక మేధస్సు అనేది వాస్తవ జీవిత పరిస్థితులను సమర్థంగా నిర్వహించి సమస్యలను పరిష్కరించే సామర్థ్యాన్ని సూచిస్తుంది."
-    },
-    {
-        question: "క్రింది జతలలో సరైనది ఏది?",
-        options: [
-            "పావ్‌లావ్ — ఆపరెంట్ కండిషనింగ్",
-            "స్కిన్నర్ — పునర్బలం",
-            "కోహ్లర్ — క్లాసికల్ కండిషనింగ్",
-            "బండూరా — ట్రయల్ అండ్ ఎరర్"
-        ],
-        correct: 1,
-        explanation: "స్కిన్నర్ ఆపరెంట్ కండిషనింగ్ సిద్ధాంతంలో పునర్బలం ప్రధాన పాత్ర పోషిస్తుంది. మిగిలిన జతలు ఆయా మనోవిజ్ఞాన శాస్త్రవేత్తల సిద్ధాంతాలకు సరిపోవు."
-    },
-    {
-        question: "పియాజే ప్రకారం, పిల్లలు 'సంరక్షణ భావన (Conservation)'ను ప్రధానంగా ఏ దశలో అర్థం చేసుకుంటారు?",
-        options: ["ఇంద్రియ-చలన దశ", "పూర్వ కార్యాచరణ దశ", "దృఢ కార్యాచరణ దశ", "సాంప్రదాయ కార్యాచరణ దశ"],
-        correct: 2,
-        explanation: "పియాజే ప్రకారం సంరక్షణ భావన దృఢ కార్యాచరణ దశలో అభివృద్ధి చెందుతుంది. పరిమాణం రూపం మారినా అలాగే ఉంటుందని పిల్లలు ఈ దశలో గ్రహిస్తారు."
-    },
-    {
-        question: "విద్యార్థి సరైన సమాధానం చెప్పిన వెంటనే ఉపాధ్యాయుడు ప్రశంసిస్తే, ఇది ఏ సిద్ధాంతానికి ఉదాహరణ?",
-        options: ["క్లాసికల్ కండిషనింగ్", "ఆపరెంట్ కండిషనింగ్", "అంతర్దృష్టి అభ్యసనం", "జ్ఞాన వికాస సిద్ధాంతం"],
-        correct: 1,
-        explanation: "సరైన సమాధానానికి వెంటనే ప్రశంస ఇవ్వడం ధనాత్మక పునర్బలం. ఇది స్కిన్నర్ ఆపరెంట్ కండిషనింగ్ సిద్ధాంతంలో ప్రవర్తనను బలపరచే ముఖ్యమైన పద్ధతి."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\nఅ. గార్డ్నర్ ఒకే సాధారణ మేధస్సును మాత్రమే అంగీకరించాడు.\n\nఆ. స్టెర్న్‌బర్గ్ త్రైక మేధస్సు సిద్ధాంతాన్ని ప్రతిపాదించాడు.\n\nసరైన సమాధానం ఏది?",
-        options: [
-            "అ మాత్రమే సరైనది",
-            "ఆ మాత్రమే సరైనది",
-            "రెండూ సరైనవి",
-            "రెండూ తప్పు"
-        ],
-        correct: 1,
-        explanation: "స్టెర్న్‌బర్గ్ త్రైక మేధస్సు సిద్ధాంతాన్ని ప్రతిపాదించాడు. గార్డ్నర్ ఒకే సాధారణ మేధస్సును కాకుండా బహుళ మేధస్సుల సిద్ధాంతాన్ని ప్రతిపాదించాడు."
-    },
-    {
-        question: "పియాజే ప్రకారం, యౌవన దశలో విద్యార్థి అమూర్త భావనలపై తార్కికంగా ఆలోచించగలడు. ఇది ఏ దశ లక్షణం?",
-        options: ["ఇంద్రియ-చలన దశ", "పూర్వ కార్యాచరణ దశ", "దృఢ కార్యాచరణ దశ", "సాంప్రదాయ కార్యాచరణ దశ"],
-        correct: 3,
-        explanation: "పియాజే ప్రకారం సాంప్రదాయ కార్యాచరణ దశలో విద్యార్థులు అమూర్త భావనలు, ఊహాత్మక పరిస్థితులు, శాస్త్రీయ తర్కం వంటి ఉన్నత స్థాయి ఆలోచనా సామర్థ్యాలను అభివృద్ధి చేసుకుంటారు."
-    },
-    {
-        question: "విగోట్స్కీ సిద్ధాంతం ప్రకారం ఉపాధ్యాయుని ప్రధాన పాత్ర ఏమిటి?",
-        options: [
-            "పరీక్షలు నిర్వహించడం",
-            "శిక్ష విధించడం",
-            "అవసరమైన సహాయాన్ని అందిస్తూ అభ్యసనానికి దోహదపడడం",
-            "కేవలం పాఠ్యపుస్తకాన్ని చదవించడం"
-        ],
-        correct: 2,
-        explanation: "విగోట్స్కీ ప్రకారం ఉపాధ్యాయుడు విద్యార్థి సమీప వికాస మండలంలో తగిన మార్గదర్శకత్వం, సహకారం అందించి స్వతంత్ర అభ్యసనానికి దోహదపడాలి. దీనినే స్కాఫోల్డింగ్ భావనతో అనుసంధానిస్తారు."
-    },
-    {
-        question: "బ్రూనర్ ప్రకారం, అభ్యసనం అత్యంత సమర్థవంతంగా జరుగేది ఎప్పుడు?",
-        options: [
-            "ఉపాధ్యాయుడు సమాధానం చెప్పినప్పుడు",
-            "విద్యార్థి స్వయంగా అన్వేషించినప్పుడు",
-            "శిక్ష విధించినప్పుడు",
-            "కంఠస్థం చేసినప్పుడు"
-        ],
-        correct: 1,
-        explanation: "బ్రూనర్ ఆవిష్కరణాత్మక అభ్యసనాన్ని ప్రోత్సహించాడు. విద్యార్థి స్వయంగా అన్వేషించి సూత్రాలను కనుగొన్నప్పుడు అభ్యసనం మరింత స్థిరంగా మరియు అర్థవంతంగా ఉంటుంది."
-    },
-    {
-        question: "బండూరా ప్రసిద్ధ 'బోబో డాల్' ప్రయోగం ప్రధానంగా దేనిని నిరూపించింది?",
-        options: [
-            "క్లాసికల్ కండిషనింగ్",
-            "అనుకరణ ద్వారా అభ్యసనం",
-            "ట్రయల్ అండ్ ఎరర్",
-            "అంతర్దృష్టి అభ్యసనం"
-        ],
-        correct: 1,
-        explanation: "బోబో డాల్ ప్రయోగంలో పిల్లలు పెద్దల ప్రవర్తనను గమనించి అదే విధంగా అనుకరించినట్లు బండూరా నిరూపించాడు. ఇది పరిశీలనాత్మక లేదా సామాజిక అభ్యసనానికి ప్రసిద్ధ ఉదాహరణ."
-    },
-    {
-        question: "స్కిన్నర్ సిద్ధాంతంలో 'ధనాత్మక పునర్బలం'కు సరైన ఉదాహరణ ఏది?",
-        options: [
-            "హోంవర్క్ చేయకపోతే శిక్షించడం",
-            "సరైన సమాధానానికి ప్రశంసించడం",
-            "తప్పు సమాధానాన్ని పట్టించుకోకపోవడం",
-            "పరీక్షను రద్దు చేయడం"
-        ],
-        correct: 1,
-        explanation: "సరైన ప్రవర్తన తరువాత ప్రశంస లేదా బహుమతి ఇవ్వడం ధనాత్మక పునర్బలం. ఇది ఆ ప్రవర్తన భవిష్యత్తులో మళ్లీ జరిగే అవకాశాన్ని పెంచుతుంది."
-    },
-    {
-        question: "పావ్‌లావ్ ప్రయోగంలో సహజ ఉద్దీపన (Unconditioned Stimulus) ఏది?",
-        options: ["గంట శబ్దం", "ఆహారం", "కాంతి", "బెల్"],
-        correct: 1,
-        explanation: "పావ్‌లావ్ ప్రయోగంలో ఆహారం సహజ ఉద్దీపన. ఇది ఎలాంటి శిక్షణ లేకుండానే సహజంగా కుక్కలో లాలాజల ప్రతిస్పందనను కలిగిస్తుంది."
-    },
-    {
-        question: "థార్న్‌డైక్ 'సిద్ధత సూత్రం (Law of Readiness)' ప్రకారం అభ్యసనం బాగా జరుగుతుంది—",
-        options: [
-            "విద్యార్థి సిద్ధంగా ఉన్నప్పుడు",
-            "కేవలం బహుమతి ఇచ్చినప్పుడు",
-            "శిక్షించినప్పుడు",
-            "పరిశీలించినప్పుడు"
+            "Rani wrote the letter.",
+            "Rani writes the letter.",
+            "Rani has written the letter.",
+            "Rani is writing the letter."
         ],
         correct: 0,
-        explanation: "థార్న్‌డైక్ సిద్ధత సూత్రం ప్రకారం శారీరకంగా, మానసికంగా సిద్ధంగా ఉన్న విద్యార్థి అభ్యసనాన్ని మరింత సమర్థవంతంగా మరియు ఆసక్తితో స్వీకరిస్తాడు."
+        explanation: "The passive sentence uses 'was written', which is simple past passive. Its active form is simple past: 'Rani wrote the letter.' The tense must remain unchanged during transformation."
     },
     {
-        question: "కోహ్లర్ పరిశోధనల ప్రకారం అంతర్దృష్టి అభ్యసనం ప్రధానంగా దేనిపై ఆధారపడుతుంది?",
+        question: "Choose the correct verb.\n\nEach of the students ____ a notebook.",
+        options: ["have", "are having", "has", "were having"],
+        correct: 2,
+        explanation: "The subject 'Each' is singular even though it refers to many students. Singular subjects always take singular verbs. Hence, 'Each of the students has a notebook' is correct."
+    },
+    {
+        question: "Choose the correct verb.\n\nNeither the teacher nor the students ____ ready.",
+        options: ["is", "was", "are", "has"],
+        correct: 2,
+        explanation: "With 'neither...nor', the verb agrees with the noun nearest to it. Here, 'students' is plural and closest to the verb, so the plural verb 'are' is the correct choice."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nThe manager will announce the results tomorrow.",
         options: [
-            "పునరావృత అభ్యాసం",
-            "సమస్యను మొత్తం రూపంలో గ్రహించడం",
-            "శిక్ష",
-            "కంఠస్థం"
+            "The results will announce tomorrow.",
+            "The results will be announced tomorrow.",
+            "The results are announced tomorrow.",
+            "The results have been announced tomorrow."
         ],
         correct: 1,
-        explanation: "కోహ్లర్ ప్రకారం సమస్యలోని అన్ని భాగాల మధ్య సంబంధాన్ని ఒక్కసారిగా గ్రహించడం వల్ల అంతర్దృష్టి ఏర్పడుతుంది. ఇది యాంత్రిక ప్రయత్నాలపై ఆధారపడదు."
+        explanation: "Future tense passive voice is formed with 'will be + past participle'. Therefore, 'The results will be announced tomorrow' correctly changes the active sentence into passive voice."
     },
     {
-        question: "క్రెట్ష్మర్ సిద్ధాంతం ప్రధానంగా ఏ అంశానికి సంబంధించినది?",
+        question: "Choose the correct article.\n\nHonesty is ____ best policy.",
+        options: ["a", "an", "the", "No article"],
+        correct: 2,
+        explanation: "Superlative adjectives such as 'best', 'highest', and 'greatest' are normally preceded by the definite article 'the'. Hence, the correct phrase is 'the best policy'."
+    },
+    {
+        question: "Choose the correct question tag.\n\nLet's go for a walk, ______?",
+        options: ["shall we", "will we", "do we", "don't we"],
+        correct: 0,
+        explanation: "Sentences beginning with 'Let's' express a suggestion. The standard question tag used after such sentences is 'shall we?' making it the correct grammatical choice."
+    },
+    {
+        question: "Choose the correct active voice.\n\nThe work has been completed by the workers.",
         options: [
-            "అభ్యసన సిద్ధాంతం",
-            "వ్యక్తిత్వ వర్గీకరణ",
-            "మేధస్సు కొలత",
-            "నైతిక వికాసం"
+            "The workers completed the work.",
+            "The workers have completed the work.",
+            "The workers complete the work.",
+            "The workers had completed the work."
         ],
         correct: 1,
-        explanation: "క్రెట్ష్మర్ శరీరాకృతిని ఆధారంగా చేసుకొని వ్యక్తిత్వ రకాలను వర్గీకరించాడు. ఈ సిద్ధాంతం వ్యక్తిత్వం మరియు శారీరక నిర్మాణం మధ్య సంబంధాన్ని వివరిస్తుంది."
+        explanation: "The passive sentence is in the present perfect tense ('has been completed'). Its active form is 'have completed' because the subject 'workers' is plural. The tense remains unchanged."
     },
     {
-        question: "గార్డ్నర్ ప్రకారం సంగీతంలో అసాధారణ ప్రతిభ కలిగిన వ్యక్తి ప్రధానంగా ఏ మేధస్సును ప్రదర్శిస్తాడు?",
-        options: [
-            "భాషా మేధస్సు",
-            "సంగీత మేధస్సు",
-            "ప్రకృతి మేధస్సు",
-            "అంతర్వ్యక్తిగత మేధస్సు"
-        ],
-        correct: 1,
-        explanation: "గార్డ్నర్ బహుళ మేధస్సుల సిద్ధాంతంలో సంగీత మేధస్సు అనేది స్వరాలు, లయ, సంగీత నిర్మాణాన్ని అర్థం చేసుకొని సృజనాత్మకంగా వినియోగించే సామర్థ్యాన్ని సూచిస్తుంది."
+        question: "Choose the correct verb.\n\nOne of my friends ____ coming today.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "The subject is 'One', which is singular. Although 'friends' is plural, the verb agrees with 'One'. Therefore, the correct sentence is 'One of my friends is coming today.'"
     },
     {
-        question: "స్టెర్న్‌బర్గ్ ప్రకారం కొత్త పరిస్థితుల్లో వినూత్న పరిష్కారాలను కనుగొనే మేధస్సు ఏది?",
+        question: "Choose the correct passive voice.\n\nPeople speak English all over the world.",
         options: [
-            "విశ్లేషణాత్మక",
-            "సృజనాత్మక",
-            "ఆచరణాత్మక",
-            "భాషా"
-        ],
-        correct: 1,
-        explanation: "స్టెర్న్‌బర్గ్ ప్రకారం సృజనాత్మక మేధస్సు కొత్త పరిస్థితులకు అనుగుణంగా కొత్త ఆలోచనలు, వినూత్న పరిష్కారాలను రూపొందించే సామర్థ్యాన్ని సూచిస్తుంది."
-    },
-    {
-        question: "క్రింది జతలలో సరైనది ఏది?",
-        options: [
-            "బ్రూనర్ — Discovery Learning",
-            "స్కిన్నర్ — Multiple Intelligence",
-            "పియాజే — Operant Conditioning",
-            "గార్డ్నర్ — Classical Conditioning"
+            "English is spoken all over the world.",
+            "English was spoken all over the world.",
+            "English has spoken all over the world.",
+            "English speaks all over the world."
         ],
         correct: 0,
-        explanation: "బ్రూనర్ ఆవిష్కరణాత్మక అభ్యసనాన్ని ప్రతిపాదించాడు. మిగిలిన జతలు సంబంధిత మనోవిజ్ఞాన శాస్త్రవేత్తల సిద్ధాంతాలకు సరిపోవు."
+        explanation: "The active sentence is in the simple present tense. Its passive form uses 'is/am/are + past participle'. Therefore, 'English is spoken all over the world' is correct."
     },
     {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి.\n\nఅ. పావ్‌లావ్ క్లాసికల్ కండిషనింగ్‌ను ప్రతిపాదించాడు.\n\nఆ. స్కిన్నర్ ఆపరెంట్ కండిషనింగ్‌ను ప్రతిపాదించాడు.",
-        options: [
-            "అ మాత్రమే",
-            "ఆ మాత్రమే",
-            "రెండూ సరైనవి",
-            "రెండూ తప్పు"
-        ],
+        question: "Choose the correct article.\n\nHe bought ____ umbrella yesterday.",
+        options: ["a", "an", "the", "No article"],
+        correct: 1,
+        explanation: "The word 'umbrella' begins with a vowel sound. We use the indefinite article 'an' before words that start with vowel sounds. Hence, 'an umbrella' is the correct expression."
+    },
+    {
+        question: "Choose the correct article.\n\nShe adopted ____ honest approach to solve the problem.",
+        options: ["a", "an", "the", "No article"],
+        correct: 1,
+        explanation: "The word 'honest' begins with a silent 'h', so it starts with a vowel sound. We use 'an' before words that begin with vowel sounds. Therefore, 'an honest approach' is correct."
+    },
+    {
+        question: "Choose the correct article.\n\nMount Everest is ____ highest peak in the world.",
+        options: ["a", "an", "the", "No article"],
         correct: 2,
-        explanation: "పావ్‌లావ్ క్లాసికల్ కండిషనింగ్ సిద్ధాంతాన్ని, స్కిన్నర్ ఆపరెంట్ కండిషనింగ్ సిద్ధాంతాన్ని ప్రతిపాదించారు. కాబట్టి రెండు ప్రకటనలు సరైనవే."
+        explanation: "Superlative adjectives like 'highest', 'best', and 'largest' are always preceded by the definite article 'the'. Hence, 'the highest peak' is the correct expression."
     },
     {
-        question: "విద్యార్థి గణిత సమస్యను అనేకసార్లు ప్రయత్నించి చివరకు పరిష్కరించాడు. ఇది ఏ సిద్ధాంతానికి ఉదాహరణ?",
+        question: "Choose the correct question tag.\n\nYou can swim, ______?",
+        options: ["can't you", "can you", "don't you", "won't you"],
+        correct: 0,
+        explanation: "The statement is positive and uses the modal auxiliary 'can'. Therefore, the question tag must be negative with the same auxiliary: 'can't you?'"
+    },
+    {
+        question: "Choose the correct question tag.\n\nHe hasn't finished his homework, ______?",
+        options: ["hasn't he", "has he", "did he", "does he"],
+        correct: 1,
+        explanation: "A negative statement takes a positive question tag. Since the auxiliary verb is 'has', the correct tag is 'has he?'"
+    },
+    {
+        question: "Choose the correct passive voice.\n\nThe students are cleaning the classroom.",
         options: [
-            "సామాజిక అభ్యసనం",
-            "ట్రయల్ అండ్ ఎరర్",
-            "క్లాసికల్ కండిషనింగ్",
-            "బహుళ మేధస్సులు"
+            "The classroom is cleaned by the students.",
+            "The classroom is being cleaned by the students.",
+            "The classroom was cleaned by the students.",
+            "The classroom has been cleaned by the students."
         ],
         correct: 1,
-        explanation: "పలుమార్లు ప్రయత్నించి చివరకు సరైన పరిష్కారాన్ని కనుగొనడం థార్న్‌డైక్ ట్రయల్ అండ్ ఎరర్ అభ్యసన సిద్ధాంతానికి ఉత్తమ ఉదాహరణ."
+        explanation: "The sentence is in the present continuous tense. Its passive form is 'is/am/are being + past participle'. Therefore, 'is being cleaned' is correct."
     },
     {
-        question: "తరగతిలో ప్రతిభావంతులైన విద్యార్థులు ఇతరులకు నమూనాగా ఉండే విధంగా కార్యక్రమాలు నిర్వహించడం ఏ సిద్ధాంతానికి అనుకూలం?",
+        question: "Choose the correct active voice.\n\nThe match was won by our team.",
         options: [
-            "బండూరా",
-            "కోహ్లర్",
-            "పావ్‌లావ్",
-            "స్కిన్నర్"
+            "Our team won the match.",
+            "Our team wins the match.",
+            "Our team has won the match.",
+            "Our team is winning the match."
         ],
         correct: 0,
-        explanation: "ఇతరులను గమనించి అనుకరించడం ద్వారా అభ్యసనం జరుగుతుందని బండూరా వివరించాడు. అందువల్ల ఆదర్శ విద్యార్థులను నమూనాలుగా ఉపయోగించడం ఈ సిద్ధాంతానికి అనుకూలం."
+        explanation: "The passive sentence is in the simple past tense. While changing it into active voice, the tense remains unchanged. Hence, 'Our team won the match.'"
     },
     {
-        question: "క్రింది వారిలో 'బహుళ మేధస్సుల సిద్ధాంతం'ను ప్రతిపాదించినవారు ఎవరు?",
+        question: "Choose the correct verb.\n\nThe quality of these books ____ excellent.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "The subject is 'quality', which is singular. The phrase 'of these books' only modifies the subject and does not affect verb agreement. Therefore, 'is' is correct."
+    },
+    {
+        question: "Choose the correct verb.\n\nEither the boys or the principal ____ attending the meeting.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "With 'either...or', the verb agrees with the subject nearest to it. Here, 'principal' is singular, so the correct verb is 'is'."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nThe police have arrested the thief.",
         options: [
-            "స్టెర్న్‌బర్గ్",
-            "గార్డ్నర్",
-            "బినే",
-            "స్పీర్మన్"
+            "The thief has arrested.",
+            "The thief has been arrested.",
+            "The thief was arrested.",
+            "The thief is arrested."
         ],
         correct: 1,
-        explanation: "హోవర్డ్ గార్డ్నర్ బహుళ మేధస్సుల సిద్ధాంతాన్ని ప్రతిపాదించాడు. ప్రతి వ్యక్తిలో వివిధ రకాల మేధస్సులు భిన్న స్థాయిల్లో ఉంటాయని ఆయన పేర్కొన్నాడు."
+        explanation: "The active sentence is in the present perfect tense. The passive form uses 'has/have been + past participle'. Hence, 'has been arrested' is correct."
     },
     {
-        question: "విగోట్స్కీ ప్రకారం భాష ప్రధానంగా దేనికి తోడ్పడుతుంది?",
+        question: "Choose the correct article.\n\nMy father is ____ MLA.",
+        options: ["a", "an", "the", "No article"],
+        correct: 1,
+        explanation: "The abbreviation 'MLA' begins with the vowel sound 'em'. Therefore, the correct article before it is 'an', not 'a'."
+    },
+    {
+        question: "Choose the correct question tag.\n\nOpen the window, ______?",
+        options: ["will you", "shall we", "don't you", "do you"],
+        correct: 0,
+        explanation: "Imperative sentences requesting someone to do something usually take the question tag 'will you?' It is the standard tag used with commands and requests."
+    },
+    {
+        question: "Choose the correct active voice.\n\nThe homework will be checked by the teacher.",
         options: [
-            "శారీరక వికాసం",
-            "సంజ్ఞానాత్మక వికాసం",
-            "కండరాల వికాసం",
-            "ఇంద్రియ వికాసం"
+            "The teacher checks the homework.",
+            "The teacher will check the homework.",
+            "The teacher has checked the homework.",
+            "The teacher checked the homework."
         ],
         correct: 1,
-        explanation: "విగోట్స్కీ ప్రకారం భాష ఆలోచన, సమస్య పరిష్కారం మరియు సంజ్ఞానాత్మక వికాసానికి ప్రధాన సాధనం. సామాజిక పరస్పర చర్యలలో భాష కీలక పాత్ర పోషిస్తుంది."
+        explanation: "The passive sentence is in the future tense ('will be checked'). Its active form is 'will check'. The tense must remain unchanged during transformation."
     },
     {
-        question: "క్రింది జతలలో సరైనది కాదు.",
-        options: [
-            "కోహ్లర్ — అంతర్దృష్టి అభ్యసనం",
-            "థార్న్‌డైక్ — ట్రయల్ అండ్ ఎరర్",
-            "స్కిన్నర్ — క్లాసికల్ కండిషనింగ్",
-            "బండూరా — సామాజిక అభ్యసనం"
-        ],
+        question: "Choose the correct verb.\n\nMathematics ____ my favourite subject.",
+        options: ["are", "were", "is", "have"],
         correct: 2,
-        explanation: "స్కిన్నర్ ఆపరెంట్ కండిషనింగ్ సిద్ధాంతాన్ని ప్రతిపాదించాడు. క్లాసికల్ కండిషనింగ్ సిద్ధాంతాన్ని పావ్‌లావ్ ప్రతిపాదించినందున ఈ జత సరైనది కాదు."
+        explanation: "Although 'Mathematics' ends with 's', it is the name of a subject and is treated as singular. Therefore, it takes the singular verb 'is'."
     },
     {
-        question: "పియాజే ప్రకారం పిల్లలు తార్కికంగా ఆలోచించడం ప్రారంభించినప్పటికీ అమూర్త భావనలు పూర్తిగా అభివృద్ధి చెందని దశ ఏది?",
+        question: "Choose the correct passive voice.\n\nSomeone has stolen my bicycle.",
         options: [
-            "ఇంద్రియ-చలన",
-            "పూర్వ కార్యాచరణ",
-            "దృఢ కార్యాచరణ",
-            "సాంప్రదాయ కార్యాచరణ"
+            "My bicycle has stolen.",
+            "My bicycle has been stolen.",
+            "My bicycle was stolen.",
+            "My bicycle is stolen."
         ],
-        correct: 2,
-        explanation: "దృఢ కార్యాచరణ దశలో పిల్లలు స్పష్టమైన వస్తువులపై తార్కికంగా ఆలోచిస్తారు. అయితే అమూర్త భావనలు పూర్తిగా సాంప్రదాయ కార్యాచరణ దశలో అభివృద్ధి చెందుతాయి."
+        correct: 1,
+        explanation: "The sentence is in the present perfect tense. The passive voice is formed using 'has/have been + past participle'. Therefore, 'has been stolen' is correct."
     },
     {
-        question: "క్రింది వారిలో వ్యక్తిత్వాన్ని శరీరాకృతి ఆధారంగా వివరించిన మనోవిజ్ఞాన శాస్త్రవేత్త ఎవరు?",
+        question: "Choose the correct article.\n\nShe is ____ university student.",
+        options: ["a", "an", "the", "No article"],
+        correct: 0,
+        explanation: "The word 'university' begins with the consonant sound '/yuː/'. Since the sound is not a vowel sound, the correct article is 'a', making 'a university student' correct."
+    },
+    {
+        question: "Choose the correct article.\n\nHe is ____ European citizen.",
+        options: ["a", "an", "the", "No article"],
+        correct: 0,
+        explanation: "The word 'European' begins with the consonant sound /yuː/, not a vowel sound. Therefore, the correct article is 'a'. We use articles based on pronunciation, not spelling."
+    },
+    {
+        question: "Choose the correct article.\n\nShe gave me ____ useful suggestion.",
+        options: ["a", "an", "the", "No article"],
+        correct: 0,
+        explanation: "The word 'useful' begins with the consonant sound /yuː/. Since it does not begin with a vowel sound, the correct article is 'a'."
+    },
+    {
+        question: "Choose the correct question tag.\n\nYour brother is coming today, ______?",
+        options: ["isn't he", "doesn't he", "won't he", "is he"],
+        correct: 0,
+        explanation: "The statement is positive and uses the auxiliary verb 'is'. Therefore, the question tag should be negative using the same auxiliary: 'isn't he?'"
+    },
+    {
+        question: "Choose the correct question tag.\n\nNobody called you, ______?",
+        options: ["didn't they", "did they", "didn't he", "wasn't it"],
+        correct: 1,
+        explanation: "Words like 'nobody' make the statement negative in meaning. Therefore, the question tag must be positive: 'did they?' Singular indefinite pronouns usually take 'they' in question tags."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nThey are repairing the road.",
         options: [
-            "క్రెట్ష్మర్",
-            "గార్డ్నర్",
-            "స్టెర్న్‌బర్గ్",
-            "బ్రూనర్"
+            "The road is repaired.",
+            "The road is being repaired.",
+            "The road was repaired.",
+            "The road has been repaired."
+        ],
+        correct: 1,
+        explanation: "The sentence is in the present continuous tense. The passive voice is formed using 'is/am/are being + past participle'. Hence, 'is being repaired' is correct."
+    },
+    {
+        question: "Choose the correct active voice.\n\nThe prize was given to Meena by the principal.",
+        options: [
+            "The principal gave the prize to Meena.",
+            "The principal gives the prize to Meena.",
+            "The principal has given the prize to Meena.",
+            "The principal was giving the prize to Meena."
         ],
         correct: 0,
-        explanation: "క్రెట్ష్మర్ శరీర నిర్మాణాన్ని ఆధారంగా చేసుకొని వ్యక్తిత్వ రకాలను వర్గీకరించాడు. ఆయన సిద్ధాంతం శరీరాకృతి మరియు వ్యక్తిత్వం మధ్య సంబంధాన్ని వివరిస్తుంది."
+        explanation: "The passive sentence is in the simple past tense. Therefore, its active voice should also be in the simple past: 'The principal gave the prize to Meena.'"
+    },
+    {
+        question: "Choose the correct verb.\n\nThe list of names ____ on the table.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "The subject is 'list', which is singular. The phrase 'of names' only describes the subject. Therefore, the singular verb 'is' is correct."
+    },
+    {
+        question: "Choose the correct verb.\n\nBread and butter ____ my favourite breakfast.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "When two nouns joined by 'and' refer to one idea or one item, they take a singular verb. 'Bread and butter' is considered one meal."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nThe doctor is examining the patient.",
+        options: [
+            "The patient is examined.",
+            "The patient is being examined.",
+            "The patient was examined.",
+            "The patient has been examined."
+        ],
+        correct: 1,
+        explanation: "The active sentence is in the present continuous tense. The passive form is 'is/am/are being + past participle'. Hence, 'is being examined' is correct."
+    },
+    {
+        question: "Choose the correct article.\n\nShe waited for ____ hour.",
+        options: ["a", "an", "the", "No article"],
+        correct: 1,
+        explanation: "The word 'hour' begins with a silent 'h', so the pronunciation starts with a vowel sound. Therefore, the correct article is 'an'."
+    },
+    {
+        question: "Choose the correct question tag.\n\nI am late, ______?",
+        options: ["aren't I", "amn't I", "am I", "isn't I"],
+        correct: 0,
+        explanation: "The standard English question tag for 'I am' is 'aren't I?' even though it seems irregular. It is the accepted grammatical form."
+    },
+    {
+        question: "Choose the correct active voice.\n\nThe classroom is being decorated by the students.",
+        options: [
+            "The students decorate the classroom.",
+            "The students are decorating the classroom.",
+            "The students decorated the classroom.",
+            "The students have decorated the classroom."
+        ],
+        correct: 1,
+        explanation: "The passive sentence is in the present continuous tense. Therefore, its active form is also present continuous: 'are decorating'."
+    },
+    {
+        question: "Choose the correct verb.\n\nNeither of the answers ____ correct.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "The subject 'Neither' is singular. Therefore, it takes the singular verb 'is', regardless of the plural noun that follows."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nSomeone will invite you tomorrow.",
+        options: [
+            "You will invite tomorrow.",
+            "You will be invited tomorrow.",
+            "You are invited tomorrow.",
+            "You have been invited tomorrow."
+        ],
+        correct: 1,
+        explanation: "The future passive is formed using 'will be + past participle'. Therefore, 'You will be invited tomorrow' is the correct passive form."
+    },
+    {
+        question: "Choose the correct article.\n\nHe wants to become ____ IPS officer.",
+        options: ["a", "an", "the", "No article"],
+        correct: 1,
+        explanation: "The abbreviation 'IPS' begins with the vowel sound 'I'. Therefore, we use 'an' before it. The correct expression is 'an IPS officer'."
+    },
+    {
+        question: "Choose the correct question tag.\n\nEveryone enjoyed the movie, ______?",
+        options: ["didn't they", "did they", "didn't he", "wasn't it"],
+        correct: 0,
+        explanation: "The statement is positive, so it takes a negative tag. Indefinite pronouns like 'everyone' commonly take the pronoun 'they' in question tags."
+    },
+    {
+        question: "Choose the correct verb.\n\nTen kilometres ____ a long distance to walk.",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "When a distance, amount, or period of time is treated as a single unit, it takes a singular verb. Therefore, 'Ten kilometres is' is correct."
+    },
+    {
+        question: "Choose the correct active voice.\n\nThe meeting has been postponed by the committee.",
+        options: [
+            "The committee postponed the meeting.",
+            "The committee postpones the meeting.",
+            "The committee has postponed the meeting.",
+            "The committee had postponed the meeting."
+        ],
+        correct: 2,
+        explanation: "The passive sentence is in the present perfect tense. Therefore, the active voice should also be in the present perfect tense: 'has postponed'."
+    },
+    {
+        question: "Choose the correct passive voice.\n\nThe chef cooks delicious food.",
+        options: [
+            "Delicious food is cooked by the chef.",
+            "Delicious food was cooked by the chef.",
+            "Delicious food has been cooked by the chef.",
+            "Delicious food is being cooked by the chef."
+        ],
+        correct: 0,
+        explanation: "The active sentence is in the simple present tense. The passive voice uses 'is/am/are + past participle'. Hence, 'is cooked' is correct."
+    },
+    {
+        question: "Choose the correct article.\n\nThis is ____ unique opportunity.",
+        options: ["a", "an", "the", "No article"],
+        correct: 0,
+        explanation: "The word 'unique' begins with the consonant sound /yuː/. Since the pronunciation starts with a consonant sound, the correct article is 'a'."
     }
 ];
