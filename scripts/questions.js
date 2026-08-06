@@ -1,391 +1,606 @@
 const SUBJECTS = [
-    "English Grammer"
+    "Special Education"
 ];
 
 const QUESTIONS = [
     {
-        question: "Choose the correct article.\n\nRavi wants to become ____ engineer.",
-        options: ["a", "an", "the", "No article"],
-        correct: 1,
-        explanation: "The noun 'engineer' begins with a vowel sound (/e/). We use 'an' before words that start with vowel sounds, not simply vowel letters. Therefore, 'an engineer' is grammatically correct."
-    },
-    {
-        question: "Choose the correct article.\n\nThe Sun rises in ____ east.",
-        options: ["a", "an", "the", "No article"],
-        correct: 2,
-        explanation: "Names of directions used as specific geographical references take the definite article 'the'. Hence, the correct expression is 'the east', just like 'the west' or 'the north'."
-    },
-    {
-        question: "Choose the correct question tag.\n\nShe is a teacher, ______?",
-        options: ["isn't she", "doesn't she", "wasn't she", "is she"],
-        correct: 0,
-        explanation: "The statement is positive and uses the auxiliary verb 'is'. Therefore, the question tag must be negative and use the same auxiliary: 'isn't she?' This follows standard question tag rules."
-    },
-    {
-        question: "Choose the correct question tag.\n\nThey don't play cricket, ______?",
-        options: ["don't they", "do they", "didn't they", "aren't they"],
-        correct: 1,
-        explanation: "A negative statement requires a positive question tag. Since the auxiliary is 'do', the correct positive tag is 'do they?' maintaining the same tense and subject."
-    },
-    {
-        question: "Choose the correct passive voice.\n\nThey built the bridge in 2020.",
+        question: "వ్యక్తిగత విద్యా ప్రణాళిక (IEP)లో తప్పనిసరిగా ఉండవలసిన అంశం ఏది?",
         options: [
-            "The bridge built in 2020.",
-            "The bridge was built in 2020.",
-            "The bridge is built in 2020.",
-            "The bridge has built in 2020."
+            "విషయ సూచిక",
+            "విద్యార్థి వ్యక్తిగత లక్ష్యాలు",
+            "పాఠశాల నియమాలు",
+            "తల్లిదండ్రుల హాజరు పట్టిక"
         ],
         correct: 1,
-        explanation: "The active sentence is in the simple past tense. In passive voice, simple past changes to 'was/were + past participle'. Therefore, 'The bridge was built in 2020' is correct."
+        explanation:
+            "IEP ప్రతి విద్యార్థి యొక్క ప్రస్తుత పనితీరు, వ్యక్తిగత అవసరాలు, బలాలు మరియు నేర్చుకునే లక్ష్యాల ఆధారంగా రూపొందించబడుతుంది. అందులో వ్యక్తిగత విద్యా లక్ష్యాలు తప్పనిసరిగా ఉండాలి."
     },
     {
-        question: "Choose the correct active voice.\n\nThe letter was written by Rani.",
+        question: "క్రింది వాటిలో చదవడంలో ప్రధాన ఇబ్బంది కలిగించే అభ్యసన వైకల్యం ఏది?",
         options: [
-            "Rani wrote the letter.",
-            "Rani writes the letter.",
-            "Rani has written the letter.",
-            "Rani is writing the letter."
-        ],
-        correct: 0,
-        explanation: "The passive sentence uses 'was written', which is simple past passive. Its active form is simple past: 'Rani wrote the letter.' The tense must remain unchanged during transformation."
-    },
-    {
-        question: "Choose the correct verb.\n\nEach of the students ____ a notebook.",
-        options: ["have", "are having", "has", "were having"],
-        correct: 2,
-        explanation: "The subject 'Each' is singular even though it refers to many students. Singular subjects always take singular verbs. Hence, 'Each of the students has a notebook' is correct."
-    },
-    {
-        question: "Choose the correct verb.\n\nNeither the teacher nor the students ____ ready.",
-        options: ["is", "was", "are", "has"],
-        correct: 2,
-        explanation: "With 'neither...nor', the verb agrees with the noun nearest to it. Here, 'students' is plural and closest to the verb, so the plural verb 'are' is the correct choice."
-    },
-    {
-        question: "Choose the correct passive voice.\n\nThe manager will announce the results tomorrow.",
-        options: [
-            "The results will announce tomorrow.",
-            "The results will be announced tomorrow.",
-            "The results are announced tomorrow.",
-            "The results have been announced tomorrow."
-        ],
-        correct: 1,
-        explanation: "Future tense passive voice is formed with 'will be + past participle'. Therefore, 'The results will be announced tomorrow' correctly changes the active sentence into passive voice."
-    },
-    {
-        question: "Choose the correct article.\n\nHonesty is ____ best policy.",
-        options: ["a", "an", "the", "No article"],
-        correct: 2,
-        explanation: "Superlative adjectives such as 'best', 'highest', and 'greatest' are normally preceded by the definite article 'the'. Hence, the correct phrase is 'the best policy'."
-    },
-    {
-        question: "Choose the correct question tag.\n\nLet's go for a walk, ______?",
-        options: ["shall we", "will we", "do we", "don't we"],
-        correct: 0,
-        explanation: "Sentences beginning with 'Let's' express a suggestion. The standard question tag used after such sentences is 'shall we?' making it the correct grammatical choice."
-    },
-    {
-        question: "Choose the correct active voice.\n\nThe work has been completed by the workers.",
-        options: [
-            "The workers completed the work.",
-            "The workers have completed the work.",
-            "The workers complete the work.",
-            "The workers had completed the work."
-        ],
-        correct: 1,
-        explanation: "The passive sentence is in the present perfect tense ('has been completed'). Its active form is 'have completed' because the subject 'workers' is plural. The tense remains unchanged."
-    },
-    {
-        question: "Choose the correct verb.\n\nOne of my friends ____ coming today.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "The subject is 'One', which is singular. Although 'friends' is plural, the verb agrees with 'One'. Therefore, the correct sentence is 'One of my friends is coming today.'"
-    },
-    {
-        question: "Choose the correct passive voice.\n\nPeople speak English all over the world.",
-        options: [
-            "English is spoken all over the world.",
-            "English was spoken all over the world.",
-            "English has spoken all over the world.",
-            "English speaks all over the world."
-        ],
-        correct: 0,
-        explanation: "The active sentence is in the simple present tense. Its passive form uses 'is/am/are + past participle'. Therefore, 'English is spoken all over the world' is correct."
-    },
-    {
-        question: "Choose the correct article.\n\nHe bought ____ umbrella yesterday.",
-        options: ["a", "an", "the", "No article"],
-        correct: 1,
-        explanation: "The word 'umbrella' begins with a vowel sound. We use the indefinite article 'an' before words that start with vowel sounds. Hence, 'an umbrella' is the correct expression."
-    },
-    {
-        question: "Choose the correct article.\n\nShe adopted ____ honest approach to solve the problem.",
-        options: ["a", "an", "the", "No article"],
-        correct: 1,
-        explanation: "The word 'honest' begins with a silent 'h', so it starts with a vowel sound. We use 'an' before words that begin with vowel sounds. Therefore, 'an honest approach' is correct."
-    },
-    {
-        question: "Choose the correct article.\n\nMount Everest is ____ highest peak in the world.",
-        options: ["a", "an", "the", "No article"],
-        correct: 2,
-        explanation: "Superlative adjectives like 'highest', 'best', and 'largest' are always preceded by the definite article 'the'. Hence, 'the highest peak' is the correct expression."
-    },
-    {
-        question: "Choose the correct question tag.\n\nYou can swim, ______?",
-        options: ["can't you", "can you", "don't you", "won't you"],
-        correct: 0,
-        explanation: "The statement is positive and uses the modal auxiliary 'can'. Therefore, the question tag must be negative with the same auxiliary: 'can't you?'"
-    },
-    {
-        question: "Choose the correct question tag.\n\nHe hasn't finished his homework, ______?",
-        options: ["hasn't he", "has he", "did he", "does he"],
-        correct: 1,
-        explanation: "A negative statement takes a positive question tag. Since the auxiliary verb is 'has', the correct tag is 'has he?'"
-    },
-    {
-        question: "Choose the correct passive voice.\n\nThe students are cleaning the classroom.",
-        options: [
-            "The classroom is cleaned by the students.",
-            "The classroom is being cleaned by the students.",
-            "The classroom was cleaned by the students.",
-            "The classroom has been cleaned by the students."
-        ],
-        correct: 1,
-        explanation: "The sentence is in the present continuous tense. Its passive form is 'is/am/are being + past participle'. Therefore, 'is being cleaned' is correct."
-    },
-    {
-        question: "Choose the correct active voice.\n\nThe match was won by our team.",
-        options: [
-            "Our team won the match.",
-            "Our team wins the match.",
-            "Our team has won the match.",
-            "Our team is winning the match."
-        ],
-        correct: 0,
-        explanation: "The passive sentence is in the simple past tense. While changing it into active voice, the tense remains unchanged. Hence, 'Our team won the match.'"
-    },
-    {
-        question: "Choose the correct verb.\n\nThe quality of these books ____ excellent.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "The subject is 'quality', which is singular. The phrase 'of these books' only modifies the subject and does not affect verb agreement. Therefore, 'is' is correct."
-    },
-    {
-        question: "Choose the correct verb.\n\nEither the boys or the principal ____ attending the meeting.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "With 'either...or', the verb agrees with the subject nearest to it. Here, 'principal' is singular, so the correct verb is 'is'."
-    },
-    {
-        question: "Choose the correct passive voice.\n\nThe police have arrested the thief.",
-        options: [
-            "The thief has arrested.",
-            "The thief has been arrested.",
-            "The thief was arrested.",
-            "The thief is arrested."
-        ],
-        correct: 1,
-        explanation: "The active sentence is in the present perfect tense. The passive form uses 'has/have been + past participle'. Hence, 'has been arrested' is correct."
-    },
-    {
-        question: "Choose the correct article.\n\nMy father is ____ MLA.",
-        options: ["a", "an", "the", "No article"],
-        correct: 1,
-        explanation: "The abbreviation 'MLA' begins with the vowel sound 'em'. Therefore, the correct article before it is 'an', not 'a'."
-    },
-    {
-        question: "Choose the correct question tag.\n\nOpen the window, ______?",
-        options: ["will you", "shall we", "don't you", "do you"],
-        correct: 0,
-        explanation: "Imperative sentences requesting someone to do something usually take the question tag 'will you?' It is the standard tag used with commands and requests."
-    },
-    {
-        question: "Choose the correct active voice.\n\nThe homework will be checked by the teacher.",
-        options: [
-            "The teacher checks the homework.",
-            "The teacher will check the homework.",
-            "The teacher has checked the homework.",
-            "The teacher checked the homework."
-        ],
-        correct: 1,
-        explanation: "The passive sentence is in the future tense ('will be checked'). Its active form is 'will check'. The tense must remain unchanged during transformation."
-    },
-    {
-        question: "Choose the correct verb.\n\nMathematics ____ my favourite subject.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "Although 'Mathematics' ends with 's', it is the name of a subject and is treated as singular. Therefore, it takes the singular verb 'is'."
-    },
-    {
-        question: "Choose the correct passive voice.\n\nSomeone has stolen my bicycle.",
-        options: [
-            "My bicycle has stolen.",
-            "My bicycle has been stolen.",
-            "My bicycle was stolen.",
-            "My bicycle is stolen."
-        ],
-        correct: 1,
-        explanation: "The sentence is in the present perfect tense. The passive voice is formed using 'has/have been + past participle'. Therefore, 'has been stolen' is correct."
-    },
-    {
-        question: "Choose the correct article.\n\nShe is ____ university student.",
-        options: ["a", "an", "the", "No article"],
-        correct: 0,
-        explanation: "The word 'university' begins with the consonant sound '/yuː/'. Since the sound is not a vowel sound, the correct article is 'a', making 'a university student' correct."
-    },
-    {
-        question: "Choose the correct article.\n\nHe is ____ European citizen.",
-        options: ["a", "an", "the", "No article"],
-        correct: 0,
-        explanation: "The word 'European' begins with the consonant sound /yuː/, not a vowel sound. Therefore, the correct article is 'a'. We use articles based on pronunciation, not spelling."
-    },
-    {
-        question: "Choose the correct article.\n\nShe gave me ____ useful suggestion.",
-        options: ["a", "an", "the", "No article"],
-        correct: 0,
-        explanation: "The word 'useful' begins with the consonant sound /yuː/. Since it does not begin with a vowel sound, the correct article is 'a'."
-    },
-    {
-        question: "Choose the correct question tag.\n\nYour brother is coming today, ______?",
-        options: ["isn't he", "doesn't he", "won't he", "is he"],
-        correct: 0,
-        explanation: "The statement is positive and uses the auxiliary verb 'is'. Therefore, the question tag should be negative using the same auxiliary: 'isn't he?'"
-    },
-    {
-        question: "Choose the correct question tag.\n\nNobody called you, ______?",
-        options: ["didn't they", "did they", "didn't he", "wasn't it"],
-        correct: 1,
-        explanation: "Words like 'nobody' make the statement negative in meaning. Therefore, the question tag must be positive: 'did they?' Singular indefinite pronouns usually take 'they' in question tags."
-    },
-    {
-        question: "Choose the correct passive voice.\n\nThey are repairing the road.",
-        options: [
-            "The road is repaired.",
-            "The road is being repaired.",
-            "The road was repaired.",
-            "The road has been repaired."
-        ],
-        correct: 1,
-        explanation: "The sentence is in the present continuous tense. The passive voice is formed using 'is/am/are being + past participle'. Hence, 'is being repaired' is correct."
-    },
-    {
-        question: "Choose the correct active voice.\n\nThe prize was given to Meena by the principal.",
-        options: [
-            "The principal gave the prize to Meena.",
-            "The principal gives the prize to Meena.",
-            "The principal has given the prize to Meena.",
-            "The principal was giving the prize to Meena."
-        ],
-        correct: 0,
-        explanation: "The passive sentence is in the simple past tense. Therefore, its active voice should also be in the simple past: 'The principal gave the prize to Meena.'"
-    },
-    {
-        question: "Choose the correct verb.\n\nThe list of names ____ on the table.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "The subject is 'list', which is singular. The phrase 'of names' only describes the subject. Therefore, the singular verb 'is' is correct."
-    },
-    {
-        question: "Choose the correct verb.\n\nBread and butter ____ my favourite breakfast.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "When two nouns joined by 'and' refer to one idea or one item, they take a singular verb. 'Bread and butter' is considered one meal."
-    },
-    {
-        question: "Choose the correct passive voice.\n\nThe doctor is examining the patient.",
-        options: [
-            "The patient is examined.",
-            "The patient is being examined.",
-            "The patient was examined.",
-            "The patient has been examined."
-        ],
-        correct: 1,
-        explanation: "The active sentence is in the present continuous tense. The passive form is 'is/am/are being + past participle'. Hence, 'is being examined' is correct."
-    },
-    {
-        question: "Choose the correct article.\n\nShe waited for ____ hour.",
-        options: ["a", "an", "the", "No article"],
-        correct: 1,
-        explanation: "The word 'hour' begins with a silent 'h', so the pronunciation starts with a vowel sound. Therefore, the correct article is 'an'."
-    },
-    {
-        question: "Choose the correct question tag.\n\nI am late, ______?",
-        options: ["aren't I", "amn't I", "am I", "isn't I"],
-        correct: 0,
-        explanation: "The standard English question tag for 'I am' is 'aren't I?' even though it seems irregular. It is the accepted grammatical form."
-    },
-    {
-        question: "Choose the correct active voice.\n\nThe classroom is being decorated by the students.",
-        options: [
-            "The students decorate the classroom.",
-            "The students are decorating the classroom.",
-            "The students decorated the classroom.",
-            "The students have decorated the classroom."
-        ],
-        correct: 1,
-        explanation: "The passive sentence is in the present continuous tense. Therefore, its active form is also present continuous: 'are decorating'."
-    },
-    {
-        question: "Choose the correct verb.\n\nNeither of the answers ____ correct.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "The subject 'Neither' is singular. Therefore, it takes the singular verb 'is', regardless of the plural noun that follows."
-    },
-    {
-        question: "Choose the correct passive voice.\n\nSomeone will invite you tomorrow.",
-        options: [
-            "You will invite tomorrow.",
-            "You will be invited tomorrow.",
-            "You are invited tomorrow.",
-            "You have been invited tomorrow."
-        ],
-        correct: 1,
-        explanation: "The future passive is formed using 'will be + past participle'. Therefore, 'You will be invited tomorrow' is the correct passive form."
-    },
-    {
-        question: "Choose the correct article.\n\nHe wants to become ____ IPS officer.",
-        options: ["a", "an", "the", "No article"],
-        correct: 1,
-        explanation: "The abbreviation 'IPS' begins with the vowel sound 'I'. Therefore, we use 'an' before it. The correct expression is 'an IPS officer'."
-    },
-    {
-        question: "Choose the correct question tag.\n\nEveryone enjoyed the movie, ______?",
-        options: ["didn't they", "did they", "didn't he", "wasn't it"],
-        correct: 0,
-        explanation: "The statement is positive, so it takes a negative tag. Indefinite pronouns like 'everyone' commonly take the pronoun 'they' in question tags."
-    },
-    {
-        question: "Choose the correct verb.\n\nTen kilometres ____ a long distance to walk.",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "When a distance, amount, or period of time is treated as a single unit, it takes a singular verb. Therefore, 'Ten kilometres is' is correct."
-    },
-    {
-        question: "Choose the correct active voice.\n\nThe meeting has been postponed by the committee.",
-        options: [
-            "The committee postponed the meeting.",
-            "The committee postpones the meeting.",
-            "The committee has postponed the meeting.",
-            "The committee had postponed the meeting."
+            "డిస్గ్రాఫియా",
+            "డిస్కాల్కులియా",
+            "డిస్లెక్సియా",
+            "డైస్ప్రాక్సియా"
         ],
         correct: 2,
-        explanation: "The passive sentence is in the present perfect tense. Therefore, the active voice should also be in the present perfect tense: 'has postponed'."
+        explanation:
+            "డిస్లెక్సియా ప్రధానంగా చదవడం, పదాలను గుర్తించడం, స్పెల్లింగ్ మరియు ధ్వని-అక్షర సంబంధాన్ని అర్థం చేసుకోవడంలో నిరంతర ఇబ్బందులను కలిగించే అభ్యసన వైకల్యం."
     },
     {
-        question: "Choose the correct passive voice.\n\nThe chef cooks delicious food.",
+        question: "అక్షరాలను సరిగా వ్రాయలేకపోవడం, చేతిరాత బలహీనంగా ఉండడం ప్రధాన లక్షణం ఏది?",
         options: [
-            "Delicious food is cooked by the chef.",
-            "Delicious food was cooked by the chef.",
-            "Delicious food has been cooked by the chef.",
-            "Delicious food is being cooked by the chef."
+            "డిస్లెక్సియా",
+            "డిస్గ్రాఫియా",
+            "డిస్కాల్కులియా",
+            "ADHD"
+        ],
+        correct: 1,
+        explanation:
+            "డిస్గ్రాఫియా వ్రాత నైపుణ్యాలను ప్రభావితం చేస్తుంది. అక్షరాల నిర్మాణం, స్పెల్లింగ్, చేతిరాత స్పష్టత మరియు వ్రాయడంలో సమన్వయం బలహీనంగా కనిపిస్తాయి."
+    },
+    {
+        question: "సంఖ్యా భావనలు మరియు గణిత గణనల్లో నిరంతర ఇబ్బందులు కనిపించే పరిస్థితి ఏది?",
+        options: [
+            "డిస్గ్రాఫియా",
+            "డిస్లెక్సియా",
+            "డిస్కాల్కులియా",
+            "అఫేసియా"
+        ],
+        correct: 2,
+        explanation:
+            "డిస్కాల్కులియా సంఖ్యల అవగాహన, గణిత భావనలు, లెక్కలు చేయడం మరియు గణిత సమస్యలను పరిష్కరించడంలో నిరంతర ఇబ్బందులను కలిగించే అభ్యసన వైకల్యం."
+    },
+    {
+        question: "ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD) ఉన్న పిల్లల్లో తరచుగా కనిపించే లక్షణం ఏది?",
+        options: [
+            "ఎకోలాలియా",
+            "బ్రెయిల్ పఠనం",
+            "స్పూనరిజం",
+            "డిప్లోపియా"
         ],
         correct: 0,
-        explanation: "The active sentence is in the simple present tense. The passive voice uses 'is/am/are + past participle'. Hence, 'is cooked' is correct."
+        explanation:
+            "ఎకోలాలియా అంటే ఇతరులు చెప్పిన పదాలు లేదా వాక్యాలను పునరావృతం చేయడం. ఇది ASD ఉన్న కొంతమంది పిల్లల్లో సాధారణంగా కనిపించే కమ్యూనికేషన్ లక్షణం."
     },
     {
-        question: "Choose the correct article.\n\nThis is ____ unique opportunity.",
-        options: ["a", "an", "the", "No article"],
+        question: "హియరింగ్ ఎయిడ్ ఉపయోగించే విద్యార్థిని సాధారణ తరగతిలో ఎక్కడ కూర్చోబెట్టడం ఉత్తమం?",
+        options: [
+            "చివరి వరుసలో",
+            "కిటికీ దగ్గర",
+            "ఉపాధ్యాయునికి సమీపంలోని ముందు వరుసలో",
+            "తలుపు దగ్గర"
+        ],
+        correct: 2,
+        explanation:
+            "హియరింగ్ ఎయిడ్ ఉపయోగించే విద్యార్థిని ఉపాధ్యాయునికి సమీపంలో ముందు వరుసలో కూర్చోబెడితే శబ్దం స్పష్టంగా వినిపించి పెదవుల కదలికలను కూడా సులభంగా గమనించగలరు."
+    },
+    {
+        question: "దృష్టి తీక్షణతను (Visual Acuity) కొలవడానికి ఉపయోగించే పరికరం ఏది?",
+        options: [
+            "బ్రెయిల్ స్లేట్",
+            "JAWS",
+            "స్నెలెన్ చార్ట్",
+            "ఆడియోమీటర్"
+        ],
+        correct: 2,
+        explanation:
+            "స్నెలెన్ చార్ట్ దూర దృష్టి తీక్షణతను పరీక్షించడానికి ఉపయోగించే ప్రామాణిక పరికరం. ఇది వ్యక్తి ఎంత స్పష్టంగా చూడగలడో అంచనా వేయడంలో సహాయపడుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో మేధో వైకల్యం (Intellectual Disability) యొక్క ముఖ్య లక్షణం ఏది?",
+        options: [
+            "కేవలం వినికిడి లోపం",
+            "అనుకూల ప్రవర్తనలో పరిమితులు",
+            "కేవలం చూపు లోపం",
+            "కేవలం వ్రాతలో ఇబ్బంది"
+        ],
+        correct: 1,
+        explanation:
+            "మేధో వైకల్యంలో మేధస్సు పనితీరుతో పాటు స్వీయ సంరక్షణ, సామాజిక నైపుణ్యాలు, దైనందిన జీవన నైపుణ్యాల వంటి అనుకూల ప్రవర్తనలో కూడా పరిమితులు ఉంటాయి."
+    },
+    {
+        question: "\"beautiful\" అనే పదాన్ని విద్యార్థి పదేపదే \"dueatiful\"గా వ్రాస్తున్నాడు. ఇది ప్రధానంగా దేనిని సూచిస్తుంది?",
+        options: [
+            "డిస్లెక్సియా",
+            "డిస్గ్రాఫియా",
+            "అభ్యసన వైకల్యం",
+            "మేధో వైకల్యం"
+        ],
+        correct: 2,
+        explanation:
+            "ఒకే రకమైన స్పెల్లింగ్ తప్పులు పదేపదే కనిపించడం చదవడం-వ్రాయడం ప్రక్రియలో లోపాన్ని సూచిస్తుంది. ఇది అభ్యసన వైకల్యానికి ముఖ్యమైన సంకేతంగా పరిగణించబడుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో దృష్టి లోపం ఉన్న విద్యార్థుల కోసం రూపొందించిన స్క్రీన్ రీడర్ సాఫ్ట్‌వేర్ ఏది?",
+        options: [
+            "Windows",
+            "PowerPoint",
+            "JAWS",
+            "Paint"
+        ],
+        correct: 2,
+        explanation:
+            "JAWS ఒక ప్రముఖ స్క్రీన్ రీడర్ సాఫ్ట్‌వేర్. ఇది స్క్రీన్‌పై ఉన్న సమాచారాన్ని శబ్ద రూపంలో చదివి దృష్టి లోపం ఉన్నవారికి కంప్యూటర్ వినియోగాన్ని సులభతరం చేస్తుంది."
+    },
+    {
+        question: "ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD) ఉన్న విద్యార్థికి బోధనలో అత్యంత ప్రభావవంతమైన విధానం ఏది?",
+        options: [
+            "స్పష్టమైన దృశ్య సూచనలు మరియు క్రమబద్ధమైన దినచర్య",
+            "నిరంతరం మౌఖిక ఉపన్యాసం",
+            "కేవలం పరీక్షల ఆధారిత బోధన",
+            "పెద్ద సమూహ చర్చలు మాత్రమే"
+        ],
         correct: 0,
-        explanation: "The word 'unique' begins with the consonant sound /yuː/. Since the pronunciation starts with a consonant sound, the correct article is 'a'."
+        explanation:
+            "ASD ఉన్న విద్యార్థులు దృశ్య సూచనలు, స్థిరమైన దినచర్య మరియు ముందుగా అంచనా వేయగల తరగతి వాతావరణంలో మెరుగ్గా నేర్చుకుంటారు మరియు ఆందోళన తగ్గుతుంది."
+    },
+    {
+        question: "వ్యక్తిగత విద్యా ప్రణాళిక (IEP) సిద్ధం చేసే సమయంలో ముందుగా గుర్తించవలసినది ఏది?",
+        options: [
+            "పాఠ్యపుస్తక అధ్యాయాలు",
+            "విద్యార్థి బలాలు మరియు అవసరాలు",
+            "వార్షిక పరీక్ష తేదీలు",
+            "పాఠశాల బడ్జెట్"
+        ],
+        correct: 1,
+        explanation:
+            "IEP రూపొందించే ముందు విద్యార్థి ప్రస్తుత పనితీరు, బలాలు, అవసరాలు మరియు నేర్చుకునే స్థాయిని సమగ్రంగా అంచనా వేయడం అత్యంత ముఖ్యమైన దశ."
+    },
+    {
+        question: "డిస్లెక్సియా ప్రధానంగా ఏ నైపుణ్యాన్ని ప్రభావితం చేస్తుంది?",
+        options: [
+            "శ్రవణ సామర్థ్యం",
+            "చదవడం",
+            "నడక",
+            "చూపు"
+        ],
+        correct: 1,
+        explanation:
+            "డిస్లెక్సియా ప్రధానంగా చదవడం, పదాలను గుర్తించడం, ధ్వని-అక్షర సంబంధాన్ని అర్థం చేసుకోవడం మరియు స్పెల్లింగ్ నైపుణ్యాలను ప్రభావితం చేసే అభ్యసన వైకల్యం."
+    },
+    {
+        question: "క్రింది వాటిలో అభ్యసన వైకల్యం (Learning Disability)కు సరైన జత ఏది?",
+        options: [
+            "డిస్లెక్సియా – గణితం",
+            "డిస్కాల్కులియా – సంఖ్యా భావనలు",
+            "డిస్గ్రాఫియా – వినికిడి",
+            "డైస్ప్రాక్సియా – దృష్టి తీక్షణత"
+        ],
+        correct: 1,
+        explanation:
+            "డిస్కాల్కులియా సంఖ్యలు, గణిత భావనలు మరియు లెక్కల నైపుణ్యాలకు సంబంధించిన అభ్యసన వైకల్యం. అందువల్ల ఇది సరైన జతగా పరిగణించబడుతుంది."
+    },
+    {
+        question: "సమగ్ర విద్య (Inclusive Education) యొక్క ప్రధాన లక్ష్యం ఏమిటి?",
+        options: [
+            "ప్రత్యేక అవసరాలున్న విద్యార్థులను ప్రత్యేక పాఠశాలలకు మాత్రమే పంపడం",
+            "అన్ని విద్యార్థులకు సమాన విద్యా అవకాశాలు కల్పించడం",
+            "పరీక్షల సంఖ్యను తగ్గించడం",
+            "పాఠ్యపుస్తకాలను సరళీకరించడం"
+        ],
+        correct: 1,
+        explanation:
+            "సమగ్ర విద్య లక్ష్యం అన్ని విద్యార్థులు, ప్రత్యేక అవసరాలు ఉన్నవారితో సహా, ఒకే విద్యా వాతావరణంలో సమాన అవకాశాలతో నేర్చుకునేలా చేయడం."
+    },
+    {
+        question: "వ్యక్తిగత విద్యా ప్రణాళిక (IEP) రూపొందించే బృందంలో ముఖ్య సభ్యుడు ఎవరు?",
+        options: [
+            "కేవలం ప్రధానోపాధ్యాయుడు",
+            "కేవలం ప్రత్యేక విద్యా ఉపాధ్యాయుడు",
+            "విద్యార్థి, తల్లిదండ్రులు మరియు సంబంధిత నిపుణులు",
+            "కేవలం వైద్యుడు"
+        ],
+        correct: 2,
+        explanation:
+            "IEP బహుళశాఖల బృందం ద్వారా రూపొందించబడుతుంది. ఇందులో విద్యార్థి, తల్లిదండ్రులు, ప్రత్యేక ఉపాధ్యాయులు, సాధారణ ఉపాధ్యాయులు మరియు అవసరమైన నిపుణులు కలిసి విద్యా ప్రణాళికను సిద్ధం చేస్తారు."
+    },
+    {
+        question: "క్రింది వాటిలో ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD)కు సంబంధించిన ముఖ్య లక్షణం ఏది?",
+        options: [
+            "సామాజిక పరస్పర చర్యలో ఇబ్బంది",
+            "అధిక శారీరక ఎత్తు",
+            "సంపూర్ణ వినికిడి లోపం",
+            "పూర్తిగా దృష్టి కోల్పోవడం"
+        ],
+        correct: 0,
+        explanation:
+            "ASD ఉన్న పిల్లల్లో సామాజిక పరస్పర చర్యలు, సంభాషణ నైపుణ్యాలు మరియు ప్రవర్తనా నమూనాల్లో ఇబ్బందులు కనిపిస్తాయి. ఇవి ఆటిజం యొక్క ప్రధాన లక్షణాలుగా పరిగణించబడతాయి."
+    },
+    {
+        question: "26–40 dB వినికిడి నష్టం కలిగిన వ్యక్తి ఏ వర్గానికి చెందుతాడు?",
+        options: [
+            "స్వల్ప వినికిడి లోపం",
+            "మధ్యస్థ వినికిడి లోపం",
+            "తీవ్రమైన వినికిడి లోపం",
+            "అత్యంత తీవ్రమైన వినికిడి లోపం"
+        ],
+        correct: 0,
+        explanation:
+            "26–40 dB వరకు వినికిడి నష్టం ఉన్న వ్యక్తిని స్వల్ప (Mild) Hearing Loss వర్గంలో చేర్చుతారు. సాధారణ సంభాషణలో కొంత ఇబ్బంది ఎదురయ్యే అవకాశం ఉంటుంది."
+    },
+    {
+        question: "బ్రెయిల్ లిపిని ప్రధానంగా ఉపయోగించేవారు ఎవరు?",
+        options: [
+            "వినికిడి లోపం గల విద్యార్థులు",
+            "దృష్టి లోపం గల విద్యార్థులు",
+            "అభ్యసన వైకల్యం గల విద్యార్థులు",
+            "మేధో వైకల్యం గల విద్యార్థులు"
+        ],
+        correct: 1,
+        explanation:
+            "బ్రెయిల్ ఒక స్పర్శ ఆధారిత లిపి. ఇది దృష్టి లోపం లేదా అంధత్వం ఉన్న వ్యక్తులు చదవడానికి, వ్రాయడానికి మరియు స్వతంత్రంగా నేర్చుకోవడానికి ఉపయోగపడుతుంది."
+    },
+    {
+        question: "డిస్గ్రాఫియా ప్రధానంగా ఏ నైపుణ్యాన్ని ప్రభావితం చేస్తుంది?",
+        options: [
+            "గణిత గణనలు",
+            "వ్రాత నైపుణ్యం",
+            "వినికిడి",
+            "దృష్టి"
+        ],
+        correct: 1,
+        explanation:
+            "డిస్గ్రాఫియా వల్ల చేతిరాత స్పష్టత తగ్గడం, అక్షరాల నిర్మాణంలో లోపాలు, స్పెల్లింగ్ తప్పులు మరియు లిఖిత వ్యక్తీకరణలో ఇబ్బందులు కనిపిస్తాయి."
+    },
+    {
+        question: "క్రింది వాటిలో వ్యక్తిగత విద్యా ప్రణాళిక (IEP) యొక్క వార్షిక సమీక్ష ఉద్దేశ్యం ఏమిటి?",
+        options: [
+            "పాఠశాల ఫీజు నిర్ణయించడం",
+            "విద్యార్థి పురోగతిని సమీక్షించి లక్ష్యాలను సవరించడం",
+            "ఉపాధ్యాయుల బదిలీలు నిర్ణయించడం",
+            "పరీక్షల షెడ్యూల్ ప్రకటించడం"
+        ],
+        correct: 1,
+        explanation:
+            "IEP వార్షిక సమీక్షలో విద్యార్థి పురోగతిని పరిశీలించి, సాధించిన లక్ష్యాలను అంచనా వేసి అవసరమైతే కొత్త లక్ష్యాలు మరియు సేవలను సవరించి నిర్ణయిస్తారు."
+    },
+    {
+        question: "క్రింది వాటిలో డిస్కాల్కులియా లక్షణం ఏది?",
+        options: [
+            "అక్షరాలను గుర్తించలేకపోవడం",
+            "సంఖ్యా భావనలు అర్థం చేసుకోవడంలో ఇబ్బంది",
+            "మాటలు స్పష్టంగా పలకలేకపోవడం",
+            "వినికిడి తగ్గడం"
+        ],
+        correct: 1,
+        explanation:
+            "డిస్కాల్కులియా సంఖ్యల అవగాహన, గణిత భావనలు, లెక్కలు చేయడం మరియు గణిత సమస్యలను పరిష్కరించడంలో నిరంతర ఇబ్బందులను కలిగిస్తుంది."
+    },
+    {
+        question: "వినికిడి లోపం ఉన్న విద్యార్థికి ఉపాధ్యాయుడు మాట్లాడేటప్పుడు ముఖ్యంగా పాటించాల్సింది ఏమిటి?",
+        options: [
+            "బోర్డు వైపు తిరిగి మాట్లాడటం",
+            "ముఖం విద్యార్థి వైపు ఉంచి స్పష్టంగా మాట్లాడటం",
+            "చాలా వేగంగా మాట్లాడటం",
+            "కేవలం వ్రాత సూచనలు ఇవ్వడం"
+        ],
+        correct: 1,
+        explanation:
+            "విద్యార్థి ఉపాధ్యాయుని పెదవుల కదలికలు మరియు ముఖాభినయాలను గమనించేలా ముఖాముఖిగా, స్పష్టమైన ఉచ్చారణతో మరియు సహజ వేగంతో మాట్లాడాలి."
+    },
+    {
+        question: "అభ్యసన వైకల్యం (Learning Disability) సాధారణంగా ఏ అంశాన్ని ప్రభావితం చేస్తుంది?",
+        options: [
+            "చదవడం, వ్రాయడం లేదా గణితం",
+            "కంటి రంగు",
+            "శరీర ఎత్తు",
+            "రక్త గ్రూపు"
+        ],
+        correct: 0,
+        explanation:
+            "అభ్యసన వైకల్యం ప్రధానంగా చదవడం, వ్రాయడం, స్పెల్లింగ్, గణితం వంటి విద్యా నైపుణ్యాలను ప్రభావితం చేస్తుంది. ఇది మేధస్సు లోపాన్ని సూచించదు."
+    },
+    {
+        question: "JAWS సాఫ్ట్‌వేర్ యొక్క ప్రధాన ఉపయోగం ఏమిటి?",
+        options: [
+            "గణిత బోధన",
+            "శ్రవణ పరీక్ష",
+            "కంప్యూటర్ స్క్రీన్‌ను ధ్వని రూపంలో చదవడం",
+            "వినికిడి యంత్రాన్ని పరీక్షించడం"
+        ],
+        correct: 2,
+        explanation:
+            "JAWS ఒక స్క్రీన్ రీడర్. ఇది కంప్యూటర్ స్క్రీన్‌పై ఉన్న సమాచారాన్ని శబ్దం లేదా బ్రెయిల్ డిస్ప్లే ద్వారా అందించి దృష్టి లోపం ఉన్నవారికి సహాయపడుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో ఏది అభ్యసన వైకల్యం కాదు?",
+        options: [
+            "డిస్లెక్సియా",
+            "డిస్గ్రాఫియా",
+            "డిస్కాల్కులియా",
+            "గ్లాకోమా"
+        ],
+        correct: 3,
+        explanation:
+            "గ్లాకోమా ఒక కంటి వ్యాధి. ఇది దృష్టిని ప్రభావితం చేస్తుంది. డిస్లెక్సియా, డిస్గ్రాఫియా మరియు డిస్కాల్కులియా మాత్రమే అభ్యసన వైకల్యాలుగా పరిగణించబడతాయి."
+    },
+    {
+        question: "మేధో వైకల్యం (Intellectual Disability) నిర్ధారణలో ముఖ్యంగా పరిగణించబడే రెండు అంశాలు ఏవి?",
+        options: [
+            "ఎత్తు మరియు బరువు",
+            "IQ మరియు అనుకూల ప్రవర్తన",
+            "చూపు మరియు వినికిడి",
+            "రక్తపోటు మరియు వయస్సు"
+        ],
+        correct: 1,
+        explanation:
+            "మేధో వైకల్యం నిర్ధారణలో మేధస్సు పనితీరు (IQ)తో పాటు దైనందిన జీవన నైపుణ్యాలు మరియు అనుకూల ప్రవర్తనను కూడా తప్పనిసరిగా అంచనా వేస్తారు."
+    },
+    {
+        question: "ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD) ఉన్న విద్యార్థులకు బోధనలో అత్యంత అనుకూలమైనది ఏది?",
+        options: [
+            "నిరంతర మార్పులు",
+            "స్థిరమైన దినచర్య",
+            "పెద్ద తరగతిలో మాత్రమే బోధన",
+            "కేవలం మౌఖిక పరీక్షలు"
+        ],
+        correct: 1,
+        explanation:
+            "స్థిరమైన దినచర్య మరియు ముందుగా అంచనా వేయగల తరగతి వాతావరణం ASD ఉన్న విద్యార్థులకు భద్రత భావన కల్పించి అభ్యాసాన్ని మెరుగుపరుస్తుంది."
+    },
+    {
+        question: "క్రింది వాటిలో ఏది సహాయక సాంకేతిక పరికరం (Assistive Technology)?",
+        options: [
+            "బ్రెయిల్ డిస్ప్లే",
+            "బ్లాక్‌బోర్డు",
+            "చాక్",
+            "హాజరు రిజిస్టర్"
+        ],
+        correct: 0,
+        explanation:
+            "బ్రెయిల్ డిస్ప్లే ఒక సహాయక సాంకేతిక పరికరం. ఇది కంప్యూటర్ లేదా మొబైల్ సమాచారాన్ని బ్రెయిల్ రూపంలో చూపించి దృష్టి లోపం ఉన్నవారికి సహాయపడుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో సమగ్ర విద్య (Inclusive Education) యొక్క ముఖ్య ఉద్దేశ్యం ఏది?",
+        options: [
+            "ప్రత్యేక అవసరాలున్న విద్యార్థులను వేరు చేయడం",
+            "అన్ని విద్యార్థులకు సమాన భాగస్వామ్యంతో విద్య అందించడం",
+            "ప్రత్యేక పాఠశాలలను మాత్రమే ప్రోత్సహించడం",
+            "పరీక్షల సంఖ్యను తగ్గించడం"
+        ],
+        correct: 1,
+        explanation:
+            "సమగ్ర విద్య ప్రతి విద్యార్థికి సమాన అవకాశాలు, సమాన భాగస్వామ్యం మరియు అవసరమైన మద్దతుతో ఒకే విద్యా వాతావరణంలో నాణ్యమైన విద్యను అందించడాన్ని లక్ష్యంగా పెట్టుకుంటుంది."
+    },
+    {
+        question: "క్రింది వాటిలో వ్యక్తిగత విద్యా ప్రణాళిక (IEP) ప్రధాన ఉద్దేశ్యం ఏది?",
+        options: [
+            "పాఠశాల నిర్వహణను సులభతరం చేయడం",
+            "ప్రతి విద్యార్థి అవసరాలకు అనుగుణంగా విద్యా ప్రణాళిక రూపొందించడం",
+            "పరీక్షల సంఖ్యను తగ్గించడం",
+            "ఉపాధ్యాయుల పనిభారం తగ్గించడం"
+        ],
+        correct: 1,
+        explanation:
+            "IEP ప్రతి విద్యార్థి వ్యక్తిగత అవసరాలు, ప్రస్తుత పనితీరు, బలాలు మరియు అభ్యాస లక్ష్యాలను దృష్టిలో ఉంచుకొని రూపొందించే వ్యక్తిగత విద్యా ప్రణాళిక. ఇది సమర్థవంతమైన బోధనకు మార్గదర్శకంగా ఉంటుంది."
+    },
+    {
+        question: "క్రింది వాటిలో అభ్యసన వైకల్యాల (Learning Disabilities) సమూహానికి చెందనిది ఏది?",
+        options: [
+            "డిస్లెక్సియా",
+            "డిస్గ్రాఫియా",
+            "డిస్కాల్కులియా",
+            "సెరిబ్రల్ పాల్సీ"
+        ],
+        correct: 3,
+        explanation:
+            "సెరిబ్రల్ పాల్సీ ప్రధానంగా శారీరక మరియు కదలికలకు సంబంధించిన వైకల్యం. డిస్లెక్సియా, డిస్గ్రాఫియా, డిస్కాల్కులియా మాత్రమే అభ్యసన వైకల్యాల కింద వర్గీకరించబడతాయి."
+    },
+    {
+        question: "విద్యార్థి \"15 + 8\" వంటి సాధారణ గణనలను కూడా పదేపదే తప్పుగా చేస్తున్నాడు. ఇది ప్రధానంగా దేనిని సూచిస్తుంది?",
+        options: [
+            "డిస్గ్రాఫియా",
+            "డిస్లెక్సియా",
+            "డిస్కాల్కులియా",
+            "ADHD"
+        ],
+        correct: 2,
+        explanation:
+            "సంఖ్యల అవగాహన, లెక్కలు చేయడం, గణిత భావనలు అర్థం చేసుకోవడంలో నిరంతర ఇబ్బందులు డిస్కాల్కులియా లక్షణాలు. ఇది గణితానికి సంబంధించిన అభ్యసన వైకల్యం."
+    },
+    {
+        question: "ఆటిజం స్పెక్ట్రమ్ డిజార్డర్ (ASD) ఉన్న పిల్లలకు బోధనలో అత్యంత ఉపయోగకరమైనది ఏది?",
+        options: [
+            "దృశ్య షెడ్యూల్ (Visual Schedule)",
+            "ప్రతిరోజూ మారే దినచర్య",
+            "పెద్ద సమూహ చర్చ",
+            "మౌఖిక పరీక్షలు మాత్రమే"
+        ],
+        correct: 0,
+        explanation:
+            "Visual Schedule ద్వారా రోజువారీ కార్యక్రమాలు స్పష్టంగా అర్థమవుతాయి. ఇది ASD ఉన్న విద్యార్థులలో ఆందోళన తగ్గించి స్వతంత్రంగా కార్యకలాపాలు పూర్తి చేయడంలో సహాయపడుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో శ్రవణ శిక్షణ (Auditory Training) యొక్క ప్రధాన ఉద్దేశ్యం ఏది?",
+        options: [
+            "చూపును మెరుగుపరచడం",
+            "మిగిలిన వినికిడి సామర్థ్యాన్ని అభివృద్ధి చేయడం",
+            "చేతిరాతను మెరుగుపరచడం",
+            "గణిత నైపుణ్యాలను పెంపొందించడం"
+        ],
+        correct: 1,
+        explanation:
+            "Auditory Training ద్వారా మిగిలి ఉన్న వినికిడి సామర్థ్యాన్ని సమర్థవంతంగా ఉపయోగించుకోవడం, శబ్దాలను గుర్తించడం మరియు భాషా అభివృద్ధిని ప్రోత్సహించడం ప్రధాన లక్ష్యం."
+    },
+    {
+        question: "RPWD Act–2016 ప్రకారం దృష్టి లోపం ఉన్న విద్యార్థికి పరీక్షలో అవసరమైతే అందించగల సౌకర్యం ఏది?",
+        options: [
+            "శిక్ష తగ్గింపు",
+            "స్క్రైబ్ (Scribe) సౌకర్యం",
+            "ప్రశ్నాపత్రం రద్దు",
+            "ప్రత్యేక మార్కులు"
+        ],
+        correct: 1,
+        explanation:
+            "RPWD Act–2016 ప్రకారం అర్హత కలిగిన దృష్టి లోపం ఉన్న విద్యార్థులకు పరీక్షల సమయంలో స్క్రైబ్ సౌకర్యం వంటి తగిన పరీక్షా సౌకర్యాలు కల్పించవచ్చు."
+    },
+    {
+        question: "క్రింది వాటిలో మేధో వైకల్యం (Intellectual Disability) ఉన్న విద్యార్థికి అత్యంత అనుకూలమైన బోధనా విధానం ఏది?",
+        options: [
+            "చిన్న చిన్న దశలుగా బోధించడం",
+            "ఒకేసారి ఎక్కువ సమాచారం ఇవ్వడం",
+            "కేవలం ఉపన్యాస పద్ధతి",
+            "పరీక్షల ద్వారా మాత్రమే బోధించడం"
+        ],
+        correct: 0,
+        explanation:
+            "Task Analysis ద్వారా పాఠాన్ని చిన్న చిన్న దశలుగా విభజించి బోధించడం మేధో వైకల్యం ఉన్న విద్యార్థులకు సులభంగా అర్థమయ్యే ప్రభావవంతమైన పద్ధతి."
+    },
+    {
+        question: "క్రింది వాటిలో Learning Disability యొక్క సరైన లక్షణం ఏది?",
+        options: [
+            "సాధారణ మేధస్సు ఉన్నప్పటికీ విద్యా నైపుణ్యాలలో ఇబ్బంది",
+            "సంపూర్ణ వినికిడి లోపం",
+            "సంపూర్ణ దృష్టి లోపం",
+            "ఎల్లప్పుడూ తక్కువ IQ"
+        ],
+        correct: 0,
+        explanation:
+            "Learning Disability ఉన్న విద్యార్థులకు సాధారణ లేదా అంతకంటే ఎక్కువ మేధస్సు ఉండవచ్చు. అయితే చదవడం, వ్రాయడం లేదా గణితంలో నిర్దిష్ట ఇబ్బందులు కనిపిస్తాయి."
+    },
+    {
+        question: "బ్రెయిల్ లిపిని రూపొందించిన వ్యక్తి ఎవరు?",
+        options: [
+            "లూయిస్ బ్రెయిల్",
+            "హెలెన్ కెల్లర్",
+            "శామ్యూల్ కిర్క్",
+            "జీన్ ఇటార్డ్"
+        ],
+        correct: 0,
+        explanation:
+            "లూయిస్ బ్రెయిల్ దృష్టి లోపం ఉన్నవారి కోసం బ్రెయిల్ లిపిని రూపొందించారు. ప్రపంచవ్యాప్తంగా అంధులు మరియు దృష్టి లోపం ఉన్నవారు దీనిని ఉపయోగిస్తున్నారు."
+    },
+    {
+        question: "డిఫరెన్షియల్ అసెస్‌మెంట్ (Differential Assessment) ప్రధానంగా ఏ సందర్భంలో ఉపయోగిస్తారు?",
+        options: [
+            "ఆటిజం స్పెక్ట్రమ్ డిజార్డర్‌ను ఇతర అభివృద్ధి సమస్యల నుండి వేరు గుర్తించడానికి",
+            "పరీక్ష మార్కులు లెక్కించడానికి",
+            "హాజరు నమోదు చేయడానికి",
+            "ఉపాధ్యాయుల మూల్యాంకనానికి"
+        ],
+        correct: 0,
+        explanation:
+            "Differential Assessment ద్వారా ASD వంటి పరిస్థితులను ఇతర అభివృద్ధి లేదా ప్రవర్తనా సమస్యల నుండి ఖచ్చితంగా వేరు చేసి సరైన నిర్ధారణకు ఉపయోగిస్తారు."
+    },
+    {
+        question: "డిస్లెక్సియా ప్రధానంగా ఏ నైపుణ్యాన్ని ప్రభావితం చేస్తుంది?",
+        options: [
+            "చదవడం",
+            "వినికిడి",
+            "చూపు",
+            "సమతుల్యత"
+        ],
+        correct: 0,
+        explanation:
+            "డిస్లెక్సియా ప్రధానంగా చదవడం, పదాలను గుర్తించడం, ధ్వని-అక్షర సంబంధాన్ని అర్థం చేసుకోవడం మరియు స్పెల్లింగ్ నైపుణ్యాలను ప్రభావితం చేసే అభ్యసన వైకల్యం."
+    },
+    {
+        question: "Speech Reading (Lip Reading) ఎక్కువగా ఎవరికి ఉపయోగపడుతుంది?",
+        options: [
+            "వినికిడి లోపం ఉన్నవారికి",
+            "దృష్టి లోపం ఉన్నవారికి",
+            "మేధో వైకల్యం ఉన్నవారికి",
+            "డిస్కాల్కులియా ఉన్నవారికి"
+        ],
+        correct: 0,
+        explanation:
+            "Speech Reading లేదా Lip Reading ద్వారా పెదవుల కదలికలు, ముఖాభినయాలను గమనించి మాటలను అర్థం చేసుకోవచ్చు. ఇది వినికిడి లోపం ఉన్నవారికి ఎంతో ఉపయోగకరంగా ఉంటుంది."
+    },
+    {
+        question: "స్క్రీన్ రీడర్‌గా పనిచేసే సాఫ్ట్‌వేర్ ఏది?",
+        options: [
+            "JAWS",
+            "MS Excel",
+            "Canva",
+            "Paint"
+        ],
+        correct: 0,
+        explanation:
+            "JAWS ప్రముఖ Screen Reader సాఫ్ట్‌వేర్. ఇది స్క్రీన్‌పై ఉన్న సమాచారాన్ని శబ్దం లేదా బ్రెయిల్ డిస్ప్లే ద్వారా అందించి దృష్టి లోపం ఉన్నవారికి సహాయపడుతుంది."
+    },
+    {
+        question: "డిస్గ్రాఫియా ప్రధానంగా దేనికి సంబంధించినది?",
+        options: [
+            "చదవడం",
+            "వ్రాయడం",
+            "వినికిడి",
+            "మాట్లాడడం"
+        ],
+        correct: 1,
+        explanation:
+            "డిస్గ్రాఫియా వ్రాత నైపుణ్యాలకు సంబంధించిన అభ్యసన వైకల్యం. చేతిరాత, అక్షరాల నిర్మాణం, స్పెల్లింగ్ మరియు లిఖిత వ్యక్తీకరణలో ఇబ్బందులు కనిపిస్తాయి."
+    },
+    {
+        question: "IEP లక్ష్యాలు ఎలా ఉండాలి?",
+        options: [
+            "అస్పష్టంగా",
+            "కొలవగలిగే విధంగా",
+            "ఉపాధ్యాయుని అభిప్రాయం ఆధారంగా మాత్రమే",
+            "సంవత్సరానికి ఒకసారి మాత్రమే నిర్ణయించాలి"
+        ],
+        correct: 1,
+        explanation:
+            "IEP లక్ష్యాలు స్పష్టంగా, కొలవగలిగే విధంగా, సాధ్యమైనవిగా మరియు విద్యార్థి అవసరాలకు అనుగుణంగా ఉండాలి. తద్వారా పురోగతిని సులభంగా అంచనా వేయవచ్చు."
+    },
+    {
+        question: "క్రింది వాటిలో ASD విద్యార్థిలో కనిపించే లక్షణం ఏది?",
+        options: [
+            "పరిమిత ఆసక్తులు మరియు పునరావృత ప్రవర్తనలు",
+            "ఎల్లప్పుడూ అధిక IQ",
+            "కేవలం వినికిడి లోపం",
+            "కేవలం దృష్టి లోపం"
+        ],
+        correct: 0,
+        explanation:
+            "ASD ఉన్న విద్యార్థుల్లో పరిమిత ఆసక్తులు, పునరావృత ప్రవర్తనలు మరియు ఒకే విధమైన దినచర్యపై ఎక్కువ ఆసక్తి సాధారణంగా కనిపించే ముఖ్య లక్షణాలు."
+    },
+    {
+        question: "డిస్కాల్కులియా ఉన్న విద్యార్థికి గణితం బోధించేటప్పుడు ఉత్తమ పద్ధతి ఏది?",
+        options: [
+            "Concrete వస్తువులతో బోధించడం",
+            "కేవలం సూత్రాలు కంఠస్థం చేయించడం",
+            "పెద్ద పరీక్షలు నిర్వహించడం",
+            "ఎక్కువ హోంవర్క్ ఇవ్వడం"
+        ],
+        correct: 0,
+        explanation:
+            "Concrete వస్తువులు, మానిప్యులేటివ్స్ మరియు దృశ్య ఆధారాలతో గణితాన్ని బోధించడం ద్వారా డిస్కాల్కులియా ఉన్న విద్యార్థులకు భావనలు సులభంగా అర్థమవుతాయి."
+    },
+    {
+        question: "హియరింగ్ ఎయిడ్ యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
+        options: [
+            "వినికిడి సామర్థ్యాన్ని మెరుగుపరచడం",
+            "చూపును మెరుగుపరచడం",
+            "మాట్లాడే వేగాన్ని పెంచడం",
+            "చేతిరాతను మెరుగుపరచడం"
+        ],
+        correct: 0,
+        explanation:
+            "Hearing Aid శబ్దాలను పెంచి వినిపించడం ద్వారా మిగిలిన వినికిడి సామర్థ్యాన్ని మెరుగ్గా ఉపయోగించుకునేలా సహాయపడే సహాయక పరికరం."
+    },
+    {
+        question: "క్రింది వాటిలో Assistive Technology కి ఉదాహరణ ఏది?",
+        options: [
+            "బ్రెయిల్ నోట్ టేకర్",
+            "హాజరు రిజిస్టర్",
+            "బ్లాక్‌బోర్డు",
+            "చాక్"
+        ],
+        correct: 0,
+        explanation:
+            "బ్రెయిల్ నోట్ టేకర్ ఒక Assistive Technology పరికరం. ఇది దృష్టి లోపం ఉన్నవారికి డిజిటల్ సమాచారం నమోదు చేయడం మరియు చదవడంలో సహాయపడుతుంది."
+    },
+    {
+        question: "సమగ్ర విద్య (Inclusive Education) యొక్క ప్రాథమిక సూత్రం ఏది?",
+        options: [
+            "ప్రత్యేక అవసరాలున్న విద్యార్థులను వేరు బోధించడం",
+            "అందరికీ సమాన భాగస్వామ్యంతో విద్య కల్పించడం",
+            "ప్రత్యేక పాఠశాలలలో మాత్రమే విద్య అందించడం",
+            "వికలాంగులకే ప్రత్యేక పాఠ్యాంశాలు రూపొందించడం"
+        ],
+        correct: 1,
+        explanation:
+            "సమగ్ర విద్య ప్రతి విద్యార్థికి సమాన అవకాశాలు, భాగస్వామ్యం మరియు అవసరమైన మద్దతుతో ఒకే విద్యా వాతావరణంలో నాణ్యమైన విద్యను అందించడాన్ని ప్రోత్సహిస్తుంది."
     }
 ];
