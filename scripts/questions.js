@@ -1,5 +1,5 @@
 const SUBJECTS = [
-    "Special Education"
+    "All Special Education Subjects"
 ];
 
 const QUESTIONS = [
