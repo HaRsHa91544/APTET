@@ -13,7 +13,7 @@
 ══════════════════════════════════════════════════ */
 
 /* ─── CONSTANTS ──────────────────────────────── */
-const EXAM_DATE = new Date('2026-08-12T00:00:00');
+const EXAM_DATE = new Date('2026-10-10T00:00:00');
 const SECS_PER_Q = 60;
 const CIRCUMFERENCE = 2 * Math.PI * 26; // ≈ 163.4
 
