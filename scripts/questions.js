@@ -4,333 +4,333 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: "ASD నిర్ధారణలో ప్రధానంగా పరిగణించబడే రెండు ప్రాథమిక లక్షణాల విభాగాలు ఏవి?",
+        question: "శ్రవణ లోపాన్ని ప్రారంభ దశలో గుర్తించడం (Early Identification) యొక్క ముఖ్య ఉద్దేశ్యం ఏది?",
         options: [
-            "మేధస్సు లోపం మరియు అనుకూల ప్రవర్తన లోపం",
-            "సామాజిక కమ్యూనికేషన్ లోపాలు మరియు పరిమిత/పునరావృత ప్రవర్తనా విధానాలు",
-            "శ్రవణ లోపం మరియు దృష్టి లోపం",
-            "జ్ఞాపకశక్తి లోపం మరియు భాషా ఉచ్చారణ లోపం"
+            "శ్రవణ లోపం ఉన్న ప్రతి విద్యార్థికి ఒకే బోధనా విధానాన్ని నిర్ణయించడం",
+            "అవసరమైన మూల్యాంకనం మరియు ప్రారంభ జోక్యాన్ని సకాలంలో ప్రారంభించడం",
+            "విద్యార్థి విద్యా సామర్థ్యాన్ని మాత్రమే నిర్ణయించడం",
+            "కేవలం వృత్తి శిక్షణ అవసరాలను గుర్తించడం"
         ],
         correct: 1,
-        explanation: "ASDలో ప్రధాన లక్షణాలు రెండు విభాగాల్లో కనిపిస్తాయి: సామాజిక కమ్యూనికేషన్ మరియు సామాజిక పరస్పర చర్యలో లోపాలు, అలాగే పరిమితమైన లేదా పునరావృత ప్రవర్తనా విధానాలు."
+        explanation: "Early identification వల్ల hearing lossను త్వరగా నిర్ధారించి, అవసరమైన audiological assessment, language assessment మరియు early interventionను సరైన సమయంలో ప్రారంభించవచ్చు. ఇది భాషా, కమ్యూనికేషన్ మరియు విద్యా అభివృద్ధికి సహాయపడుతుంది."
     },
     {
-        question: "ASDలో ఇతరులు చూపిస్తున్న వస్తువు వైపు చూడటం, వస్తువును చూపిస్తూ ఇతరుల దృష్టిని ఆకర్షించడం వంటి సామర్థ్యాన్ని ప్రధానంగా ఏ పదంతో సూచిస్తారు?",
+        question: "Pure Tone Audiometry ద్వారా ప్రధానంగా ఏ అంశాన్ని అంచనా వేస్తారు?",
         options: [
-            "Joint Attention",
-            "Motor Planning",
-            "Self-Monitoring",
-            "Response Generalization"
+            "వివిధ frequencyల వద్ద వినికిడి threshold",
+            "భాష యొక్క వ్యాకరణ నిర్మాణం",
+            "మాట్లాడే పదాల అర్థాన్ని గ్రహించే సామర్థ్యం",
+            "speech productionలో articulation errors"
         ],
         correct: 0,
-        explanation: "Joint attention అనేది ఒక వస్తువు లేదా సంఘటనపై మరొక వ్యక్తితో దృష్టిని పంచుకోవడం. చూపించడం, చూడటం, దృష్టిని ఇతరులవైపు మళ్లించడం దీనిలో ముఖ్యమైన ప్రవర్తనలు."
+        explanation: "Pure Tone Audiometry వివిధ frequencies వద్ద వ్యక్తి వినగలిగే కనిష్ఠ శబ్ద తీవ్రతను, అంటే hearing thresholdను కొలుస్తుంది. దీనివల్ల hearing sensitivity మరియు degree of hearing loss అంచనా వేయబడతాయి."
     },
     {
-        question: "ఒక చిన్నారి ఇతరులు చెప్పిన పదాలు లేదా వాక్యాలను అర్థవంతమైన స్వతంత్ర సమాధానం ఇవ్వకుండా పదేపదే పునరావృతం చేస్తుంటే దీనిని ఏమంటారు?",
+        question: "Audiogramలో సాధారణంగా ఏ రెండు ప్రధాన పరిమాణాలు చూపబడతాయి?",
         options: [
-            "Aphasia",
-            "Dysphasia",
-            "Echolalia",
-            "Apraxia"
+            "Frequency మరియు intensity",
+            "Age మరియు IQ",
+            "Speech rate మరియు vocabulary",
+            "Duration మరియు language level"
+        ],
+        correct: 0,
+        explanation: "Audiogramలో horizontal axis సాధారణంగా frequencyని Hertzలో, vertical axis sound intensity లేదా hearing levelను decibelsలో చూపిస్తుంది. ఈ రెండు పరిమాణాలు hearing thresholdsను దృశ్యరూపంలో తెలియజేస్తాయి."
+    },
+    {
+        question: "శ్రవణ లోపం యొక్క degreeను నిర్ణయించడంలో సాధారణంగా ఏ అంశం ముఖ్యమైనది?",
+        options: [
+            "Hearing threshold",
+            "Reading speed",
+            "Speech intelligibility మాత్రమే",
+            "Expressive vocabulary మాత్రమే"
+        ],
+        correct: 0,
+        explanation: "Degree of hearing lossను నిర్ణయించడానికి ప్రధానంగా hearing thresholdsను ఉపయోగిస్తారు. వ్యక్తి వివిధ frequencies వద్ద ఎంత తీవ్రతతో శబ్దాన్ని వినగలుగుతున్నాడో thresholds సూచిస్తాయి మరియు loss severityను వర్గీకరించడంలో సహాయపడతాయి."
+    },
+    {
+        question: "Tympanometry ప్రధానంగా ఏ అంశాన్ని పరిశీలించడానికి ఉపయోగపడుతుంది?",
+        options: [
+            "Middle-ear function",
+            "Auditory memory",
+            "Speech articulation",
+            "Receptive vocabulary"
+        ],
+        correct: 0,
+        explanation: "Tympanometry middle-ear system యొక్క mechanical functioningను పరిశీలిస్తుంది. ముఖ్యంగా eardrum mobility, middle-ear pressure మరియు related conditionsను అంచనా వేయడానికి ఇది ఉపయోగించే objective audiological test."
+    },
+    {
+        question: "ఒక శిశువులో hearing lossను ప్రారంభ దశలో గుర్తించడానికి objective physiological screeningలో ఏది ఉపయోగించబడుతుంది?",
+        options: [
+            "Otoacoustic Emissions (OAE)",
+            "Peabody Picture Vocabulary Test",
+            "Goldman-Fristoe Test of Articulation",
+            "Vineland Adaptive Behavior Scales"
+        ],
+        correct: 0,
+        explanation: "OAE అనేది objective physiological screening method. ఇది cochlea, ముఖ్యంగా outer hair cells, sound stimulusకు ఉత్పత్తి చేసే emissionsను గుర్తిస్తుంది మరియు infantsలో early hearing screeningకు విస్తృతంగా ఉపయోగించబడుతుంది."
+    },
+    {
+        question: "Auditory Brainstem Response (ABR) పరీక్ష ప్రధానంగా ఏ అంశాన్ని అంచనా వేయడానికి ఉపయోగపడుతుంది?",
+        options: [
+            "Auditory pathwayలోని electrical responses",
+            "విద్యార్థి reading comprehension",
+            "Speech-language expressive ability",
+            "Classroom social interaction"
+        ],
+        correct: 0,
+        explanation: "ABR sound stimulusకు auditory nerve మరియు brainstem pathwaysలో ఏర్పడే electrical responsesను record చేస్తుంది. Behavioral response ఇవ్వలేని infantsలో hearing assessmentకు ఇది ముఖ్యమైన objective physiological measure."
+    },
+    {
+        question: "ఒక శిశువు sound stimulusకు behavioral response ఇవ్వలేని వయస్సులో ఉన్నప్పుడు hearing assessmentలో objective method ఉపయోగించడం యొక్క ప్రధాన ప్రయోజనం ఏది?",
+        options: [
+            "వ్యక్తి యొక్క subjective responseపై తక్కువ ఆధారపడటం",
+            "భాషా అభివృద్ధిని నేరుగా బోధించడం",
+            "articulation errorsను సరిచేయడం",
+            "విద్యా achievementను కొలవడం"
+        ],
+        correct: 0,
+        explanation: "Objective methods శిశువు చెప్పే లేదా చూపించే behavioral responseపై ఎక్కువగా ఆధారపడవు. అందువల్ల చిన్న వయస్సులో reliable physiological information పొందడానికి OAE మరియు ABR వంటి పరీక్షలు ఉపయోగపడతాయి."
+    },
+    {
+        question: "Speech audiometryలో Speech Reception Threshold (SRT) ప్రధానంగా ఏదిని సూచిస్తుంది?",
+        options: [
+            "మాటలను గుర్తించగలిగే కనిష్ఠ స్థాయి",
+            "గరిష్ఠంగా వినగలిగే frequency",
+            "articulation errors సంఖ్య",
+            "vocabulary size"
+        ],
+        correct: 0,
+        explanation: "Speech Reception Threshold అనేది వ్యక్తి speech materialను సాధారణంగా సగం సందర్భాల్లో గుర్తించగలిగే కనిష్ఠ presentation levelను సూచిస్తుంది. ఇది speech sensitivityను అంచనా వేయడానికి ఉపయోగపడుతుంది."
+    },
+    {
+        question: "శ్రవణ లోపం ఉన్న చిన్నారి మాటలను వింటున్నప్పుడు ఉపాధ్యాయుడు ముఖం స్పష్టంగా కనిపించేలా మాట్లాడటం ఎందుకు సహాయపడుతుంది?",
+        options: [
+            "Speech readingకు అవకాశం కల్పిస్తుంది",
+            "Hearing thresholdను తగ్గిస్తుంది",
+            "Middle-ear pressureను మారుస్తుంది",
+            "Auditory nerveను బలపరుస్తుంది"
+        ],
+        correct: 0,
+        explanation: "ఉపాధ్యాయుడి ముఖం స్పష్టంగా కనిపిస్తే విద్యార్థి lip movements, facial expressions మరియు ఇతర visual cuesను ఉపయోగించగలడు. ఇవి auditory informationను complement చేసి speech understandingను మెరుగుపరుస్తాయి."
+    },
+    {
+        question: "Speech reading ప్రధానంగా ఏ సమాచారాన్ని ఉపయోగించడంపై ఆధారపడి ఉంటుంది?",
+        options: [
+            "మాట్లాడేవారి ముఖం, పెదవులు మరియు సంబంధిత దృశ్య సంకేతాలు",
+            "కేవలం auditory threshold",
+            "కేవలం written language",
+            "కేవలం tactile stimulation"
+        ],
+        correct: 0,
+        explanation: "Speech readingలో మాట్లాడేవారి పెదవుల కదలికలు, ముఖ కదలికలు, expressions మరియు contextual visual cuesను ఉపయోగించి spoken messageను అర్థం చేసుకోవడానికి ప్రయత్నిస్తారు."
+    },
+    {
+        question: "Auditory Verbal Therapy (AVT) యొక్క ప్రధాన లక్ష్యం ఏది?",
+        options: [
+            "అందుబాటులో ఉన్న hearing ద్వారా spoken language అభివృద్ధిని ప్రోత్సహించడం",
+            "hearingను పూర్తిగా visual communicationతో భర్తీ చేయడం",
+            "విద్యార్థికి కేవలం sign vocabulary నేర్పడం",
+            "కేవలం articulation drills నిర్వహించడం"
+        ],
+        correct: 0,
+        explanation: "AVTలో అందుబాటులో ఉన్న hearingను hearing technologyతో maximize చేసి listening మరియు spoken language developmentను ప్రోత్సహిస్తారు. ప్రధానంగా auditory pathway ద్వారా spoken communication అభివృద్ధికి ప్రాధాన్యం ఇస్తుంది."
+    },
+    {
+        question: 'Auditory trainingలో "detection" దశ ప్రధానంగా దేనికి సంబంధించినది?',
+        options: [
+            "శబ్దం ఉందా లేదా గుర్తించడం",
+            "రెండు పదాల అర్థాన్ని పోల్చడం",
+            "వాక్యాన్ని చదవడం",
+            "వ్యాకరణ తప్పులను గుర్తించడం"
+        ],
+        correct: 0,
+        explanation: "Detection అనేది auditory trainingలో ప్రాథమిక listening skill. ఈ దశలో వ్యక్తి శబ్దం లేదా auditory stimulus ఉన్నదా లేదా లేదో గుర్తించడంపై ప్రధానంగా దృష్టి పెడతాడు."
+    },
+    {
+        question: "Auditory trainingలో discrimination దశలో విద్యార్థి ఏ సామర్థ్యాన్ని అభివృద్ధి చేస్తాడు?",
+        options: [
+            "రెండు auditory stimuli ఒకేలా ఉన్నాయా లేదా భిన్నంగా ఉన్నాయా గుర్తించడం",
+            "శబ్దం ఉందో లేదో మాత్రమే గుర్తించడం",
+            "మాట్లాడే వ్యక్తి ముఖాన్ని గుర్తించడం",
+            "రాతపూర్వక పదాలను వర్గీకరించడం"
+        ],
+        correct: 0,
+        explanation: "Auditory discriminationలో రెండు లేదా అంతకంటే ఎక్కువ sounds మధ్య similarities మరియు differencesను గుర్తించడం నేర్చుకుంటారు. ఇది detection కంటే ఉన్నతమైన listening skillగా పరిగణించబడుతుంది."
+    },
+    {
+        question: "Auditory trainingలో ఒక విద్యార్థి ఒక పదాన్ని విని దానిని చిత్రంతో సరిపోల్చగలుగుతున్నాడు. ఇది detection కంటే ఏ ఉన్నత స్థాయి auditory skillకు దగ్గరగా ఉంటుంది?",
+        options: [
+            "Identification",
+            "Awareness",
+            "Localization",
+            "Conditioning"
+        ],
+        correct: 0,
+        explanation: "Identificationలో విన్న auditory stimulusను తెలిసిన object, picture, word లేదా categoryతో అనుసంధానించి గుర్తిస్తారు. కాబట్టి pictureతో వినబడిన పదాన్ని సరిపోల్చడం identificationకు ఉదాహరణ."
+    },
+    {
+        question: "ఒక విద్యార్థి hearing aid ఉపయోగిస్తున్నప్పటికీ ఉపాధ్యాయుడి మాటలను classroomలో స్పష్టంగా వినలేకపోతున్నాడు. మొదట పరిశీలించాల్సిన classroom factor ఏది?",
+        options: [
+            "Background noise మరియు classroom acoustics",
+            "విద్యార్థి handwriting speed",
+            "విద్యార్థి mathematics achievement",
+            "textbook font size మాత్రమే"
+        ],
+        correct: 0,
+        explanation: "Hearing aid ఉపయోగిస్తున్నప్పటికీ classroom listening difficulty ఉంటే background noise, reverberation మరియు speaker distance వంటి acoustic factorsను మొదట పరిశీలించాలి. ఇవి speech clarityను గణనీయంగా ప్రభావితం చేస్తాయి."
+    },
+    {
+        question: "Classroom amplification system ఉపయోగించడం యొక్క ప్రధాన ఉద్దేశ్యం ఏది?",
+        options: [
+            "ఉపాధ్యాయుడి speech signalను విద్యార్థికి మరింత స్పష్టంగా అందించడం",
+            "విద్యార్థి hearing lossను వైద్యపరంగా తొలగించడం",
+            "విద్యార్థి language comprehensionను స్వయంచాలకంగా పెంచడం",
+            "speech articulationను స్వయంగా సరిచేయడం"
+        ],
+        correct: 0,
+        explanation: "Classroom amplification systems speaker's speech signalను విద్యార్థికి మరింత స్పష్టంగా మరియు consistentగా అందించడంలో సహాయపడతాయి. ఇవి distance మరియు environmental noise ప్రభావాన్ని తగ్గించి listening accessను మెరుగుపరుస్తాయి."
+    },
+    {
+        question: "FM/DM classroom system వంటి technology ప్రధానంగా ఏ సమస్యను తగ్గించడానికి సహాయపడుతుంది?",
+        options: [
+            "Speaker మరియు listener మధ్య దూరం, background noise వల్ల speech signal తగ్గిపోవడం",
+            "విద్యార్థి యొక్క visual acuity తగ్గిపోవడం",
+            "విద్యార్థి యొక్క fine-motor difficulty",
+            "written languageలో vocabulary deficit"
+        ],
+        correct: 0,
+        explanation: "FM/DM systems teacher's voiceను microphone ద్వారా నేరుగా receiverకు పంపుతాయి. దీనివల్ల speaker-listener distance, background noise మరియు room acoustics వల్ల speech signal degradation తగ్గుతుంది."
+    },
+    {
+        question: "Hearing aid యొక్క ప్రధాన విధి ఏది?",
+        options: [
+            "అందుబాటులో ఉన్న శబ్దాన్ని amplify చేసి వినికిడికి సహాయపడటం",
+            "auditory nerveను పునర్నిర్మించడం",
+            "speechను textగా స్వయంచాలకంగా మార్చడం",
+            "hearing lossకు శాశ్వత వైద్య చికిత్స అందించడం"
+        ],
+        correct: 0,
+        explanation: "Hearing aid incoming soundsను process చేసి amplify చేస్తుంది, తద్వారా మిగిలిన hearingను ఉపయోగించుకోవడానికి సహాయపడుతుంది. ఇది hearing lossను cure చేయదు లేదా auditory nerveను పునర్నిర్మించదు."
+    },
+    {
+        question: "Cochlear implant మరియు hearing aid మధ్య ప్రధాన తేడాను సరైన విధంగా తెలిపే వాక్యం ఏది?",
+        options: [
+            "Cochlear implant auditory systemను electrical stimulation ద్వారా stimulate చేస్తుంది; hearing aid శబ్దాన్ని amplify చేస్తుంది",
+            "రెండూ పూర్తిగా ఒకే విధంగా పనిచేస్తాయి",
+            "Hearing aid auditory nerveను నేరుగా stimulate చేస్తుంది; cochlear implant కేవలం amplification చేస్తుంది",
+            "Cochlear implant కేవలం classroom amplification deviceగా పనిచేస్తుంది"
+        ],
+        correct: 0,
+        explanation: "Hearing aid acoustic soundను amplify చేస్తుంది. Cochlear implant sound informationను electrical signalsగా encode చేసి cochlear structuresను bypassing ద్వారా auditory nerveకి electrical stimulation అందిస్తుంది."
+    },
+    {
+        question: "ఒక hearing-impaired విద్యార్థి మాట్లాడే పదాలను వింటున్నప్పుడు తరచుగా కొన్ని speech soundsను తప్పుగా ఉచ్చరిస్తున్నాడు. సమగ్ర assessmentలో ఏ అంశాన్ని ప్రత్యేకంగా అంచనా వేయాలి?",
+        options: [
+            "Speech production మరియు articulation",
+            "కేవలం visual acuity",
+            "కేవలం gross motor ability",
+            "కేవలం mathematical reasoning"
+        ],
+        correct: 0,
+        explanation: "Speech soundsను తప్పుగా ఉచ్చరించడం articulation లేదా speech production difficultyని సూచించవచ్చు. అందువల్ల comprehensive assessmentలో speech sound production, intelligibility మరియు related speech characteristicsను పరిశీలించాలి."
+    },
+    {
+        question: "Hearing impairment ఉన్న విద్యార్థి language assessmentలో receptive language మరియు expressive language రెండింటినీ పరిశీలించడం ఎందుకు అవసరం?",
+        options: [
+            "అర్థం చేసుకునే మరియు వ్యక్తీకరించే భాషా సామర్థ్యాలను వేర్వేరుగా గుర్తించడానికి",
+            "hearing thresholdను రెండుసార్లు కొలవడానికి",
+            "classroom acousticsను నిర్ణయించడానికి",
+            "hearing aid యొక్క battery lifeను అంచనా వేయడానికి"
+        ],
+        correct: 0,
+        explanation: "Receptive language ఇతరులు చెప్పిన లేదా చూపిన భాషను అర్థం చేసుకునే సామర్థ్యాన్ని సూచిస్తుంది. Expressive language వ్యక్తి తన ఆలోచనలను భాష ద్వారా వ్యక్తీకరించే సామర్థ్యాన్ని సూచిస్తుంది."
+    },
+    {
+        question: "ఒక విద్యార్థి ఉపాధ్యాయుడు చెప్పిన వాక్యాన్ని అర్థం చేసుకున్నప్పటికీ, తాను చెప్పదలచుకున్న విషయాన్ని సరైన grammatical structureతో వ్యక్తపరచలేకపోతున్నాడు. ఇది ప్రధానంగా ఏ assessment areaతో సంబంధం కలిగి ఉంటుంది?",
+        options: [
+            "Expressive language",
+            "Pure-tone threshold",
+            "Middle-ear function",
+            "Sound localization"
+        ],
+        correct: 0,
+        explanation: "తన ఆలోచనలను సరైన grammatical structureతో వ్యక్తపరచలేకపోవడం expressive language difficultyకి సంబంధించినది. ఇందులో vocabulary, grammar, sentence formulation మరియు verbal expression వంటి అంశాలు assessmentలో పరిశీలించబడతాయి."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి:\n\n1. Hearing assessmentలో audiological findings ముఖ్యమైనవి.\n2. Hearing impairment ఉన్న విద్యార్థికి language assessment కూడా అవసరం కావచ్చు.\n3. Audiogram ఒక్కటే విద్యార్థి యొక్క అన్ని educational needsను నిర్ణయిస్తుంది.\n\nసరైన సమాధానాన్ని గుర్తించండి.",
+        options: [
+            "1 మాత్రమే",
+            "2 మాత్రమే",
+            "1 మరియు 2 మాత్రమే",
+            "1, 2 మరియు 3"
         ],
         correct: 2,
-        explanation: "Echolalia అంటే ఇతరులు పలికిన పదాలు లేదా వాక్యాలను పునరావృతం చేయడం. ASDలో ఇది తక్షణంగా లేదా కొంత ఆలస్యంగా వినిపించే పునరావృత భాషగా కనిపించవచ్చు."
+        explanation: "Audiological findings hearing characteristicsను అర్థం చేసుకోవడానికి ముఖ్యమైనవి. Language assessment educational planningకు సహాయపడుతుంది. అయితే audiogram ఒక్కటే విద్యార్థి యొక్క పూర్తి educational needsను నిర్ణయించదు."
     },
     {
-        question: "ASDలో శబ్దం, వెలుతురు లేదా స్పర్శ వంటి ఉద్దీపనలకు సాధారణం కంటే అధికంగా స్పందించడం ఏ అంశానికి సంబంధించినది?",
+        question: "క్రింది వాటిలో hearing impairment ఉన్న విద్యార్థి కోసం classroom communicationను మెరుగుపరచే సరైన చర్యల సముదాయం ఏది?",
         options: [
-            "Sensory hyperreactivity",
-            "Semantic processing",
-            "Adaptive functioning",
-            "Expressive language delay"
-        ],
-        correct: 0,
-        explanation: "Sensory hyperreactivityలో శబ్దం, వెలుతురు, వాసన లేదా స్పర్శ వంటి sensory inputsకు వ్యక్తి సాధారణం కంటే అధికంగా స్పందించవచ్చు. ఇది ASDలో కనిపించే sensory లక్షణం."
-    },
-    {
-        question: "M-CHAT-R/F ప్రధానంగా ఏ ప్రయోజనం కోసం ఉపయోగించబడుతుంది?",
-        options: [
-            "ASDకు సంబంధించిన ప్రారంభ స్క్రీనింగ్ కోసం",
-            "మేధస్సు స్థాయిని కొలవడానికి",
-            "శ్రవణ లోపం తీవ్రతను నిర్ధారించడానికి",
-            "అనుకూల ప్రవర్తనను కొలవడానికి"
-        ],
-        correct: 0,
-        explanation: "M-CHAT-R/F చిన్న పిల్లల్లో autism spectrum disorder ప్రమాదాన్ని గుర్తించడానికి ఉపయోగించే ప్రారంభ screening సాధనం. ఇది నిర్ధారణ చేయదు; అవసరమైతే తదుపరి evaluationకు సహాయపడుతుంది."
-    },
-    {
-        question: "ADOS-2 యొక్క ప్రధాన లక్షణం ఏది?",
-        options: [
-            "తల్లిదండ్రులతో నిర్మిత ఇంటర్వ్యూ నిర్వహించడం",
-            "పిల్లవాడి ప్రత్యక్ష ప్రవర్తనా పరిశీలన ద్వారా ASD సంబంధిత లక్షణాలను అంచనా వేయడం",
-            "శ్రవణ పరిమితిని audiogram ద్వారా కొలవడం",
-            "విద్యా సాధనాన్ని ప్రామాణిక పరీక్ష ద్వారా కొలవడం"
+            "ఉపాధ్యాయుడు విద్యార్థికి వెనుకవైపు తిరిగి మాట్లాడటం, background noise పెంచడం",
+            "ముఖం స్పష్టంగా కనిపించేలా మాట్లాడటం, తగిన seating ఇవ్వడం, visual support ఉపయోగించడం",
+            "విద్యార్థిని అన్ని group activities నుండి తొలగించడం",
+            "కేవలం రాత పరీక్షలకే పరిమితం చేయడం"
         ],
         correct: 1,
-        explanation: "ADOS-2 అనేది Autism Diagnostic Observation Schedule, Second Edition. శిక్షణ పొందిన పరిశీలకుడు నిర్మిత కార్యకలాపాల సమయంలో వ్యక్తి సామాజిక మరియు కమ్యూనికేషన్ ప్రవర్తనలను ప్రత్యక్షంగా అంచనా వేస్తాడు."
+        explanation: "Face visibility, appropriate seating మరియు visual supports classroom communicationను మెరుగుపరుస్తాయి. ఇవి speech readingకు సహాయపడటంతో పాటు auditory informationను visual cuesతో complement చేసి learning accessను పెంచుతాయి."
     },
     {
-        question: "Autism Diagnostic Interview-Revised (ADI-R) ప్రధానంగా ఏ విధమైన అంచనా పద్ధతికి ఉదాహరణ?",
+        question: "క్రింది జతలలో సరైనది ఏది?",
         options: [
-            "ప్రత్యక్ష క్లినికల్ పరిశీలన",
-            "తల్లిదండ్రులు/సంరక్షకులతో నిర్మిత ఇంటర్వ్యూ",
-            "పనితీరు ఆధారిత విద్యా పరీక్ష",
-            "మోటార్ నైపుణ్యాల ప్రత్యక్ష కొలత"
-        ],
-        correct: 1,
-        explanation: "ADI-R అనేది autism లక్షణాల గురించి తల్లిదండ్రులు లేదా సంరక్షకుల నుంచి అభివృద్ధి చరిత్రను సేకరించే structured interview. ఇది diagnostic assessmentలో ముఖ్యమైన caregiver-based సమాచారం అందిస్తుంది."
-    },
-    {
-        question: "CARS-2 వంటి సాధనం ASD అంచనాలో ప్రధానంగా ఏ అంశాన్ని పరిశీలించడానికి ఉపయోగపడుతుంది?",
-        options: [
-            "ASD సంబంధిత ప్రవర్తనా లక్షణాలు మరియు వాటి తీవ్రత",
-            "కేవలం శ్రవణ threshold",
-            "కేవలం చదవడం మరియు రాయడం సామర్థ్యం",
-            "కేవలం వృత్తి నైపుణ్యాలు"
+            "Tympanometry — Middle-ear function",
+            "OAE — Reading comprehension",
+            "ABR — Expressive vocabulary",
+            "Pure Tone Audiometry — Speech articulation"
         ],
         correct: 0,
-        explanation: "CARS-2 అనేది Autism సంబంధిత లక్షణాలను మరియు వాటి తీవ్రతను అంచనా వేయడానికి ఉపయోగించే rating scale. సామాజిక, కమ్యూనికేషన్ మరియు ప్రవర్తనా లక్షణాలు ఇందులో పరిగణించబడతాయి."
+        explanation: "Tympanometry middle-ear functionను అంచనా వేస్తుంది. OAE cochlear emissionsను, ABR auditory pathway electrical responsesను పరిశీలిస్తాయి. Pure Tone Audiometry hearing thresholdsను కొలుస్తుంది, articulationను కాదు."
     },
     {
-        question: "ఒక ASD విద్యార్థి ఉపాధ్యాయుడు చెప్పిన ప్రశ్నకు సమాధానం ఇవ్వకుండా అదే ప్రశ్నను తిరిగి పలుకుతున్నాడు. ఈ సందర్భంలో ఉపాధ్యాయుడు ముందుగా ఏ అంశాన్ని పరిశీలించడం అత్యంత సముచితం?",
+        question: "కింది వాటిని సరైన సంబంధంతో సరిపోల్చండి.\n\nColumn-I\nA. Hearing Aid\nB. Cochlear Implant\nC. FM/DM System\nD. Speech Reading\n\nColumn-II\n1. Visual speech cues ఉపయోగించడం\n2. Amplified acoustic signal అందించడం\n3. Electrical stimulation ద్వారా auditory pathwayను stimulate చేయడం\n4. Speaker's signalను listenerకు మెరుగ్గా అందించడం",
         options: [
-            "అతను ఉద్దేశపూర్వకంగా అవిధేయత చూపుతున్నాడని నిర్ణయించడం",
-            "పునరావృత మాటల వెనుక ఉన్న కమ్యూనికేషన్ ఉద్దేశాన్ని గుర్తించడం",
-            "మాట్లాడకుండా పూర్తిగా నిరోధించడం",
-            "ప్రతి సందర్భంలో శిక్షను ఉపయోగించడం"
-        ],
-        correct: 1,
-        explanation: "Echolalia కొన్నిసార్లు కమ్యూనికేషన్ ఉద్దేశాన్ని కలిగి ఉండవచ్చు. అందువల్ల ఉపాధ్యాయుడు ప్రవర్తనను అవిధేయతగా భావించకుండా, విద్యార్థి ఏమి వ్యక్తపరచాలనుకుంటున్నాడో ముందుగా పరిశీలించాలి."
-    },
-    {
-        question: "Applied Behaviour Analysis (ABA)లో ఒక ప్రవర్తనకు ముందు జరిగే పరిస్థితిని సాధారణంగా ఏ పదంతో సూచిస్తారు?",
-        options: [
-            "Consequence",
-            "Antecedent",
-            "Reinforcer",
-            "Prompt"
-        ],
-        correct: 1,
-        explanation: "ABAలో Antecedent అనేది ప్రవర్తనకు ముందు జరిగే సంఘటన, పరిస్థితి లేదా ఉద్దీపన. Behavior తరువాత జరిగేది consequenceగా పిలుస్తారు. ఈ ABC నమూనా ప్రవర్తన విశ్లేషణలో ఉపయోగపడుతుంది."
-    },
-    {
-        question: "ఒక ASD విద్యార్థి సరైన అభ్యర్థన చేసిన వెంటనే ఉపాధ్యాయుడు అతనికి ఇష్టమైన కార్యకలాపాన్ని అందిస్తున్నాడు. ఫలితంగా ఆ అభ్యర్థనా ప్రవర్తన పెరిగింది. ఇది ఏ సూత్రానికి ఉదాహరణ?",
-        options: [
-            "Positive reinforcement",
-            "Response cost",
-            "Extinction",
-            "Negative punishment"
+            "A-2, B-3, C-4, D-1",
+            "A-3, B-2, C-1, D-4",
+            "A-4, B-1, C-3, D-2",
+            "A-1, B-4, C-2, D-3"
         ],
         correct: 0,
-        explanation: "Positive reinforcementలో ప్రవర్తన తరువాత ఇష్టమైన ఉద్దీపనను అందించడం ద్వారా ఆ ప్రవర్తన భవిష్యత్తులో పెరుగుతుంది. ఇక్కడ ఇష్టమైన కార్యకలాపం అభ్యర్థనను బలపరుస్తుంది."
+        explanation: "Hearing aid acoustic signalను amplify చేస్తుంది; cochlear implant electrical stimulationను ఉపయోగిస్తుంది; FM/DM speaker signalను మెరుగ్గా అందిస్తుంది; speech reading visual speech cuesను ఉపయోగిస్తుంది."
     },
     {
-        question: "Discrete Trial Training (DTT)లో సాధారణంగా కనిపించే ముఖ్యమైన క్రమం ఏది?",
-        options: [
-            "Instruction/antecedent → response → consequence",
-            "Consequence → response → instruction",
-            "Response → extinction → antecedent",
-            "Reinforcer → punishment → response"
-        ],
-        correct: 0,
-        explanation: "DTTలో సాధారణంగా antecedent లేదా instruction ఇవ్వబడుతుంది, విద్యార్థి response ఇస్తాడు, తరువాత consequence అందుతుంది. ఈ స్పష్టమైన నిర్మాణం నైపుణ్యాలను చిన్న trialsగా బోధించడానికి ఉపయోగపడుతుంది."
-    },
-    {
-        question: "ఒక విద్యార్థి తరగతిలో అరుస్తున్నాడు. ఉపాధ్యాయుడు కేవలం \"అరచడం ఆపు\" అని చెప్పడం బదులు, ఆ ప్రవర్తన ఎప్పుడు జరుగుతోంది మరియు దాని తరువాత ఏమి జరుగుతుందో పరిశీలిస్తున్నాడు. ఈ ప్రక్రియకు అత్యంత సముచితమైనది ఏది?",
-        options: [
-            "Functional Behaviour Assessment",
-            "Intelligence Testing",
-            "Audiological Assessment",
-            "Curriculum-Based Measurement"
-        ],
-        correct: 0,
-        explanation: "Functional Behaviour Assessment ప్రవర్తనకు ముందు జరిగే పరిస్థితులు, ప్రవర్తన మరియు తరువాతి పరిణామాలను పరిశీలిస్తుంది. దీని ద్వారా ప్రవర్తన యొక్క సాధ్యమైన functionను గుర్తించి సముచిత intervention రూపొందించవచ్చు."
-    },
-    {
-        question: "ASD విద్యార్థికి \"బ్యాగ్ తీసుకో → పుస్తకం పెట్టు → జిప్ మూసివేయి → బ్యాగ్ తీసుకెళ్లు\" వంటి చిన్న దశలుగా ఒక నైపుణ్యాన్ని విభజించి బోధించడం ఏ పద్ధతికి దగ్గరగా ఉంటుంది?",
-        options: [
-            "Task analysis",
-            "Free association",
-            "Discovery learning",
-            "Overcorrection"
-        ],
-        correct: 0,
-        explanation: "Task analysisలో సంక్లిష్టమైన నైపుణ్యాన్ని వరుసగా ఉండే చిన్న, నిర్వహించగల దశలుగా విభజిస్తారు. తరువాత విద్యార్థికి ఆ దశలను క్రమంగా నేర్పి స్వతంత్ర పనితీరును అభివృద్ధి చేస్తారు."
-    },
-    {
-        question: "క్రింది వాటిలో ASD విద్యార్థికి రోజువారీ కార్యకలాపాల క్రమాన్ని ముందుగానే అర్థం చేసుకోవడానికి ఎక్కువగా సహాయపడేది ఏది?",
-        options: [
-            "Visual schedule",
-            "Intelligence quotient chart",
-            "Audiogram",
-            "Norm-referenced achievement test"
-        ],
-        correct: 0,
-        explanation: "Visual schedule చిత్రాలు, చిహ్నాలు లేదా పదాల ద్వారా కార్యకలాపాల క్రమాన్ని చూపిస్తుంది. ఇది ASD విద్యార్థులకు అంచనా, మార్పుల అవగాహన మరియు రోజువారీ routineను అనుసరించడంలో సహాయపడుతుంది."
-    },
-    {
-        question: "TEACCH విధానంలో ASD విద్యార్థులకు బోధనలో ముఖ్యంగా ఏ అంశానికి ప్రాధాన్యత ఉంటుంది?",
-        options: [
-            "Structured teaching మరియు visual organisation",
-            "కేవలం మౌఖిక ఉపన్యాసం",
-            "శిక్ష ఆధారిత ప్రవర్తనా నియంత్రణ",
-            "కేవలం స్వేచ్ఛా ఆట"
-        ],
-        correct: 0,
-        explanation: "TEACCHలో structured teaching, physical organisation, visual supports మరియు predictable routinesకు ప్రాధాన్యత ఉంటుంది. ఇవి ASD విద్యార్థులు పనులు, అంచనాలు మరియు పరిసరాలను సులభంగా అర్థం చేసుకోవడానికి సహాయపడతాయి."
-    },
-    {
-        question: "DIR/Floortime విధానం ప్రధానంగా ఏ దృక్పథానికి దగ్గరగా ఉంటుంది?",
-        options: [
-            "Developmental approach",
-            "Purely medical approach",
-            "Psychometric approach",
-            "Audiological approach"
-        ],
-        correct: 0,
-        explanation: "DIR/Floortime developmental మరియు relationship-based approach. ఇది పిల్లవాడి అభివృద్ధి స్థాయి, వ్యక్తిగత తేడాలు మరియు సంబంధాల ఆధారంగా సామాజిక-భావోద్వేగ అభివృద్ధిని ప్రోత్సహించడానికి ఉపయోగపడుతుంది."
-    },
-    {
-        question: "ASD విద్యార్థి సామాజిక సంభాషణలో ఇబ్బంది పడుతున్నప్పుడు సహచరులను శిక్షణ ఇచ్చి, సహజ తరగతి పరిస్థితుల్లో సంభాషణకు అవకాశాలు కల్పించడం ఏ వ్యూహానికి ఉదాహరణ?",
-        options: [
-            "Peer-mediated intervention",
-            "Response cost",
-            "Sensory deprivation",
-            "Rote memorization"
-        ],
-        correct: 0,
-        explanation: "Peer-mediated interventionలో సహచరులకు తగిన సామాజిక పరస్పర చర్యలను ప్రోత్సహించే విధంగా శిక్షణ ఇస్తారు. సహజ తరగతి సందర్భాల్లో సంభాషణ మరియు సామాజిక నైపుణ్యాల సాధనకు అవకాశాలు లభిస్తాయి."
-    },
-    {
-        question: "ASD ఉన్న విద్యార్థికి మాట్లాడటం ద్వారా అవసరాన్ని వ్యక్తపరచడం కష్టంగా ఉన్నప్పుడు, చిత్రాలు/చిహ్నాలు ఉపయోగించి అభ్యర్థనలు చేయించేందుకు రూపొందించిన వ్యవస్థ ఏది?",
-        options: [
-            "PECS",
-            "CARS-2",
-            "ADI-R",
-            "Vineland-3"
-        ],
-        correct: 0,
-        explanation: "PECS అంటే Picture Exchange Communication System. ఇది చిత్రాలను ఉపయోగించి వ్యక్తి అవసరాలు, అభ్యర్థనలు లేదా సందేశాలను కమ్యూనికేట్ చేయడానికి సహాయపడే augmentative and alternative communication విధానం."
-    },
-    {
-        question: "Speech-generating device (SGD) ప్రధానంగా ఏ ప్రయోజనాన్ని అందిస్తుంది?",
-        options: [
-            "ప్రత్యామ్నాయ లేదా సహాయక కమ్యూనికేషన్‌కు output అందించడం",
-            "శ్రవణ threshold కొలవడం",
-            "మేధస్సు గుణకం లెక్కించడం",
-            "ప్రవర్తనా తీవ్రతను స్కోర్ చేయడం"
-        ],
-        correct: 0,
-        explanation: "Speech-generating device వినియోగదారు ఎంచుకున్న సందేశాన్ని synthesized లేదా recorded speechగా output చేస్తుంది. మాట్లాడటంలో ఇబ్బంది ఉన్న వ్యక్తులకు ఇది augmentative and alternative communicationలో సహాయపడుతుంది."
-    },
-    {
-        question: "ఒక ASD విద్యార్థికి మాట్లాడటం ద్వారా సమాధానం ఇవ్వడం కష్టంగా ఉన్నప్పటికీ, టైప్ చేయడం ద్వారా తన సమాధానాలను వ్యక్తపరచగలడు. అతని అభ్యాసంలో ఏ AT వినియోగం అత్యంత సముచితం?",
-        options: [
-            "Alternative input/output method",
-            "Audiometric masking",
-            "Visual acuity testing",
-            "Physical restraint"
-        ],
-        correct: 0,
-        explanation: "టైపింగ్ వంటి alternative input/output method విద్యార్థికి మాట్లాడటానికి బదులుగా తన ఆలోచనలను వ్యక్తపరచే మార్గాన్ని అందిస్తుంది. ఇది అతని వ్యక్తిగత కమ్యూనికేషన్ అవసరానికి సరిపోతుంది."
-    },
-    {
-        question: "Assistive Technology కోసం need assessment చేసేటప్పుడు కింది వాటిలో ఏ అంశాలను పరిగణనలోకి తీసుకోవడం అత్యంత సముచితం?",
-        options: [
-            "విద్యార్థి మాత్రమే",
-            "పరికరం ధర మాత్రమే",
-            "విద్యార్థి, పరిసరాలు, పనులు మరియు అవసరమైన సాధనం",
-            "ఉపాధ్యాయుని వ్యక్తిగత అభిరుచి మాత్రమే"
-        ],
-        correct: 2,
-        explanation: "AT need assessmentలో వ్యక్తి సామర్థ్యాలు, అవసరాలు, పనులు, పరిసరాలు మరియు అందుబాటులో ఉన్న సాధనాల అనుకూలతను పరిగణించాలి. కేవలం పరికరం లేదా ధర ఆధారంగా నిర్ణయం తీసుకోకూడదు."
-    },
-    {
-        question: "ASD విద్యార్థి గణిత సమస్యను పరిష్కరించగలిగినా, సమూహ కార్యకలాపంలో తన వంతు కోసం వేచి ఉండలేకపోతున్నాడు. దీనికి సంబంధించి పాఠ్య ప్రణాళికలో ఏ curricular focus మరింత అవసరం?",
-        options: [
-            "Social skills",
-            "మాత్రమే rote memorisation",
-            "మాత్రమే handwriting speed",
-            "మాత్రమే auditory discrimination"
-        ],
-        correct: 0,
-        explanation: "గణిత సామర్థ్యం ఉన్నప్పటికీ turn-takingలో ఇబ్బంది ఉంటే social skills instruction అవసరం. సమూహ కార్యకలాపాల్లో వేచి ఉండటం, పంచుకోవడం మరియు పరస్పర చర్య వంటి నైపుణ్యాలను బోధించాలి."
-    },
-    {
-        question: "క్రింది వాటిలో ASD మరియు Social (Pragmatic) Communication Disorder మధ్య differential assessmentలో ముఖ్యమైన భేదం ఏది?",
-        options: [
-            "ASDలో restricted/repetitive behaviours కూడా ఉండవచ్చు; SCDలో అవి ప్రధాన diagnostic feature కావు",
-            "ASDలో communication difficulties ఎప్పుడూ ఉండవు",
-            "SCDలో తప్పనిసరిగా intellectual disability ఉంటుంది",
-            "ASD మరియు SCD మధ్య ఎటువంటి diagnostic distinction లేదు"
-        ],
-        correct: 0,
-        explanation: "ASDలో సామాజిక కమ్యూనికేషన్ లోపాలతో పాటు restricted లేదా repetitive behaviours ఉంటాయి. Social Communication Disorderలో సామాజిక కమ్యూనికేషన్ లోపాలు ఉంటాయి కానీ ASDకు అవసరమైన repetitive features ఉండవు."
-    },
-    {
-        question: "ఒక విద్యార్థి తనకు తెలిసిన వ్యక్తితో మాట్లాడేటప్పుడు సులభంగా సంభాషిస్తాడు. కానీ కొత్త వ్యక్తిని కలిసినప్పుడు సంభాషణ ప్రారంభించడం, విషయం మార్చడం మరియు ఎదుటివారి ప్రతిస్పందనను అర్థం చేసుకోవడంలో ఇబ్బంది పడుతున్నాడు. ఇది ASDలో ప్రధానంగా ఏ ప్రాంతంతో సంబంధం కలిగి ఉంటుంది?",
-        options: [
-            "Social communication",
-            "Gross motor development",
-            "Visual acuity",
-            "Phonological awareness"
-        ],
-        correct: 0,
-        explanation: "సంభాషణ ప్రారంభించడం, విషయం మార్చడం మరియు ఇతరుల ప్రతిస్పందనలను అర్థం చేసుకోవడం social communicationకు సంబంధించినవి. ASDలో సామాజిక సందర్భానికి అనుగుణంగా కమ్యూనికేషన్ ఉపయోగించడం కష్టంగా ఉండవచ్చు."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి:\n\ni) ASDలో restricted and repetitive behavioursలో repetitive movements ఉండవచ్చు.\nii) ASDలో sensory inputకు unusual responses కనిపించవచ్చు.\niii) ASDలో ప్రతి వ్యక్తికి తప్పనిసరిగా intellectual disability ఉంటుంది.\n\nసరైన సమాధానాన్ని గుర్తించండి.",
-        options: [
-            "i మాత్రమే",
-            "i మరియు ii మాత్రమే",
-            "ii మరియు iii మాత్రమే",
-            "i, ii మరియు iii"
-        ],
-        correct: 1,
-        explanation: "ASDలో repetitive movements మరియు sensory inputsకు unusual responses కనిపించవచ్చు. అయితే ప్రతి ASD వ్యక్తికి intellectual disability తప్పనిసరి కాదు; మేధస్సు సామర్థ్యాలు వ్యక్తుల మధ్య విభిన్నంగా ఉంటాయి."
-    },
-    {
-        question: "క్రింది ప్రకటనలలో ASD విద్యార్థుల inclusive educationకు సంబంధించి సరైనవి ఏవి?\n\ni) Visual supports instructionను స్పష్టంగా చేయడంలో సహాయపడవచ్చు.\nii) ప్రతి ASD విద్యార్థికి ఒకే instructional strategy తప్పనిసరిగా ఉపయోగించాలి.\niii) Individual needs ఆధారంగా curricular adaptations చేయవచ్చు.",
-        options: [
-            "i మాత్రమే",
-            "ii మాత్రమే",
-            "i మరియు iii మాత్రమే",
-            "i, ii మరియు iii"
-        ],
-        correct: 2,
-        explanation: "Visual supports instructionను స్పష్టంగా చేయవచ్చు. ASD విద్యార్థుల అవసరాలు వ్యక్తిగతంగా మారుతాయి కాబట్టి ఒకే strategy అందరికీ వర్తించదు; అవసరానికి అనుగుణంగా curricular adaptations చేయవచ్చు."
-    },
-    {
-        question: "కింది వాటిని సరైన జతలతో సరిపోల్చండి.\n\nColumn-I\n\ni) ADOS-2\nii) ADI-R\niii) CARS-2\niv) M-CHAT-R/F\n\nColumn-II\n\na) Caregiver-based structured interview\nb) Early screening for autism risk\nc) Behavioural rating of autism characteristics\nd) Direct observational assessment",
-        options: [
-            "i-d, ii-a, iii-c, iv-b",
-            "i-a, ii-d, iii-b, iv-c",
-            "i-c, ii-b, iii-d, iv-a",
-            "i-b, ii-c, iii-a, iv-d"
-        ],
-        correct: 0,
-        explanation: "ADOS-2 ప్రత్యక్ష observational assessment, ADI-R caregiver interview, CARS-2 autism characteristics rating, M-CHAT-R/F early screening కోసం ఉపయోగించబడతాయి. అందువల్ల సరైన matching i-d, ii-a, iii-c, iv-b."
-    },
-    {
-        question: "ASD విద్యార్థికి ఒక కొత్త self-care నైపుణ్యాన్ని బోధించేటప్పుడు క్రింది దశలను సరైన క్రమంలో అమర్చండి.\n\ni) నైపుణ్యాన్ని చిన్న చిన్న దశలుగా విభజించడం\nii) ప్రతి దశను విద్యార్థికి బోధించడం\niii) అవసరమైనప్పుడు prompting అందించడం\niv) నైపుణ్యం స్వతంత్రంగా చేయగలిగే స్థాయిని అంచనా వేయడం",
+        question: "Auditory trainingలో క్రింది నైపుణ్యాల అభివృద్ధికి సాధారణంగా సరైన క్రమం ఏది?\n\ni) Detection\nii) Discrimination\niii) Identification\niv) Comprehension",
         options: [
             "i → ii → iii → iv",
-            "ii → i → iv → iii",
-            "iii → i → ii → iv",
+            "ii → i → iii → iv",
+            "iii → ii → i → iv",
             "iv → iii → ii → i"
         ],
         correct: 0,
-        explanation: "మొదట నైపుణ్యాన్ని చిన్న దశలుగా విభజిస్తారు. తరువాత దశలను బోధించి, అవసరమైన prompts అందిస్తారు. చివరగా విద్యార్థి స్వతంత్రంగా చేయగలిగే స్థాయిని అంచనా వేస్తారు."
+        explanation: "Auditory trainingలో సాధారణ progression detectionతో ప్రారంభమై discrimination, identification మరియు comprehension వైపు కొనసాగుతుంది. ఇది simple sound awareness నుంచి meaningful auditory understanding వరకు skill developmentను సూచిస్తుంది."
     },
     {
-        question: "ఒక ASD విద్యార్థి lunch break సమయంలో ఇతరులతో మాట్లాడకుండా ఒంటరిగా ఉంటున్నాడు. ఉపాధ్యాయుడు అతనికి బలవంతంగా మాట్లాడమని చెప్పకుండా, ఆసక్తి ఉన్న peerతో structured activity ఏర్పాటు చేసి, turn-taking మరియు simple conversationను practice చేయిస్తున్నాడు. ఈ జోక్యం ప్రధానంగా ఏ విధానాల కలయికను ప్రతిబింబిస్తుంది?",
+        question: "ఒక hearing-impaired విద్యార్థి classroomలో ఉపాధ్యాయుడి మాటలను కొంతవరకు వినగలుగుతున్నాడు. అయితే projector noise మరియు విద్యార్థుల సంభాషణ వల్ల speech understanding తగ్గుతోంది. కింది interventionలో ఏది విద్యార్థి అవసరానికి అత్యంత నేరుగా సంబంధించినది?",
         options: [
-            "Social approach మరియు naturalistic teaching",
-            "Punishment approach మరియు sensory isolation",
-            "Psychometric approach మరియు direct assessment",
-            "Medical approach మరియు academic remediation"
+            "Classroom acoustics మెరుగుపరచడంతో పాటు appropriate amplification ఉపయోగించడం",
+            "విద్యార్థి hearing aidను ఉపయోగించకుండా చేయడం",
+            "విద్యార్థిని classroom నుండి శాశ్వతంగా తొలగించడం",
+            "కేవలం handwriting practice పెంచడం"
         ],
         correct: 0,
-        explanation: "ఆసక్తి ఉన్న peerతో సహజ lunch సందర్భంలో structured interaction కల్పించడం social approach మరియు naturalistic teachingను ప్రతిబింబిస్తుంది. ఇది turn-taking, communication వంటి సామాజిక నైపుణ్యాలను సహజంగా అభ్యసింపజేస్తుంది."
+        explanation: "Background noise speech understandingను తగ్గించినప్పుడు classroom acousticsను మెరుగుపరచడం మరియు appropriate amplification ఉపయోగించడం నేరుగా సమస్యను address చేస్తాయి. ఇవి teacher speech signalకు better access కల్పిస్తాయి."
+    },
+    {
+        question: "ఒక hearing-impaired విద్యార్థి కోసం rehabilitation programme రూపొందించేటప్పుడు audiological interventionతో పాటు language, speech మరియు educational needsను కూడా పరిగణనలోకి తీసుకుంటున్నారు. ఈ విధానం ఏ భావనను ఉత్తమంగా ప్రతిబింబిస్తుంది?",
+        options: [
+            "సమగ్ర మరియు multidisciplinary rehabilitation",
+            "కేవలం audiological treatment",
+            "కేవలం speech correction",
+            "కేవలం academic remediation"
+        ],
+        correct: 0,
+        explanation: "Hearing impairment rehabilitationలో audiological servicesతో పాటు language, speech, educational మరియు communication needsను పరిగణించడం holistic approachను సూచిస్తుంది. వివిధ professionals కలిసి పనిచేసినప్పుడు multidisciplinary rehabilitation సాధ్యమవుతుంది."
     }
 ];
