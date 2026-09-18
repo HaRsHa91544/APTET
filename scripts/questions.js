@@ -1,336 +1,186 @@
 const SUBJECTS = [
-    "Special Education"
+    "Learning Disability"
 ];
 
 const QUESTIONS = [
     {
-        question: "శ్రవణ లోపాన్ని ప్రారంభ దశలో గుర్తించడం (Early Identification) యొక్క ముఖ్య ఉద్దేశ్యం ఏది?",
-        options: [
-            "శ్రవణ లోపం ఉన్న ప్రతి విద్యార్థికి ఒకే బోధనా విధానాన్ని నిర్ణయించడం",
-            "అవసరమైన మూల్యాంకనం మరియు ప్రారంభ జోక్యాన్ని సకాలంలో ప్రారంభించడం",
-            "విద్యార్థి విద్యా సామర్థ్యాన్ని మాత్రమే నిర్ణయించడం",
-            "కేవలం వృత్తి శిక్షణ అవసరాలను గుర్తించడం"
-        ],
+        question: "అభ్యాస వైకల్యాలలో (Learning Disabilities) చదవడంలో పదాలను ఖచ్చితంగా గుర్తించడం, ధ్వని–అక్షర సంబంధాన్ని అనుసంధానించడం వంటి సమస్యలు ప్రధానంగా ఏ రకానికి సంబంధించినవి?",
+        options: ["డిస్కాల్కులియా", "డిస్లెక్సియా", "డిస్గ్రాఫియా", "డిస్ఫేసియా"],
         correct: 1,
-        explanation: "Early identification వల్ల hearing lossను త్వరగా నిర్ధారించి, అవసరమైన audiological assessment, language assessment మరియు early interventionను సరైన సమయంలో ప్రారంభించవచ్చు. ఇది భాషా, కమ్యూనికేషన్ మరియు విద్యా అభివృద్ధికి సహాయపడుతుంది."
+        explanation: "డిస్లెక్సియా ప్రధానంగా చదవడంలో పదాలను ఖచ్చితంగా గుర్తించడం, ధ్వని–అక్షర సంబంధాన్ని అనుసంధానించడం, డీకోడింగ్ మరియు చదవడంలో వేగం వంటి నైపుణ్యాలలో నిరంతర ఇబ్బందులతో సంబంధం కలిగి ఉంటుంది."
     },
     {
-        question: "Pure Tone Audiometry ద్వారా ప్రధానంగా ఏ అంశాన్ని అంచనా వేస్తారు?",
-        options: [
-            "వివిధ frequencyల వద్ద వినికిడి threshold",
-            "భాష యొక్క వ్యాకరణ నిర్మాణం",
-            "మాట్లాడే పదాల అర్థాన్ని గ్రహించే సామర్థ్యం",
-            "speech productionలో articulation errors"
-        ],
-        correct: 0,
-        explanation: "Pure Tone Audiometry వివిధ frequencies వద్ద వ్యక్తి వినగలిగే కనిష్ఠ శబ్ద తీవ్రతను, అంటే hearing thresholdను కొలుస్తుంది. దీనివల్ల hearing sensitivity మరియు degree of hearing loss అంచనా వేయబడతాయి."
-    },
-    {
-        question: "Audiogramలో సాధారణంగా ఏ రెండు ప్రధాన పరిమాణాలు చూపబడతాయి?",
-        options: [
-            "Frequency మరియు intensity",
-            "Age మరియు IQ",
-            "Speech rate మరియు vocabulary",
-            "Duration మరియు language level"
-        ],
-        correct: 0,
-        explanation: "Audiogramలో horizontal axis సాధారణంగా frequencyని Hertzలో, vertical axis sound intensity లేదా hearing levelను decibelsలో చూపిస్తుంది. ఈ రెండు పరిమాణాలు hearing thresholdsను దృశ్యరూపంలో తెలియజేస్తాయి."
-    },
-    {
-        question: "శ్రవణ లోపం యొక్క degreeను నిర్ణయించడంలో సాధారణంగా ఏ అంశం ముఖ్యమైనది?",
-        options: [
-            "Hearing threshold",
-            "Reading speed",
-            "Speech intelligibility మాత్రమే",
-            "Expressive vocabulary మాత్రమే"
-        ],
-        correct: 0,
-        explanation: "Degree of hearing lossను నిర్ణయించడానికి ప్రధానంగా hearing thresholdsను ఉపయోగిస్తారు. వ్యక్తి వివిధ frequencies వద్ద ఎంత తీవ్రతతో శబ్దాన్ని వినగలుగుతున్నాడో thresholds సూచిస్తాయి మరియు loss severityను వర్గీకరించడంలో సహాయపడతాయి."
-    },
-    {
-        question: "Tympanometry ప్రధానంగా ఏ అంశాన్ని పరిశీలించడానికి ఉపయోగపడుతుంది?",
-        options: [
-            "Middle-ear function",
-            "Auditory memory",
-            "Speech articulation",
-            "Receptive vocabulary"
-        ],
-        correct: 0,
-        explanation: "Tympanometry middle-ear system యొక్క mechanical functioningను పరిశీలిస్తుంది. ముఖ్యంగా eardrum mobility, middle-ear pressure మరియు related conditionsను అంచనా వేయడానికి ఇది ఉపయోగించే objective audiological test."
-    },
-    {
-        question: "ఒక శిశువులో hearing lossను ప్రారంభ దశలో గుర్తించడానికి objective physiological screeningలో ఏది ఉపయోగించబడుతుంది?",
-        options: [
-            "Otoacoustic Emissions (OAE)",
-            "Peabody Picture Vocabulary Test",
-            "Goldman-Fristoe Test of Articulation",
-            "Vineland Adaptive Behavior Scales"
-        ],
-        correct: 0,
-        explanation: "OAE అనేది objective physiological screening method. ఇది cochlea, ముఖ్యంగా outer hair cells, sound stimulusకు ఉత్పత్తి చేసే emissionsను గుర్తిస్తుంది మరియు infantsలో early hearing screeningకు విస్తృతంగా ఉపయోగించబడుతుంది."
-    },
-    {
-        question: "Auditory Brainstem Response (ABR) పరీక్ష ప్రధానంగా ఏ అంశాన్ని అంచనా వేయడానికి ఉపయోగపడుతుంది?",
-        options: [
-            "Auditory pathwayలోని electrical responses",
-            "విద్యార్థి reading comprehension",
-            "Speech-language expressive ability",
-            "Classroom social interaction"
-        ],
-        correct: 0,
-        explanation: "ABR sound stimulusకు auditory nerve మరియు brainstem pathwaysలో ఏర్పడే electrical responsesను record చేస్తుంది. Behavioral response ఇవ్వలేని infantsలో hearing assessmentకు ఇది ముఖ్యమైన objective physiological measure."
-    },
-    {
-        question: "ఒక శిశువు sound stimulusకు behavioral response ఇవ్వలేని వయస్సులో ఉన్నప్పుడు hearing assessmentలో objective method ఉపయోగించడం యొక్క ప్రధాన ప్రయోజనం ఏది?",
-        options: [
-            "వ్యక్తి యొక్క subjective responseపై తక్కువ ఆధారపడటం",
-            "భాషా అభివృద్ధిని నేరుగా బోధించడం",
-            "articulation errorsను సరిచేయడం",
-            "విద్యా achievementను కొలవడం"
-        ],
-        correct: 0,
-        explanation: "Objective methods శిశువు చెప్పే లేదా చూపించే behavioral responseపై ఎక్కువగా ఆధారపడవు. అందువల్ల చిన్న వయస్సులో reliable physiological information పొందడానికి OAE మరియు ABR వంటి పరీక్షలు ఉపయోగపడతాయి."
-    },
-    {
-        question: "Speech audiometryలో Speech Reception Threshold (SRT) ప్రధానంగా ఏదిని సూచిస్తుంది?",
-        options: [
-            "మాటలను గుర్తించగలిగే కనిష్ఠ స్థాయి",
-            "గరిష్ఠంగా వినగలిగే frequency",
-            "articulation errors సంఖ్య",
-            "vocabulary size"
-        ],
-        correct: 0,
-        explanation: "Speech Reception Threshold అనేది వ్యక్తి speech materialను సాధారణంగా సగం సందర్భాల్లో గుర్తించగలిగే కనిష్ఠ presentation levelను సూచిస్తుంది. ఇది speech sensitivityను అంచనా వేయడానికి ఉపయోగపడుతుంది."
-    },
-    {
-        question: "శ్రవణ లోపం ఉన్న చిన్నారి మాటలను వింటున్నప్పుడు ఉపాధ్యాయుడు ముఖం స్పష్టంగా కనిపించేలా మాట్లాడటం ఎందుకు సహాయపడుతుంది?",
-        options: [
-            "Speech readingకు అవకాశం కల్పిస్తుంది",
-            "Hearing thresholdను తగ్గిస్తుంది",
-            "Middle-ear pressureను మారుస్తుంది",
-            "Auditory nerveను బలపరుస్తుంది"
-        ],
-        correct: 0,
-        explanation: "ఉపాధ్యాయుడి ముఖం స్పష్టంగా కనిపిస్తే విద్యార్థి lip movements, facial expressions మరియు ఇతర visual cuesను ఉపయోగించగలడు. ఇవి auditory informationను complement చేసి speech understandingను మెరుగుపరుస్తాయి."
-    },
-    {
-        question: "Speech reading ప్రధానంగా ఏ సమాచారాన్ని ఉపయోగించడంపై ఆధారపడి ఉంటుంది?",
-        options: [
-            "మాట్లాడేవారి ముఖం, పెదవులు మరియు సంబంధిత దృశ్య సంకేతాలు",
-            "కేవలం auditory threshold",
-            "కేవలం written language",
-            "కేవలం tactile stimulation"
-        ],
-        correct: 0,
-        explanation: "Speech readingలో మాట్లాడేవారి పెదవుల కదలికలు, ముఖ కదలికలు, expressions మరియు contextual visual cuesను ఉపయోగించి spoken messageను అర్థం చేసుకోవడానికి ప్రయత్నిస్తారు."
-    },
-    {
-        question: "Auditory Verbal Therapy (AVT) యొక్క ప్రధాన లక్ష్యం ఏది?",
-        options: [
-            "అందుబాటులో ఉన్న hearing ద్వారా spoken language అభివృద్ధిని ప్రోత్సహించడం",
-            "hearingను పూర్తిగా visual communicationతో భర్తీ చేయడం",
-            "విద్యార్థికి కేవలం sign vocabulary నేర్పడం",
-            "కేవలం articulation drills నిర్వహించడం"
-        ],
-        correct: 0,
-        explanation: "AVTలో అందుబాటులో ఉన్న hearingను hearing technologyతో maximize చేసి listening మరియు spoken language developmentను ప్రోత్సహిస్తారు. ప్రధానంగా auditory pathway ద్వారా spoken communication అభివృద్ధికి ప్రాధాన్యం ఇస్తుంది."
-    },
-    {
-        question: 'Auditory trainingలో "detection" దశ ప్రధానంగా దేనికి సంబంధించినది?',
-        options: [
-            "శబ్దం ఉందా లేదా గుర్తించడం",
-            "రెండు పదాల అర్థాన్ని పోల్చడం",
-            "వాక్యాన్ని చదవడం",
-            "వ్యాకరణ తప్పులను గుర్తించడం"
-        ],
-        correct: 0,
-        explanation: "Detection అనేది auditory trainingలో ప్రాథమిక listening skill. ఈ దశలో వ్యక్తి శబ్దం లేదా auditory stimulus ఉన్నదా లేదా లేదో గుర్తించడంపై ప్రధానంగా దృష్టి పెడతాడు."
-    },
-    {
-        question: "Auditory trainingలో discrimination దశలో విద్యార్థి ఏ సామర్థ్యాన్ని అభివృద్ధి చేస్తాడు?",
-        options: [
-            "రెండు auditory stimuli ఒకేలా ఉన్నాయా లేదా భిన్నంగా ఉన్నాయా గుర్తించడం",
-            "శబ్దం ఉందో లేదో మాత్రమే గుర్తించడం",
-            "మాట్లాడే వ్యక్తి ముఖాన్ని గుర్తించడం",
-            "రాతపూర్వక పదాలను వర్గీకరించడం"
-        ],
-        correct: 0,
-        explanation: "Auditory discriminationలో రెండు లేదా అంతకంటే ఎక్కువ sounds మధ్య similarities మరియు differencesను గుర్తించడం నేర్చుకుంటారు. ఇది detection కంటే ఉన్నతమైన listening skillగా పరిగణించబడుతుంది."
-    },
-    {
-        question: "Auditory trainingలో ఒక విద్యార్థి ఒక పదాన్ని విని దానిని చిత్రంతో సరిపోల్చగలుగుతున్నాడు. ఇది detection కంటే ఏ ఉన్నత స్థాయి auditory skillకు దగ్గరగా ఉంటుంది?",
-        options: [
-            "Identification",
-            "Awareness",
-            "Localization",
-            "Conditioning"
-        ],
-        correct: 0,
-        explanation: "Identificationలో విన్న auditory stimulusను తెలిసిన object, picture, word లేదా categoryతో అనుసంధానించి గుర్తిస్తారు. కాబట్టి pictureతో వినబడిన పదాన్ని సరిపోల్చడం identificationకు ఉదాహరణ."
-    },
-    {
-        question: "ఒక విద్యార్థి hearing aid ఉపయోగిస్తున్నప్పటికీ ఉపాధ్యాయుడి మాటలను classroomలో స్పష్టంగా వినలేకపోతున్నాడు. మొదట పరిశీలించాల్సిన classroom factor ఏది?",
-        options: [
-            "Background noise మరియు classroom acoustics",
-            "విద్యార్థి handwriting speed",
-            "విద్యార్థి mathematics achievement",
-            "textbook font size మాత్రమే"
-        ],
-        correct: 0,
-        explanation: "Hearing aid ఉపయోగిస్తున్నప్పటికీ classroom listening difficulty ఉంటే background noise, reverberation మరియు speaker distance వంటి acoustic factorsను మొదట పరిశీలించాలి. ఇవి speech clarityను గణనీయంగా ప్రభావితం చేస్తాయి."
-    },
-    {
-        question: "Classroom amplification system ఉపయోగించడం యొక్క ప్రధాన ఉద్దేశ్యం ఏది?",
-        options: [
-            "ఉపాధ్యాయుడి speech signalను విద్యార్థికి మరింత స్పష్టంగా అందించడం",
-            "విద్యార్థి hearing lossను వైద్యపరంగా తొలగించడం",
-            "విద్యార్థి language comprehensionను స్వయంచాలకంగా పెంచడం",
-            "speech articulationను స్వయంగా సరిచేయడం"
-        ],
-        correct: 0,
-        explanation: "Classroom amplification systems speaker's speech signalను విద్యార్థికి మరింత స్పష్టంగా మరియు consistentగా అందించడంలో సహాయపడతాయి. ఇవి distance మరియు environmental noise ప్రభావాన్ని తగ్గించి listening accessను మెరుగుపరుస్తాయి."
-    },
-    {
-        question: "FM/DM classroom system వంటి technology ప్రధానంగా ఏ సమస్యను తగ్గించడానికి సహాయపడుతుంది?",
-        options: [
-            "Speaker మరియు listener మధ్య దూరం, background noise వల్ల speech signal తగ్గిపోవడం",
-            "విద్యార్థి యొక్క visual acuity తగ్గిపోవడం",
-            "విద్యార్థి యొక్క fine-motor difficulty",
-            "written languageలో vocabulary deficit"
-        ],
-        correct: 0,
-        explanation: "FM/DM systems teacher's voiceను microphone ద్వారా నేరుగా receiverకు పంపుతాయి. దీనివల్ల speaker-listener distance, background noise మరియు room acoustics వల్ల speech signal degradation తగ్గుతుంది."
-    },
-    {
-        question: "Hearing aid యొక్క ప్రధాన విధి ఏది?",
-        options: [
-            "అందుబాటులో ఉన్న శబ్దాన్ని amplify చేసి వినికిడికి సహాయపడటం",
-            "auditory nerveను పునర్నిర్మించడం",
-            "speechను textగా స్వయంచాలకంగా మార్చడం",
-            "hearing lossకు శాశ్వత వైద్య చికిత్స అందించడం"
-        ],
-        correct: 0,
-        explanation: "Hearing aid incoming soundsను process చేసి amplify చేస్తుంది, తద్వారా మిగిలిన hearingను ఉపయోగించుకోవడానికి సహాయపడుతుంది. ఇది hearing lossను cure చేయదు లేదా auditory nerveను పునర్నిర్మించదు."
-    },
-    {
-        question: "Cochlear implant మరియు hearing aid మధ్య ప్రధాన తేడాను సరైన విధంగా తెలిపే వాక్యం ఏది?",
-        options: [
-            "Cochlear implant auditory systemను electrical stimulation ద్వారా stimulate చేస్తుంది; hearing aid శబ్దాన్ని amplify చేస్తుంది",
-            "రెండూ పూర్తిగా ఒకే విధంగా పనిచేస్తాయి",
-            "Hearing aid auditory nerveను నేరుగా stimulate చేస్తుంది; cochlear implant కేవలం amplification చేస్తుంది",
-            "Cochlear implant కేవలం classroom amplification deviceగా పనిచేస్తుంది"
-        ],
-        correct: 0,
-        explanation: "Hearing aid acoustic soundను amplify చేస్తుంది. Cochlear implant sound informationను electrical signalsగా encode చేసి cochlear structuresను bypassing ద్వారా auditory nerveకి electrical stimulation అందిస్తుంది."
-    },
-    {
-        question: "ఒక hearing-impaired విద్యార్థి మాట్లాడే పదాలను వింటున్నప్పుడు తరచుగా కొన్ని speech soundsను తప్పుగా ఉచ్చరిస్తున్నాడు. సమగ్ర assessmentలో ఏ అంశాన్ని ప్రత్యేకంగా అంచనా వేయాలి?",
-        options: [
-            "Speech production మరియు articulation",
-            "కేవలం visual acuity",
-            "కేవలం gross motor ability",
-            "కేవలం mathematical reasoning"
-        ],
-        correct: 0,
-        explanation: "Speech soundsను తప్పుగా ఉచ్చరించడం articulation లేదా speech production difficultyని సూచించవచ్చు. అందువల్ల comprehensive assessmentలో speech sound production, intelligibility మరియు related speech characteristicsను పరిశీలించాలి."
-    },
-    {
-        question: "Hearing impairment ఉన్న విద్యార్థి language assessmentలో receptive language మరియు expressive language రెండింటినీ పరిశీలించడం ఎందుకు అవసరం?",
-        options: [
-            "అర్థం చేసుకునే మరియు వ్యక్తీకరించే భాషా సామర్థ్యాలను వేర్వేరుగా గుర్తించడానికి",
-            "hearing thresholdను రెండుసార్లు కొలవడానికి",
-            "classroom acousticsను నిర్ణయించడానికి",
-            "hearing aid యొక్క battery lifeను అంచనా వేయడానికి"
-        ],
-        correct: 0,
-        explanation: "Receptive language ఇతరులు చెప్పిన లేదా చూపిన భాషను అర్థం చేసుకునే సామర్థ్యాన్ని సూచిస్తుంది. Expressive language వ్యక్తి తన ఆలోచనలను భాష ద్వారా వ్యక్తీకరించే సామర్థ్యాన్ని సూచిస్తుంది."
-    },
-    {
-        question: "ఒక విద్యార్థి ఉపాధ్యాయుడు చెప్పిన వాక్యాన్ని అర్థం చేసుకున్నప్పటికీ, తాను చెప్పదలచుకున్న విషయాన్ని సరైన grammatical structureతో వ్యక్తపరచలేకపోతున్నాడు. ఇది ప్రధానంగా ఏ assessment areaతో సంబంధం కలిగి ఉంటుంది?",
-        options: [
-            "Expressive language",
-            "Pure-tone threshold",
-            "Middle-ear function",
-            "Sound localization"
-        ],
-        correct: 0,
-        explanation: "తన ఆలోచనలను సరైన grammatical structureతో వ్యక్తపరచలేకపోవడం expressive language difficultyకి సంబంధించినది. ఇందులో vocabulary, grammar, sentence formulation మరియు verbal expression వంటి అంశాలు assessmentలో పరిశీలించబడతాయి."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి:\n\n1. Hearing assessmentలో audiological findings ముఖ్యమైనవి.\n2. Hearing impairment ఉన్న విద్యార్థికి language assessment కూడా అవసరం కావచ్చు.\n3. Audiogram ఒక్కటే విద్యార్థి యొక్క అన్ని educational needsను నిర్ణయిస్తుంది.\n\nసరైన సమాధానాన్ని గుర్తించండి.",
-        options: [
-            "1 మాత్రమే",
-            "2 మాత్రమే",
-            "1 మరియు 2 మాత్రమే",
-            "1, 2 మరియు 3"
-        ],
+        question: "సంఖ్యలు, సంఖ్యా పరిమాణ భావన, గణిత క్రియలలో నిరంతర ఇబ్బందులను సూచించే నిర్దిష్ట అభ్యాస వైకల్యం ఏది?",
+        options: ["డిస్లెక్సియా", "డిస్గ్రాఫియా", "డిస్కాల్కులియా", "డిస్ప్రాక్సియా"],
         correct: 2,
-        explanation: "Audiological findings hearing characteristicsను అర్థం చేసుకోవడానికి ముఖ్యమైనవి. Language assessment educational planningకు సహాయపడుతుంది. అయితే audiogram ఒక్కటే విద్యార్థి యొక్క పూర్తి educational needsను నిర్ణయించదు."
+        explanation: "డిస్కాల్కులియా అనేది సంఖ్యా భావన, సంఖ్యా పరిమాణం, గణిత గణనలు, గణిత చిహ్నాలు మరియు సమస్య పరిష్కారంలో నిరంతర ఇబ్బందులను కలిగించే నిర్దిష్ట అభ్యాస వైకల్యం."
     },
     {
-        question: "క్రింది వాటిలో hearing impairment ఉన్న విద్యార్థి కోసం classroom communicationను మెరుగుపరచే సరైన చర్యల సముదాయం ఏది?",
-        options: [
-            "ఉపాధ్యాయుడు విద్యార్థికి వెనుకవైపు తిరిగి మాట్లాడటం, background noise పెంచడం",
-            "ముఖం స్పష్టంగా కనిపించేలా మాట్లాడటం, తగిన seating ఇవ్వడం, visual support ఉపయోగించడం",
-            "విద్యార్థిని అన్ని group activities నుండి తొలగించడం",
-            "కేవలం రాత పరీక్షలకే పరిమితం చేయడం"
-        ],
+        question: "ఒక విద్యార్థి `b` మరియు `d`, `p` మరియు `q` వంటి అక్షరాలను తరచుగా తారుమారు చేస్తున్నాడు. ఈ సమస్యను కేవలం ఏ అంశంలో లోపంగా పరిగణించడం సరైనది?",
+        options: ["శ్రవణ వివక్ష", "దృశ్య-స్థలిక ప్రాసెసింగ్", "గణిత తార్కికత", "మౌఖిక భాషా వ్యక్తీకరణ"],
         correct: 1,
-        explanation: "Face visibility, appropriate seating మరియు visual supports classroom communicationను మెరుగుపరుస్తాయి. ఇవి speech readingకు సహాయపడటంతో పాటు auditory informationను visual cuesతో complement చేసి learning accessను పెంచుతాయి."
+        explanation: "b-d, p-q వంటి అక్షరాల తారుమార్లు దృశ్య-స్థలిక ప్రాసెసింగ్ లేదా అక్షరరూప గుర్తింపుతో సంబంధం కలిగి ఉండవచ్చు; అయితే వాటిని ఒక్క కారణంతో మాత్రమే నిర్ణయించకూడదు."
     },
     {
-        question: "క్రింది జతలలో సరైనది ఏది?",
-        options: [
-            "Tympanometry — Middle-ear function",
-            "OAE — Reading comprehension",
-            "ABR — Expressive vocabulary",
-            "Pure Tone Audiometry — Speech articulation"
-        ],
-        correct: 0,
-        explanation: "Tympanometry middle-ear functionను అంచనా వేస్తుంది. OAE cochlear emissionsను, ABR auditory pathway electrical responsesను పరిశీలిస్తాయి. Pure Tone Audiometry hearing thresholdsను కొలుస్తుంది, articulationను కాదు."
+        question: "Learning Disability ఉన్న విద్యార్థిని సమగ్రంగా అంచనా వేయడంలో క్రింది వాటిలో ఏది అత్యంత సముచితమైన విధానం?",
+        options: ["కేవలం IQ పరీక్ష ఆధారంగా నిర్ణయించడం", "కేవలం పాఠశాల పరీక్ష మార్కులను పరిగణించడం", "వివిధ మూలాల నుండి సేకరించిన బహుముఖ సమాచారాన్ని పరిగణించడం", "కేవలం తల్లిదండ్రుల అభిప్రాయాన్ని పరిగణించడం"],
+        correct: 2,
+        explanation: "సమగ్ర Learning Disability assessmentలో IQ, విద్యా పనితీరు, తరగతి పరిశీలనలు, చరిత్ర, ఉపాధ్యాయులు మరియు తల్లిదండ్రుల సమాచారం వంటి బహుళ ఆధారాలను కలిపి పరిశీలిస్తారు."
     },
     {
-        question: "కింది వాటిని సరైన సంబంధంతో సరిపోల్చండి.\n\nColumn-I\nA. Hearing Aid\nB. Cochlear Implant\nC. FM/DM System\nD. Speech Reading\n\nColumn-II\n1. Visual speech cues ఉపయోగించడం\n2. Amplified acoustic signal అందించడం\n3. Electrical stimulation ద్వారా auditory pathwayను stimulate చేయడం\n4. Speaker's signalను listenerకు మెరుగ్గా అందించడం",
-        options: [
-            "A-2, B-3, C-4, D-1",
-            "A-3, B-2, C-1, D-4",
-            "A-4, B-1, C-3, D-2",
-            "A-1, B-4, C-2, D-3"
-        ],
+        question: "ఒక విద్యార్థి చదివేటప్పుడు పదాలను విడదీసి చదవడంలో, కొత్త పదాలను డీకోడ్ చేయడంలో ఇబ్బంది పడుతున్నాడు. ప్రారంభ దశలో ఏ నైపుణ్యంపై ప్రత్యక్ష బోధనకు ప్రాధాన్యత ఇవ్వాలి?",
+        options: ["ధ్వని అవగాహన (Phonological Awareness)", "హస్తలేఖన వేగం", "సంఖ్యా వర్గీకరణ", "సామాజిక నైపుణ్యాలు"],
         correct: 0,
-        explanation: "Hearing aid acoustic signalను amplify చేస్తుంది; cochlear implant electrical stimulationను ఉపయోగిస్తుంది; FM/DM speaker signalను మెరుగ్గా అందిస్తుంది; speech reading visual speech cuesను ఉపయోగిస్తుంది."
+        explanation: "Phonological awareness ధ్వనులను గుర్తించడం, వేరు చేయడం, కలపడం వంటి ప్రాథమిక నైపుణ్యాలను అభివృద్ధి చేస్తుంది; ఇవి కొత్త పదాలను డీకోడ్ చేయడానికి మరియు చదవడానికి పునాది."
     },
     {
-        question: "Auditory trainingలో క్రింది నైపుణ్యాల అభివృద్ధికి సాధారణంగా సరైన క్రమం ఏది?\n\ni) Detection\nii) Discrimination\niii) Identification\niv) Comprehension",
-        options: [
-            "i → ii → iii → iv",
-            "ii → i → iii → iv",
-            "iii → ii → i → iv",
-            "iv → iii → ii → i"
-        ],
+        question: "ఒక విద్యార్థి మాట్లాడిన సమాచారాన్ని అర్థం చేసుకుంటాడు కానీ రాయాల్సినప్పుడు తన ఆలోచనలను క్రమబద్ధీకరించలేకపోతున్నాడు. క్రింది వాటిలో ఏది ప్రత్యక్షంగా సహాయపడుతుంది?",
+        options: ["Graphic Organizer", "Number Line", "Auditory Training", "Braille Slate"],
         correct: 0,
-        explanation: "Auditory trainingలో సాధారణ progression detectionతో ప్రారంభమై discrimination, identification మరియు comprehension వైపు కొనసాగుతుంది. ఇది simple sound awareness నుంచి meaningful auditory understanding వరకు skill developmentను సూచిస్తుంది."
+        explanation: "Graphic organizer విద్యార్థి ఆలోచనలను వర్గీకరించి, సంబంధాలను చూపించి, క్రమబద్ధంగా ఏర్పాటు చేయడానికి సహాయపడుతుంది. అందువల్ల writing planning మరియు organizationలో ఇది ప్రత్యక్షంగా ఉపయోగపడుతుంది."
     },
     {
-        question: "ఒక hearing-impaired విద్యార్థి classroomలో ఉపాధ్యాయుడి మాటలను కొంతవరకు వినగలుగుతున్నాడు. అయితే projector noise మరియు విద్యార్థుల సంభాషణ వల్ల speech understanding తగ్గుతోంది. కింది interventionలో ఏది విద్యార్థి అవసరానికి అత్యంత నేరుగా సంబంధించినది?",
-        options: [
-            "Classroom acoustics మెరుగుపరచడంతో పాటు appropriate amplification ఉపయోగించడం",
-            "విద్యార్థి hearing aidను ఉపయోగించకుండా చేయడం",
-            "విద్యార్థిని classroom నుండి శాశ్వతంగా తొలగించడం",
-            "కేవలం handwriting practice పెంచడం"
-        ],
+        question: "ఒక విద్యార్థి గణిత సమస్యను పరిష్కరించేటప్పుడు ప్రతి దశను గుర్తుంచుకోలేకపోతున్నాడు. ఈ సమస్య ప్రధానంగా ఏ ప్రాసెసింగ్ సామర్థ్యంతో సంబంధం కలిగి ఉండవచ్చు?",
+        options: ["వర్కింగ్ మెమరీ", "రంగు గుర్తింపు", "శ్రవణ తీవ్రత", "దృష్టి తీక్షణత"],
         correct: 0,
-        explanation: "Background noise speech understandingను తగ్గించినప్పుడు classroom acousticsను మెరుగుపరచడం మరియు appropriate amplification ఉపయోగించడం నేరుగా సమస్యను address చేస్తాయి. ఇవి teacher speech signalకు better access కల్పిస్తాయి."
+        explanation: "Working memory తాత్కాలికంగా సమాచారాన్ని నిలుపుకొని దానిపై పని చేయడానికి సహాయపడుతుంది. గణిత సమస్యలో అనేక దశలను అనుసరించేటప్పుడు ఇది ముఖ్యమైన ప్రాసెసింగ్ సామర్థ్యం."
     },
     {
-        question: "ఒక hearing-impaired విద్యార్థి కోసం rehabilitation programme రూపొందించేటప్పుడు audiological interventionతో పాటు language, speech మరియు educational needsను కూడా పరిగణనలోకి తీసుకుంటున్నారు. ఈ విధానం ఏ భావనను ఉత్తమంగా ప్రతిబింబిస్తుంది?",
-        options: [
-            "సమగ్ర మరియు multidisciplinary rehabilitation",
-            "కేవలం audiological treatment",
-            "కేవలం speech correction",
-            "కేవలం academic remediation"
-        ],
+        question: "Learning Disability ఉన్న విద్యార్థి ఒకే రకమైన పదాన్ని అనేక సందర్భాలలో చూసినా, దానిని వేగంగా గుర్తించలేకపోతున్నాడు. ఈ పరిస్థితిలో ఏ నైపుణ్యాన్ని అభివృద్ధి చేయడం ముఖ్యమైనది?",
+        options: ["Orthographic processing", "Gross motor coordination", "Auditory acuity", "Visual field expansion"],
         correct: 0,
-        explanation: "Hearing impairment rehabilitationలో audiological servicesతో పాటు language, speech, educational మరియు communication needsను పరిగణించడం holistic approachను సూచిస్తుంది. వివిధ professionals కలిసి పనిచేసినప్పుడు multidisciplinary rehabilitation సాధ్యమవుతుంది."
+        explanation: "Orthographic processing పదాల వ్రాతరూప నమూనాలను గుర్తించి నిల్వచేసే సామర్థ్యానికి సంబంధించినది. ఇది పదాలను పదేపదే డీకోడ్ చేయకుండా వేగంగా మరియు ఖచ్చితంగా గుర్తించడంలో సహాయపడుతుంది."
+    },
+    {
+        question: "ఒక విద్యార్థి గణితంలో `+`, `−`, `×`, `÷` చిహ్నాలను తరచుగా గందరగోళపరుస్తున్నాడు. క్రింది బోధనా విధానాలలో ఏది ఎక్కువగా సముచితం?",
+        options: ["చిహ్నాలను మాత్రమే పదేపదే కాపీ చేయించడం", "స్పష్టమైన ప్రత్యక్ష బోధనతో చిహ్నాలను అర్థం మరియు చర్యతో అనుసంధానించడం", "గణిత కార్యకలాపాలను పూర్తిగా తొలగించడం", "కేవలం మౌఖిక పరీక్ష నిర్వహించడం"],
+        correct: 1,
+        explanation: "గణిత చిహ్నాలను వాటి అర్థం, పేరు మరియు సంబంధిత చర్యలతో అనుసంధానిస్తూ explicit instruction ఇవ్వడం గందరగోళాన్ని తగ్గించి, భావనాత్మక అవగాహనను మరియు సరైన వినియోగాన్ని అభివృద్ధి చేస్తుంది."
+    },
+    {
+        question: "డిస్గ్రాఫియా ఉన్న విద్యార్థికి రాతపని సమయంలో క్రింది వాటిలో ఏది **Accommodation** కు ఉదాహరణ?",
+        options: ["తరగతి స్థాయి కంటే తక్కువ గణిత విషయాలను మాత్రమే బోధించడం", "రాత సమాధానానికి బదులుగా అవసరమైనప్పుడు టైప్ చేయడానికి అనుమతించడం", "నేర్చుకోవాల్సిన పాఠ్యాంశంలోని ప్రధాన భావాలను తొలగించడం", "తరగతి లక్ష్యాలను పూర్తిగా మార్చడం"],
+        correct: 1,
+        explanation: "Accommodation విద్యార్థి నేర్చుకునే లేదా జ్ఞానాన్ని వ్యక్తపరిచే విధానాన్ని మార్చుతుంది, కానీ సాధారణంగా అభ్యసన ప్రమాణాన్ని మార్చదు. టైపింగ్ అనుమతి దీనికి ఉదాహరణ."
+    },
+    {
+        question: "క్రింది వాటిలో **Modification** కు అత్యంత సముచితమైన ఉదాహరణ ఏది?",
+        options: ["పరీక్షకు అదనపు సమయం ఇవ్వడం", "ప్రశ్నలను చదివి వినిపించడం", "విద్యార్థి సాధించాల్సిన విద్యా ప్రమాణం లేదా అభ్యసన ఫలితాన్ని మార్చడం", "పెద్ద అక్షరాలతో అదే ప్రశ్నపత్రాన్ని అందించడం"],
+        correct: 2,
+        explanation: "Modification విద్యార్థి సాధించాల్సిన విద్యా ప్రమాణాలు, కంటెంట్ లేదా learning outcomesలో మార్పును కలిగి ఉంటుంది. అందువల్ల అభ్యసన ఫలితాన్ని మార్చడం modificationకు సరైన ఉదాహరణ."
+    },
+    {
+        question: "ఒక ఉపాధ్యాయుడు విద్యార్థి అవసరానికి అనుగుణంగా పాఠ్యాంశాన్ని, బోధనా విధానాన్ని, కార్యకలాపాల ప్రదర్శనను మార్చుతున్నాడు. దీనిని సాధారణంగా ఏ విస్తృత భావన కింద పరిగణించవచ్చు?",
+        options: ["Curriculum Adaptation", "Punishment", "Norm-referenced assessment", "Behaviour extinction"],
+        correct: 0,
+        explanation: "Curriculum adaptation అంటే విద్యార్థి అవసరాలకు అనుగుణంగా కంటెంట్, బోధనా విధానం, కార్యకలాపాలు లేదా ప్రదర్శన విధానాలను మార్చడం. ఇది సమగ్ర విద్యలో వ్యక్తిగత అవసరాలను పరిగణిస్తుంది."
+    },
+    {
+        question: "Learning Disability ఉన్న విద్యార్థికి చదవడం బోధించేటప్పుడు **multisensory approach** యొక్క ముఖ్య లక్షణం ఏది?",
+        options: ["కేవలం దృశ్య సమాచారాన్ని ఉపయోగించడం", "కేవలం శ్రవణ సమాచారాన్ని ఉపయోగించడం", "దృశ్య, శ్రవణ, స్పర్శ/చలన మార్గాలను సమన్వయపరచడం", "విద్యార్థి స్వయంగా నేర్చుకునే వరకు బోధనను ఆలస్యం చేయడం"],
+        correct: 2,
+        explanation: "Multisensory approachలో దృశ్య, శ్రవణ, స్పర్శ మరియు చలన అనుభవాలను సమన్వయపరుస్తారు. ఇది అక్షరం, ధ్వని మరియు పదాల మధ్య సంబంధాలను బలంగా నేర్చుకోవడానికి సహాయపడుతుంది."
+    },
+    {
+        question: "ఒక విద్యార్థి `ship`, `shop`, `shut` వంటి పదాలలో ప్రారంభ ధ్వనులను గుర్తించడంలో ఇబ్బంది పడుతున్నాడు. క్రింది కార్యకలాపాలలో ఏది ఈ సమస్యను నేరుగా లక్ష్యంగా చేసుకుంటుంది?",
+        options: ["పదాల అర్థాలను నిఘంటువులో వెతకించడం", "ప్రారంభ ధ్వనులను వేరు చేసి గుర్తించే కార్యకలాపాలు నిర్వహించడం", "పేరాగ్రాఫ్‌ను మౌనంగా చదివించడం", "పదాలను అందంగా కాపీ చేయించడం"],
+        correct: 1,
+        explanation: "ప్రారంభ ధ్వనులను వేరు చేసి గుర్తించడం phonological awarenessలో భాగం. కాబట్టి పదాల మొదటి ధ్వనులను వినిపించి గుర్తించే కార్యకలాపాలు ఈ నిర్దిష్ట సమస్యను నేరుగా లక్ష్యంగా చేసుకుంటాయి."
+    },
+    {
+        question: "చదవడంలో fluency తక్కువగా ఉన్న విద్యార్థికి క్రింది జోక్యాలలో ఏది ఎక్కువగా ఉపయోగకరంగా ఉంటుంది?",
+        options: ["ఒకే పదాల జాబితాను అర్థం లేకుండా కంఠస్థం చేయించడం", "మార్గదర్శకంతో పదేపదే చదివించడం మరియు fluency సాధన చేయించడం", "చదవడాన్ని పూర్తిగా తొలగించి కేవలం వినిపించడం", "ప్రతి తప్పుకు శిక్ష విధించడం"],
+        correct: 1,
+        explanation: "Guided repeated reading విద్యార్థికి ఖచ్చితత్వం, వేగం మరియు వ్యక్తీకరణతో చదవడానికి పునరావృత సాధన అందిస్తుంది. ఉపాధ్యాయుల మార్గదర్శకత fluency అభివృద్ధిని మరింత సమర్థవంతంగా చేస్తుంది."
+    },
+    {
+        question: "ఒక విద్యార్థి రాయడానికి ముందు తన ఆలోచనలను క్రమపద్ధతిలో ఏర్పాటు చేయలేకపోతున్నాడు. Writing interventionలో మొదట ఏ వ్యూహం ఉపయోగించడం సముచితం?",
+        options: ["Planning మరియు graphic organization", "కేవలం spelling dictation", "కేవలం handwriting drills", "కేవలం oral reading"],
+        correct: 0,
+        explanation: "Writingకు ముందు planning మరియు graphic organization ఉపయోగించడం ద్వారా విద్యార్థి ప్రధాన ఆలోచనలు, వివరాలు మరియు వాటి క్రమాన్ని ముందుగానే ఏర్పాటు చేసుకోగలడు. ఇది రచనను సులభతరం చేస్తుంది."
+    },
+    {
+        question: "డిస్గ్రాఫియా ఉన్న విద్యార్థి చేతిరాతలో నెమ్మదిగా రాస్తున్నప్పటికీ, కంప్యూటర్‌లో తన ఆలోచనలను సులభంగా వ్యక్తపరుస్తున్నాడు. అతని **expression** ను సులభతరం చేసే technology ఏది?",
+        options: ["Speech-to-Text", "Screen Magnifier", "Braille Display", "FM System"],
+        correct: 0,
+        explanation: "Speech-to-Text విద్యార్థి మాట్లాడిన మాటలను డిజిటల్ వచనంగా మార్చుతుంది. అందువల్ల చేతిరాతలో ఇబ్బంది ఉన్నప్పటికీ, తన ఆలోచనలను రాతరూపంలో సులభంగా వ్యక్తపరచడానికి సహాయపడుతుంది."
+    },
+    {
+        question: "గణితంలో place value భావనను బోధించడానికి క్రింది వాటిలో ఏ విధానం ఎక్కువగా అనుకూలంగా ఉంటుంది?",
+        options: ["Concrete materials → pictorial representation → abstract symbols", "Abstract symbols → memorisation → concrete materials", "కేవలం మౌఖిక వివరణ → పరీక్ష", "కేవలం worksheet repetition"],
+        correct: 0,
+        explanation: "Concrete–Representational–Abstract క్రమం మొదట వస్తువులతో భావనను అనుభవింపజేసి, తరువాత చిత్రాల ద్వారా చూపించి, చివరగా సంఖ్యా చిహ్నాలకు అనుసంధానిస్తుంది. ఇది place value అవగాహనకు ఉపయోగకరం."
+    },
+    {
+        question: "ఒక విద్యార్థి `7 + 8` వంటి సమస్యలను పరిష్కరించగలుగుతున్నాడు. కానీ `Raj has 7 apples and gets 8 more. How many does he have?` వంటి word problemsలో విఫలమవుతున్నాడు. ప్రధానంగా ఏ అంశంపై జోక్యం అవసరం?",
+        options: ["Mathematical language and problem representation", "Handwriting posture", "Letter-sound correspondence", "Visual acuity"],
+        correct: 0,
+        explanation: "విద్యార్థికి గణన తెలుసు కానీ word problemను గణిత రూపంలోకి మార్చడంలో ఇబ్బంది ఉంది. కాబట్టి mathematical language మరియు problem representationపై ప్రత్యక్ష జోక్యం అవసరం."
+    },
+    {
+        question: "క్రింది వాటిలో Learning Disability assessmentలో **curricular assessment** యొక్క ముఖ్య ఉద్దేశ్యం ఏది?",
+        options: ["విద్యార్థి వ్యక్తిత్వాన్ని మాత్రమే కొలవడం", "నిర్దిష్ట పాఠ్యాంశ ప్రాంతంలో విద్యార్థి ప్రస్తుత పనితీరు మరియు అవసరాలను గుర్తించడం", "విద్యార్థి శారీరక ఎత్తును కొలవడం", "కేవలం IQ స్కోరును నిర్ణయించడం"],
+        correct: 1,
+        explanation: "Curricular assessment విద్యార్థి నిర్దిష్ట పాఠ్యాంశ ప్రాంతంలో ప్రస్తుతం ఏమి చేయగలడో, ఎక్కడ ఇబ్బంది పడుతున్నాడో గుర్తిస్తుంది. దీని ఆధారంగా బోధనా అవసరాలు నిర్ణయించబడతాయి."
+    },
+    {
+        question: "ఒక విద్యార్థి ఉపాధ్యాయుడు చెప్పిన మూడు సూచనలలో మొదటి సూచనను మాత్రమే గుర్తుంచుకుని మిగిలినవాటిని మరిచిపోతున్నాడు. Instructional planningలో క్రింది మార్పు ఏది సముచితం?",
+        options: ["ఒకేసారి మరిన్ని సూచనలు ఇవ్వడం", "సూచనలను చిన్న దశలుగా విభజించి, ఒక్కో దశను స్పష్టంగా అందించడం", "సూచనలను పూర్తిగా తొలగించడం", "కేవలం written examination నిర్వహించడం"],
+        correct: 1,
+        explanation: "సూచనలను చిన్న, స్పష్టమైన దశలుగా విభజించడం working memoryపై భారాన్ని తగ్గిస్తుంది. ఒక్కో దశను పూర్తిచేసిన తర్వాత తదుపరి సూచన ఇవ్వడం విద్యార్థి పనితీరును మెరుగుపరుస్తుంది."
+    },
+    {
+        question: "Learning Disability ఉన్న విద్యార్థికి text-based contentను వినే అవకాశం కల్పించడానికి క్రింది technologyలో ఏది **presentation/input access** కు ఎక్కువగా సంబంధించినది?",
+        options: ["Text-to-Speech", "Speech-to-Text", "Graphic Tablet", "Calculator మాత్రమే"],
+        correct: 0,
+        explanation: "Text-to-Speech వ్రాతపూర్వక సమాచారాన్ని శబ్దంగా మార్చి విద్యార్థికి వినే అవకాశాన్ని అందిస్తుంది. అందువల్ల ఇది text-based contentకు presentation లేదా input accessను సులభతరం చేస్తుంది."
+    },
+    {
+        question: "క్రింది జంటలలో సరైనది ఏది?",
+        options: ["Dyslexia — ప్రధానంగా గణిత గణనలో ఇబ్బంది", "Dysgraphia — ప్రధానంగా లిఖిత వ్యక్తీకరణలో ఇబ్బంది", "Dyscalculia — ప్రధానంగా శ్రవణ అవగాహనలో ఇబ్బంది", "Dyslexia — ప్రధానంగా కంటి శారీరక వ్యాధి"],
+        correct: 1,
+        explanation: "Dysgraphia ప్రధానంగా writing మరియు written expressionలో ఇబ్బందులతో సంబంధం కలిగి ఉంటుంది. Dyslexia readingకు, dyscalculia mathematicsకు సంబంధించిన నిర్దిష్ట అభ్యాస ఇబ్బందులను సూచిస్తాయి."
+    },
+    {
+        question: "ఒక విద్యార్థి subtractionలో borrowing/carrying దశలను పదేపదే తప్పుగా చేస్తాడు. ఉపాధ్యాయుడు ప్రతి దశను నమూనాగా చూపించి, విద్యార్థితో guided practice నిర్వహించి, క్రమంగా సహాయాన్ని తగ్గిస్తున్నాడు. ఇది ప్రధానంగా ఏ instructional principleను ప్రతిబింబిస్తుంది?",
+        options: ["Explicit and systematic instruction", "Incidental learning", "Free exploration without guidance", "Punitive instruction"],
+        correct: 0,
+        explanation: "Explicit and systematic instructionలో ఉపాధ్యాయుడు నైపుణ్యాన్ని స్పష్టంగా నమూనాగా చూపించి, guided practice అందించి, విద్యార్థి స్వతంత్రత పెరిగే కొద్దీ సహాయాన్ని క్రమంగా తగ్గిస్తాడు."
+    },
+    {
+        question: "Learning Disability ఉన్న విద్యార్థి కోసం technology ఎంపిక చేసేటప్పుడు మొదట ఏ అంశాన్ని పరిగణించాలి?",
+        options: ["పరికరం యొక్క ఖరీదు మాత్రమే", "పరికరం ఎంత కొత్తది అనే విషయం మాత్రమే", "విద్యార్థి యొక్క నిర్దిష్ట learning need మరియు task demands", "ఇతర విద్యార్థులు ఉపయోగిస్తున్న పరికరం"],
+        correct: 2,
+        explanation: "Assistive technology ఎంపికలో మొదట విద్యార్థి నిర్దిష్ట learning need, task demands మరియు అవసరమైన supportను పరిగణించాలి. పరికరం కొత్తదనం లేదా ఖరీదు మాత్రమే నిర్ణయాత్మక అంశాలు కావు."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి:\n\ni) Accommodation సాధారణంగా విద్యార్థి నేర్చుకునే లేదా తన అభ్యాసాన్ని వ్యక్తపరిచే విధానాన్ని మార్చగలదు.\nii) Modification విద్యార్థి సాధించాల్సిన అభ్యసన ఫలితాల్లో మార్పును కలిగి ఉండవచ్చు.\niii) Accommodation అంటే పాఠ్యాంశంలోని అన్ని లక్ష్యాలను తొలగించడం.\n\nసరైన సమాధానాన్ని గుర్తించండి.",
+        options: ["i మాత్రమే", "i, ii మాత్రమే", "ii, iii మాత్రమే", "i, ii, iii"],
+        correct: 1,
+        explanation: "i మరియు ii సరైనవి. Accommodation సాధారణంగా access లేదా response విధానాన్ని మారుస్తుంది; Modification మాత్రం విద్యార్థి సాధించాల్సిన content లేదా learning outcomesలో మార్పును కలిగి ఉండవచ్చు."
+    },
+    {
+        question: "క్రింది వాటిలో processing deficitకు సంబంధించిన సరైన జంటలను గుర్తించండి:\n\ni) Phonological processing — ధ్వనులను గుర్తించడం/మార్పిడి చేయడంలో ఇబ్బంది\n\nii) Working memory — సమాచారాన్ని తాత్కాలికంగా నిలుపుకొని దానిపై పని చేయడం\n\niii) Orthographic processing — పదాల వ్రాతరూప నమూనాలను గుర్తించడం\n\niv) Mathematical processing — కేవలం శారీరక సమతుల్యతను నియంత్రించడం\n\nసరైన సమాధానాన్ని గుర్తించండి.",
+        options: ["i, ii మాత్రమే", "i, iii మాత్రమే", "i, ii, iii మాత్రమే", "ii, iii, iv మాత్రమే"],
+        correct: 2,
+        explanation: "i, ii మరియు iii సరైన processing descriptions. Mathematical processing గణిత భావనలు, సంఖ్యలు మరియు క్రియలతో సంబంధం కలిగి ఉంటుంది; శారీరక సమతుల్యతను నియంత్రించడం దాని నిర్వచనం కాదు."
+    },
+    {
+        question: "క్రింది వాటిలో Learning Disability కోసం multisensory reading instruction యొక్క సరైన క్రమాన్ని గుర్తించండి.\n\ni) లక్ష్య ధ్వని/అక్షరాన్ని పరిచయం చేయడం\n\nii) దానిని చూడటం, వినడం మరియు స్పర్శ/చలనంతో సాధన చేయించడం\n\niii) ధ్వని–అక్షర సంబంధాన్ని పదాలలో ఉపయోగించడం\n\niv) సంబంధిత పదాలను చదవడంలో fluency సాధన చేయించడం",
+        options: ["i → ii → iii → iv", "ii → i → iv → iii", "iii → i → ii → iv", "iv → iii → ii → i"],
+        correct: 0,
+        explanation: "మొదట లక్ష్య ధ్వని లేదా అక్షరాన్ని పరిచయం చేసి, multisensory సాధన అందిస్తారు. తరువాత పదాలలో సంబంధాన్ని ఉపయోగించి, చివరగా సంబంధిత పదాలతో fluency సాధన చేస్తారు."
+    },
+    {
+        question: "క్రింది వాటిని **Technology మరియు ప్రధాన విద్యా అవసరం**తో సరిపోల్చండి:\n\ni) Text-to-Speech\n\nii) Speech-to-Text\n\niii) Digital graphic organizer\n\niv) Calculator with visual display\n\na) రాతపూర్వక ఆలోచనలను మాట్లాడి వ్యక్తీకరించడం\nb) గణిత గణనలో సహాయం\nc) వ్రాతపూర్వక సమాచారాన్ని వినడం\nd) ఆలోచనలను దృశ్యపరంగా క్రమబద్ధీకరించడం",
+        options: ["i-c, ii-a, iii-d, iv-b", "i-a, ii-c, iii-b, iv-d", "i-d, ii-b, iii-a, iv-c", "i-b, ii-d, iii-c, iv-a"],
+        correct: 0,
+        explanation: "Text-to-Speech వచనాన్ని వినిపిస్తుంది; Speech-to-Text మాటలను వచనంగా మారుస్తుంది; graphic organizer ఆలోచనలను క్రమబద్ధీకరిస్తుంది; calculator గణిత గణనకు సహాయపడుతుంది."
+    },
+    {
+        question: "ఒక విద్యార్థి చదివేటప్పుడు అక్షరాలను మాత్రమే కాకుండా, పదాలను ధ్వనులుగా విభజించడం, వాటిని కలిపి చదవడం మరియు కొత్త పదాలను డీకోడ్ చేయడంలో నిరంతరం ఇబ్బంది పడుతున్నాడు. ఈ విద్యార్థికి క్రింది interventionలో ఏది అత్యంత ప్రత్యక్షంగా సంబంధించింది?",
+        options: ["Systematic phonics with phonological awareness instruction", "కేవలం copying మరియు handwriting practice", "కేవలం mental arithmetic practice", "కేవలం vocabulary definitions కంఠస్థం చేయించడం"],
+        correct: 0,
+        explanation: "Systematic phonics మరియు phonological awareness instruction ధ్వనులను గుర్తించడం, విభజించడం, కలపడం మరియు అక్షరాలతో అనుసంధానించడం నేర్పుతాయి. ఇవి decoding మరియు కొత్త పదాల పఠనానికి ప్రత్యక్షంగా సహాయపడతాయి."
     }
 ];
