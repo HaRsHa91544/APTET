@@ -1,336 +1,186 @@
 const SUBJECTS = [
-    "Intellectual Disability"
+    "Visual Impairment"
 ];
 
 const QUESTIONS = [
     {
-        question: "మేధో వైకల్యం (Intellectual Disability) యొక్క ప్రాథమిక లక్షణాలను అత్యంత సముచితంగా సూచించేది ఏది?",
-        options: [
-            "కేవలం విద్యా సాధనలో తక్కువ స్థాయి ఉండటం",
-            "మేధో సామర్థ్యం మరియు అనుకూల ప్రవర్తన (Adaptive Behaviour)లో గణనీయ పరిమితులు, అభివృద్ధి కాలంలో ప్రారంభం కావడం",
-            "కేవలం సామాజిక పరస్పర చర్యలో లోపం ఉండటం",
-            "కేవలం భాషా అభివృద్ధి ఆలస్యం ఉండటం"
-        ],
+        question: "క్రింది వాటిలో కాంతిని విద్యుత్ సంకేతాలుగా మార్చే photoreceptor cells ప్రధానంగా ఎక్కడ ఉంటాయి?",
+        options: ["కార్నియా (Cornea)", "రెటినా (Retina)", "ఐరిస్ (Iris)", "ఆప్టిక్ నర్వ్ (Optic nerve)"],
         correct: 1,
-        explanation: "మేధో వైకల్యంలో మేధో పనితీరు మరియు అనుకూల ప్రవర్తనలో గణనీయ పరిమితులు ఉంటాయి. ఇవి అభివృద్ధి కాలంలో ప్రారంభమై, భావనాత్మక, సామాజిక, ఆచరణాత్మక పనితీరును ప్రభావితం చేస్తాయి."
+        explanation: "రెటినాలో rods మరియు cones అనే photoreceptor cells ఉంటాయి. ఇవి కాంతి ఉద్దీపనలను neural signalsగా మార్చి, తదుపరి దృశ్య సమాచారాన్ని మెదడుకు పంపే ప్రక్రియకు సహాయపడతాయి."
     },
     {
-        question: "మేధో వైకల్యం ఉన్న వ్యక్తి యొక్క Adaptive Behaviour సాధారణంగా ఏ మూడు ప్రధాన రంగాలలో పరిశీలించబడుతుంది?",
-        options: [
-            "శారీరక, సంగీత, కళాత్మక",
-            "భావోద్వేగ, సృజనాత్మక, భాషా",
-            "భావనాత్మక (Conceptual), సామాజిక (Social), ఆచరణాత్మక (Practical)",
-            "మోటార్, దృష్టి, శ్రవణ"
-        ],
+        question: "కంటి యొక్క ఐరిస్ (Iris) ప్రధానంగా ఏ పనిని నిర్వహిస్తుంది?",
+        options: ["కాంతి యొక్క పరిమాణాన్ని నియంత్రించడం", "దృశ్య సంకేతాలను మెదడుకు పంపడం", "కాంతిని రెటినాపై కేంద్రీకరించడం", "కంటి ఆకారాన్ని నిర్వహించడం"],
+        correct: 0,
+        explanation: "ఐరిస్‌లోని కండరాలు pupil పరిమాణాన్ని మార్చడం ద్వారా కంటిలోకి ప్రవేశించే కాంతి పరిమాణాన్ని నియంత్రిస్తాయి. ఇది వివిధ వెలుతురు పరిస్థితుల్లో దృష్టికి సహాయపడుతుంది."
+    },
+    {
+        question: "Cataract సాధారణంగా కంటి యొక్క ఏ భాగంలో ఏర్పడే మబ్బుదనం (clouding)తో సంబంధం కలిగి ఉంటుంది?",
+        options: ["రెటినా", "లెన్స్", "ఆప్టిక్ నర్వ్", "ఐరిస్"],
+        correct: 1,
+        explanation: "Cataract అనేది కంటి సహజ lens మబ్బుగా మారే పరిస్థితి. Lens పారదర్శకత తగ్గడం వల్ల కాంతి సరిగా ప్రవేశించక, దృష్టి మసకబారుతుంది."
+    },
+    {
+        question: "క్రింది వాటిలో Glaucomaకు అత్యంత సంబంధిత లక్షణం ఏది?",
+        options: ["రెటినాలో cone cells సంఖ్య పెరగడం", "ఆప్టిక్ నర్వ్‌కు progressive damage", "లెన్స్ పూర్తిగా పారదర్శకంగా మారడం", "కార్నియా పరిమాణం మాత్రమే తగ్గడం"],
+        correct: 1,
+        explanation: "Glaucomaలో optic nerve progressive damage ప్రధాన సమస్య. కంటి అంతర్గత ఒత్తిడి పెరగడం ఒక ముఖ్యమైన ప్రమాద కారకం, అయితే అన్ని glaucoma సందర్భాల్లో pressure తప్పనిసరిగా అధికంగా ఉండదు."
+    },
+    {
+        question: "ఒక విద్యార్థి ముద్రిత పుస్తకాన్ని చదవగలుగుతున్నప్పటికీ, సాధారణ print sizeలో చదవడానికి ఎక్కువ సమయం పడుతోంది. అతనికి magnification మరియు తగిన lighting ఉపయోగించినప్పుడు చదవడం మెరుగుపడుతోంది. ఇది ప్రధానంగా ఏ వర్గానికి సంబంధించినది?",
+        options: ["పూర్తిస్థాయి blindness", "Low vision", "Auditory impairment", "Intellectual disability"],
+        correct: 1,
+        explanation: "Low visionలో మిగిలిన దృష్టిని ఉపయోగించి పనులు చేయగలుగుతారు, కానీ magnification, lighting లేదా contrast వంటి సహాయాలు అవసరమవుతాయి. ఈ ఉదాహరణ low vision లక్షణాలకు సరిపోతుంది."
+    },
+    {
+        question: "Low vision ఉన్న విద్యార్థికి printed worksheet చదవడం కష్టంగా ఉంటే, క్రింది వాటిలో తక్షణ classroom adaptationగా అత్యంత సముచితమైనది ఏది?",
+        options: ["worksheetను పూర్తిగా తొలగించడం", "పెద్ద అక్షరాలు మరియు తగిన contrast ఉపయోగించడం", "worksheetకు బదులుగా oral examination మాత్రమే నిర్వహించడం", "విద్యార్థిని తరగతి నుండి ప్రత్యేక గదికి పంపించడం"],
+        correct: 1,
+        explanation: "పెద్ద font మరియు తగిన contrast printed materialను visually accessibleగా చేస్తాయి. అవసరాన్ని బట్టి spacing, lighting, magnification వంటి ఇతర adaptations కూడా ఉపయోగించవచ్చు."
+    },
+    {
+        question: "Functional Vision Assessment (FVA) యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
+        options: ["విద్యార్థి IQను కొలవడం", "విద్యార్థి మిగిలిన దృష్టిని రోజువారీ మరియు విద్యా కార్యకలాపాల్లో ఎలా ఉపయోగిస్తున్నాడో తెలుసుకోవడం", "విద్యార్థి hearing thresholdను నిర్ణయించడం", "Braille reading speedను మాత్రమే కొలవడం"],
+        correct: 1,
+        explanation: "FVA విద్యార్థి మిగిలిన దృష్టిని నిజ జీవిత మరియు విద్యా పరిస్థితుల్లో ఎలా ఉపయోగిస్తున్నాడో అంచనా వేస్తుంది. దీని ఆధారంగా appropriate visual adaptations మరియు strategies రూపొందించవచ్చు."
+    },
+    {
+        question: "Visually impaired విద్యార్థికి Learning Media Assessment (LMA) నిర్వహించడంలో ప్రధానంగా ఏది నిర్ణయించబడుతుంది?",
+        options: ["విద్యార్థి యొక్క preferred learning medium", "విద్యార్థి యొక్క blood pressure", "విద్యార్థి యొక్క auditory threshold", "విద్యార్థి యొక్క motor coordination మాత్రమే"],
+        correct: 0,
+        explanation: "Learning Media Assessment విద్యార్థి సమాచారాన్ని print, Braille, auditory లేదా ఇతర sensory media ద్వారా అత్యంత సమర్థంగా ఎలా నేర్చుకుంటాడో నిర్ణయించడంలో సహాయపడుతుంది."
+    },
+    {
+        question: "ఒక దృష్టి లోపం ఉన్న విద్యార్థి గణితంలో స్థాన విలువలు, ఆకారాలు మరియు గ్రాఫ్‌లను నేర్చుకోవాలి. క్రింది వాటిలో ఏది అత్యంత అనుకూలమైన instructional material?",
+        options: ["Tactile diagrams మరియు embossed representations", "సాధారణ low-resolution photographs", "రంగులేని చిన్న print worksheets", "కేవలం lecture notes"],
+        correct: 0,
+        explanation: "Tactile diagrams మరియు embossed representations visually inaccessible shapes, graphs, spatial relationshipsను స్పర్శ ద్వారా అర్థం చేసుకోవడానికి సహాయపడతాయి, ముఖ్యంగా blind learners కోసం."
+    },
+    {
+        question: "Brailleలో ఒక సాధారణ Braille cellలో ఎన్ని dots ఉంటాయి?",
+        options: ["4", "6", "8", "10"],
+        correct: 1,
+        explanation: "సాంప్రదాయ Braille cellలో ఆరు dots ఉంటాయి. ఇవి రెండు columnsలో మూడు చొప్పున అమర్చబడి, వివిధ dot combinations ద్వారా అక్షరాలు, సంఖ్యలు మరియు ఇతర చిహ్నాలను సూచిస్తాయి."
+    },
+    {
+        question: "గణిత చిహ్నాలు మరియు mathematical notationను Brailleలో సూచించడానికి ప్రత్యేకంగా ఉపయోగించే code ఏది?",
+        options: ["Grade 2 Braille మాత్రమే", "Nemeth Code", "Morse Code", "American Sign Language Code"],
+        correct: 1,
+        explanation: "Nemeth Code అనేది mathematics మరియు science notationను Brailleలో సూచించడానికి అభివృద్ధి చేసిన ప్రత్యేక code. ఇది సంక్లిష్టమైన గణిత చిహ్నాలు మరియు expressionsను tactile రూపంలో అందిస్తుంది."
+    },
+    {
+        question: "ఒక visually impaired విద్యార్థి పుస్తకంలోని printed textను computer ద్వారా చదివే digital textగా మార్చుకోవాల్సి ఉంది. క్రింది సాంకేతికతల్లో ఏది ఈ పనికి అత్యంత అనుకూలం?",
+        options: ["OCR", "FM amplification", "Cochlear implant", "Speech audiometry"],
+        correct: 0,
+        explanation: "OCR అంటే Optical Character Recognition. ఇది scanned లేదా photographed printed textను గుర్తించి editable లేదా accessible digital textగా మార్చుతుంది, తద్వారా screen readers వంటి technologies దాన్ని చదవగలవు."
+    },
+    {
+        question: "క్రింది వాటిలో screen reader యొక్క ప్రధాన ఉపయోగం ఏది?",
+        options: ["Monitor brightnessను స్వయంచాలకంగా పెంచడం", "Screenపై ఉన్న digital informationను speech లేదా Braille outputగా అందించడం", "Printed pageను మాత్రమే magnify చేయడం", "కంటి pressureను కొలవడం"],
+        correct: 1,
+        explanation: "Screen reader కంప్యూటర్ లేదా mobile screenలోని accessible digital informationను speech synthesis లేదా Braille display ద్వారా అందిస్తుంది. ఇది visually impaired usersకు digital interfacesను navigate చేయడంలో సహాయపడుతుంది."
+    },
+    {
+        question: "Refreshable Braille display ప్రధానంగా ఏ విధమైన accessను అందిస్తుంది?",
+        options: ["Printed photographsను colourలో చూపించడం", "Digital textను tactile Braille రూపంలో చదవడానికి వీలు కల్పించడం", "దూరంలోని వస్తువులను optical zoom లేకుండా చూడటం", "విద్యార్థి handwritingను సరిచేయడం"],
+        correct: 1,
+        explanation: "Refreshable Braille display digital textను మార్చగల tactile Braille dotsగా ప్రదర్శిస్తుంది. ఇది screen readersతో కలిసి visually impaired usersకు digital contentను స్పర్శ ద్వారా చదివే access అందిస్తుంది."
+    },
+    {
+        question: "ఒక visually impaired విద్యార్థి పాఠశాలలో classroom నుండి laboratoryకి స్వతంత్రంగా వెళ్లడం నేర్చుకుంటున్నాడు. ఈ లక్ష్యం ప్రధానంగా ఏ విభాగానికి చెందుతుంది?",
+        options: ["Functional academics", "Orientation and Mobility", "Speech therapy", "Behaviour modification"],
+        correct: 1,
+        explanation: "Orientation and Mobility training visually impaired individualsకు పరిసరాలను అర్థం చేసుకోవడం, మార్గాలను గుర్తించడం మరియు సురక్షితంగా స్వతంత్రంగా ఒక ప్రదేశం నుండి మరొకదానికి ప్రయాణించడం నేర్పుతుంది."
+    },
+    {
+        question: "Orientation and Mobility trainingలో white cane యొక్క ప్రధాన educational purpose ఏది?",
+        options: ["విద్యార్థి reading speedను పెంచడం", "పరిసరాల్లో సురక్షితంగా మరియు స్వతంత్రంగా కదలడానికి సహాయపడడం", "విద్యార్థి visual acuityను మెరుగుపరచడం", "Braille writingను వేగవంతం చేయడం"],
+        correct: 1,
+        explanation: "White cane ప్రయాణ సమయంలో obstacles, surface changes మరియు మార్గంలోని సమాచారాన్ని గుర్తించడంలో సహాయపడుతుంది. ఇది visually impaired వ్యక్తి safe మరియు independent mobilityని అభివృద్ధి చేసుకోవడానికి ఉపయోగపడుతుంది."
+    },
+    {
+        question: "ఒక visually impaired విద్యార్థి కొత్త classroomలో furniture యొక్క స్థానాలను తెలుసుకోవాల్సి ఉంది. Orientation trainingలో మొదటగా ఏ అంశం ముఖ్యమైనది?",
+        options: ["పరిసరాల spatial layoutను అర్థం చేసుకోవడం", "విద్యార్థికి ఎక్కువ homework ఇవ్వడం", "కేవలం auditory dictation ఇవ్వడం", "అన్ని tactile materials తొలగించడం"],
+        correct: 0,
+        explanation: "Spatial layoutను అర్థం చేసుకోవడం వల్ల విద్యార్థి classroomలో furniture, entrances, pathways మరియు ముఖ్యమైన locationsను mental mapగా నిర్మించుకోగలడు. ఇది independent navigationకు పునాది."
+    },
+    {
+        question: "Independent Living Skills బోధనలో క్రింది వాటిలో ఏది సహజమైన విద్యా లక్ష్యం?",
+        options: ["దుస్తులు ధరించడం మరియు వ్యక్తిగత పరిశుభ్రతను స్వతంత్రంగా నిర్వహించడం", "కేవలం textbook definitions గుర్తుపెట్టుకోవడం", "కేవలం oral examinationలో పాల్గొనడం", "ప్రతి కార్యకలాపానికి ఉపాధ్యాయుని సహాయం పొందడం"],
+        correct: 0,
+        explanation: "Independent Living Skillsలో self-care, dressing, grooming, cooking, money management మరియు household tasks వంటి రోజువారీ కార్యకలాపాలను సాధ్యమైనంత స్వతంత్రంగా నిర్వహించడం ప్రధాన లక్ష్యం."
+    },
+    {
+        question: "ఒక విద్యార్థి వంటగదిలో వస్తువులను గుర్తించడానికి tactile labels మరియు consistent arrangementను ఉపయోగిస్తున్నాడు. ఇది ప్రధానంగా ఏ నైపుణ్యాన్ని అభివృద్ధి చేస్తుంది?",
+        options: ["Independent living", "Auditory discrimination", "Speech production", "Fine-art appreciation"],
+        correct: 0,
+        explanation: "Tactile labels మరియు consistent arrangement వస్తువులను గుర్తించడం, కనుగొనడం మరియు ఉపయోగించడం సులభం చేస్తాయి. ఇవి visually impaired విద్యార్థి kitchenలో స్వతంత్రంగా పనిచేసే నైపుణ్యాన్ని పెంచుతాయి."
+    },
+    {
+        question: "క్రింది వాటిలో visually impaired విద్యార్థికి accessible printను మెరుగుపరచడానికి అత్యంత సముచితమైన combination ఏది?",
+        options: ["చిన్న font + తక్కువ contrast", "పెద్ద font + తగిన contrast + తగిన spacing", "decorative font + crowded layout", "faint print + glossy background"],
+        correct: 1,
+        explanation: "పెద్ద font, స్పష్టమైన contrast మరియు తగిన spacing print readabilityని మెరుగుపరుస్తాయి. ఈ adaptations ముఖ్యంగా residual visionను ఉపయోగించే low vision విద్యార్థులకు reading accessను సులభతరం చేస్తాయి."
+    },
+    {
+        question: "ఒక Low Vision విద్యార్థి science diagramను సాధారణ printలో చూడలేకపోతున్నాడు. ఉపాధ్యాయుడు diagramను tactile రూపంలో అందించడంతో పాటు verbal description కూడా ఇస్తున్నాడు. ఈ విధానం ప్రధానంగా ఏ సూత్రాన్ని ప్రతిబింబిస్తుంది?",
+        options: ["Multisensory access", "Competitive learning", "Behaviour extinction", "Rote memorisation"],
+        correct: 0,
+        explanation: "Tactile representation మరియు verbal descriptionను కలిపి ఉపయోగించడం ద్వారా ఒకే సమాచారాన్ని బహుళ sensory channels ద్వారా అందిస్తున్నారు. ఇది multisensory access సూత్రానికి ఉదాహరణ."
+    },
+    {
+        question: "క్రింది వాటిలో DAISY format యొక్క ప్రధాన educational relevance ఏది?",
+        options: ["Hearing assessment నిర్వహించడం", "Accessible digital talking booksను అందించడం", "Eye pressureను కొలవడం", "Braille dotsను manually emboss చేయడం"],
+        correct: 1,
+        explanation: "DAISY అంటే Digital Accessible Information System. ఇది structured accessible digital talking booksను అందించడానికి ఉపయోగపడుతుంది, తద్వారా visually impaired learners educational contentను సులభంగా access చేయగలరు."
+    },
+    {
+        question: "ఒక visually impaired విద్యార్థి textbookలోని long passagesను చదవడానికి screen reader ఉపయోగిస్తున్నాడు. కానీ page layout, headings మరియు tables అర్థం చేసుకోవడం కష్టంగా ఉంది. ఈ పరిస్థితిలో ఉపాధ్యాయుడు ముందుగా ఏ adaptationపై దృష్టి పెట్టాలి?",
+        options: ["Accessible structured digital material అందించడం", "అన్ని headings తొలగించడం", "కేవలం handwritten notes ఇవ్వడం", "విద్యార్థికి text accessను నిరాకరించడం"],
+        correct: 0,
+        explanation: "Screen readers structured digital documentsలో headings, tables మరియు navigation elementsను సరిగ్గా access చేయగలిగితే information structure స్పష్టమవుతుంది. అందువల్ల accessible structured material అవసరం."
+    },
+    {
+        question: "క్రింది వాటిలో functional academicsకు అత్యంత సరైన ఉదాహరణ ఏది?",
+        options: ["డబ్బు విలువలను గుర్తించి దుకాణంలో సరైన మొత్తాన్ని చెల్లించడం", "కేవలం నిర్వచనాలను కంఠస్థం చేయడం", "కేవలం poetry recitation చేయడం", "కేవలం handwriting speedను కొలవడం"],
+        correct: 0,
+        explanation: "Functional academicsలో చదువు, గణితం మరియు ఇతర academic skillsను రోజువారీ జీవితంలో ఉపయోగించడం ముఖ్యమైనది. డబ్బు విలువలను గుర్తించి సరైన మొత్తాన్ని చెల్లించడం దానికి ప్రత్యక్ష ఉదాహరణ."
+    },
+    {
+        question: "క్రింది ప్రకటనలను పరిశీలించండి: i) Low vision ఉన్న విద్యార్థులకు visual efficiencyని పెంచడానికి optical/non-optical aids ఉపయోగించవచ్చు. ii) Low vision ఉన్న ప్రతి విద్యార్థి Braille మాత్రమే ఉపయోగించాలి. iii) Lighting మరియు contrastలో మార్పులు కొంతమంది low vision విద్యార్థులకు ఉపయోగకరంగా ఉండవచ్చు. సరైన సమాధానాన్ని ఎంచుకోండి.",
+        options: ["i మాత్రమే", "ii మాత్రమే", "i మరియు iii మాత్రమే", "i, ii మరియు iii"],
         correct: 2,
-        explanation: "Adaptive Behaviourను భావనాత్మక, సామాజిక, ఆచరణాత్మక రంగాలలో పరిశీలిస్తారు. ఇవి వ్యక్తి రోజువారీ జీవితం, సామాజిక సంబంధాలు, స్వతంత్రత మరియు సమాజంలో సమర్థవంతమైన పనితీరును ప్రతిబింబిస్తాయి."
+        explanation: "Optical మరియు non-optical aids, అలాగే lighting మరియు contrast adaptations, కొంతమంది low vision విద్యార్థులకు ఉపయోగపడతాయి. అయితే ప్రతి low vision విద్యార్థికి Braille మాత్రమే తప్పనిసరి కాదు."
     },
     {
-        question: "Vineland Adaptive Behavior Scales ప్రధానంగా దేనిని అంచనా వేయడానికి ఉపయోగించబడుతుంది?",
-        options: [
-            "మేధో సామర్థ్యాన్ని మాత్రమే",
-            "అనుకూల ప్రవర్తనను",
-            "వినికిడి సామర్థ్యాన్ని",
-            "దృష్టి తీక్షణతను"
-        ],
-        correct: 1,
-        explanation: "Vineland Adaptive Behavior Scales వ్యక్తి అనుకూల ప్రవర్తనను అంచనా వేయడానికి ఉపయోగిస్తారు. ఇందులో కమ్యూనికేషన్, రోజువారీ జీవన నైపుణ్యాలు, సామాజికీకరణ మరియు ఇతర కార్యాత్మక సామర్థ్యాలు పరిశీలించబడతాయి."
-    },
-    {
-        question: "పాఠశాల వయస్సులో మేధో వైకల్యం ఉన్న విద్యార్థిని అంచనా వేస్తున్నప్పుడు, విద్యా సాధనతో పాటు ప్రత్యేకంగా ఏ అంశాన్ని పరిగణనలోకి తీసుకోవాలి?",
-        options: [
-            "కేవలం IQ స్కోరు",
-            "అనుకూల ప్రవర్తన మరియు రోజువారీ పనితీరు",
-            "కేవలం రాత వేగం",
-            "కేవలం హాజరు శాతం"
-        ],
-        correct: 1,
-        explanation: "మేధో వైకల్యాన్ని అంచనా వేయడంలో విద్యా సాధనతో పాటు అనుకూల ప్రవర్తన మరియు రోజువారీ పనితీరును పరిగణించాలి. ఇవి విద్యార్థి వాస్తవ జీవన కార్యాచరణ సామర్థ్యాన్ని స్పష్టంగా తెలియజేస్తాయి."
-    },
-    {
-        question: "మేధో వైకల్యం ఉన్న పెద్దవారి వృత్తి సంబంధిత అంచనా (Vocational Assessment) యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
-        options: [
-            "కేవలం IQ స్థాయిని నిర్ణయించడం",
-            "వృత్తి ఆసక్తులు, సామర్థ్యాలు మరియు పనికి సంబంధించిన నైపుణ్యాలను గుర్తించడం",
-            "కుటుంబ ఆదాయాన్ని లెక్కించడం",
-            "కేవలం వైద్య చికిత్స అవసరాన్ని నిర్ణయించడం"
-        ],
-        correct: 1,
-        explanation: "వృత్తి సంబంధిత అంచనా వ్యక్తి వృత్తి ఆసక్తులు, సామర్థ్యాలు, పనికి సంబంధించిన నైపుణ్యాలు మరియు అవసరమైన మద్దతును గుర్తిస్తుంది. దీని ఆధారంగా తగిన ఉద్యోగ శిక్షణను రూపొందించవచ్చు."
-    },
-    {
-        question: "మేధో వైకల్యం ఉన్న ప్రీ-స్కూల్ బాలుడి కోసం రూపొందించే పాఠ్య ప్రణాళికలో ఏ అంశానికి ఎక్కువ ప్రాధాన్యత ఇవ్వడం సముచితం?",
-        options: [
-            "కేవలం ఉన్నత స్థాయి సైద్ధాంతిక జ్ఞానం",
-            "అభివృద్ధి, స్వయం సంరక్షణ మరియు ప్రారంభ కార్యాత్మక నైపుణ్యాలు",
-            "కేవలం పోటీ పరీక్షల శిక్షణ",
-            "కేవలం జ్ఞాపకశక్తి ఆధారిత పఠనం"
-        ],
-        correct: 1,
-        explanation: "ప్రీ-స్కూల్ దశలో అభివృద్ధి, స్వయం సంరక్షణ, కమ్యూనికేషన్ మరియు ప్రారంభ కార్యాత్మక నైపుణ్యాలకు ప్రాధాన్యత ఇవ్వాలి. ఇవి తరువాతి స్వతంత్ర జీవనం మరియు అభ్యాసానికి పునాది వేస్తాయి."
-    },
-    {
-        question: "ప్రాథమిక స్థాయిలో మేధో వైకల్యం ఉన్న విద్యార్థికి Functional Academics బోధించడంలో క్రింది వాటిలో అత్యంత సముచితమైన ఉదాహరణ ఏది?",
-        options: [
-            "కేవలం క్లిష్టమైన బీజగణిత సూత్రాలు",
-            "దుకాణంలో వస్తువు ధరను చదివి, సరైన డబ్బును గుర్తించడం",
-            "కేవలం సాహిత్య విమర్శ రాయడం",
-            "కేవలం ఉన్నత స్థాయి వ్యాకరణ నియమాలను కంఠస్థం చేయడం"
-        ],
-        correct: 1,
-        explanation: "Functional Academics రోజువారీ జీవితంలో ఉపయోగపడే విద్యా నైపుణ్యాలను బోధిస్తుంది. ధర చదవడం, డబ్బు గుర్తించడం మరియు చెల్లింపులు చేయడం వంటి నైపుణ్యాలు స్వతంత్ర జీవనానికి ప్రత్యక్షంగా ఉపయోగపడతాయి."
-    },
-    {
-        question: "మేధో వైకల్యం ఉన్న విద్యార్థుల కోసం సెకండరీ మరియు ప్రీ-వొకేషనల్ దశలో పాఠ్య ప్రణాళికలో ఏ అంశాల కలయిక అత్యంత సముచితం?",
-        options: [
-            "కేవలం అకడమిక్ విషయాలు",
-            "కార్యాత్మక విద్య, స్వతంత్ర జీవన నైపుణ్యాలు మరియు వృత్తి సిద్ధత",
-            "కేవలం శారీరక వ్యాయామాలు",
-            "కేవలం పరీక్షా వ్యూహాలు"
-        ],
-        correct: 1,
-        explanation: "సెకండరీ మరియు ప్రీ-వొకేషనల్ దశలో కార్యాత్మక విద్యతో పాటు స్వతంత్ర జీవన నైపుణ్యాలు, పని అలవాట్లు మరియు వృత్తి సిద్ధతపై దృష్టి పెట్టడం భవిష్యత్ స్వావలంబనకు సహాయపడుతుంది."
-    },
-    {
-        question: "ఒక విద్యార్థి సాధారణ తరగతి లక్ష్యాన్ని అర్థం చేసుకోగలడు కానీ, ఎక్కువ దృశ్య సహాయం మరియు అదనపు సమయం అవసరం. Learning Objective మార్చకుండా బోధనా విధానాన్ని మార్చడం ఏదికి ఉదాహరణ?",
-        options: [
-            "Curriculum Modification",
-            "Curriculum Adaptation/Accommodation",
-            "Curriculum Elimination",
-            "Curriculum Acceleration"
-        ],
-        correct: 1,
-        explanation: "Accommodation లేదా adaptationలో నేర్చుకోవాల్సిన లక్ష్యాన్ని మార్చకుండా బోధనా విధానం, సమయం, పరికరాలు లేదా సహాయాన్ని మార్చుతారు. అందువల్ల విద్యార్థికి లక్ష్యాన్ని చేరుకునే అవకాశం మెరుగుపడుతుంది."
-    },
-    {
-        question: "మేధో వైకల్యం ఉన్న విద్యార్థి కోసం IEP రూపొందించేటప్పుడు, వార్షిక లక్ష్యాలు (Annual Goals) ప్రధానంగా దేనిపై ఆధారపడి ఉండాలి?",
-        options: [
-            "తరగతిలోని ఇతర విద్యార్థుల లక్ష్యాలపై మాత్రమే",
-            "విద్యార్థి ప్రస్తుత పనితీరు స్థాయి మరియు గుర్తించిన అవసరాలపై",
-            "తల్లిదండ్రుల వృత్తిపై",
-            "పాఠ్యపుస్తకంలోని అధ్యాయాల సంఖ్యపై"
-        ],
-        correct: 1,
-        explanation: "IEP వార్షిక లక్ష్యాలు విద్యార్థి ప్రస్తుత పనితీరు, వ్యక్తిగత అవసరాలు మరియు గుర్తించిన విద్యా లేదా కార్యాత్మక లోపాల ఆధారంగా రూపొందించాలి. ఇవి కొలవగలిగే మరియు విద్యార్థికి సంబంధితంగా ఉండాలి."
-    },
-    {
-        question: "IEPలో Present Level of Academic Achievement and Functional Performance వివరించడం యొక్క ప్రధాన ప్రయోజనం ఏమిటి?",
-        options: [
-            "విద్యార్థికి గ్రేడ్ నిర్ణయించడం",
-            "ప్రస్తుత సామర్థ్యాలు మరియు అవసరాల ఆధారంగా తగిన లక్ష్యాలను రూపొందించడానికి",
-            "విద్యార్థిని ఇతరులతో ర్యాంక్ చేయడానికి",
-            "కేవలం హాజరును నమోదు చేయడానికి"
-        ],
-        correct: 1,
-        explanation: "Present Level విద్యార్థి ప్రస్తుత విద్యా మరియు కార్యాత్మక సామర్థ్యాలను స్పష్టంగా వివరిస్తుంది. దీనివల్ల గుర్తించిన అవసరాలకు అనుగుణంగా తగిన, కొలవగల IEP లక్ష్యాలను రూపొందించవచ్చు."
-    },
-    {
-        question: "ఒక విద్యార్థి “చేతులు కడుక్కోవడం” అనే పూర్తి పనిని స్వతంత్రంగా చేయలేకపోతున్నాడు. ఉపాధ్యాయుడు దానిని చిన్న చిన్న వరుస దశలుగా విభజించి బోధిస్తే, దీనిని ఏమంటారు?",
-        options: [
-            "Task Analysis",
-            "Free Association",
-            "Brainstorming",
-            "Cooperative Learning"
-        ],
+        question: "క్రింది వాటిని సరైన విధంగా జతపరచండి. i) Functional Vision Assessment ii) Learning Media Assessment iii) Screen Reader iv) Refreshable Braille Display. a) Digital informationను speech/Braille outputగా access చేయడం b) Learning కోసం ఉపయోగించాల్సిన sensory mediumను నిర్ణయించడం c) Functional situationsలో మిగిలిన దృష్టి వినియోగాన్ని అంచనా వేయడం d) Digital textను tactile Brailleగా అందించడం",
+        options: ["i-c, ii-b, iii-a, iv-d", "i-b, ii-c, iii-d, iv-a", "i-c, ii-a, iii-b, iv-d", "i-d, ii-b, iii-a, iv-c"],
         correct: 0,
-        explanation: "Task Analysisలో సంక్లిష్టమైన నైపుణ్యాన్ని వరుసగా నిర్వహించగల చిన్న దశలుగా విభజిస్తారు. ప్రతి దశను ప్రత్యేకంగా బోధించడం ద్వారా విద్యార్థి మొత్తం పనిని క్రమంగా స్వతంత్రంగా నేర్చుకుంటాడు."
+        explanation: "FVA functional visionను అంచనా వేస్తుంది; LMA learning mediumను నిర్ణయిస్తుంది. Screen reader digital informationను speech లేదా Brailleగా అందిస్తుంది; refreshable display tactile Brailleను చూపిస్తుంది."
     },
     {
-        question: "Backward Chaining పద్ధతిలో ఒక నైపుణ్యాన్ని బోధించేటప్పుడు సాధారణంగా ఏ దశకు మొదట ప్రాధాన్యత ఇస్తారు?",
-        options: [
-            "మొదటి దశకు",
-            "మధ్య దశకు",
-            "చివరి దశకు",
-            "యాదృచ్ఛిక దశకు"
-        ],
+        question: "క్రింది వాటిని eye structure — function ప్రకారం సరైన విధంగా జతపరచండి. i) Cornea ii) Iris iii) Retina iv) Optic nerve. a) Visual impulsesను brain వైపు తీసుకెళ్తుంది b) కాంతి ప్రవేశాన్ని నియంత్రిస్తుంది c) కాంతిని bend చేసి eyeలోకి ప్రవేశించడంలో సహాయపడుతుంది d) Light stimuliని neural signalsగా మార్చే photoreceptors కలిగి ఉంటుంది",
+        options: ["i-c, ii-b, iii-d, iv-a", "i-b, ii-c, iii-a, iv-d", "i-d, ii-b, iii-c, iv-a", "i-c, ii-d, iii-b, iv-a"],
+        correct: 0,
+        explanation: "Cornea కాంతిని refract చేస్తుంది; iris pupil ద్వారా కాంతి ప్రవేశాన్ని నియంత్రిస్తుంది; retina photoreceptorsను కలిగి ఉంటుంది; optic nerve visual impulsesను brain వైపు తీసుకెళ్తుంది."
+    },
+    {
+        question: "ఒక visually impaired విద్యార్థికి independent travel నేర్పుతున్నప్పుడు క్రింది చర్యలు పరిగణించబడ్డాయి: i) పరిసరాల గురించి spatial information ఇవ్వడం ii) సురక్షితమైన cane technique అభ్యసించడం iii) వివిధ మార్గాల్లో ప్రయాణాన్ని practice చేయించడం iv) ప్రతి ప్రయాణంలో ఉపాధ్యాయుడు విద్యార్థిని physicalగా guide చేయడం. సముచితమైన చర్యలను ఎంచుకోండి.",
+        options: ["i, ii మాత్రమే", "ii, iii మాత్రమే", "i, ii, iii మాత్రమే", "i, iii, iv మాత్రమే"],
         correct: 2,
-        explanation: "Backward Chainingలో పనిలోని చివరి దశను మొదట విద్యార్థి నేర్చుకునేలా చేస్తారు. ఉపాధ్యాయుడు ముందు దశలను నిర్వహిస్తాడు, విద్యార్థి చివరి దశను పూర్తి చేసి సహజ ఫలితాన్ని పొందుతాడు."
+        explanation: "Independent mobility కోసం spatial information, safe cane techniques మరియు varied route practice అవసరం. ప్రతి ప్రయాణంలో physical guidance ఇవ్వడం independence అభివృద్ధికి అనుకూలమైన ప్రధాన విధానం కాదు."
     },
     {
-        question: "ఒక విద్యార్థి ఒక పనిని చేయడానికి ఉపాధ్యాయుడి సహాయం అవసరపడుతున్నాడు. నైపుణ్యం అభివృద్ధి చెందుతున్న కొద్దీ ఆ సహాయాన్ని క్రమంగా తగ్గించడం ఏ ప్రక్రియకు ఉదాహరణ?",
-        options: [
-            "Prompt Fading",
-            "Punishment",
-            "Extinction Burst",
-            "Overcorrection"
-        ],
-        correct: 0,
-        explanation: "Prompt Fadingలో విద్యార్థికి అందించే సూచనలు లేదా సహాయాన్ని నైపుణ్యం మెరుగుపడే కొద్దీ క్రమంగా తగ్గిస్తారు. దీని ప్రధాన లక్ష్యం విద్యార్థి స్వతంత్రంగా పనిని చేయడం."
-    },
-    {
-        question: "ఒక విద్యార్థి తరగతిలో వస్తువులను విసరుతున్నాడు. ఉపాధ్యాయుడు ఆ ప్రవర్తనకు ముందు ఏమి జరిగింది, ప్రవర్తన ఎలా జరిగింది, తరువాత ఏమి జరిగింది అనే సమాచారాన్ని నమోదు చేస్తున్నాడు. ఇది ఏ విధానానికి సంబంధించినది?",
-        options: [
-            "ABC Behavioural Recording",
-            "Sociometric Assessment",
-            "Intelligence Testing",
-            "Portfolio Assessment"
-        ],
-        correct: 0,
-        explanation: "ABC recordingలో Antecedent, Behaviour, Consequenceలను క్రమంగా నమోదు చేస్తారు. ఇది ప్రవర్తనకు ముందు మరియు తరువాత జరిగే సంఘటనలను అర్థం చేసుకుని, తగిన ప్రవర్తనా జోక్యాన్ని రూపొందించడానికి ఉపయోగపడుతుంది."
-    },
-    {
-        question: "Differential Reinforcement of Alternative Behaviour (DRA) లో ప్రధానంగా ఏమి జరుగుతుంది?",
-        options: [
-            "ప్రతి ప్రవర్తనను శిక్షించడం",
-            "అవాంఛిత ప్రవర్తనకు బదులుగా సముచిత ప్రత్యామ్నాయ ప్రవర్తనను బలపరచడం",
-            "విద్యార్థిని అన్ని కార్యకలాపాల నుండి తొలగించడం",
-            "విద్యార్థికి ఎలాంటి ప్రతిస్పందన ఇవ్వకపోవడం"
-        ],
-        correct: 1,
-        explanation: "DRAలో అవాంఛిత ప్రవర్తనకు బదులుగా ఉపయోగకరమైన ప్రత్యామ్నాయ ప్రవర్తనను గుర్తించి బలపరుస్తారు. ఇలా చేయడం ద్వారా విద్యార్థి అవసరాన్ని సముచితమైన ప్రవర్తన ద్వారా వ్యక్తపరచడం నేర్చుకుంటాడు."
-    },
-    {
-        question: "మేధో వైకల్యం ఉన్న విద్యార్థి తరచుగా తనను తాను కొట్టుకునే ప్రవర్తన చూపుతున్నాడు. జోక్యం ప్రారంభించే ముందు అత్యంత సముచితమైన చర్య ఏది?",
-        options: [
-            "వెంటనే శిక్ష విధించడం",
-            "ప్రవర్తనకు సంబంధించిన Antecedent–Behaviour–Consequence సమాచారాన్ని సేకరించడం",
-            "విద్యార్థిని శాశ్వతంగా తరగతి నుండి తొలగించడం",
-            "ప్రవర్తనను పూర్తిగా పట్టించుకోకపోవడం"
-        ],
-        correct: 1,
-        explanation: "జోక్యానికి ముందు ABC సమాచారం సేకరించడం ద్వారా ప్రవర్తనకు సంబంధించిన పరిస్థితులు మరియు పరిణామాలను అర్థం చేసుకోవచ్చు. ఈ సమాచారంతో వ్యక్తిగత అవసరాలకు సరిపోయే ప్రవర్తనా జోక్యాన్ని రూపొందించవచ్చు."
-    },
-    {
-        question: "క్రింది వాటిలో Therapeutic Intervention కు సరైన ఉదాహరణ ఏది?",
-        options: [
-            "Fine-motor మరియు స్వయం సంరక్షణ నైపుణ్యాల కోసం Occupational Therapy",
-            "కేవలం చరిత్ర పాఠం బోధించడం",
-            "కేవలం పరీక్ష నిర్వహించడం",
-            "కేవలం హాజరు నమోదు చేయడం"
-        ],
-        correct: 0,
-        explanation: "Occupational Therapy ఒక therapeutic intervention. ఇది fine-motor సామర్థ్యాలు, స్వయం సంరక్షణ, రోజువారీ జీవన కార్యకలాపాలు మరియు కార్యాత్మక స్వతంత్రతను మెరుగుపరచడానికి ఉపయోగించబడుతుంది."
-    },
-    {
-        question: "మేధో వైకల్యం ఉన్న విద్యార్థికి ఉద్యోగ ప్రదేశంలో పనిని నేర్పడానికి Job Coach సహాయం అందించడం ఏ భావనతో ఎక్కువగా సంబంధం కలిగి ఉంటుంది?",
-        options: [
-            "Supported Employment",
-            "Institutionalization",
-            "Remedial Examination",
-            "Norm-Referenced Testing"
-        ],
-        correct: 0,
-        explanation: "Supported Employmentలో వ్యక్తి సాధారణ ఉద్యోగ వాతావరణంలో పనిచేయడానికి అవసరమైన శిక్షణ, మార్గదర్శకత్వం మరియు మద్దతును పొందుతాడు. Job Coach పనిస్థలంలో ఈ మద్దతును అందించడంలో సహాయపడతాడు."
-    },
-    {
-        question: "ఒక విద్యార్థి వృత్తి శిక్షణకు సిద్ధం చేయబడుతున్నప్పుడు, క్రింది వాటిలో ఏది అత్యంత ముఖ్యమైన Pre-vocational Skill?",
-        options: [
-            "కేవలం పాఠ్యపుస్తకాన్ని కంఠస్థం చేయడం",
-            "పనిని సమయానికి పూర్తి చేయడం, సూచనలు పాటించడం మరియు పని ప్రవర్తనను ప్రదర్శించడం",
-            "కేవలం దీర్ఘ వ్యాసాలు రాయడం",
-            "కేవలం మౌఖిక పరీక్షలో ఎక్కువ మార్కులు సాధించడం"
-        ],
-        correct: 1,
-        explanation: "Pre-vocational skillsలో సమయపాలన, సూచనలు పాటించడం, పనిని పూర్తి చేయడం, బాధ్యతాయుతమైన పని ప్రవర్తన మరియు సహకారం వంటి ఉద్యోగానికి అవసరమైన ప్రాథమిక అలవాట్లు ఉంటాయి."
-    },
-    {
-        question: "Family Needs Assessment యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
-        options: [
-            "కుటుంబాన్ని ఇతర కుటుంబాలతో పోల్చడం",
-            "కుటుంబానికి అవసరమైన సమాచారం, సేవలు, మద్దతు మరియు వనరులను గుర్తించడం",
-            "కుటుంబ ఆదాయాన్ని మాత్రమే నిర్ణయించడం",
-            "పిల్లల IQను తల్లిదండ్రుల IQతో పోల్చడం"
-        ],
-        correct: 1,
-        explanation: "Family Needs Assessment కుటుంబానికి అవసరమైన సమాచారం, సేవలు, వనరులు మరియు మద్దతును గుర్తిస్తుంది. దీని ద్వారా కుటుంబం విద్యార్థి అభివృద్ధి మరియు విద్యలో సమర్థవంతంగా పాల్గొనగలదు."
-    },
-    {
-        question: "మేధో వైకల్యం ఉన్న బాలుడి విద్యా ప్రణాళికలో కుటుంబ సభ్యులను చురుకుగా భాగస్వాములను చేయడం వల్ల ప్రధాన ప్రయోజనం ఏమిటి?",
-        options: [
-            "పాఠశాల బాధ్యత పూర్తిగా కుటుంబానికి బదిలీ అవుతుంది",
-            "ఇంటి మరియు పాఠశాల మధ్య నైపుణ్యాల సాధనలో స్థిరత్వం పెరుగుతుంది",
-            "ఉపాధ్యాయుని అవసరం ఉండదు",
-            "మూల్యాంకనం అవసరం ఉండదు"
-        ],
-        correct: 1,
-        explanation: "కుటుంబ భాగస్వామ్యం వల్ల ఇంటి మరియు పాఠశాలలో ఒకే నైపుణ్యాలను స్థిరంగా సాధన చేయవచ్చు. ఇది సాధారణీకరణ, నిరంతర అభ్యాసం మరియు విద్యార్థి కార్యాత్మక పురోగతికి సహాయపడుతుంది."
-    },
-    {
-        question: "Community-Based Rehabilitation (CBR) యొక్క ప్రధాన లక్షణాన్ని సూచించేది ఏది?",
-        options: [
-            "వ్యక్తిని సమాజం నుండి వేరు చేసి సంస్థలో ఉంచడం",
-            "సమాజంలోని అందుబాటులో ఉన్న వనరులను ఉపయోగించి వ్యక్తి భాగస్వామ్యం మరియు స్వావలంబనను ప్రోత్సహించడం",
-            "కేవలం ఆసుపత్రి ఆధారిత చికిత్స అందించడం",
-            "కేవలం పాఠశాల ఆధారిత సేవలను అందించడం"
-        ],
-        correct: 1,
-        explanation: "CBR సమాజంలోని అందుబాటులో ఉన్న వనరులు మరియు సేవలను ఉపయోగించి వ్యక్తి పునరావాసం, భాగస్వామ్యం, హక్కులు మరియు స్వావలంబనను ప్రోత్సహిస్తుంది. ఇది సమాజంలోనే చేర్పును లక్ష్యంగా ఉంచుతుంది."
-    },
-    {
-        question: "మేధో వైకల్యం ఉన్న కౌమారదశ విద్యార్థికి Transition Planningలో క్రింది వాటిలో ఏ అంశాల కలయిక అత్యంత సముచితం?",
-        options: [
-            "కేవలం పరీక్షా మార్కులు",
-            "వృత్తి, స్వతంత్ర జీవనం, సామాజిక భాగస్వామ్యం మరియు భవిష్యత్ సేవలు",
-            "కేవలం హోంవర్క్",
-            "కేవలం క్రీడా కార్యకలాపాలు"
-        ],
-        correct: 1,
-        explanation: "Transition Planning విద్యార్థి పాఠశాల అనంతర జీవితానికి సిద్ధం కావడంపై దృష్టి పెడుతుంది. ఇందులో వృత్తి, స్వతంత్ర జీవనం, సామాజిక భాగస్వామ్యం మరియు అవసరమైన భవిష్యత్ సేవలు ఉంటాయి."
-    },
-    {
-        question: "క్రింది వాటిలో మేధో వైకల్యం ఉన్న విద్యార్థికి Technology-Based Instruction కు అత్యంత సముచితమైన ఉదాహరణ ఏది?",
-        options: [
-            "దశలవారీగా ఒక స్వయం సంరక్షణ నైపుణ్యాన్ని చూపించే వీడియో మోడలింగ్",
-            "కేవలం ముద్రిత పుస్తకాన్ని ఇవ్వడం",
-            "కేవలం బ్లాక్‌బోర్డ్‌ను చూడమని చెప్పడం",
-            "కేవలం మౌఖిక పరీక్ష నిర్వహించడం"
-        ],
-        correct: 0,
-        explanation: "వీడియో మోడలింగ్ సాంకేతికతను ఉపయోగించి నైపుణ్యాన్ని దశలవారీగా ప్రదర్శిస్తుంది. విద్యార్థి దృశ్య నమూనాను పదేపదే వీక్షించి, స్వయం సంరక్షణ వంటి కార్యాత్మక నైపుణ్యాలను నేర్చుకోవచ్చు."
-    },
-    {
-        question: "క్రింది జతలలో సరైన జతలను గుర్తించండి:\n\nA) Adaptive Behaviour — రోజువారీ జీవితంలో సమర్థవంతమైన పనితీరు\nB) Functional Academics — రోజువారీ జీవితానికి ఉపయోగపడే విద్యా నైపుణ్యాలు\nC) Task Analysis — క్లిష్టమైన పనిని చిన్న దశలుగా విభజించడం\nD) Supported Employment — ఉద్యోగానికి ఎటువంటి సహాయం అవసరం లేని పరిస్థితి",
-        options: [
-            "A, B మాత్రమే",
-            "A, C మాత్రమే",
-            "A, B, C మాత్రమే",
-            "B, C, D మాత్రమే"
-        ],
+        question: "క్రింది ప్రకటనలను పరిశీలించండి: a) Braille ఒక tactile reading and writing system. b) Visually impaired విద్యార్థులందరికీ ఒకే learning medium తప్పనిసరిగా ఉండాలి. c) Learning Media Assessment విద్యార్థికి print, Braille లేదా ఇతర sensory accessలో ఏది సముచితమో నిర్ణయించడంలో సహాయపడుతుంది. d) Accessible digital materials visually impaired విద్యార్థులకు curriculum accessను మెరుగుపరచగలవు. సరైన సమాధానం:",
+        options: ["a, c మాత్రమే", "b, d మాత్రమే", "a, c, d మాత్రమే", "a, b, c, d"],
         correct: 2,
-        explanation: "A, B మరియు C సరైన జతలు. Adaptive Behaviour కార్యాత్మక పనితీరును, Functional Academics రోజువారీ విద్యా నైపుణ్యాలను, Task Analysis పనిని చిన్న దశలుగా విభజించడాన్ని సూచిస్తాయి."
+        explanation: "Braille tactile reading-writing system. LMA వ్యక్తిగత learning mediumను నిర్ణయించడంలో సహాయపడుతుంది. Accessible digital materials curriculum accessను పెంచుతాయి; ఒకే medium అందరికీ తప్పనిసరి కాదు."
     },
     {
-        question: "క్రింది జతలను సరైన విధంగా జతపరచండి:\n\ni) ప్రీ-స్కూల్ దశ\n ii) ప్రాథమిక దశ\n iii) సెకండరీ దశ\n iv) వృత్తి దశ\n\na) ఉద్యోగ నైపుణ్యాలు మరియు పనిస్థల అనుభవం\nb) ప్రారంభ అభివృద్ధి మరియు స్వయం సంరక్షణ\nc) కార్యాత్మక అకడమిక్స్ మరియు రోజువారీ జీవన నైపుణ్యాలు\nd) వృత్తి సిద్ధత మరియు స్వతంత్ర జీవన నైపుణ్యాలు",
-        options: [
-            "i-b, ii-c, iii-d, iv-a",
-            "i-c, ii-b, iii-a, iv-d",
-            "i-b, ii-d, iii-c, iv-a",
-            "i-a, ii-c, iii-d, iv-b"
-        ],
-        correct: 0,
-        explanation: "ప్రీ-స్కూల్‌లో ప్రారంభ అభివృద్ధి మరియు స్వయం సంరక్షణ, ప్రాథమికంలో Functional Academics, సెకండరీలో వృత్తి సిద్ధత, వృత్తి దశలో ఉద్యోగ నైపుణ్యాలు ప్రధానంగా ఉంటాయి."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి:\n\n1. IEP లక్ష్యాలు విద్యార్థి గుర్తించిన అవసరాలకు అనుగుణంగా ఉండాలి.\n2. Functional Academics రోజువారీ జీవితంలో ఉపయోగపడే విద్యా నైపుణ్యాలను కలిగి ఉంటాయి.\n3. Curriculum Modificationలో విద్యార్థికి అందించాల్సిన విద్యా ఆశయాలు/కంటెంట్‌లో మార్పు ఉండవచ్చు.\n\nసరైన సమాధానాన్ని ఎంచుకోండి.",
-        options: [
-            "1 మాత్రమే",
-            "1 మరియు 2 మాత్రమే",
-            "2 మరియు 3 మాత్రమే",
-            "1, 2 మరియు 3"
-        ],
-        correct: 3,
-        explanation: "మూడు ప్రకటనలు సరైనవే. IEP లక్ష్యాలు అవసరాలపై ఆధారపడతాయి, Functional Academics రోజువారీ ఉపయోగకర నైపుణ్యాలను కలిగి ఉంటాయి, Modificationలో కంటెంట్ లేదా ఆశయాల్లో మార్పులు ఉండవచ్చు."
-    },
-    {
-        question: "క్రింది ప్రకటనలలో మేధో వైకల్యం ఉన్న విద్యార్థి యొక్క అనుకూల ప్రవర్తన (Adaptive Behaviour) గురించి సరైనవి ఏవి?\n\n1. స్వయం సంరక్షణ నైపుణ్యాలు అనుకూల ప్రవర్తనలో భాగం.\n2. సమాజంలో సురక్షితంగా వ్యవహరించడం ఆచరణాత్మక అనుకూల నైపుణ్యాలకు సంబంధించినది.\n3. అనుకూల ప్రవర్తనను అంచనా వేయడానికి కేవలం IQ పరీక్ష సరిపోతుంది.",
-        options: [
-            "1 మాత్రమే",
-            "1 మరియు 2 మాత్రమే",
-            "2 మరియు 3 మాత్రమే",
-            "1, 2 మరియు 3"
-        ],
+        question: "ఒక visually impaired విద్యార్థి Social Scienceలో maps, Mathematicsలో geometrical figures మరియు Scienceలో diagrams నేర్చుకోవాలి. క్రింది వాటిలో సమగ్రంగా అత్యంత సముచితమైన instructional approach ఏది?",
+        options: ["ప్రతి విషయానికి oral explanation మాత్రమే ఇవ్వడం", "Tactile graphics, verbal description మరియు accessible digital resourcesను అవసరానికి అనుగుణంగా ఉపయోగించడం", "Visual diagrams ఉన్న అన్ని topicsను curriculum నుండి తొలగించడం", "విద్యార్థికి written examination నుండి మినహాయింపు ఇవ్వడం"],
         correct: 1,
-        explanation: "ప్రకటనలు 1 మరియు 2 సరైనవి. స్వయం సంరక్షణ మరియు సమాజంలో సురక్షితమైన ప్రవర్తన adaptive skillsలో భాగాలు. కేవలం IQ పరీక్షతో అనుకూల ప్రవర్తనను పూర్తిగా అంచనా వేయలేము."
-    },
-    {
-        question: "మేధో వైకల్యం ఉన్న ఒక విద్యార్థి తనకు అవసరమైన వస్తువులను కొనుగోలు చేయడంలో ఇబ్బంది పడుతున్నాడు. ఉపాధ్యాయుడు ముందుగా వస్తువులను గుర్తించడం, ధరను చదవడం, సరైన డబ్బును ఎంచుకోవడం, చెల్లింపు చేయడం వంటి దశలను విడదీసి, నమూనా చూపించి, తరువాత సహాయాన్ని క్రమంగా తగ్గిస్తున్నాడు. ఈ జోక్యంలో ప్రధానంగా ఏ విధానాల కలయిక ఉంది?",
-        options: [
-            "Task Analysis, Modeling మరియు Prompt Fading",
-            "Punishment, Extinction మరియు Free Play",
-            "Intelligence Testing, Screening మరియు Diagnosis",
-            "Lecture Method, Rote Learning మరియు Summative Evaluation"
-        ],
-        correct: 0,
-        explanation: "పనిని చిన్న దశలుగా విభజించడం Task Analysis, నమూనా చూపించడం Modeling, సహాయాన్ని క్రమంగా తగ్గించడం Prompt Fading. ఈ మూడు కలిసి స్వతంత్ర కార్యాత్మక నైపుణ్యాన్ని అభివృద్ధి చేస్తాయి."
+        explanation: "వివిధ విషయాల్లో spatial మరియు visual informationను accessible చేయడానికి tactile graphics, verbal descriptions మరియు digital resourcesను అవసరానికి అనుగుణంగా కలిపి ఉపయోగించడం సమగ్ర instructional approach."
     }
 ];
