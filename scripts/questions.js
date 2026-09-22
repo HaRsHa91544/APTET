@@ -1,186 +1,446 @@
 const SUBJECTS = [
-    "Multiple Disabilities"
+    "Special Education"
 ];
 
 const QUESTIONS = [
     {
-        question: "రెండు లేదా అంతకంటే ఎక్కువ వైకల్యాలు కలిగిన వ్యక్తిలో, ఒకే వైకల్యాన్ని మాత్రమే ఆధారంగా చేసుకుని కాకుండా మొత్తం వ్యక్తి అవసరాలను గుర్తించడానికి ఉపయోగపడే అంచనా విధానం ఏది?",
-        options: ["Functional assessment", "Single-domain assessment", "Norm-referenced screening మాత్రమే", "Intelligence testing మాత్రమే"],
-        correct: 0,
-        explanation: "Functional assessment examines how a person performs meaningful daily activities and identifies support needs across environments, rather than relying only on diagnosis, intelligence scores, or isolated academic measures alone effectively."
-    },
-    {
-        question: "Deafblindness ఉన్న విద్యార్థితో ప్రత్యక్ష సంభాషణలో Tactile Sign Language ప్రధానంగా ఏ ఆధారాన్ని ఉపయోగిస్తుంది?",
-        options: ["దృశ్య సంకేతాల పరిశీలన", "స్పర్శ ద్వారా సంకేతాల గ్రహణం", "కేవలం శ్రవణ సంకేతాల గ్రహణం", "కేవలం లిఖిత భాష"],
+        question: "Vineland Adaptive Behavior Scales ప్రధానంగా ఏ అంశాన్ని అంచనా వేయడానికి ఉపయోగిస్తారు?",
+        options: [
+            "మేధస్సు స్థాయి",
+            "అనుకూల ప్రవర్తన (Adaptive Behaviour)",
+            "శ్రవణ సామర్థ్యం",
+            "దృశ్య-చలన సమన్వయం"
+        ],
         correct: 1,
-        explanation: "Tactile sign language conveys signs through touch, allowing a deafblind person to receive manual communication information without depending primarily on visual access to conventional signed language or demonstrations effectively in practice."
+        explanation: "Vineland Adaptive Behavior Scales వ్యక్తి యొక్క adaptive behaviourను అంచనా వేస్తుంది. ఇందులో communication, daily living skills, socialization మరియు motor skills వంటి functional domains ప్రధానంగా పరిశీలించబడతాయి."
     },
     {
-        question: "Multiple Disabilities ఉన్న విద్యార్థి యొక్క functional assessment లో క్రింది వాటిలో ఏది అత్యంత సముచితంగా పరిశీలించబడుతుంది?",
-        options: ["కేవలం IQ స్కోరు", "కేవలం వైద్య నిర్ధారణ", "రోజువారీ కార్యకలాపాల్లో వ్యక్తి పనితీరు", "కేవలం తరగతి పరీక్ష మార్కులు"],
+        question: "ప్రత్యేక అవసరాలు గల విద్యార్థుల Screening యొక్క ప్రధాన ఉద్దేశ్యం ఏది?",
+        options: [
+            "తుది నిర్ధారణ చేయడం",
+            "IEPను తుది రూపంలో రూపొందించడం",
+            "మరింత సమగ్ర assessment అవసరమున్న విద్యార్థులను గుర్తించడం",
+            "విద్యార్థి సాధించిన మార్కులను grade చేయడం"
+        ],
         correct: 2,
-        explanation: "Functional assessment focuses on practical performance in everyday activities, such as mobility, communication, self-care, and participation, because these directly inform educational supports and individualized adaptations appropriately across different educational settings."
+        explanation: "Screening అనేది risk లేదా suspected difficulty ఉన్న విద్యార్థులను ప్రారంభంగా గుర్తించే ప్రక్రియ. ఇది తుది diagnosis కాదు; అవసరమైతే comprehensive assessmentకు referral చేయడానికి సహాయపడుతుంది."
     },
     {
-        question: "Deafblind విద్యార్థి మిగిలి ఉన్న కొద్దిపాటి దృష్టి మరియు శ్రవణ సామర్థ్యాన్ని ఉపయోగించుకునేలా బోధన రూపొందించడం ఏ సూత్రానికి దగ్గరగా ఉంటుంది?",
-        options: ["Residual sensory utilization", "Sensory deprivation", "Rote memorization", "Isolated instruction"],
+        question: "Curriculum-Based Assessment (CBA) యొక్క ముఖ్య లక్షణం ఏది?",
+        options: [
+            "విద్యార్థి బోధించబడుతున్న curriculumలోని అంశాలపై పనితీరును అంచనా వేయడం",
+            "విద్యార్థిని జాతీయ ప్రమాణాలతో మాత్రమే పోల్చడం",
+            "కేవలం మేధస్సును కొలవడం",
+            "వైద్యపరమైన diagnosis చేయడం"
+        ],
         correct: 0,
-        explanation: "Residual sensory utilization means deliberately using remaining vision or hearing to support access, communication, orientation, and learning instead of ignoring available sensory capabilities during instruction and participation through accessible instruction."
+        explanation: "Curriculum-Based Assessment విద్యార్థి ప్రస్తుతం బోధించబడుతున్న curriculumలోని skills మరియు contentపై ఎలా పనిచేస్తున్నాడో కొలుస్తుంది. Instructional planning మరియు progress monitoringకు ఇది ఉపయోగపడుతుంది."
     },
     {
-        question: "Universal Design for Learning (UDL) యొక్క ప్రధాన ఉద్దేశ్యం ఏమిటి?",
-        options: ["ప్రతి విద్యార్థికి ఒకే బోధనా పద్ధతిని అమలు చేయడం", "విద్యార్థుల వైవిధ్యాన్ని దృష్టిలో ఉంచుకుని నేర్చుకునే అవకాశాలను ముందుగానే అందుబాటులో ఉంచడం", "ప్రత్యేక అవసరాలున్న విద్యార్థులను ప్రత్యేక తరగతుల్లో మాత్రమే బోధించడం", "మూల్యాంకనాన్ని పూర్తిగా తొలగించడం"],
+        question: "Criterion-Referenced Assessmentలో విద్యార్థి పనితీరు ప్రధానంగా దేనితో పోల్చబడుతుంది?",
+        options: [
+            "అదే వయస్సు గల విద్యార్థుల సగటుతో",
+            "తరగతిలో అత్యధిక మార్కులు సాధించిన విద్యార్థితో",
+            "జాతీయ నమూనా సమూహంతో",
+            "ముందుగా నిర్ణయించిన ప్రమాణాలు లేదా learning criteriaతో"
+        ],
+        correct: 3,
+        explanation: "Criterion-Referenced Assessmentలో విద్యార్థి పనితీరును ముందుగా నిర్ణయించిన learning criteria లేదా standardsతో పోలుస్తారు. ఇతర విద్యార్థుల performance ఆధారంగా relative ranking చేయడం దీని ప్రధాన ఉద్దేశ్యం కాదు."
+    },
+    {
+        question: "ఒక విద్యార్థికి intervention ప్రారంభించే ముందు అతని ప్రస్తుత పనితీరును నమోదు చేస్తారు. ఈ ప్రారంభ పనితీరు కొలతను ఏమంటారు?",
+        options: [
+            "Summative evaluation",
+            "Baseline",
+            "Norm score",
+            "Final evaluation"
+        ],
         correct: 1,
-        explanation: "UDL anticipates learner variability and provides flexible ways to access information, engage with learning, and demonstrate understanding, reducing barriers before individual difficulties arise during educational activities for all learners generally."
+        explanation: "Baseline అనేది intervention ప్రారంభానికి ముందు విద్యార్థి ప్రస్తుత పనితీరును నమోదు చేసిన ప్రారంభ కొలత. తరువాత intervention ప్రభావాన్ని మరియు విద్యార్థి progressను baselineతో పోల్చవచ్చు."
     },
     {
-        question: "ఒక Multiple Disabilities విద్యార్థి పాఠ్యపుస్తకంలోని ముద్రిత సమాచారాన్ని చదవలేకపోతున్నాడు. అదే సమాచారాన్ని tactile symbols మరియు audio output ద్వారా అందించడం ప్రధానంగా ఏ UDL సూత్రానికి సంబంధించినది?",
-        options: ["Multiple means of representation", "Multiple means of punishment", "Multiple means of grading", "Multiple means of attendance"],
+        question: "బోధన జరుగుతున్న సమయంలో విద్యార్థి పురోగతిని తెలుసుకొని, అవసరమైతే బోధనా వ్యూహాన్ని మార్చడానికి నిర్వహించే evaluation ఏది?",
+        options: [
+            "Summative evaluation",
+            "Diagnostic evaluation",
+            "Formative evaluation",
+            "Placement evaluation"
+        ],
+        correct: 2,
+        explanation: "Formative evaluation బోధన జరుగుతున్న సమయంలో విద్యార్థి progressను నిరంతరం పరిశీలిస్తుంది. వచ్చిన సమాచారాన్ని ఆధారంగా teacher instructional strategies, supports లేదా teaching methodsను మార్చవచ్చు."
+    },
+    {
+        question: "విద్యార్థి వివిధ కాలాల్లో రూపొందించిన పనులు, ప్రాజెక్టులు మరియు రచనలను క్రమబద్ధంగా సేకరించి అతని అభివృద్ధిని అంచనా వేయడం ఏ assessment విధానం?",
+        options: [
+            "Portfolio assessment",
+            "Norm-referenced assessment",
+            "Screening",
+            "Sociometric assessment"
+        ],
         correct: 0,
-        explanation: "Providing printed information through tactile symbols and audio output offers multiple ways to represent content, allowing learners with different sensory access needs to receive the information effectively across classroom activities."
+        explanation: "Portfolio assessmentలో విద్యార్థి వివిధ సమయాల్లో రూపొందించిన పనులు, projects, రచనలు వంటి evidenceను క్రమబద్ధంగా సేకరిస్తారు. దీనివల్ల learning progress, development మరియు achievementsను సమగ్రంగా అంచనా వేయవచ్చు."
     },
     {
-        question: "Deafblind విద్యార్థికి ఒక కార్యకలాపం ప్రారంభమయ్యే ముందు చేతికి సంబంధించిన ఒక నిర్దిష్ట tactile cue ఇవ్వడం ప్రధానంగా ఏ ప్రయోజనాన్ని కలిగి ఉంటుంది?",
-        options: ["Predictability మరియు anticipation పెంచడం", "Visual acuity పెంచడం", "Hearing threshold తగ్గించడం", "Intelligence quotient పెంచడం"],
-        correct: 0,
-        explanation: "Tactile cues given consistently before activities help students recognize what is coming next, improving predictability, anticipation, orientation, and participation within familiar classroom routines and transitions throughout familiar classroom routines consistently."
+        question: "విద్యార్థి తరగతిలో పదేపదే disruptive behaviour ప్రదర్శిస్తున్నాడు. ఆ ప్రవర్తనకు ముందు ఏమి జరుగుతుంది, ప్రవర్తన ఏమిటి, తర్వాత ఏమి జరుగుతుందో పరిశీలించడానికి ఉపయోగించే విధానం ఏది?",
+        options: [
+            "IQ assessment",
+            "Portfolio assessment",
+            "Curriculum-based measurement",
+            "ABC analysis"
+        ],
+        correct: 3,
+        explanation: "ABC Analysisలో Antecedent, Behaviour మరియు Consequenceలను పరిశీలిస్తారు. ప్రవర్తనకు ముందు పరిస్థితి, ప్రవర్తన స్వరూపం, తరువాత జరిగే పరిణామాలను గుర్తించడం ద్వారా behavioural functionను అర్థం చేసుకోవచ్చు."
     },
     {
-        question: "క్రింది వాటిలో communication కోసం Assistive Technologyకి అత్యంత సరైన ఉదాహరణ ఏది?",
-        options: ["Speech-generating device", "Wheelchair ramp", "Braille slate మాత్రమే", "Classroom blackboard"],
-        correct: 0,
-        explanation: "A speech-generating device produces or supports communication output for individuals who cannot reliably use natural speech, making it an assistive technology option for communication and participation within educational settings effectively."
-    },
-    {
-        question: "Deafblind విద్యార్థి వస్తువులను స్పర్శ ద్వారా గుర్తించడంలో సహాయం చేయడానికి, వస్తువు యొక్క నిజమైన వస్తువును సంకేతంగా ఉపయోగించడం ఏ విధానానికి ఉదాహరణ?",
-        options: ["Object-symbol communication", "Auditory discrimination training", "Visual tracking", "Lip reading"],
-        correct: 0,
-        explanation: "Using a real object as a communication symbol gives the learner a concrete tactile reference for meaning, supporting object-symbol communication when conventional visual symbols are inaccessible or difficult when needed."
-    },
-    {
-        question: "Multiple Disabilities ఉన్న విద్యార్థికి curriculum adaptation చేయడంలో మొదటి ప్రాధాన్యత ఏదిగా ఉండాలి?",
-        options: ["ప్రతి విద్యార్థికి ఒకే academic target ఉంచడం", "విద్యార్థి functional needs మరియు participation requirements గుర్తించడం", "అన్ని academic activities తొలగించడం", "కేవలం textbook completion పై దృష్టి పెట్టడం"],
+        question: "విద్యార్థి సామర్థ్యాలను మాత్రమే కాకుండా, ఇంటి, పాఠశాల మరియు సమాజంలోని వాతావరణ పరిస్థితులు అతని పనితీరును ఎలా ప్రభావితం చేస్తున్నాయో పరిశీలించే assessment ఏది?",
+        options: [
+            "Norm-referenced assessment",
+            "Ecological assessment",
+            "Intelligence testing",
+            "Screening assessment"
+        ],
         correct: 1,
-        explanation: "Curriculum adaptation should begin by identifying functional needs and participation requirements, ensuring learning goals and supports are meaningful, accessible, and connected to the student's everyday educational context and activities meaningfully."
+        explanation: "Ecological assessment విద్యార్థి functioningపై home, school మరియు community environments ప్రభావాన్ని పరిశీలిస్తుంది. వ్యక్తి సామర్థ్యాలతో పాటు environmental demands, supports మరియు barriersను కూడా పరిగణనలోకి తీసుకుంటుంది."
     },
     {
-        question: "ఒక Deafblind విద్యార్థి classroomలో ఇతరుల సంభాషణను గమనించడం ద్వారా నేర్చుకోలేడు. అందువల్ల ఉపాధ్యాయుడు కావాల్సిన సమాచారాన్ని tactile లేదా accessible communication ద్వారా ఉద్దేశపూర్వకంగా అందిస్తున్నాడు. ఇది ప్రధానంగా ఏ అవసరాన్ని పరిష్కరిస్తుంది?",
-        options: ["Incidental learning limitation", "Physical growth limitation", "Intelligence limitation", "Motor maturation limitation"],
+        question: "Dynamic Assessment సాధారణంగా ఏ విధానాన్ని ఎక్కువగా కలిగి ఉంటుంది?",
+        options: [
+            "Test మాత్రమే నిర్వహించి score ఇవ్వడం",
+            "కేవలం గత academic recordsను పరిశీలించడం",
+            "Pre-test, mediated learning/intervention మరియు post-test ద్వారా learning potentialను పరిశీలించడం",
+            "విద్యార్థిని ఇతర విద్యార్థులతో మాత్రమే పోల్చడం"
+        ],
+        correct: 2,
+        explanation: "Dynamic Assessmentలో pre-test, mediated learning లేదా intervention, తరువాత post-test నిర్వహిస్తారు. విద్యార్థి ప్రస్తుతం తెలిసినదానితో పాటు instruction ద్వారా ఎంత learning potential చూపగలడో అంచనా వేయడం లక్ష్యం."
+    },
+    {
+        question: "IEPలో educational goalsను రూపొందించేటప్పుడు అత్యంత సముచితమైన లక్షణం ఏది?",
+        options: [
+            "కొలవగలిగే (measurable) లక్ష్యాలుగా ఉండాలి",
+            "చాలా సాధారణంగా ఉండాలి",
+            "ఉపాధ్యాయుని వ్యక్తిగత అభిప్రాయంపై ఆధారపడాలి",
+            "అన్ని విద్యార్థులకు ఒకే విధంగా ఉండాలి"
+        ],
         correct: 0,
-        explanation: "Deafblind students may miss incidental learning because they cannot easily observe surrounding interactions. Deliberate accessible communication provides information that sighted or hearing peers often acquire incidentally in classrooms daily classroom."
+        explanation: "IEP goals స్పష్టమైన, measurable మరియు విద్యార్థి అవసరాలకు అనుగుణంగా ఉండాలి. కొలవగలిగే లక్ష్యాలు progress monitoringను సులభతరం చేసి intervention ప్రభావాన్ని అంచనా వేయడానికి సహాయపడతాయి."
     },
     {
-        question: "Multiple Disabilities ఉన్న విద్యార్థి యొక్క physical assessmentలో క్రింది వాటిలో ఏది ముఖ్యమైనది?",
-        options: ["కేవలం చదవడం వేగం", "కదలిక, posture మరియు motor functioning", "కేవలం vocabulary size", "కేవలం spelling ability"],
+        question: "IEPలో Present Level of Academic Achievement and Functional Performance ప్రధానంగా దేనిని వివరిస్తుంది?",
+        options: [
+            "విద్యార్థి భవిష్యత్ ఉద్యోగాన్ని",
+            "పాఠశాల మొత్తం academic performanceను",
+            "తల్లిదండ్రుల విద్యా స్థాయిని",
+            "విద్యార్థి ప్రస్తుత academic మరియు functional పనితీరును"
+        ],
+        correct: 3,
+        explanation: "Present Level of Academic Achievement and Functional Performance విద్యార్థి ప్రస్తుత academic skills మరియు functional abilitiesను వివరిస్తుంది. ఇది measurable IEP goals మరియు appropriate services రూపొందించడానికి ఆధారంగా పనిచేస్తుంది."
+    },
+    {
+        question: "IEPలో నిర్దేశించిన intervention ద్వారా విద్యార్థి పురోగతి ఆశించిన స్థాయిలో లేకపోతే మొదట చేయవలసిన సముచిత చర్య ఏది?",
+        options: [
+            "IEPను పూర్తిగా రద్దు చేయడం",
+            "assessment dataను పరిశీలించి instructional planను సమీక్షించడం",
+            "విద్యార్థిని తరగతి నుండి తొలగించడం",
+            "అదే teaching methodను ఎటువంటి మార్పు లేకుండా కొనసాగించడం"
+        ],
         correct: 1,
-        explanation: "Physical assessment examines movement, posture, mobility, coordination, and motor functioning because these factors can directly affect participation, access, positioning, and independence in educational activities and routines and daily participation needs."
+        explanation: "Expected progress లేకపోతే ముందుగా assessment మరియు progress-monitoring dataను పరిశీలించాలి. ఆ evidence ఆధారంగా instructional strategies, supports లేదా intervention planను అవసరానికి అనుగుణంగా సవరించాలి."
     },
     {
-        question: "ఒక విద్యార్థి hearing మరియు visual impairments రెండింటినీ కలిగి ఉన్నాడు. అతనికి communication system ఎంపిక చేసేటప్పుడు అత్యంత ముఖ్యమైన నిర్ణయాధారం ఏది?",
-        options: ["ఒకే universal communication method", "అతని sensory access, communication ability మరియు preferences", "వయస్సు మాత్రమే", "textbook language మాత్రమే"],
+        question: "ప్రత్యేక అవసరాలు గల విద్యార్థి assessmentలో multidisciplinary approach అంటే:",
+        options: [
+            "ఒకే ఉపాధ్యాయుడు అన్ని అంశాలను అంచనా వేయడం",
+            "తల్లిదండ్రులు మాత్రమే assessment చేయడం",
+            "వివిధ నిపుణులు తమ తమ పరిజ్ఞానాన్ని సమన్వయం చేసి assessment చేయడం",
+            "కేవలం standardized test score ఆధారంగా నిర్ణయం తీసుకోవడం"
+        ],
+        correct: 2,
+        explanation: "Multidisciplinary approachలో teachers, psychologists, therapists మరియు ఇతర relevant professionals తమ ప్రత్యేక పరిజ్ఞానాన్ని ఉపయోగించి assessment informationను సమన్వయం చేస్తారు. దీనివల్ల విద్యార్థి needsపై సమగ్ర అవగాహన ఏర్పడుతుంది."
+    },
+    {
+        question: "IEP అభివృద్ధిలో తల్లిదండ్రుల భాగస్వామ్యం ఎందుకు ముఖ్యమైనది?",
+        options: [
+            "విద్యార్థి ఇంటి మరియు functional needs గురించి ముఖ్యమైన సమాచారం అందించగలరు",
+            "వారు మాత్రమే విద్యార్థి grade నిర్ణయిస్తారు",
+            "వారు assessment toolsను రూపొందిస్తారు",
+            "వారు curriculum standardsను నిర్ణయిస్తారు"
+        ],
+        correct: 0,
+        explanation: "తల్లిదండ్రులు విద్యార్థి ఇంటి ప్రవర్తన, routines, strengths, difficulties మరియు functional needs గురించి ముఖ్యమైన సమాచారాన్ని అందించగలరు. ఈ సమాచారం individualized educational planningలో ఉపయోగపడుతుంది."
+    },
+    {
+        question: "ఒక learning disability ఉన్న విద్యార్థికి ఇతర విద్యార్థుల మాదిరిగానే learning objective ఉంచి, పరీక్షలో అదనపు సమయం ఇవ్వడం ఏదికి ఉదాహరణ?",
+        options: [
+            "Curriculum modification",
+            "Curriculum enrichment",
+            "Curriculum replacement",
+            "Accommodation"
+        ],
+        correct: 3,
+        explanation: "Accommodationలో learning expectations మార్చకుండా విద్యార్థి నేర్చుకునే లేదా తన knowledgeను ప్రదర్శించే విధానంలో support ఇస్తారు. అదనపు పరీక్ష సమయం accommodationకు సాధారణ ఉదాహరణ."
+    },
+    {
+        question: "విద్యార్థి కోసం learning expectations లేదా curriculum contentలోనే గణనీయమైన మార్పు చేయడం ఏదిగా పరిగణించబడుతుంది?",
+        options: [
+            "Accommodation",
+            "Modification",
+            "Reinforcement",
+            "Prompting"
+        ],
         correct: 1,
-        explanation: "Communication systems should be selected according to the student's sensory access, current communication abilities, preferences, and environmental requirements rather than applying one method universally to every learner for meaningful participation."
+        explanation: "Modificationలో విద్యార్థి కోసం curriculum content, learning expectations లేదా performance standardsలో గణనీయమైన మార్పు చేయవచ్చు. Accommodationతో పోలిస్తే ఇది ఏమి నేర్చుకోవాలి అనే అంశాన్ని కూడా ప్రభావితం చేస్తుంది."
     },
     {
-        question: "Deafblind విద్యార్థికి classroomలో ఉపాధ్యాయుడు నేరుగా చేతిని పట్టుకుని ప్రతి చర్య చేయించడం కంటే, విద్యార్థి చేతుల కదలికను అనుసరించేందుకు అవకాశం కల్పించే hand-under-hand విధానం ప్రధానంగా ఏ ఉద్దేశ్యాన్ని అందిస్తుంది?",
-        options: ["విద్యార్థి స్వీయ నియంత్రణ మరియు చురుకైన భాగస్వామ్యాన్ని పెంచడం", "విద్యార్థి అన్ని పనులను ఉపాధ్యాయుడే చేయడం", "tactile input పూర్తిగా తొలగించడం", "communicationను teacher-dependent చేయడం"],
+        question: "ఒకే తరగతిలో విద్యార్థుల readiness, learning needs మరియు abilitiesను పరిగణనలోకి తీసుకుని content, process లేదా productలో మార్పులు చేయడం:",
+        options: [
+            "Direct instruction మాత్రమే",
+            "Norm-referenced teaching",
+            "Differentiated instruction",
+            "Remedial assessment మాత్రమే"
+        ],
+        correct: 2,
+        explanation: "Differentiated instructionలో learners యొక్క readiness, interests మరియు learning needsను పరిగణనలోకి తీసుకొని content, process లేదా productను సవరించి instructionను అందిస్తారు."
+    },
+    {
+        question: "Universal Design for Learning (UDL) యొక్క ప్రధాన సూత్రాలకు సరైన సమూహం ఏది?",
+        options: [
+            "Multiple means of engagement, representation, action and expression",
+            "ఒకే teaching method, ఒకే assessment, ఒకే response mode",
+            "కేవలం visual instruction",
+            "కేవలం individualized testing"
+        ],
         correct: 0,
-        explanation: "Hand-under-hand allows the learner to explore and participate while following another person's movement, supporting control, choice, shared attention, and active involvement rather than passive teacher direction during activities with independence."
+        explanation: "UDL మూడు ప్రధాన principlesను కలిగి ఉంటుంది: multiple means of engagement, representation, మరియు action and expression. ఇవి వివిధ learnersకు flexible access, participation మరియు demonstration అవకాశాలను కల్పిస్తాయి."
     },
     {
-        question: "Multiple Disabilities ఉన్న విద్యార్థి కోసం functional curriculumలో క్రింది వాటిలో ఏది అత్యంత సముచితమైన అంశం?",
-        options: ["Independent living skills", "కేవలం abstract theoretical content", "కేవలం memorization activities", "కేవలం competitive examinations"],
-        correct: 0,
-        explanation: "Functional curricula emphasize practical skills such as independent living, communication, mobility, and participation, helping learners apply abilities meaningfully in everyday environments, school routines, and community settings and community participation contexts."
-    },
-    {
-        question: "ఒక Deafblind విద్యార్థికి కొత్త classroom routine నేర్పేటప్పుడు, ప్రతి కార్యకలాపానికి ముందు అదే tactile signalను ఉపయోగించడం ద్వారా విద్యార్థి ఏమి అభివృద్ధి చేసుకోవచ్చు?",
-        options: ["Anticipation of routine", "Auditory localization", "Visual scanning", "Speech articulation మాత్రమే"],
-        correct: 0,
-        explanation: "Consistent tactile signals before routines help the student anticipate what will happen next, making activities more predictable and supporting understanding of classroom sequences and transitions within familiar classroom routines consistently."
-    },
-    {
-        question: "Assistive Technology ఎంపికలో SETT frameworkలోని “T” సాధారణంగా దేనిని సూచిస్తుంది?",
-        options: ["Technology", "Teaching", "Therapy", "Training"],
-        correct: 0,
-        explanation: "In the SETT framework, the letter T represents Technology, following Student, Environment, Tasks, and Technology as the four components considered when selecting assistive technology for learners for technology decisions."
-    },
-    {
-        question: "Multiple Disabilities ఉన్న విద్యార్థికి computer access కల్పించడానికి switch access ఉపయోగించడం ప్రధానంగా ఏ అవసరాన్ని పరిష్కరిస్తుంది?",
-        options: ["Motor access to technology", "Vocabulary assessment", "Hearing screening", "Behaviour diagnosis"],
-        correct: 0,
-        explanation: "Switch access enables a learner with limited motor abilities to interact with computers or electronic devices, providing an alternative physical access method without changing communication assessment procedures for educational participation."
-    },
-    {
-        question: "Deafblindness ఉన్న విద్యార్థి tactile communication ఉపయోగిస్తున్నప్పుడు, communication partner ఒకే సమయంలో చాలా వేగంగా సంకేతాలను మార్చడం వల్ల విద్యార్థి ఇబ్బంది పడుతున్నాడు. అత్యంత సముచితమైన classroom adaptation ఏది?",
-        options: ["సంకేతాల వేగాన్ని తగ్గించి consistent tactile cues ఉపయోగించడం", "tactile communication పూర్తిగా నిలిపివేయడం", "కేవలం written instructions ఇవ్వడం", "విద్యార్థిని activity నుండి తొలగించడం"],
-        correct: 0,
-        explanation: "Reducing tactile signing speed and maintaining consistent cues can improve processing time and comprehension, making communication more predictable and accessible for a deafblind learner during classroom interactions within classroom interactions."
-    },
-    {
-        question: "Multiple Disabilities ఉన్న విద్యార్థికి curriculumలో ఒకే లక్ష్యాన్ని వివిధ sensory modes ద్వారా చేరుకునే అవకాశాలను కల్పించడం ఏ భావనకు దగ్గరగా ఉంటుంది?",
-        options: ["Universal Design for Learning", "Exclusionary curriculum", "Fixed curriculum", "Single-mode instruction"],
-        correct: 0,
-        explanation: "UDL supports flexible access to learning by allowing learners to reach goals through varied methods, representations, actions, expressions, and engagement opportunities across instructional environments and activities and accessible learning opportunities."
-    },
-    {
-        question: "క్రింది జతలలో సరైనది ఏది?",
-        options: ["Braille — tactile reading system", "Speech-generating device — hearing screening tool", "Tactile sign language — visual-only communication", "Switch access — auditory assessment"],
-        correct: 0,
-        explanation: "Braille is a tactile reading and writing system. The other options incorrectly pair assistive technologies or communication methods with hearing or auditory assessment functions inappropriately for appropriate educational access needs."
-    },
-    {
-        question: "ఒక విద్యార్థి multiple disabilities కారణంగా pencilను ఉపయోగించలేడు. అయితే అతను switch ద్వారా computerలో సమాధానాన్ని ఎంచుకోగలడు. ఇది UDLలోని ఏ అంశానికి అత్యంత దగ్గరగా ఉంటుంది?",
-        options: ["Multiple means of action and expression", "Multiple means of punishment", "Multiple means of diagnosis", "Multiple means of classification"],
-        correct: 0,
-        explanation: "Switch access changes how a learner physically responds to technology, allowing alternative actions and expressions when conventional pencil use or standard input methods create barriers and accessible technology participation opportunities."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి:\n\na) Multiple Disabilities ఉన్న విద్యార్థి assessmentలో వివిధ developmental మరియు functional domainsను పరిగణించాలి.\n\nb) ఒకే standardized test score ఆధారంగా విద్యార్థి మొత్తం educational needsను నిర్ణయించవచ్చు.\n\nసరైన సమాధానాన్ని ఎంచుకోండి.",
-        options: ["a మాత్రమే సరైనది", "b మాత్రమే సరైనది", "a మరియు b రెండూ సరైనవి", "a మరియు b రెండూ తప్పు"],
-        correct: 0,
-        explanation: "Multiple Disabilities assessment should consider developmental and functional domains. A single standardized score cannot adequately describe the student's complete educational strengths, needs, and support requirements across settings and support planning."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి:\n\na) UDLలో learner variabilityను ముందుగానే పరిగణించడం ముఖ్యమైనది.\n\nb) UDL అనేది కేవలం ప్రత్యేక అవసరాలున్న విద్యార్థుల కోసం మాత్రమే రూపొందించబడిన పద్ధతి.\n\nA. a మాత్రమే సరైనది\nB. b మాత్రమే సరైనది\nC. a మరియు b రెండూ సరైనవి\nD. a మరియు b రెండూ తప్పు",
-        options: ["a మాత్రమే సరైనది", "b మాత్రమే సరైనది", "a మరియు b రెండూ సరైనవి", "a మరియు b రెండూ తప్పు"],
-        correct: 0,
-        explanation: "UDL is based on anticipating learner variability. It is designed to benefit all learners, not exclusively students with disabilities, by reducing barriers through flexible instructional design through flexible instructional design."
-    },
-    {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి:\n\na) Family members విద్యార్థి యొక్క strengths మరియు functional needs గురించి ముఖ్యమైన సమాచారాన్ని అందించగలరు.\n\nb) Educational planningలో కుటుంబ భాగస్వామ్యం అవసరం లేదు, ఎందుకంటే assessment పూర్తిగా schoolలోనే జరుగుతుంది.\n\nA. a మాత్రమే సరైనది\nB. b మాత్రమే సరైనది\nC. a మరియు b రెండూ సరైనవి\nD. a మరియు b రెండూ తప్పు",
-        options: ["a మాత్రమే సరైనది", "b మాత్రమే సరైనది", "a మరియు b రెండూ సరైనవి", "a మరియు b రెండూ తప్పు"],
-        correct: 0,
-        explanation: "Families can provide valuable information about strengths, routines, preferences, communication, and functional needs. Their participation strengthens educational planning and coordination of appropriate supports across relevant educational settings consistently."
-    },
-    {
-        question: "క్రింది వాటిలో Deafblindness ఉన్న విద్యార్థికి communication access కల్పించడంలో అత్యంత సముచితమైనవి ఏవి?\n\ni) Tactile sign language\nii) Object symbols\niii) Consistent tactile cues\niv) కేవలం visual demonstration\n\nA. i, ii, iii\nB. i, iii, iv\nC. ii, iii, iv\nD. i, ii, iii, iv",
-        options: ["i, ii, iii", "i, iii, iv", "ii, iii, iv", "i, ii, iii, iv"],
-        correct: 0,
-        explanation: "Tactile sign language, object symbols, and consistent tactile cues can provide accessible communication. A purely visual demonstration may not be accessible to a deafblind learner without additional support when visual access is unavailable."
-    },
-    {
-        question: "క్రింది వాటిని సరైన జతలతో సరిపోల్చండి.\n\nColumn-I\n\ni) Speech-generating device\nii) Switch access\niii) Braille\niv) Tactile sign language\n\nColumn-II\n\na) Tactile reading/writing system\nb) Alternative communication output\nc) Motor access to electronic equipment\nd) Communication through tactile signs\n\nA. i-b, ii-c, iii-a, iv-d\nB. i-c, ii-b, iii-d, iv-a\nC. i-a, ii-d, iii-b, iv-c\nD. i-d, ii-a, iii-c, iv-b",
-        options: ["i-b, ii-c, iii-a, iv-d", "i-c, ii-b, iii-d, iv-a", "i-a, ii-d, iii-b, iv-c", "i-d, ii-a, iii-c, iv-b"],
-        correct: 0,
-        explanation: "Speech-generating devices provide communication output; switches provide motor access; Braille provides tactile reading and writing; tactile sign language communicates through signs received through touch by the learner."
-    },
-    {
-        question: "Multiple Disabilities ఉన్న విద్యార్థి కోసం classroom adaptationలను అమలు చేసే సరైన క్రమానికి అత్యంత దగ్గరగా ఉన్నది ఏది?\n\ni) విద్యార్థి అవసరాలను గుర్తించడం\nii) తగిన adaptationను ఎంపిక చేయడం\niii) adaptationను అమలు చేయడం\niv) విద్యార్థి పనితీరును మూల్యాంకనం చేయడం",
-        options: ["i → ii → iii → iv", "ii → i → iv → iii", "iii → ii → i → iv", "iv → iii → ii → i"],
-        correct: 0,
-        explanation: "A logical adaptation process begins by identifying needs, selecting an appropriate adaptation, implementing it, and then evaluating student performance to determine whether further changes are necessary for participation after implementation."
-    },
-    {
-        question: "ఒక Deafblind విద్యార్థి పాఠశాలలో ఒక activity నుండి మరొక activityకి మారే సమయంలో తరచుగా ఆందోళన చెందుతున్నాడు. ఉపాధ్యాయుడు ప్రతి transitionకు ముందు ఒకే tactile cue మరియు consistent routineను ఉపయోగిస్తున్నాడు. ఈ intervention ప్రధానంగా దేనిని పెంచుతుంది?",
-        options: ["Predictability and environmental understanding", "Visual discrimination", "Auditory memory", "Speech fluency"],
-        correct: 0,
-        explanation: "Consistent tactile cues and routines before transitions make environmental changes more predictable, helping the student understand upcoming activities and reducing uncertainty during movement between classroom tasks during daily classroom transitions."
-    },
-    {
-        question: "క్రింది వాటిలో Multiple Disabilities ఉన్న విద్యార్థి కోసం family-community resource mobilisationకు అత్యంత సముచితమైన ఉదాహరణ ఏది?",
-        options: ["కుటుంబాన్ని educational planning నుండి దూరంగా ఉంచడం", "పాఠశాల, కుటుంబం, therapists మరియు community resources మధ్య సమన్వయం చేయడం", "అన్ని servicesను classroom teacher ఒక్కరే అందించడం", "community participationను academic learningకు సంబంధం లేనిదిగా పరిగణించడం"],
+        question: "దృష్టి సంబంధిత ఇబ్బంది ఉన్న విద్యార్థికి అదే learning contentను textతో పాటు audio మరియు tactile representation ద్వారా అందించడం UDLలో ఏ అంశానికి అత్యంత దగ్గరగా ఉంటుంది?",
+        options: [
+            "Multiple means of engagement",
+            "Multiple means of representation",
+            "Multiple means of punishment",
+            "Multiple means of grading"
+        ],
         correct: 1,
-        explanation: "Family-community resource mobilisation involves coordinated collaboration among school staff, family members, therapists, and community services so supports are connected and educational participation is strengthened across settings effectively."
+        explanation: "Multiple means of representation అంటే informationను వివిధ మార్గాల్లో అందించడం. Textతో పాటు audio మరియు tactile formats ఉపయోగించడం visual difficulty ఉన్న learnerకు content accessను మెరుగుపరుస్తుంది."
+    },
+    {
+        question: "ఒక complex skillను చిన్న, క్రమబద్ధమైన మరియు బోధించగలిగే దశలుగా విభజించే ప్రక్రియను ఏమంటారు?",
+        options: [
+            "Task analysis",
+            "Shaping",
+            "Generalization",
+            "Fading"
+        ],
+        correct: 0,
+        explanation: "Task analysisలో complex skillను చిన్న, sequential మరియు teachable stepsగా విభజిస్తారు. ప్రతి దశను స్పష్టంగా బోధించడం ద్వారా విద్యార్థి మొత్తం functional skillను క్రమంగా నేర్చుకుంటాడు."
+    },
+    {
+        question: "Forward chainingలో విద్యార్థికి సాధారణంగా ఏ విధంగా బోధిస్తారు?",
+        options: [
+            "మొదట చివరి దశను మాత్రమే బోధిస్తారు",
+            "అన్ని దశలను పూర్తిగా ఉపాధ్యాయుడే చేస్తాడు",
+            "మొదటి దశతో ప్రారంభించి క్రమంగా తరువాతి దశలను నేర్పుతారు",
+            "యాదృచ్ఛిక దశలను ఎంపిక చేస్తారు"
+        ],
+        correct: 2,
+        explanation: "Forward chainingలో taskలోని మొదటి stepను ముందుగా విద్యార్థికి నేర్పుతారు. తరువాత mastery సాధించిన కొద్దీ వరుసగా తదుపరి stepsను నేర్పుతూ మొత్తం skillను నిర్మిస్తారు."
+    },
+    {
+        question: "Backward chainingలో:",
+        options: [
+            "మొదటి దశను మాత్రమే విద్యార్థి చేస్తాడు",
+            "చివరి దశను విద్యార్థి నేర్చుకునేలా ప్రారంభించి, క్రమంగా ముందరి దశలను జోడిస్తారు",
+            "అన్ని దశలను ఒకేసారి బోధిస్తారు",
+            "కేవలం verbal prompts మాత్రమే ఇస్తారు"
+        ],
+        correct: 1,
+        explanation: "Backward chainingలో సాధారణంగా task యొక్క చివరి stepను learner ముందుగా పూర్తి చేసేలా బోధిస్తారు. తరువాత mastery ఆధారంగా దానికి ముందు stepsను క్రమంగా జోడిస్తారు."
+    },
+    {
+        question: "ఒక self-care skillలో ఉన్న అన్ని stepsను విద్యార్థి ప్రతి training sessionలో అభ్యసిస్తాడు; అవసరమైన చోట ఉపాధ్యాయుడు సహాయం చేస్తాడు. ఇది ఏ chaining విధానానికి ఉదాహరణ?",
+        options: [
+            "Backward chaining",
+            "Forward chaining",
+            "Partial-task chaining",
+            "Total-task presentation"
+        ],
+        correct: 3,
+        explanation: "Total-task presentationలో learner ప్రతి training sessionలో task యొక్క అన్ని stepsను అభ్యసిస్తాడు. అవసరమైన stepsలో teacher prompts లేదా assistance అందిస్తాడు."
+    },
+    {
+        question: "Least-to-Most Promptingలో ఉపాధ్యాయుడు సాధారణంగా:",
+        options: [
+            "మొదట అత్యధిక సహాయం ఇచ్చి, తర్వాత తగ్గిస్తాడు",
+            "మొదట తక్కువ సహాయం ఇచ్చి, అవసరమైతే ఎక్కువ సహాయానికి వెళ్తాడు",
+            "ఎటువంటి prompt ఇవ్వడు",
+            "ప్రతి responseకు physical prompt మాత్రమే ఇస్తాడు"
+        ],
+        correct: 1,
+        explanation: "Least-to-Most promptingలో ముందుగా learnerకు అత్యల్ప intrusive prompt ఇస్తారు. response రాకపోతే అవసరమైనంత వరకు prompt levelను క్రమంగా పెంచుతారు."
+    },
+    {
+        question: "Most-to-Least Prompting యొక్క ప్రధాన ఉద్దేశ్యం:",
+        options: [
+            "ప్రారంభంలో ఎక్కువ సహాయం ఇచ్చి, క్రమంగా prompt dependency తగ్గించడం",
+            "విద్యార్థికి ఎల్లప్పుడూ పూర్తి సహాయం ఇవ్వడం",
+            "reinforcementను పూర్తిగా తొలగించడం",
+            "assessmentను instructionకు ప్రత్యామ్నాయంగా ఉపయోగించడం"
+        ],
+        correct: 0,
+        explanation: "Most-to-Least promptingలో ప్రారంభంలో ఎక్కువ assistance అందించి correct performanceను స్థాపిస్తారు. తరువాత promptsను క్రమంగా తగ్గించడం ద్వారా independence పెంచి prompt dependencyని తగ్గిస్తారు."
+    },
+    {
+        question: "విద్యార్థి ఒక skillను స్వతంత్రంగా చేయడం ప్రారంభించినప్పుడు promptsను క్రమంగా తగ్గించే ప్రక్రియ:",
+        options: [
+            "Prompt fading",
+            "Shaping",
+            "Chaining",
+            "Extinction"
+        ],
+        correct: 0,
+        explanation: "Prompt fading అంటే learner skillను స్వతంత్రంగా చేయగలిగే కొద్దీ prompts యొక్క frequency లేదా intensityను క్రమంగా తగ్గించడం. దీని లక్ష్యం independent performanceను అభివృద్ధి చేయడం."
+    },
+    {
+        question: "విద్యార్థి పూర్తి target behaviourను వెంటనే చేయలేనప్పుడు, target behaviourకు దగ్గరగా ఉండే successive approximationsను reinforce చేయడం:",
+        options: [
+            "Chaining",
+            "Prompting",
+            "Shaping",
+            "Task analysis"
+        ],
+        correct: 2,
+        explanation: "Shapingలో target behaviourకు దగ్గరగా ఉండే successive approximationsను reinforce చేస్తారు. Learner progress సాధించిన కొద్దీ మరింత దగ్గరైన responses మాత్రమే reinforcement పొందేలా criteriaను క్రమంగా పెంచుతారు."
+    },
+    {
+        question: "విద్యార్థి homework పూర్తి చేసిన తర్వాత ఉపాధ్యాయుడు అతనికి ఇష్టమైన activityలో పాల్గొనే అవకాశం ఇచ్చాడు. Homework behaviour భవిష్యత్తులో పెరిగితే దీనిని ఏమంటారు?",
+        options: [
+            "Positive reinforcement",
+            "Punishment",
+            "Extinction",
+            "Negative reinforcement"
+        ],
+        correct: 0,
+        explanation: "Positive reinforcementలో behaviour తర్వాత desirable stimulusను అందించడం వల్ల ఆ behaviour futureలో పెరుగుతుంది. ఇక్కడ preferred activity అందించడం homework completionను బలపరుస్తుంది."
+    },
+    {
+        question: "విద్యార్థి seatలో సరిగ్గా కూర్చున్నప్పుడు teacher ఇచ్చే repeated verbal remindersను ఆపివేస్తారు. ఆ కారణంగా appropriate sitting behaviour పెరుగుతుంది. ఇది:",
+        options: [
+            "Positive punishment",
+            "Negative punishment",
+            "Positive reinforcement",
+            "Negative reinforcement"
+        ],
+        correct: 3,
+        explanation: "Negative reinforcementలో ఒక aversive stimulus లేదా unpleasant conditionను తొలగించడం ద్వారా target behaviour పెరుగుతుంది. ఇక్కడ verbal reminders తొలగించడంతో appropriate sitting behaviour పెరుగుతోంది."
+    },
+    {
+        question: "విద్యార్థి ప్రతి target behaviour తర్వాత token సంపాదించి, tokensను తర్వాత preferred activity కోసం మార్చుకుంటాడు. ఇది ఏ విధానానికి ఉదాహరణ?",
+        options: [
+            "Token economy",
+            "Response cost",
+            "Time-out",
+            "Stimulus fading"
+        ],
+        correct: 0,
+        explanation: "Token economyలో target behaviourకు tokens వంటి conditioned reinforcers ఇస్తారు. తరువాత వాటిని preferred activities లేదా rewards కోసం exchange చేసుకునే విధంగా reinforcement system ఏర్పాటు చేస్తారు."
+    },
+    {
+        question: "ఒక ఉపాధ్యాయుడు disruptive behaviourను తగ్గించడానికి దాని బదులుగా విద్యార్థి appropriate communication behaviour చూపినప్పుడే reinforcement ఇస్తున్నాడు. ఇది:",
+        options: [
+            "Differential Reinforcement of Alternative Behaviour (DRA)",
+            "Response cost",
+            "Extinction",
+            "Overcorrection"
+        ],
+        correct: 0,
+        explanation: "DRAలో problematic behaviourకు బదులుగా socially appropriate alternative behaviourను reinforce చేస్తారు. ఇక్కడ disruptive behaviour స్థానంలో appropriate communication చూపినప్పుడు reinforcement అందించడం DRAకు ఉదాహరణ."
+    },
+    {
+        question: "ఒక విద్యార్థి “నీరు కావాలి” అని స్వయంగా అడిగినప్పుడు మాత్రమే teacher అతనికి నీరు అందిస్తున్నాడు. ఈ strategyలో reinforcement ప్రధానంగా ఏ ప్రవర్తనను బలపరుస్తుంది?",
+        options: [
+            "Unrelated motor behaviour",
+            "Functional communication behaviour",
+            "Escape behaviour",
+            "Stereotypic behaviour"
+        ],
+        correct: 1,
+        explanation: "విద్యార్థి అవసరాన్ని appropriate communication ద్వారా వ్యక్తపరిచినప్పుడు reinforcement అందుతోంది. అందువల్ల ఈ strategy functional communication behaviourను బలపరుస్తూ independent requestingను ప్రోత్సహిస్తుంది."
+    },
+    {
+        question: "Learning disability ఉన్న విద్యార్థి subtractionలో పదేపదే ఒకే రకమైన error చేస్తున్నాడు. ఉపాధ్యాయుడు అతని తప్పుల patternను విశ్లేషించి instructional interventionను రూపొందించాడు. దీనికి అత్యంత సరైన పదం:",
+        options: [
+            "Norming",
+            "Random sampling",
+            "Error analysis",
+            "Summative grading"
+        ],
+        correct: 2,
+        explanation: "Error analysisలో విద్యార్థి చేసే mistakes యొక్క patterns, types మరియు possible causesను పరిశీలిస్తారు. ఈ information ఆధారంగా specific instructional intervention లేదా corrective teaching strategy రూపొందించవచ్చు."
+    },
+    {
+        question: "క్రింది statementsను పరిశీలించండి:\n1. Screening సాధారణంగా risk లేదా suspected difficulty ఉన్న విద్యార్థులను గుర్తించడానికి ఉపయోగపడుతుంది.\n2. Screening ఫలితం మాత్రమే ఆధారంగా తుది disability diagnosis చేయాలి.\n3. Comprehensive assessmentలో వివిధ రకాల సమాచారాన్ని సమీకరించవచ్చు.\nసరైన సమాధానం:",
+        options: [
+            "1 మరియు 3 మాత్రమే",
+            "1 మాత్రమే",
+            "2 మరియు 3 మాత్రమే",
+            "1, 2 మరియు 3"
+        ],
+        correct: 0,
+        explanation: "Statement 1 సరైనది, ఎందుకంటే screening risk గుర్తిస్తుంది. Statement 2 తప్పు, ఎందుకంటే screening alone diagnosis చేయదు. Statement 3 సరైనది, comprehensive assessmentలో multiple information sources ఉపయోగిస్తారు."
+    },
+    {
+        question: "Match the following:\nColumn-I\ni) Vineland Adaptive Behavior Scales\nii) Curriculum-Based Assessment\niii) ABC Analysis\niv) Portfolio Assessment\n\nColumn-II\na) వివిధ కాలాల్లో విద్యార్థి పనుల సేకరణ ఆధారంగా అంచనా\nb) Adaptive behaviour assessment\nc) Antecedent–Behaviour–Consequence విశ్లేషణ\nd) Curriculumలోని content ఆధారంగా పనితీరు అంచనా",
+        options: [
+            "i-b, ii-d, iii-c, iv-a",
+            "i-d, ii-b, iii-a, iv-c",
+            "i-c, ii-a, iii-d, iv-b",
+            "i-a, ii-c, iii-b, iv-d"
+        ],
+        correct: 0,
+        explanation: "Vineland adaptive behaviourను అంచనా వేస్తుంది; CBA curriculum contentపై performanceను కొలుస్తుంది; ABC antecedent-behaviour-consequenceను విశ్లేషిస్తుంది; portfolio collected workను అంచనా వేస్తుంది."
+    },
+    {
+        question: "Match the following:\nColumn-I\ni) Shaping\nii) Forward chaining\niii) Backward chaining\niv) Prompt fading\n\nColumn-II\na) చివరి దశను ముందుగా నేర్పడం\nb) promptsను క్రమంగా తగ్గించడం\nc) successive approximationsను reinforce చేయడం\nd) మొదటి దశ నుంచి క్రమంగా skillను నిర్మించడం",
+        options: [
+            "i-c, ii-d, iii-a, iv-b",
+            "i-d, ii-a, iii-b, iv-c",
+            "i-a, ii-c, iii-d, iv-b",
+            "i-b, ii-d, iii-c, iv-a"
+        ],
+        correct: 0,
+        explanation: "Shaping successive approximationsను reinforce చేస్తుంది; forward chaining మొదటి stepనుంచి ప్రారంభమవుతుంది; backward chaining చివరి stepనుంచి; prompt fading promptsను క్రమంగా తగ్గిస్తుంది."
+    },
+    {
+        question: "క్రింది వాటిలో Task Analysis → Chaining → Prompt Fading → Independent Performance అనే బోధనా ప్రక్రియలో సరైన క్రమం ఏది?",
+        options: [
+            "Prompt fading → Task analysis → Independent performance → Chaining",
+            "Chaining → Task analysis → Prompt fading → Independent performance",
+            "Task analysis → Chaining → Prompt fading → Independent performance",
+            "Independent performance → Task analysis → Chaining → Prompt fading"
+        ],
+        correct: 2,
+        explanation: "ముందుగా complex skillను task analysis ద్వారా stepsగా విభజిస్తారు. తరువాత chainingతో skillను బోధిస్తారు, promptsను fade చేసి చివరకు independent performanceను సాధిస్తారు."
+    },
+    {
+        question: "క్రింది statementsను పరిశీలించండి:\n1. Accommodation సాధారణంగా విద్యార్థి నేర్చుకునే లేదా ప్రదర్శించే విధానంలో మార్పును సూచిస్తుంది.\n2. Modificationలో learning expectations లేదా curriculum contentలో మార్పు ఉండవచ్చు.\n3. Accommodation మరియు modification రెండూ ప్రతి సందర్భంలో ఒకే అర్థాన్ని కలిగి ఉంటాయి.\nసరైన సమాధానం:",
+        options: [
+            "1 మరియు 2 మాత్రమే",
+            "1 మాత్రమే",
+            "2 మరియు 3 మాత్రమే",
+            "1, 2 మరియు 3"
+        ],
+        correct: 0,
+        explanation: "Statement 1 సరైనది, accommodation access లేదా response methodను మారుస్తుంది. Statement 2 కూడా సరైనది, modification expectations లేదా contentను మార్చవచ్చు. Statement 3 తప్పు, ఇవి వేర్వేరు concepts."
+    },
+    {
+        question: "ఒక Learning Disability ఉన్న విద్యార్థి science conceptను మౌఖికంగా బాగా వివరిస్తాడు కానీ పొడవైన written response రాయడంలో తీవ్ర ఇబ్బంది పడుతున్నాడు. అదే learning objectiveను కొనసాగిస్తూ, అతనికి oral response లేదా speech-to-text ద్వారా సమాధానం ఇవ్వడానికి అవకాశం కల్పించారు. ఇది ప్రధానంగా:",
+        options: [
+            "Curriculum modification",
+            "Curriculum replacement",
+            "Grade-level reduction",
+            "Accommodation"
+        ],
+        correct: 3,
+        explanation: "ఇక్కడ learning objective లేదా expectation మార్చబడలేదు; response ఇవ్వడానికి alternative method అందించారు. కాబట్టి oral response లేదా speech-to-text ఉపయోగించడం accommodationకు ఉదాహరణ."
     }
 ];
