@@ -1,446 +1,306 @@
 const SUBJECTS = [
-    "Child development"
+    "Acts and Policies"
 ];
 
 const QUESTIONS = [
     {
-        question: "ఒక శిశువు ఒక సమస్యను పరిష్కరించేటప్పుడు తనకు తెలిసిన పద్ధతి పనిచేయకపోతే కొత్త పద్ధతిని రూపొందిస్తాడు. పియాజే సిద్ధాంతం ప్రకారం ఇది ఏ ప్రక్రియకు సంబంధించినది?",
-        options: [
-            "సమీకరణం (Assimilation)",
-            "అనుకూలనం (Accommodation)",
-            "పరిపక్వత (Maturation)",
-            "సంరక్షణ (Conservation)"
-        ],
+        question: "Rehabilitation Council of India Act ఏ సంవత్సరంలో ఆమోదించబడింది?",
+        options: ["1986", "1992", "1995", "1999"],
         correct: 1,
-        explanation: "పాత జ్ఞాన నిర్మాణం కొత్త పరిస్థితికి సరిపోకపోతే, వ్యక్తి తన ఆలోచనా నిర్మాణాన్ని మార్చుకోవడాన్ని Piaget అనుకూలనం (Accommodation)గా పేర్కొన్నాడు."
+        explanation: "Rehabilitation Council of India Act 1992లో ఆమోదించబడింది. ఈ చట్టం rehabilitation professionals/personnel trainingను నియంత్రించడం, ప్రమాణాలను నిర్ణయించడం మరియు వృత్తిపరమైన నమోదు నిర్వహించడం కోసం రూపొందించబడింది."
     },
     {
-        question: "వైగాట్స్కీ సిద్ధాంతంలో, విద్యార్థి తనంతట తాను చేయలేని పనిని మరింత నైపుణ్యం కలిగిన వ్యక్తి సహాయంతో చేయగలిగే స్థాయిని ఏమంటారు?",
-        options: [
-            "Zone of Actual Development",
-            "Zone of Proximal Development",
-            "Zone of Cognitive Conflict",
-            "Zone of Independent Learning"
-        ],
-        correct: 1,
-        explanation: "Zone of Proximal Development అనేది విద్యార్థి స్వతంత్రంగా చేయలేని పనిని, నైపుణ్యం కలిగిన వ్యక్తి సహాయంతో విజయవంతంగా చేయగల పరిధిని సూచిస్తుంది."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు విద్యార్థికి మొదట సమస్య పరిష్కారంలో ఎక్కువ సహాయం అందించి, క్రమంగా ఆ సహాయాన్ని తగ్గిస్తాడు. ఈ ప్రక్రియను ఏమంటారు?",
-        options: [
-            "Scaffolding",
-            "Shaping",
-            "Chaining",
-            "Generalization"
-        ],
-        correct: 0,
-        explanation: "Scaffoldingలో ఉపాధ్యాయుడు ప్రారంభంలో అవసరమైన సహాయాన్ని అందించి, విద్యార్థి సామర్థ్యం పెరిగే కొద్దీ ఆ సహాయాన్ని క్రమంగా తగ్గిస్తాడు."
-    },
-    {
-        question: "ఒక విద్యార్థి తనకు ఆసక్తి ఉన్న అంశాన్ని ఎటువంటి బహుమతి లేకుండానే నేర్చుకోవడానికి స్వయంగా ప్రయత్నిస్తాడు. ఇది ఏ రకమైన ప్రేరణకు ఉదాహరణ?",
-        options: [
-            "Extrinsic motivation",
-            "Intrinsic motivation",
-            "Negative motivation",
-            "Social motivation"
-        ],
-        correct: 1,
-        explanation: "Intrinsic motivationలో బాహ్య బహుమతి లేదా శిక్ష అవసరం లేకుండా, వ్యక్తిగత ఆసక్తి, ఆనందం లేదా సంతృప్తి కారణంగా వ్యక్తి ఒక పనిని చేస్తాడు."
-    },
-    {
-        question: "క్రింది వాటిలో వ్యక్తిగత భేదాలకు సంబంధించిన సరైన ప్రకటన ఏది?",
-        options: [
-            "విద్యార్థులందరూ ఒకే వేగంతో నేర్చుకుంటారు.",
-            "వ్యక్తిగత భేదాలు కేవలం మేధస్సులో మాత్రమే ఉంటాయి.",
-            "విద్యార్థుల ఆసక్తులు, సామర్థ్యాలు మరియు నేర్చుకునే వేగంలో తేడాలు ఉండవచ్చు.",
-            "వ్యక్తిగత భేదాలు బోధనా ప్రక్రియపై ఎటువంటి ప్రభావం చూపవు."
-        ],
+        question: "RCI Act, 1992లో Section 3 ప్రధానంగా దేనికి సంబంధించినది?",
+        options: ["Central Rehabilitation Register", "Minimum standards of education", "Rehabilitation Council of India యొక్క Constitution and incorporation", "Professional conduct"],
         correct: 2,
-        explanation: "వ్యక్తిగత భేదాలు విద్యార్థుల ఆసక్తులు, సామర్థ్యాలు, మేధస్సు, వ్యక్తిత్వం మరియు నేర్చుకునే వేగం వంటి అనేక అంశాలలో కనిపిస్తాయి."
+        explanation: "RCI Actలో Section 3 Rehabilitation Council of India యొక్క constitution and incorporationకు సంబంధించినది. Council ఏర్పాటుకు చట్టపరమైన నిర్మాణాన్ని ఈ Section వివరిస్తుంది."
     },
     {
-        question: "ఒక విద్యార్థి ఒకే సమయంలో అనేక ఉద్దీపనల మధ్య ఒక నిర్దిష్ట ఉద్దీపనపై తన మానసిక వనరులను కేంద్రీకరిస్తున్నాడు. ఇది ప్రధానంగా దేనిని సూచిస్తుంది?",
-        options: [
-            "Perception",
-            "Attention",
-            "Motivation",
-            "Retention"
-        ],
+        question: "RCI Act, 1992లో Section 11 ఏ అంశానికి సంబంధించినది?",
+        options: ["విదేశీ సంస్థల అర్హతల గుర్తింపు", "భారతదేశంలోని విశ్వవిద్యాలయాలు/సంస్థలు ఇచ్చే qualifications యొక్క recognition", "Professional conduct", "Council సభ్యుల తొలగింపు"],
         correct: 1,
-        explanation: "Attention అనేది అనేక ఉద్దీపనలలో ఒక నిర్దిష్ట ఉద్దీపన లేదా సమాచారంపై మానసిక వనరులను ఎంపికగా కేంద్రీకరించే ప్రక్రియ."
+        explanation: "RCI Act Section 11 భారతదేశంలోని విశ్వవిద్యాలయాలు లేదా సంస్థలు అందించే rehabilitation-related qualificationsను గుర్తించే ప్రక్రియకు సంబంధించినది."
     },
     {
-        question: "ఒక ఉపాధ్యాయుడు తరగతిలో విద్యార్థి సరైన ప్రవర్తన చేసిన వెంటనే ప్రశంసను అందిస్తాడు. ఈ పద్ధతి ఏ అభ్యసన సిద్ధాంతంతో ఎక్కువగా సంబంధం కలిగి ఉంటుంది?",
-        options: [
-            "Classical conditioning",
-            "Operant conditioning",
-            "Gestalt learning",
-            "Insight learning"
-        ],
+        question: "RCI Act, 1992లో “Minimum standards of education” ఏ Sectionలో ఉంది?",
+        options: ["Section 15", "Section 18", "Section 21", "Section 23"],
         correct: 1,
-        explanation: "Operant conditioningలో ప్రవర్తనను దాని పరిణామాల ద్వారా ప్రభావితం చేస్తారు. సరైన ప్రవర్తన తరువాత ప్రశంస ఇవ్వడం reinforcementగా పనిచేస్తుంది."
+        explanation: "RCI Act, 1992లో Section 18 minimum standards of educationకు సంబంధించినది. Rehabilitation coursesలో విద్యా ప్రమాణాలు, శిక్షణ నాణ్యతను నిర్ధారించడంలో ఇది ముఖ్యమైనది."
     },
     {
-        question: "ఒక విద్యార్థి గతంలో నేర్చుకున్న నియమాన్ని కొత్త పరిస్థితిలో కూడా ఉపయోగించగలుగుతున్నాడు. ఇది అభ్యసనలో ఏ లక్షణాన్ని సూచిస్తుంది?",
-        options: [
-            "Transfer of learning",
-            "Extinction",
-            "Forgetting",
-            "Habituation"
-        ],
-        correct: 0,
-        explanation: "Transfer of learning అనేది గతంలో నేర్చుకున్న జ్ఞానం, నైపుణ్యం లేదా నియమాన్ని కొత్త పరిస్థితి లేదా సంబంధిత సమస్యలో విజయవంతంగా ఉపయోగించడం."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు ఒక నైపుణ్యాన్ని చిన్న చిన్న దశలుగా విభజించి, ప్రతి దశను వరుసగా బోధిస్తాడు. ఇది ఏ బోధనా విధానానికి అత్యంత దగ్గరగా ఉంటుంది?",
-        options: [
-            "Task analysis",
-            "Discovery learning",
-            "Cooperative learning",
-            "Brainstorming"
-        ],
-        correct: 0,
-        explanation: "Task analysisలో సంక్లిష్టమైన నైపుణ్యం లేదా పనిని చిన్న, నిర్వహించగలిగే దశలుగా విభజించి వాటిని క్రమపద్ధతిలో బోధిస్తారు."
-    },
-    {
-        question: "ఒక విద్యార్థి తన సామర్థ్యానికి తగిన సవాలుతో కూడిన పనిని ఎంచుకొని, విజయవంతంగా పూర్తి చేసిన తర్వాత తనపై నమ్మకం పెంచుకుంటాడు. ఇది ప్రధానంగా ఏ భావనతో సంబంధం కలిగి ఉంటుంది?",
-        options: [
-            "Self-efficacy",
-            "Sensory adaptation",
-            "Perceptual constancy",
-            "Cognitive dissonance"
-        ],
-        correct: 0,
-        explanation: "Self-efficacy అనేది ఒక నిర్దిష్ట పనిని విజయవంతంగా నిర్వహించగలననే వ్యక్తి యొక్క స్వీయ నమ్మకాన్ని సూచిస్తుంది; విజయవంతమైన అనుభవాలు దీనిని పెంచుతాయి."
-    },
-    {
-        question: "బుద్ధిమత్తను రెండు ప్రధాన భాగాలుగా Fluid Intelligence మరియు Crystallized Intelligenceగా వివరించిన సిద్ధాంతకర్త ఎవరు?",
-        options: [
-            "Charles Spearman",
-            "Raymond Cattell",
-            "Howard Gardner",
-            "Robert Sternberg"
-        ],
-        correct: 1,
-        explanation: "Raymond Cattell బుద్ధిమత్తను Fluid Intelligence మరియు Crystallized Intelligenceగా విభజించాడు. Fluid intelligence కొత్త సమస్యలను పరిష్కరించడాన్ని, crystallized intelligence నేర్చుకున్న జ్ఞానాన్ని సూచిస్తుంది."
-    },
-    {
-        question: "Spearman యొక్క బుద్ధిమత్త సిద్ధాంతంలో g అనే సంకేతం దేనిని సూచిస్తుంది?",
-        options: [
-            "Group intelligence",
-            "General intelligence",
-            "Genetic intelligence",
-            "Growth intelligence"
-        ],
-        correct: 1,
-        explanation: "Spearman యొక్క రెండు-కారకాల సిద్ధాంతంలో g అనేది General intelligenceను సూచిస్తుంది. ఇది వివిధ మేధోపరమైన పనులలో సాధారణంగా పనిచేసే సామర్థ్యంగా భావించబడుతుంది."
-    },
-    {
-        question: "ఒక విద్యార్థి తనకు ఇచ్చిన సమాచారాన్ని అర్థవంతమైన నమూనాగా నిర్వహించి దాని ఆధారంగా అర్థాన్ని నిర్మించుకుంటాడు. ఇది ప్రధానంగా ఏ ప్రక్రియకు సంబంధించినది?",
-        options: [
-            "Perception",
-            "Reflex action",
-            "Motor maturation",
-            "Physical growth"
-        ],
-        correct: 0,
-        explanation: "Perception అనేది ఇంద్రియాల ద్వారా అందిన సమాచారాన్ని ఎంపిక చేసి, నిర్వహించి, అర్థవంతంగా వ్యాఖ్యానించే మానసిక ప్రక్రియ."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు విద్యార్థులందరికీ ఒకే విధమైన బోధనా పద్ధతిని ఉపయోగించకుండా, వారి అవసరాలు మరియు సామర్థ్యాలకు అనుగుణంగా పద్ధతులను మార్చుతున్నాడు. ఇది దేనికి ఉదాహరణ?",
-        options: [
-            "Differentiated instruction",
-            "Rote learning",
-            "Programmed extinction",
-            "Fixed curriculum"
-        ],
-        correct: 0,
-        explanation: "Differentiated instructionలో విద్యార్థుల వ్యక్తిగత అవసరాలు, సామర్థ్యాలు, ఆసక్తులు మరియు నేర్చుకునే విధానాలను పరిగణించి బోధనను అనుకూలీకరిస్తారు."
-    },
-    {
-        question: "IEPలో ఒక విద్యార్థి సంవత్సరాంతానికి “100లో కనీసం 80 సందర్భాల్లో రెండు అంకెల కూడికను స్వతంత్రంగా పరిష్కరించగలగాలి” అని పేర్కొన్నారు. ఈ లక్ష్యంలోని ముఖ్యమైన లక్షణం ఏమిటి?",
-        options: [
-            "లక్ష్యం కొలవలేనిది",
-            "లక్ష్యం measurable",
-            "లక్ష్యం కేవలం సాధారణమైనది",
-            "లక్ష్యం విద్యార్థి అవసరాలకు సంబంధం లేనిది"
-        ],
-        correct: 1,
-        explanation: "ఈ IEP లక్ష్యంలో 100లో 80 విజయాలు అనే స్పష్టమైన ప్రమాణం ఉంది. అందువల్ల విద్యార్థి పురోగతిని సంఖ్యాపరంగా కొలవడానికి ఇది measurable objective."
-    },
-    {
-        question: "IEPలో Present Level of Academic Achievement and Functional Performance (PLAAFP) ప్రధానంగా దేనిని వివరిస్తుంది?",
-        options: [
-            "విద్యార్థి భవిష్యత్తులో చేయాల్సిన వృత్తిని మాత్రమే",
-            "విద్యార్థి ప్రస్తుత విద్యా మరియు కార్యనిర్వహణ స్థితిని",
-            "పాఠశాల మొత్తం విద్యా ఫలితాలను",
-            "ఉపాధ్యాయుని బోధనా పనితీరును"
-        ],
-        correct: 1,
-        explanation: "PLAAFP విద్యార్థి ప్రస్తుత విద్యా సాధన, కార్యనిర్వహణ పనితీరు, బలాలు, అవసరాలు మరియు వైకల్యం ప్రభావాన్ని వివరిస్తుంది."
-    },
-    {
-        question: "ఒక సమగ్ర తరగతిలో దృష్టి లోపం ఉన్న విద్యార్థికి అదే పాఠ్యాంశాన్ని Braille లేదా screen reader ద్వారా అందిస్తున్నారు. ఇది ప్రధానంగా ఏ భావనకు ఉదాహరణ?",
-        options: [
-            "Accommodation",
-            "Grade retention",
-            "Curriculum elimination",
-            "Segregation"
-        ],
-        correct: 0,
-        explanation: "Accommodationలో విద్యార్థి నేర్చుకోవాల్సిన కంటెంట్ లేదా లక్ష్యాన్ని తప్పనిసరిగా మార్చకుండా, సమాచారానికి ప్రాప్యత కల్పించే విధానాన్ని మార్చవచ్చు."
-    },
-    {
-        question: "క్రింది వాటిలో accommodation మరియు modification మధ్య సరైన వ్యత్యాసాన్ని సూచించేది ఏది?",
-        options: [
-            "Accommodationలో నేర్చుకునే లక్ష్యం మారుతుంది; modificationలో మారదు.",
-            "Accommodationలో విద్యార్థి నేర్చుకునే విధానం/ప్రాప్యతలో మార్పు ఉండవచ్చు; modificationలో అభ్యసన అంచనాలు లేదా కంటెంట్ స్థాయిలో మార్పు ఉండవచ్చు.",
-            "రెండింటికీ ఎటువంటి తేడా లేదు.",
-            "Modification అనేది కేవలం seating arrangementకు మాత్రమే సంబంధించినది."
-        ],
-        correct: 1,
-        explanation: "Accommodation ప్రాప్యత లేదా స్పందించే విధానాన్ని మార్చవచ్చు; modification మాత్రం విద్యార్థి నుంచి ఆశించే కంటెంట్, స్థాయి లేదా అభ్యసన ప్రమాణాలను మార్చవచ్చు."
-    },
-    {
-        question: "Universal Design for Learning (UDL)లో “Multiple Means of Representation” ప్రధానంగా దేనిని సూచిస్తుంది?",
-        options: [
-            "విద్యార్థులందరికీ ఒకే పరీక్షను ఇవ్వడం",
-            "సమాచారాన్ని విద్యార్థులకు వివిధ విధాలుగా అందించడం",
-            "కేవలం మౌఖిక బోధనను ఉపయోగించడం",
-            "పాఠ్యాంశాన్ని పూర్తిగా తొలగించడం"
-        ],
-        correct: 1,
-        explanation: "UDLలో Multiple Means of Representation అనేది సమాచారాన్ని దృశ్య, శ్రవణ, పాఠ్య లేదా ఇతర అనుకూల మార్గాల ద్వారా వివిధ విధాలుగా అందించడం."
-    },
-    {
-        question: "ఒక విద్యార్థి రాతపూర్వక సమాధానం ఇవ్వడంలో ఇబ్బంది పడుతున్నప్పటికీ, తన జ్ఞానాన్ని మౌఖికంగా స్పష్టంగా వ్యక్తపరచగలడు. సముచిత accommodation ఏది?",
-        options: [
-            "పరీక్షను రద్దు చేయడం",
-            "మౌఖిక సమాధానం ఇవ్వడానికి అవకాశం కల్పించడం",
-            "విద్యార్థిని తరగతి నుండి తొలగించడం",
-            "పాఠ్యాంశాన్ని మార్చకుండా పరీక్షలో సున్నా ఇవ్వడం"
-        ],
-        correct: 1,
-        explanation: "మౌఖికంగా సమాధానం ఇవ్వడం విద్యార్థి జ్ఞానాన్ని ప్రత్యామ్నాయ స్పందన విధానం ద్వారా వ్యక్తపరచడానికి సహాయపడుతుంది, అయితే అభ్యసన లక్ష్యం తప్పనిసరిగా మారదు."
-    },
-    {
-        question: "బోధన ప్రారంభించే ముందు విద్యార్థి యొక్క ప్రస్తుత నైపుణ్య స్థాయిని తెలుసుకోవడానికి నిర్వహించే assessmentను సాధారణంగా ఏమంటారు?",
-        options: [
-            "Summative assessment",
-            "Diagnostic assessment",
-            "Terminal assessment",
-            "Normative assessment"
-        ],
-        correct: 1,
-        explanation: "Diagnostic assessment బోధన ప్రారంభానికి ముందు విద్యార్థి యొక్క ప్రస్తుత జ్ఞానం, నైపుణ్యాలు, బలాలు మరియు అవసరాలను గుర్తించడానికి ఉపయోగించబడుతుంది."
-    },
-    {
-        question: "బోధన జరుగుతున్న సమయంలో విద్యార్థి పురోగతిని తెలుసుకొని అవసరమైన బోధనా మార్పులు చేయడానికి ఉపయోగించే assessment ఏది?",
-        options: [
-            "Formative assessment",
-            "Summative assessment",
-            "Placement assessment",
-            "Intelligence testing"
-        ],
-        correct: 0,
-        explanation: "Formative assessment బోధన కొనసాగుతున్న సమయంలో విద్యార్థి పురోగతిపై సమాచారం అందిస్తుంది. ఉపాధ్యాయుడు ఆ సమాచారం ఆధారంగా బోధనా వ్యూహాలను మార్చవచ్చు."
-    },
-    {
-        question: "ఒక పరీక్షలో విద్యార్థి పొందిన స్కోర్‌ను నిర్దిష్టమైన అభ్యసన ప్రమాణంతో పోల్చి అతను ఆ ప్రమాణాన్ని చేరుకున్నాడా లేదా తెలుసుకుంటే, అది ఏ assessment?",
-        options: [
-            "Norm-referenced assessment",
-            "Criterion-referenced assessment",
-            "Projective assessment",
-            "Sociometric assessment"
-        ],
-        correct: 1,
-        explanation: "Criterion-referenced assessmentలో విద్యార్థి పనితీరును ఇతర విద్యార్థులతో కాకుండా ముందుగా నిర్ణయించిన నిర్దిష్ట అభ్యసన ప్రమాణాలు లేదా criteriaతో పోలుస్తారు."
-    },
-    {
-        question: "ఒక విద్యార్థి గణితంలో 80 మార్కులు సాధించాడు. తరగతిలోని మిగతా విద్యార్థులతో పోల్చి అతని స్థానం తెలుసుకోవడం ప్రధాన ఉద్దేశ్యంగా ఉంటే, ఏ రకమైన assessment ఎక్కువగా అనుకూలంగా ఉంటుంది?",
-        options: [
-            "Criterion-referenced",
-            "Norm-referenced",
-            "Diagnostic",
-            "Informal observation"
-        ],
-        correct: 1,
-        explanation: "Norm-referenced assessmentలో విద్యార్థి స్కోర్‌ను ఇతర విద్యార్థుల పనితీరుతో పోల్చి సాపేక్ష స్థానం లేదా ర్యాంక్ వంటి సమాచారాన్ని తెలుసుకుంటారు."
-    },
-    {
-        question: "ఒక తరగతిలో 5 మంది విద్యార్థుల మార్కులు 10, 20, 30, 40, 50. వారి arithmetic mean ఎంత?",
-        options: [
-            "25",
-            "30",
-            "35",
-            "40"
-        ],
-        correct: 1,
-        explanation: "Arithmetic mean కోసం అన్ని స్కోర్లను కలిపి మొత్తం పరిశీలనల సంఖ్యతో భాగించాలి. (10 + 20 + 30 + 40 + 50) ÷ 5 = 30."
-    },
-    {
-        question: "ఒక విద్యార్థి మార్కులు 12, 15, 18, 21, 24. ఈ డేటా యొక్క median ఎంత?",
-        options: [
-            "15",
-            "18",
-            "20",
-            "21"
-        ],
-        correct: 1,
-        explanation: "Median అనేది క్రమపద్ధతిలో అమర్చిన డేటాలో మధ్యలో ఉన్న విలువ. ఇక్కడ ఐదు స్కోర్లు ఉన్నాయి, కాబట్టి మూడవ విలువ 18 median అవుతుంది."
-    },
-    {
-        question: "ఒక assessmentలో విద్యార్థుల స్కోర్లు 8, 10, 12, 14, 16గా ఉన్నాయి. ఈ డేటా యొక్క range ఎంత?",
-        options: [
-            "6",
-            "8",
-            "10",
-            "12"
-        ],
+        question: "RCI Act, 1992లో rehabilitation professionals యొక్క Registration in Register ఏ Sectionకు సంబంధించినది?",
+        options: ["Section 17", "Section 18", "Section 19", "Section 20"],
         correct: 2,
-        explanation: "Range అనేది గరిష్ఠ విలువ మరియు కనిష్ఠ విలువ మధ్య తేడా. ఇక్కడ గరిష్ఠ స్కోర్ 16, కనిష్ఠ స్కోర్ 8; కాబట్టి range 8."
+        explanation: "RCI Actలో Section 19 rehabilitation professionals యొక్క registration in the registerకు సంబంధించినది. అర్హత కలిగిన professionalsను అధికారికంగా నమోదు చేయడానికి ఇది ఉపయోగపడుతుంది."
     },
     {
-        question: "ఒక ఉపాధ్యాయుడు ఇద్దరు విద్యార్థుల సగటు మార్కులు సమానంగా ఉన్నప్పటికీ, వారి మార్కుల వ్యాప్తి చాలా భిన్నంగా ఉందని గమనించాడు. ఈ వ్యత్యాసాన్ని తెలుసుకోవడానికి ఏ గణాంక పరిమాణం అత్యంత అనుకూలంగా ఉంటుంది?",
-        options: [
-            "Mean",
-            "Median",
-            "Standard deviation",
-            "Mode"
-        ],
+        question: "RCI Act, 1992 యొక్క ప్రధాన ఉద్దేశ్యాలలో క్రింది వాటిలో ఏది ఉంది?",
+        options: ["School recognition మాత్రమే", "Rehabilitation professionals/personnel trainingను regulate మరియు monitor చేయడం", "Higher educationలో reservation కల్పించడం", "Elementary educationను compulsory చేయడం"],
+        correct: 1,
+        explanation: "RCI Act యొక్క ప్రధాన లక్ష్యం rehabilitation professionals మరియు personnel trainingను regulate, monitor చేయడం. ఇది శిక్షణ నాణ్యత, అర్హతలు మరియు వృత్తిపరమైన ప్రమాణాలను నియంత్రిస్తుంది."
+    },
+    {
+        question: "RCI Act, 1992లో “Central Rehabilitation Register” నిర్వహణకు సంబంధించిన అంశం ఏది?",
+        options: ["Act యొక్క ప్రధాన ఉద్దేశ్యాలలో ఒకటి", "RTE Act యొక్క ప్రధాన ఉద్దేశ్యం", "National Trust Act యొక్క ప్రధాన ఉద్దేశ్యం", "NEP 2020 యొక్క ప్రధాన లక్ష్యం"],
+        correct: 0,
+        explanation: "Central Rehabilitation Register నిర్వహణ RCI Actకు సంబంధించిన ముఖ్యమైన అంశం. ఇందులో గుర్తింపు పొందిన rehabilitation professionals వివరాలు నమోదు చేయబడతాయి."
+    },
+    {
+        question: "PWD Act, 1995లో Section 26 ప్రధానంగా దేనికి సంబంధించినది?",
+        options: ["Employment reservation", "Education", "Social security", "Accessibility in transport"],
+        correct: 1,
+        explanation: "PWD Act, 1995లో Section 26 educationకు సంబంధించినది. Persons with disabilitiesకు educational opportunities మరియు సంబంధిత విద్యా హక్కులను కల్పించడంలో ఈ Section ప్రాధాన్యత కలిగి ఉంది."
+    },
+    {
+        question: "PWD Act, 1995లో Section 31 ఏ అంశానికి సంబంధించినది?",
+        options: ["Educational institutionsలో amanuensis అందించడం", "Government employment reservation", "Identification of posts", "Built environment accessibility"],
+        correct: 0,
+        explanation: "PWD Act Section 31 educational institutionsలో amanuensis అందించడానికి సంబంధించినది. పరీక్షలు లేదా విద్యా కార్యకలాపాల్లో సహాయం అవసరమైన విద్యార్థులకు ఇది సహాయక సదుపాయం."
+    },
+    {
+        question: "PWD Act, 1995లో Section 32 ఏ అంశాన్ని సూచిస్తుంది?",
+        options: ["Educational reservation", "Identification of posts which can be reserved for persons with disabilities", "Free education", "Transport accessibility"],
+        correct: 1,
+        explanation: "PWD Act Section 32 persons with disabilities కోసం reservation చేయగల postsను గుర్తించడానికి సంబంధించినది. Government establishmentsలో employment reservation అమలుకు ఇది ఆధారం."
+    },
+    {
+        question: "PWD Act, 1995లో Section 33 ప్రకారం Government establishmentsలో persons with disabilities కోసం కనీస reservation ఎంత?",
+        options: ["2%", "3%", "4%", "5%"],
+        correct: 1,
+        explanation: "PWD Act, 1995 Section 33 ప్రకారం Government establishmentsలో persons with disabilitiesకు కనీసం 3 శాతం reservation కల్పించబడింది."
+    },
+    {
+        question: "PWD Act, 1995లో Section 39 ఏ అంశానికి సంబంధించినది?",
+        options: ["Government employmentలో reservation", "Educational institutionsలో seats reservation", "Road accessibility", "Professional registration"],
+        correct: 1,
+        explanation: "PWD Act Section 39 educational institutionsలో seats reservationకు సంబంధించినది. Government మరియు Government-aided educational institutionsలో persons with disabilitiesకు కనీస reservationను ఇది నిర్దేశిస్తుంది."
+    },
+    {
+        question: "PWD Act, 1995లో Section 39 ప్రకారం Government educational institutions మరియు Government aid పొందుతున్న educational institutionsలో కనీసం ఎంత శాతం seatsను persons with disabilities కోసం reserve చేయాలి?",
+        options: ["2%", "3%", "4%", "5%"],
+        correct: 1,
+        explanation: "PWD Act Section 39 ప్రకారం Government మరియు Government-aided educational institutionsలో కనీసం 3 శాతం seats persons with disabilities కోసం reserve చేయాలి."
+    },
+    {
+        question: "PWD Act, 1995లో Section 44 దేనికి సంబంధించినది?",
+        options: ["Transportలో non-discrimination", "Roadsలో non-discrimination", "Built environmentలో non-discrimination", "Employmentలో non-discrimination"],
+        correct: 0,
+        explanation: "PWD Act Section 44 transportలో non-discriminationకు సంబంధించినది. Persons with disabilitiesకు transport facilities ఉపయోగించడంలో వివక్ష లేకుండా చూడటం ఈ provision యొక్క ఉద్దేశ్యం."
+    },
+    {
+        question: "PWD Act, 1995లో Section 45 ఏ అంశానికి సంబంధించినది?",
+        options: ["Transport", "Roads", "Educational institutions", "Employment"],
+        correct: 1,
+        explanation: "PWD Act Section 45 roadsలో non-discriminationకు సంబంధించినది. Persons with disabilities కోసం roads మరియు సంబంధిత public infrastructureలో accessibilityను ప్రోత్సహించడం దీని ఉద్దేశ్యం."
+    },
+    {
+        question: "PWD Act, 1995లో Section 46 ప్రధానంగా దేనికి సంబంధించినది?",
+        options: ["Non-discrimination in built environment", "Employment reservation", "Free education", "Registration of rehabilitation professionals"],
+        correct: 0,
+        explanation: "PWD Act Section 46 built environmentలో non-discriminationకు సంబంధించినది. Buildings మరియు ఇతర physical environments persons with disabilitiesకు accessibleగా ఉండేలా చూడటం దీని లక్ష్యం."
+    },
+    {
+        question: "National Trust Act, 1999 ప్రధానంగా క్రింది ఏ నాలుగు disability groups సంక్షేమానికి సంబంధించినది?",
+        options: ["Autism, Cerebral Palsy, Mental Retardation, Multiple Disabilities", "Blindness, Hearing Impairment, Locomotor Disability, SLD", "Autism, Deafness, Dyslexia, Cerebral Palsy", "Intellectual Disability, Visual Impairment, Hearing Impairment, Mental Illness"],
+        correct: 0,
+        explanation: "National Trust Act, 1999 Autism, Cerebral Palsy, Mental Retardation మరియు Multiple Disabilities కలిగిన persons సంక్షేమం, guardianship మరియు independent livingను ప్రోత్సహించడానికి రూపొందించబడింది."
+    },
+    {
+        question: "National Trust Act, 1999లో Section 10 దేనికి సంబంధించినది?",
+        options: ["Registration procedure", "Objects of the Trust", "Local Level Committee", "Appointment of guardianship"],
+        correct: 1,
+        explanation: "National Trust Act Section 10 Objects of the Trustకు సంబంధించినది. National Trust సాధించాల్సిన లక్ష్యాలు, కార్యకలాపాల ప్రధాన ఉద్దేశ్యాలను ఈ Section వివరిస్తుంది."
+    },
+    {
+        question: "National Trust Act, 1999లో Local Level Committee (LLC) ఏర్పాటు ఏ Sectionకు సంబంధించినది?",
+        options: ["Section 10", "Section 11", "Section 13", "Section 17"],
         correct: 2,
-        explanation: "Standard deviation డేటా విలువలు mean చుట్టూ ఎంతగా వ్యాపించి ఉన్నాయో కొలుస్తుంది. అందువల్ల సమాన mean ఉన్న సమూహాల variabilityని పోల్చడానికి ఉపయోగపడుతుంది."
+        explanation: "National Trust Actలో Local Level Committee ఏర్పాటు Section 13కు సంబంధించినది. Guardianship మరియు disability-related local support కోసం LLC ముఖ్యమైన statutory mechanism."
     },
     {
-        question: "క్రింది వాటిలో standard deviation గురించి సరైన ప్రకటనలను గుర్తించండి.\n\ni) ఇది డేటా యొక్క వ్యాప్తిని కొలుస్తుంది.\nii) అన్ని స్కోర్లు meanకు దగ్గరగా ఉంటే సాధారణంగా SD తక్కువగా ఉంటుంది.\niii) ఇది central tendency యొక్క ఒక కొలత.",
-        options: [
-            "i మాత్రమే",
-            "i మరియు ii మాత్రమే",
-            "ii మరియు iii మాత్రమే",
-            "i, ii మరియు iii"
-        ],
-        correct: 1,
-        explanation: "Standard deviation డేటా వ్యాప్తిని కొలుస్తుంది. విలువలు meanకు దగ్గరగా ఉంటే variability తక్కువగా ఉండి SD సాధారణంగా తక్కువగా ఉంటుంది; ఇది central tendency కాదు."
-    },
-    {
-        question: "ఒక విద్యార్థి assessmentలో 100లో 72 మార్కులు సాధించాడు. ఉపాధ్యాయుడు అతని శాతం స్కోర్‌ను తెలుసుకోవాలనుకుంటే అది ఎంత?",
-        options: [
-            "62%",
-            "72%",
-            "78%",
-            "82%"
-        ],
-        correct: 1,
-        explanation: "శాతం స్కోర్ = (సాధించిన మార్కులు ÷ మొత్తం మార్కులు) × 100. కాబట్టి (72 ÷ 100) × 100 = 72 శాతం."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు ఒక విద్యార్థి ప్రవర్తనను పర్యవేక్షిస్తూ, ప్రవర్తన సంభవించిన వెంటనే దాని ముందు జరిగిన సంఘటన మరియు తరువాత వచ్చిన పరిణామాన్ని నమోదు చేస్తున్నాడు. ఈ రికార్డింగ్ విధానం ఏది?",
-        options: [
-            "Anecdotal record",
-            "ABC recording",
-            "Sociogram",
-            "Checklist"
-        ],
-        correct: 1,
-        explanation: "ABC recordingలో Antecedent, Behavior, Consequence అనే మూడు అంశాలను నమోదు చేస్తారు. ప్రవర్తనకు ముందు జరిగిన సంఘటన, ప్రవర్తన, తరువాతి పరిణామం ఇందులో ఉంటాయి."
-    },
-    {
-        question: "ఒక విద్యార్థి తరగతి పనిని పూర్తి చేయడానికి పదేపదే ఉపాధ్యాయుడి సూచన కోసం ఎదురుచూస్తున్నాడు. స్వతంత్రతను పెంచడానికి ఉపాధ్యాయుడు మొదట స్పష్టమైన prompt ఇచ్చి, తరువాత దానిని క్రమంగా తగ్గిస్తాడు. దీనిని ఏమంటారు?",
-        options: [
-            "Prompt fading",
-            "Punishment",
-            "Extinction",
-            "Overcorrection"
-        ],
-        correct: 0,
-        explanation: "Prompt fadingలో ప్రారంభంలో అవసరమైన సూచన లేదా సహాయాన్ని అందించి, విద్యార్థి స్వతంత్రంగా స్పందించడం నేర్చుకున్న కొద్దీ ఆ promptను క్రమంగా తగ్గిస్తారు."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు విద్యార్థికి “పుస్తకం తీసుకో” అని చెప్పి, తరువాత “పుస్తకం తెరువు”, “సరైన పేజీ కనుగొను” వంటి దశలను వరుసగా బోధిస్తున్నాడు. ఈ విధానం ప్రధానంగా దేనిపై ఆధారపడి ఉంటుంది?",
-        options: [
-            "Task analysis",
-            "Free association",
-            "Insight learning",
-            "Trial-and-error without guidance"
-        ],
-        correct: 0,
-        explanation: "Task analysisలో ఒక సంక్లిష్టమైన పనిని వరుసగా ఉండే చిన్న దశలుగా విభజిస్తారు. ప్రతి దశను బోధించడం ద్వారా మొత్తం నైపుణ్యాన్ని అభివృద్ధి చేస్తారు."
-    },
-    {
-        question: "ఒక విద్యార్థి సరైన సమాధానం చెప్పినప్పుడు ఉపాధ్యాయుడు టోకెన్ ఇస్తాడు. నిర్దిష్ట సంఖ్యలో టోకెన్లు సంపాదించిన తర్వాత విద్యార్థి ఇష్టమైన కార్యకలాపాన్ని పొందుతాడు. ఇది ఏ పద్ధతికి ఉదాహరణ?",
-        options: [
-            "Token economy",
-            "Flooding",
-            "Response cost",
-            "Time-out"
-        ],
-        correct: 0,
-        explanation: "Token economyలో లక్ష్య ప్రవర్తనకు tokens వంటి conditioned reinforcers ఇస్తారు. నిర్ణీత సంఖ్యలో tokens సంపాదించినప్పుడు వాటిని ఇష్టమైన కార్యకలాపం లేదా rewardగా మార్చుకోవచ్చు."
-    },
-    {
-        question: "ఒక సమగ్ర తరగతిలో ఒకే పాఠ్యాంశాన్ని బోధిస్తున్నప్పుడు ఉపాధ్యాయుడు దృశ్య సహాయాలు, మౌఖిక వివరణ, చేతితో చేసే కార్యకలాపాలు మరియు డిజిటల్ వనరులను ఉపయోగిస్తున్నాడు. ఈ విధానం ప్రధానంగా దేనిని ప్రతిబింబిస్తుంది?",
-        options: [
-            "Multi-sensory approach",
-            "Single-channel instruction",
-            "Rote memorization",
-            "Competitive learning"
-        ],
-        correct: 0,
-        explanation: "Multi-sensory approachలో విద్యార్థుల అభ్యసనకు దృశ్య, శ్రవణ, స్పర్శ లేదా క్రియాత్మక వంటి ఒకటి కంటే ఎక్కువ ఇంద్రియ మార్గాలను ఉపయోగిస్తారు."
-    },
-    {
-        question: "క్రింది జతలలో సరైనది ఏది?",
-        options: [
-            "Intrinsic motivation — బాహ్య బహుమతి కోసం మాత్రమే నేర్చుకోవడం",
-            "Extrinsic motivation — అంతర్గత ఆసక్తి వల్ల మాత్రమే నేర్చుకోవడం",
-            "Self-efficacy — ఒక పని విజయవంతంగా చేయగలననే వ్యక్తి నమ్మకం",
-            "Attention — ఇప్పటికే నేర్చుకున్న సమాచారాన్ని దీర్ఘకాలం నిల్వచేయడం"
-        ],
+        question: "National Trust Act, 1999లో guardianship appointmentకు సంబంధించిన ప్రధాన Section ఏది?",
+        options: ["Section 11", "Section 13", "Section 14", "Section 18"],
         correct: 2,
-        explanation: "Self-efficacy అనేది ఒక వ్యక్తి నిర్దిష్ట పనిని విజయవంతంగా చేయగలననే నమ్మకం. మిగిలిన జతలు సంబంధిత భావనలకు తప్పుగా నిర్వచనాలు ఇస్తున్నాయి."
+        explanation: "National Trust Actలో guardianshipకు సంబంధించిన ప్రధాన provision Section 14. Local Level Committee ద్వారా guardianshipకు సంబంధించిన ప్రక్రియ నిర్వహించబడుతుంది."
     },
     {
-        question: "క్రింది ప్రకటనలను పరిశీలించండి:\n\ni) Inclusive educationలో విద్యార్థులను వారి వైకల్యం ఆధారంగా సాధారణ విద్యా వాతావరణం నుండి తప్పించడం ప్రధాన లక్ష్యం.\nii) Inclusive educationలో అవసరానికి అనుగుణంగా reasonable accommodations అందించవచ్చు.\niii) ప్రత్యేక అవసరాలు ఉన్న విద్యార్థుల విద్యా భాగస్వామ్యానికి classroom adaptations ఉపయోగపడవచ్చు.\n\nసరైన సమాధానం:",
-        options: [
-            "i మాత్రమే",
-            "ii మాత్రమే",
-            "ii మరియు iii మాత్రమే",
-            "i, ii మరియు iii"
-        ],
-        correct: 2,
-        explanation: "Inclusive educationలో విద్యార్థుల భాగస్వామ్యాన్ని పెంచేందుకు reasonable accommodations మరియు classroom adaptations ఉపయోగించవచ్చు. విద్యార్థులను వైకల్యం కారణంగా తొలగించడం దీని లక్ష్యం కాదు."
+        question: "National Trust Act ప్రకారం Local Level Committeeలో క్రింది వారిలో ఎవరు statutory member కాదు?",
+        options: ["District Magistrate/appropriate civil service officer", "Registered organisation representative", "Person with disability", "District Judge"],
+        correct: 3,
+        explanation: "Local Level Committeeలో District Magistrate లేదా nominated officer, registered organisation representative మరియు person with disability సభ్యులుగా ఉంటారు. District Judge statutory member కాదు."
     },
     {
-        question: "క్రింది వాటిని IEP ప్రక్రియలో సాధారణంగా జరిగే క్రమంలో అమర్చండి:\n\ni) ప్రస్తుత పనితీరు/అవసరాల గుర్తింపు\nii) కొలవగలిగే లక్ష్యాల నిర్ణయం\niii) తగిన బోధనా సేవలు మరియు strategies ఎంపిక\niv) పురోగతి పర్యవేక్షణ మరియు పునఃసమీక్ష",
-        options: [
-            "i → ii → iii → iv",
-            "ii → i → iv → iii",
-            "iii → i → ii → iv",
-            "i → iii → ii → iv"
-        ],
-        correct: 0,
-        explanation: "IEP సాధారణంగా విద్యార్థి ప్రస్తుత స్థితి మరియు అవసరాలను గుర్తించడం, measurable goals నిర్ణయించడం, సేవలు మరియు strategies ఎంపిక, తరువాత progress monitoringతో కొనసాగుతుంది."
-    },
-    {
-        question: "క్రింది జతలను పరిశీలించండి:\n\nఅభ్యసన సిద్ధాంతం | ప్రధాన భావన\ni) Skinner | A) Observational learning\nii) Bandura | B) Operant conditioning\niii) Pavlov | C) Classical conditioning\niv) Vygotsky | D) Zone of Proximal Development\n\nసరైన జత ఏది?",
-        options: [
-            "i-B, ii-A, iii-C, iv-D",
-            "i-A, ii-B, iii-D, iv-C",
-            "i-C, ii-D, iii-B, iv-A",
-            "i-D, ii-C, iii-A, iv-B"
-        ],
-        correct: 0,
-        explanation: "Skinner operant conditioningతో, Bandura observational learningతో, Pavlov classical conditioningతో, Vygotsky Zone of Proximal Developmentతో సంబంధం కలిగి ఉన్నారు."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు ఒక విద్యార్థి assessment dataను పరిశీలించినప్పుడు, మొత్తం మార్కుల సగటు సరైన స్థాయిలో ఉన్నప్పటికీ, కొన్ని నిర్దిష్ట నైపుణ్యాలలో విద్యార్థి నిరంతరం తక్కువ స్కోర్లు సాధిస్తున్నట్లు గుర్తించాడు. ఈ సమాచారం ఆధారంగా ఉపాధ్యాయుడు చేయవలసిన అత్యంత సముచితమైన తదుపరి చర్య ఏది?",
-        options: [
-            "మొత్తం తరగతికి అదే బోధనను కొనసాగించడం",
-            "తక్కువగా ఉన్న నైపుణ్యాలను గుర్తించి targeted instructional intervention రూపొందించడం",
-            "విద్యార్థి యొక్క అన్ని స్కోర్లను తొలగించడం",
-            "విద్యార్థిని వెంటనే తదుపరి తరగతికి పంపించడం"
-        ],
+        question: "National Trust Actలో Local Level Committee సాధారణంగా కనీసం ఎంత వ్యవధిలో ఒకసారి meeting నిర్వహించాలి?",
+        options: ["ప్రతి నెల", "ప్రతి మూడు నెలలకు", "ప్రతి ఆరు నెలలకు", "సంవత్సరానికి ఒకసారి"],
         correct: 1,
-        explanation: "Assessment dataలో నిర్దిష్ట నైపుణ్య లోపాలు కనిపిస్తే, వాటిని గుర్తించి targeted instructional intervention రూపొందించడం విద్యార్థి అవసరాలకు అనుగుణమైన data-based instructional decision."
+        explanation: "Local Level Committee సాధారణంగా కనీసం ప్రతి మూడు నెలలకు ఒకసారి meeting నిర్వహించాలి. Guardianship మరియు ఇతర సంబంధిత విషయాలను సమీక్షించడానికి ఈ సమావేశాలు ఉపయోగపడతాయి."
+    },
+    {
+        question: "RTE Act, 2009 ప్రధానంగా ఏ వయస్సు పిల్లలకు free and compulsory educationను కల్పిస్తుంది?",
+        options: ["3–6 సంవత్సరాలు", "6–14 సంవత్సరాలు", "6–18 సంవత్సరాలు", "14–18 సంవత్సరాలు"],
+        correct: 1,
+        explanation: "RTE Act, 2009 ప్రకారం 6 నుంచి 14 సంవత్సరాల వయస్సు పిల్లలకు free and compulsory elementary education హక్కు కల్పించబడింది."
+    },
+    {
+        question: "RTE Act, 2009లో Section 12(1)(c) ప్రధానంగా దేనికి సంబంధించినది?",
+        options: ["School Management Committee", "Private unaided schoolsలో specified category/disadvantaged group children admission", "Teacher qualifications", "School recognition"],
+        correct: 1,
+        explanation: "RTE Act Section 12(1)(c) private unaided schoolsలో specified category మరియు disadvantaged group childrenకు admission provisionను కల్పిస్తుంది."
+    },
+    {
+        question: "RTE Act, 2009లో Section 17 దేనిని నిషేధిస్తుంది?",
+        options: ["Private tuition", "Physical punishment and mental harassment", "Screening procedure", "Capitation fee"],
+        correct: 1,
+        explanation: "RTE Act Section 17 పిల్లలకు physical punishment మరియు mental harassmentను నిషేధిస్తుంది. పాఠశాలల్లో పిల్లల గౌరవం, భద్రతను రక్షించడం దీని ఉద్దేశ్యం."
+    },
+    {
+        question: "RTE Act, 2009లో School Management Committee (SMC)కి సంబంధించిన Section ఏది?",
+        options: ["Section 18", "Section 19", "Section 21", "Section 23"],
+        correct: 2,
+        explanation: "RTE Act Section 21 School Management Committeeకు సంబంధించినది. School development మరియు పాఠశాల నిర్వహణలో సమాజం, తల్లిదండ్రుల భాగస్వామ్యాన్ని ఇది నిర్దేశిస్తుంది."
+    },
+    {
+        question: "RTE Act, 2009లో Pupil-Teacher Ratio (PTR)కి సంబంధించిన Section ఏది?",
+        options: ["Section 23", "Section 24", "Section 25", "Section 29"],
+        correct: 2,
+        explanation: "RTE Act Section 25 Pupil-Teacher Ratioకు సంబంధించినది. ప్రతి schoolలో నిర్దేశిత teacher availability మరియు student-teacher balance ఉండేలా ఈ provision సహాయపడుతుంది."
+    },
+    {
+        question: "RTE Act, 2009లో Curriculum and evaluation procedure ఏ Sectionలో ఉంది?",
+        options: ["Section 25", "Section 27", "Section 29", "Section 31"],
+        correct: 2,
+        explanation: "RTE Act Section 29 curriculum and evaluation procedureకు సంబంధించినది. Child-friendly learning, comprehensive development మరియు రాజ్యాంగ విలువలకు అనుగుణమైన విద్యను ఇది సూచిస్తుంది."
+    },
+    {
+        question: "RTE Amendment Act, 2012 ద్వారా “child with disability” అనే ప్రత్యేక definitionను చేర్చిన Section ఏది?",
+        options: ["Section 2", "Section 4", "Section 12", "Section 17"],
+        correct: 0,
+        explanation: "RTE Amendment Act, 2012 ద్వారా Section 2లో child with disabilityకు సంబంధించిన ప్రత్యేక definition చేర్చబడింది. ఇది disability ఉన్న పిల్లలను RTE పరిధిలో స్పష్టంగా గుర్తిస్తుంది."
+    },
+    {
+        question: "RTE Amendment Act, 2012లో children with multiple disabilities మరియు severe disabilitiesకు సంబంధించిన ముఖ్యమైన provision ఏది?",
+        options: ["వారు మాత్రమే residential schoolsలో చదవాలి", "వారు home-based educationను opt చేసుకునే అవకాశం కలిగి ఉండవచ్చు", "వారు RTE పరిధిలోకి రారు", "వారికి elementary education హక్కు ఉండదు"],
+        correct: 1,
+        explanation: "RTE Amendment Act, 2012 ప్రకారం multiple disabilities మరియు severe disabilities కలిగిన పిల్లలకు home-based educationను opt చేసుకునే అవకాశం కల్పించబడింది."
+    },
+    {
+        question: "RPwD Act, 2016లో Section 16 దేనికి సంబంధించినది?",
+        options: ["Inclusive educationకు సంబంధించిన specific measures", "Duty of educational institutions", "Higher education reservation", "Employment reservation"],
+        correct: 1,
+        explanation: "RPwD Act Section 16 educational institutions యొక్క dutiesకు సంబంధించినది. Inclusive educationను నిర్ధారించేందుకు institutions తీసుకోవాల్సిన చర్యలను ఈ Section వివరిస్తుంది."
+    },
+    {
+        question: "RPwD Act, 2016లో Section 17 ప్రధానంగా దేనిని సూచిస్తుంది?",
+        options: ["Specific measures to promote and facilitate inclusive education", "Adult education", "Vocational training", "Social security"],
+        correct: 0,
+        explanation: "RPwD Act Section 17 inclusive educationను promote మరియు facilitate చేయడానికి specific measuresను సూచిస్తుంది. విద్యా వ్యవస్థను మరింత సమగ్రంగా చేయడం దీని ప్రధాన ఉద్దేశ్యం."
+    },
+    {
+        question: "RPwD Act, 2016లో benchmark disabilities కలిగిన 6–18 సంవత్సరాల పిల్లలకు free education హక్కు ఏ Sectionలో ఉంది?",
+        options: ["Section 16", "Section 17", "Section 31", "Section 34"],
+        correct: 2,
+        explanation: "RPwD Act Section 31 benchmark disabilities కలిగిన 6–18 సంవత్సరాల పిల్లలకు free education హక్కును కల్పిస్తుంది. ఈ provision విద్యకు సమాన అవకాశాన్ని బలపరుస్తుంది."
+    },
+    {
+        question: "RPwD Act, 2016లో Government మరియు Government-aided higher educational institutionsలో persons with benchmark disabilitiesకు కనీస reservation ఎంత?",
+        options: ["3%", "4%", "5%", "6%"],
+        correct: 2,
+        explanation: "RPwD Act ప్రకారం Government మరియు Government-aided higher educational institutionsలో persons with benchmark disabilitiesకు కనీసం 5 శాతం reservation కల్పించాలి."
+    },
+    {
+        question: "RPwD Act, 2016లో higher educational institutionsలో reservationకు సంబంధించిన Section ఏది?",
+        options: ["Section 31", "Section 32", "Section 33", "Section 34"],
+        correct: 1,
+        explanation: "RPwD Act Section 32 higher educational institutionsలో persons with benchmark disabilitiesకు reservationకు సంబంధించినది. ఇది higher educationలో సమాన అవకాశాలను ప్రోత్సహిస్తుంది."
+    },
+    {
+        question: "RPwD Act, 2016లో Government establishmentsలో benchmark disabilities ఉన్న personsకు employment reservationకు సంబంధించిన Section ఏది?",
+        options: ["Section 31", "Section 32", "Section 34", "Section 36"],
+        correct: 2,
+        explanation: "RPwD Act Section 34 Government establishmentsలో persons with benchmark disabilitiesకు employment reservationకు సంబంధించినది. ఇది ఉద్యోగ అవకాశాల్లో representationను పెంచడానికి ఉద్దేశించబడింది."
+    },
+    {
+        question: "RPwD Act, 2016లో Section 34 ప్రకారం reservationలో క్రింది వాటిలో ఏ category ప్రత్యేకంగా ఉంది?",
+        options: ["Autism, Intellectual Disability, Specific Learning Disability and Mental Illness", "Only blindness and low vision", "Only hearing impairment", "Only locomotor disability"],
+        correct: 0,
+        explanation: "RPwD Act Section 34 reservation categoriesలో autism, intellectual disability, specific learning disability మరియు mental illnessలను ప్రత్యేకంగా పేర్కొంటుంది."
+    },
+    {
+        question: "NPE యొక్క 1986 version తరువాత ముఖ్యమైన revision ఏ సంవత్సరంలో జరిగింది?",
+        options: ["1988", "1990", "1992", "1995"],
+        correct: 2,
+        explanation: "National Policy on Education 1986 తరువాత 1992లో ముఖ్యమైన revision జరిగింది. 1992లో policy modifications మరియు Programme of Actionకు సంబంధించిన మార్పులు వచ్చాయి."
+    },
+    {
+        question: "1986 National Policy on Educationకు సంబంధించిన Programme of Action (POA) ఏ సంవత్సరంలో రూపొందించబడింది?",
+        options: ["1986", "1988", "1992", "1995"],
+        correct: 2,
+        explanation: "1986 National Policy on Educationకు సంబంధించిన Programme of Action 1992లో రూపొందించబడింది. ఇది విద్యా విధానంలోని లక్ష్యాలను అమలు చేయడానికి కార్యాచరణ మార్గదర్శకాలను అందించింది."
+    },
+    {
+        question: "National Curriculum Framework (NCF) 2005లో ప్రధానంగా ప్రోత్సహించబడిన దృక్పథం ఏది?",
+        options: ["Rote memorisationను ప్రధానంగా చేయడం", "Child-centred learning మరియు knowledgeను జీవితంతో అనుసంధానం చేయడం", "Examination-only curriculum", "Teacher lecture మాత్రమే ఆధారంగా ఉండే విద్య"],
+        correct: 1,
+        explanation: "NCF 2005 child-centred learningను ప్రోత్సహిస్తుంది. Knowledgeను పిల్లల జీవిత అనుభవాలతో అనుసంధానం చేయడం, rote learning తగ్గించడం మరియు meaningful learningకు ప్రాధాన్యత ఇస్తుంది."
+    },
+    {
+        question: "NEP 2020లో school education structure ఏది?",
+        options: ["10+2+3", "5+3+3+4", "8+4", "4+4+4+4"],
+        correct: 1,
+        explanation: "NEP 2020 school education కోసం 5+3+3+4 curricular structureను ప్రతిపాదించింది. ఇది Foundational, Preparatory, Middle మరియు Secondary stagesగా విద్యను విభజిస్తుంది."
+    },
+    {
+        question: "NEP 2020లో Foundational Stage సాధారణంగా ఏ వయస్సు పరిధిని కలిగి ఉంటుంది?",
+        options: ["3–8 సంవత్సరాలు", "6–10 సంవత్సరాలు", "8–11 సంవత్సరాలు", "11–14 సంవత్సరాలు"],
+        correct: 0,
+        explanation: "NEP 2020లో Foundational Stage సాధారణంగా 3–8 సంవత్సరాల వయస్సును కలిగి ఉంటుంది. ఇందులో మూడు సంవత్సరాల Anganwadi/pre-school మరియు రెండు సంవత్సరాల primary schooling ఉంటుంది."
+    },
+    {
+        question: "NEP 2020 ప్రకారం vocational exposureను ఏ తరగతి నుంచి ప్రారంభించడానికి ప్రాధాన్యత ఇచ్చారు?",
+        options: ["Class 3", "Class 5", "Class 6", "Class 9"],
+        correct: 2,
+        explanation: "NEP 2020 ప్రకారం vocational education exposureను Class 6 నుంచి ప్రారంభించడానికి ప్రాధాన్యత ఇచ్చారు. ఇందులో internships మరియు practical vocational experiencesకు అవకాశం ఉంటుంది."
+    },
+    {
+        question: "NEP 2020 ప్రకారం 2035 నాటికి Higher Educationలో Gross Enrolment Ratioను సుమారుగా ఎంతకు పెంచాలని లక్ష్యంగా పెట్టుకుంది?",
+        options: ["35%", "40%", "50%", "75%"],
+        correct: 2,
+        explanation: "NEP 2020 ప్రకారం 2035 నాటికి Higher Education Gross Enrolment Ratioను 50 శాతానికి పెంచడం లక్ష్యంగా పెట్టుకుంది."
+    },
+    {
+        question: "Salamanca Statement and Framework for Action on Special Needs Education ఏ సంవత్సరంలో ఆమోదించబడింది?",
+        options: ["1990", "1994", "1996", "2000"],
+        correct: 1,
+        explanation: "Salamanca Statement and Framework for Action on Special Needs Education 1994లో ఆమోదించబడింది. ఇది inclusive education మరియు special educational needs ఉన్న పిల్లల హక్కులకు ముఖ్యమైన అంతర్జాతీయ మార్గదర్శకం."
+    },
+    {
+        question: "Salamanca Framework యొక్క ప్రధాన educational principle ఏది?",
+        options: ["Children with special educational needsను సాధ్యమైనంతవరకు inclusive schoolsలో చేర్చడం", "అన్ని CwSNలను తప్పనిసరిగా residential special schoolsలో ఉంచడం", "Disability ఆధారంగా separate curriculum మాత్రమే అందించడం", "Special educationను school education నుంచి వేరు చేయడం"],
+        correct: 0,
+        explanation: "Salamanca Framework ప్రధానంగా special educational needs ఉన్న పిల్లలను సాధ్యమైనంతవరకు inclusive schoolsలో చేర్చడాన్ని ప్రోత్సహిస్తుంది. Inclusive educationను ప్రధాన educational approachగా ఇది బలపరుస్తుంది."
+    },
+    {
+        question: "UN Convention on the Rights of Persons with Disabilities (UNCRPD) ఏ సంవత్సరంలో adopted చేయబడింది?",
+        options: ["2001", "2004", "2006", "2008"],
+        correct: 2,
+        explanation: "UN Convention on the Rights of Persons with Disabilities, UNCRPD, 2006లో United Nations General Assembly ద్వారా adopted చేయబడింది."
+    },
+    {
+        question: "UNCRPDను United Nations General Assembly ఏ తేదీన adopt చేసింది?",
+        options: ["3 May 2006", "13 December 2006", "30 March 2007", "3 May 2008"],
+        correct: 1,
+        explanation: "United Nations General Assembly UNCRPDను 13 December 2006న adopt చేసింది. Convention persons with disabilities హక్కులు, సమానత్వం మరియు గౌరవాన్ని అంతర్జాతీయంగా బలపరుస్తుంది."
+    },
+    {
+        question: "ఒక Special Education teacher ఒక assessmentలో 5 మంది విద్యార్థుల marksను 10, 10, 10, 20, 40గా నమోదు చేశాడు. ఈ dataలో అత్యధికంగా పునరావృతమయ్యే score ఏది?",
+        options: ["10", "20", "30", "40"],
+        correct: 0,
+        explanation: "Mode అంటే dataలో అత్యధికంగా పునరావృతమయ్యే విలువ. ఇక్కడ 10 మూడు సార్లు వస్తుంది, మిగిలిన scores ఒక్కసారి మాత్రమే వస్తాయి. కాబట్టి mode 10."
+    },
+    {
+        question: "ఒక విద్యార్థి assessment scores: 12, 14, 16, 18, 20. ఈ data యొక్క arithmetic mean ఎంత?",
+        options: ["14", "15", "16", "18"],
+        correct: 2,
+        explanation: "Arithmetic mean కోసం అన్ని scoresను కలిపి మొత్తం observations సంఖ్యతో భాగించాలి. 12+14+16+18+20 = 80; 80÷5 = 16. కాబట్టి mean 16."
     }
 ];
