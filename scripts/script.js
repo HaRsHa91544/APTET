@@ -260,12 +260,6 @@ function showResult() {
             mistakes: mistakes
         }));
     }
-
-    // Show/hide download button
-    const downloadBtn = document.getElementById('download-btn');
-    if (downloadBtn) {
-        downloadBtn.style.display = mistakes.length > 0 ? 'inline-block' : 'none';
-    }
 }
 
 /* ─── Confetti ───────────────────────────────── */
@@ -483,6 +477,291 @@ function downloadPDF() {
             setTimeout(function () {
                 win.print();
             }, 600);
+        };
+    } else {
+        window.location.href = url;
+    }
+}
+
+/* ─── Full Quiz PDF (Revision Notes) ─────────── */
+function downloadFullQuizPDF() {
+    const keys = ['A', 'B', 'C', 'D'];
+    const dateStr = new Date().toLocaleString('en-IN', {
+        day: '2-digit', month: '2-digit', year: 'numeric'
+    });
+
+    const now = new Date();
+    const fileDate = `${String(now.getDate()).padStart(2, '0')}_${String(now.getMonth() + 1).padStart(2, '0')}_${String(now.getFullYear()).slice(-2)}`;
+
+    // Split questions by language/script for cleaner sections
+    const teluguQs = QUESTIONS.map((q, i) => ({ ...q, _i: i }))
+        .filter(q => /[\u0C00-\u0C7F]/.test(q.question));
+    const englishQs = QUESTIONS.map((q, i) => ({ ...q, _i: i }))
+        .filter(q => !/[\u0C00-\u0C7F]/.test(q.question));
+
+    const renderBlock = (q) => {
+        const optionsHTML = q.options.map((opt, oi) => {
+            const isCorrect = oi === q.correct;
+            return `<div class="opt-row ${isCorrect ? 'is-correct' : ''}">
+                <span class="opt-key">${keys[oi]}</span>
+                <span class="opt-text">${opt}</span>
+                ${isCorrect ? '<span class="check">&#10003;</span>' : ''}
+            </div>`;
+        }).join('');
+
+        return `<div class="q-block">
+            <div class="q-head">
+                <span class="q-num">Q${q._i + 1}</span>
+            </div>
+            <div class="q-text">${q.question}</div>
+            <div class="opt-list">${optionsHTML}</div>
+            <div class="explanation">
+                <span class="exp-label">Explanation:</span> ${q.explanation}
+            </div>
+        </div>`;
+    };
+
+    const section = (title, count, list) => {
+        if (list.length === 0) return '';
+        return `
+            <div class="section-head">
+                <h2>${title}</h2>
+                <span class="count-pill">${count} questions</span>
+            </div>
+            ${list.map(renderBlock).join('')}`;
+    };
+
+    const fullQuizHTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>APTET_Revision_${fileDate}</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: 'Noto Sans Telugu', 'Inter', sans-serif;
+        padding: 40px 32px;
+        color: #1a1a1a;
+        background: #fff;
+        font-size: 14px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    @media print {
+        body { padding: 16px 12px; }
+        @page { margin: 12mm; }
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 28px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #0d7377;
+    }
+    .header h1 {
+        color: #0d7377;
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+    }
+    .header .sub {
+        color: #6b7280;
+        font-size: 13px;
+    }
+
+    .meta-bar {
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+        flex-wrap: wrap;
+        background: linear-gradient(135deg, #e6f6f7 0%, #ecfdf5 100%);
+        border: 1.5px solid #0d7377;
+        border-radius: 12px;
+        padding: 16px 20px;
+        margin-bottom: 28px;
+    }
+    .meta-item { text-align: center; }
+    .meta-item .label {
+        display: block;
+        font-size: 10px;
+        color: #6b7280;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 3px;
+    }
+    .meta-item .value {
+        font-size: 20px;
+        font-weight: 800;
+        color: #0d7377;
+        line-height: 1.1;
+    }
+
+    .section-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 30px 0 16px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e5e0d8;
+    }
+    .section-head h2 {
+        font-size: 18px;
+        font-weight: 800;
+        color: #0d7377;
+    }
+    .count-pill {
+        background: #f05a28;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 3px 10px;
+        border-radius: 999px;
+    }
+
+    .q-block {
+        border: 1.5px solid #e5e0d8;
+        border-radius: 10px;
+        padding: 16px 18px;
+        margin-bottom: 14px;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    .q-head { margin-bottom: 10px; }
+    .q-num {
+        display: inline-block;
+        background: #0d7377;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 3px 10px;
+        border-radius: 4px;
+    }
+    .q-text {
+        font-size: 14.5px;
+        line-height: 1.75;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .opt-list {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 12px;
+    }
+    .opt-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        border: 1px solid #ececea;
+        border-radius: 8px;
+        padding: 9px 12px;
+        background: #fdfdfc;
+    }
+    .opt-row.is-correct {
+        border-color: #16a34a;
+        background: #f0fdf4;
+    }
+    .opt-key {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #d1d5db;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: 700;
+        color: #6b7280;
+        flex-shrink: 0;
+        background: #fff;
+    }
+    .opt-row.is-correct .opt-key {
+        background: #16a34a;
+        border-color: #16a34a;
+        color: #fff;
+    }
+    .opt-text {
+        font-size: 13.5px;
+        line-height: 1.6;
+        flex: 1;
+    }
+    .check {
+        color: #16a34a;
+        font-weight: 800;
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+
+    .explanation {
+        font-size: 12.5px;
+        color: #6b7280;
+        line-height: 1.7;
+        background: #fffbeb;
+        border: 1px solid #fde68a;
+        border-radius: 8px;
+        padding: 10px 12px;
+    }
+    .exp-label {
+        font-weight: 800;
+        color: #92400e;
+        margin-right: 4px;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 32px;
+        font-size: 11px;
+        color: #9ca3af;
+        border-top: 1px solid #e5e0d8;
+        padding-top: 14px;
+    }
+    .footer strong { color: #f05a28; }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>APTET Revision Notes</h1>
+        <div class="sub">Complete Question Bank &mdash; Prepared for Prasad &middot; ${dateStr}</div>
+    </div>
+
+    <div class="meta-bar">
+        <div class="meta-item">
+            <span class="label">Total Questions</span>
+            <span class="value">${QUESTIONS.length}</span>
+        </div>
+        <div class="meta-item">
+            <span class="label">Subjects</span>
+            <span class="value">${SUBJECTS.length}</span>
+        </div>
+        <div class="meta-item">
+            <span class="label">Each Question</span>
+            <span class="value">4 Options</span>
+        </div>
+        <div class="meta-item">
+            <span class="label">With Explanations</span>
+            <span class="value">Yes</span>
+        </div>
+    </div>
+
+    ${section('Special Education (&#2361;&#2375;&#2360;&#2375;&#2358;&#2369; Questions)', teluguQs.length, teluguQs)}
+    ${section('English (Grammar &amp; Vocabulary)', englishQs.length, englishQs)}
+
+    <div class="footer">
+        APTET Revision Notes &bull; Subjects: ${SUBJECTS.join(', ')} &bull; Built with &#10084;&#65039; by your Son
+    </div>
+</body>
+</html>`;
+
+    const blob = new Blob([fullQuizHTML], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const win = window.open(url, '_blank');
+
+    if (win) {
+        win.onload = function () {
+            setTimeout(function () { win.print(); }, 800);
         };
     } else {
         window.location.href = url;
