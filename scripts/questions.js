@@ -1,306 +1,307 @@
 const SUBJECTS = [
-    "ICT"
+    "Telugu",
+    "English"
 ];
 
 const QUESTIONS = [
     {
-        question: "క్రింది వాటిలో కంప్యూటర్‌లో తాత్కాలికంగా డేటాను నిల్వ చేసి, CPUకి వేగంగా అందించే మెమరీ ఏది?",
-        options: ["ROM", "RAM", "Hard Disk", "Optical Disk"],
-        correct: 1,
-        explanation: "RAM temporarily stores data and instructions currently being used by the CPU. It is volatile memory, so its contents are normally lost when electrical power is removed from the computer."
+        question: "‘ఆకాశం’కు సరైన పర్యాయపదాల సమూహం ఏది?",
+        options: ["గగనం, నభం, వ్యోమం", "సాగరం, రత్నాకరం, అంబుధి", "భువి, ధర, వసుధ", "అనిలం, పవనం, వాయువు"],
+        correct: 0,
+        explanation: "గగనం, నభం, వ్యోమం అనే మూడు పదాలు ఆకాశాన్ని సూచించే పర్యాయపదాలు. మిగతా ఎంపికలు వరుసగా సముద్రం, భూమి, గాలి అనే అర్థాలను సూచిస్తాయి."
     },
     {
-        question: "క్రింది వాటిలో System Softwareకు సరైన ఉదాహరణ ఏది?",
-        options: ["MS Word", "Canva", "Windows", "PowerPoint"],
+        question: "‘క్షణికం’ అనే పదానికి వ్యతిరేక పదం ఏది?",
+        options: ["తాత్కాలికం", "శాశ్వతం", "త్వరితం", "స్వల్పం"],
+        correct: 1,
+        explanation: "క్షణికం అంటే కొద్దిసేపు మాత్రమే ఉండేది లేదా తాత్కాలికమైనది. దీనికి వ్యతిరేక భావం ఎక్కువకాలం లేదా ఎల్లప్పుడూ ఉండేది, అంటే శాశ్వతం."
+    },
+    {
+        question: "క్రింది వాటిలో ‘నానార్థాలు’ కలిగిన పదజంట ఏది?",
+        options: ["కరం — చేయి, పన్ను", "గృహం — ఇల్లు, నివాసం", "వనం — అడవి, అరణ్యం", "భోజనం — ఆహారం, తిండి"],
+        correct: 0,
+        explanation: "‘కరం’ అనే పదానికి చేయి, పన్ను అనే రెండు భిన్న అర్థాలు ఉన్నాయి. ఒకే పదానికి సందర్భానుసారం వేర్వేరు అర్థాలు ఉండటాన్ని నానార్థకత్వం అంటారు."
+    },
+    {
+        question: "క్రింది వాక్యాలలో సరైన పదప్రయోగం ఉన్నది ఏది?",
+        options: ["అతను గురువుకు దీనం సమర్పించాడు.", "అతను గురువుకు దీనం అయ్యాడు.", "అతను గురువుకు దీనం ఇచ్చాడు.", "అతను గురువుకు దీనం రాశాడు."],
+        correct: 1,
+        explanation: "ఇచ్చిన ఎంపికలలో ‘అతను గురువుకు దీనం అయ్యాడు’ అనే వాక్యమే ప్రశ్నలో సూచించిన సరైన పదప్రయోగంగా ఉంది. మిగతా వాక్యాలలో ‘దీనం’ క్రియలతో సహజంగా సరిపోదు."
+    },
+    {
+        question: "క్రింది వాటిలో సరైన స్పెల్లింగ్ గల పదం ఏది?",
+        options: ["అభ్యుదయం", "అభ్యుదయము", "అభ్యుదయం", "అభ్యుదయం"],
+        correct: 0,
+        explanation: "‘అభ్యుదయం’ అనే రూపం ప్రామాణికంగా ఉపయోగించే సరైన స్పెల్లింగ్. ఈ ప్రశ్నలో A, C, D ఎంపికలు ఒకే విధంగా కనిపిస్తున్నందున ఇచ్చిన answer key ప్రకారం A సరైనదిగా తీసుకోవాలి."
+    },
+    {
+        question: "‘చెవిలో పువ్వు పెట్టడం’ అనే జాతీయానికి సరైన అర్థం ఏది?",
+        options: ["రహస్యంగా మాట్లాడటం", "మోసం చేయడం / నమ్మించడం", "శ్రద్ధగా వినడం", "ప్రశంసించడం"],
+        correct: 1,
+        explanation: "‘చెవిలో పువ్వు పెట్టడం’ అనే జాతీయానికి సాధారణంగా ఎదుటివారిని మోసగించడం, మాటలతో నమ్మించడం అనే భావం వస్తుంది. ఇది అక్షరార్థంలో చెవిలో పువ్వు పెట్టడాన్ని సూచించదు."
+    },
+    {
+        question: "‘అందని ద్రాక్ష పుల్లన’ అనే సామెతలోని భావం ఏది?",
+        options: ["అందుబాటులో ఉన్నదాన్ని నిర్లక్ష్యం చేయడం", "లభించనిదాన్ని తక్కువ చేసి చెప్పడం", "కష్టపడి సాధించడం", "ఇతరులకు సహాయం చేయడం"],
+        correct: 1,
+        explanation: "మనకు లభించని లేదా అందని వస్తువును పొందలేకపోయినప్పుడు దాని విలువను తక్కువగా చూపించడం ‘అందని ద్రాక్ష పుల్లన’ అనే సామెతలోని ప్రధాన భావం."
+    },
+    {
+        question: "‘ఇతరులకు ఉపకారం చేసేవాడు’ అనే అర్థానికి సరైన ఏకపదం ఏది?",
+        options: ["స్వార్థపరుడు", "పరోపకారి", "దురాశాపరుడు", "అపకారి"],
+        correct: 1,
+        explanation: "ఇతరులకు మేలు లేదా సహాయం చేసేవాడిని ‘పరోపకారి’ అంటారు. స్వార్థపరుడు తన ప్రయోజనాన్ని చూసేవాడు; అపకారి ఇతరులకు హాని చేసేవాడు."
+    },
+    {
+        question: "‘అన్యాయం’ అనే పదంలో ‘అన్/అన-’ ఏ పాత్రను నిర్వహిస్తోంది?",
+        options: ["ప్రత్యయం", "విభక్తి", "ఉపసర్గ", "సమాసం"],
         correct: 2,
-        explanation: "Windows is system software because it is an operating system that manages hardware resources and provides a platform for running application software such as Word and PowerPoint."
+        explanation: "‘అన-’ అనే భాగం మూలపదానికి ముందు చేరి దానికి వ్యతిరేక లేదా నిషేధ భావాన్ని కలిగిస్తుంది. మూలపదానికి ముందు చేరే ఇలాంటి భాగాన్ని ఉపసర్గ అంటారు."
     },
     {
-        question: "కంప్యూటర్‌లోని ALU ప్రధానంగా ఏ పనిని నిర్వహిస్తుంది?",
-        options: ["డేటాను శాశ్వతంగా నిల్వ చేయడం", "అంకగణిత మరియు తార్కిక కార్యకలాపాలను నిర్వహించడం", "ప్రింటర్‌ను నియంత్రించడం", "ఇంటర్నెట్ కనెక్షన్‌ను ఏర్పాటు చేయడం"],
+        question: "‘మానవత్వం’ అనే పద నిర్మాణంలో ‘-త్వం’ ఏది?",
+        options: ["ఉపసర్గ", "ప్రత్యయం", "సమాసం", "విభక్తి"],
         correct: 1,
-        explanation: "ALU stands for Arithmetic Logic Unit. It performs arithmetic operations such as addition and subtraction and logical operations such as comparisons and Boolean operations within the CPU."
+        explanation: "‘-త్వం’ పదం చివర చేరి మానవునికి సంబంధించిన గుణం లేదా స్థితిని సూచించే కొత్త నామవాచకాన్ని ఏర్పరుస్తుంది. పదాంతంలో చేరేది ప్రత్యయం."
     },
     {
-        question: "క్రింది వాటిలో Input Device కానిది ఏది?",
-        options: ["Keyboard", "Scanner", "Monitor", "Mouse"],
+        question: "క్రింది వాటిలో సరైన సమాసపదం ఏది?",
+        options: ["రాజు యొక్క కుమారుడు", "రాజకుమారుడు", "రాజుకు కుమారుడు", "రాజుతో కుమారుడు"],
+        correct: 1,
+        explanation: "‘రాజు యొక్క కుమారుడు’ అనే విగ్రహ వాక్యానికి సంక్షిప్త సమాసరూపం ‘రాజకుమారుడు’. సమాసంలో పదాల మధ్య ఉన్న విభక్తులు సాధారణంగా లుప్తమవుతాయి."
+    },
+    {
+        question: "‘నీలాకాశం’ అనే పదం ఏ సమాసానికి ఉదాహరణ?",
+        options: ["ద్వంద్వ సమాసం", "తత్పురుష సమాసం", "కర్మధారయ సమాసం", "బహువ్రీహి సమాసం"],
         correct: 2,
-        explanation: "Monitor is an output device because it displays processed information visually. Keyboard, scanner, and mouse are input devices used to enter data or commands into a computer."
+        explanation: "‘నీలమైన ఆకాశం’ అనే విగ్రహం కలిగిన ‘నీలాకాశం’లో మొదటి పదం రెండవ పదాన్ని విశేషిస్తుంది. అందువల్ల ఇది కర్మధారయ సమాసానికి ఉదాహరణ."
     },
     {
-        question: "కంప్యూటర్‌ను ప్రారంభించినప్పుడు Operating System ప్రధానంగా ఏ పని చేస్తుంది?",
-        options: ["కేవలం పత్రాలను ముద్రిస్తుంది", "కంప్యూటర్ హార్డ్‌వేర్ మరియు సాఫ్ట్‌వేర్ వనరులను నిర్వహిస్తుంది", "ఇంటర్నెట్ వేగాన్ని పెంచుతుంది", "వైరస్‌లన్నింటినీ స్వయంచాలకంగా తొలగిస్తుంది"],
-        correct: 1,
-        explanation: "An operating system manages computer hardware and software resources, including memory, processes, files, and devices. It provides essential services that allow applications and users to interact with hardware."
-    },
-    {
-        question: "ఒక విద్యార్థి కంప్యూటర్‌ను ఉపయోగించి ఒక presentation తయారు చేసి, దానిలో text, pictures మరియు audioలను కలిపాడు. ఇది ప్రధానంగా ఏ రకమైన విద్యా వనరుల వినియోగాన్ని సూచిస్తుంది?",
-        options: ["Multimedia", "Spreadsheet", "Database", "Operating System"],
+        question: "‘విజయం’ అనే పదానికి సమీపార్థక పదం ఏది?",
+        options: ["జయం", "భయం", "పరాజయం", "అపజయం"],
         correct: 0,
-        explanation: "Multimedia combines different forms of media, such as text, images, audio, video, and animation, within one presentation or resource to communicate instructional information more effectively."
+        explanation: "‘విజయం’ మరియు ‘జయం’ రెండూ గెలుపు లేదా సాఫల్యం అనే సమీపమైన అర్థాలను కలిగి ఉంటాయి. పరాజయం, అపజయం విజయానికి వ్యతిరేక భావాలను సూచిస్తాయి."
     },
     {
-        question: "Web 2.0 యొక్క ముఖ్య లక్షణం ఏది?",
-        options: ["వినియోగదారులు కేవలం సమాచారాన్ని చదవగలరు", "వినియోగదారుల పరస్పర చర్య మరియు content creationకు అవకాశం ఉంటుంది", "ఇంటర్నెట్ లేకుండా మాత్రమే పనిచేస్తుంది", "ఇది కేవలం operating systemగా పనిచేస్తుంది"],
+        question: "‘విస్తరణ’కు వ్యతిరేక పదం ఏది?",
+        options: ["అభివృద్ధి", "సంకోచం", "పరిణామం", "ప్రగతి"],
         correct: 1,
-        explanation: "Web 2.0 emphasizes participation, interaction, collaboration, and user-generated content. Unlike mostly static Web 1.0 pages, users can create, share, comment on, and modify online content."
+        explanation: "విస్తరణ అంటే విస్తరించడం లేదా పరిమాణాన్ని పెంచడం. దీనికి వ్యతిరేక భావం పరిమాణం తగ్గడం లేదా కుదించబడడం, దీనిని ‘సంకోచం’ అంటారు."
     },
     {
-        question: "క్రింది వాటిలో Web 2.0కు అత్యంత అనుకూలమైన ఉదాహరణ ఏది?",
-        options: ["Interactive blog", "BIOS", "ROM", "Device driver"],
-        correct: 0,
-        explanation: "An interactive blog is a Web 2.0 example because users can read content and commonly participate through comments, sharing, discussions, or other forms of user interaction."
-    },
-    {
-        question: "Moodle ప్రధానంగా ఏ ప్రయోజనానికి ఉపయోగించబడుతుంది?",
-        options: ["Image compression", "Learning Management Systemగా", "Computer hardware testing", "Antivirus scanning"],
-        correct: 1,
-        explanation: "Moodle is a Learning Management System designed to support online teaching and learning. Teachers can organize courses, provide materials, conduct assessments, manage activities, and communicate with learners."
-    },
-    {
-        question: "ఒక Special Education teacher విద్యార్థుల కోసం visually attractive instructional posterలను రూపొందించాలనుకుంటున్నారు. క్రింది వాటిలో ఏ సాధనం దీనికి అత్యంత అనుకూలంగా ఉంటుంది?",
-        options: ["Canva", "BIOS", "DOS", "Compiler"],
-        correct: 0,
-        explanation: "Canva is a visual design platform suitable for creating posters, presentations, infographics, and other instructional materials. Its templates and editing tools support visually attractive educational content."
-    },
-    {
-        question: "MOOCలో “O” అనే అక్షరం దేనిని సూచిస్తుంది?",
-        options: ["Organized", "Open", "Offline", "Operational"],
-        correct: 1,
-        explanation: "In MOOC, the first O stands for Open. MOOCs are Massive Open Online Courses designed to provide online learning opportunities to large numbers of participants."
-    },
-    {
-        question: "క్రింది వాటిలో OER (Open Educational Resources) యొక్క ముఖ్య లక్షణం ఏది?",
-        options: ["తప్పనిసరిగా చెల్లింపు ఆధారంగా మాత్రమే అందుబాటులో ఉండాలి", "విద్యా ప్రయోజనాల కోసం open access మరియు reuseకు అనుకూలంగా ఉండే వనరులు", "కేవలం printed textbooks మాత్రమే", "కేవలం ప్రభుత్వ ఉద్యోగుల కోసం రూపొందించిన వనరులు"],
-        correct: 1,
-        explanation: "OER are educational materials that are openly accessible and generally support reuse, adaptation, and redistribution under appropriate open licensing conditions, making them useful for teaching and learning."
-    },
-    {
-        question: "DIKSHA ప్రధానంగా ఏ రంగానికి సంబంధించిన digital platform?",
-        options: ["Banking", "School education and teacher learning", "Railway reservation", "Weather forecasting"],
-        correct: 1,
-        explanation: "DIKSHA is a digital platform associated with school education and teacher learning in India. It provides educational resources, courses, and learning-related digital content for teachers and students."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు విద్యార్థులకు recorded lessons, online quizzes మరియు digital learning materials అందిస్తున్నారు. ఇది ప్రధానంగా ఏ భావనకు సంబంధించినది?",
-        options: ["E-learning", "Hardware maintenance", "Data encryption", "Computer booting"],
-        correct: 0,
-        explanation: "E-learning refers to learning supported through digital technologies and electronic platforms. Recorded lessons, online quizzes, digital materials, and online activities are common examples of e-learning."
-    },
-    {
-        question: "క్రింది వాటిలో MOOCs మరియు OER మధ్య సరైన సంబంధాన్ని సూచించేది ఏది?",
-        options: ["రెండూ computer hardware components", "MOOCs online coursesను సూచిస్తాయి; OER open educational resourcesను సూచిస్తాయి", "MOOCs operating systems; OER antivirus programs", "రెండూ exclusively offline teaching methods"],
-        correct: 1,
-        explanation: "MOOCs are online courses designed for large-scale participation, while OER are openly available educational materials that can support teaching and learning through permitted access, reuse, and adaptation."
-    },
-    {
-        question: "దృష్టి లోపం ఉన్న విద్యార్థి screenపై కనిపించే textను speechగా వినడానికి ఉపయోగించే technologyకి సరైన ఉదాహరణ ఏది?",
-        options: ["Screen reader", "Plotter", "Joystick", "Scanner"],
-        correct: 0,
-        explanation: "A screen reader is assistive technology that converts on-screen text and interface information into synthesized speech or other accessible output, supporting computer access for people with visual impairments."
-    },
-    {
-        question: "ఒక విద్యార్థి online source నుంచి information తీసుకుని sourceను పేర్కొనకుండా తన assignmentలో ఉపయోగించాడు. ఇది ప్రధానంగా ఏ సమస్యకు ఉదాహరణ?",
-        options: ["Plagiarism", "Formatting", "Compression", "Animation"],
-        correct: 0,
-        explanation: "Using information from an online source without properly acknowledging the source can constitute plagiarism. Academic work should appropriately cite borrowed ideas, words, data, or other materials."
-    },
-    {
-        question: "క్రింది వాటిలో computer memory గురించి సరైన statement ఏది?",
-        options: ["ROM సాధారణంగా volatile memory", "RAMలోని సమాచారం విద్యుత్ సరఫరా నిలిచిపోయినప్పుడు సాధారణంగా కోల్పోతుంది", "Hard disk CPUలో భాగం", "Cache memory ఎల్లప్పుడూ secondary storageగా పనిచేస్తుంది"],
-        correct: 1,
-        explanation: "RAM is volatile memory, meaning stored information is generally lost when power is removed. ROM is generally nonvolatile, while hard disks and cache have different storage roles."
-    },
-    {
-        question: "ఒక teacher classroomలో studentsతో real-time online interaction కోసం digital environment ఉపయోగిస్తున్నారు. ఇది క్రింది వాటిలో దేనికి దగ్గరగా ఉంటుంది?",
-        options: ["Virtual classroom", "File compression", "Word processing", "Disk formatting"],
-        correct: 0,
-        explanation: "A virtual classroom provides an online environment where teachers and students can interact synchronously or asynchronously. It may support live communication, discussion, presentation, collaboration, and digital learning activities."
-    },
-    {
-        question: "క్రింది వాటిని సరైన జతగా గుర్తించండి:\ni) Canva\nii) Moodle\niii) DIKSHA\niv) Screen Reader\na) Learning Management\nb) Visual content creation\nc) Digital educational platform\nd) Text-to-speech/accessibility support",
-        options: ["i-b, ii-a, iii-c, iv-d", "i-a, ii-b, iii-d, iv-c", "i-c, ii-d, iii-a, iv-b", "i-d, ii-c, iii-b, iv-a"],
-        correct: 0,
-        explanation: "Canva is used for visual content creation, Moodle functions as a Learning Management System, DIKSHA is a digital educational platform, and screen readers provide accessibility support."
-    },
-    {
-        question: "5, 7, 9, 11, 13 అనే డేటా సమితి యొక్క arithmetic mean ఎంత?",
-        options: ["8", "9", "10", "11"],
-        correct: 1,
-        explanation: "The arithmetic mean is calculated by adding all observations and dividing their sum by the number of observations. Here, the sum is forty-five and five observations exist."
-    },
-    {
-        question: "ఒక distributionలో అత్యధిక సార్లు కనిపించే విలువను ఏమంటారు?",
-        options: ["Mean", "Median", "Mode", "Range"],
+        question: "‘కరం’ అనే పదం ‘చేయి’ అనే అర్థంలోనూ, ‘పన్ను’ అనే అర్థంలోనూ ఉపయోగించబడుతుంది. ఇది ఏ పద సంబంధానికి ఉదాహరణ?",
+        options: ["పర్యాయపదం", "వ్యతిరేక పదం", "నానార్థకం", "అన్యదేశ్య పదం"],
         correct: 2,
-        explanation: "Mode is the value occurring with the highest frequency in a dataset. Unlike mean and median, it depends on frequency and can be used with categorical data."
+        explanation: "‘కరం’ అనే ఒకే పదం సందర్భాన్ని బట్టి ‘చేయి’ మరియు ‘పన్ను’ అనే వేర్వేరు అర్థాలను ఇస్తుంది. కాబట్టి ఇది నానార్థక పదానికి ఉదాహరణ."
     },
     {
-        question: "క్రింది డేటా యొక్క medianను గుర్తించండి:\n3, 5, 7, 9, 11, 13, 15",
-        options: ["7", "9", "11", "13"],
+        question: "క్రింది వాటిలో జాతీయానికి సరైన అర్థాన్ని గుర్తించండి: ‘తలకెక్కడం’",
+        options: ["కోపంతో తల పట్టుకోవడం", "అతిగా చనువు పొందడం / అదుపు తప్పడం", "ఆలోచన చేయడం", "బాధ్యత స్వీకరించడం"],
         correct: 1,
-        explanation: "For seven ordered observations, the median is the fourth value because three observations lie below it and three lie above it. Therefore, the median is nine."
+        explanation: "‘తలకెక్కడం’ అనే జాతీయ ప్రయోగం సాధారణంగా అతిగా చనువు పొందడం లేదా ఎదుటివారి మాట వినకుండా అదుపు తప్పడం అనే భావాన్ని సూచిస్తుంది."
     },
     {
-        question: "క్రింది డేటా యొక్క median ఎంత?\n4, 6, 8, 10, 12, 14",
-        options: ["8", "9", "10", "11"],
+        question: "‘ఇంట గెలిచి రచ్చ గెలవాలి’ అనే సామెత ప్రధానంగా ఏ భావాన్ని సూచిస్తుంది?",
+        options: ["ముందుగా సన్నిహిత వర్గంలో గుర్తింపు పొందాలి", "ఇతరులతో పోటీ పడకూడదు", "ఇంట్లోనే ఉండాలి", "విజయం ఎప్పుడూ ఆలస్యంగా వస్తుంది"],
+        correct: 0,
+        explanation: "‘ఇంట గెలిచి రచ్చ గెలవాలి’ అంటే ముందుగా ఇంటి లేదా సన్నిహితుల వద్ద తన సామర్థ్యాన్ని నిరూపించుకొని, తరువాత బయటి ప్రపంచంలో విజయాన్ని సాధించాలి."
+    },
+    {
+        question: "‘భూమిపై నివసించేవాడు’ అనే అర్థానికి సరైన ఏకపదం ఏది?",
+        options: ["భూచరుడు", "భూలోకవాసి", "ఖేచరుడు", "జలచరుడు"],
         correct: 1,
-        explanation: "For six ordered observations, the median is the average of the third and fourth values. Here those values are eight and ten, giving a median of nine."
+        explanation: "భూమిపై లేదా భూలోకంలో నివసించేవాడిని ‘భూలోకవాసి’ అని అంటారు. ఖేచరుడు ఆకాశంలో సంచరించేవాడు; జలచరుడు నీటిలో నివసించేవాడు."
     },
     {
-        question: "ఒక విద్యార్థి ఐదు పరీక్షల్లో 12, 15, 18, 20, 25 మార్కులు సాధించాడు. అతని mean score ఎంత?",
-        options: ["17", "18", "19", "20"],
+        question: "క్రింది వాటిలో ‘సు-’ ఉపసర్గను సరైన రీతిలో ఉపయోగించిన పదం ఏది?",
+        options: ["సుగుణం", "దుర్గుణం", "నిర్గుణం", "విగుణం"],
+        correct: 0,
+        explanation: "‘సు-’ ఉపసర్గ శుభం, మంచి లేదా ఉత్తమం అనే భావాన్ని ఇస్తుంది. ‘సుగుణం’ అంటే మంచి గుణం. మిగతా పదాలలో ఇతర ఉపసర్గలు ఉన్నాయి."
+    },
+    {
+        question: "‘దేశభక్తి’ అనే పదాన్ని విడదీసినప్పుడు సరైన రూపం ఏది?",
+        options: ["దేశం + భక్తి", "దేశ + భక్తి", "దేశము + అభక్తి", "దేశి + భక్తి"],
         correct: 1,
-        explanation: "The mean equals the sum of scores divided by the number of scores. Their total is ninety, and dividing by five gives a mean score of eighteen."
+        explanation: "‘దేశభక్తి’ పదం ‘దేశ + భక్తి’ అనే రెండు పదాల కలయికతో ఏర్పడింది. సమాస రూపంలో ‘దేశం’లోని చివరి భాగం మారి ‘దేశ’ రూపం కనిపిస్తుంది."
     },
     {
-        question: "క్రింది వాటిలో central tendencyకి సంబంధించిన కొలత కానిది ఏది?",
-        options: ["Mean", "Median", "Mode", "Standard deviation"],
+        question: "క్రింది వాటిలో ఒకే అర్థానికి దగ్గరగా ఉన్న పదాల సమూహం ఏది?",
+        options: ["కోపం — ఆగ్రహం — రోషం", "కోపం — శాంతి — సౌమ్యం", "భయం — ధైర్యం — సాహసం", "ఆనందం — విషాదం — దుఃఖం"],
+        correct: 0,
+        explanation: "కోపం, ఆగ్రహం, రోషం అనే మూడు పదాలు కోపం లేదా ఆగ్రహ భావాన్ని సూచిస్తాయి. అందువల్ల ఇవి ఒకే అర్థానికి దగ్గరగా ఉన్న పర్యాయ పదాల సమూహం."
+    },
+    {
+        question: "‘ఆది’ మరియు ‘ఆది’ అనే రూపాలు వేర్వేరు అర్థాల్లో ఉపయోగించబడితే, వాటి మధ్య సంబంధాన్ని గుర్తించడానికి ప్రధానంగా ఏ అంశాన్ని పరిశీలించాలి?",
+        options: ["అక్షరాల సంఖ్య", "సందర్భం మరియు అర్థం", "పదం పొడవు", "ఉచ్చారణ వేగం"],
+        correct: 1,
+        explanation: "ఒకే రూపంలో ఉన్న పదం వేర్వేరు అర్థాలను ఇవ్వవచ్చు. ఆ అర్థాన్ని నిర్ణయించడానికి పదం ఉపయోగించిన సందర్భం మరియు దాని భావాన్ని పరిశీలించడం ముఖ్యమైనది."
+    },
+    {
+        question: "క్రింది వాటిలో పద నిర్మాణం సరైనది ఏది?",
+        options: ["నీతి + వంతుడు = నీతివంతుడు", "నీతి + వంతుడు = నీతియవంతుడు", "నీతి + వంతుడు = నీత్వంతుడు", "నీతి + వంతుడు = నీతిమంతుడు"],
+        correct: 0,
+        explanation: "ఇచ్చిన answer key ప్రకారం ‘నీతి + వంతుడు = నీతివంతుడు’ సరైన పద నిర్మాణం. ‘నీతివంతుడు’ అంటే నీతి కలిగిన వ్యక్తి అనే అర్థాన్ని ఇస్తుంది."
+    },
+    {
+        question: "‘నిరాశ’ అనే పదానికి వ్యతిరేక పదం ఏది?",
+        options: ["నిర్లక్ష్యం", "ఆశ", "అసంతృప్తి", "విషాదం"],
+        correct: 1,
+        explanation: "నిరాశ అంటే ఆశ లేకపోవడం లేదా ఆశాభంగం. దీనికి వ్యతిరేక భావం ఆశ లేదా ఆశావాదం. కాబట్టి సరైన వ్యతిరేక పదం ‘ఆశ’."
+    },
+    {
+        question: "క్రింది పదాలలో అక్షరాల క్రమాన్ని మార్చి కొత్త పదాన్ని ఏర్పరచే ప్రక్రియను ఏమంటారు?",
+        options: ["సంధి", "సమాసం", "అనాగ్రామ్", "ప్రత్యయాంతం"],
+        correct: 2,
+        explanation: "ఒక పదంలోని అక్షరాల క్రమాన్ని మార్చి మరో అర్థవంతమైన పదాన్ని రూపొందించే ప్రక్రియను అనాగ్రామ్ అంటారు. సంధి, సమాసం పద నిర్మాణానికి వేర్వేరు ప్రక్రియలు."
+    },
+    {
+        question: "Choose the word that is closest in meaning to the underlined word: The scientist gave a precise description of the experiment.",
+        options: ["vague", "accurate", "lengthy", "ordinary"],
+        correct: 1,
+        explanation: "‘Precise’ means exact, accurate, or clearly defined. Therefore, ‘accurate’ is the closest meaning. ‘Vague’ means unclear, while the other options do not convey exactness."
+    },
+    {
+        question: "Choose the antonym of the underlined word: The manager appreciated her generous attitude.",
+        options: ["charitable", "helpful", "selfish", "friendly"],
+        correct: 2,
+        explanation: "‘Generous’ describes someone willing to give or help others. Its opposite is ‘selfish’, which describes concern mainly for oneself rather than for other people."
+    },
+    {
+        question: "Choose the word that is NOT correctly spelt.",
+        options: ["accommodate", "separate", "privilege", "occassion"],
         correct: 3,
-        explanation: "Mean, median, and mode are measures of central tendency. Standard deviation instead measures dispersion, describing how much observations vary around a central value."
+        explanation: "The correct spelling is ‘occasion’, with only one ‘c’ after the initial ‘o’ and double ‘c’ overall. ‘Occassion’ incorrectly contains an extra ‘s’."
     },
     {
-        question: "Standard Deviation ప్రధానంగా దేనిని కొలుస్తుంది?",
-        options: ["Central tendency", "Dispersion లేదా variability", "Frequency మాత్రమే", "Sample size మాత్రమే"],
+        question: "Choose the correctly spelt word.",
+        options: ["questionnaire", "questionaire", "questionnare", "questionnair"],
+        correct: 0,
+        explanation: "‘Questionnaire’ is the correct spelling for a written set of questions used to collect information. The other forms incorrectly omit or rearrange letters in the word."
+    },
+    {
+        question: "Choose the word that describes a person who speaks two languages fluently.",
+        options: ["bilingual", "biannual", "bilateral", "bilingualism"],
+        correct: 0,
+        explanation: "A ‘bilingual’ person can use two languages. ‘Biannual’ means occurring twice a year, ‘bilateral’ means involving two sides, and ‘bilingualism’ refers to the condition itself."
+    },
+    {
+        question: "Choose the word that means: One who cannot read or write",
+        options: ["immigrant", "illiterate", "ignorant", "innocent"],
         correct: 1,
-        explanation: "Standard deviation is a measure of dispersion or variability. It indicates how widely scores are distributed around their mean, with larger values generally indicating greater spread."
+        explanation: "‘Illiterate’ specifically describes a person who cannot read or write. An immigrant moves to another country, ignorant means lacking knowledge, and innocent means not guilty."
     },
     {
-        question: "Standard Deviationను సాధారణంగా ఏ notation ద్వారా సూచిస్తారు?",
-        options: ["σ", "μ మాత్రమే", "M", "N"],
-        correct: 0,
-        explanation: "Standard deviation is commonly represented by the Greek letter sigma, σ, when referring to a population. Other notation may be used for sample standard deviation."
+        question: "Choose the correct meaning of the idiom: “A blessing in disguise”",
+        options: ["a hidden enemy", "something that seems bad but proves beneficial", "a religious ceremony", "an unexpected punishment"],
+        correct: 1,
+        explanation: "‘A blessing in disguise’ refers to something that initially appears negative or unfortunate but later turns out to have a beneficial or positive result."
     },
     {
-        question: "ఒక data setలోని అన్ని విలువలు ఒకే విధంగా ఉంటే, దాని Standard Deviation ఎంత?",
-        options: ["0", "1", "−1", "100"],
-        correct: 0,
-        explanation: "If every observation in a dataset has exactly the same value, there is no variation among observations. Therefore, the standard deviation is zero."
-    },
-    {
-        question: "ఒక data setలో ప్రతి scoreకు 5ను కలిపితే, Standard Deviationపై సాధారణంగా ఏ ప్రభావం ఉంటుంది?",
-        options: ["అది 5 పెరుగుతుంది", "అది 5 తగ్గుతుంది", "అది మారదు", "అది రెండింతలు అవుతుంది"],
+        question: "Choose the correct meaning of the idiom: “To hit the nail on the head”",
+        options: ["to work very hard", "to make a careless mistake", "to say or do exactly the right thing", "to avoid an important issue"],
         correct: 2,
-        explanation: "Adding the same constant to every observation shifts the entire distribution without changing distances between observations. Therefore, standard deviation remains unchanged."
+        explanation: "‘To hit the nail on the head’ means to identify or express something exactly correctly. It is used when someone gives the precise answer or explanation."
     },
     {
-        question: "ఒక data setలో ప్రతి observationను 3తో గుణిస్తే, Standard Deviation:",
-        options: ["3తో గుణించబడుతుంది", "3తో భాగించబడుతుంది", "మారదు", "9తో గుణించబడుతుంది"],
+        question: "Choose the correct phrasal verb: The teacher asked the students to ______ the assignment before Friday.",
+        options: ["hand in", "hand out", "hand over", "hand down"],
         correct: 0,
-        explanation: "Multiplying every observation by three multiplies every deviation from the mean by three. Consequently, the standard deviation also becomes three times its original value."
+        explanation: "‘Hand in’ means to submit something, such as an assignment, to a teacher or authority. ‘Hand out’ means distribute, while the others have different meanings."
     },
     {
-        question: "క్రింది వాటిలో Standard Deviation గురించి సరైన statementలను గుర్తించండి.\ni) ఇది dispersionను సూచిస్తుంది.\nii) అన్ని observations సమానంగా ఉంటే దీని విలువ 0 అవుతుంది.\niii) ఇది central tendencyకి చెందిన కొలత.",
-        options: ["i మాత్రమే", "ii మాత్రమే", "i మరియు ii మాత్రమే", "i, ii మరియు iii"],
+        question: "Choose the correct phrasal verb: The meeting was ______ because the chairman was ill.",
+        options: ["called off", "called in", "called on", "called up"],
+        correct: 0,
+        explanation: "‘Called off’ means cancelled, so it correctly describes a meeting that did not take place because the chairman was ill. The other phrasal verbs have different meanings."
+    },
+    {
+        question: "Choose the word formed by adding the correct suffix to child.",
+        options: ["childful", "childness", "childhood", "childity"],
         correct: 2,
-        explanation: "Statements i and ii are correct because standard deviation measures dispersion and becomes zero when all observations are identical. Statement iii is incorrect because it measures variability, not central tendency."
+        explanation: "Adding the suffix ‘-hood’ to ‘child’ forms ‘childhood’, meaning the period or state of being a child. The other options are not standard English formations."
     },
     {
-        question: "Ungrouped data కోసం arithmetic meanకు సరైన formula ఏది?",
-        options: ["ΣX × N", "ΣX / N", "N / ΣX", "Σ(X − M)"],
-        correct: 1,
-        explanation: "For ungrouped data, arithmetic mean equals the sum of all observations divided by the total number of observations. Thus, the formula is ΣX divided by N."
-    },
-    {
-        question: "ఒక data setలో Mean = 20 మరియు మొత్తం observations సంఖ్య = 5 అయితే, అన్ని observations మొత్తం ఎంత?",
-        options: ["25", "50", "100", "125"],
+        question: "Choose the word formed by adding the appropriate prefix: ___regular",
+        options: ["un", "dis", "ir", "im"],
         correct: 2,
-        explanation: "Mean equals total of observations divided by their number. Therefore, total equals mean multiplied by number of observations: twenty multiplied by five equals one hundred."
+        explanation: "The correct word is ‘irregular’. The prefix ‘ir-’ is a form of the negative prefix used before words beginning with ‘r’, changing regular to its opposite."
     },
     {
-        question: "Mean deviation గురించి క్రింది statementsలో సరైనది ఏది?\ni) ఇది dispersionను కొలిచే measure.\nii) Mean deviationలో deviations యొక్క absolute valuesను ఉపయోగిస్తారు.\niii) Algebraic signsను అలాగే ఉంచి deviationsను నేరుగా average చేస్తారు.",
-        options: ["i మాత్రమే", "i మరియు ii మాత్రమే", "ii మరియు iii మాత్రమే", "i, ii మరియు iii"],
+        question: "Choose the correct noun form of decide.",
+        options: ["deciding", "decision", "decisive", "decided"],
         correct: 1,
-        explanation: "Mean deviation measures dispersion and uses absolute deviations, removing positive and negative cancellation. Statement iii is incorrect because algebraic signs are not retained for mean deviation."
+        explanation: "The noun form of the verb ‘decide’ is ‘decision’. ‘Deciding’ is a participle or gerund, ‘decisive’ is an adjective, and ‘decided’ is a past form."
     },
     {
-        question: "Mean deviation about Mean కోసం ungrouped dataలో సరైన expression ఏది?",
-        options: ["Σ(X − M) / N", "Σ|X − M| / N", "ΣX / M", "Σ(X + M) / N"],
-        correct: 1,
-        explanation: "Mean deviation about the mean is calculated by summing the absolute differences between each observation and the mean, then dividing by the number of observations."
-    },
-    {
-        question: "క్రింది dataలో Modeను గుర్తించండి:\n2, 3, 4, 4, 5, 6, 4, 7",
-        options: ["3", "4", "5", "6"],
-        correct: 1,
-        explanation: "The mode is the value appearing most frequently. In this dataset, four occurs three times, while the other values occur only once, so the mode is four."
-    },
-    {
-        question: "ఒక distributionలో Mean = 25, Median = 25 మరియు Mode = 25. ఈ పరిస్థితి ఏదిని సూచిస్తుంది?",
-        options: ["సాధారణంగా symmetric distributionకు అనుకూలమైన పరిస్థితి", "తప్పనిసరిగా negative skewness", "తప్పనిసరిగా positive skewness", "Standard deviation = 25"],
-        correct: 0,
-        explanation: "When mean, median, and mode are equal, the distribution is typically consistent with a symmetric distribution. However, equality alone does not establish every property of the distribution."
-    },
-    {
-        question: "ఒక విద్యార్థుల సమూహం యొక్క scores 20, 20, 20, 20గా ఉన్నాయి. ఈ data గురించి సరైనది ఏది?",
-        options: ["Mean = 20 మరియు Standard Deviation = 0", "Mean = 0 మరియు Standard Deviation = 20", "Median = 0", "Mode = 0"],
-        correct: 0,
-        explanation: "All four scores are identical at twenty. Therefore, their mean is twenty, their median is twenty, and there is no variation, making standard deviation zero."
-    },
-    {
-        question: "ఒక ఉపాధ్యాయుడు రెండు తరగతుల పరీక్షా ఫలితాల్లో ఎవరి scoresలో ఎక్కువ variability ఉందో తెలుసుకోవాలనుకుంటున్నారు. క్రింది వాటిలో ఏ measure అత్యంత అనుకూలమైనది?",
-        options: ["Mean", "Median", "Standard Deviation", "Mode"],
+        question: "Choose the correct adjective form of danger.",
+        options: ["dangerously", "endangered", "dangerous", "dangerless"],
         correct: 2,
-        explanation: "Standard deviation is appropriate for comparing variability because it quantifies the spread of scores around their central value. Larger standard deviation indicates greater score variability."
+        explanation: "‘Dangerous’ is the adjective formed from ‘danger’ and describes something capable of causing harm. ‘Dangerously’ is an adverb, while the other choices do not fit."
     },
     {
-        question: "ఒక విద్యార్థి assessment scores: 10, 10, 10, 10, 10. ఈ scoresకు Mean, Median మరియు Mode వరుసగా:",
-        options: ["10, 10, 10", "10, 10, 0", "0, 10, 10", "10, 0, 10"],
-        correct: 0,
-        explanation: "When every assessment score is ten, the mean, median, and mode are all ten. Identical observations also have zero variability, but that is not asked here."
-    },
-    {
-        question: "ఒక teacher ఒకే పరీక్షను రెండు వేర్వేరు తరగతులకు నిర్వహించి, వారి performanceలో variabilityని పోల్చాలనుకుంటున్నారు. క్రింది వాటిలో ఏ measure ఈ ప్రయోజనానికి ఎక్కువగా ఉపయోగపడుతుంది?",
-        options: ["Mode", "Standard Deviation", "Median మాత్రమే", "Mean మాత్రమే"],
+        question: "Choose the word that best completes the collocation: The committee will ______ a decision tomorrow.",
+        options: ["do", "make", "take", "build"],
         correct: 1,
-        explanation: "Standard deviation measures variability between groups. Comparing standard deviations directly is informative here because both classes are being compared using the same assessment context."
+        explanation: "The standard collocation is ‘make a decision’. English commonly uses ‘make’ with decision in this expression, whereas do, take, and build do not fit here."
     },
     {
-        question: "ఒక assessment dataలో ఒక అత్యంత పెద్ద విలువ (extreme score) చేర్చబడింది. Mean మరియు Medianలో సాధారణంగా ఏది extreme value వల్ల ఎక్కువగా ప్రభావితమవుతుంది?",
-        options: ["Mean", "Median", "రెండూ ఎప్పుడూ సమానంగా ప్రభావితమవుతాయి", "ఏదీ ప్రభావితం కాదు"],
+        question: "Choose the correct collocation:",
+        options: ["heavy rain", "strong rain", "powerful rain", "hard rain"],
         correct: 0,
-        explanation: "Mean uses every observation and can be strongly affected by extreme values. Median depends on ordered position and is generally less affected by an extreme score."
+        explanation: "‘Heavy rain’ is the standard English collocation for a large amount of rainfall. Although ‘hard’ can appear in some contexts, ‘heavy rain’ is the conventional expression."
     },
     {
-        question: "ఒక Special Education teacher ఒక విద్యార్థి academic performanceను నిరంతరం నమోదు చేసి, తదుపరి instructional planning కోసం ఆ dataను ఉపయోగిస్తున్నారు. ఈ ప్రక్రియలో ప్రధాన ప్రయోజనం ఏది?",
-        options: ["Assessment data ఆధారంగా instructionను సవరించడం", "విద్యార్థిని assessment నుంచి తొలగించడం", "అన్ని studentsకు ఒకే interventionను తప్పనిసరి చేయడం", "పరీక్షల అవసరాన్ని పూర్తిగా తొలగించడం"],
-        correct: 0,
-        explanation: "Continuous recording of assessment data allows teachers to examine student performance over time and adjust instructional planning, strategies, or interventions according to identified learning needs."
-    },
-    {
-        question: "ఒక assessmentలో విద్యార్థుల scores 5, 5, 6, 6, 7, 7, 8గా ఉన్నాయి. ఈ data యొక్క median:",
-        options: ["5", "6", "7", "8"],
+        question: "Choose the word that best fits the context: The instructions were so ______ that even a beginner could follow them.",
+        options: ["obscure", "explicit", "reluctant", "fragile"],
         correct: 1,
-        explanation: "The seven scores are already ordered. With an odd number of observations, the fourth value is the median. The fourth score is six."
+        explanation: "‘Explicit’ means clearly expressed and leaving little room for confusion. This fits instructions that a beginner can easily follow. The other options do not suit the context."
     },
     {
-        question: "క్రింది statementsలో సరైనవి ఏవి?\ni) Mean అన్ని observationsను పరిగణనలోకి తీసుకుంటుంది.\nii) Median ordered dataలో మధ్యస్థ స్థానాన్ని సూచిస్తుంది.\niii) Mode అత్యధిక frequency కలిగిన విలువను సూచిస్తుంది.",
-        options: ["i మాత్రమే", "i మరియు ii మాత్రమే", "ii మరియు iii మాత్రమే", "i, ii మరియు iii"],
-        correct: 3,
-        explanation: "Mean considers all observations, median identifies the middle position after ordering, and mode identifies the most frequent value. Therefore, all three statements are correct."
-    },
-    {
-        question: "ఒక teacher ఒక విద్యార్థి reading assessmentలో 12, 15, 18, 15, 20 మార్కులు సాధించినట్లు నమోదు చేశారు. ఈ scoresలో Mode ఎంత?",
-        options: ["12", "15", "18", "20"],
-        correct: 1,
-        explanation: "In the scores twelve, fifteen, eighteen, fifteen, and twenty, fifteen occurs twice while every other value occurs once. Therefore, fifteen is the mode."
-    },
-    {
-        question: "ఒక testలో ఒక తరగతి యొక్క Mean = 60 మరియు Standard Deviation = 4. మరొక తరగతి యొక్క Mean = 60 మరియు Standard Deviation = 10. Mean ఒకటే అయినప్పుడు సరైన interpretation ఏది?",
-        options: ["మొదటి తరగతిలో scores ఎక్కువ variability కలిగి ఉంటాయి", "రెండవ తరగతిలో scores ఎక్కువ variability కలిగి ఉంటాయి", "రెండు తరగతుల variability తప్పనిసరిగా ఒకటే", "Mean ఆధారంగా మాత్రమే variability నిర్ణయించవచ్చు"],
-        correct: 1,
-        explanation: "Both classes have the same mean, but the second class has a standard deviation of ten compared with four. Therefore, the second class shows greater score variability."
-    },
-    {
-        question: "క్రింది వాటిలో assessment data యొక్క basic statistical interpretationకు సరైన జత ఏది?",
-        options: ["Mean → సాధారణ కేంద్ర విలువను సూచించడానికి; Standard Deviation → scoresలో వ్యాప్తిని సూచించడానికి", "Mean → అత్యధిక frequency; Standard Deviation → మధ్యస్థ score", "Mode → variability; Median → dispersion", "Standard Deviation → అత్యధిక frequency; Mode → variability"],
+        question: "Choose the word closest in meaning to the underlined word: The witness gave a brief account of the incident.",
+        options: ["short", "doubtful", "detailed", "inaccurate"],
         correct: 0,
-        explanation: "Mean represents an arithmetic average, while standard deviation represents dispersion or variability. Together, these measures provide basic information about a dataset's central level and score spread."
+        explanation: "‘Brief’ means short or lasting only a small amount of time. In this sentence, a brief account is a short description of the incident."
     },
     {
-        question: "క్రింది వాటిని సరైన సంబంధంతో జత చేయండి:\ni) Mean\nii) Median\niii) Mode\niv) Standard Deviation\na) అత్యధిక frequency కలిగిన విలువ\nb) Dispersion/variability\nc) Arithmetic average\nd) Ordered dataలో మధ్యస్థ స్థానం",
-        options: ["i-c, ii-d, iii-a, iv-b", "i-d, ii-c, iii-b, iv-a", "i-a, ii-b, iii-d, iv-c", "i-b, ii-a, iii-c, iv-d"],
+        question: "Choose the antonym of the underlined word: The instructions were mandatory for all candidates.",
+        options: ["compulsory", "essential", "optional", "official"],
+        correct: 2,
+        explanation: "‘Mandatory’ means required or compulsory. Its opposite is ‘optional’, meaning something that may be chosen but is not required. Therefore, optional is the correct antonym."
+    },
+    {
+        question: "Choose the correctly spelt word.",
+        options: ["maintenance", "maintainance", "maintanence", "maintenence"],
         correct: 0,
-        explanation: "Mean is arithmetic average, median is the middle position in ordered data, mode is the most frequent value, and standard deviation measures dispersion or variability."
+        explanation: "‘Maintenance’ is the correct spelling of the noun meaning the process of preserving something in good condition. The other spellings incorrectly arrange or omit letters."
+    },
+    {
+        question: "Choose the word that means: A person who studies the origin and development of languages",
+        options: ["lexicographer", "linguist", "biographer", "archaeologist"],
+        correct: 1,
+        explanation: "A ‘linguist’ studies language, including its structure, development, and use. A lexicographer compiles dictionaries, a biographer writes biographies, and an archaeologist studies material remains."
+    },
+    {
+        question: "Choose the correct meaning of the phrasal verb “look into”.",
+        options: ["postpone", "investigate", "admire", "avoid"],
+        correct: 1,
+        explanation: "The phrasal verb ‘look into’ means to investigate or examine something carefully. For example, an authority may look into a complaint before taking further action."
+    },
+    {
+        question: "Choose the correct meaning of the idiom “once in a blue moon.”",
+        options: ["at the right moment", "very frequently", "very rarely", "unexpectedly"],
+        correct: 2,
+        explanation: "‘Once in a blue moon’ is an idiom meaning something happens very rarely or only on unusual occasions. It does not refer to frequent or regular events."
+    },
+    {
+        question: "Choose the word that best completes the sentence: The teacher encouraged the student to ______ confidence in public speaking.",
+        options: ["gain", "do", "make", "perform"],
+        correct: 0,
+        explanation: "‘Gain confidence’ is the standard collocation meaning to become more confident through experience or practice. The other verbs do not naturally combine with confidence in this sentence."
+    },
+    {
+        question: "Choose the word that is closest in meaning to the underlined word: The explanation was concise, yet it contained all the essential information.",
+        options: ["complicated", "brief and clear", "uncertain", "repetitive"],
+        correct: 1,
+        explanation: "‘Concise’ means expressing information clearly and briefly without unnecessary words. Therefore, ‘brief and clear’ is the closest meaning and fits the context of the sentence."
     }
 ];
