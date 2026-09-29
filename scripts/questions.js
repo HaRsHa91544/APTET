@@ -5,303 +5,303 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: "‘ఆకాశం’కు సరైన పర్యాయపదాల సమూహం ఏది?",
-        options: ["గగనం, నభం, వ్యోమం", "సాగరం, రత్నాకరం, అంబుధి", "భువి, ధర, వసుధ", "అనిలం, పవనం, వాయువు"],
-        correct: 0,
-        explanation: "గగనం, నభం, వ్యోమం అనే మూడు పదాలు ఆకాశాన్ని సూచించే పర్యాయపదాలు. మిగతా ఎంపికలు వరుసగా సముద్రం, భూమి, గాలి అనే అర్థాలను సూచిస్తాయి."
-    },
-    {
-        question: "‘క్షణికం’ అనే పదానికి వ్యతిరేక పదం ఏది?",
-        options: ["తాత్కాలికం", "శాశ్వతం", "త్వరితం", "స్వల్పం"],
-        correct: 1,
-        explanation: "క్షణికం అంటే కొద్దిసేపు మాత్రమే ఉండేది లేదా తాత్కాలికమైనది. దీనికి వ్యతిరేక భావం ఎక్కువకాలం లేదా ఎల్లప్పుడూ ఉండేది, అంటే శాశ్వతం."
-    },
-    {
-        question: "క్రింది వాటిలో ‘నానార్థాలు’ కలిగిన పదజంట ఏది?",
-        options: ["కరం — చేయి, పన్ను", "గృహం — ఇల్లు, నివాసం", "వనం — అడవి, అరణ్యం", "భోజనం — ఆహారం, తిండి"],
-        correct: 0,
-        explanation: "‘కరం’ అనే పదానికి చేయి, పన్ను అనే రెండు భిన్న అర్థాలు ఉన్నాయి. ఒకే పదానికి సందర్భానుసారం వేర్వేరు అర్థాలు ఉండటాన్ని నానార్థకత్వం అంటారు."
-    },
-    {
-        question: "క్రింది వాక్యాలలో సరైన పదప్రయోగం ఉన్నది ఏది?",
-        options: ["అతను గురువుకు దీనం సమర్పించాడు.", "అతను గురువుకు దీనం అయ్యాడు.", "అతను గురువుకు దీనం ఇచ్చాడు.", "అతను గురువుకు దీనం రాశాడు."],
-        correct: 1,
-        explanation: "ఇచ్చిన ఎంపికలలో ‘అతను గురువుకు దీనం అయ్యాడు’ అనే వాక్యమే ప్రశ్నలో సూచించిన సరైన పదప్రయోగంగా ఉంది. మిగతా వాక్యాలలో ‘దీనం’ క్రియలతో సహజంగా సరిపోదు."
-    },
-    {
-        question: "క్రింది వాటిలో సరైన స్పెల్లింగ్ గల పదం ఏది?",
-        options: ["అభ్యుదయం", "అభ్యుదయము", "అభ్యుదయం", "అభ్యుదయం"],
-        correct: 0,
-        explanation: "‘అభ్యుదయం’ అనే రూపం ప్రామాణికంగా ఉపయోగించే సరైన స్పెల్లింగ్. ఈ ప్రశ్నలో A, C, D ఎంపికలు ఒకే విధంగా కనిపిస్తున్నందున ఇచ్చిన answer key ప్రకారం A సరైనదిగా తీసుకోవాలి."
-    },
-    {
-        question: "‘చెవిలో పువ్వు పెట్టడం’ అనే జాతీయానికి సరైన అర్థం ఏది?",
-        options: ["రహస్యంగా మాట్లాడటం", "మోసం చేయడం / నమ్మించడం", "శ్రద్ధగా వినడం", "ప్రశంసించడం"],
-        correct: 1,
-        explanation: "‘చెవిలో పువ్వు పెట్టడం’ అనే జాతీయానికి సాధారణంగా ఎదుటివారిని మోసగించడం, మాటలతో నమ్మించడం అనే భావం వస్తుంది. ఇది అక్షరార్థంలో చెవిలో పువ్వు పెట్టడాన్ని సూచించదు."
-    },
-    {
-        question: "‘అందని ద్రాక్ష పుల్లన’ అనే సామెతలోని భావం ఏది?",
-        options: ["అందుబాటులో ఉన్నదాన్ని నిర్లక్ష్యం చేయడం", "లభించనిదాన్ని తక్కువ చేసి చెప్పడం", "కష్టపడి సాధించడం", "ఇతరులకు సహాయం చేయడం"],
-        correct: 1,
-        explanation: "మనకు లభించని లేదా అందని వస్తువును పొందలేకపోయినప్పుడు దాని విలువను తక్కువగా చూపించడం ‘అందని ద్రాక్ష పుల్లన’ అనే సామెతలోని ప్రధాన భావం."
-    },
-    {
-        question: "‘ఇతరులకు ఉపకారం చేసేవాడు’ అనే అర్థానికి సరైన ఏకపదం ఏది?",
-        options: ["స్వార్థపరుడు", "పరోపకారి", "దురాశాపరుడు", "అపకారి"],
-        correct: 1,
-        explanation: "ఇతరులకు మేలు లేదా సహాయం చేసేవాడిని ‘పరోపకారి’ అంటారు. స్వార్థపరుడు తన ప్రయోజనాన్ని చూసేవాడు; అపకారి ఇతరులకు హాని చేసేవాడు."
-    },
-    {
-        question: "‘అన్యాయం’ అనే పదంలో ‘అన్/అన-’ ఏ పాత్రను నిర్వహిస్తోంది?",
-        options: ["ప్రత్యయం", "విభక్తి", "ఉపసర్గ", "సమాసం"],
+        question: "“రాము నిన్న పాఠశాలకు త్వరగా వెళ్లాడు.” అనే వాక్యంలో “త్వరగా” అనే పదం ఏ పదభేదానికి చెందుతుంది?",
+        options: ["నామవాచకం", "విశేషణం", "క్రియావిశేషణం", "సర్వనామం"],
         correct: 2,
-        explanation: "‘అన-’ అనే భాగం మూలపదానికి ముందు చేరి దానికి వ్యతిరేక లేదా నిషేధ భావాన్ని కలిగిస్తుంది. మూలపదానికి ముందు చేరే ఇలాంటి భాగాన్ని ఉపసర్గ అంటారు."
+        explanation: "“త్వరగా” అనే పదం “వెళ్లాడు” అనే క్రియను ఎలా చేశాడో తెలియజేస్తుంది. క్రియను విశేషించే పదాన్ని క్రియావిశేషణం అంటారు. అందువల్ల “త్వరగా” క్రియావిశేషణం అవుతుంది."
     },
     {
-        question: "‘మానవత్వం’ అనే పద నిర్మాణంలో ‘-త్వం’ ఏది?",
-        options: ["ఉపసర్గ", "ప్రత్యయం", "సమాసం", "విభక్తి"],
+        question: "క్రింది వాక్యాలలో సర్వనామం ఉపయోగించబడిన వాక్యం ఏది?",
+        options: ["సీత పుస్తకం చదివింది.", "అతడు పుస్తకం చదివాడు.", "మంచి బాలుడు బహుమతి పొందాడు.", "బాలుడు వేగంగా పరుగెత్తాడు."],
         correct: 1,
-        explanation: "‘-త్వం’ పదం చివర చేరి మానవునికి సంబంధించిన గుణం లేదా స్థితిని సూచించే కొత్త నామవాచకాన్ని ఏర్పరుస్తుంది. పదాంతంలో చేరేది ప్రత్యయం."
+        explanation: "“అతడు” అనే పదం ఒక వ్యక్తి పేరుకు బదులుగా ఉపయోగించబడింది. నామవాచకానికి బదులుగా ఉపయోగించే పదాన్ని సర్వనామం అంటారు. కాబట్టి సరైన జవాబు B."
     },
     {
-        question: "క్రింది వాటిలో సరైన సమాసపదం ఏది?",
-        options: ["రాజు యొక్క కుమారుడు", "రాజకుమారుడు", "రాజుకు కుమారుడు", "రాజుతో కుమారుడు"],
-        correct: 1,
-        explanation: "‘రాజు యొక్క కుమారుడు’ అనే విగ్రహ వాక్యానికి సంక్షిప్త సమాసరూపం ‘రాజకుమారుడు’. సమాసంలో పదాల మధ్య ఉన్న విభక్తులు సాధారణంగా లుప్తమవుతాయి."
-    },
-    {
-        question: "‘నీలాకాశం’ అనే పదం ఏ సమాసానికి ఉదాహరణ?",
-        options: ["ద్వంద్వ సమాసం", "తత్పురుష సమాసం", "కర్మధారయ సమాసం", "బహువ్రీహి సమాసం"],
+        question: "“తెలివైన విద్యార్థి ప్రశ్నకు సమాధానం చెప్పాడు.” ఈ వాక్యంలో “తెలివైన” అనే పదం ఏది?",
+        options: ["నామవాచకం", "సర్వనామం", "విశేషణం", "క్రియావిశేషణం"],
         correct: 2,
-        explanation: "‘నీలమైన ఆకాశం’ అనే విగ్రహం కలిగిన ‘నీలాకాశం’లో మొదటి పదం రెండవ పదాన్ని విశేషిస్తుంది. అందువల్ల ఇది కర్మధారయ సమాసానికి ఉదాహరణ."
+        explanation: "“తెలివైన” అనే పదం “విద్యార్థి” అనే నామవాచకానికి గుణాన్ని తెలియజేస్తుంది. నామవాచకం లేదా సర్వనామం యొక్క లక్షణాన్ని తెలిపే పదాన్ని విశేషణం అంటారు."
     },
     {
-        question: "‘విజయం’ అనే పదానికి సమీపార్థక పదం ఏది?",
-        options: ["జయం", "భయం", "పరాజయం", "అపజయం"],
-        correct: 0,
-        explanation: "‘విజయం’ మరియు ‘జయం’ రెండూ గెలుపు లేదా సాఫల్యం అనే సమీపమైన అర్థాలను కలిగి ఉంటాయి. పరాజయం, అపజయం విజయానికి వ్యతిరేక భావాలను సూచిస్తాయి."
-    },
-    {
-        question: "‘విస్తరణ’కు వ్యతిరేక పదం ఏది?",
-        options: ["అభివృద్ధి", "సంకోచం", "పరిణామం", "ప్రగతి"],
-        correct: 1,
-        explanation: "విస్తరణ అంటే విస్తరించడం లేదా పరిమాణాన్ని పెంచడం. దీనికి వ్యతిరేక భావం పరిమాణం తగ్గడం లేదా కుదించబడడం, దీనిని ‘సంకోచం’ అంటారు."
-    },
-    {
-        question: "‘కరం’ అనే పదం ‘చేయి’ అనే అర్థంలోనూ, ‘పన్ను’ అనే అర్థంలోనూ ఉపయోగించబడుతుంది. ఇది ఏ పద సంబంధానికి ఉదాహరణ?",
-        options: ["పర్యాయపదం", "వ్యతిరేక పదం", "నానార్థకం", "అన్యదేశ్య పదం"],
+        question: "క్రింది వాటిలో భావవాచక నామవాచకం ఏది?",
+        options: ["పుస్తకం", "బాలుడు", "అందం", "చెట్టు"],
         correct: 2,
-        explanation: "‘కరం’ అనే ఒకే పదం సందర్భాన్ని బట్టి ‘చేయి’ మరియు ‘పన్ను’ అనే వేర్వేరు అర్థాలను ఇస్తుంది. కాబట్టి ఇది నానార్థక పదానికి ఉదాహరణ."
+        explanation: "“అందం” అనేది ప్రత్యక్షంగా కనిపించే వ్యక్తి లేదా వస్తువు పేరు కాదు; ఒక గుణం లేదా భావాన్ని సూచిస్తుంది. అందువల్ల ఇది భావవాచక నామవాచకంగా పరిగణించబడుతుంది."
     },
     {
-        question: "క్రింది వాటిలో జాతీయానికి సరైన అర్థాన్ని గుర్తించండి: ‘తలకెక్కడం’",
-        options: ["కోపంతో తల పట్టుకోవడం", "అతిగా చనువు పొందడం / అదుపు తప్పడం", "ఆలోచన చేయడం", "బాధ్యత స్వీకరించడం"],
-        correct: 1,
-        explanation: "‘తలకెక్కడం’ అనే జాతీయ ప్రయోగం సాధారణంగా అతిగా చనువు పొందడం లేదా ఎదుటివారి మాట వినకుండా అదుపు తప్పడం అనే భావాన్ని సూచిస్తుంది."
-    },
-    {
-        question: "‘ఇంట గెలిచి రచ్చ గెలవాలి’ అనే సామెత ప్రధానంగా ఏ భావాన్ని సూచిస్తుంది?",
-        options: ["ముందుగా సన్నిహిత వర్గంలో గుర్తింపు పొందాలి", "ఇతరులతో పోటీ పడకూడదు", "ఇంట్లోనే ఉండాలి", "విజయం ఎప్పుడూ ఆలస్యంగా వస్తుంది"],
+        question: "క్రింది జతలలో వ్యక్తివాచక నామవాచకం – జాతివాచక నామవాచకం సరైన జత ఏది?",
+        options: ["గోదావరి – నది", "బాలుడు – రాము", "పక్షి – కోయిల", "పుస్తకం – రామాయణం"],
         correct: 0,
-        explanation: "‘ఇంట గెలిచి రచ్చ గెలవాలి’ అంటే ముందుగా ఇంటి లేదా సన్నిహితుల వద్ద తన సామర్థ్యాన్ని నిరూపించుకొని, తరువాత బయటి ప్రపంచంలో విజయాన్ని సాధించాలి."
+        explanation: "“గోదావరి” ఒక నిర్దిష్ట నది పేరు కాబట్టి వ్యక్తివాచకం. “నది” సాధారణ జాతిని సూచిస్తుంది కాబట్టి జాతివాచకం. అందువల్ల ఈ జత సరైనది."
     },
     {
-        question: "‘భూమిపై నివసించేవాడు’ అనే అర్థానికి సరైన ఏకపదం ఏది?",
-        options: ["భూచరుడు", "భూలోకవాసి", "ఖేచరుడు", "జలచరుడు"],
+        question: "“అతను తన పుస్తకాన్ని తీసుకున్నాడు.” ఈ వాక్యంలో “తన” అనే పదం ఏ పదభేదానికి చెందుతుంది?",
+        options: ["ప్రశ్నార్థక సర్వనామం", "స్వీయార్థక సర్వనామం", "సంబంధసూచక సర్వనామం", "అనిశ్చిత సర్వనామం"],
         correct: 1,
-        explanation: "భూమిపై లేదా భూలోకంలో నివసించేవాడిని ‘భూలోకవాసి’ అని అంటారు. ఖేచరుడు ఆకాశంలో సంచరించేవాడు; జలచరుడు నీటిలో నివసించేవాడు."
+        explanation: "“తన” అనే పదం కర్త అయిన “అతను” వైపే తిరిగి సూచిస్తుంది. కర్తను తిరిగి సూచించే రూపాన్ని స్వీయార్థక సర్వనామంగా ఇక్కడ ఉపయోగించారు."
     },
     {
-        question: "క్రింది వాటిలో ‘సు-’ ఉపసర్గను సరైన రీతిలో ఉపయోగించిన పదం ఏది?",
-        options: ["సుగుణం", "దుర్గుణం", "నిర్గుణం", "విగుణం"],
-        correct: 0,
-        explanation: "‘సు-’ ఉపసర్గ శుభం, మంచి లేదా ఉత్తమం అనే భావాన్ని ఇస్తుంది. ‘సుగుణం’ అంటే మంచి గుణం. మిగతా పదాలలో ఇతర ఉపసర్గలు ఉన్నాయి."
-    },
-    {
-        question: "‘దేశభక్తి’ అనే పదాన్ని విడదీసినప్పుడు సరైన రూపం ఏది?",
-        options: ["దేశం + భక్తి", "దేశ + భక్తి", "దేశము + అభక్తి", "దేశి + భక్తి"],
-        correct: 1,
-        explanation: "‘దేశభక్తి’ పదం ‘దేశ + భక్తి’ అనే రెండు పదాల కలయికతో ఏర్పడింది. సమాస రూపంలో ‘దేశం’లోని చివరి భాగం మారి ‘దేశ’ రూపం కనిపిస్తుంది."
-    },
-    {
-        question: "క్రింది వాటిలో ఒకే అర్థానికి దగ్గరగా ఉన్న పదాల సమూహం ఏది?",
-        options: ["కోపం — ఆగ్రహం — రోషం", "కోపం — శాంతి — సౌమ్యం", "భయం — ధైర్యం — సాహసం", "ఆనందం — విషాదం — దుఃఖం"],
-        correct: 0,
-        explanation: "కోపం, ఆగ్రహం, రోషం అనే మూడు పదాలు కోపం లేదా ఆగ్రహ భావాన్ని సూచిస్తాయి. అందువల్ల ఇవి ఒకే అర్థానికి దగ్గరగా ఉన్న పర్యాయ పదాల సమూహం."
-    },
-    {
-        question: "‘ఆది’ మరియు ‘ఆది’ అనే రూపాలు వేర్వేరు అర్థాల్లో ఉపయోగించబడితే, వాటి మధ్య సంబంధాన్ని గుర్తించడానికి ప్రధానంగా ఏ అంశాన్ని పరిశీలించాలి?",
-        options: ["అక్షరాల సంఖ్య", "సందర్భం మరియు అర్థం", "పదం పొడవు", "ఉచ్చారణ వేగం"],
-        correct: 1,
-        explanation: "ఒకే రూపంలో ఉన్న పదం వేర్వేరు అర్థాలను ఇవ్వవచ్చు. ఆ అర్థాన్ని నిర్ణయించడానికి పదం ఉపయోగించిన సందర్భం మరియు దాని భావాన్ని పరిశీలించడం ముఖ్యమైనది."
-    },
-    {
-        question: "క్రింది వాటిలో పద నిర్మాణం సరైనది ఏది?",
-        options: ["నీతి + వంతుడు = నీతివంతుడు", "నీతి + వంతుడు = నీతియవంతుడు", "నీతి + వంతుడు = నీత్వంతుడు", "నీతి + వంతుడు = నీతిమంతుడు"],
-        correct: 0,
-        explanation: "ఇచ్చిన answer key ప్రకారం ‘నీతి + వంతుడు = నీతివంతుడు’ సరైన పద నిర్మాణం. ‘నీతివంతుడు’ అంటే నీతి కలిగిన వ్యక్తి అనే అర్థాన్ని ఇస్తుంది."
-    },
-    {
-        question: "‘నిరాశ’ అనే పదానికి వ్యతిరేక పదం ఏది?",
-        options: ["నిర్లక్ష్యం", "ఆశ", "అసంతృప్తి", "విషాదం"],
-        correct: 1,
-        explanation: "నిరాశ అంటే ఆశ లేకపోవడం లేదా ఆశాభంగం. దీనికి వ్యతిరేక భావం ఆశ లేదా ఆశావాదం. కాబట్టి సరైన వ్యతిరేక పదం ‘ఆశ’."
-    },
-    {
-        question: "క్రింది పదాలలో అక్షరాల క్రమాన్ని మార్చి కొత్త పదాన్ని ఏర్పరచే ప్రక్రియను ఏమంటారు?",
-        options: ["సంధి", "సమాసం", "అనాగ్రామ్", "ప్రత్యయాంతం"],
+        question: "క్రింది వాక్యంలో క్రియను గుర్తించండి. “పిల్లలు మైదానంలో ఆడుతున్నారు.”",
+        options: ["పిల్లలు", "మైదానంలో", "ఆడుతున్నారు", "లో"],
         correct: 2,
-        explanation: "ఒక పదంలోని అక్షరాల క్రమాన్ని మార్చి మరో అర్థవంతమైన పదాన్ని రూపొందించే ప్రక్రియను అనాగ్రామ్ అంటారు. సంధి, సమాసం పద నిర్మాణానికి వేర్వేరు ప్రక్రియలు."
+        explanation: "“ఆడుతున్నారు” అనే పదం పిల్లలు చేస్తున్న పనిని తెలియజేస్తుంది. పని లేదా చర్యను తెలియజేసే పదాన్ని క్రియ అంటారు. కాబట్టి ఇది వాక్యంలోని క్రియ."
     },
     {
-        question: "Choose the word that is closest in meaning to the underlined word: The scientist gave a precise description of the experiment.",
-        options: ["vague", "accurate", "lengthy", "ordinary"],
-        correct: 1,
-        explanation: "‘Precise’ means exact, accurate, or clearly defined. Therefore, ‘accurate’ is the closest meaning. ‘Vague’ means unclear, while the other options do not convey exactness."
-    },
-    {
-        question: "Choose the antonym of the underlined word: The manager appreciated her generous attitude.",
-        options: ["charitable", "helpful", "selfish", "friendly"],
+        question: "“రవి నెమ్మదిగా నడిచాడు.” అనే వాక్యంలో “నెమ్మదిగా” అనే పదం —",
+        options: ["నామవాచకాన్ని విశేషిస్తుంది", "సర్వనామాన్ని విశేషిస్తుంది", "క్రియను విశేషిస్తుంది", "విభక్తిని విశేషిస్తుంది"],
         correct: 2,
-        explanation: "‘Generous’ describes someone willing to give or help others. Its opposite is ‘selfish’, which describes concern mainly for oneself rather than for other people."
+        explanation: "“నెమ్మదిగా” అనే పదం రవి ఎలా నడిచాడో వివరిస్తుంది. ఇది “నడిచాడు” అనే క్రియను విశేషిస్తోంది. అందువల్ల ఇది క్రియావిశేషణంగా పనిచేస్తుంది."
     },
     {
-        question: "Choose the word that is NOT correctly spelt.",
-        options: ["accommodate", "separate", "privilege", "occassion"],
+        question: "క్రింది వాటిలో అవ్యయం ఏది?",
+        options: ["రాము", "అందమైన", "నిన్న", "పుస్తకం"],
+        correct: 2,
+        explanation: "“నిన్న” అనే పదం కాలాన్ని సూచిస్తుంది మరియు రూపాంతరం చెందకుండా ఉపయోగించబడుతుంది. ఇలాంటి మార్పులేని పదాలను అవ్యయాలు అంటారు. అందువల్ల సరైన జవాబు C."
+    },
+    {
+        question: "“రాముడు పాఠశాలకు వెళ్లాడు.” అనే వాక్యంలో “కు” ఏ విభక్తిని సూచిస్తుంది?",
+        options: ["ప్రథమా విభక్తి", "ద్వితీయా విభక్తి", "చతుర్థీ విభక్తి", "సప్తమీ విభక్తి"],
+        correct: 2,
+        explanation: "“పాఠశాలకు” అనే పదంలోని “కు” గమ్యం లేదా ప్రయోజనాన్ని సూచిస్తుంది. తెలుగులో “కు” సాధారణంగా చతుర్థీ విభక్తిని సూచిస్తుంది. కాబట్టి సరైనది C."
+    },
+    {
+        question: "“రాముడు కత్తితో పండును కోశాడు.” ఈ వాక్యంలో “తో” ఏ విభక్తిని సూచిస్తుంది?",
+        options: ["తృతీయా విభక్తి", "చతుర్థీ విభక్తి", "పంచమీ విభక్తి", "షష్ఠీ విభక్తి"],
+        correct: 0,
+        explanation: "“కత్తితో” అనే పదం కత్తిని సాధనంగా ఉపయోగించి పని జరిగినట్లు తెలియజేస్తుంది. సాధనం లేదా సహాయాన్ని సూచించే “తో” తృతీయా విభక్తిని సూచిస్తుంది."
+    },
+    {
+        question: "క్రింది వాక్యాలలో సంబంధాన్ని సూచించే షష్ఠీ విభక్తి ఉన్నది ఏది?",
+        options: ["రాముడు పాఠశాలకు వెళ్లాడు.", "రాముని పుస్తకం బల్లపై ఉంది.", "రాముడు కత్తితో కోశాడు.", "రాముడు ఇంటి నుండి వచ్చాడు."],
+        correct: 1,
+        explanation: "“రాముని పుస్తకం”లో “రాముని” అనే పదం పుస్తకానికి రాముడితో ఉన్న సంబంధాన్ని తెలియజేస్తుంది. సంబంధాన్ని సూచించే రూపం షష్ఠీ విభక్తికి ఉదాహరణ."
+    },
+    {
+        question: "“బాలుడు బంతిని విసిరాడు.” అనే వాక్యంలో “బంతిని” ఏ విభక్తిని సూచిస్తుంది?",
+        options: ["ప్రథమా", "ద్వితీయా", "తృతీయా", "చతుర్థీ"],
+        correct: 1,
+        explanation: "“బంతిని” అనేది క్రియ అయిన “విసిరాడు”కు కర్మగా ఉంది. కర్మను సూచించే విభక్తిని ద్వితీయా విభక్తి అంటారు. అందువల్ల సరైన జవాబు B."
+    },
+    {
+        question: "క్రింది వాక్యాలలో కర్మణి వాక్యం ఏది?",
+        options: ["రాము కథ రాశాడు.", "సీత పూలు కోసింది.", "రామునిచే కథ రాయబడింది.", "పిల్లలు ఆట ఆడారు."],
+        correct: 2,
+        explanation: "“రామునిచే కథ రాయబడింది”లో చర్యను చేసినవాడికంటే చర్యకు గురైన “కథ” ప్రధానంగా ఉంది. అందువల్ల ఇది కర్మణి వాక్యానికి ఉదాహరణ."
+    },
+    {
+        question: "“నీవు ఈ రోజు పాఠశాలకు వెళ్తావా?” ఈ వాక్యం ఏ వాక్యభేదానికి చెందుతుంది?",
+        options: ["విధ్యర్థక వాక్యం", "ప్రశ్నార్థక వాక్యం", "ఆశ్చర్యార్థక వాక్యం", "నిషేధార్థక వాక్యం"],
+        correct: 1,
+        explanation: "ఈ వాక్యం ఒక విషయాన్ని ప్రశ్నిస్తుంది మరియు చివరలో ప్రశ్నార్థక భావాన్ని వ్యక్తపరుస్తుంది. ప్రశ్న అడిగే వాక్యాన్ని ప్రశ్నార్థక వాక్యం అంటారు."
+    },
+    {
+        question: "“అయ్యో! గాజు పగిలిపోయింది!” ఈ వాక్యం ఏ రకానికి చెందుతుంది?",
+        options: ["ప్రశ్నార్థక వాక్యం", "ఆశ్చర్యార్థక వాక్యం", "ఆజ్ఞార్థక వాక్యం", "సామాన్య వాక్యం"],
+        correct: 1,
+        explanation: "“అయ్యో!” అనే పదం విచారం లేదా ఆశ్చర్యభావాన్ని వ్యక్తపరుస్తుంది. బలమైన భావోద్వేగాన్ని వ్యక్తపరిచే వాక్యాన్ని ఆశ్చర్యార్థక వాక్యం అంటారు. కాబట్టి B సరైనది."
+    },
+    {
+        question: "క్రింది వాటిలో ఆజ్ఞార్థక వాక్యం ఏది?",
+        options: ["నీవు ఎక్కడికి వెళ్తున్నావు?", "అతను నిన్న వచ్చాడు.", "దయచేసి తలుపు మూయండి.", "ఎంత అందమైన దృశ్యం!"],
+        correct: 2,
+        explanation: "“దయచేసి తలుపు మూయండి”లో ఒక పనిని చేయమని ఆదేశం లేదా అభ్యర్థన ఉంది. ఆజ్ఞ, అభ్యర్థన, సూచనలను వ్యక్తపరిచే వాక్యాన్ని ఆజ్ఞార్థక వాక్యం అంటారు."
+    },
+    {
+        question: "“వర్షం పడితే నేను ఇంట్లోనే ఉంటాను.” అనే వాక్యం ప్రధానంగా ఏ సంబంధాన్ని వ్యక్తపరుస్తుంది?",
+        options: ["కారణ–ఫలిత సంబంధం", "షరతు–ఫలిత సంబంధం", "వ్యతిరేక సంబంధం", "పోలిక సంబంధం"],
+        correct: 1,
+        explanation: "“వర్షం పడితే” అనేది ఒక షరతును సూచిస్తుంది; “ఇంట్లోనే ఉంటాను” దాని ఫలితాన్ని తెలియజేస్తుంది. కాబట్టి ఇది షరతు–ఫలిత సంబంధాన్ని వ్యక్తపరుస్తుంది."
+    },
+    {
+        question: "క్రింది వాటిలో కర్త–క్రియ అన్వయం సరిగా ఉన్న వాక్యం ఏది?",
+        options: ["పిల్లలు మైదానంలో ఆడుతున్నాడు.", "బాలుడు మైదానంలో ఆడుతున్నారు.", "పిల్లలు మైదానంలో ఆడుతున్నారు.", "బాలికలు పాఠశాలకు వెళ్లాడు."],
+        correct: 2,
+        explanation: "“పిల్లలు” బహువచన కర్త. దీనికి అనుగుణంగా “ఆడుతున్నారు” అనే బహువచన క్రియ ఉపయోగించబడింది. కాబట్టి కర్త–క్రియ అన్వయం ఈ వాక్యంలో సరిగ్గా ఉంది."
+    },
+    {
+        question: "క్రింది వాక్యంలో విశేషణం–విశేష్యం సరైన జతను గుర్తించండి. “పచ్చని చెట్టు నీడనిచ్చింది.”",
+        options: ["పచ్చని – చెట్టు", "చెట్టు – నీడ", "నీడ – ఇచ్చింది", "పచ్చని – ఇచ్చింది"],
+        correct: 0,
+        explanation: "“పచ్చని” అనే పదం “చెట్టు” యొక్క లక్షణాన్ని తెలియజేస్తుంది. కాబట్టి “పచ్చని” విశేషణం, “చెట్టు” విశేష్యం. అందువల్ల A సరైన జత."
+    },
+    {
+        question: "క్రింది వాటిలో క్రియావిశేషణం మరియు అది విశేషించే క్రియ సరైన జత ఏది?",
+        options: ["వేగంగా – పరుగెత్తాడు", "మంచి – బాలుడు", "పెద్ద – ఇల్లు", "తెలివైన – విద్యార్థి"],
+        correct: 0,
+        explanation: "“వేగంగా” అనే పదం “పరుగెత్తాడు” అనే క్రియ ఎలా జరిగిందో తెలియజేస్తుంది. కాబట్టి ఇది క్రియావిశేషణం–క్రియకు సరైన జత."
+    },
+    {
+        question: "క్రింది పదాలలో సర్వనామం కానిది ఏది?",
+        options: ["నేను", "ఎవరు", "ఇది", "అందమైన"],
         correct: 3,
-        explanation: "The correct spelling is ‘occasion’, with only one ‘c’ after the initial ‘o’ and double ‘c’ overall. ‘Occassion’ incorrectly contains an extra ‘s’."
+        explanation: "“నేను”, “ఎవరు”, “ఇది” అనే పదాలు నామవాచకాలకు బదులుగా ఉపయోగించగల సర్వనామాలు. “అందమైన” మాత్రం లక్షణాన్ని తెలిపే విశేషణం."
     },
     {
-        question: "Choose the correctly spelt word.",
-        options: ["questionnaire", "questionaire", "questionnare", "questionnair"],
-        correct: 0,
-        explanation: "‘Questionnaire’ is the correct spelling for a written set of questions used to collect information. The other forms incorrectly omit or rearrange letters in the word."
-    },
-    {
-        question: "Choose the word that describes a person who speaks two languages fluently.",
-        options: ["bilingual", "biannual", "bilateral", "bilingualism"],
-        correct: 0,
-        explanation: "A ‘bilingual’ person can use two languages. ‘Biannual’ means occurring twice a year, ‘bilateral’ means involving two sides, and ‘bilingualism’ refers to the condition itself."
-    },
-    {
-        question: "Choose the word that means: One who cannot read or write",
-        options: ["immigrant", "illiterate", "ignorant", "innocent"],
+        question: "క్రింది వాక్యాలను పరిశీలించండి. i) రాము పాఠశాలకు వెళ్లాడు. ii) అతడు పాఠశాలకు వెళ్లాడు. iii) మంచి బాలుడు పాఠశాలకు వెళ్లాడు. iv) అతను త్వరగా నడిచాడు. సర్వనామం ఉన్న వాక్యాల సముదాయం ఏది?",
+        options: ["i, ii మాత్రమే", "ii, iv మాత్రమే", "i, iii మాత్రమే", "iii, iv మాత్రమే"],
         correct: 1,
-        explanation: "‘Illiterate’ specifically describes a person who cannot read or write. An immigrant moves to another country, ignorant means lacking knowledge, and innocent means not guilty."
+        explanation: "iiలో “అతడు”, ivలో “అతను” నామవాచకానికి బదులుగా ఉపయోగించిన సర్వనామాలు. iలో “రాము”, iiiలో “బాలుడు” నామవాచకాలు. కాబట్టి ii, iv మాత్రమే."
     },
     {
-        question: "Choose the correct meaning of the idiom: “A blessing in disguise”",
-        options: ["a hidden enemy", "something that seems bad but proves beneficial", "a religious ceremony", "an unexpected punishment"],
+        question: "క్రింది జతలను పరిశీలించండి. i) ఇంటి నుండి — పంచమీ విభక్తి ii) రాముని పుస్తకం — షష్ఠీ విభక్తి iii) కత్తితో — తృతీయా విభక్తి iv) పాఠశాలకు — చతుర్థీ విభక్తి. సరైనవి ఏవి?",
+        options: ["i, ii మాత్రమే", "i, iii మాత్రమే", "ii, iii, iv మాత్రమే", "i, ii, iii, iv"],
+        correct: 3,
+        explanation: "“నుండి” పంచమీ, “రాముని” సంబంధాన్ని సూచించే షష్ఠీ, “తో” తృతీయా, “కు” చతుర్థీ విభక్తులను సూచిస్తాయి. కాబట్టి నాలుగు జతలూ సరైనవి."
+    },
+    {
+        question: "క్రింది వాక్యాల పరిశీలనలో క్రియావిశేషణం కలిగిన వాక్యాల సముదాయం ఏది? i) బాలుడు వేగంగా పరుగెత్తాడు. ii) ఆమె మంచి విద్యార్థిని. iii) రాము నిన్న వచ్చాడు. iv) తెలివైన బాలుడు గెలిచాడు.",
+        options: ["i, iii మాత్రమే", "i, ii మాత్రమే", "ii, iv మాత్రమే", "iii, iv మాత్రమే"],
+        correct: 0,
+        explanation: "iలో “వేగంగా”, iiiలో “నిన్న” క్రియను విశేషిస్తున్నాయి. iiలో “మంచి”, ivలో “తెలివైన” నామవాచకాలను విశేషించే విశేషణాలు. కాబట్టి i, iii మాత్రమే."
+    },
+    {
+        question: "Identify the noun in the following sentence: “The teacher praised the student.”",
+        options: ["teacher", "praised", "the", "the"],
+        correct: 0,
+        explanation: "“Teacher” is a noun because it names a person. “Praised” is a verb, while “the” is an article. Therefore, “teacher” is the required noun in this sentence."
+    },
+    {
+        question: "Which of the following contains a pronoun?",
+        options: ["Ravi bought a book.", "She bought a book.", "Ravi bought an interesting book.", "The student bought a book."],
         correct: 1,
-        explanation: "‘A blessing in disguise’ refers to something that initially appears negative or unfortunate but later turns out to have a beneficial or positive result."
+        explanation: "“She” is a pronoun because it replaces or represents a person’s name. The other sentences use nouns such as Ravi, student, and book instead."
     },
     {
-        question: "Choose the correct meaning of the idiom: “To hit the nail on the head”",
-        options: ["to work very hard", "to make a careless mistake", "to say or do exactly the right thing", "to avoid an important issue"],
+        question: "Identify the adjective in the sentence: “The little boy opened the heavy box.”",
+        options: ["boy", "opened", "little", "box"],
         correct: 2,
-        explanation: "‘To hit the nail on the head’ means to identify or express something exactly correctly. It is used when someone gives the precise answer or explanation."
+        explanation: "“Little” describes the noun “boy,” so it functions as an adjective. It provides information about the boy’s size or degree, modifying the noun directly."
     },
     {
-        question: "Choose the correct phrasal verb: The teacher asked the students to ______ the assignment before Friday.",
-        options: ["hand in", "hand out", "hand over", "hand down"],
-        correct: 0,
-        explanation: "‘Hand in’ means to submit something, such as an assignment, to a teacher or authority. ‘Hand out’ means distribute, while the others have different meanings."
+        question: "Identify the adverb in the sentence: “The child answered the question correctly.”",
+        options: ["child", "answered", "question", "correctly"],
+        correct: 3,
+        explanation: "“Correctly” describes how the child answered the question. Since it modifies the verb “answered” by expressing manner, it functions as an adverb in this sentence."
     },
     {
-        question: "Choose the correct phrasal verb: The meeting was ______ because the chairman was ill.",
-        options: ["called off", "called in", "called on", "called up"],
-        correct: 0,
-        explanation: "‘Called off’ means cancelled, so it correctly describes a meeting that did not take place because the chairman was ill. The other phrasal verbs have different meanings."
+        question: "Which word functions as a verb in the sentence? “The students discussed the problem.”",
+        options: ["students", "discussed", "problem", "the"],
+        correct: 1,
+        explanation: "“Discussed” expresses the action performed by the students. Therefore, it functions as the main verb. “Students” and “problem” are nouns, while “the” is an article."
     },
     {
-        question: "Choose the word formed by adding the correct suffix to child.",
-        options: ["childful", "childness", "childhood", "childity"],
+        question: "Choose the correct helping verb: “The children ______ playing in the garden.”",
+        options: ["is", "am", "are", "was"],
         correct: 2,
-        explanation: "Adding the suffix ‘-hood’ to ‘child’ forms ‘childhood’, meaning the period or state of being a child. The other options are not standard English formations."
+        explanation: "“Children” is a plural subject, so the helping verb “are” agrees with it. The present continuous structure is “are playing,” making C correct."
     },
     {
-        question: "Choose the word formed by adding the appropriate prefix: ___regular",
-        options: ["un", "dis", "ir", "im"],
+        question: "Choose the correct ordinary verb form: “She ______ to school every day.”",
+        options: ["go", "goes", "going", "gone"],
+        correct: 1,
+        explanation: "The subject “She” is third-person singular, and “every day” indicates simple present tense. Therefore, the verb “go” takes the singular form “goes.”"
+    },
+    {
+        question: "Choose the grammatically correct sentence.",
+        options: ["He don't like coffee.", "He doesn't likes coffee.", "He doesn't like coffee.", "He not like coffee."],
         correct: 2,
-        explanation: "The correct word is ‘irregular’. The prefix ‘ir-’ is a form of the negative prefix used before words beginning with ‘r’, changing regular to its opposite."
+        explanation: "With the singular subject “He,” we use “doesn't.” After “doesn't,” the main verb remains in base form, so “doesn't like” is grammatically correct."
     },
     {
-        question: "Choose the correct noun form of decide.",
-        options: ["deciding", "decision", "decisive", "decided"],
-        correct: 1,
-        explanation: "The noun form of the verb ‘decide’ is ‘decision’. ‘Deciding’ is a participle or gerund, ‘decisive’ is an adjective, and ‘decided’ is a past form."
-    },
-    {
-        question: "Choose the correct adjective form of danger.",
-        options: ["dangerously", "endangered", "dangerous", "dangerless"],
+        question: "Choose the correct option: “Neither the teacher nor the students ______ ready.”",
+        options: ["is", "was", "are", "has"],
         correct: 2,
-        explanation: "‘Dangerous’ is the adjective formed from ‘danger’ and describes something capable of causing harm. ‘Dangerously’ is an adverb, while the other choices do not fit."
+        explanation: "With “neither...nor,” the verb generally agrees with the nearer subject. The nearer subject is plural “students,” so the plural verb “are” is correct."
     },
     {
-        question: "Choose the word that best completes the collocation: The committee will ______ a decision tomorrow.",
-        options: ["do", "make", "take", "build"],
+        question: "Choose the correct verb: “Each of the boys ______ a notebook.”",
+        options: ["have", "has", "are having", "were having"],
         correct: 1,
-        explanation: "The standard collocation is ‘make a decision’. English commonly uses ‘make’ with decision in this expression, whereas do, take, and build do not fit here."
+        explanation: "“Each” is grammatically singular even though it refers to members of a group. Therefore, it takes the singular verb “has,” making option B correct."
     },
     {
-        question: "Choose the correct collocation:",
-        options: ["heavy rain", "strong rain", "powerful rain", "hard rain"],
-        correct: 0,
-        explanation: "‘Heavy rain’ is the standard English collocation for a large amount of rainfall. Although ‘hard’ can appear in some contexts, ‘heavy rain’ is the conventional expression."
-    },
-    {
-        question: "Choose the word that best fits the context: The instructions were so ______ that even a beginner could follow them.",
-        options: ["obscure", "explicit", "reluctant", "fragile"],
+        question: "Choose the correct sentence based on subject–verb agreement.",
+        options: ["The list of names are on the table.", "The list of names is on the table.", "The list of names were on the table.", "The list of names have on the table."],
         correct: 1,
-        explanation: "‘Explicit’ means clearly expressed and leaving little room for confusion. This fits instructions that a beginner can easily follow. The other options do not suit the context."
+        explanation: "The main subject is singular “list,” not the plural noun “names.” Therefore, the singular verb “is” must agree with “list,” making sentence B correct."
     },
     {
-        question: "Choose the word closest in meaning to the underlined word: The witness gave a brief account of the incident.",
-        options: ["short", "doubtful", "detailed", "inaccurate"],
-        correct: 0,
-        explanation: "‘Brief’ means short or lasting only a small amount of time. In this sentence, a brief account is a short description of the incident."
+        question: "In the sentence “My brother can swim very well,” the word “can” is a:",
+        options: ["Main verb", "Modal auxiliary", "Noun", "Adjective"],
+        correct: 1,
+        explanation: "“Can” is a modal auxiliary verb. It combines with the base form “swim” to express ability. Therefore, it is not the main lexical verb."
     },
     {
-        question: "Choose the antonym of the underlined word: The instructions were mandatory for all candidates.",
-        options: ["compulsory", "essential", "optional", "official"],
+        question: "Identify the function of the modal in the sentence: “You should consult a doctor.”",
+        options: ["Ability", "Permission", "Advice", "Possibility"],
         correct: 2,
-        explanation: "‘Mandatory’ means required or compulsory. Its opposite is ‘optional’, meaning something that may be chosen but is not required. Therefore, optional is the correct antonym."
+        explanation: "The modal “should” commonly expresses advice or recommendation. In this sentence, it suggests that consulting a doctor is advisable, so the correct function is advice."
     },
     {
-        question: "Choose the correctly spelt word.",
-        options: ["maintenance", "maintainance", "maintanence", "maintenence"],
-        correct: 0,
-        explanation: "‘Maintenance’ is the correct spelling of the noun meaning the process of preserving something in good condition. The other spellings incorrectly arrange or omit letters."
-    },
-    {
-        question: "Choose the word that means: A person who studies the origin and development of languages",
-        options: ["lexicographer", "linguist", "biographer", "archaeologist"],
-        correct: 1,
-        explanation: "A ‘linguist’ studies language, including its structure, development, and use. A lexicographer compiles dictionaries, a biographer writes biographies, and an archaeologist studies material remains."
-    },
-    {
-        question: "Choose the correct meaning of the phrasal verb “look into”.",
-        options: ["postpone", "investigate", "admire", "avoid"],
-        correct: 1,
-        explanation: "The phrasal verb ‘look into’ means to investigate or examine something carefully. For example, an authority may look into a complaint before taking further action."
-    },
-    {
-        question: "Choose the correct meaning of the idiom “once in a blue moon.”",
-        options: ["at the right moment", "very frequently", "very rarely", "unexpectedly"],
+        question: "Choose the correct form: “There ______ many students in the classroom.”",
+        options: ["is", "was", "are", "has"],
         correct: 2,
-        explanation: "‘Once in a blue moon’ is an idiom meaning something happens very rarely or only on unusual occasions. It does not refer to frequent or regular events."
+        explanation: "The noun following “there” is the plural noun “students.” Therefore, the present-tense plural verb “are” is required. The correct sentence is “There are many students.”"
     },
     {
-        question: "Choose the word that best completes the sentence: The teacher encouraged the student to ______ confidence in public speaking.",
-        options: ["gain", "do", "make", "perform"],
-        correct: 0,
-        explanation: "‘Gain confidence’ is the standard collocation meaning to become more confident through experience or practice. The other verbs do not naturally combine with confidence in this sentence."
-    },
-    {
-        question: "Choose the word that is closest in meaning to the underlined word: The explanation was concise, yet it contained all the essential information.",
-        options: ["complicated", "brief and clear", "uncertain", "repetitive"],
+        question: "Which sentence contains an adverb modifying a verb?",
+        options: ["She is a careful driver.", "She drives carefully.", "She is careful.", "She has a careful attitude."],
         correct: 1,
-        explanation: "‘Concise’ means expressing information clearly and briefly without unnecessary words. Therefore, ‘brief and clear’ is the closest meaning and fits the context of the sentence."
+        explanation: "In “She drives carefully,” the adverb “carefully” modifies the verb “drives” by describing how the action is performed. Therefore, option B is correct."
+    },
+    {
+        question: "Choose the correct option: “One of my friends ______ in Hyderabad.”",
+        options: ["live", "lives", "living", "are living"],
+        correct: 1,
+        explanation: "The subject is “One,” which is singular, while “of my friends” is a modifying phrase. Therefore, the singular verb “lives” is required."
+    },
+    {
+        question: "Identify the pronoun in the sentence: “The teacher gave them the books.”",
+        options: ["teacher", "gave", "them", "books"],
+        correct: 2,
+        explanation: "“Them” is a personal pronoun functioning as the object of “gave.” The words “teacher” and “books” are nouns, while “gave” is the verb."
+    },
+    {
+        question: "Which of the following is a proper noun?",
+        options: ["city", "river", "India", "country"],
+        correct: 2,
+        explanation: "“India” is the specific name of a country, so it is a proper noun. “City,” “river,” and “country” are common nouns."
+    },
+    {
+        question: "Identify the type of the underlined word: “The beautiful flowers attracted everyone.”",
+        options: ["Noun", "Pronoun", "Adjective", "Adverb"],
+        correct: 2,
+        explanation: "“Beautiful” describes the noun “flowers,” telling us their quality. A word that modifies or describes a noun is an adjective, so option C is correct."
+    },
+    {
+        question: "Choose the correct verb: “The news ______ true.”",
+        options: ["are", "were", "is", "have"],
+        correct: 2,
+        explanation: "“News” ends in “s” but is treated as a singular uncountable noun in standard English. Therefore, it takes the singular verb “is.”"
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: ["Mathematics are my favourite subject.", "Mathematics is my favourite subject.", "Mathematics were my favourite subject.", "Mathematics have been my favourite subject."],
+        correct: 1,
+        explanation: "“Mathematics” is the name of an academic subject and normally takes a singular verb. Therefore, “Mathematics is my favourite subject” is grammatically correct."
+    },
+    {
+        question: "Consider the following statements:\n1. A noun can name a person, place, thing or idea.\n2. A pronoun can replace a noun or noun phrase.\n3. An adverb can modify a verb.\nWhich of the above statements are correct?",
+        options: ["1 only", "1 and 2 only", "2 and 3 only", "1, 2 and 3"],
+        correct: 3,
+        explanation: "All three statements accurately describe basic grammatical functions. Nouns name entities or ideas, pronouns replace nouns or noun phrases, and adverbs can modify verbs."
+    },
+    {
+        question: "Match Column-I with Column-II.\n\nColumn-I: i) quickly  ii) they  iii) honest  iv) teacher\n\nColumn-II: a) Pronoun  b) Adverb  c) Adjective  d) Noun",
+        options: ["i-b, ii-a, iii-c, iv-d", "i-a, ii-b, iii-d, iv-c", "i-c, ii-a, iii-b, iv-d", "i-b, ii-c, iii-a, iv-d"],
+        correct: 0,
+        explanation: "“Quickly” is an adverb, “they” is a pronoun, “honest” is an adjective, and “teacher” is a noun. Therefore, the first matching option is correct."
+    },
+    {
+        question: "Choose the correct sentence.",
+        options: ["The quality of these apples are good.", "The quality of these apples is good.", "The quality of these apples have good.", "The quality of these apples were good."],
+        correct: 1,
+        explanation: "The main subject is singular “quality,” while “of these apples” is a prepositional phrase. Therefore, the singular verb “is” correctly agrees with “quality.”"
+    },
+    {
+        question: "Identify the parts of speech of the underlined words: “The young boy ran quickly.”",
+        options: ["young – noun; quickly – adjective", "young – adjective; quickly – adverb", "young – adverb; quickly – adjective", "young – pronoun; quickly – verb"],
+        correct: 1,
+        explanation: "“Young” describes the noun “boy,” so it is an adjective. “Quickly” modifies the verb “ran,” so it is an adverb. Therefore, B is correct."
     }
 ];
