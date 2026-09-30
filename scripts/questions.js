@@ -5,303 +5,304 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: "“రాము నిన్న పాఠశాలకు త్వరగా వెళ్లాడు.” అనే వాక్యంలో “త్వరగా” అనే పదం ఏ పదభేదానికి చెందుతుంది?",
-        options: ["నామవాచకం", "విశేషణం", "క్రియావిశేషణం", "సర్వనామం"],
+        question: "“రామాలయం” అనే పదంలో జరిగిన సంధి ఏది?",
+        options: ["గుణసంధి", "వృద్ధి సంధి", "సవర్ణదీర్ఘ సంధి", "యణాదేశ సంధి"],
         correct: 2,
-        explanation: "“త్వరగా” అనే పదం “వెళ్లాడు” అనే క్రియను ఎలా చేశాడో తెలియజేస్తుంది. క్రియను విశేషించే పదాన్ని క్రియావిశేషణం అంటారు. అందువల్ల “త్వరగా” క్రియావిశేషణం అవుతుంది."
+        explanation: "“రామాలయం” పదంలో రామ + ఆలయం కలిసినప్పుడు అ + ఆ కలిసి ఆ అవుతుంది. ఒకే స్వరాల దీర్ఘరూపం ఏర్పడటం వల్ల దీనిని సవర్ణదీర్ఘ సంధి అంటారు."
     },
     {
-        question: "క్రింది వాక్యాలలో సర్వనామం ఉపయోగించబడిన వాక్యం ఏది?",
-        options: ["సీత పుస్తకం చదివింది.", "అతడు పుస్తకం చదివాడు.", "మంచి బాలుడు బహుమతి పొందాడు.", "బాలుడు వేగంగా పరుగెత్తాడు."],
-        correct: 1,
-        explanation: "“అతడు” అనే పదం ఒక వ్యక్తి పేరుకు బదులుగా ఉపయోగించబడింది. నామవాచకానికి బదులుగా ఉపయోగించే పదాన్ని సర్వనామం అంటారు. కాబట్టి సరైన జవాబు B."
-    },
-    {
-        question: "“తెలివైన విద్యార్థి ప్రశ్నకు సమాధానం చెప్పాడు.” ఈ వాక్యంలో “తెలివైన” అనే పదం ఏది?",
-        options: ["నామవాచకం", "సర్వనామం", "విశేషణం", "క్రియావిశేషణం"],
-        correct: 2,
-        explanation: "“తెలివైన” అనే పదం “విద్యార్థి” అనే నామవాచకానికి గుణాన్ని తెలియజేస్తుంది. నామవాచకం లేదా సర్వనామం యొక్క లక్షణాన్ని తెలిపే పదాన్ని విశేషణం అంటారు."
-    },
-    {
-        question: "క్రింది వాటిలో భావవాచక నామవాచకం ఏది?",
-        options: ["పుస్తకం", "బాలుడు", "అందం", "చెట్టు"],
-        correct: 2,
-        explanation: "“అందం” అనేది ప్రత్యక్షంగా కనిపించే వ్యక్తి లేదా వస్తువు పేరు కాదు; ఒక గుణం లేదా భావాన్ని సూచిస్తుంది. అందువల్ల ఇది భావవాచక నామవాచకంగా పరిగణించబడుతుంది."
-    },
-    {
-        question: "క్రింది జతలలో వ్యక్తివాచక నామవాచకం – జాతివాచక నామవాచకం సరైన జత ఏది?",
-        options: ["గోదావరి – నది", "బాలుడు – రాము", "పక్షి – కోయిల", "పుస్తకం – రామాయణం"],
+        question: "“నరేంద్రుడు” అనే పదానికి సరైన సంధి విభజన ఏది?",
+        options: ["నర + ఇంద్రుడు — గుణసంధి", "నర + ఇంద్రుడు — వృద్ధి సంధి", "నరే + ఇంద్రుడు — సవర్ణదీర్ఘ సంధి", "నర + ఏంద్రుడు — యణాదేశ సంధి"],
         correct: 0,
-        explanation: "“గోదావరి” ఒక నిర్దిష్ట నది పేరు కాబట్టి వ్యక్తివాచకం. “నది” సాధారణ జాతిని సూచిస్తుంది కాబట్టి జాతివాచకం. అందువల్ల ఈ జత సరైనది."
+        explanation: "నర + ఇంద్రుడు కలిసినప్పుడు అ + ఇ కలిసి ఏ అవుతుంది. అ లేదా ఆకు ఇ లేదా ఈ కలిసినప్పుడు ఏ ఏర్పడటం గుణసంధి లక్షణం."
     },
     {
-        question: "“అతను తన పుస్తకాన్ని తీసుకున్నాడు.” ఈ వాక్యంలో “తన” అనే పదం ఏ పదభేదానికి చెందుతుంది?",
-        options: ["ప్రశ్నార్థక సర్వనామం", "స్వీయార్థక సర్వనామం", "సంబంధసూచక సర్వనామం", "అనిశ్చిత సర్వనామం"],
+        question: "“ఏకైక” అనే పదంలో కనిపించే సంధి ఏది?",
+        options: ["సవర్ణదీర్ఘ సంధి", "గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి"],
+        correct: 2,
+        explanation: "“ఏకైక”లో ఏక + ఏక పదాలు కలిసినప్పుడు ఏ + ఏ కలిసి ఐ రూపం ఏర్పడుతుంది. ఏ, ఐ వంటి వృద్ధి స్వరాల ఏర్పాటును వృద్ధి సంధిగా గుర్తించాలి."
+    },
+    {
+        question: "“కలిగియున్నాడు” అనే రూపంలో జరిగిన సంధి ఏది?",
+        options: ["గుణసంధి", "యడాగమ సంధి", "వృద్ధి సంధి", "సవర్ణదీర్ఘ సంధి"],
         correct: 1,
-        explanation: "“తన” అనే పదం కర్త అయిన “అతను” వైపే తిరిగి సూచిస్తుంది. కర్తను తిరిగి సూచించే రూపాన్ని స్వీయార్థక సర్వనామంగా ఇక్కడ ఉపయోగించారు."
+        explanation: "“కలిగి + ఉన్నాడు” కలిసినప్పుడు రెండు పదాల మధ్య య్ ఆగమంగా వచ్చి “కలిగియున్నాడు” రూపం ఏర్పడుతుంది. పదాల మధ్య య్ చేరడాన్ని యడాగమ సంధి అంటారు."
     },
     {
-        question: "క్రింది వాక్యంలో క్రియను గుర్తించండి. “పిల్లలు మైదానంలో ఆడుతున్నారు.”",
-        options: ["పిల్లలు", "మైదానంలో", "ఆడుతున్నారు", "లో"],
+        question: "“తల్లిదండ్రులు” అనే పదం ఏ సమాసానికి ఉదాహరణ?",
+        options: ["ద్విగు సమాసం", "ద్వంద్వ సమాసం", "బహువ్రీహి సమాసం", "కర్మధారయ సమాసం"],
+        correct: 1,
+        explanation: "“తల్లిదండ్రులు”లో తల్లి, తండ్రి అనే రెండు సమాన ప్రాధాన్య పదాలు కలిసి ఒక సమూహాన్ని సూచిస్తున్నాయి. అందువల్ల ఇది ద్వంద్వ సమాసానికి ఉదాహరణ."
+    },
+    {
+        question: "“నీలమేఘం” అనే సమాసపదానికి సరైన విగ్రహ వాక్యం ఏది?",
+        options: ["నీలము యొక్క మేఘము", "నీలమైన మేఘము", "నీలమును మరియు మేఘమును", "నీలము గల మేఘము"],
+        correct: 1,
+        explanation: "“నీలమేఘం”లో నీలమైన అనే విశేషణం మేఘం అనే విశేష్యాన్ని వివరిస్తుంది. విశేషణం, విశేష్యం కలిసి ఏర్పడినందువల్ల విగ్రహం “నీలమైన మేఘము” అవుతుంది."
+    },
+    {
+        question: "“పంచపాండవులు” ఏ సమాసానికి ఉదాహరణ?",
+        options: ["ద్వంద్వ సమాసం", "తత్పురుష సమాసం", "ద్విగు సమాసం", "బహువ్రీహి సమాసం"],
         correct: 2,
-        explanation: "“ఆడుతున్నారు” అనే పదం పిల్లలు చేస్తున్న పనిని తెలియజేస్తుంది. పని లేదా చర్యను తెలియజేసే పదాన్ని క్రియ అంటారు. కాబట్టి ఇది వాక్యంలోని క్రియ."
+        explanation: "“పంచపాండవులు”లో పంచ అనే సంఖ్యావాచక పదం పాండవులు అనే పదాన్ని సూచిస్తుంది. సంఖ్యాపూర్వకంగా ఏర్పడిన సమాసాన్ని ద్విగు సమాసం అంటారు."
     },
     {
-        question: "“రవి నెమ్మదిగా నడిచాడు.” అనే వాక్యంలో “నెమ్మదిగా” అనే పదం —",
-        options: ["నామవాచకాన్ని విశేషిస్తుంది", "సర్వనామాన్ని విశేషిస్తుంది", "క్రియను విశేషిస్తుంది", "విభక్తిని విశేషిస్తుంది"],
+        question: "“రాజపుత్రుడు” అనే పదానికి సరైన సమాస విగ్రహం ఏది?",
+        options: ["రాజైన పుత్రుడు", "రాజు మరియు పుత్రుడు", "రాజు యొక్క పుత్రుడు", "రాజు కొరకు పుత్రుడు"],
         correct: 2,
-        explanation: "“నెమ్మదిగా” అనే పదం రవి ఎలా నడిచాడో వివరిస్తుంది. ఇది “నడిచాడు” అనే క్రియను విశేషిస్తోంది. అందువల్ల ఇది క్రియావిశేషణంగా పనిచేస్తుంది."
+        explanation: "“రాజపుత్రుడు” అంటే రాజు యొక్క పుత్రుడు. ఇందులో పూర్వపదం రాజు, ఉత్తరపదం పుత్రుడు; సంబంధాన్ని సూచించే షష్ఠీ విభక్తి లుప్తమై సమాసం ఏర్పడింది."
     },
     {
-        question: "క్రింది వాటిలో అవ్యయం ఏది?",
-        options: ["రాము", "అందమైన", "నిన్న", "పుస్తకం"],
-        correct: 2,
-        explanation: "“నిన్న” అనే పదం కాలాన్ని సూచిస్తుంది మరియు రూపాంతరం చెందకుండా ఉపయోగించబడుతుంది. ఇలాంటి మార్పులేని పదాలను అవ్యయాలు అంటారు. అందువల్ల సరైన జవాబు C."
-    },
-    {
-        question: "“రాముడు పాఠశాలకు వెళ్లాడు.” అనే వాక్యంలో “కు” ఏ విభక్తిని సూచిస్తుంది?",
-        options: ["ప్రథమా విభక్తి", "ద్వితీయా విభక్తి", "చతుర్థీ విభక్తి", "సప్తమీ విభక్తి"],
-        correct: 2,
-        explanation: "“పాఠశాలకు” అనే పదంలోని “కు” గమ్యం లేదా ప్రయోజనాన్ని సూచిస్తుంది. తెలుగులో “కు” సాధారణంగా చతుర్థీ విభక్తిని సూచిస్తుంది. కాబట్టి సరైనది C."
-    },
-    {
-        question: "“రాముడు కత్తితో పండును కోశాడు.” ఈ వాక్యంలో “తో” ఏ విభక్తిని సూచిస్తుంది?",
-        options: ["తృతీయా విభక్తి", "చతుర్థీ విభక్తి", "పంచమీ విభక్తి", "షష్ఠీ విభక్తి"],
+        question: "“యథాశక్తి” అనే పదం ఏ సమాసానికి ఉదాహరణ?",
+        options: ["అవ్యయీభావ సమాసం", "ద్విగు సమాసం", "ద్వంద్వ సమాసం", "కర్మధారయ సమాసం"],
         correct: 0,
-        explanation: "“కత్తితో” అనే పదం కత్తిని సాధనంగా ఉపయోగించి పని జరిగినట్లు తెలియజేస్తుంది. సాధనం లేదా సహాయాన్ని సూచించే “తో” తృతీయా విభక్తిని సూచిస్తుంది."
+        explanation: "“యథాశక్తి” అంటే శక్తికి తగినట్లు లేదా శక్తి అనుసరించి అని అర్థం. అవ్యయపూర్వకంగా ఏర్పడిన ఈ సమాసం అవ్యయీభావ సమాసానికి ఉదాహరణ."
     },
     {
-        question: "క్రింది వాక్యాలలో సంబంధాన్ని సూచించే షష్ఠీ విభక్తి ఉన్నది ఏది?",
-        options: ["రాముడు పాఠశాలకు వెళ్లాడు.", "రాముని పుస్తకం బల్లపై ఉంది.", "రాముడు కత్తితో కోశాడు.", "రాముడు ఇంటి నుండి వచ్చాడు."],
+        question: "“ఆమె ముఖం చంద్రునివలె ప్రకాశిస్తోంది.” ఈ వాక్యంలో ఉన్న అలంకారం ఏది?",
+        options: ["రూపకం", "ఉపమ", "అతిశయోక్తి", "ఉత్ప్రేక్ష"],
         correct: 1,
-        explanation: "“రాముని పుస్తకం”లో “రాముని” అనే పదం పుస్తకానికి రాముడితో ఉన్న సంబంధాన్ని తెలియజేస్తుంది. సంబంధాన్ని సూచించే రూపం షష్ఠీ విభక్తికి ఉదాహరణ."
+        explanation: "ముఖాన్ని చంద్రునితో పోల్చడానికి “వలె” అనే ఉపమావాచక పదం ఉపయోగించబడింది. పోలిక స్పష్టంగా వ్యక్తమవుతున్నందువల్ల ఈ అలంకారం ఉపమ."
     },
     {
-        question: "“బాలుడు బంతిని విసిరాడు.” అనే వాక్యంలో “బంతిని” ఏ విభక్తిని సూచిస్తుంది?",
-        options: ["ప్రథమా", "ద్వితీయా", "తృతీయా", "చతుర్థీ"],
+        question: "“ఆమె ముఖచంద్రుడు అందంగా ఉన్నాడు.” అనే ప్రయోగంలో ప్రధానంగా కనిపించే అలంకారం ఏది?",
+        options: ["ఉపమ", "రూపకం", "అతిశయోక్తి", "స్వభావోక్తి"],
         correct: 1,
-        explanation: "“బంతిని” అనేది క్రియ అయిన “విసిరాడు”కు కర్మగా ఉంది. కర్మను సూచించే విభక్తిని ద్వితీయా విభక్తి అంటారు. అందువల్ల సరైన జవాబు B."
+        explanation: "ఇక్కడ ముఖాన్ని చంద్రునితో పోల్చి “వలె” వంటి పోలిక పదం లేకుండా నేరుగా ముఖమే చంద్రుడిగా చెప్పబడింది. అందువల్ల ఇది రూపక అలంకారం."
     },
     {
-        question: "క్రింది వాక్యాలలో కర్మణి వాక్యం ఏది?",
-        options: ["రాము కథ రాశాడు.", "సీత పూలు కోసింది.", "రామునిచే కథ రాయబడింది.", "పిల్లలు ఆట ఆడారు."],
+        question: "“ఆకాశంలో మేఘమో, పర్వతమో కనిపిస్తోంది.” అనే ప్రయోగంలో వస్తువును మరొకదిగా ఊహించే అలంకారం ఏది?",
+        options: ["ఉపమ", "రూపకం", "ఉత్ప్రేక్ష", "అనుప్రాస"],
         correct: 2,
-        explanation: "“రామునిచే కథ రాయబడింది”లో చర్యను చేసినవాడికంటే చర్యకు గురైన “కథ” ప్రధానంగా ఉంది. అందువల్ల ఇది కర్మణి వాక్యానికి ఉదాహరణ."
+        explanation: "ఒక వస్తువు మరొక వస్తువుగా ఉండవచ్చని ఊహించడం ఉత్ప్రేక్ష లక్షణం. ఇక్కడ కనిపిస్తున్న వస్తువును మేఘమో పర్వతమో అని ఊహిస్తున్నారు."
     },
     {
-        question: "“నీవు ఈ రోజు పాఠశాలకు వెళ్తావా?” ఈ వాక్యం ఏ వాక్యభేదానికి చెందుతుంది?",
-        options: ["విధ్యర్థక వాక్యం", "ప్రశ్నార్థక వాక్యం", "ఆశ్చర్యార్థక వాక్యం", "నిషేధార్థక వాక్యం"],
-        correct: 1,
-        explanation: "ఈ వాక్యం ఒక విషయాన్ని ప్రశ్నిస్తుంది మరియు చివరలో ప్రశ్నార్థక భావాన్ని వ్యక్తపరుస్తుంది. ప్రశ్న అడిగే వాక్యాన్ని ప్రశ్నార్థక వాక్యం అంటారు."
-    },
-    {
-        question: "“అయ్యో! గాజు పగిలిపోయింది!” ఈ వాక్యం ఏ రకానికి చెందుతుంది?",
-        options: ["ప్రశ్నార్థక వాక్యం", "ఆశ్చర్యార్థక వాక్యం", "ఆజ్ఞార్థక వాక్యం", "సామాన్య వాక్యం"],
-        correct: 1,
-        explanation: "“అయ్యో!” అనే పదం విచారం లేదా ఆశ్చర్యభావాన్ని వ్యక్తపరుస్తుంది. బలమైన భావోద్వేగాన్ని వ్యక్తపరిచే వాక్యాన్ని ఆశ్చర్యార్థక వాక్యం అంటారు. కాబట్టి B సరైనది."
-    },
-    {
-        question: "క్రింది వాటిలో ఆజ్ఞార్థక వాక్యం ఏది?",
-        options: ["నీవు ఎక్కడికి వెళ్తున్నావు?", "అతను నిన్న వచ్చాడు.", "దయచేసి తలుపు మూయండి.", "ఎంత అందమైన దృశ్యం!"],
+        question: "“అతని కీర్తి ఆకాశాన్ని దాటి వ్యాపించింది.” అనే ప్రయోగంలో అసాధారణమైన అతిశయాన్ని వ్యక్తం చేయడానికి ఉపయోగించిన అలంకారం ఏది?",
+        options: ["రూపకం", "ఉపమ", "అతిశయోక్తి", "ఉత్ప్రేక్ష"],
         correct: 2,
-        explanation: "“దయచేసి తలుపు మూయండి”లో ఒక పనిని చేయమని ఆదేశం లేదా అభ్యర్థన ఉంది. ఆజ్ఞ, అభ్యర్థన, సూచనలను వ్యక్తపరిచే వాక్యాన్ని ఆజ్ఞార్థక వాక్యం అంటారు."
+        explanation: "కీర్తి నిజంగా ఆకాశాన్ని దాటడం సాధ్యం కాకపోయినా, గొప్పతనాన్ని అతిశయంగా వ్యక్తీకరించారు. అసాధారణమైన అధికోక్తి ఉన్నందువల్ల ఇది అతిశయోక్తి."
     },
     {
-        question: "“వర్షం పడితే నేను ఇంట్లోనే ఉంటాను.” అనే వాక్యం ప్రధానంగా ఏ సంబంధాన్ని వ్యక్తపరుస్తుంది?",
-        options: ["కారణ–ఫలిత సంబంధం", "షరతు–ఫలిత సంబంధం", "వ్యతిరేక సంబంధం", "పోలిక సంబంధం"],
+        question: "“రాము కత్తితో కూరగాయలు కోశాడు.” వాక్యంలో “కత్తితో” ఏ విభక్తిని సూచిస్తుంది?",
+        options: ["ద్వితీయా విభక్తి", "తృతీయా విభక్తి", "చతుర్థీ విభక్తి", "పంచమీ విభక్తి"],
         correct: 1,
-        explanation: "“వర్షం పడితే” అనేది ఒక షరతును సూచిస్తుంది; “ఇంట్లోనే ఉంటాను” దాని ఫలితాన్ని తెలియజేస్తుంది. కాబట్టి ఇది షరతు–ఫలిత సంబంధాన్ని వ్యక్తపరుస్తుంది."
+        explanation: "“కత్తితో” అనే పదం పని చేయడానికి ఉపయోగించిన సాధనాన్ని సూచిస్తుంది. సాధనం లేదా ఉపకరణాన్ని సూచించే అర్థంలో తృతీయా విభక్తి ఉపయోగించబడుతుంది."
     },
     {
-        question: "క్రింది వాటిలో కర్త–క్రియ అన్వయం సరిగా ఉన్న వాక్యం ఏది?",
-        options: ["పిల్లలు మైదానంలో ఆడుతున్నాడు.", "బాలుడు మైదానంలో ఆడుతున్నారు.", "పిల్లలు మైదానంలో ఆడుతున్నారు.", "బాలికలు పాఠశాలకు వెళ్లాడు."],
+        question: "“గురువు విద్యార్థికి బహుమతి ఇచ్చాడు.” వాక్యంలో “విద్యార్థికి” ఏ విభక్తి?",
+        options: ["తృతీయా", "చతుర్థీ", "పంచమీ", "షష్ఠీ"],
+        correct: 1,
+        explanation: "“విద్యార్థికి” అనే పదం బహుమతి ఎవరికి ఇచ్చాడో సూచిస్తుంది. అందుకునే వ్యక్తిని లేదా ప్రయోజనాన్ని సూచించే విభక్తి చతుర్థీ విభక్తి."
+    },
+    {
+        question: "“రవి పాఠశాల నుండి ఇంటికి వెళ్లాడు.” వాక్యంలో “పాఠశాల నుండి” ఏ విభక్త్యర్థాన్ని సూచిస్తుంది?",
+        options: ["ద్వితీయా", "తృతీయా", "పంచమీ", "సప్తమీ"],
         correct: 2,
-        explanation: "“పిల్లలు” బహువచన కర్త. దీనికి అనుగుణంగా “ఆడుతున్నారు” అనే బహువచన క్రియ ఉపయోగించబడింది. కాబట్టి కర్త–క్రియ అన్వయం ఈ వాక్యంలో సరిగ్గా ఉంది."
+        explanation: "“పాఠశాల నుండి” అనే పదబంధం ప్రారంభ స్థానం లేదా వేరుపడే స్థానాన్ని సూచిస్తుంది. ఇలాంటి వియోగం లేదా ప్రారంభస్థానాన్ని పంచమీ విభక్తి సూచిస్తుంది."
     },
     {
-        question: "క్రింది వాక్యంలో విశేషణం–విశేష్యం సరైన జతను గుర్తించండి. “పచ్చని చెట్టు నీడనిచ్చింది.”",
-        options: ["పచ్చని – చెట్టు", "చెట్టు – నీడ", "నీడ – ఇచ్చింది", "పచ్చని – ఇచ్చింది"],
-        correct: 0,
-        explanation: "“పచ్చని” అనే పదం “చెట్టు” యొక్క లక్షణాన్ని తెలియజేస్తుంది. కాబట్టి “పచ్చని” విశేషణం, “చెట్టు” విశేష్యం. అందువల్ల A సరైన జత."
-    },
-    {
-        question: "క్రింది వాటిలో క్రియావిశేషణం మరియు అది విశేషించే క్రియ సరైన జత ఏది?",
-        options: ["వేగంగా – పరుగెత్తాడు", "మంచి – బాలుడు", "పెద్ద – ఇల్లు", "తెలివైన – విద్యార్థి"],
-        correct: 0,
-        explanation: "“వేగంగా” అనే పదం “పరుగెత్తాడు” అనే క్రియ ఎలా జరిగిందో తెలియజేస్తుంది. కాబట్టి ఇది క్రియావిశేషణం–క్రియకు సరైన జత."
-    },
-    {
-        question: "క్రింది పదాలలో సర్వనామం కానిది ఏది?",
-        options: ["నేను", "ఎవరు", "ఇది", "అందమైన"],
+        question: "“రాముని స్నేహితుడు వచ్చాడు.” వాక్యంలో “రాముని” ఏ విభక్తిని సూచిస్తుంది?",
+        options: ["ద్వితీయా", "చతుర్థీ", "పంచమీ", "షష్ఠీ"],
         correct: 3,
-        explanation: "“నేను”, “ఎవరు”, “ఇది” అనే పదాలు నామవాచకాలకు బదులుగా ఉపయోగించగల సర్వనామాలు. “అందమైన” మాత్రం లక్షణాన్ని తెలిపే విశేషణం."
+        explanation: "“రాముని స్నేహితుడు” అంటే రాముని యొక్క స్నేహితుడు. యాజమాన్యం లేదా సంబంధాన్ని సూచిస్తున్నందువల్ల “రాముని” షష్ఠీ విభక్తి."
     },
     {
-        question: "క్రింది వాక్యాలను పరిశీలించండి. i) రాము పాఠశాలకు వెళ్లాడు. ii) అతడు పాఠశాలకు వెళ్లాడు. iii) మంచి బాలుడు పాఠశాలకు వెళ్లాడు. iv) అతను త్వరగా నడిచాడు. సర్వనామం ఉన్న వాక్యాల సముదాయం ఏది?",
-        options: ["i, ii మాత్రమే", "ii, iv మాత్రమే", "i, iii మాత్రమే", "iii, iv మాత్రమే"],
-        correct: 1,
-        explanation: "iiలో “అతడు”, ivలో “అతను” నామవాచకానికి బదులుగా ఉపయోగించిన సర్వనామాలు. iలో “రాము”, iiiలో “బాలుడు” నామవాచకాలు. కాబట్టి ii, iv మాత్రమే."
-    },
-    {
-        question: "క్రింది జతలను పరిశీలించండి. i) ఇంటి నుండి — పంచమీ విభక్తి ii) రాముని పుస్తకం — షష్ఠీ విభక్తి iii) కత్తితో — తృతీయా విభక్తి iv) పాఠశాలకు — చతుర్థీ విభక్తి. సరైనవి ఏవి?",
-        options: ["i, ii మాత్రమే", "i, iii మాత్రమే", "ii, iii, iv మాత్రమే", "i, ii, iii, iv"],
-        correct: 3,
-        explanation: "“నుండి” పంచమీ, “రాముని” సంబంధాన్ని సూచించే షష్ఠీ, “తో” తృతీయా, “కు” చతుర్థీ విభక్తులను సూచిస్తాయి. కాబట్టి నాలుగు జతలూ సరైనవి."
-    },
-    {
-        question: "క్రింది వాక్యాల పరిశీలనలో క్రియావిశేషణం కలిగిన వాక్యాల సముదాయం ఏది? i) బాలుడు వేగంగా పరుగెత్తాడు. ii) ఆమె మంచి విద్యార్థిని. iii) రాము నిన్న వచ్చాడు. iv) తెలివైన బాలుడు గెలిచాడు.",
-        options: ["i, iii మాత్రమే", "i, ii మాత్రమే", "ii, iv మాత్రమే", "iii, iv మాత్రమే"],
-        correct: 0,
-        explanation: "iలో “వేగంగా”, iiiలో “నిన్న” క్రియను విశేషిస్తున్నాయి. iiలో “మంచి”, ivలో “తెలివైన” నామవాచకాలను విశేషించే విశేషణాలు. కాబట్టి i, iii మాత్రమే."
-    },
-    {
-        question: "Identify the noun in the following sentence: “The teacher praised the student.”",
-        options: ["teacher", "praised", "the", "the"],
-        correct: 0,
-        explanation: "“Teacher” is a noun because it names a person. “Praised” is a verb, while “the” is an article. Therefore, “teacher” is the required noun in this sentence."
-    },
-    {
-        question: "Which of the following contains a pronoun?",
-        options: ["Ravi bought a book.", "She bought a book.", "Ravi bought an interesting book.", "The student bought a book."],
-        correct: 1,
-        explanation: "“She” is a pronoun because it replaces or represents a person’s name. The other sentences use nouns such as Ravi, student, and book instead."
-    },
-    {
-        question: "Identify the adjective in the sentence: “The little boy opened the heavy box.”",
-        options: ["boy", "opened", "little", "box"],
+        question: "“సురేష్ కథను చదివాడు.” వాక్యంలో కర్త–కర్మ–క్రియల సరైన క్రమం ఏది?",
+        options: ["సురేష్ – చదివాడు – కథను", "కథను – సురేష్ – చదివాడు", "సురేష్ – కథను – చదివాడు", "చదివాడు – సురేష్ – కథను"],
         correct: 2,
-        explanation: "“Little” describes the noun “boy,” so it functions as an adjective. It provides information about the boy’s size or degree, modifying the noun directly."
+        explanation: "వాక్యంలో పని చేసేవాడు సురేష్ కర్త. చదివిన వస్తువు కథను కర్మ. చేసిన పని చదివాడు క్రియ. కాబట్టి కర్త–కర్మ–క్రియ క్రమం సరైనది."
     },
     {
-        question: "Identify the adverb in the sentence: “The child answered the question correctly.”",
-        options: ["child", "answered", "question", "correctly"],
-        correct: 3,
-        explanation: "“Correctly” describes how the child answered the question. Since it modifies the verb “answered” by expressing manner, it functions as an adverb in this sentence."
-    },
-    {
-        question: "Which word functions as a verb in the sentence? “The students discussed the problem.”",
-        options: ["students", "discussed", "problem", "the"],
-        correct: 1,
-        explanation: "“Discussed” expresses the action performed by the students. Therefore, it functions as the main verb. “Students” and “problem” are nouns, while “the” is an article."
-    },
-    {
-        question: "Choose the correct helping verb: “The children ______ playing in the garden.”",
-        options: ["is", "am", "are", "was"],
+        question: "క్రింది వాక్యాలలో కర్మ లేని వాక్యం ఏది?",
+        options: ["రవి పుస్తకం చదివాడు.", "సీత పువ్వును కోసింది.", "బాలుడు మైదానంలో పరుగెత్తాడు.", "ఉపాధ్యాయుడు పాఠాన్ని బోధించాడు."],
         correct: 2,
-        explanation: "“Children” is a plural subject, so the helping verb “are” agrees with it. The present continuous structure is “are playing,” making C correct."
+        explanation: "“బాలుడు మైదానంలో పరుగెత్తాడు” వాక్యంలో పరుగెత్తాడు అనే క్రియకు ప్రత్యక్ష కర్మ లేదు. అందువల్ల ఇది కర్మ లేని లేదా అకర్మక క్రియతో కూడిన వాక్యం."
     },
     {
-        question: "Choose the correct ordinary verb form: “She ______ to school every day.”",
-        options: ["go", "goes", "going", "gone"],
+        question: "“ఉపాధ్యాయుడు విద్యార్థితో సమాధానం రాయించాడు.” వాక్యంలో “రాయించాడు” అనే క్రియ ఏ భావాన్ని సూచిస్తుంది?",
+        options: ["అకర్మక క్రియ", "సకర్మక క్రియ", "ప్రేరణార్థక క్రియ", "నిషేధార్థక క్రియ"],
+        correct: 2,
+        explanation: "ఉపాధ్యాయుడు స్వయంగా రాయకుండా విద్యార్థితో రాయించాడు. ఒక వ్యక్తితో మరొక పని చేయించడాన్ని సూచించే క్రియను ప్రేరణార్థక క్రియ అంటారు."
+    },
+    {
+        question: "“రవి అన్నాడు: ‘నేను రేపు వస్తాను.’” దీనికి సరైన పరోక్ష వాక్యం ఏది?",
+        options: ["రవి తాను రేపు వస్తానని అన్నాడు.", "రవి నేను మరుసటి రోజు వస్తానని అన్నాడు.", "రవి తాను మరుసటి రోజు వస్తానని అన్నాడు.", "రవి తాను నిన్న వస్తానని అన్నాడు."],
+        correct: 2,
+        explanation: "ప్రత్యక్ష వాక్యంలోని “నేను” పరోక్ష వాక్యంలో “తాను”గా మారుతుంది. “రేపు” కూడా సందర్భానుసారం “మరుసటి రోజు”గా మారుతుంది."
+    },
+    {
+        question: "“అమ్మ చెప్పింది: ‘ఇక్కడికి రా.’” దీనికి సరైన పరోక్ష వాక్యం ఏది?",
+        options: ["అమ్మ అక్కడికి రమ్మని చెప్పింది.", "అమ్మ ఇక్కడికి వచ్చిందని చెప్పింది.", "అమ్మ అక్కడికి వచ్చానని చెప్పింది.", "అమ్మ ఇక్కడికి రమ్మని అడిగింది."],
+        correct: 0,
+        explanation: "ఆజ్ఞార్థక ప్రత్యక్ష వాక్యం పరోక్షంగా మార్చినప్పుడు “రా” → “రమ్మని” అవుతుంది. “ఇక్కడికి” సందర్భానుసారం “అక్కడికి”గా మారుతుంది."
+    },
+    {
+        question: "“ఉపాధ్యాయుడు పాఠాన్ని బోధించాడు.” దీనికి సరైన కర్మణి వాక్యం ఏది?",
+        options: ["పాఠం ఉపాధ్యాయునిచేత బోధించబడింది.", "ఉపాధ్యాయునిచేత పాఠాన్ని బోధించాడు.", "పాఠాన్ని ఉపాధ్యాయుడు బోధించబడింది.", "ఉపాధ్యాయుడు పాఠంచేత బోధించబడ్డాడు."],
+        correct: 0,
+        explanation: "కర్తరి వాక్యంలో కర్మ అయిన “పాఠం” కర్మణి వాక్యంలో కర్త స్థానంలోకి వస్తుంది. “ఉపాధ్యాయునిచేత” కర్తను సూచిస్తూ క్రియ కర్మణి రూపం పొందుతుంది."
+    },
+    {
+        question: "కింది వాటిని సరైన జతగా గుర్తించండి: i) రామాలయం ii) తల్లిదండ్రులు iii) ముఖచంద్రుడు iv) రామునికి A) రూపకం B) సవర్ణదీర్ఘ సంధి C) చతుర్థీ విభక్తి D) ద్వంద్వ సమాసం",
+        options: ["i-B, ii-D, iii-A, iv-C", "i-C, ii-D, iii-B, iv-A", "i-B, ii-A, iii-D, iv-C", "i-D, ii-B, iii-A, iv-C"],
+        correct: 0,
+        explanation: "రామాలయం సవర్ణదీర్ఘ సంధి, తల్లిదండ్రులు ద్వంద్వ సమాసం, ముఖచంద్రుడు రూపకం, రామునికి చతుర్థీ విభక్తి. కాబట్టి మొదటి జత సరైనది."
+    },
+    {
+        question: "కింది వాక్యాలను పరిశీలించండి. 1. “రాము పుస్తకం చదివాడు” — ఇది సకర్మక క్రియతో కూడిన వాక్యం. 2. “బాలుడు నిద్రపోయాడు” — ఇది అకర్మక క్రియతో కూడిన వాక్యం. 3. “గురువు విద్యార్థితో వ్యాయామం చేయించాడు” — ఇది ప్రేరణార్థక క్రియకు ఉదాహరణ. సరైన సమాధానాన్ని గుర్తించండి.",
+        options: ["1 మాత్రమే", "1 మరియు 2 మాత్రమే", "2 మరియు 3 మాత్రమే", "1, 2 మరియు 3"],
+        correct: 3,
+        explanation: "రాము పుస్తకాన్ని చదివాడు కాబట్టి సకర్మక క్రియ. బాలుడు నిద్రపోయాడు కాబట్టి అకర్మక క్రియ. గురువు విద్యార్థితో చేయించాడు కాబట్టి ప్రేరణార్థక క్రియ."
+    },
+
+    {
+        question: "Choose the correct article: He is ___ honest officer.",
+        options: ["a", "an", "the", "no article"],
         correct: 1,
-        explanation: "The subject “She” is third-person singular, and “every day” indicates simple present tense. Therefore, the verb “go” takes the singular form “goes.”"
+        explanation: "“Honest” begins with a vowel sound because the initial h is silent. Therefore, the indefinite article “an” is used before “honest officer” in this sentence."
+    },
+    {
+        question: "Choose the correct article: ___ Himalayas are covered with snow during much of the year.",
+        options: ["A", "An", "The", "No article"],
+        correct: 2,
+        explanation: "Names of mountain ranges take the definite article “the.” Therefore, we say “the Himalayas,” not “a Himalayas” or “Himalayas” alone."
+    },
+    {
+        question: "Choose the correct preposition: She is senior ___ me in the department.",
+        options: ["than", "from", "to", "with"],
+        correct: 2,
+        explanation: "The adjective “senior” is conventionally followed by the preposition “to,” not “than.” Therefore, the correct expression is “senior to me” in standard English."
+    },
+    {
+        question: "Choose the correct preposition: The manager insisted ___ checking the documents personally.",
+        options: ["at", "on", "for", "with"],
+        correct: 1,
+        explanation: "The verb “insist” is followed by the preposition “on” when referring to an action. The correct structure is “insisted on checking the documents personally.”"
+    },
+    {
+        question: "Choose the correct tense: By the time we reached the station, the train ___.",
+        options: ["leaves", "has left", "had left", "was leaving"],
+        correct: 2,
+        explanation: "The train left before another past event, our reaching the station. The past perfect “had left” correctly shows the earlier completed past action."
+    },
+    {
+        question: "Choose the correct verb form: I ___ in this town since 2022.",
+        options: ["live", "lived", "have lived", "am living"],
+        correct: 2,
+        explanation: "“Since 2022” indicates an action or state that began in the past and continues to the present. Therefore, the present perfect “have lived” is appropriate."
+    },
+    {
+        question: "Choose the correct tense: At this time tomorrow, I ___ to Delhi.",
+        options: ["travel", "travelled", "will be travelling", "have travelled"],
+        correct: 2,
+        explanation: "The phrase “at this time tomorrow” refers to an action that will be in progress at a specific future time. Hence, the future continuous is required."
+    },
+    {
+        question: "Choose the correct modal: You ___ submit the application by Friday; it is compulsory.",
+        options: ["might", "could", "must", "would"],
+        correct: 2,
+        explanation: "“Must” expresses strong obligation or necessity. Since submitting the application is compulsory, “must submit” correctly communicates the required action."
+    },
+    {
+        question: "Choose the correct modal expression: You ___ have informed me earlier; I could have helped you.",
+        options: ["may", "should", "can", "must"],
+        correct: 1,
+        explanation: "“Should have” expresses an action that was advisable but was not done in the past. Therefore, “should have informed” correctly expresses past criticism or regret."
+    },
+    {
+        question: "Choose the correct modal: ___ I borrow your dictionary for a few minutes?",
+        options: ["Must", "May", "Should", "Would"],
+        correct: 1,
+        explanation: "“May I...?” is a standard polite expression used when asking permission. Therefore, “May I borrow your dictionary?” is grammatically and contextually correct."
+    },
+    {
+        question: "Choose the correct conjunction: He is poor ___ honest.",
+        options: ["because", "but", "unless", "since"],
+        correct: 1,
+        explanation: "The sentence contrasts two qualities: being poor and being honest. The coordinating conjunction “but” expresses this contrast correctly."
+    },
+    {
+        question: "Choose the correct linker: The road was flooded; ___, the buses stopped running.",
+        options: ["however", "therefore", "meanwhile", "otherwise"],
+        correct: 1,
+        explanation: "The second clause gives the result of the flooded road. “Therefore” is a result linker, showing that the buses stopped because the road was flooded."
+    },
+    {
+        question: "Identify the type of clause underlined: I know what she wants.",
+        options: ["Adjective clause", "Adverb clause", "Noun clause", "Main clause"],
+        correct: 2,
+        explanation: "“What she wants” functions as the object of the verb “know.” Since it performs a noun-like function in the sentence, it is a noun clause."
+    },
+    {
+        question: "Identify the type of clause underlined: The boy who won the prize is my brother.",
+        options: ["Noun clause", "Adverb clause", "Relative/Adjective clause", "Main clause"],
+        correct: 2,
+        explanation: "“Who won the prize” describes or modifies the noun “boy.” A clause that modifies a noun is called a relative or adjective clause."
+    },
+    {
+        question: "Identify the type of conditional: If he had left earlier, he would have caught the train.",
+        options: ["Zero conditional", "First conditional", "Second conditional", "Third conditional"],
+        correct: 3,
+        explanation: "The sentence describes an unreal past condition and its imagined past result. The structure “if + past perfect, would have + past participle” identifies third conditional."
+    },
+    {
+        question: "Identify the type of conditional: If you work hard, you will succeed.",
+        options: ["First conditional", "Second conditional", "Third conditional", "Zero conditional"],
+        correct: 0,
+        explanation: "The first conditional expresses a realistic or possible future condition and result. Its common structure is “if + present simple” followed by “will + base verb.”"
+    },
+    {
+        question: "Choose the sentence with the same meaning: Unless you hurry, you will miss the bus.",
+        options: ["If you hurry, you will miss the bus.", "If you do not hurry, you will miss the bus.", "If you did not hurry, you would miss the bus.", "If you had hurried, you would miss the bus."],
+        correct: 1,
+        explanation: "“Unless” means “if not” in this context. Therefore, “Unless you hurry” has the same meaning as “If you do not hurry.”"
+    },
+    {
+        question: "Identify the simple sentence.",
+        options: ["When the teacher arrived, the students became silent.", "The teacher arrived and the students became silent.", "Having finished the work, she went home.", "She went home because she was tired."],
+        correct: 2,
+        explanation: "“Having finished the work” is a non-finite participial phrase, not an independent clause. The sentence therefore contains one finite main clause and is simple."
+    },
+    {
+        question: "Identify the compound sentence.",
+        options: ["Although he was tired, he continued working.", "He was tired, but he continued working.", "Being tired, he stopped working.", "When he was tired, he stopped working."],
+        correct: 1,
+        explanation: "A compound sentence contains two independent clauses joined by a coordinating conjunction. Here, “He was tired” and “he continued working” are joined by “but.”"
+    },
+    {
+        question: "Identify the complex sentence.",
+        options: ["He was tired, but he continued working.", "He finished the work and went home.", "Although he was tired, he continued working.", "Having finished the work, he went home."],
+        correct: 2,
+        explanation: "“Although he was tired” is a dependent adverb clause, while “he continued working” is the independent clause. Therefore, the sentence is complex."
+    },
+    {
+        question: "Identify the sentence structure of: “The teacher gave the students a task.”",
+        options: ["S + V + C", "S + V + O", "S + V + O + O", "S + V + O + C"],
+        correct: 2,
+        explanation: "“The teacher” is the subject, “gave” is the verb, “the students” is the indirect object, and “a task” is the direct object. Hence, S + V + O + O."
+    },
+    {
+        question: "Identify the sentence structure of: “The news made him happy.”",
+        options: ["S + V + O", "S + V + C", "S + V + O + C", "S + V + O + O"],
+        correct: 2,
+        explanation: "“The news” is the subject, “made” is the verb, “him” is the object, and “happy” describes the object. Therefore, the structure is S + V + O + C."
     },
     {
         question: "Choose the grammatically correct sentence.",
-        options: ["He don't like coffee.", "He doesn't likes coffee.", "He doesn't like coffee.", "He not like coffee."],
-        correct: 2,
-        explanation: "With the singular subject “He,” we use “doesn't.” After “doesn't,” the main verb remains in base form, so “doesn't like” is grammatically correct."
-    },
-    {
-        question: "Choose the correct option: “Neither the teacher nor the students ______ ready.”",
-        options: ["is", "was", "are", "has"],
-        correct: 2,
-        explanation: "With “neither...nor,” the verb generally agrees with the nearer subject. The nearer subject is plural “students,” so the plural verb “are” is correct."
-    },
-    {
-        question: "Choose the correct verb: “Each of the boys ______ a notebook.”",
-        options: ["have", "has", "are having", "were having"],
+        options: ["Because he was ill, therefore he stayed at home.", "He was ill, therefore he stayed at home.", "Although he was ill, but he attended the class.", "Unless he was ill, so he stayed at home."],
         correct: 1,
-        explanation: "“Each” is grammatically singular even though it refers to members of a group. Therefore, it takes the singular verb “has,” making option B correct."
+        explanation: "“Therefore” expresses a result and can connect two independent clauses with suitable punctuation. The other options incorrectly combine paired or incompatible conjunctions."
     },
     {
-        question: "Choose the correct sentence based on subject–verb agreement.",
-        options: ["The list of names are on the table.", "The list of names is on the table.", "The list of names were on the table.", "The list of names have on the table."],
-        correct: 1,
-        explanation: "The main subject is singular “list,” not the plural noun “names.” Therefore, the singular verb “is” must agree with “list,” making sentence B correct."
-    },
-    {
-        question: "In the sentence “My brother can swim very well,” the word “can” is a:",
-        options: ["Main verb", "Modal auxiliary", "Noun", "Adjective"],
-        correct: 1,
-        explanation: "“Can” is a modal auxiliary verb. It combines with the base form “swim” to express ability. Therefore, it is not the main lexical verb."
-    },
-    {
-        question: "Identify the function of the modal in the sentence: “You should consult a doctor.”",
-        options: ["Ability", "Permission", "Advice", "Possibility"],
-        correct: 2,
-        explanation: "The modal “should” commonly expresses advice or recommendation. In this sentence, it suggests that consulting a doctor is advisable, so the correct function is advice."
-    },
-    {
-        question: "Choose the correct form: “There ______ many students in the classroom.”",
-        options: ["is", "was", "are", "has"],
-        correct: 2,
-        explanation: "The noun following “there” is the plural noun “students.” Therefore, the present-tense plural verb “are” is required. The correct sentence is “There are many students.”"
-    },
-    {
-        question: "Which sentence contains an adverb modifying a verb?",
-        options: ["She is a careful driver.", "She drives carefully.", "She is careful.", "She has a careful attitude."],
-        correct: 1,
-        explanation: "In “She drives carefully,” the adverb “carefully” modifies the verb “drives” by describing how the action is performed. Therefore, option B is correct."
-    },
-    {
-        question: "Choose the correct option: “One of my friends ______ in Hyderabad.”",
-        options: ["live", "lives", "living", "are living"],
-        correct: 1,
-        explanation: "The subject is “One,” which is singular, while “of my friends” is a modifying phrase. Therefore, the singular verb “lives” is required."
-    },
-    {
-        question: "Identify the pronoun in the sentence: “The teacher gave them the books.”",
-        options: ["teacher", "gave", "them", "books"],
-        correct: 2,
-        explanation: "“Them” is a personal pronoun functioning as the object of “gave.” The words “teacher” and “books” are nouns, while “gave” is the verb."
-    },
-    {
-        question: "Which of the following is a proper noun?",
-        options: ["city", "river", "India", "country"],
-        correct: 2,
-        explanation: "“India” is the specific name of a country, so it is a proper noun. “City,” “river,” and “country” are common nouns."
-    },
-    {
-        question: "Identify the type of the underlined word: “The beautiful flowers attracted everyone.”",
-        options: ["Noun", "Pronoun", "Adjective", "Adverb"],
-        correct: 2,
-        explanation: "“Beautiful” describes the noun “flowers,” telling us their quality. A word that modifies or describes a noun is an adjective, so option C is correct."
-    },
-    {
-        question: "Choose the correct verb: “The news ______ true.”",
-        options: ["are", "were", "is", "have"],
-        correct: 2,
-        explanation: "“News” ends in “s” but is treated as a singular uncountable noun in standard English. Therefore, it takes the singular verb “is.”"
-    },
-    {
-        question: "Choose the correct sentence.",
-        options: ["Mathematics are my favourite subject.", "Mathematics is my favourite subject.", "Mathematics were my favourite subject.", "Mathematics have been my favourite subject."],
-        correct: 1,
-        explanation: "“Mathematics” is the name of an academic subject and normally takes a singular verb. Therefore, “Mathematics is my favourite subject” is grammatically correct."
-    },
-    {
-        question: "Consider the following statements:\n1. A noun can name a person, place, thing or idea.\n2. A pronoun can replace a noun or noun phrase.\n3. An adverb can modify a verb.\nWhich of the above statements are correct?",
-        options: ["1 only", "1 and 2 only", "2 and 3 only", "1, 2 and 3"],
-        correct: 3,
-        explanation: "All three statements accurately describe basic grammatical functions. Nouns name entities or ideas, pronouns replace nouns or noun phrases, and adverbs can modify verbs."
-    },
-    {
-        question: "Match Column-I with Column-II.\n\nColumn-I: i) quickly  ii) they  iii) honest  iv) teacher\n\nColumn-II: a) Pronoun  b) Adverb  c) Adjective  d) Noun",
-        options: ["i-b, ii-a, iii-c, iv-d", "i-a, ii-b, iii-d, iv-c", "i-c, ii-a, iii-b, iv-d", "i-b, ii-c, iii-a, iv-d"],
+        question: "Match Column-I with Column-II. i) because ii) although iii) unless iv) therefore — A) Contrast B) Condition C) Cause D) Result",
+        options: ["i-C, ii-A, iii-B, iv-D", "i-A, ii-C, iii-D, iv-B", "i-C, ii-B, iii-A, iv-D", "i-D, ii-A, iii-C, iv-B"],
         correct: 0,
-        explanation: "“Quickly” is an adverb, “they” is a pronoun, “honest” is an adjective, and “teacher” is a noun. Therefore, the first matching option is correct."
+        explanation: "“Because” introduces a cause, “although” introduces contrast, “unless” introduces a condition, and “therefore” indicates a result. Thus, option A gives all correct matches."
     },
     {
-        question: "Choose the correct sentence.",
-        options: ["The quality of these apples are good.", "The quality of these apples is good.", "The quality of these apples have good.", "The quality of these apples were good."],
-        correct: 1,
-        explanation: "The main subject is singular “quality,” while “of these apples” is a prepositional phrase. Therefore, the singular verb “is” correctly agrees with “quality.”"
-    },
-    {
-        question: "Identify the parts of speech of the underlined words: “The young boy ran quickly.”",
-        options: ["young – noun; quickly – adjective", "young – adjective; quickly – adverb", "young – adverb; quickly – adjective", "young – pronoun; quickly – verb"],
-        correct: 1,
-        explanation: "“Young” describes the noun “boy,” so it is an adjective. “Quickly” modifies the verb “ran,” so it is an adverb. Therefore, B is correct."
+        question: "Consider the following statements: 1. Unless can introduce a negative condition. 2. Although introduces a contrast between ideas. 3. Therefore is a coordinating conjunction. Which of the statements given above is/are correct?",
+        options: ["1 only", "2 only", "1 and 2 only", "1, 2 and 3"],
+        correct: 2,
+        explanation: "“Unless” introduces a negative condition and “although” introduces contrast. However, “therefore” is a conjunctive adverb, not a coordinating conjunction. Hence, statements 1 and 2 are correct."
     }
 ];
