@@ -5,304 +5,553 @@ const SUBJECTS = [
 
 const QUESTIONS = [
     {
-        question: "“రామాలయం” అనే పదంలో జరిగిన సంధి ఏది?",
-        options: ["గుణసంధి", "వృద్ధి సంధి", "సవర్ణదీర్ఘ సంధి", "యణాదేశ సంధి"],
-        correct: 2,
-        explanation: "“రామాలయం” పదంలో రామ + ఆలయం కలిసినప్పుడు అ + ఆ కలిసి ఆ అవుతుంది. ఒకే స్వరాల దీర్ఘరూపం ఏర్పడటం వల్ల దీనిని సవర్ణదీర్ఘ సంధి అంటారు."
+        question: "క్రింది వాక్యాలలో వాక్యదోషం లేనిది ఏది?",
+        options: [
+            "అతను నిన్న పాఠశాలకు వెళ్లినాడు.",
+            "అతను నిన్న పాఠశాలకు వెళ్లాడు.",
+            "అతను నిన్న పాఠశాలకు వెళ్ళుచున్నాడు.",
+            "అతను నిన్న పాఠశాలకు వెళ్లును."
+        ],
+        correct: 1,
+        explanation: "‘అతను నిన్న పాఠశాలకు వెళ్లాడు’ అనే వాక్యంలో కర్త, కాలం, క్రియల మధ్య సరైన అన్వయం ఉంది. ‘నిన్న’ గతకాలాన్ని సూచిస్తుంది కాబట్టి ‘వెళ్లాడు’ సరైన క్రియారూపం."
     },
     {
-        question: "“నరేంద్రుడు” అనే పదానికి సరైన సంధి విభజన ఏది?",
-        options: ["నర + ఇంద్రుడు — గుణసంధి", "నర + ఇంద్రుడు — వృద్ధి సంధి", "నరే + ఇంద్రుడు — సవర్ణదీర్ఘ సంధి", "నర + ఏంద్రుడు — యణాదేశ సంధి"],
+        question: "క్రింది వాటిలో సరైన పదప్రయోగం ఏది?",
+        options: [
+            "అతని మాటలు నాకు అనుమానం కలిగించాయి.",
+            "అతని మాటలు నాకు సందేహం కలిగించాయి.",
+            "అతని మాటలు నాకు సంశయం కలిగించాయి.",
+            "అతని మాటలు నాకు అపోహ కలిగించాయి."
+        ],
+        correct: 1,
+        explanation: "సందేహం అంటే ఒక విషయం నిజమా కాదా అనే అనిశ్చితి. ఇచ్చిన సందర్భంలో అతని మాటల వల్ల కలిగిన అనిశ్చితిని సూచించడానికి ‘సందేహం కలిగించాయి’ అనే ప్రయోగం సరైనది."
+    },
+    {
+        question: "క్రింది వాక్యాలలో సరైన వాక్య నిర్మాణం ఉన్నది ఏది?",
+        options: [
+            "రాముడు పుస్తకం చదివి పాఠశాలకు వెళ్లాడు.",
+            "రాముడు పాఠశాలకు పుస్తకం చదివి వెళ్లాడు.",
+            "పుస్తకం రాముడు చదివి పాఠశాలకు వెళ్లాడు.",
+            "పాఠశాలకు వెళ్లాడు రాముడు పుస్తకం చదివి."
+        ],
         correct: 0,
-        explanation: "నర + ఇంద్రుడు కలిసినప్పుడు అ + ఇ కలిసి ఏ అవుతుంది. అ లేదా ఆకు ఇ లేదా ఈ కలిసినప్పుడు ఏ ఏర్పడటం గుణసంధి లక్షణం."
+        explanation: "‘రాముడు పుస్తకం చదివి పాఠశాలకు వెళ్లాడు’ అనే వాక్యంలో కర్త, క్రియలు సహజమైన క్రమంలో ఉన్నాయి. మొదటి క్రియ పూర్తయిన తరువాత రెండవ క్రియ జరిగినట్లు స్పష్టంగా తెలుస్తుంది."
     },
     {
-        question: "“ఏకైక” అనే పదంలో కనిపించే సంధి ఏది?",
-        options: ["సవర్ణదీర్ఘ సంధి", "గుణసంధి", "వృద్ధి సంధి", "యణాదేశ సంధి"],
-        correct: 2,
-        explanation: "“ఏకైక”లో ఏక + ఏక పదాలు కలిసినప్పుడు ఏ + ఏ కలిసి ఐ రూపం ఏర్పడుతుంది. ఏ, ఐ వంటి వృద్ధి స్వరాల ఏర్పాటును వృద్ధి సంధిగా గుర్తించాలి."
-    },
-    {
-        question: "“కలిగియున్నాడు” అనే రూపంలో జరిగిన సంధి ఏది?",
-        options: ["గుణసంధి", "యడాగమ సంధి", "వృద్ధి సంధి", "సవర్ణదీర్ఘ సంధి"],
+        question: "“అతని అభిమానం వల్ల అందరూ అతనిని గౌరవించారు” అనే వాక్యంలో “అభిమానం”కు సరైన అర్థం ఏది?",
+        options: [
+            "అహంకారం",
+            "ప్రేమతో కూడిన ఆదరణ",
+            "అనుమానం",
+            "అసూయ"
+        ],
         correct: 1,
-        explanation: "“కలిగి + ఉన్నాడు” కలిసినప్పుడు రెండు పదాల మధ్య య్ ఆగమంగా వచ్చి “కలిగియున్నాడు” రూపం ఏర్పడుతుంది. పదాల మధ్య య్ చేరడాన్ని యడాగమ సంధి అంటారు."
+        explanation: "అభిమానం అంటే ప్రేమ, గౌరవం లేదా ఆదరణతో కూడిన అనుబంధ భావం. ఈ వాక్యంలో అతనిపై ఉన్న ప్రేమతో కూడిన ఆదరణ కారణంగా ఇతరులు అతనిని గౌరవించినట్లు అర్థమవుతుంది."
     },
     {
-        question: "“తల్లిదండ్రులు” అనే పదం ఏ సమాసానికి ఉదాహరణ?",
-        options: ["ద్విగు సమాసం", "ద్వంద్వ సమాసం", "బహువ్రీహి సమాసం", "కర్మధారయ సమాసం"],
+        question: "“రవి పరీక్షలో ఉత్తీర్ణుడయ్యాడని తెలిసి తల్లిదండ్రులు ________ వ్యక్తం చేశారు.” సందర్భానుసారంగా సరైన పదాన్ని ఎంచుకోండి.",
+        options: [
+            "సంతాపం",
+            "సంతోషం",
+            "సంశయం",
+            "విచారం"
+        ],
         correct: 1,
-        explanation: "“తల్లిదండ్రులు”లో తల్లి, తండ్రి అనే రెండు సమాన ప్రాధాన్య పదాలు కలిసి ఒక సమూహాన్ని సూచిస్తున్నాయి. అందువల్ల ఇది ద్వంద్వ సమాసానికి ఉదాహరణ."
+        explanation: "పరీక్షలో ఉత్తీర్ణత సాధించడం ఆనందకరమైన విషయం. అందువల్ల రవి విజయం గురించి తెలిసిన తల్లిదండ్రులు తమ ఆనందాన్ని లేదా సంతోషాన్ని వ్యక్తం చేస్తారని సందర్భానుసారం ‘సంతోషం’ సరైన పదం."
     },
     {
-        question: "“నీలమేఘం” అనే సమాసపదానికి సరైన విగ్రహ వాక్యం ఏది?",
-        options: ["నీలము యొక్క మేఘము", "నీలమైన మేఘము", "నీలమును మరియు మేఘమును", "నీలము గల మేఘము"],
-        correct: 1,
-        explanation: "“నీలమేఘం”లో నీలమైన అనే విశేషణం మేఘం అనే విశేష్యాన్ని వివరిస్తుంది. విశేషణం, విశేష్యం కలిసి ఏర్పడినందువల్ల విగ్రహం “నీలమైన మేఘము” అవుతుంది."
-    },
-    {
-        question: "“పంచపాండవులు” ఏ సమాసానికి ఉదాహరణ?",
-        options: ["ద్వంద్వ సమాసం", "తత్పురుష సమాసం", "ద్విగు సమాసం", "బహువ్రీహి సమాసం"],
-        correct: 2,
-        explanation: "“పంచపాండవులు”లో పంచ అనే సంఖ్యావాచక పదం పాండవులు అనే పదాన్ని సూచిస్తుంది. సంఖ్యాపూర్వకంగా ఏర్పడిన సమాసాన్ని ద్విగు సమాసం అంటారు."
-    },
-    {
-        question: "“రాజపుత్రుడు” అనే పదానికి సరైన సమాస విగ్రహం ఏది?",
-        options: ["రాజైన పుత్రుడు", "రాజు మరియు పుత్రుడు", "రాజు యొక్క పుత్రుడు", "రాజు కొరకు పుత్రుడు"],
-        correct: 2,
-        explanation: "“రాజపుత్రుడు” అంటే రాజు యొక్క పుత్రుడు. ఇందులో పూర్వపదం రాజు, ఉత్తరపదం పుత్రుడు; సంబంధాన్ని సూచించే షష్ఠీ విభక్తి లుప్తమై సమాసం ఏర్పడింది."
-    },
-    {
-        question: "“యథాశక్తి” అనే పదం ఏ సమాసానికి ఉదాహరణ?",
-        options: ["అవ్యయీభావ సమాసం", "ద్విగు సమాసం", "ద్వంద్వ సమాసం", "కర్మధారయ సమాసం"],
+        question: "‘కన్యాశుల్కం’ రచయిత ఎవరు?",
+        options: [
+            "గురజాడ అప్పారావు",
+            "శ్రీశ్రీ",
+            "కందుకూరి వీరేశలింగం",
+            "చిలకమర్తి లక్ష్మీనరసింహం"
+        ],
         correct: 0,
-        explanation: "“యథాశక్తి” అంటే శక్తికి తగినట్లు లేదా శక్తి అనుసరించి అని అర్థం. అవ్యయపూర్వకంగా ఏర్పడిన ఈ సమాసం అవ్యయీభావ సమాసానికి ఉదాహరణ."
+        explanation: "‘కన్యాశుల్కం’ తెలుగు సాహిత్యంలో ప్రసిద్ధ నాటకం. దీనిని గురజాడ అప్పారావు రచించారు. ఈ నాటకం సామాజిక దురాచారాలను, ముఖ్యంగా కన్యాశుల్కం వంటి ఆచారాలను విమర్శిస్తూ రచించబడింది."
     },
     {
-        question: "“ఆమె ముఖం చంద్రునివలె ప్రకాశిస్తోంది.” ఈ వాక్యంలో ఉన్న అలంకారం ఏది?",
-        options: ["రూపకం", "ఉపమ", "అతిశయోక్తి", "ఉత్ప్రేక్ష"],
+        question: "‘సుమతీ శతకం’ సంప్రదాయంగా ఎవరికి ఆపాదించబడింది?",
+        options: [
+            "వేమన",
+            "బద్దెన",
+            "శ్రీనాథుడు",
+            "పాల్కురికి సోమనాథుడు"
+        ],
         correct: 1,
-        explanation: "ముఖాన్ని చంద్రునితో పోల్చడానికి “వలె” అనే ఉపమావాచక పదం ఉపయోగించబడింది. పోలిక స్పష్టంగా వ్యక్తమవుతున్నందువల్ల ఈ అలంకారం ఉపమ."
+        explanation: "‘సుమతీ శతకం’ సంప్రదాయంగా బద్దెనకు ఆపాదించబడింది. ఇందులోని పద్యాలు నీతి, సామాజిక ప్రవర్తన, జీవనానుభవాలకు సంబంధించిన సరళమైన బోధనలను అందిస్తాయి."
     },
     {
-        question: "“ఆమె ముఖచంద్రుడు అందంగా ఉన్నాడు.” అనే ప్రయోగంలో ప్రధానంగా కనిపించే అలంకారం ఏది?",
-        options: ["ఉపమ", "రూపకం", "అతిశయోక్తి", "స్వభావోక్తి"],
-        correct: 1,
-        explanation: "ఇక్కడ ముఖాన్ని చంద్రునితో పోల్చి “వలె” వంటి పోలిక పదం లేకుండా నేరుగా ముఖమే చంద్రుడిగా చెప్పబడింది. అందువల్ల ఇది రూపక అలంకారం."
-    },
-    {
-        question: "“ఆకాశంలో మేఘమో, పర్వతమో కనిపిస్తోంది.” అనే ప్రయోగంలో వస్తువును మరొకదిగా ఊహించే అలంకారం ఏది?",
-        options: ["ఉపమ", "రూపకం", "ఉత్ప్రేక్ష", "అనుప్రాస"],
+        question: "‘ఆముక్తమాల్యద’ రచయిత ఎవరు?",
+        options: [
+            "అల్లసాని పెద్దన",
+            "నంది తిమ్మన",
+            "శ్రీకృష్ణదేవరాయలు",
+            "ధూర్జటి"
+        ],
         correct: 2,
-        explanation: "ఒక వస్తువు మరొక వస్తువుగా ఉండవచ్చని ఊహించడం ఉత్ప్రేక్ష లక్షణం. ఇక్కడ కనిపిస్తున్న వస్తువును మేఘమో పర్వతమో అని ఊహిస్తున్నారు."
+        explanation: "‘ఆముక్తమాల్యద’ను విజయనగర సామ్రాజ్యపు ప్రసిద్ధ రాజు, కవి శ్రీకృష్ణదేవరాయలు రచించారు. ఇది తెలుగు ప్రబంధ సాహిత్యంలో ముఖ్యమైన రచనగా ప్రసిద్ధి చెందింది."
     },
     {
-        question: "“అతని కీర్తి ఆకాశాన్ని దాటి వ్యాపించింది.” అనే ప్రయోగంలో అసాధారణమైన అతిశయాన్ని వ్యక్తం చేయడానికి ఉపయోగించిన అలంకారం ఏది?",
-        options: ["రూపకం", "ఉపమ", "అతిశయోక్తి", "ఉత్ప్రేక్ష"],
-        correct: 2,
-        explanation: "కీర్తి నిజంగా ఆకాశాన్ని దాటడం సాధ్యం కాకపోయినా, గొప్పతనాన్ని అతిశయంగా వ్యక్తీకరించారు. అసాధారణమైన అధికోక్తి ఉన్నందువల్ల ఇది అతిశయోక్తి."
-    },
-    {
-        question: "“రాము కత్తితో కూరగాయలు కోశాడు.” వాక్యంలో “కత్తితో” ఏ విభక్తిని సూచిస్తుంది?",
-        options: ["ద్వితీయా విభక్తి", "తృతీయా విభక్తి", "చతుర్థీ విభక్తి", "పంచమీ విభక్తి"],
-        correct: 1,
-        explanation: "“కత్తితో” అనే పదం పని చేయడానికి ఉపయోగించిన సాధనాన్ని సూచిస్తుంది. సాధనం లేదా ఉపకరణాన్ని సూచించే అర్థంలో తృతీయా విభక్తి ఉపయోగించబడుతుంది."
-    },
-    {
-        question: "“గురువు విద్యార్థికి బహుమతి ఇచ్చాడు.” వాక్యంలో “విద్యార్థికి” ఏ విభక్తి?",
-        options: ["తృతీయా", "చతుర్థీ", "పంచమీ", "షష్ఠీ"],
-        correct: 1,
-        explanation: "“విద్యార్థికి” అనే పదం బహుమతి ఎవరికి ఇచ్చాడో సూచిస్తుంది. అందుకునే వ్యక్తిని లేదా ప్రయోజనాన్ని సూచించే విభక్తి చతుర్థీ విభక్తి."
-    },
-    {
-        question: "“రవి పాఠశాల నుండి ఇంటికి వెళ్లాడు.” వాక్యంలో “పాఠశాల నుండి” ఏ విభక్త్యర్థాన్ని సూచిస్తుంది?",
-        options: ["ద్వితీయా", "తృతీయా", "పంచమీ", "సప్తమీ"],
-        correct: 2,
-        explanation: "“పాఠశాల నుండి” అనే పదబంధం ప్రారంభ స్థానం లేదా వేరుపడే స్థానాన్ని సూచిస్తుంది. ఇలాంటి వియోగం లేదా ప్రారంభస్థానాన్ని పంచమీ విభక్తి సూచిస్తుంది."
-    },
-    {
-        question: "“రాముని స్నేహితుడు వచ్చాడు.” వాక్యంలో “రాముని” ఏ విభక్తిని సూచిస్తుంది?",
-        options: ["ద్వితీయా", "చతుర్థీ", "పంచమీ", "షష్ఠీ"],
-        correct: 3,
-        explanation: "“రాముని స్నేహితుడు” అంటే రాముని యొక్క స్నేహితుడు. యాజమాన్యం లేదా సంబంధాన్ని సూచిస్తున్నందువల్ల “రాముని” షష్ఠీ విభక్తి."
-    },
-    {
-        question: "“సురేష్ కథను చదివాడు.” వాక్యంలో కర్త–కర్మ–క్రియల సరైన క్రమం ఏది?",
-        options: ["సురేష్ – చదివాడు – కథను", "కథను – సురేష్ – చదివాడు", "సురేష్ – కథను – చదివాడు", "చదివాడు – సురేష్ – కథను"],
-        correct: 2,
-        explanation: "వాక్యంలో పని చేసేవాడు సురేష్ కర్త. చదివిన వస్తువు కథను కర్మ. చేసిన పని చదివాడు క్రియ. కాబట్టి కర్త–కర్మ–క్రియ క్రమం సరైనది."
-    },
-    {
-        question: "క్రింది వాక్యాలలో కర్మ లేని వాక్యం ఏది?",
-        options: ["రవి పుస్తకం చదివాడు.", "సీత పువ్వును కోసింది.", "బాలుడు మైదానంలో పరుగెత్తాడు.", "ఉపాధ్యాయుడు పాఠాన్ని బోధించాడు."],
-        correct: 2,
-        explanation: "“బాలుడు మైదానంలో పరుగెత్తాడు” వాక్యంలో పరుగెత్తాడు అనే క్రియకు ప్రత్యక్ష కర్మ లేదు. అందువల్ల ఇది కర్మ లేని లేదా అకర్మక క్రియతో కూడిన వాక్యం."
-    },
-    {
-        question: "“ఉపాధ్యాయుడు విద్యార్థితో సమాధానం రాయించాడు.” వాక్యంలో “రాయించాడు” అనే క్రియ ఏ భావాన్ని సూచిస్తుంది?",
-        options: ["అకర్మక క్రియ", "సకర్మక క్రియ", "ప్రేరణార్థక క్రియ", "నిషేధార్థక క్రియ"],
-        correct: 2,
-        explanation: "ఉపాధ్యాయుడు స్వయంగా రాయకుండా విద్యార్థితో రాయించాడు. ఒక వ్యక్తితో మరొక పని చేయించడాన్ని సూచించే క్రియను ప్రేరణార్థక క్రియ అంటారు."
-    },
-    {
-        question: "“రవి అన్నాడు: ‘నేను రేపు వస్తాను.’” దీనికి సరైన పరోక్ష వాక్యం ఏది?",
-        options: ["రవి తాను రేపు వస్తానని అన్నాడు.", "రవి నేను మరుసటి రోజు వస్తానని అన్నాడు.", "రవి తాను మరుసటి రోజు వస్తానని అన్నాడు.", "రవి తాను నిన్న వస్తానని అన్నాడు."],
-        correct: 2,
-        explanation: "ప్రత్యక్ష వాక్యంలోని “నేను” పరోక్ష వాక్యంలో “తాను”గా మారుతుంది. “రేపు” కూడా సందర్భానుసారం “మరుసటి రోజు”గా మారుతుంది."
-    },
-    {
-        question: "“అమ్మ చెప్పింది: ‘ఇక్కడికి రా.’” దీనికి సరైన పరోక్ష వాక్యం ఏది?",
-        options: ["అమ్మ అక్కడికి రమ్మని చెప్పింది.", "అమ్మ ఇక్కడికి వచ్చిందని చెప్పింది.", "అమ్మ అక్కడికి వచ్చానని చెప్పింది.", "అమ్మ ఇక్కడికి రమ్మని అడిగింది."],
+        question: "“దేశమును ప్రేమించుమన్నా” అనే ప్రసిద్ధ గేయం రచయితగా ఎవరిని గుర్తించాలి?",
+        options: [
+            "గురజాడ అప్పారావు",
+            "రాయప్రోలు సుబ్బారావు",
+            "దేవులపల్లి కృష్ణశాస్త్రి",
+            "దాశరథి కృష్ణమాచార్య"
+        ],
         correct: 0,
-        explanation: "ఆజ్ఞార్థక ప్రత్యక్ష వాక్యం పరోక్షంగా మార్చినప్పుడు “రా” → “రమ్మని” అవుతుంది. “ఇక్కడికి” సందర్భానుసారం “అక్కడికి”గా మారుతుంది."
+        explanation: "“దేశమును ప్రేమించుమన్నా” అనే ప్రసిద్ధ దేశభక్తి గేయం గురజాడ అప్పారావు రచన. ఇందులో దేశభక్తి, సమాజహితం, ప్రజల పట్ల బాధ్యత వంటి భావాలను కవి ప్రేరణాత్మకంగా వ్యక్తపరిచారు."
     },
     {
-        question: "“ఉపాధ్యాయుడు పాఠాన్ని బోధించాడు.” దీనికి సరైన కర్మణి వాక్యం ఏది?",
-        options: ["పాఠం ఉపాధ్యాయునిచేత బోధించబడింది.", "ఉపాధ్యాయునిచేత పాఠాన్ని బోధించాడు.", "పాఠాన్ని ఉపాధ్యాయుడు బోధించబడింది.", "ఉపాధ్యాయుడు పాఠంచేత బోధించబడ్డాడు."],
+        question: "క్రింది వాటిలో కవిత్రయం కు చెందిన కవుల సమూహం ఏది?",
+        options: [
+            "నన్నయ – తిక్కన – ఎర్రప్రగడ",
+            "శ్రీనాథ – పోతన – వేమన",
+            "పెద్దన – తిమ్మన – ధూర్జటి",
+            "గురజాడ – శ్రీశ్రీ – దాశరథి"
+        ],
         correct: 0,
-        explanation: "కర్తరి వాక్యంలో కర్మ అయిన “పాఠం” కర్మణి వాక్యంలో కర్త స్థానంలోకి వస్తుంది. “ఉపాధ్యాయునిచేత” కర్తను సూచిస్తూ క్రియ కర్మణి రూపం పొందుతుంది."
+        explanation: "తెలుగు మహాభారతాన్ని అనువదించిన ముగ్గురు ప్రముఖ కవులు నన్నయ, తిక్కన, ఎర్రప్రగడ. వీరినే సంప్రదాయంగా కవిత్రయం అని పిలుస్తారు."
     },
     {
-        question: "కింది వాటిని సరైన జతగా గుర్తించండి: i) రామాలయం ii) తల్లిదండ్రులు iii) ముఖచంద్రుడు iv) రామునికి A) రూపకం B) సవర్ణదీర్ఘ సంధి C) చతుర్థీ విభక్తి D) ద్వంద్వ సమాసం",
-        options: ["i-B, ii-D, iii-A, iv-C", "i-C, ii-D, iii-B, iv-A", "i-B, ii-A, iii-D, iv-C", "i-D, ii-B, iii-A, iv-C"],
+        question: "“చేతులు కాలిన తరువాత ఆకులు పట్టుకున్నట్లు” అనే భావానికి దగ్గరగా ఉన్న జాతీయం ఏది?",
+        options: [
+            "కళ్లకు కట్టినట్లు",
+            "చేతులు కాలాక ఆకులు పట్టుకున్నట్లు",
+            "నోట్లో నాలుక లేనట్లు",
+            "గాలిలో దీపం పెట్టినట్లు"
+        ],
+        correct: 1,
+        explanation: "ఈ జాతీయం నష్టం జరిగిన తరువాత జాగ్రత్తపడటం లేదా సమస్య ఏర్పడిన తరువాత చర్య తీసుకోవడాన్ని సూచిస్తుంది. ఇచ్చిన ఎంపికల్లో అదే భావాన్ని నేరుగా వ్యక్తపరిచేది రెండవది."
+    },
+    {
+        question: "“భగీరథ ప్రయత్నం” అనే జాతీయానికి సరైన అర్థం ఏది?",
+        options: [
+            "చాలా తక్కువ సమయంలో పని పూర్తి చేయడం",
+            "ఎంతో కష్టపడి అసాధ్యమనుకున్న పనిని సాధించడానికి ప్రయత్నించడం",
+            "ఇతరుల సహాయంతో పని చేయడం",
+            "పనిని మధ్యలోనే వదిలివేయడం"
+        ],
+        correct: 1,
+        explanation: "భగీరథ ప్రయత్నం అంటే ఎంతో పట్టుదలతో, కష్టంతో సాధించడం కష్టమైన కార్యాన్ని పూర్తి చేయడానికి చేసే ప్రయత్నం. నిరంతర శ్రమ, పట్టుదల ఈ జాతీయ భావానికి ప్రధాన లక్షణాలు."
+    },
+    {
+        question: "“అదిగో పులి అంటే ఇదిగో తోక” అనే సామెత ఏ సందర్భానికి సరిపోతుంది?",
+        options: [
+            "ఒక పని ఆలస్యంగా పూర్తవడం",
+            "చిన్న విషయాన్ని అతిశయోక్తిగా ప్రచారం చేయడం",
+            "కష్టపడి విజయం సాధించడం",
+            "రహస్యాన్ని దాచిపెట్టడం"
+        ],
+        correct: 1,
+        explanation: "ఈ సామెత ఒక చిన్న విషయం మరొకరి ద్వారా పెద్దదిగా మారి ప్రచారం కావడాన్ని సూచిస్తుంది. అంటే విషయాన్ని అతిశయోక్తిగా చెప్పడం లేదా వదంతి రూపంలో వ్యాప్తి చేయడం."
+    },
+    {
+        question: "“విద్యార్థులు శ్రద్ధగా చదివారు, కాబట్టి మంచి మార్కులు సాధించారు.” ఇక్కడ “కాబట్టి” ఏ సంబంధాన్ని సూచిస్తుంది?",
+        options: [
+            "వ్యతిరేకత",
+            "కారణ–ఫలిత సంబంధం",
+            "సందేహం",
+            "కాల సంబంధం"
+        ],
+        correct: 1,
+        explanation: "‘కాబట్టి’ అనే పదం ముందున్న కారణానికి తరువాతి ఫలితాన్ని అనుసంధానిస్తుంది. విద్యార్థులు శ్రద్ధగా చదవడం కారణం కాగా, మంచి మార్కులు సాధించడం దాని ఫలితంగా వాక్యంలో చూపబడింది."
+    },
+    {
+        question: "“రాజు + ఇంద్రుడు” అనే పదాల కలయికలో ఏర్పడే సంధి ఏది?",
+        options: [
+            "గుణసంధి",
+            "వృద్ధిసంధి",
+            "యణాదేశ సంధి",
+            "ద్విరుక్తటకార సంధి"
+        ],
         correct: 0,
-        explanation: "రామాలయం సవర్ణదీర్ఘ సంధి, తల్లిదండ్రులు ద్వంద్వ సమాసం, ముఖచంద్రుడు రూపకం, రామునికి చతుర్థీ విభక్తి. కాబట్టి మొదటి జత సరైనది."
+        explanation: "‘రాజు + ఇంద్రుడు’ పదాల కలయికలో అచ్చు మార్పు సంభవించి సంధి రూపం ఏర్పడుతుంది. ఇచ్చిన ఎంపికల ప్రకారం ఈ పదాల కలయికకు గుణసంధి సమాధానంగా ఇవ్వబడింది."
     },
     {
-        question: "కింది వాక్యాలను పరిశీలించండి. 1. “రాము పుస్తకం చదివాడు” — ఇది సకర్మక క్రియతో కూడిన వాక్యం. 2. “బాలుడు నిద్రపోయాడు” — ఇది అకర్మక క్రియతో కూడిన వాక్యం. 3. “గురువు విద్యార్థితో వ్యాయామం చేయించాడు” — ఇది ప్రేరణార్థక క్రియకు ఉదాహరణ. సరైన సమాధానాన్ని గుర్తించండి.",
-        options: ["1 మాత్రమే", "1 మరియు 2 మాత్రమే", "2 మరియు 3 మాత్రమే", "1, 2 మరియు 3"],
-        correct: 3,
-        explanation: "రాము పుస్తకాన్ని చదివాడు కాబట్టి సకర్మక క్రియ. బాలుడు నిద్రపోయాడు కాబట్టి అకర్మక క్రియ. గురువు విద్యార్థితో చేయించాడు కాబట్టి ప్రేరణార్థక క్రియ."
-    },
-
-    {
-        question: "Choose the correct article: He is ___ honest officer.",
-        options: ["a", "an", "the", "no article"],
-        correct: 1,
-        explanation: "“Honest” begins with a vowel sound because the initial h is silent. Therefore, the indefinite article “an” is used before “honest officer” in this sentence."
-    },
-    {
-        question: "Choose the correct article: ___ Himalayas are covered with snow during much of the year.",
-        options: ["A", "An", "The", "No article"],
-        correct: 2,
-        explanation: "Names of mountain ranges take the definite article “the.” Therefore, we say “the Himalayas,” not “a Himalayas” or “Himalayas” alone."
-    },
-    {
-        question: "Choose the correct preposition: She is senior ___ me in the department.",
-        options: ["than", "from", "to", "with"],
-        correct: 2,
-        explanation: "The adjective “senior” is conventionally followed by the preposition “to,” not “than.” Therefore, the correct expression is “senior to me” in standard English."
-    },
-    {
-        question: "Choose the correct preposition: The manager insisted ___ checking the documents personally.",
-        options: ["at", "on", "for", "with"],
-        correct: 1,
-        explanation: "The verb “insist” is followed by the preposition “on” when referring to an action. The correct structure is “insisted on checking the documents personally.”"
-    },
-    {
-        question: "Choose the correct tense: By the time we reached the station, the train ___.",
-        options: ["leaves", "has left", "had left", "was leaving"],
-        correct: 2,
-        explanation: "The train left before another past event, our reaching the station. The past perfect “had left” correctly shows the earlier completed past action."
-    },
-    {
-        question: "Choose the correct verb form: I ___ in this town since 2022.",
-        options: ["live", "lived", "have lived", "am living"],
-        correct: 2,
-        explanation: "“Since 2022” indicates an action or state that began in the past and continues to the present. Therefore, the present perfect “have lived” is appropriate."
-    },
-    {
-        question: "Choose the correct tense: At this time tomorrow, I ___ to Delhi.",
-        options: ["travel", "travelled", "will be travelling", "have travelled"],
-        correct: 2,
-        explanation: "The phrase “at this time tomorrow” refers to an action that will be in progress at a specific future time. Hence, the future continuous is required."
-    },
-    {
-        question: "Choose the correct modal: You ___ submit the application by Friday; it is compulsory.",
-        options: ["might", "could", "must", "would"],
-        correct: 2,
-        explanation: "“Must” expresses strong obligation or necessity. Since submitting the application is compulsory, “must submit” correctly communicates the required action."
-    },
-    {
-        question: "Choose the correct modal expression: You ___ have informed me earlier; I could have helped you.",
-        options: ["may", "should", "can", "must"],
-        correct: 1,
-        explanation: "“Should have” expresses an action that was advisable but was not done in the past. Therefore, “should have informed” correctly expresses past criticism or regret."
-    },
-    {
-        question: "Choose the correct modal: ___ I borrow your dictionary for a few minutes?",
-        options: ["Must", "May", "Should", "Would"],
-        correct: 1,
-        explanation: "“May I...?” is a standard polite expression used when asking permission. Therefore, “May I borrow your dictionary?” is grammatically and contextually correct."
-    },
-    {
-        question: "Choose the correct conjunction: He is poor ___ honest.",
-        options: ["because", "but", "unless", "since"],
-        correct: 1,
-        explanation: "The sentence contrasts two qualities: being poor and being honest. The coordinating conjunction “but” expresses this contrast correctly."
-    },
-    {
-        question: "Choose the correct linker: The road was flooded; ___, the buses stopped running.",
-        options: ["however", "therefore", "meanwhile", "otherwise"],
-        correct: 1,
-        explanation: "The second clause gives the result of the flooded road. “Therefore” is a result linker, showing that the buses stopped because the road was flooded."
-    },
-    {
-        question: "Identify the type of clause underlined: I know what she wants.",
-        options: ["Adjective clause", "Adverb clause", "Noun clause", "Main clause"],
-        correct: 2,
-        explanation: "“What she wants” functions as the object of the verb “know.” Since it performs a noun-like function in the sentence, it is a noun clause."
-    },
-    {
-        question: "Identify the type of clause underlined: The boy who won the prize is my brother.",
-        options: ["Noun clause", "Adverb clause", "Relative/Adjective clause", "Main clause"],
-        correct: 2,
-        explanation: "“Who won the prize” describes or modifies the noun “boy.” A clause that modifies a noun is called a relative or adjective clause."
-    },
-    {
-        question: "Identify the type of conditional: If he had left earlier, he would have caught the train.",
-        options: ["Zero conditional", "First conditional", "Second conditional", "Third conditional"],
-        correct: 3,
-        explanation: "The sentence describes an unreal past condition and its imagined past result. The structure “if + past perfect, would have + past participle” identifies third conditional."
-    },
-    {
-        question: "Identify the type of conditional: If you work hard, you will succeed.",
-        options: ["First conditional", "Second conditional", "Third conditional", "Zero conditional"],
+        question: "“దేవ + ఆలయం” → “దేవాలయం” అనే రూపంలో కనిపించే సంధి ఏది?",
+        options: [
+            "గుణసంధి",
+            "వృద్ధిసంధి",
+            "యణాదేశ సంధి",
+            "అత్వసంధి"
+        ],
         correct: 0,
-        explanation: "The first conditional expresses a realistic or possible future condition and result. Its common structure is “if + present simple” followed by “will + base verb.”"
+        explanation: "‘దేవ + ఆలయం’ కలిసినప్పుడు రెండు పదాలు సంధి ద్వారా ‘దేవాలయం’గా మారుతాయి. ఇచ్చిన ప్రశ్నలో పేర్కొన్న ఎంపికల ప్రకారం దీనికి గుణసంధి సమాధానంగా సూచించబడింది."
     },
     {
-        question: "Choose the sentence with the same meaning: Unless you hurry, you will miss the bus.",
-        options: ["If you hurry, you will miss the bus.", "If you do not hurry, you will miss the bus.", "If you did not hurry, you would miss the bus.", "If you had hurried, you would miss the bus."],
-        correct: 1,
-        explanation: "“Unless” means “if not” in this context. Therefore, “Unless you hurry” has the same meaning as “If you do not hurry.”"
-    },
-    {
-        question: "Identify the simple sentence.",
-        options: ["When the teacher arrived, the students became silent.", "The teacher arrived and the students became silent.", "Having finished the work, she went home.", "She went home because she was tired."],
+        question: "“రాజమార్గం” అనే పదానికి సరైన సమాస విగ్రహం ఏది?",
+        options: [
+            "రాజు అయిన మార్గం",
+            "రాజుకు సంబంధించిన మార్గం",
+            "రాజు యొక్క మార్గం",
+            "రాజు మరియు మార్గం"
+        ],
         correct: 2,
-        explanation: "“Having finished the work” is a non-finite participial phrase, not an independent clause. The sentence therefore contains one finite main clause and is simple."
+        explanation: "‘రాజమార్గం’ అనే పదాన్ని విగ్రహించినప్పుడు ‘రాజు యొక్క మార్గం’ అని అర్థం వస్తుంది. ఇందులో రాజు మరియు మార్గం మధ్య సంబంధాన్ని ‘యొక్క’ అనే పదం స్పష్టంగా తెలియజేస్తుంది."
     },
     {
-        question: "Identify the compound sentence.",
-        options: ["Although he was tired, he continued working.", "He was tired, but he continued working.", "Being tired, he stopped working.", "When he was tired, he stopped working."],
+        question: "“నీలాకాశం” అనే పదంలో ఏ సమాసం ఉంది?",
+        options: [
+            "ద్వంద్వ సమాసం",
+            "కర్మధారయ సమాసం",
+            "బహువ్రీహి సమాసం",
+            "అవ్యయీభావ సమాసం"
+        ],
         correct: 1,
-        explanation: "A compound sentence contains two independent clauses joined by a coordinating conjunction. Here, “He was tired” and “he continued working” are joined by “but.”"
+        explanation: "‘నీలాకాశం’లో ‘నీలమైన ఆకాశం’ అనే అర్థం వస్తుంది. విశేషణం, విశేష్యంతో కలిసి ఒకే వస్తువును సూచిస్తున్నందున దీనిని కర్మధారయ సమాసంగా గుర్తిస్తారు."
+    },
+    {
+        question: "క్రింది వాక్యాలలో కర్తరి వాక్యం ఏది?",
+        options: [
+            "బాలుడిచే కథ చదవబడింది.",
+            "కథ బాలుడిచే చదవబడింది.",
+            "బాలుడు కథ చదివాడు.",
+            "కథ చదవబడుచున్నది."
+        ],
+        correct: 2,
+        explanation: "కర్తరి వాక్యంలో కర్త స్వయంగా క్రియను నిర్వహిస్తాడు. ‘బాలుడు కథ చదివాడు’ అనే వాక్యంలో బాలుడు కర్తగా ఉండి చదివాడు అనే క్రియను స్వయంగా చేశాడు."
+    },
+    {
+        question: "“రాము పుస్తకం చదివాడు” అనే వాక్యాన్ని కర్మణి వాక్యంగా మార్చినప్పుడు సరైన రూపం ఏది?",
+        options: [
+            "పుస్తకం రాముచే చదవబడింది.",
+            "పుస్తకం రామును చదివింది.",
+            "రాముచే పుస్తకం చదివాడు.",
+            "పుస్తకం రాముకు చదివింది."
+        ],
+        correct: 0,
+        explanation: "కర్తరి వాక్యంలోని కర్మ ‘పుస్తకం’ కర్మణి వాక్యంలో కర్త స్థానంలోకి వస్తుంది. కర్త ‘రాము’ ‘రాముచే’గా మారి, ‘చదివాడు’ ‘చదవబడింది’గా మారుతుంది."
+    },
+    {
+        question: "క్రింది వాక్యాలలో అర్థభేదాన్ని సరిగ్గా చూపించేది ఏది?",
+        options: [
+            "“ఆశ” – “ఆష” రెండూ ఒకే అర్థం",
+            "“అభిమానం” – “అవమానం” రెండూ ఒకే అర్థం",
+            "“అనుమానం” – “అనుభవం” వేర్వేరు అర్థాలు కలిగిన పదాలు",
+            "“స్వరం” – “సారం” ఒకే అర్థం"
+        ],
+        correct: 2,
+        explanation: "‘అనుమానం’ అంటే సందేహం లేదా అనిశ్చితి, ‘అనుభవం’ అంటే ప్రత్యక్షంగా పొందిన జ్ఞానం లేదా అనుభూతి. కాబట్టి ఈ రెండు పదాలకు స్పష్టంగా వేర్వేరు అర్థాలు ఉన్నాయి."
+    },
+    {
+        question: "“అతను తీర్థయాత్రకు వెళ్లాడు” అనే వాక్యంలో “తీర్థయాత్ర” స్థానంలో సందర్భానుసారంగా ఉపయోగించగల పదం ఏది?",
+        options: [
+            "విహారం",
+            "పుణ్యక్షేత్ర యాత్ర",
+            "వ్యాపారం",
+            "సంచారం"
+        ],
+        correct: 1,
+        explanation: "తీర్థయాత్ర అంటే పవిత్రమైన లేదా పుణ్యక్షేత్రాలను దర్శించడానికి చేసే యాత్ర. అందువల్ల అదే భావాన్ని స్పష్టంగా వ్యక్తపరిచే పదబంధం ‘పుణ్యక్షేత్ర యాత్ర’."
+    },
+    {
+        question: "క్రింది వాటిలో భావాన్ని సరిగ్గా వ్యక్తపరిచే వాక్యం ఏది?",
+        options: [
+            "కష్టపడకుండా విజయం సాధించాలి.",
+            "కష్టపడితేనే విజయం సాధ్యమవుతుంది.",
+            "కష్టపడినప్పటికీ విజయం సాధించకూడదు.",
+            "విజయం కోసం కష్టం అవసరం లేదు."
+        ],
+        correct: 1,
+        explanation: "‘కష్టపడితేనే విజయం సాధ్యమవుతుంది’ అనే వాక్యం విజయం సాధించడానికి శ్రమ అవసరమనే భావాన్ని స్పష్టంగా వ్యక్తపరుస్తుంది. కారణం మరియు ఫలితం మధ్య సంబంధం కూడా ఇందులో కనిపిస్తుంది."
+    },
+    {
+        question: "క్రింది జంటలలో సరైన అర్థభేదం ఉన్నది ఏది?",
+        options: [
+            "శోకం – సంతోషం",
+            "శోకం – దుఃఖం",
+            "ధైర్యం – భయం",
+            "లాభం – జయం"
+        ],
+        correct: 1,
+        explanation: "‘శోకం’ అంటే దుఃఖం లేదా విచారం. కాబట్టి ఈ రెండు పదాలు సమీపార్థక పదాలు. మిగిలిన జంటల్లో పదాల మధ్య సరైన అర్థసామ్యం లేదా అర్థభేద సంబంధం లేదు."
+    },
+    {
+        question: "క్రింది వాక్యాలలో భాషాప్రయోగ పరంగా సరైనది ఏది?",
+        options: [
+            "అతను నాకు ఒక సలహా ఇచ్చాడు.",
+            "అతను నాకు ఒక సలహా ఇచ్చినాడు.",
+            "అతను నాకు సలహాను ఇచ్చాడు.",
+            "అతను నాకు సలహాలు ఒకటి ఇచ్చాడు."
+        ],
+        correct: 0,
+        explanation: "‘అతను నాకు ఒక సలహా ఇచ్చాడు’ అనే వాక్యంలో ‘ఒక సలహా’ అనే పదబంధం సహజమైన భాషాప్రయోగంగా ఉంది. కర్త, కర్మ, క్రియల క్రమం కూడా సరిగ్గా ఉంది."
+    },
+    {
+        question: "Choose the correct passive voice: “The committee has approved the proposal.”",
+        options: [
+            "The proposal has approved by the committee.",
+            "The proposal has been approved by the committee.",
+            "The proposal was approved by the committee.",
+            "The proposal is approved by the committee."
+        ],
+        correct: 1,
+        explanation: "The active sentence is in the present perfect tense. Its passive structure is ‘has been + past participle’. Therefore, ‘The proposal has been approved by the committee’ is grammatically correct."
+    },
+    {
+        question: "Choose the correct passive form: “Close the door.”",
+        options: [
+            "The door is closed.",
+            "The door was closed.",
+            "Let the door be closed.",
+            "Let the door closed."
+        ],
+        correct: 2,
+        explanation: "An imperative sentence in passive voice commonly follows the structure ‘Let + object + be + past participle’. Therefore, ‘Let the door be closed’ is the correct passive form."
+    },
+    {
+        question: "Change into indirect speech: Ravi said, “I have completed the work.”",
+        options: [
+            "Ravi said that he completed the work.",
+            "Ravi said that I had completed the work.",
+            "Ravi said that he had completed the work.",
+            "Ravi said that he has completed the work."
+        ],
+        correct: 2,
+        explanation: "In indirect speech, ‘I’ changes to ‘he’ because Ravi is the speaker. The present perfect ‘have completed’ normally changes to past perfect ‘had completed’."
+    },
+    {
+        question: "Change into indirect speech: She said to me, “Where do you live?”",
+        options: [
+            "She asked me where I lived.",
+            "She asked me where did I live.",
+            "She told me where I lived?",
+            "She asked that where I live."
+        ],
+        correct: 0,
+        explanation: "For an indirect wh-question, the question word remains, but the word order becomes statement order. ‘Do you live’ changes to ‘I lived’ after backshifting."
+    },
+    {
+        question: "Choose the correct indirect form: The teacher said to the students, “Do not waste your time.”",
+        options: [
+            "The teacher told the students not to waste their time.",
+            "The teacher said the students do not waste their time.",
+            "The teacher asked the students that they did not waste their time.",
+            "The teacher told that the students should not wasted their time."
+        ],
+        correct: 0,
+        explanation: "Negative commands in indirect speech use ‘told + object + not to + verb’. Therefore, ‘The teacher told the students not to waste their time’ is the correct transformation."
+    },
+    {
+        question: "Choose the compound sentence corresponding to: “In spite of being tired, he continued his work.”",
+        options: [
+            "He was tired because he continued his work.",
+            "He was tired, but he continued his work.",
+            "Being tired, he continued his work.",
+            "Although he was tired, he continued his work."
+        ],
+        correct: 1,
+        explanation: "A compound sentence joins two independent clauses using a coordinating conjunction. ‘He was tired, but he continued his work’ uses ‘but’ to express the contrast."
+    },
+    {
+        question: "Choose the simple sentence corresponding to: “Because he was ill, he could not attend the meeting.”",
+        options: [
+            "He was ill, so he could not attend the meeting.",
+            "He could not attend the meeting because he was ill.",
+            "Being ill, he could not attend the meeting.",
+            "He was ill and he could not attend the meeting."
+        ],
+        correct: 2,
+        explanation: "A simple sentence contains one main clause. ‘Being ill, he could not attend the meeting’ uses a participial phrase instead of a subordinate clause, making it a simple sentence."
+    },
+    {
+        question: "Choose the complex sentence corresponding to: “He worked hard and won the prize.”",
+        options: [
+            "Working hard, he won the prize.",
+            "He worked hard, so he won the prize.",
+            "Because he worked hard, he won the prize.",
+            "He worked hard to win the prize."
+        ],
+        correct: 2,
+        explanation: "A complex sentence contains a main clause and a subordinate clause. ‘Because he worked hard’ is a subordinate adverb clause connected to the main clause by ‘because’."
+    },
+    {
+        question: "Choose the sentence with the same meaning: “Unless you work hard, you will not succeed.”",
+        options: [
+            "If you work hard, you will not succeed.",
+            "If you do not work hard, you will not succeed.",
+            "If you worked hard, you would not succeed.",
+            "If you had worked hard, you would not succeed."
+        ],
+        correct: 1,
+        explanation: "‘Unless’ means ‘if not’. Therefore, ‘Unless you work hard’ has the same meaning as ‘If you do not work hard’, followed by the same result."
+    },
+    {
+        question: "Choose the correct question tag: “Let us go for a walk, ______?”",
+        options: [
+            "will we?",
+            "shall we?",
+            "do we?",
+            "aren't we?"
+        ],
+        correct: 1,
+        explanation: "When ‘Let us’ expresses a suggestion or proposal, the appropriate question tag is ‘shall we?’. Therefore, ‘Let us go for a walk, shall we?’ is correct."
+    },
+    {
+        question: "Choose the correct question tag: “Nobody informed you about the meeting, ______?”",
+        options: [
+            "didn't they?",
+            "did they?",
+            "wasn't it?",
+            "weren't they?"
+        ],
+        correct: 1,
+        explanation: "‘Nobody’ has a negative meaning, so the question tag should be positive. The main verb ‘informed’ is past tense, requiring the auxiliary ‘did’ in the tag."
+    },
+    {
+        question: "What is the language function expressed by: “Could you please lend me your pen?”",
+        options: [
+            "Giving advice",
+            "Making a polite request",
+            "Expressing certainty",
+            "Giving permission"
+        ],
+        correct: 1,
+        explanation: "The expression ‘Could you please’ is commonly used to make a polite request. The speaker is asking another person to lend a pen, not giving advice or permission."
+    },
+    {
+        question: "Identify the sentence with the correct use of the article.",
+        options: [
+            "He is an university student.",
+            "He is a university student.",
+            "He is the university student by profession.",
+            "He is university a student."
+        ],
+        correct: 1,
+        explanation: "The article depends on pronunciation, not spelling. ‘University’ begins with a consonant sound /juː/, so the correct article is ‘a’: ‘He is a university student.’"
+    },
+    {
+        question: "Choose the correct preposition: “She has been living in Vijayawada ______ 2018.”",
+        options: [
+            "for",
+            "from",
+            "since",
+            "by"
+        ],
+        correct: 2,
+        explanation: "‘Since’ is used with a specific point in time when an action began. Since 2018 indicates the starting point of her continuing residence in Vijayawada."
+    },
+    {
+        question: "Choose the correct verb: “Each of the students ______ submitted the assignment.”",
+        options: [
+            "have",
+            "are",
+            "has",
+            "were"
+        ],
+        correct: 2,
+        explanation: "‘Each’ is grammatically singular even when followed by a plural noun phrase. Therefore, it requires the singular auxiliary ‘has’: ‘Each of the students has submitted.’"
+    },
+    {
+        question: "Choose the sentence with the correct word order.",
+        options: [
+            "Always he comes late to class.",
+            "He comes always late to class.",
+            "He always comes late to class.",
+            "He comes late always to class."
+        ],
+        correct: 2,
+        explanation: "Frequency adverbs such as ‘always’ generally occur before the main verb when the verb is not ‘be’. Therefore, ‘He always comes late to class’ has the correct word order."
+    },
+    {
+        question: "Complete the sentence correctly: “If they had started earlier, they ______ the train.”",
+        options: [
+            "will catch",
+            "would catch",
+            "would have caught",
+            "had caught"
+        ],
+        correct: 2,
+        explanation: "This is a third conditional sentence describing an unreal past situation. Its structure is ‘if + past perfect’ followed by ‘would have + past participle’."
+    },
+    {
+        question: "Choose the correct passive form: “Students must follow the instructions.”",
+        options: [
+            "The instructions must follow by students.",
+            "The instructions must be followed by students.",
+            "The instructions are followed by students must.",
+            "The instructions have to followed by students."
+        ],
+        correct: 1,
+        explanation: "With a modal such as ‘must’, passive voice uses ‘must + be + past participle’. Therefore, ‘The instructions must be followed by students’ is grammatically correct."
+    },
+    {
+        question: "Change into indirect speech: He said, “What a beautiful painting it is!”",
+        options: [
+            "He said that it was a beautiful painting.",
+            "He exclaimed that it was a very beautiful painting.",
+            "He asked whether it was a beautiful painting.",
+            "He told that what a beautiful painting it was."
+        ],
+        correct: 1,
+        explanation: "The original sentence is an exclamation expressing admiration. In indirect speech, ‘said’ changes to ‘exclaimed’ and the exclamatory structure becomes a statement expressing the same feeling."
+    },
+    {
+        question: "Change into indirect speech: The teacher said to me, “Why are you late?”",
+        options: [
+            "The teacher asked me why I was late.",
+            "The teacher asked me why was I late.",
+            "The teacher told me why I am late.",
+            "The teacher asked that why I had late."
+        ],
+        correct: 0,
+        explanation: "A wh-question in indirect speech uses statement word order. ‘Are you late?’ changes to ‘I was late’ after backshifting, while ‘why’ remains unchanged."
+    },
+    {
+        question: "Choose the correct passive voice: “People speak English in many countries.”",
+        options: [
+            "English was spoken in many countries.",
+            "English is spoken in many countries.",
+            "English has spoken in many countries.",
+            "English speaks in many countries."
+        ],
+        correct: 1,
+        explanation: "The active sentence uses the simple present tense. Its passive form is ‘is/am/are + past participle’. Therefore, ‘English is spoken in many countries’ is correct."
     },
     {
         question: "Identify the complex sentence.",
-        options: ["He was tired, but he continued working.", "He finished the work and went home.", "Although he was tired, he continued working.", "Having finished the work, he went home."],
+        options: [
+            "He came home and he went to bed.",
+            "He came home, so he went to bed.",
+            "After he came home, he went to bed.",
+            "Coming home, he went to bed."
+        ],
         correct: 2,
-        explanation: "“Although he was tired” is a dependent adverb clause, while “he continued working” is the independent clause. Therefore, the sentence is complex."
+        explanation: "A complex sentence contains an independent clause and a dependent clause. ‘After he came home’ is a dependent adverb clause joined to the main clause."
     },
     {
-        question: "Identify the sentence structure of: “The teacher gave the students a task.”",
-        options: ["S + V + C", "S + V + O", "S + V + O + O", "S + V + O + C"],
+        question: "Choose the appropriate linker: “He is poor, ______ he is honest.”",
+        options: [
+            "because",
+            "although",
+            "but",
+            "therefore"
+        ],
         correct: 2,
-        explanation: "“The teacher” is the subject, “gave” is the verb, “the students” is the indirect object, and “a task” is the direct object. Hence, S + V + O + O."
+        explanation: "The sentence contrasts two facts: being poor and being honest. The coordinating conjunction ‘but’ correctly expresses this contrast between the two independent clauses."
     },
     {
-        question: "Identify the sentence structure of: “The news made him happy.”",
-        options: ["S + V + O", "S + V + C", "S + V + O + C", "S + V + O + O"],
+        question: "Identify the sentence that expresses permission.",
+        options: [
+            "You must submit the form today.",
+            "You should submit the form today.",
+            "May I leave the classroom?",
+            "You ought to submit the form today."
+        ],
         correct: 2,
-        explanation: "“The news” is the subject, “made” is the verb, “him” is the object, and “happy” describes the object. Therefore, the structure is S + V + O + C."
+        explanation: "‘May I leave the classroom?’ asks whether the speaker is allowed to leave. The modal ‘may’ commonly expresses or requests permission in formal English."
     },
     {
-        question: "Choose the grammatically correct sentence.",
-        options: ["Because he was ill, therefore he stayed at home.", "He was ill, therefore he stayed at home.", "Although he was ill, but he attended the class.", "Unless he was ill, so he stayed at home."],
-        correct: 1,
-        explanation: "“Therefore” expresses a result and can connect two independent clauses with suitable punctuation. The other options incorrectly combine paired or incompatible conjunctions."
-    },
-    {
-        question: "Match Column-I with Column-II. i) because ii) although iii) unless iv) therefore — A) Contrast B) Condition C) Cause D) Result",
-        options: ["i-C, ii-A, iii-B, iv-D", "i-A, ii-C, iii-D, iv-B", "i-C, ii-B, iii-A, iv-D", "i-D, ii-A, iii-C, iv-B"],
-        correct: 0,
-        explanation: "“Because” introduces a cause, “although” introduces contrast, “unless” introduces a condition, and “therefore” indicates a result. Thus, option A gives all correct matches."
-    },
-    {
-        question: "Consider the following statements: 1. Unless can introduce a negative condition. 2. Although introduces a contrast between ideas. 3. Therefore is a coordinating conjunction. Which of the statements given above is/are correct?",
-        options: ["1 only", "2 only", "1 and 2 only", "1, 2 and 3"],
+        question: "Identify the incorrect part of the sentence: “Neither of the two boys have completed his assignment.”",
+        options: [
+            "Neither",
+            "of the two boys",
+            "have completed",
+            "his assignment"
+        ],
         correct: 2,
-        explanation: "“Unless” introduces a negative condition and “although” introduces contrast. However, “therefore” is a conjunctive adverb, not a coordinating conjunction. Hence, statements 1 and 2 are correct."
+        explanation: "‘Neither’ is singular and therefore takes a singular verb. The incorrect part is ‘have completed’; it should be ‘has completed’: ‘Neither has completed his assignment.’"
     }
 ];
